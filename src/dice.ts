@@ -41,9 +41,11 @@ class CombatDieResult extends DieResult<CombatDieResult> {
 class Die<DieResultType extends DieResult<DieResultType>> {
   color: string
   sides: DieResultType[]
+  image: string
 
   constructor (color: string, sides: any[], SideCtor: { new(...args: any[]): DieResultType}) {
     this.color = color
+    this.image = `./dice/${color}-top.png`
     this.sides = Array.from(sides, (sideArgs: any) => new SideCtor(sideArgs))
   }
 }

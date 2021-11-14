@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li v-for="die in dice" :key="die">
-      {{ die }}
+      <img :src="die.image">
     </li>
   </ul>
 </template>
