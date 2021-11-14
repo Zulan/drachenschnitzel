@@ -1,20 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <DiceSelector></DiceSelector>
+  <!--HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/-->
+  <DiceSelector/>
 </template>
 
-<script>
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component'
 import HelloWorld from './components/HelloWorld.vue'
-import DiceSelector from './components/DiceSelector.vue'
+import DiceSelector from '@/components/DiceSelector.vue'
 
-export default {
-  name: 'App',
+@Options({
   components: {
-    HelloWorld,
-    DiceSelector
+    DiceSelector,
+    HelloWorld
   }
-}
+})
+export default class App extends Vue {}
 </script>
 
 <style>
