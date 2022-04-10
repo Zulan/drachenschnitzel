@@ -16,8 +16,8 @@
     "vue-class-component": "^8.0.0-0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
     "@vue/cli-plugin-babel": "~5.0.3",
     "@vue/cli-plugin-eslint": "~5.0.3",
     "@vue/cli-plugin-typescript": "~5.0.3",
@@ -27,13 +27,15 @@
     "@vue/eslint-config-standard": "^6.1.0",
     "@vue/eslint-config-typescript": "^9.1.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
-    "typescript": "~4.5.5"
+    "prettier": "^2.6.0",
+    "typescript": "^4.6.2"
   },
   "eslintConfig": {
     "root": true,
@@ -49,6 +51,10 @@
       "parser": "@typescript-eslint/parser"
     },
     "rules": {}
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   },
   "browserslist": [
     "> 1%",

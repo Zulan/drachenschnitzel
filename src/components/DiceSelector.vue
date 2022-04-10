@@ -15,9 +15,9 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { defineComponent } from 'vue'
-import { CombatDie } from '@/dice'
+import { CombatDie } from '@/models/dice'
 // import { CombatDie, DefenseDie } from '@/dice'
 
 export default defineComponent({
