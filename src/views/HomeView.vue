@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import TheWelcome from "@/components/TheWelcome.vue";
+import DiceSelector from "@/components/DiceSelector.vue";
+import { dice } from "@/data/dice";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <DiceSelector :dice="dice" />
   </main>
 </template>
