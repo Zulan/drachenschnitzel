@@ -31,8 +31,9 @@ function add(die: CombatDie) {
   <div class="container">
     <ul class="list-inline">
       <li v-for="die in selected" :key="die" class="list-inline-item">
-        <img :src="die.image" class="dice" />
+        <img :src="die.image" class="dice" @click="remove(die)" />
       </li>
+      <li></li>
     </ul>
   </div>
 </template>
