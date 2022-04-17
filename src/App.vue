@@ -4,11 +4,10 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <header>
-    <h1>Drachenschnitzel - 🗡️🛡️️🐉</h1>
+    <h1>Drachenschnitzel - 🐉</h1>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Combat - 🗡</RouterLink>
       </nav>
     </div>
   </header>

@@ -1,6 +1,6 @@
 import { CombatDie, DefenseDie } from "@/models/dice";
 
-export const dice = {
+export const dicePool = {
   attack: new CombatDie("blue", [
     [0, 0, 0, true],
     [2, 2, 1],

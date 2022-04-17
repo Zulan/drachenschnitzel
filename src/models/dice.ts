@@ -2,7 +2,7 @@ abstract class DieResult<DieResultType extends DieResult<DieResultType>> {
   abstract combine(other: DieResultType): DieResultType;
 }
 
-class DefenseDieResult extends DieResult<DefenseDieResult> {
+export class DefenseDieResult extends DieResult<DefenseDieResult> {
   shields: number;
 
   constructor(shields: number) {
@@ -15,7 +15,7 @@ class DefenseDieResult extends DieResult<DefenseDieResult> {
   }
 }
 
-class CombatDieResult extends DieResult<CombatDieResult> {
+export class CombatDieResult extends DieResult<CombatDieResult> {
   damage: number;
   range: number;
   surge: number;
@@ -39,7 +39,7 @@ class CombatDieResult extends DieResult<CombatDieResult> {
   }
 }
 
-class Die<DieResultType extends DieResult<DieResultType>> {
+class BaseDie<DieResultType extends DieResult<DieResultType>> {
   color: string;
   sides: DieResultType[];
   image: string;
@@ -58,22 +58,62 @@ class Die<DieResultType extends DieResult<DieResultType>> {
   }
 }
 
-export class DefenseDie extends Die<DefenseDieResult> {
+export class DefenseDie extends BaseDie<DefenseDieResult> {
   constructor(color: string, sides: number[]) {
     super(color, sides, DefenseDieResult);
   }
 }
 
-export class CombatDie extends Die<CombatDieResult> {
+export class CombatDie extends BaseDie<CombatDieResult> {
   constructor(color: string, sides: any[]) {
     super(color, sides, CombatDieResult);
   }
 }
 
-export interface Dice {
+export interface DicePool {
   attack: CombatDie;
   power: CombatDie[];
   defense: DefenseDie[];
+}
+
+export type Die = CombatDie | DefenseDie;
+
+export class DiceSet<T extends Die> {
+  counts: Map<T, number>;
+  initial: T[];
+
+  constructor(all: T[], initial: T[]) {
+    this.initial = initial;
+    this.counts = new Map(all.map((die) => [die, 0]));
+    this.reset();
+  }
+
+  reset() {
+    [...this.counts.keys()].forEach((die) => {
+      this.counts.set(die, 0);
+    });
+    this.initial.forEach((die) => {
+      this.counts.set(die, 1);
+    });
+  }
+
+  add(die: T) {
+    this.counts.set(die, this.counts.get(die)! + 1);
+  }
+
+  remove(die: T) {
+    this.counts.set(die, this.counts.get(die)! - 1);
+  }
+
+  pool(): Iterable<T> {
+    return this.counts.keys();
+  }
+
+  *[Symbol.iterator]() {
+    for (const v of this.counts) {
+      yield v;
+    }
+  }
 }
 
 export function combineDie<DieResultType extends DieResult<DieResultType>>(
