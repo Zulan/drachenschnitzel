@@ -3,7 +3,5 @@ import DiceSelector from "@/components/DiceSelector.vue";
 </script>
 
 <template>
-  <main>
-    <DiceSelector />
-  </main>
+  <DiceSelector />
 </template>
