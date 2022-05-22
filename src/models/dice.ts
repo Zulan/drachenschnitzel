@@ -46,7 +46,9 @@ class BaseDie<DieResultType extends DieResult<DieResultType>> {
 
   constructor(
     color: string,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     sides: any[],
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     SideCtor: { new (...args: any[]): DieResultType }
   ) {
     this.color = color;
@@ -54,7 +56,14 @@ class BaseDie<DieResultType extends DieResult<DieResultType>> {
       `../assets/dice/${color}-top.png`,
       import.meta.url
     ).href;
-    this.sides = Array.from(sides, (sideArgs: any) => new SideCtor(sideArgs));
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    this.sides = Array.from(sides, (sideArgs: any) => {
+      // Handle single argument with omitted []
+      if (!Array.isArray(sideArgs)) {
+        sideArgs = [sideArgs];
+      }
+      return new SideCtor(...sideArgs);
+    });
   }
 }
 
@@ -65,6 +74,7 @@ export class DefenseDie extends BaseDie<DefenseDieResult> {
 }
 
 export class CombatDie extends BaseDie<CombatDieResult> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(color: string, sides: any[]) {
     super(color, sides, CombatDieResult);
   }
@@ -82,7 +92,7 @@ export class DiceSet<T extends Die> {
   counts: Map<T, number>;
   initial: T[];
 
-  constructor(all: T[], initial: T[]) {
+  constructor(all: T[], initial: T[] = []) {
     this.initial = initial;
     this.counts = new Map(all.map((die) => [die, 0]));
     this.reset();
@@ -98,10 +108,12 @@ export class DiceSet<T extends Die> {
   }
 
   add(die: T) {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     this.counts.set(die, this.counts.get(die)! + 1);
   }
 
   remove(die: T) {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     this.counts.set(die, this.counts.get(die)! - 1);
   }
 
@@ -112,6 +124,14 @@ export class DiceSet<T extends Die> {
   *[Symbol.iterator]() {
     for (const v of this.counts) {
       yield v;
+    }
+  }
+
+  *linear(): IterableIterator<T> {
+    for (const [die, count] of this.counts.entries()) {
+      for (let i = 0; i < count; i++) {
+        yield die;
+      }
     }
   }
 }
