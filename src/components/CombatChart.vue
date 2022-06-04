@@ -3,6 +3,7 @@ import { computed } from "vue";
 
 import { useFightStore } from "@/stores/fight";
 import { effectiveDamage, roll } from "@/models/roll";
+import { GChart } from "vue-google-charts";
 
 // const props = defineProps({
 //   dice: { type: Object as PropType<DiceSet>, required: true },
@@ -14,6 +15,15 @@ const damageHistogram = computed(() =>
     roll([...fight.combatDiceSet.linear(), ...fight.defenseDiceSet.linear()])
   )
 );
+const chartOptions = computed(() => ({
+  chart: {
+    title: "Damage",
+  },
+}));
+const chartData = computed(() => [
+  ["Damage", "hitme"],
+  ...damageHistogram.value.entries(),
+]);
 </script>
 
 <template>
@@ -23,6 +33,7 @@ const damageHistogram = computed(() =>
         Damage: {{ damage }}: {{ count }}
       </li>
     </ul>
+    <GChart type="ColumnChart" :data="chartData" :options="chartOptions" />
   </div>
 </template>
 
