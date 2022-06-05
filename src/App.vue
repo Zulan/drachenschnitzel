@@ -24,6 +24,12 @@ import { RouterLink, RouterView } from "vue-router";
               <RouterLink to="/" class="nav-link active" aria-current="page"
                 >🗡 Combat</RouterLink
               >
+              <RouterLink
+                to="/weapons/"
+                class="nav-link active"
+                aria-current="page"
+                >🗡 Weapons</RouterLink
+              >
             </li>
           </ul>
         </div>
