@@ -1,3 +1,5 @@
+import { assetUrl } from "@/models/utils";
+
 abstract class DieResult<DieResultType extends DieResult<DieResultType>> {
   abstract combine(other: DieResultType): DieResultType;
 }
@@ -52,10 +54,7 @@ class BaseDie<DieResultType extends DieResult<DieResultType>> {
     SideCtor: { new (...args: any[]): DieResultType }
   ) {
     this.color = color;
-    this.image = new URL(
-      `../assets/dice/${color}-top.png`,
-      import.meta.url
-    ).href;
+    this.image = assetUrl(`dice/${color}-top.png`);
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     this.sides = Array.from(sides, (sideArgs: any) => {
       // Handle single argument with omitted []

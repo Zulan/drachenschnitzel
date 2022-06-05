@@ -35,3 +35,7 @@ export class ObjectCounter<Key> {
     this.map.set(jk, [key, n]);
   }
 }
+
+export function assetUrl(path: string): string {
+  return new URL(`../assets/${path}`, import.meta.url).href;
+}

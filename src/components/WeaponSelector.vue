@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import shopItems from "@d2e/data/shop-items.json";
+import { weapons } from "@/data/items";
 
-console.log(shopItems);
-
-const items = computed(() => shopItems);
+const items = computed(() => weapons);
 </script>
 
 <template>

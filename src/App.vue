@@ -22,8 +22,10 @@ import { RouterLink, RouterView } from "vue-router";
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <RouterLink to="/" class="nav-link active" aria-current="page"
-                >🗡 Combat</RouterLink
+                >🎲 Combat</RouterLink
               >
+            </li>
+            <li class="nav-item">
               <RouterLink
                 to="/weapons/"
                 class="nav-link active"
