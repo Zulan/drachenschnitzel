@@ -12,8 +12,8 @@ export const useFightStore = defineStore({
     defenseDiceSet: new DiceSet(dicePool.defense, []),
   }),
   getters: {
-    combatDicePool: (state) => state.combatDiceSet.pool(),
-    defenseDicePool: (state) => state.defenseDiceSet.pool(),
+    combatDicePool: (state) => Array.from(state.combatDiceSet.pool()),
+    defenseDicePool: (state) => Array.from(state.defenseDiceSet.pool()),
   },
   actions: {
     addDie(die: CombatDie | DefenseDie) {

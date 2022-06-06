@@ -37,14 +37,6 @@ const routes = computed(() => {
                 >{{ route.name }}</router-link
               >
             </li>
-            <li class="nav-item">
-              <router-link
-                to="/"
-                active-class="active"
-                class="nav-link"
-                aria-current="page"
-              ></router-link>
-            </li>
           </ul>
         </div>
       </div>
