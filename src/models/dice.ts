@@ -1,4 +1,4 @@
-import { assetUrl } from "@/models/utils";
+import { assetUrl } from "@/utils/assets";
 
 abstract class DieResult<DieResultType extends DieResult<DieResultType>> {
   abstract combine(other: DieResultType): DieResultType;

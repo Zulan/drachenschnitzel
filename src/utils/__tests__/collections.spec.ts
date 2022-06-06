@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 
-import { ObjectCounter } from "../utils";
+import { ObjectCounter } from "@/utils/collections";
 
 interface TestKey {
   name: string;

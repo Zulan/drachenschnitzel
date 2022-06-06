@@ -1,18 +1,29 @@
 import type { CombatDie } from "@/models/dice";
-import { assetUrl } from "@/models/utils";
+import { assetUrl } from "@/utils/assets";
+import { enumFromStringValue } from "@/utils/enum";
+
+// export function enumFromStringValue<T>(
+//   enm: { [s: string]: T },
+//   value: string
+// ): T {
+//   if ((Object.values(enm) as unknown as string[]).includes(value)) {
+//     return value as unknown as T;
+//   }
+//   throw new Error(`Invalid enum value: ${value}`);
+// }
 
 export enum Category {
   ActI = "I",
   ActII = "II",
-  Relic = "RELIC",
+  Relic = "Relic",
   Class = "Class",
 }
 
 export enum Equip {
   OneHand = "One Hand",
-  TwoHand = "Two Hand",
+  TwoHand = "Two Hands",
   Armor = "Armor",
-  Trinket = "Trinket",
+  Other = "Other",
 }
 
 export enum WeaponTrait {
@@ -37,6 +48,7 @@ export interface Item {
   name: string;
   category: Category;
   cost: number;
+  equip: Equip;
   expansion: string;
   image: string;
 }
@@ -63,18 +75,12 @@ export interface JsonShopItem {
   xws: string;
 }
 
-function enumFromStringValue<T>(enm: { [s: string]: T }, value: string): T {
-  if ((Object.values(enm) as unknown as string[]).includes(value)) {
-    return value as unknown as T;
-  }
-  throw new Error(`Invalid enum value: ${value}`);
-}
-
 function parseShopItem(json: JsonShopItem): Item {
   return {
     name: json.name,
     category: enumFromStringValue(Category, json.act),
     cost: json.cost,
+    equip: enumFromStringValue(Equip, json.equip),
     expansion: json.expansion,
     image: assetUrl(`d2e/${json.image}`),
   };

@@ -7,7 +7,7 @@ import {
   DefenseDie,
   DefenseDieResult,
 } from "../dice";
-import { ObjectCounter } from "../utils";
+import { ObjectCounter } from "@/utils/collections";
 
 const brownDie = new DefenseDie("brown", [0, 0, 0, 1, 1, 2]);
 const blackDie = new DefenseDie("black", [0, 2, 2, 2, 3, 4]);

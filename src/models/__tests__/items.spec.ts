@@ -3,6 +3,7 @@ import { describe, it, expect, vi } from "vitest";
 import {
   Attack,
   Category,
+  Equip,
   isWeapon,
   parseShopWeapon,
   WeaponTrait,
@@ -10,7 +11,7 @@ import {
 
 import jsonShopItems from "@/data/d2e/shop-items.json";
 
-vi.mock("../utils.ts");
+vi.mock("../../utils/assets.ts");
 
 describe("parseShopWeapon", () => {
   it("example", () => {
@@ -33,6 +34,7 @@ describe("parseShopWeapon", () => {
     expect(weapon.name).toBe("Battle Tome");
     expect(weapon.category).toBe(Category.ActI);
     expect(weapon.cost).toBe(125);
+    expect(weapon.equip).toBe(Equip.OneHand);
     expect(weapon.expansion).toBe("Mists Of Bilehall");
     expect(weapon.image).toBe(
       "ASSET_PREFIX/d2e/shop-items/act1/battle-tome-mb.png"

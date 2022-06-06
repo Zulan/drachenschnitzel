@@ -2,8 +2,10 @@
 import { computed, ref } from "vue";
 import { weapons } from "@/data/items";
 import type { Weapon } from "@/models/items";
-import { WeaponTrait } from "@/models/items";
+import { Category, Equip, WeaponTrait } from "@/models/items";
 import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
+import { makeListFilter } from "@/utils/filter";
+import { enumFromStringValue } from "@/utils/enum";
 
 const needle = ref("");
 
@@ -14,102 +16,53 @@ function matchName(weapon: Weapon): boolean {
   return weapon.name.toLowerCase().includes(needle.value.toLowerCase());
 }
 
-const selectedAct = ref("");
-
-function matchCategory(weapon: Weapon): boolean {
-  if (selectedAct.value === "") {
-    return true;
-  }
-  return selectedAct.value === weapon.category;
-}
-
-const selectedTraits = ref([]);
-
-function matchTraits(weapon: Weapon): boolean {
-  if (selectedTraits.value.length === 0) {
-    return true;
-  }
-  for (const selectedTrait of selectedTraits.value) {
-    if (weapon.traits.includes(selectedTrait)) {
-      return true;
-    }
-  }
-  return false;
-}
-
-const items = computed(() =>
-  weapons.filter(matchName).filter(matchCategory).filter(matchTraits)
+const availableCategories = [Category.ActI, Category.ActII];
+const selectedCategories = ref([]);
+const matchCategory = makeListFilter(
+  selectedCategories,
+  (thing: Weapon, selected: string) => thing.category === selected
 );
 
-const availableTraits = computed(() => Object.values(WeaponTrait));
+const availableTraits = Object.values(WeaponTrait);
+const selectedTraits = ref([]);
+const matchTraits = makeListFilter(
+  selectedTraits,
+  (thing: Weapon, selected: string) =>
+    thing.traits.includes(enumFromStringValue(WeaponTrait, selected))
+);
+
+const availableEquips = Object.values(Equip);
+const selectedEquips = ref([]);
+const matchEquips = makeListFilter(
+  selectedEquips,
+  (thing: Weapon, selected: string) => thing.equip === selected
+);
+
+const items = computed(() =>
+  weapons
+    .filter(matchName)
+    .filter(matchCategory)
+    .filter(matchTraits)
+    .filter(matchEquips)
+);
 </script>
 
 <template>
   <div class="container">
     <input v-model="needle" placeholder="filter by name" />
 
-    <div class="btn-group" role="group">
-      <input
-        type="radio"
-        class="btn-check"
-        v-model="selectedAct"
-        value=""
-        id="act-all"
-        autocomplete="off"
-      />
-      <label class="btn btn-outline-primary" for="act-all">All</label>
-
-      <input
-        type="radio"
-        class="btn-check"
-        v-model="selectedAct"
-        value="I"
-        id="act-I"
-        autocomplete="off"
-      />
-      <label class="btn btn-outline-primary" for="act-I">Act I</label>
-
-      <input
-        type="radio"
-        class="btn-check"
-        v-model="selectedAct"
-        value="II"
-        id="act-II"
-        autocomplete="off"
-      />
-      <label class="btn btn-outline-primary" for="act-II">Act II</label>
-    </div>
-
-    <!--    <div class="btn-group" role="group">-->
-    <!--      <input-->
-    <!--        type="checkbox"-->
-    <!--        class="btn-check"-->
-    <!--        @change="selectedTraits = []"-->
-    <!--        :disabled="selectedTraits.length === 0"-->
-    <!--        :checked="selectedTraits.length === 0"-->
-    <!--        id="trait-all"-->
-    <!--        autocomplete="off"-->
-    <!--      />-->
-    <!--      <label class="btn btn-outline-primary" for="trait-all">All</label>-->
-    <!--      <template v-for="trait in availableTraits" :key="trait">-->
-    <!--        <input-->
-    <!--          type="checkbox"-->
-    <!--          class="btn-check"-->
-    <!--          v-model="selectedTraits"-->
-    <!--          :value="trait"-->
-    <!--          :id="`trait-${trait}`"-->
-    <!--          autocomplete="off"-->
-    <!--        />-->
-    <!--        <label class="btn btn-outline-primary" :for="`trait-${trait}`">{{-->
-    <!--          trait-->
-    <!--        }}</label>-->
-    <!--      </template>-->
-    <!--    </div>-->
+    <FilterButtonGroup
+      :model-options="availableCategories"
+      v-model="selectedCategories"
+    />
     <FilterButtonGroup
       :model-options="availableTraits"
       v-model="selectedTraits"
     />
-
+    <FilterButtonGroup
+      :model-options="availableEquips"
+      v-model="selectedEquips"
+    />
     <h1>Total of {{ items.length }}</h1>
     <div class="row">
       <div

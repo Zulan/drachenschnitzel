@@ -1,5 +1,5 @@
 import type { Die } from "@/models/dice";
-import { ObjectCounter } from "@/models/utils";
+import { ObjectCounter } from "@/utils/collections";
 import { CombatDieResult, combineDie, DefenseDieResult } from "@/models/dice";
 
 export class DieResult {

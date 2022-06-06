@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, toRefs } from "vue";
+import { v4 as uuidv4 } from "uuid";
 
 const props = defineProps<{
   modelOptions: string[];
@@ -18,6 +19,8 @@ const localValue = computed({
     emit("update:modelValue", newValue);
   },
 });
+
+const id = uuidv4();
 </script>
 
 <template>
@@ -26,22 +29,22 @@ const localValue = computed({
       type="checkbox"
       class="btn-check"
       @change="localValue = []"
-      :disabled="localValue.length === 0"
-      :checked="localValue.length === 0"
-      id="trait-all"
+      :disabled="modelValue.length === 0"
+      :checked="modelValue.length === 0"
+      :id="`${id}-all`"
       autocomplete="off"
     />
-    <label class="btn btn-outline-primary" for="trait-all">All</label>
+    <label class="btn btn-outline-primary" :for="`${id}-all`">All</label>
     <template v-for="value in modelOptions" :key="value">
       <input
         type="checkbox"
         class="btn-check"
         v-model="localValue"
         :value="value"
-        :id="`trait-${value}`"
+        :id="`${id}-${value}`"
         autocomplete="off"
       />
-      <label class="btn btn-outline-primary" :for="`trait-${value}`">{{
+      <label class="btn btn-outline-primary" :for="`${id}-${value}`">{{
         value
       }}</label>
     </template>
