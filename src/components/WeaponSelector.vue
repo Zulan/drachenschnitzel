@@ -2,7 +2,7 @@
 import { computed, ref } from "vue";
 import { weapons } from "@/data/items";
 import type { Weapon } from "@/models/items";
-import { Category, Equip, WeaponTrait } from "@/models/items";
+import { Attack, Category, Equip, WeaponTrait } from "@/models/items";
 import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
 import { makeListFilter } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
@@ -38,10 +38,18 @@ const matchEquips = makeListFilter(
   (thing: Weapon, selected: string) => thing.equip === selected
 );
 
+const availableAttacks = Object.values(Attack);
+const selectedAttacks = ref([]);
+const matchAttacks = makeListFilter(
+  selectedAttacks,
+  (thing: Weapon, selected: string) => thing.attack === selected
+);
+
 const items = computed(() =>
   weapons
     .filter(matchName)
     .filter(matchCategory)
+    .filter(matchAttacks)
     .filter(matchTraits)
     .filter(matchEquips)
 );
@@ -49,24 +57,41 @@ const items = computed(() =>
 
 <template>
   <div class="container">
-    <input v-model="needle" placeholder="filter by name" />
-
-    <FilterButtonGroup
-      :model-options="availableCategories"
-      v-model="selectedCategories"
-    />
-    <FilterButtonGroup
-      :model-options="availableTraits"
-      v-model="selectedTraits"
-    />
-    <FilterButtonGroup
-      :model-options="availableEquips"
-      v-model="selectedEquips"
-    />
-    <h1>Total of {{ items.length }}</h1>
+    <form class="row g-1">
+      <div class="col-6 col-lg-1">
+        <FilterButtonGroup
+          :model-options="availableCategories"
+          v-model="selectedCategories"
+        />
+      </div>
+      <div class="col-6 col-lg-2">
+        <FilterButtonGroup
+          :model-options="availableAttacks"
+          v-model="selectedAttacks"
+        />
+      </div>
+      <div class="col-12 col-lg-4 overflow-auto">
+        <FilterButtonGroup
+          :model-options="availableEquips"
+          v-model="selectedEquips"
+        />
+      </div>
+      <div class="col-12 overflow-auto">
+        <FilterButtonGroup
+          :model-options="availableTraits"
+          v-model="selectedTraits"
+        />
+      </div>
+      <div class="col-12 col-md-6">
+        <input v-model="needle" placeholder="filter by name" />
+      </div>
+      <div class="col-12 col-md-6 text-end">
+        {{ items.length }} weapons found
+      </div>
+    </form>
     <div class="row">
       <div
-        class="col-sm-12 col-md-6 col-lg-3 col-xl-2 g-2"
+        class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 g-2"
         v-for="item in items"
         :key="item.name"
       >

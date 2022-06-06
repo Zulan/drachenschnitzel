@@ -34,7 +34,7 @@ const id = uuidv4();
       :id="`${id}-all`"
       autocomplete="off"
     />
-    <label class="btn btn-outline-primary" :for="`${id}-all`">All</label>
+    <label class="btn btn-outline-primary btn-sm" :for="`${id}-all`">All</label>
     <template v-for="value in modelOptions" :key="value">
       <input
         type="checkbox"
@@ -44,7 +44,7 @@ const id = uuidv4();
         :id="`${id}-${value}`"
         autocomplete="off"
       />
-      <label class="btn btn-outline-primary" :for="`${id}-${value}`">{{
+      <label class="btn btn-outline-primary btn-sm" :for="`${id}-${value}`">{{
         value
       }}</label>
     </template>
