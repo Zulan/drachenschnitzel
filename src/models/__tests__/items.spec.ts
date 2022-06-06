@@ -35,7 +35,7 @@ describe("parseShopWeapon", () => {
     expect(weapon.cost).toBe(125);
     expect(weapon.expansion).toBe("Mists Of Bilehall");
     expect(weapon.image).toBe(
-      "URL_PREFIX/assets/d2e/shop-items/act1/battle-tome-mb.png"
+      "ASSET_PREFIX/d2e/shop-items/act1/battle-tome-mb.png"
     );
     expect(weapon.traits).toEqual([WeaponTrait.Book, WeaponTrait.Magic]);
     expect(weapon.attack).toEqual(Attack.Range);

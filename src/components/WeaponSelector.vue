@@ -10,7 +10,7 @@ const items = computed(() => weapons);
     Total of {{ items.length }}
     <ul class="list-inline">
       <li v-for="item in items" :key="item.name" class="list-inline-item">
-        {{ item.name }}
+        <img :src="item.image" :alt="item.name" />
       </li>
     </ul>
   </div>

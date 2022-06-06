@@ -76,7 +76,7 @@ function parseShopItem(json: JsonShopItem): Item {
     category: enumFromStringValue(Category, json.act),
     cost: json.cost,
     expansion: json.expansion,
-    image: assetUrl(`assets/d2e/${json.image}`),
+    image: assetUrl(`d2e/${json.image}`),
   };
 }
 

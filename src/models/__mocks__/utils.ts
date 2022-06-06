@@ -1,3 +1,3 @@
 import { vi } from "vitest";
 
-export const assetUrl = vi.fn((path) => `URL_PREFIX/${path}`);
+export const assetUrl = vi.fn((path) => `ASSET_PREFIX/${path}`);
