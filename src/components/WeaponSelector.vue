@@ -3,6 +3,7 @@ import { computed, ref } from "vue";
 import { weapons } from "@/data/items";
 import type { Weapon } from "@/models/items";
 import { WeaponTrait } from "@/models/items";
+import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
 
 const needle = ref("");
 
@@ -79,31 +80,35 @@ const availableTraits = computed(() => Object.values(WeaponTrait));
       <label class="btn btn-outline-primary" for="act-II">Act II</label>
     </div>
 
-    <div class="btn-group" role="group">
-      <input
-        type="checkbox"
-        class="btn-check"
-        @change="selectedTraits = []"
-        :disabled="selectedTraits.length === 0"
-        :checked="selectedTraits.length === 0"
-        id="trait-all"
-        autocomplete="off"
-      />
-      <label class="btn btn-outline-primary" for="trait-all">All</label>
-      <template v-for="trait in availableTraits" :key="trait">
-        <input
-          type="checkbox"
-          class="btn-check"
-          v-model="selectedTraits"
-          :value="trait"
-          :id="`trait-${trait}`"
-          autocomplete="off"
-        />
-        <label class="btn btn-outline-primary" :for="`trait-${trait}`">{{
-          trait
-        }}</label>
-      </template>
-    </div>
+    <!--    <div class="btn-group" role="group">-->
+    <!--      <input-->
+    <!--        type="checkbox"-->
+    <!--        class="btn-check"-->
+    <!--        @change="selectedTraits = []"-->
+    <!--        :disabled="selectedTraits.length === 0"-->
+    <!--        :checked="selectedTraits.length === 0"-->
+    <!--        id="trait-all"-->
+    <!--        autocomplete="off"-->
+    <!--      />-->
+    <!--      <label class="btn btn-outline-primary" for="trait-all">All</label>-->
+    <!--      <template v-for="trait in availableTraits" :key="trait">-->
+    <!--        <input-->
+    <!--          type="checkbox"-->
+    <!--          class="btn-check"-->
+    <!--          v-model="selectedTraits"-->
+    <!--          :value="trait"-->
+    <!--          :id="`trait-${trait}`"-->
+    <!--          autocomplete="off"-->
+    <!--        />-->
+    <!--        <label class="btn btn-outline-primary" :for="`trait-${trait}`">{{-->
+    <!--          trait-->
+    <!--        }}</label>-->
+    <!--      </template>-->
+    <!--    </div>-->
+    <FilterButtonGroup
+      :model-options="availableTraits"
+      v-model="selectedTraits"
+    />
 
     <h1>Total of {{ items.length }}</h1>
     <div class="row">
