@@ -7,12 +7,12 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "combat",
+      name: "🎲 Dice",
       component: CombatView,
     },
     {
       path: "/weapons/",
-      name: "weapons",
+      name: "🗡 Weapons",
       component: WeaponVeiw,
     },
   ],

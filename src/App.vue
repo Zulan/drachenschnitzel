@@ -1,5 +1,13 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
+import { RouterLink, RouterView, useRouter } from "vue-router";
+import { computed } from "vue";
+
+const router = useRouter();
+const routes = computed(() => {
+  const r = router.getRoutes();
+  console.log(r);
+  return r;
+});
 </script>
 
 <template>
@@ -20,18 +28,22 @@ import { RouterLink, RouterView } from "vue-router";
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <RouterLink to="/" class="nav-link active" aria-current="page"
-                >🎲 Combat</RouterLink
+            <li class="nav-item" v-for="route in routes" :key="route.path">
+              <router-link
+                :to="route.path"
+                active-class="active"
+                class="nav-link"
+                aria-current="page"
+                >{{ route.name }}</router-link
               >
             </li>
             <li class="nav-item">
-              <RouterLink
-                to="/weapons/"
-                class="nav-link active"
+              <router-link
+                to="/"
+                active-class="active"
+                class="nav-link"
                 aria-current="page"
-                >🗡 Weapons</RouterLink
-              >
+              ></router-link>
             </li>
           </ul>
         </div>
