@@ -42,7 +42,7 @@ const routes = computed(() => {
       </div>
     </nav>
   </header>
-  <div class="container">
+  <div class="container pt-2">
     <RouterView />
   </div>
 </template>

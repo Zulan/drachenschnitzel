@@ -56,47 +56,43 @@ const items = computed(() =>
 </script>
 
 <template>
-  <div class="container">
-    <form class="row g-1">
-      <div class="col-6 col-lg-1">
-        <FilterButtonGroup
-          :model-options="availableCategories"
-          v-model="selectedCategories"
-        />
-      </div>
-      <div class="col-6 col-lg-2">
-        <FilterButtonGroup
-          :model-options="availableAttacks"
-          v-model="selectedAttacks"
-        />
-      </div>
-      <div class="col-12 col-lg-4 overflow-auto">
-        <FilterButtonGroup
-          :model-options="availableEquips"
-          v-model="selectedEquips"
-        />
-      </div>
-      <div class="col-12 overflow-auto">
-        <FilterButtonGroup
-          :model-options="availableTraits"
-          v-model="selectedTraits"
-        />
-      </div>
-      <div class="col-12 col-md-6">
-        <input v-model="needle" placeholder="filter by name" />
-      </div>
-      <div class="col-12 col-md-6 text-end">
-        {{ items.length }} weapons found
-      </div>
-    </form>
-    <div class="row">
-      <div
-        class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 g-2"
-        v-for="item in items"
-        :key="item.name"
-      >
-        <img :src="item.image" :alt="item.name" class="w-100 rounded-3" />
-      </div>
+  <form class="row g-1">
+    <div class="col-6 col-lg-1">
+      <FilterButtonGroup
+        :model-options="availableCategories"
+        v-model="selectedCategories"
+      />
+    </div>
+    <div class="col-6 col-lg-2">
+      <FilterButtonGroup
+        :model-options="availableAttacks"
+        v-model="selectedAttacks"
+      />
+    </div>
+    <div class="col-12 col-lg-4 overflow-auto">
+      <FilterButtonGroup
+        :model-options="availableEquips"
+        v-model="selectedEquips"
+      />
+    </div>
+    <div class="col-12 overflow-auto">
+      <FilterButtonGroup
+        :model-options="availableTraits"
+        v-model="selectedTraits"
+      />
+    </div>
+    <div class="col-12 col-md-6">
+      <input v-model="needle" placeholder="filter by name" />
+    </div>
+    <div class="col-12 col-md-6 text-end">{{ items.length }} weapons found</div>
+  </form>
+  <div class="row g-2">
+    <div
+      class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+      v-for="item in items"
+      :key="item.name"
+    >
+      <img :src="item.image" :alt="item.name" class="w-100 rounded-3" />
     </div>
   </div>
 </template>
