@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, toRefs } from "vue";
 import { v4 as uuidv4 } from "uuid";
+import { removeWhitespace } from "@/utils/string";
 
 const props = defineProps<{
   modelOptions: string[];
@@ -32,7 +33,6 @@ const id = uuidv4();
       :disabled="modelValue.length === 0"
       :checked="modelValue.length === 0"
       :id="`${id}-all`"
-      autocomplete="off"
     />
     <label class="btn btn-outline-primary btn-sm" :for="`${id}-all`">All</label>
     <template v-for="value in modelOptions" :key="value">
@@ -41,12 +41,13 @@ const id = uuidv4();
         class="btn-check"
         v-model="localValue"
         :value="value"
-        :id="`${id}-${value}`"
-        autocomplete="off"
+        :id="`${id}-${removeWhitespace(value)}`"
       />
-      <label class="btn btn-outline-primary btn-sm" :for="`${id}-${value}`">{{
-        value
-      }}</label>
+      <label
+        class="btn btn-outline-primary btn-sm"
+        :for="`${id}-${removeWhitespace(value)}`"
+        >{{ value }}</label
+      >
     </template>
   </div>
 </template>
