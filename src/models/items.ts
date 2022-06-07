@@ -1,4 +1,4 @@
-import type { CombatDie } from "@/models/dice";
+import type { CombatDie, Die } from "@/models/dice";
 import { assetUrl } from "@/utils/assets";
 import { enumFromStringValue } from "@/utils/enum";
 
@@ -75,6 +75,22 @@ export interface JsonShopItem {
   xws: string;
 }
 
+export function parseDice<D extends Die>(
+  colors: string,
+  diceByColor: Map<string, D>
+): D[] {
+  function parseDie(color: string): D {
+    color = color.toLowerCase();
+    const die = diceByColor.get(color);
+    if (die === undefined) {
+      throw Error(`invalid die color ${color}`);
+    }
+    return die;
+  }
+
+  return colors.split(" ").map(parseDie);
+}
+
 function parseShopItem(json: JsonShopItem): Item {
   return {
     name: json.name,
@@ -86,14 +102,17 @@ function parseShopItem(json: JsonShopItem): Item {
   };
 }
 
-export function parseShopWeapon(json: JsonShopItem): Weapon {
+export function parseShopWeapon(
+  json: JsonShopItem,
+  combatDice: Map<string, CombatDie>
+): Weapon {
   return {
     ...parseShopItem(json),
     traits: json.traits
       .split(", ")
       .map((value: string) => enumFromStringValue(WeaponTrait, value)),
     attack: enumFromStringValue(Attack, json.attack),
-    dice: [],
+    dice: parseDice(json.dice, combatDice),
   };
 }
 

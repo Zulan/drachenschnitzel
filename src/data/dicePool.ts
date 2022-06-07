@@ -27,3 +27,11 @@ export const dicePool = {
     new DefenseDie("black", [0, 2, 2, 2, 3, 4]),
   ],
 };
+
+export const combatDiceByColor = new Map<string, CombatDie>([
+  [dicePool.attack.color, dicePool.attack],
+  ...dicePool.power.map<[string, CombatDie]>((die: CombatDie) => [
+    die.color,
+    die,
+  ]),
+]);
