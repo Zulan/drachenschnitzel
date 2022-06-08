@@ -6892,7 +6892,7 @@ const dicePool = {
     new DefenseDie("black", [0, 2, 2, 2, 3, 4])
   ]
 };
-new Map([
+const combatDiceByColor = new Map([
   [dicePool.attack.color, dicePool.attack],
   ...dicePool.power.map((die) => [
     die.color,
@@ -9517,7 +9517,7 @@ var jsonShopItems = [
     xws: "sunlightward"
   }
 ];
-const weapons = jsonShopItems.filter(isWeapon).map(parseShopWeapon);
+const weapons = jsonShopItems.filter(isWeapon).map((weapon) => parseShopWeapon(weapon, combatDiceByColor));
 var getRandomValues;
 var rnds8 = new Uint8Array(16);
 function rng() {
