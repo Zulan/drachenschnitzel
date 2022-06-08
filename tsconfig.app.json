@@ -4,7 +4,8 @@
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "lib": ["es2017"],
-    "composite": true,
+    /* composite(incremental) doesn't work with vue-tsc */
+    /* "composite": true, */
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
