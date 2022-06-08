@@ -1,4 +1,9 @@
-# .
+# Drachenschnitzel
+
+Data under src/assets/d2e and src/data/d2e is from
+https://github.com/any2cards/d2e
+
+# Initial template
 
 This template should help get you started developing with Vue 3 in Vite.
 
