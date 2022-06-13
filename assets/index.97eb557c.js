@@ -10343,7 +10343,7 @@ const router = createRouter({
       component: _sfc_main$3
     },
     {
-      path: "/weapons/",
+      path: "/weapons",
       name: "\u{1F5E1} Weapons",
       component: _sfc_main
     }
