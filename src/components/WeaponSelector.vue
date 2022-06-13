@@ -45,6 +45,20 @@ const matchAttacks = makeListFilter(
   (thing: Weapon, selected: string) => thing.attack === selected
 );
 
+function onlyUnique<T>(value: T, index: number, self: T[]): boolean {
+  return self.indexOf(value) === index;
+}
+
+const availableExpansions = weapons
+  .map((weapon) => weapon.expansion)
+  .filter(onlyUnique)
+  .sort();
+const selectedExpansions = ref([]);
+const matchExpansions = makeListFilter(
+  selectedExpansions,
+  (thing: Weapon, selected: string) => thing.expansion === selected
+);
+
 const items = computed(() =>
   weapons
     .filter(matchName)
@@ -52,6 +66,7 @@ const items = computed(() =>
     .filter(matchAttacks)
     .filter(matchTraits)
     .filter(matchEquips)
+    .filter(matchExpansions)
 );
 </script>
 
@@ -81,6 +96,12 @@ const items = computed(() =>
           <FilterButtonGroup
             :model-options="availableTraits"
             v-model="selectedTraits"
+          />
+        </div>
+        <div class="col-12 overflow-auto">
+          <FilterButtonGroup
+            :model-options="availableExpansions"
+            v-model="selectedExpansions"
           />
         </div>
         <div class="col-12 col-md-6">
