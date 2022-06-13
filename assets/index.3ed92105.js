@@ -2026,25 +2026,25 @@ function createWatcher(raw, ctx, publicThis, key) {
     ;
 }
 function resolveMergedOptions(instance) {
-  const base = instance.type;
-  const { mixins, extends: extendsOptions } = base;
+  const base2 = instance.type;
+  const { mixins, extends: extendsOptions } = base2;
   const { mixins: globalMixins, optionsCache: cache, config: { optionMergeStrategies } } = instance.appContext;
-  const cached = cache.get(base);
+  const cached = cache.get(base2);
   let resolved;
   if (cached) {
     resolved = cached;
   } else if (!globalMixins.length && !mixins && !extendsOptions) {
     {
-      resolved = base;
+      resolved = base2;
     }
   } else {
     resolved = {};
     if (globalMixins.length) {
       globalMixins.forEach((m) => mergeOptions$1(resolved, m, optionMergeStrategies, true));
     }
-    mergeOptions$1(resolved, base, optionMergeStrategies);
+    mergeOptions$1(resolved, base2, optionMergeStrategies);
   }
-  cache.set(base, resolved);
+  cache.set(base2, resolved);
   return resolved;
 }
 function mergeOptions$1(to, from, strats, asMixin = false) {
@@ -5009,10 +5009,10 @@ function stringifyURL(stringifyQuery2, location2) {
   const query = location2.query ? stringifyQuery2(location2.query) : "";
   return location2.path + (query && "?") + query + (location2.hash || "");
 }
-function stripBase(pathname, base) {
-  if (!base || !pathname.toLowerCase().startsWith(base.toLowerCase()))
+function stripBase(pathname, base2) {
+  if (!base2 || !pathname.toLowerCase().startsWith(base2.toLowerCase()))
     return pathname;
-  return pathname.slice(base.length) || "/";
+  return pathname.slice(base2.length) || "/";
 }
 function isSameRouteLocation(stringifyQuery2, a, b) {
   const aLastIndex = a.matched.length - 1;
@@ -5069,23 +5069,23 @@ var NavigationDirection;
   NavigationDirection2["forward"] = "forward";
   NavigationDirection2["unknown"] = "";
 })(NavigationDirection || (NavigationDirection = {}));
-function normalizeBase(base) {
-  if (!base) {
+function normalizeBase(base2) {
+  if (!base2) {
     if (isBrowser) {
       const baseEl = document.querySelector("base");
-      base = baseEl && baseEl.getAttribute("href") || "/";
-      base = base.replace(/^\w+:\/\/[^\/]+/, "");
+      base2 = baseEl && baseEl.getAttribute("href") || "/";
+      base2 = base2.replace(/^\w+:\/\/[^\/]+/, "");
     } else {
-      base = "/";
+      base2 = "/";
     }
   }
-  if (base[0] !== "/" && base[0] !== "#")
-    base = "/" + base;
-  return removeTrailingSlash(base);
+  if (base2[0] !== "/" && base2[0] !== "#")
+    base2 = "/" + base2;
+  return removeTrailingSlash(base2);
 }
 const BEFORE_HASH_RE = /^[^#]+#/;
-function createHref(base, location2) {
-  return base.replace(BEFORE_HASH_RE, "#") + location2;
+function createHref(base2, location2) {
+  return base2.replace(BEFORE_HASH_RE, "#") + location2;
 }
 function getElementPosition(el, offset2) {
   const docRect = document.documentElement.getBoundingClientRect();
@@ -5133,25 +5133,25 @@ function getSavedScrollPosition(key) {
   return scroll;
 }
 let createBaseLocation = () => location.protocol + "//" + location.host;
-function createCurrentLocation(base, location2) {
+function createCurrentLocation(base2, location2) {
   const { pathname, search, hash: hash2 } = location2;
-  const hashPos = base.indexOf("#");
+  const hashPos = base2.indexOf("#");
   if (hashPos > -1) {
-    let slicePos = hash2.includes(base.slice(hashPos)) ? base.slice(hashPos).length : 1;
+    let slicePos = hash2.includes(base2.slice(hashPos)) ? base2.slice(hashPos).length : 1;
     let pathFromHash = hash2.slice(slicePos);
     if (pathFromHash[0] !== "/")
       pathFromHash = "/" + pathFromHash;
     return stripBase(pathFromHash, "");
   }
-  const path = stripBase(pathname, base);
+  const path = stripBase(pathname, base2);
   return path + search + hash2;
 }
-function useHistoryListeners(base, historyState, currentLocation, replace3) {
+function useHistoryListeners(base2, historyState, currentLocation, replace3) {
   let listeners = [];
   let teardowns = [];
   let pauseState = null;
   const popStateHandler = ({ state }) => {
-    const to = createCurrentLocation(base, location);
+    const to = createCurrentLocation(base2, location);
     const from = currentLocation.value;
     const fromState = historyState.value;
     let delta = 0;
@@ -5218,10 +5218,10 @@ function buildState(back, current, forward, replaced = false, computeScroll = fa
     scroll: computeScroll ? computeScrollPosition() : null
   };
 }
-function useHistoryStateNavigation(base) {
+function useHistoryStateNavigation(base2) {
   const { history: history2, location: location2 } = window;
   const currentLocation = {
-    value: createCurrentLocation(base, location2)
+    value: createCurrentLocation(base2, location2)
   };
   const historyState = { value: history2.state };
   if (!historyState.value) {
@@ -5235,8 +5235,8 @@ function useHistoryStateNavigation(base) {
     }, true);
   }
   function changeLocation(to, state, replace4) {
-    const hashIndex = base.indexOf("#");
-    const url = hashIndex > -1 ? (location2.host && document.querySelector("base") ? base : base.slice(hashIndex)) + to : createBaseLocation() + base + to;
+    const hashIndex = base2.indexOf("#");
+    const url = hashIndex > -1 ? (location2.host && document.querySelector("base") ? base2 : base2.slice(hashIndex)) + to : createBaseLocation() + base2 + to;
     try {
       history2[replace4 ? "replaceState" : "pushState"](state, "", url);
       historyState.value = state;
@@ -5269,10 +5269,10 @@ function useHistoryStateNavigation(base) {
     replace: replace3
   };
 }
-function createWebHistory(base) {
-  base = normalizeBase(base);
-  const historyNavigation = useHistoryStateNavigation(base);
-  const historyListeners = useHistoryListeners(base, historyNavigation.state, historyNavigation.location, historyNavigation.replace);
+function createWebHistory(base2) {
+  base2 = normalizeBase(base2);
+  const historyNavigation = useHistoryStateNavigation(base2);
+  const historyListeners = useHistoryListeners(base2, historyNavigation.state, historyNavigation.location, historyNavigation.replace);
   function go(delta, triggerListeners = true) {
     if (!triggerListeners)
       historyListeners.pauseListeners();
@@ -5280,9 +5280,9 @@ function createWebHistory(base) {
   }
   const routerHistory = assign({
     location: "",
-    base,
+    base: base2,
     go,
-    createHref: createHref.bind(null, base)
+    createHref: createHref.bind(null, base2)
   }, historyNavigation, historyListeners);
   Object.defineProperty(routerHistory, "location", {
     enumerable: true,
@@ -6619,157 +6619,758 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var __glob_0_0 = "body {\n  transition: color 0.5s, background-color 0.5s;\n  line-height: 1.6;\n  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,\n    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;\n  font-size: 15px;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n/*\n move content so that it doesn't jump when scrollbar appears\n https://stackoverflow.com/a/35437970/620382\n*/\n@media screen and (min-width: 960px) {\n  html {\n    margin-left: calc(100vw - 100%);\n    margin-right: 0;\n  }\n}";
-var __glob_0_1 = "/drachenschnitzel/assets/black-top.efa8b0bb.png";
-var __glob_0_2 = "/drachenschnitzel/assets/blue-top.31b0db19.png";
-var __glob_0_3 = "data:image/png;base64,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";
-var __glob_0_4 = "data:image/png;base64,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";
-var __glob_0_5 = "/drachenschnitzel/assets/green-top.eaecad1d.png";
-var __glob_0_6 = "/drachenschnitzel/assets/red-top.53617625.png";
-var __glob_0_7 = "/drachenschnitzel/assets/yellow-top.f345839e.png";
-var __glob_0_8 = "/drachenschnitzel/assets/archaic-scroll-sn.2c2e1d41.png";
-var __glob_0_9 = "/drachenschnitzel/assets/bag-of-tricks-sotp.b0609529.png";
-var __glob_0_10 = "/drachenschnitzel/assets/barons-cloak-sn.51d271a4.png";
-var __glob_0_11 = "/drachenschnitzel/assets/battle-tome-mb.819ac44e.png";
-var __glob_0_12 = "/drachenschnitzel/assets/bearded-axe-lr.71bff0dc.png";
-var __glob_0_13 = "/drachenschnitzel/assets/belt-of-alchemy-tf.8467f2c0.png";
-var __glob_0_14 = "/drachenschnitzel/assets/belt-of-waterwalking-tf.b7cd53a9.png";
-var __glob_0_15 = "/drachenschnitzel/assets/blessed-shield-mr.955a1a13.png";
-var __glob_0_16 = "/drachenschnitzel/assets/bloodscript-ring-mb.e8ad3a47.png";
-var __glob_0_17 = "/drachenschnitzel/assets/bloody-dagger-sn.fc2bd241.png";
-var __glob_0_18 = "/drachenschnitzel/assets/bone-blade-sn.2ce790f2.png";
-var __glob_0_19 = "/drachenschnitzel/assets/boots-of-iron-sn.ccb3d24f.png";
-var __glob_0_20 = "/drachenschnitzel/assets/bow-of-bone-lr.23543e7d.png";
-var __glob_0_21 = "/drachenschnitzel/assets/chainmail-bg.ad509624.png";
-var __glob_0_22 = "/drachenschnitzel/assets/city-guards-bow-sn.3f8cd58c.png";
-var __glob_0_23 = "/drachenschnitzel/assets/cloak-of-mists-sn.a6d8d2e5.png";
-var __glob_0_24 = "/drachenschnitzel/assets/corpsebug-brooch-mb.291ecdd9.png";
-var __glob_0_25 = "/drachenschnitzel/assets/crossbow-bg.21a10dec.png";
-var __glob_0_26 = "/drachenschnitzel/assets/crystal-of-mirages-sotp.022b193a.png";
-var __glob_0_27 = "/drachenschnitzel/assets/deflecting-shield-tf.5ebb6d1e.png";
-var __glob_0_28 = "/drachenschnitzel/assets/dire-flail-tf.03261afd.png";
-var __glob_0_29 = "/drachenschnitzel/assets/elm-greatbow-bg.259058e8.png";
-var __glob_0_30 = "/drachenschnitzel/assets/elven-boots-lr.509f024b.png";
-var __glob_0_31 = "/drachenschnitzel/assets/flash-powder-lw.f9d4ce2e.png";
-var __glob_0_32 = "/drachenschnitzel/assets/golden-orb-mace-sotp.266d97ed.png";
-var __glob_0_33 = "/drachenschnitzel/assets/guardian-axe-tf.dbc903fd.png";
-var __glob_0_34 = "/drachenschnitzel/assets/halberd-lw.73895fd2.png";
-var __glob_0_35 = "/drachenschnitzel/assets/handbow-lw.7acf4191.png";
-var __glob_0_36 = "/drachenschnitzel/assets/heavy-cloak-bg.d69b52a7.png";
-var __glob_0_37 = "/drachenschnitzel/assets/immolation-bg.9b459bd5.png";
-var __glob_0_38 = "/drachenschnitzel/assets/incendiary-arrows-sn.9c7e4fd9.png";
-var __glob_0_39 = "/drachenschnitzel/assets/iron-battleaxe-bg.63228f9e.png";
-var __glob_0_40 = "/drachenschnitzel/assets/iron-shield-bg.aa54a6de.png";
-var __glob_0_41 = "/drachenschnitzel/assets/iron-spear-bg.c18d730d.png";
-var __glob_0_42 = "/drachenschnitzel/assets/ironbound-rune-sn.2b00450a.png";
-var __glob_0_43 = "/drachenschnitzel/assets/jeweled-mace-sn.04d9c482.png";
-var __glob_0_44 = "/drachenschnitzel/assets/jinns-lamp-lr.abfdf88a.png";
-var __glob_0_45 = "/drachenschnitzel/assets/leather-armor-bg.269f34c1.png";
-var __glob_0_46 = "/drachenschnitzel/assets/lifedrain-scepter-tf.b38e1c6c.png";
-var __glob_0_47 = "/drachenschnitzel/assets/light-hammer-bg.e74b891b.png";
-var __glob_0_48 = "/drachenschnitzel/assets/lucky-charm-bg.2361cdab.png";
-var __glob_0_49 = "/drachenschnitzel/assets/mace-of-aver-lr.8dc62eaf.png";
-var __glob_0_50 = "/drachenschnitzel/assets/magic-staff-bg.7842831a.png";
-var __glob_0_51 = "/drachenschnitzel/assets/magma-blast-lw.444b7fb6.png";
-var __glob_0_52 = "/drachenschnitzel/assets/mana-weave-bg.8e32f207.png";
-var __glob_0_53 = "/drachenschnitzel/assets/mapstone-tf.e8ef3754.png";
-var __glob_0_54 = "/drachenschnitzel/assets/marsh-cloak-mb.fee7d552.png";
-var __glob_0_55 = "/drachenschnitzel/assets/mistbane-mb.ed10d055.png";
-var __glob_0_56 = "/drachenschnitzel/assets/phoenix-pendant-sn.b4853cf4.png";
-var __glob_0_57 = "/drachenschnitzel/assets/piercing-arrows-sotp.04866578.png";
-var __glob_0_58 = "/drachenschnitzel/assets/poisoned-blowgun-lr.d2c63354.png";
-var __glob_0_59 = "/drachenschnitzel/assets/ring-of-power-bg.6b828f74.png";
-var __glob_0_60 = "/drachenschnitzel/assets/rune-plate-lr.ed5ac275.png";
-var __glob_0_61 = "/drachenschnitzel/assets/scar-pit-greaves-sotp.f176bda1.png";
-var __glob_0_62 = "/drachenschnitzel/assets/scorpion-helm-bg.af60f3e5.png";
-var __glob_0_63 = "/drachenschnitzel/assets/serpent-dagger-lr.7ea1d488.png";
-var __glob_0_64 = "/drachenschnitzel/assets/shadow-bracers-mr.60f0b296.png";
-var __glob_0_65 = "/drachenschnitzel/assets/shield-of-light-lr.6c1acaaf.png";
-var __glob_0_66 = "/drachenschnitzel/assets/shop-items-act1-back.5010252f.png";
-var __glob_0_67 = "/drachenschnitzel/assets/sling-bg.43c78ae7.png";
-var __glob_0_68 = "/drachenschnitzel/assets/soulbound-sword-mb.24da41da.png";
-var __glob_0_69 = "/drachenschnitzel/assets/soulstone-mb.6ddbc232.png";
-var __glob_0_70 = "/drachenschnitzel/assets/staff-of-greyhaven-mr.258605e7.png";
-var __glob_0_71 = "/drachenschnitzel/assets/steel-broadsword-bg.697d4c86.png";
-var __glob_0_72 = "/drachenschnitzel/assets/sun-blessed-rune-sotp.83591539.png";
-var __glob_0_73 = "/drachenschnitzel/assets/sunburst-bg.3a3f3fbd.png";
-var __glob_0_74 = "/drachenschnitzel/assets/sunspear-sotp.c64ba84c.png";
-var __glob_0_75 = "/drachenschnitzel/assets/teleportation-rune-lr.ba49ab60.png";
-var __glob_0_76 = "/drachenschnitzel/assets/thiefs-vest-lr.61c5aae6.png";
-var __glob_0_77 = "/drachenschnitzel/assets/trident-tf.42ea7cd6.png";
-var __glob_0_78 = "/drachenschnitzel/assets/undying-skull-mr.0b0b6017.png";
-var __glob_0_79 = "/drachenschnitzel/assets/viziers-garment-sotp.071b319d.png";
-var __glob_0_80 = "/drachenschnitzel/assets/white-wolf-cloak-mr.f836c1ae.png";
-var __glob_0_81 = "/drachenschnitzel/assets/witch-hazel-bow-mb.70f1c48e.png";
-var __glob_0_82 = "/drachenschnitzel/assets/belt-of-strength-tf.3a4215ac.png";
-var __glob_0_83 = "/drachenschnitzel/assets/black-iron-helm-lr.9b76f3ed.png";
-var __glob_0_84 = "/drachenschnitzel/assets/blasting-rune-tf.b9857bd2.png";
-var __glob_0_85 = "/drachenschnitzel/assets/blessed-armor-cr.e44388e6.png";
-var __glob_0_86 = "/drachenschnitzel/assets/bloodthirsty-bracers-cr.430819ec.png";
-var __glob_0_87 = "/drachenschnitzel/assets/bone-wand-cr.05aaaed1.png";
-var __glob_0_88 = "/drachenschnitzel/assets/boomerang-tf.76ab85e0.png";
-var __glob_0_89 = "/drachenschnitzel/assets/bow-of-the-eclipse-lr.a10a07af.png";
-var __glob_0_90 = "/drachenschnitzel/assets/bow-of-the-sky-lw.ad41b8c7.png";
-var __glob_0_91 = "/drachenschnitzel/assets/chain-sickle-sotp.ebad8dfd.png";
-var __glob_0_92 = "/drachenschnitzel/assets/cloak-of-deception-lr.d94085f5.png";
-var __glob_0_93 = "/drachenschnitzel/assets/demonhide-leather-bg.d91df0c1.png";
-var __glob_0_94 = "/drachenschnitzel/assets/dragontooth-hammer-bg.08ff50e7.png";
-var __glob_0_95 = "/drachenschnitzel/assets/dwarven-firebomb-bg.d5591649.png";
-var __glob_0_96 = "/drachenschnitzel/assets/elven-cloak-bg.f18f9d79.png";
-var __glob_0_97 = "/drachenschnitzel/assets/eye-of-the-night-sotp.09de7789.png";
-var __glob_0_98 = "/drachenschnitzel/assets/fists-of-iron-cr.c234c2f4.png";
-var __glob_0_99 = "/drachenschnitzel/assets/glaive-tf.7817d21f.png";
-var __glob_0_100 = "/drachenschnitzel/assets/golden-mask-sn.1ddab5b5.png";
-var __glob_0_101 = "/drachenschnitzel/assets/grinding-axe-bg.a11562ae.png";
-var __glob_0_102 = "/drachenschnitzel/assets/hammer-of-doom-mr.4cfc4a0d.png";
-var __glob_0_103 = "/drachenschnitzel/assets/heart-seeker-mr.6e7f5f5b.png";
-var __glob_0_104 = "/drachenschnitzel/assets/heavy-steel-shield-bg.654d6adb.png";
-var __glob_0_105 = "/drachenschnitzel/assets/horned-shield-cr.b06a9eec.png";
-var __glob_0_106 = "/drachenschnitzel/assets/ibis-bow-sotp.4b5201db.png";
-var __glob_0_107 = "/drachenschnitzel/assets/ice-storm-bg.8bcd103a.png";
-var __glob_0_108 = "/drachenschnitzel/assets/inscribed-robes-lw.02f56b4a.png";
-var __glob_0_109 = "/drachenschnitzel/assets/iron-bound-ring-bg.1c5ebb80.png";
-var __glob_0_110 = "/drachenschnitzel/assets/iron-claws-lr.42bc857b.png";
-var __glob_0_111 = "/drachenschnitzel/assets/ironbound-glaive-sn.fd68143d.png";
-var __glob_0_112 = "/drachenschnitzel/assets/ironbound-shield-sn.03c7c2c9.png";
-var __glob_0_113 = "/drachenschnitzel/assets/latari-longbow-bg.ca4e4420.png";
-var __glob_0_114 = "/drachenschnitzel/assets/lightning-javelin-cr.6e859533.png";
-var __glob_0_115 = "/drachenschnitzel/assets/lightning-strike-bg.0b116cad.png";
-var __glob_0_116 = "/drachenschnitzel/assets/lost-caliphs-crook-sotp.33b08ec7.png";
-var __glob_0_117 = "/drachenschnitzel/assets/mace-of-kellos-bg.8f326ef0.png";
-var __glob_0_118 = "/drachenschnitzel/assets/mask-of-horrors-cr.c05b2398.png";
-var __glob_0_119 = "/drachenschnitzel/assets/merciful-boots-lw.c4e1cdf8.png";
-var __glob_0_120 = "/drachenschnitzel/assets/nerekhall-plate-sn.c32afe3e.png";
-var __glob_0_121 = "/drachenschnitzel/assets/obsidian-greataxe-lr.7a26721c.png";
-var __glob_0_122 = "/drachenschnitzel/assets/obsidian-scalemail-lr.4aa0cb79.png";
-var __glob_0_123 = "/drachenschnitzel/assets/platemail-bg.3e5bb492.png";
-var __glob_0_124 = "/drachenschnitzel/assets/rage-blade-lr.7d2743d8.png";
-var __glob_0_125 = "/drachenschnitzel/assets/rat-tooth-dagger-sn.792bb96d.png";
-var __glob_0_126 = "/drachenschnitzel/assets/repeating-crossbow-sn.0da20a86.png";
-var __glob_0_127 = "/drachenschnitzel/assets/rune-of-blades-sn.3bee2377.png";
-var __glob_0_128 = "/drachenschnitzel/assets/rune-of-fate-mr.89f9d346.png";
-var __glob_0_129 = "/drachenschnitzel/assets/rune-of-misery-lr.4a152d34.png";
-var __glob_0_130 = "/drachenschnitzel/assets/rune-touched-leather-cr.5fa68ed9.png";
-var __glob_0_131 = "/drachenschnitzel/assets/sash-of-the-slayer-cr.84a0407c.png";
-var __glob_0_132 = "/drachenschnitzel/assets/scalemail-lw.208a2e27.png";
-var __glob_0_133 = "/drachenschnitzel/assets/scarab-amulet-sotp.fc2b2f33.png";
-var __glob_0_134 = "/drachenschnitzel/assets/shadow-tome-sn.ddf163f1.png";
-var __glob_0_135 = "/drachenschnitzel/assets/shimmering-shield-sotp.5e3bfe61.png";
-var __glob_0_136 = "/drachenschnitzel/assets/shop-items-act2-back.f0e4dab2.png";
-var __glob_0_137 = "/drachenschnitzel/assets/shroud-of-dusk-lr.b44156da.png";
-var __glob_0_138 = "/drachenschnitzel/assets/staff-of-kellos-lw.f842d2a6.png";
-var __glob_0_139 = "/drachenschnitzel/assets/staff-of-the-wild-lr.5be473ff.png";
-var __glob_0_140 = "/drachenschnitzel/assets/star-of-atar-sotp.f960bb9c.png";
-var __glob_0_141 = "/drachenschnitzel/assets/star-of-kellos-sn.f9870a90.png";
-var __glob_0_142 = "/drachenschnitzel/assets/starmetal-khopesh-sotp.6cf72bc5.png";
-var __glob_0_143 = "/drachenschnitzel/assets/steel-greatsword-bg.b1f871ed.png";
-var __glob_0_144 = "/drachenschnitzel/assets/stone-armor-tf.43aa22f7.png";
-var __glob_0_145 = "/drachenschnitzel/assets/sunlight-ward-sotp.60343091.png";
-var __glob_0_146 = "/drachenschnitzel/assets/tival-crystal-bg.19ecfe09.png";
-var __glob_0_147 = "/drachenschnitzel/assets/vestments-of-kellos-sn.51b66153.png";
-var __glob_0_148 = "/drachenschnitzel/assets/winged-blade-mr.15defe3f.png";
+var base = "body {\n  transition: color 0.5s, background-color 0.5s;\n  line-height: 1.6;\n  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,\n    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;\n  font-size: 15px;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n/*\n move content so that it doesn't jump when scrollbar appears\n https://stackoverflow.com/a/35437970/620382\n*/\n@media screen and (min-width: 960px) {\n  html {\n    margin-left: calc(100vw - 100%);\n    margin-right: 0;\n  }\n}";
+var __glob_0_0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": base
+}, Symbol.toStringTag, { value: "Module" }));
+var blackTop = "/drachenschnitzel/assets/black-top.efa8b0bb.png";
+var __glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": blackTop
+}, Symbol.toStringTag, { value: "Module" }));
+var blueTop = "/drachenschnitzel/assets/blue-top.31b0db19.png";
+var __glob_0_2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": blueTop
+}, Symbol.toStringTag, { value: "Module" }));
+var brownTop = "data:image/png;base64,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";
+var __glob_0_3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": brownTop
+}, Symbol.toStringTag, { value: "Module" }));
+var grayTop = "data:image/png;base64,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";
+var __glob_0_4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": grayTop
+}, Symbol.toStringTag, { value: "Module" }));
+var greenTop = "/drachenschnitzel/assets/green-top.eaecad1d.png";
+var __glob_0_5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": greenTop
+}, Symbol.toStringTag, { value: "Module" }));
+var redTop = "/drachenschnitzel/assets/red-top.53617625.png";
+var __glob_0_6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": redTop
+}, Symbol.toStringTag, { value: "Module" }));
+var yellowTop = "/drachenschnitzel/assets/yellow-top.f345839e.png";
+var __glob_0_7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": yellowTop
+}, Symbol.toStringTag, { value: "Module" }));
+var archaicScrollSn = "/drachenschnitzel/assets/archaic-scroll-sn.2c2e1d41.png";
+var __glob_0_8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": archaicScrollSn
+}, Symbol.toStringTag, { value: "Module" }));
+var bagOfTricksSotp = "/drachenschnitzel/assets/bag-of-tricks-sotp.b0609529.png";
+var __glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bagOfTricksSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var baronsCloakSn = "/drachenschnitzel/assets/barons-cloak-sn.51d271a4.png";
+var __glob_0_10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": baronsCloakSn
+}, Symbol.toStringTag, { value: "Module" }));
+var battleTomeMb = "/drachenschnitzel/assets/battle-tome-mb.819ac44e.png";
+var __glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": battleTomeMb
+}, Symbol.toStringTag, { value: "Module" }));
+var beardedAxeLr = "/drachenschnitzel/assets/bearded-axe-lr.71bff0dc.png";
+var __glob_0_12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beardedAxeLr
+}, Symbol.toStringTag, { value: "Module" }));
+var beltOfAlchemyTf = "/drachenschnitzel/assets/belt-of-alchemy-tf.8467f2c0.png";
+var __glob_0_13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beltOfAlchemyTf
+}, Symbol.toStringTag, { value: "Module" }));
+var beltOfWaterwalkingTf = "/drachenschnitzel/assets/belt-of-waterwalking-tf.b7cd53a9.png";
+var __glob_0_14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beltOfWaterwalkingTf
+}, Symbol.toStringTag, { value: "Module" }));
+var blessedShieldMr = "/drachenschnitzel/assets/blessed-shield-mr.955a1a13.png";
+var __glob_0_15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": blessedShieldMr
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodscriptRingMb = "/drachenschnitzel/assets/bloodscript-ring-mb.e8ad3a47.png";
+var __glob_0_16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodscriptRingMb
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodyDaggerSn = "/drachenschnitzel/assets/bloody-dagger-sn.fc2bd241.png";
+var __glob_0_17 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodyDaggerSn
+}, Symbol.toStringTag, { value: "Module" }));
+var boneBladeSn = "/drachenschnitzel/assets/bone-blade-sn.2ce790f2.png";
+var __glob_0_18 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": boneBladeSn
+}, Symbol.toStringTag, { value: "Module" }));
+var bootsOfIronSn = "/drachenschnitzel/assets/boots-of-iron-sn.ccb3d24f.png";
+var __glob_0_19 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bootsOfIronSn
+}, Symbol.toStringTag, { value: "Module" }));
+var bowOfBoneLr = "/drachenschnitzel/assets/bow-of-bone-lr.23543e7d.png";
+var __glob_0_20 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bowOfBoneLr
+}, Symbol.toStringTag, { value: "Module" }));
+var chainmailBg = "/drachenschnitzel/assets/chainmail-bg.ad509624.png";
+var __glob_0_21 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chainmailBg
+}, Symbol.toStringTag, { value: "Module" }));
+var cityGuardsBowSn = "/drachenschnitzel/assets/city-guards-bow-sn.3f8cd58c.png";
+var __glob_0_22 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cityGuardsBowSn
+}, Symbol.toStringTag, { value: "Module" }));
+var cloakOfMistsSn = "/drachenschnitzel/assets/cloak-of-mists-sn.a6d8d2e5.png";
+var __glob_0_23 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cloakOfMistsSn
+}, Symbol.toStringTag, { value: "Module" }));
+var corpsebugBroochMb = "/drachenschnitzel/assets/corpsebug-brooch-mb.291ecdd9.png";
+var __glob_0_24 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": corpsebugBroochMb
+}, Symbol.toStringTag, { value: "Module" }));
+var crossbowBg = "/drachenschnitzel/assets/crossbow-bg.21a10dec.png";
+var __glob_0_25 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": crossbowBg
+}, Symbol.toStringTag, { value: "Module" }));
+var crystalOfMiragesSotp = "/drachenschnitzel/assets/crystal-of-mirages-sotp.022b193a.png";
+var __glob_0_26 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": crystalOfMiragesSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var deflectingShieldTf = "/drachenschnitzel/assets/deflecting-shield-tf.5ebb6d1e.png";
+var __glob_0_27 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": deflectingShieldTf
+}, Symbol.toStringTag, { value: "Module" }));
+var direFlailTf = "/drachenschnitzel/assets/dire-flail-tf.03261afd.png";
+var __glob_0_28 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": direFlailTf
+}, Symbol.toStringTag, { value: "Module" }));
+var elmGreatbowBg = "/drachenschnitzel/assets/elm-greatbow-bg.259058e8.png";
+var __glob_0_29 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": elmGreatbowBg
+}, Symbol.toStringTag, { value: "Module" }));
+var elvenBootsLr = "/drachenschnitzel/assets/elven-boots-lr.509f024b.png";
+var __glob_0_30 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": elvenBootsLr
+}, Symbol.toStringTag, { value: "Module" }));
+var flashPowderLw = "/drachenschnitzel/assets/flash-powder-lw.f9d4ce2e.png";
+var __glob_0_31 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": flashPowderLw
+}, Symbol.toStringTag, { value: "Module" }));
+var goldenOrbMaceSotp = "/drachenschnitzel/assets/golden-orb-mace-sotp.266d97ed.png";
+var __glob_0_32 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goldenOrbMaceSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var guardianAxeTf = "/drachenschnitzel/assets/guardian-axe-tf.dbc903fd.png";
+var __glob_0_33 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": guardianAxeTf
+}, Symbol.toStringTag, { value: "Module" }));
+var halberdLw = "/drachenschnitzel/assets/halberd-lw.73895fd2.png";
+var __glob_0_34 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": halberdLw
+}, Symbol.toStringTag, { value: "Module" }));
+var handbowLw = "/drachenschnitzel/assets/handbow-lw.7acf4191.png";
+var __glob_0_35 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": handbowLw
+}, Symbol.toStringTag, { value: "Module" }));
+var heavyCloakBg = "/drachenschnitzel/assets/heavy-cloak-bg.d69b52a7.png";
+var __glob_0_36 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": heavyCloakBg
+}, Symbol.toStringTag, { value: "Module" }));
+var immolationBg = "/drachenschnitzel/assets/immolation-bg.9b459bd5.png";
+var __glob_0_37 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": immolationBg
+}, Symbol.toStringTag, { value: "Module" }));
+var incendiaryArrowsSn = "/drachenschnitzel/assets/incendiary-arrows-sn.9c7e4fd9.png";
+var __glob_0_38 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": incendiaryArrowsSn
+}, Symbol.toStringTag, { value: "Module" }));
+var ironBattleaxeBg = "/drachenschnitzel/assets/iron-battleaxe-bg.63228f9e.png";
+var __glob_0_39 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironBattleaxeBg
+}, Symbol.toStringTag, { value: "Module" }));
+var ironShieldBg = "/drachenschnitzel/assets/iron-shield-bg.aa54a6de.png";
+var __glob_0_40 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironShieldBg
+}, Symbol.toStringTag, { value: "Module" }));
+var ironSpearBg = "/drachenschnitzel/assets/iron-spear-bg.c18d730d.png";
+var __glob_0_41 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironSpearBg
+}, Symbol.toStringTag, { value: "Module" }));
+var ironboundRuneSn = "/drachenschnitzel/assets/ironbound-rune-sn.2b00450a.png";
+var __glob_0_42 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironboundRuneSn
+}, Symbol.toStringTag, { value: "Module" }));
+var jeweledMaceSn = "/drachenschnitzel/assets/jeweled-mace-sn.04d9c482.png";
+var __glob_0_43 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": jeweledMaceSn
+}, Symbol.toStringTag, { value: "Module" }));
+var jinnsLampLr = "/drachenschnitzel/assets/jinns-lamp-lr.abfdf88a.png";
+var __glob_0_44 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": jinnsLampLr
+}, Symbol.toStringTag, { value: "Module" }));
+var leatherArmorBg = "/drachenschnitzel/assets/leather-armor-bg.269f34c1.png";
+var __glob_0_45 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": leatherArmorBg
+}, Symbol.toStringTag, { value: "Module" }));
+var lifedrainScepterTf = "/drachenschnitzel/assets/lifedrain-scepter-tf.b38e1c6c.png";
+var __glob_0_46 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lifedrainScepterTf
+}, Symbol.toStringTag, { value: "Module" }));
+var lightHammerBg = "/drachenschnitzel/assets/light-hammer-bg.e74b891b.png";
+var __glob_0_47 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lightHammerBg
+}, Symbol.toStringTag, { value: "Module" }));
+var luckyCharmBg = "/drachenschnitzel/assets/lucky-charm-bg.2361cdab.png";
+var __glob_0_48 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": luckyCharmBg
+}, Symbol.toStringTag, { value: "Module" }));
+var maceOfAverLr = "/drachenschnitzel/assets/mace-of-aver-lr.8dc62eaf.png";
+var __glob_0_49 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": maceOfAverLr
+}, Symbol.toStringTag, { value: "Module" }));
+var magicStaffBg = "/drachenschnitzel/assets/magic-staff-bg.7842831a.png";
+var __glob_0_50 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": magicStaffBg
+}, Symbol.toStringTag, { value: "Module" }));
+var magmaBlastLw = "/drachenschnitzel/assets/magma-blast-lw.444b7fb6.png";
+var __glob_0_51 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": magmaBlastLw
+}, Symbol.toStringTag, { value: "Module" }));
+var manaWeaveBg = "/drachenschnitzel/assets/mana-weave-bg.8e32f207.png";
+var __glob_0_52 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": manaWeaveBg
+}, Symbol.toStringTag, { value: "Module" }));
+var mapstoneTf = "/drachenschnitzel/assets/mapstone-tf.e8ef3754.png";
+var __glob_0_53 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": mapstoneTf
+}, Symbol.toStringTag, { value: "Module" }));
+var marshCloakMb = "/drachenschnitzel/assets/marsh-cloak-mb.fee7d552.png";
+var __glob_0_54 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": marshCloakMb
+}, Symbol.toStringTag, { value: "Module" }));
+var mistbaneMb = "/drachenschnitzel/assets/mistbane-mb.ed10d055.png";
+var __glob_0_55 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": mistbaneMb
+}, Symbol.toStringTag, { value: "Module" }));
+var phoenixPendantSn = "/drachenschnitzel/assets/phoenix-pendant-sn.b4853cf4.png";
+var __glob_0_56 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": phoenixPendantSn
+}, Symbol.toStringTag, { value: "Module" }));
+var piercingArrowsSotp = "/drachenschnitzel/assets/piercing-arrows-sotp.04866578.png";
+var __glob_0_57 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": piercingArrowsSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var poisonedBlowgunLr = "/drachenschnitzel/assets/poisoned-blowgun-lr.d2c63354.png";
+var __glob_0_58 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": poisonedBlowgunLr
+}, Symbol.toStringTag, { value: "Module" }));
+var ringOfPowerBg = "/drachenschnitzel/assets/ring-of-power-bg.6b828f74.png";
+var __glob_0_59 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ringOfPowerBg
+}, Symbol.toStringTag, { value: "Module" }));
+var runePlateLr = "/drachenschnitzel/assets/rune-plate-lr.ed5ac275.png";
+var __glob_0_60 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": runePlateLr
+}, Symbol.toStringTag, { value: "Module" }));
+var scarPitGreavesSotp = "/drachenschnitzel/assets/scar-pit-greaves-sotp.f176bda1.png";
+var __glob_0_61 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": scarPitGreavesSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var scorpionHelmBg = "/drachenschnitzel/assets/scorpion-helm-bg.af60f3e5.png";
+var __glob_0_62 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": scorpionHelmBg
+}, Symbol.toStringTag, { value: "Module" }));
+var serpentDaggerLr = "/drachenschnitzel/assets/serpent-dagger-lr.7ea1d488.png";
+var __glob_0_63 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": serpentDaggerLr
+}, Symbol.toStringTag, { value: "Module" }));
+var shadowBracersMr = "/drachenschnitzel/assets/shadow-bracers-mr.60f0b296.png";
+var __glob_0_64 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadowBracersMr
+}, Symbol.toStringTag, { value: "Module" }));
+var shieldOfLightLr = "/drachenschnitzel/assets/shield-of-light-lr.6c1acaaf.png";
+var __glob_0_65 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shieldOfLightLr
+}, Symbol.toStringTag, { value: "Module" }));
+var shopItemsAct1Back = "/drachenschnitzel/assets/shop-items-act1-back.5010252f.png";
+var __glob_0_66 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shopItemsAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var slingBg = "/drachenschnitzel/assets/sling-bg.43c78ae7.png";
+var __glob_0_67 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": slingBg
+}, Symbol.toStringTag, { value: "Module" }));
+var soulboundSwordMb = "/drachenschnitzel/assets/soulbound-sword-mb.24da41da.png";
+var __glob_0_68 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": soulboundSwordMb
+}, Symbol.toStringTag, { value: "Module" }));
+var soulstoneMb = "/drachenschnitzel/assets/soulstone-mb.6ddbc232.png";
+var __glob_0_69 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": soulstoneMb
+}, Symbol.toStringTag, { value: "Module" }));
+var staffOfGreyhavenMr = "/drachenschnitzel/assets/staff-of-greyhaven-mr.258605e7.png";
+var __glob_0_70 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": staffOfGreyhavenMr
+}, Symbol.toStringTag, { value: "Module" }));
+var steelBroadswordBg = "/drachenschnitzel/assets/steel-broadsword-bg.697d4c86.png";
+var __glob_0_71 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": steelBroadswordBg
+}, Symbol.toStringTag, { value: "Module" }));
+var sunBlessedRuneSotp = "/drachenschnitzel/assets/sun-blessed-rune-sotp.83591539.png";
+var __glob_0_72 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sunBlessedRuneSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var sunburstBg = "/drachenschnitzel/assets/sunburst-bg.3a3f3fbd.png";
+var __glob_0_73 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sunburstBg
+}, Symbol.toStringTag, { value: "Module" }));
+var sunspearSotp = "/drachenschnitzel/assets/sunspear-sotp.c64ba84c.png";
+var __glob_0_74 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sunspearSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var teleportationRuneLr = "/drachenschnitzel/assets/teleportation-rune-lr.ba49ab60.png";
+var __glob_0_75 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": teleportationRuneLr
+}, Symbol.toStringTag, { value: "Module" }));
+var thiefsVestLr = "/drachenschnitzel/assets/thiefs-vest-lr.61c5aae6.png";
+var __glob_0_76 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": thiefsVestLr
+}, Symbol.toStringTag, { value: "Module" }));
+var tridentTf = "/drachenschnitzel/assets/trident-tf.42ea7cd6.png";
+var __glob_0_77 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": tridentTf
+}, Symbol.toStringTag, { value: "Module" }));
+var undyingSkullMr = "/drachenschnitzel/assets/undying-skull-mr.0b0b6017.png";
+var __glob_0_78 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": undyingSkullMr
+}, Symbol.toStringTag, { value: "Module" }));
+var viziersGarmentSotp = "/drachenschnitzel/assets/viziers-garment-sotp.071b319d.png";
+var __glob_0_79 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": viziersGarmentSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var whiteWolfCloakMr = "/drachenschnitzel/assets/white-wolf-cloak-mr.f836c1ae.png";
+var __glob_0_80 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": whiteWolfCloakMr
+}, Symbol.toStringTag, { value: "Module" }));
+var witchHazelBowMb = "/drachenschnitzel/assets/witch-hazel-bow-mb.70f1c48e.png";
+var __glob_0_81 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": witchHazelBowMb
+}, Symbol.toStringTag, { value: "Module" }));
+var beltOfStrengthTf = "/drachenschnitzel/assets/belt-of-strength-tf.3a4215ac.png";
+var __glob_0_82 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beltOfStrengthTf
+}, Symbol.toStringTag, { value: "Module" }));
+var blackIronHelmLr = "/drachenschnitzel/assets/black-iron-helm-lr.9b76f3ed.png";
+var __glob_0_83 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": blackIronHelmLr
+}, Symbol.toStringTag, { value: "Module" }));
+var blastingRuneTf = "/drachenschnitzel/assets/blasting-rune-tf.b9857bd2.png";
+var __glob_0_84 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": blastingRuneTf
+}, Symbol.toStringTag, { value: "Module" }));
+var blessedArmorCr = "/drachenschnitzel/assets/blessed-armor-cr.e44388e6.png";
+var __glob_0_85 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": blessedArmorCr
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodthirstyBracersCr = "/drachenschnitzel/assets/bloodthirsty-bracers-cr.430819ec.png";
+var __glob_0_86 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodthirstyBracersCr
+}, Symbol.toStringTag, { value: "Module" }));
+var boneWandCr = "/drachenschnitzel/assets/bone-wand-cr.05aaaed1.png";
+var __glob_0_87 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": boneWandCr
+}, Symbol.toStringTag, { value: "Module" }));
+var boomerangTf = "/drachenschnitzel/assets/boomerang-tf.76ab85e0.png";
+var __glob_0_88 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": boomerangTf
+}, Symbol.toStringTag, { value: "Module" }));
+var bowOfTheEclipseLr = "/drachenschnitzel/assets/bow-of-the-eclipse-lr.a10a07af.png";
+var __glob_0_89 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bowOfTheEclipseLr
+}, Symbol.toStringTag, { value: "Module" }));
+var bowOfTheSkyLw = "/drachenschnitzel/assets/bow-of-the-sky-lw.ad41b8c7.png";
+var __glob_0_90 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bowOfTheSkyLw
+}, Symbol.toStringTag, { value: "Module" }));
+var chainSickleSotp = "/drachenschnitzel/assets/chain-sickle-sotp.ebad8dfd.png";
+var __glob_0_91 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chainSickleSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var cloakOfDeceptionLr = "/drachenschnitzel/assets/cloak-of-deception-lr.d94085f5.png";
+var __glob_0_92 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cloakOfDeceptionLr
+}, Symbol.toStringTag, { value: "Module" }));
+var demonhideLeatherBg = "/drachenschnitzel/assets/demonhide-leather-bg.d91df0c1.png";
+var __glob_0_93 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": demonhideLeatherBg
+}, Symbol.toStringTag, { value: "Module" }));
+var dragontoothHammerBg = "/drachenschnitzel/assets/dragontooth-hammer-bg.08ff50e7.png";
+var __glob_0_94 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": dragontoothHammerBg
+}, Symbol.toStringTag, { value: "Module" }));
+var dwarvenFirebombBg = "/drachenschnitzel/assets/dwarven-firebomb-bg.d5591649.png";
+var __glob_0_95 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": dwarvenFirebombBg
+}, Symbol.toStringTag, { value: "Module" }));
+var elvenCloakBg = "/drachenschnitzel/assets/elven-cloak-bg.f18f9d79.png";
+var __glob_0_96 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": elvenCloakBg
+}, Symbol.toStringTag, { value: "Module" }));
+var eyeOfTheNightSotp = "/drachenschnitzel/assets/eye-of-the-night-sotp.09de7789.png";
+var __glob_0_97 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": eyeOfTheNightSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var fistsOfIronCr = "/drachenschnitzel/assets/fists-of-iron-cr.c234c2f4.png";
+var __glob_0_98 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fistsOfIronCr
+}, Symbol.toStringTag, { value: "Module" }));
+var glaiveTf = "/drachenschnitzel/assets/glaive-tf.7817d21f.png";
+var __glob_0_99 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": glaiveTf
+}, Symbol.toStringTag, { value: "Module" }));
+var goldenMaskSn = "/drachenschnitzel/assets/golden-mask-sn.1ddab5b5.png";
+var __glob_0_100 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goldenMaskSn
+}, Symbol.toStringTag, { value: "Module" }));
+var grindingAxeBg = "/drachenschnitzel/assets/grinding-axe-bg.a11562ae.png";
+var __glob_0_101 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": grindingAxeBg
+}, Symbol.toStringTag, { value: "Module" }));
+var hammerOfDoomMr = "/drachenschnitzel/assets/hammer-of-doom-mr.4cfc4a0d.png";
+var __glob_0_102 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hammerOfDoomMr
+}, Symbol.toStringTag, { value: "Module" }));
+var heartSeekerMr = "/drachenschnitzel/assets/heart-seeker-mr.6e7f5f5b.png";
+var __glob_0_103 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": heartSeekerMr
+}, Symbol.toStringTag, { value: "Module" }));
+var heavySteelShieldBg = "/drachenschnitzel/assets/heavy-steel-shield-bg.654d6adb.png";
+var __glob_0_104 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": heavySteelShieldBg
+}, Symbol.toStringTag, { value: "Module" }));
+var hornedShieldCr = "/drachenschnitzel/assets/horned-shield-cr.b06a9eec.png";
+var __glob_0_105 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hornedShieldCr
+}, Symbol.toStringTag, { value: "Module" }));
+var ibisBowSotp = "/drachenschnitzel/assets/ibis-bow-sotp.4b5201db.png";
+var __glob_0_106 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ibisBowSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var iceStormBg = "/drachenschnitzel/assets/ice-storm-bg.8bcd103a.png";
+var __glob_0_107 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": iceStormBg
+}, Symbol.toStringTag, { value: "Module" }));
+var inscribedRobesLw = "/drachenschnitzel/assets/inscribed-robes-lw.02f56b4a.png";
+var __glob_0_108 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": inscribedRobesLw
+}, Symbol.toStringTag, { value: "Module" }));
+var ironBoundRingBg = "/drachenschnitzel/assets/iron-bound-ring-bg.1c5ebb80.png";
+var __glob_0_109 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironBoundRingBg
+}, Symbol.toStringTag, { value: "Module" }));
+var ironClawsLr = "/drachenschnitzel/assets/iron-claws-lr.42bc857b.png";
+var __glob_0_110 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironClawsLr
+}, Symbol.toStringTag, { value: "Module" }));
+var ironboundGlaiveSn = "/drachenschnitzel/assets/ironbound-glaive-sn.fd68143d.png";
+var __glob_0_111 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironboundGlaiveSn
+}, Symbol.toStringTag, { value: "Module" }));
+var ironboundShieldSn = "/drachenschnitzel/assets/ironbound-shield-sn.03c7c2c9.png";
+var __glob_0_112 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironboundShieldSn
+}, Symbol.toStringTag, { value: "Module" }));
+var latariLongbowBg = "/drachenschnitzel/assets/latari-longbow-bg.ca4e4420.png";
+var __glob_0_113 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": latariLongbowBg
+}, Symbol.toStringTag, { value: "Module" }));
+var lightningJavelinCr = "/drachenschnitzel/assets/lightning-javelin-cr.6e859533.png";
+var __glob_0_114 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lightningJavelinCr
+}, Symbol.toStringTag, { value: "Module" }));
+var lightningStrikeBg = "/drachenschnitzel/assets/lightning-strike-bg.0b116cad.png";
+var __glob_0_115 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lightningStrikeBg
+}, Symbol.toStringTag, { value: "Module" }));
+var lostCaliphsCrookSotp = "/drachenschnitzel/assets/lost-caliphs-crook-sotp.33b08ec7.png";
+var __glob_0_116 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lostCaliphsCrookSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var maceOfKellosBg = "/drachenschnitzel/assets/mace-of-kellos-bg.8f326ef0.png";
+var __glob_0_117 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": maceOfKellosBg
+}, Symbol.toStringTag, { value: "Module" }));
+var maskOfHorrorsCr = "/drachenschnitzel/assets/mask-of-horrors-cr.c05b2398.png";
+var __glob_0_118 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": maskOfHorrorsCr
+}, Symbol.toStringTag, { value: "Module" }));
+var mercifulBootsLw = "/drachenschnitzel/assets/merciful-boots-lw.c4e1cdf8.png";
+var __glob_0_119 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": mercifulBootsLw
+}, Symbol.toStringTag, { value: "Module" }));
+var nerekhallPlateSn = "/drachenschnitzel/assets/nerekhall-plate-sn.c32afe3e.png";
+var __glob_0_120 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": nerekhallPlateSn
+}, Symbol.toStringTag, { value: "Module" }));
+var obsidianGreataxeLr = "/drachenschnitzel/assets/obsidian-greataxe-lr.7a26721c.png";
+var __glob_0_121 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": obsidianGreataxeLr
+}, Symbol.toStringTag, { value: "Module" }));
+var obsidianScalemailLr = "/drachenschnitzel/assets/obsidian-scalemail-lr.4aa0cb79.png";
+var __glob_0_122 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": obsidianScalemailLr
+}, Symbol.toStringTag, { value: "Module" }));
+var platemailBg = "/drachenschnitzel/assets/platemail-bg.3e5bb492.png";
+var __glob_0_123 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": platemailBg
+}, Symbol.toStringTag, { value: "Module" }));
+var rageBladeLr = "/drachenschnitzel/assets/rage-blade-lr.7d2743d8.png";
+var __glob_0_124 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": rageBladeLr
+}, Symbol.toStringTag, { value: "Module" }));
+var ratToothDaggerSn = "/drachenschnitzel/assets/rat-tooth-dagger-sn.792bb96d.png";
+var __glob_0_125 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ratToothDaggerSn
+}, Symbol.toStringTag, { value: "Module" }));
+var repeatingCrossbowSn = "/drachenschnitzel/assets/repeating-crossbow-sn.0da20a86.png";
+var __glob_0_126 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": repeatingCrossbowSn
+}, Symbol.toStringTag, { value: "Module" }));
+var runeOfBladesSn = "/drachenschnitzel/assets/rune-of-blades-sn.3bee2377.png";
+var __glob_0_127 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": runeOfBladesSn
+}, Symbol.toStringTag, { value: "Module" }));
+var runeOfFateMr = "/drachenschnitzel/assets/rune-of-fate-mr.89f9d346.png";
+var __glob_0_128 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": runeOfFateMr
+}, Symbol.toStringTag, { value: "Module" }));
+var runeOfMiseryLr = "/drachenschnitzel/assets/rune-of-misery-lr.4a152d34.png";
+var __glob_0_129 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": runeOfMiseryLr
+}, Symbol.toStringTag, { value: "Module" }));
+var runeTouchedLeatherCr = "/drachenschnitzel/assets/rune-touched-leather-cr.5fa68ed9.png";
+var __glob_0_130 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": runeTouchedLeatherCr
+}, Symbol.toStringTag, { value: "Module" }));
+var sashOfTheSlayerCr = "/drachenschnitzel/assets/sash-of-the-slayer-cr.84a0407c.png";
+var __glob_0_131 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sashOfTheSlayerCr
+}, Symbol.toStringTag, { value: "Module" }));
+var scalemailLw = "/drachenschnitzel/assets/scalemail-lw.208a2e27.png";
+var __glob_0_132 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": scalemailLw
+}, Symbol.toStringTag, { value: "Module" }));
+var scarabAmuletSotp = "/drachenschnitzel/assets/scarab-amulet-sotp.fc2b2f33.png";
+var __glob_0_133 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": scarabAmuletSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var shadowTomeSn = "/drachenschnitzel/assets/shadow-tome-sn.ddf163f1.png";
+var __glob_0_134 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadowTomeSn
+}, Symbol.toStringTag, { value: "Module" }));
+var shimmeringShieldSotp = "/drachenschnitzel/assets/shimmering-shield-sotp.5e3bfe61.png";
+var __glob_0_135 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shimmeringShieldSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var shopItemsAct2Back = "/drachenschnitzel/assets/shop-items-act2-back.f0e4dab2.png";
+var __glob_0_136 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shopItemsAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var shroudOfDuskLr = "/drachenschnitzel/assets/shroud-of-dusk-lr.b44156da.png";
+var __glob_0_137 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shroudOfDuskLr
+}, Symbol.toStringTag, { value: "Module" }));
+var staffOfKellosLw = "/drachenschnitzel/assets/staff-of-kellos-lw.f842d2a6.png";
+var __glob_0_138 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": staffOfKellosLw
+}, Symbol.toStringTag, { value: "Module" }));
+var staffOfTheWildLr = "/drachenschnitzel/assets/staff-of-the-wild-lr.5be473ff.png";
+var __glob_0_139 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": staffOfTheWildLr
+}, Symbol.toStringTag, { value: "Module" }));
+var starOfAtarSotp = "/drachenschnitzel/assets/star-of-atar-sotp.f960bb9c.png";
+var __glob_0_140 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": starOfAtarSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var starOfKellosSn = "/drachenschnitzel/assets/star-of-kellos-sn.f9870a90.png";
+var __glob_0_141 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": starOfKellosSn
+}, Symbol.toStringTag, { value: "Module" }));
+var starmetalKhopeshSotp = "/drachenschnitzel/assets/starmetal-khopesh-sotp.6cf72bc5.png";
+var __glob_0_142 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": starmetalKhopeshSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var steelGreatswordBg = "/drachenschnitzel/assets/steel-greatsword-bg.b1f871ed.png";
+var __glob_0_143 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": steelGreatswordBg
+}, Symbol.toStringTag, { value: "Module" }));
+var stoneArmorTf = "/drachenschnitzel/assets/stone-armor-tf.43aa22f7.png";
+var __glob_0_144 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": stoneArmorTf
+}, Symbol.toStringTag, { value: "Module" }));
+var sunlightWardSotp = "/drachenschnitzel/assets/sunlight-ward-sotp.60343091.png";
+var __glob_0_145 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sunlightWardSotp
+}, Symbol.toStringTag, { value: "Module" }));
+var tivalCrystalBg = "/drachenschnitzel/assets/tival-crystal-bg.19ecfe09.png";
+var __glob_0_146 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": tivalCrystalBg
+}, Symbol.toStringTag, { value: "Module" }));
+var vestmentsOfKellosSn = "/drachenschnitzel/assets/vestments-of-kellos-sn.51b66153.png";
+var __glob_0_147 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": vestmentsOfKellosSn
+}, Symbol.toStringTag, { value: "Module" }));
+var wingedBladeMr = "/drachenschnitzel/assets/winged-blade-mr.15defe3f.png";
+var __glob_0_148 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wingedBladeMr
+}, Symbol.toStringTag, { value: "Module" }));
+const assets = { "../assets/base.css": __glob_0_0, "../assets/dice/black-top.png": __glob_0_1, "../assets/dice/blue-top.png": __glob_0_2, "../assets/dice/brown-top.png": __glob_0_3, "../assets/dice/gray-top.png": __glob_0_4, "../assets/dice/green-top.png": __glob_0_5, "../assets/dice/red-top.png": __glob_0_6, "../assets/dice/yellow-top.png": __glob_0_7, "../assets/d2e/shop-items/act1/archaic-scroll-sn.png": __glob_0_8, "../assets/d2e/shop-items/act1/bag-of-tricks-sotp.png": __glob_0_9, "../assets/d2e/shop-items/act1/barons-cloak-sn.png": __glob_0_10, "../assets/d2e/shop-items/act1/battle-tome-mb.png": __glob_0_11, "../assets/d2e/shop-items/act1/bearded-axe-lr.png": __glob_0_12, "../assets/d2e/shop-items/act1/belt-of-alchemy-tf.png": __glob_0_13, "../assets/d2e/shop-items/act1/belt-of-waterwalking-tf.png": __glob_0_14, "../assets/d2e/shop-items/act1/blessed-shield-mr.png": __glob_0_15, "../assets/d2e/shop-items/act1/bloodscript-ring-mb.png": __glob_0_16, "../assets/d2e/shop-items/act1/bloody-dagger-sn.png": __glob_0_17, "../assets/d2e/shop-items/act1/bone-blade-sn.png": __glob_0_18, "../assets/d2e/shop-items/act1/boots-of-iron-sn.png": __glob_0_19, "../assets/d2e/shop-items/act1/bow-of-bone-lr.png": __glob_0_20, "../assets/d2e/shop-items/act1/chainmail-bg.png": __glob_0_21, "../assets/d2e/shop-items/act1/city-guards-bow-sn.png": __glob_0_22, "../assets/d2e/shop-items/act1/cloak-of-mists-sn.png": __glob_0_23, "../assets/d2e/shop-items/act1/corpsebug-brooch-mb.png": __glob_0_24, "../assets/d2e/shop-items/act1/crossbow-bg.png": __glob_0_25, "../assets/d2e/shop-items/act1/crystal-of-mirages-sotp.png": __glob_0_26, "../assets/d2e/shop-items/act1/deflecting-shield-tf.png": __glob_0_27, "../assets/d2e/shop-items/act1/dire-flail-tf.png": __glob_0_28, "../assets/d2e/shop-items/act1/elm-greatbow-bg.png": __glob_0_29, "../assets/d2e/shop-items/act1/elven-boots-lr.png": __glob_0_30, "../assets/d2e/shop-items/act1/flash-powder-lw.png": __glob_0_31, "../assets/d2e/shop-items/act1/golden-orb-mace-sotp.png": __glob_0_32, "../assets/d2e/shop-items/act1/guardian-axe-tf.png": __glob_0_33, "../assets/d2e/shop-items/act1/halberd-lw.png": __glob_0_34, "../assets/d2e/shop-items/act1/handbow-lw.png": __glob_0_35, "../assets/d2e/shop-items/act1/heavy-cloak-bg.png": __glob_0_36, "../assets/d2e/shop-items/act1/immolation-bg.png": __glob_0_37, "../assets/d2e/shop-items/act1/incendiary-arrows-sn.png": __glob_0_38, "../assets/d2e/shop-items/act1/iron-battleaxe-bg.png": __glob_0_39, "../assets/d2e/shop-items/act1/iron-shield-bg.png": __glob_0_40, "../assets/d2e/shop-items/act1/iron-spear-bg.png": __glob_0_41, "../assets/d2e/shop-items/act1/ironbound-rune-sn.png": __glob_0_42, "../assets/d2e/shop-items/act1/jeweled-mace-sn.png": __glob_0_43, "../assets/d2e/shop-items/act1/jinns-lamp-lr.png": __glob_0_44, "../assets/d2e/shop-items/act1/leather-armor-bg.png": __glob_0_45, "../assets/d2e/shop-items/act1/lifedrain-scepter-tf.png": __glob_0_46, "../assets/d2e/shop-items/act1/light-hammer-bg.png": __glob_0_47, "../assets/d2e/shop-items/act1/lucky-charm-bg.png": __glob_0_48, "../assets/d2e/shop-items/act1/mace-of-aver-lr.png": __glob_0_49, "../assets/d2e/shop-items/act1/magic-staff-bg.png": __glob_0_50, "../assets/d2e/shop-items/act1/magma-blast-lw.png": __glob_0_51, "../assets/d2e/shop-items/act1/mana-weave-bg.png": __glob_0_52, "../assets/d2e/shop-items/act1/mapstone-tf.png": __glob_0_53, "../assets/d2e/shop-items/act1/marsh-cloak-mb.png": __glob_0_54, "../assets/d2e/shop-items/act1/mistbane-mb.png": __glob_0_55, "../assets/d2e/shop-items/act1/phoenix-pendant-sn.png": __glob_0_56, "../assets/d2e/shop-items/act1/piercing-arrows-sotp.png": __glob_0_57, "../assets/d2e/shop-items/act1/poisoned-blowgun-lr.png": __glob_0_58, "../assets/d2e/shop-items/act1/ring-of-power-bg.png": __glob_0_59, "../assets/d2e/shop-items/act1/rune-plate-lr.png": __glob_0_60, "../assets/d2e/shop-items/act1/scar-pit-greaves-sotp.png": __glob_0_61, "../assets/d2e/shop-items/act1/scorpion-helm-bg.png": __glob_0_62, "../assets/d2e/shop-items/act1/serpent-dagger-lr.png": __glob_0_63, "../assets/d2e/shop-items/act1/shadow-bracers-mr.png": __glob_0_64, "../assets/d2e/shop-items/act1/shield-of-light-lr.png": __glob_0_65, "../assets/d2e/shop-items/act1/shop-items-act1-back.png": __glob_0_66, "../assets/d2e/shop-items/act1/sling-bg.png": __glob_0_67, "../assets/d2e/shop-items/act1/soulbound-sword-mb.png": __glob_0_68, "../assets/d2e/shop-items/act1/soulstone-mb.png": __glob_0_69, "../assets/d2e/shop-items/act1/staff-of-greyhaven-mr.png": __glob_0_70, "../assets/d2e/shop-items/act1/steel-broadsword-bg.png": __glob_0_71, "../assets/d2e/shop-items/act1/sun-blessed-rune-sotp.png": __glob_0_72, "../assets/d2e/shop-items/act1/sunburst-bg.png": __glob_0_73, "../assets/d2e/shop-items/act1/sunspear-sotp.png": __glob_0_74, "../assets/d2e/shop-items/act1/teleportation-rune-lr.png": __glob_0_75, "../assets/d2e/shop-items/act1/thiefs-vest-lr.png": __glob_0_76, "../assets/d2e/shop-items/act1/trident-tf.png": __glob_0_77, "../assets/d2e/shop-items/act1/undying-skull-mr.png": __glob_0_78, "../assets/d2e/shop-items/act1/viziers-garment-sotp.png": __glob_0_79, "../assets/d2e/shop-items/act1/white-wolf-cloak-mr.png": __glob_0_80, "../assets/d2e/shop-items/act1/witch-hazel-bow-mb.png": __glob_0_81, "../assets/d2e/shop-items/act2/belt-of-strength-tf.png": __glob_0_82, "../assets/d2e/shop-items/act2/black-iron-helm-lr.png": __glob_0_83, "../assets/d2e/shop-items/act2/blasting-rune-tf.png": __glob_0_84, "../assets/d2e/shop-items/act2/blessed-armor-cr.png": __glob_0_85, "../assets/d2e/shop-items/act2/bloodthirsty-bracers-cr.png": __glob_0_86, "../assets/d2e/shop-items/act2/bone-wand-cr.png": __glob_0_87, "../assets/d2e/shop-items/act2/boomerang-tf.png": __glob_0_88, "../assets/d2e/shop-items/act2/bow-of-the-eclipse-lr.png": __glob_0_89, "../assets/d2e/shop-items/act2/bow-of-the-sky-lw.png": __glob_0_90, "../assets/d2e/shop-items/act2/chain-sickle-sotp.png": __glob_0_91, "../assets/d2e/shop-items/act2/cloak-of-deception-lr.png": __glob_0_92, "../assets/d2e/shop-items/act2/demonhide-leather-bg.png": __glob_0_93, "../assets/d2e/shop-items/act2/dragontooth-hammer-bg.png": __glob_0_94, "../assets/d2e/shop-items/act2/dwarven-firebomb-bg.png": __glob_0_95, "../assets/d2e/shop-items/act2/elven-cloak-bg.png": __glob_0_96, "../assets/d2e/shop-items/act2/eye-of-the-night-sotp.png": __glob_0_97, "../assets/d2e/shop-items/act2/fists-of-iron-cr.png": __glob_0_98, "../assets/d2e/shop-items/act2/glaive-tf.png": __glob_0_99, "../assets/d2e/shop-items/act2/golden-mask-sn.png": __glob_0_100, "../assets/d2e/shop-items/act2/grinding-axe-bg.png": __glob_0_101, "../assets/d2e/shop-items/act2/hammer-of-doom-mr.png": __glob_0_102, "../assets/d2e/shop-items/act2/heart-seeker-mr.png": __glob_0_103, "../assets/d2e/shop-items/act2/heavy-steel-shield-bg.png": __glob_0_104, "../assets/d2e/shop-items/act2/horned-shield-cr.png": __glob_0_105, "../assets/d2e/shop-items/act2/ibis-bow-sotp.png": __glob_0_106, "../assets/d2e/shop-items/act2/ice-storm-bg.png": __glob_0_107, "../assets/d2e/shop-items/act2/inscribed-robes-lw.png": __glob_0_108, "../assets/d2e/shop-items/act2/iron-bound-ring-bg.png": __glob_0_109, "../assets/d2e/shop-items/act2/iron-claws-lr.png": __glob_0_110, "../assets/d2e/shop-items/act2/ironbound-glaive-sn.png": __glob_0_111, "../assets/d2e/shop-items/act2/ironbound-shield-sn.png": __glob_0_112, "../assets/d2e/shop-items/act2/latari-longbow-bg.png": __glob_0_113, "../assets/d2e/shop-items/act2/lightning-javelin-cr.png": __glob_0_114, "../assets/d2e/shop-items/act2/lightning-strike-bg.png": __glob_0_115, "../assets/d2e/shop-items/act2/lost-caliphs-crook-sotp.png": __glob_0_116, "../assets/d2e/shop-items/act2/mace-of-kellos-bg.png": __glob_0_117, "../assets/d2e/shop-items/act2/mask-of-horrors-cr.png": __glob_0_118, "../assets/d2e/shop-items/act2/merciful-boots-lw.png": __glob_0_119, "../assets/d2e/shop-items/act2/nerekhall-plate-sn.png": __glob_0_120, "../assets/d2e/shop-items/act2/obsidian-greataxe-lr.png": __glob_0_121, "../assets/d2e/shop-items/act2/obsidian-scalemail-lr.png": __glob_0_122, "../assets/d2e/shop-items/act2/platemail-bg.png": __glob_0_123, "../assets/d2e/shop-items/act2/rage-blade-lr.png": __glob_0_124, "../assets/d2e/shop-items/act2/rat-tooth-dagger-sn.png": __glob_0_125, "../assets/d2e/shop-items/act2/repeating-crossbow-sn.png": __glob_0_126, "../assets/d2e/shop-items/act2/rune-of-blades-sn.png": __glob_0_127, "../assets/d2e/shop-items/act2/rune-of-fate-mr.png": __glob_0_128, "../assets/d2e/shop-items/act2/rune-of-misery-lr.png": __glob_0_129, "../assets/d2e/shop-items/act2/rune-touched-leather-cr.png": __glob_0_130, "../assets/d2e/shop-items/act2/sash-of-the-slayer-cr.png": __glob_0_131, "../assets/d2e/shop-items/act2/scalemail-lw.png": __glob_0_132, "../assets/d2e/shop-items/act2/scarab-amulet-sotp.png": __glob_0_133, "../assets/d2e/shop-items/act2/shadow-tome-sn.png": __glob_0_134, "../assets/d2e/shop-items/act2/shimmering-shield-sotp.png": __glob_0_135, "../assets/d2e/shop-items/act2/shop-items-act2-back.png": __glob_0_136, "../assets/d2e/shop-items/act2/shroud-of-dusk-lr.png": __glob_0_137, "../assets/d2e/shop-items/act2/staff-of-kellos-lw.png": __glob_0_138, "../assets/d2e/shop-items/act2/staff-of-the-wild-lr.png": __glob_0_139, "../assets/d2e/shop-items/act2/star-of-atar-sotp.png": __glob_0_140, "../assets/d2e/shop-items/act2/star-of-kellos-sn.png": __glob_0_141, "../assets/d2e/shop-items/act2/starmetal-khopesh-sotp.png": __glob_0_142, "../assets/d2e/shop-items/act2/steel-greatsword-bg.png": __glob_0_143, "../assets/d2e/shop-items/act2/stone-armor-tf.png": __glob_0_144, "../assets/d2e/shop-items/act2/sunlight-ward-sotp.png": __glob_0_145, "../assets/d2e/shop-items/act2/tival-crystal-bg.png": __glob_0_146, "../assets/d2e/shop-items/act2/vestments-of-kellos-sn.png": __glob_0_147, "../assets/d2e/shop-items/act2/winged-blade-mr.png": __glob_0_148 };
 function assetUrl(path) {
-  return new URL({ "../assets/base.css": __glob_0_0, "../assets/dice/black-top.png": __glob_0_1, "../assets/dice/blue-top.png": __glob_0_2, "../assets/dice/brown-top.png": __glob_0_3, "../assets/dice/gray-top.png": __glob_0_4, "../assets/dice/green-top.png": __glob_0_5, "../assets/dice/red-top.png": __glob_0_6, "../assets/dice/yellow-top.png": __glob_0_7, "../assets/d2e/shop-items/act1/archaic-scroll-sn.png": __glob_0_8, "../assets/d2e/shop-items/act1/bag-of-tricks-sotp.png": __glob_0_9, "../assets/d2e/shop-items/act1/barons-cloak-sn.png": __glob_0_10, "../assets/d2e/shop-items/act1/battle-tome-mb.png": __glob_0_11, "../assets/d2e/shop-items/act1/bearded-axe-lr.png": __glob_0_12, "../assets/d2e/shop-items/act1/belt-of-alchemy-tf.png": __glob_0_13, "../assets/d2e/shop-items/act1/belt-of-waterwalking-tf.png": __glob_0_14, "../assets/d2e/shop-items/act1/blessed-shield-mr.png": __glob_0_15, "../assets/d2e/shop-items/act1/bloodscript-ring-mb.png": __glob_0_16, "../assets/d2e/shop-items/act1/bloody-dagger-sn.png": __glob_0_17, "../assets/d2e/shop-items/act1/bone-blade-sn.png": __glob_0_18, "../assets/d2e/shop-items/act1/boots-of-iron-sn.png": __glob_0_19, "../assets/d2e/shop-items/act1/bow-of-bone-lr.png": __glob_0_20, "../assets/d2e/shop-items/act1/chainmail-bg.png": __glob_0_21, "../assets/d2e/shop-items/act1/city-guards-bow-sn.png": __glob_0_22, "../assets/d2e/shop-items/act1/cloak-of-mists-sn.png": __glob_0_23, "../assets/d2e/shop-items/act1/corpsebug-brooch-mb.png": __glob_0_24, "../assets/d2e/shop-items/act1/crossbow-bg.png": __glob_0_25, "../assets/d2e/shop-items/act1/crystal-of-mirages-sotp.png": __glob_0_26, "../assets/d2e/shop-items/act1/deflecting-shield-tf.png": __glob_0_27, "../assets/d2e/shop-items/act1/dire-flail-tf.png": __glob_0_28, "../assets/d2e/shop-items/act1/elm-greatbow-bg.png": __glob_0_29, "../assets/d2e/shop-items/act1/elven-boots-lr.png": __glob_0_30, "../assets/d2e/shop-items/act1/flash-powder-lw.png": __glob_0_31, "../assets/d2e/shop-items/act1/golden-orb-mace-sotp.png": __glob_0_32, "../assets/d2e/shop-items/act1/guardian-axe-tf.png": __glob_0_33, "../assets/d2e/shop-items/act1/halberd-lw.png": __glob_0_34, "../assets/d2e/shop-items/act1/handbow-lw.png": __glob_0_35, "../assets/d2e/shop-items/act1/heavy-cloak-bg.png": __glob_0_36, "../assets/d2e/shop-items/act1/immolation-bg.png": __glob_0_37, "../assets/d2e/shop-items/act1/incendiary-arrows-sn.png": __glob_0_38, "../assets/d2e/shop-items/act1/iron-battleaxe-bg.png": __glob_0_39, "../assets/d2e/shop-items/act1/iron-shield-bg.png": __glob_0_40, "../assets/d2e/shop-items/act1/iron-spear-bg.png": __glob_0_41, "../assets/d2e/shop-items/act1/ironbound-rune-sn.png": __glob_0_42, "../assets/d2e/shop-items/act1/jeweled-mace-sn.png": __glob_0_43, "../assets/d2e/shop-items/act1/jinns-lamp-lr.png": __glob_0_44, "../assets/d2e/shop-items/act1/leather-armor-bg.png": __glob_0_45, "../assets/d2e/shop-items/act1/lifedrain-scepter-tf.png": __glob_0_46, "../assets/d2e/shop-items/act1/light-hammer-bg.png": __glob_0_47, "../assets/d2e/shop-items/act1/lucky-charm-bg.png": __glob_0_48, "../assets/d2e/shop-items/act1/mace-of-aver-lr.png": __glob_0_49, "../assets/d2e/shop-items/act1/magic-staff-bg.png": __glob_0_50, "../assets/d2e/shop-items/act1/magma-blast-lw.png": __glob_0_51, "../assets/d2e/shop-items/act1/mana-weave-bg.png": __glob_0_52, "../assets/d2e/shop-items/act1/mapstone-tf.png": __glob_0_53, "../assets/d2e/shop-items/act1/marsh-cloak-mb.png": __glob_0_54, "../assets/d2e/shop-items/act1/mistbane-mb.png": __glob_0_55, "../assets/d2e/shop-items/act1/phoenix-pendant-sn.png": __glob_0_56, "../assets/d2e/shop-items/act1/piercing-arrows-sotp.png": __glob_0_57, "../assets/d2e/shop-items/act1/poisoned-blowgun-lr.png": __glob_0_58, "../assets/d2e/shop-items/act1/ring-of-power-bg.png": __glob_0_59, "../assets/d2e/shop-items/act1/rune-plate-lr.png": __glob_0_60, "../assets/d2e/shop-items/act1/scar-pit-greaves-sotp.png": __glob_0_61, "../assets/d2e/shop-items/act1/scorpion-helm-bg.png": __glob_0_62, "../assets/d2e/shop-items/act1/serpent-dagger-lr.png": __glob_0_63, "../assets/d2e/shop-items/act1/shadow-bracers-mr.png": __glob_0_64, "../assets/d2e/shop-items/act1/shield-of-light-lr.png": __glob_0_65, "../assets/d2e/shop-items/act1/shop-items-act1-back.png": __glob_0_66, "../assets/d2e/shop-items/act1/sling-bg.png": __glob_0_67, "../assets/d2e/shop-items/act1/soulbound-sword-mb.png": __glob_0_68, "../assets/d2e/shop-items/act1/soulstone-mb.png": __glob_0_69, "../assets/d2e/shop-items/act1/staff-of-greyhaven-mr.png": __glob_0_70, "../assets/d2e/shop-items/act1/steel-broadsword-bg.png": __glob_0_71, "../assets/d2e/shop-items/act1/sun-blessed-rune-sotp.png": __glob_0_72, "../assets/d2e/shop-items/act1/sunburst-bg.png": __glob_0_73, "../assets/d2e/shop-items/act1/sunspear-sotp.png": __glob_0_74, "../assets/d2e/shop-items/act1/teleportation-rune-lr.png": __glob_0_75, "../assets/d2e/shop-items/act1/thiefs-vest-lr.png": __glob_0_76, "../assets/d2e/shop-items/act1/trident-tf.png": __glob_0_77, "../assets/d2e/shop-items/act1/undying-skull-mr.png": __glob_0_78, "../assets/d2e/shop-items/act1/viziers-garment-sotp.png": __glob_0_79, "../assets/d2e/shop-items/act1/white-wolf-cloak-mr.png": __glob_0_80, "../assets/d2e/shop-items/act1/witch-hazel-bow-mb.png": __glob_0_81, "../assets/d2e/shop-items/act2/belt-of-strength-tf.png": __glob_0_82, "../assets/d2e/shop-items/act2/black-iron-helm-lr.png": __glob_0_83, "../assets/d2e/shop-items/act2/blasting-rune-tf.png": __glob_0_84, "../assets/d2e/shop-items/act2/blessed-armor-cr.png": __glob_0_85, "../assets/d2e/shop-items/act2/bloodthirsty-bracers-cr.png": __glob_0_86, "../assets/d2e/shop-items/act2/bone-wand-cr.png": __glob_0_87, "../assets/d2e/shop-items/act2/boomerang-tf.png": __glob_0_88, "../assets/d2e/shop-items/act2/bow-of-the-eclipse-lr.png": __glob_0_89, "../assets/d2e/shop-items/act2/bow-of-the-sky-lw.png": __glob_0_90, "../assets/d2e/shop-items/act2/chain-sickle-sotp.png": __glob_0_91, "../assets/d2e/shop-items/act2/cloak-of-deception-lr.png": __glob_0_92, "../assets/d2e/shop-items/act2/demonhide-leather-bg.png": __glob_0_93, "../assets/d2e/shop-items/act2/dragontooth-hammer-bg.png": __glob_0_94, "../assets/d2e/shop-items/act2/dwarven-firebomb-bg.png": __glob_0_95, "../assets/d2e/shop-items/act2/elven-cloak-bg.png": __glob_0_96, "../assets/d2e/shop-items/act2/eye-of-the-night-sotp.png": __glob_0_97, "../assets/d2e/shop-items/act2/fists-of-iron-cr.png": __glob_0_98, "../assets/d2e/shop-items/act2/glaive-tf.png": __glob_0_99, "../assets/d2e/shop-items/act2/golden-mask-sn.png": __glob_0_100, "../assets/d2e/shop-items/act2/grinding-axe-bg.png": __glob_0_101, "../assets/d2e/shop-items/act2/hammer-of-doom-mr.png": __glob_0_102, "../assets/d2e/shop-items/act2/heart-seeker-mr.png": __glob_0_103, "../assets/d2e/shop-items/act2/heavy-steel-shield-bg.png": __glob_0_104, "../assets/d2e/shop-items/act2/horned-shield-cr.png": __glob_0_105, "../assets/d2e/shop-items/act2/ibis-bow-sotp.png": __glob_0_106, "../assets/d2e/shop-items/act2/ice-storm-bg.png": __glob_0_107, "../assets/d2e/shop-items/act2/inscribed-robes-lw.png": __glob_0_108, "../assets/d2e/shop-items/act2/iron-bound-ring-bg.png": __glob_0_109, "../assets/d2e/shop-items/act2/iron-claws-lr.png": __glob_0_110, "../assets/d2e/shop-items/act2/ironbound-glaive-sn.png": __glob_0_111, "../assets/d2e/shop-items/act2/ironbound-shield-sn.png": __glob_0_112, "../assets/d2e/shop-items/act2/latari-longbow-bg.png": __glob_0_113, "../assets/d2e/shop-items/act2/lightning-javelin-cr.png": __glob_0_114, "../assets/d2e/shop-items/act2/lightning-strike-bg.png": __glob_0_115, "../assets/d2e/shop-items/act2/lost-caliphs-crook-sotp.png": __glob_0_116, "../assets/d2e/shop-items/act2/mace-of-kellos-bg.png": __glob_0_117, "../assets/d2e/shop-items/act2/mask-of-horrors-cr.png": __glob_0_118, "../assets/d2e/shop-items/act2/merciful-boots-lw.png": __glob_0_119, "../assets/d2e/shop-items/act2/nerekhall-plate-sn.png": __glob_0_120, "../assets/d2e/shop-items/act2/obsidian-greataxe-lr.png": __glob_0_121, "../assets/d2e/shop-items/act2/obsidian-scalemail-lr.png": __glob_0_122, "../assets/d2e/shop-items/act2/platemail-bg.png": __glob_0_123, "../assets/d2e/shop-items/act2/rage-blade-lr.png": __glob_0_124, "../assets/d2e/shop-items/act2/rat-tooth-dagger-sn.png": __glob_0_125, "../assets/d2e/shop-items/act2/repeating-crossbow-sn.png": __glob_0_126, "../assets/d2e/shop-items/act2/rune-of-blades-sn.png": __glob_0_127, "../assets/d2e/shop-items/act2/rune-of-fate-mr.png": __glob_0_128, "../assets/d2e/shop-items/act2/rune-of-misery-lr.png": __glob_0_129, "../assets/d2e/shop-items/act2/rune-touched-leather-cr.png": __glob_0_130, "../assets/d2e/shop-items/act2/sash-of-the-slayer-cr.png": __glob_0_131, "../assets/d2e/shop-items/act2/scalemail-lw.png": __glob_0_132, "../assets/d2e/shop-items/act2/scarab-amulet-sotp.png": __glob_0_133, "../assets/d2e/shop-items/act2/shadow-tome-sn.png": __glob_0_134, "../assets/d2e/shop-items/act2/shimmering-shield-sotp.png": __glob_0_135, "../assets/d2e/shop-items/act2/shop-items-act2-back.png": __glob_0_136, "../assets/d2e/shop-items/act2/shroud-of-dusk-lr.png": __glob_0_137, "../assets/d2e/shop-items/act2/staff-of-kellos-lw.png": __glob_0_138, "../assets/d2e/shop-items/act2/staff-of-the-wild-lr.png": __glob_0_139, "../assets/d2e/shop-items/act2/star-of-atar-sotp.png": __glob_0_140, "../assets/d2e/shop-items/act2/star-of-kellos-sn.png": __glob_0_141, "../assets/d2e/shop-items/act2/starmetal-khopesh-sotp.png": __glob_0_142, "../assets/d2e/shop-items/act2/steel-greatsword-bg.png": __glob_0_143, "../assets/d2e/shop-items/act2/stone-armor-tf.png": __glob_0_144, "../assets/d2e/shop-items/act2/sunlight-ward-sotp.png": __glob_0_145, "../assets/d2e/shop-items/act2/tival-crystal-bg.png": __glob_0_146, "../assets/d2e/shop-items/act2/vestments-of-kellos-sn.png": __glob_0_147, "../assets/d2e/shop-items/act2/winged-blade-mr.png": __glob_0_148 }[`../assets/${path}`], self.location).href;
+  const key = Object.keys(assets).find((fullPath) => fullPath.endsWith(`/assets/${path}`));
+  if (key === void 0) {
+    throw Error(`asset "${path}" not found`);
+  }
+  return assets[key].default;
 }
 class DieResult$1 {
 }
