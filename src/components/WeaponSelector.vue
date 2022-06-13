@@ -92,9 +92,20 @@ const items = computed(() =>
       v-for="item in items"
       :key="item.name"
     >
-      <img :src="item.image" :alt="item.name" class="w-100 rounded-3" />
+      <a href="#">
+        <img :src="item.image" :alt="item.name" class="w-100 rounded-3" />
+      </a>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+a img {
+  z-index: 0;
+  transition: transform 0.2s;
+}
+a:hover img {
+  z-index: 1;
+  transform: scale(1.2);
+}
+</style>
