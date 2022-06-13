@@ -11,7 +11,7 @@ const router = createRouter({
       component: CombatView,
     },
     {
-      path: "/weapons/",
+      path: "/weapons",
       name: "🗡 Weapons",
       component: WeaponView,
     },
