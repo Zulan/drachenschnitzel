@@ -75,41 +75,45 @@ const items = computed(() =>
 <template>
   <div class="card mb-3">
     <div class="card-body">
-      <form class="filter-grid">
-        <div class="filter">
-          <FilterButtonGroup
-            :model-options="availableCategories"
-            v-model="selectedCategories"
-          />
+      <form>
+        <div class="filter-grid">
+          <div class="filter">
+            <FilterButtonGroup
+              :model-options="availableCategories"
+              v-model="selectedCategories"
+            />
+          </div>
+          <div class="filter">
+            <FilterButtonGroup
+              :model-options="availableAttacks"
+              v-model="selectedAttacks"
+            />
+          </div>
+          <div class="filter">
+            <FilterButtonGroup
+              :model-options="availableEquips"
+              v-model="selectedEquips"
+            />
+          </div>
+          <div class="filter">
+            <FilterButtonGroup
+              :model-options="availableTraits"
+              v-model="selectedTraits"
+            />
+          </div>
+          <div class="filter">
+            <FilterButtonGroup
+              :model-options="availableExpansions"
+              v-model="selectedExpansions"
+            />
+          </div>
+          <div class="filter">
+            <input v-model="needle" placeholder="filter by name" />
+          </div>
+          <div class="filter filter-found">
+            {{ items.length }} weapons found
+          </div>
         </div>
-        <div class="filter">
-          <FilterButtonGroup
-            :model-options="availableAttacks"
-            v-model="selectedAttacks"
-          />
-        </div>
-        <div class="filter">
-          <FilterButtonGroup
-            :model-options="availableEquips"
-            v-model="selectedEquips"
-          />
-        </div>
-        <div class="filter">
-          <FilterButtonGroup
-            :model-options="availableTraits"
-            v-model="selectedTraits"
-          />
-        </div>
-        <div class="filter">
-          <FilterButtonGroup
-            :model-options="availableExpansions"
-            v-model="selectedExpansions"
-          />
-        </div>
-        <div class="filter">
-          <input v-model="needle" placeholder="filter by name" />
-        </div>
-        <div class="filter">{{ items.length }} weapons found</div>
       </form>
     </div>
   </div>
@@ -142,6 +146,11 @@ a:hover img {
   width: fit-content;
   display: inline-block;
   overflow: auto;
+}
+
+.filter-found {
+  margin-left: auto;
+  align-self: center;
 }
 
 .image-grid {
