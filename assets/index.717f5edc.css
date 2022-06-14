@@ -49,25 +49,29 @@ disabled because it messes with bootstrap modal vertical stuff
   width: 4rem;
 }
 
-a img[data-v-c32a6294] {
+a img[data-v-75594bd3] {
   z-index: 0;
   transition: transform 0.2s;
 }
-a:hover img[data-v-c32a6294] {
+a:hover img[data-v-75594bd3] {
   z-index: 1;
   transform: scale(1.2);
 }
-.filter-grid[data-v-c32a6294] {
+.filter-grid[data-v-75594bd3] {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.filter[data-v-c32a6294] {
+.filter[data-v-75594bd3] {
   width: fit-content;
   display: inline-block;
   overflow: auto;
 }
-.image-grid[data-v-c32a6294] {
+.filter-found[data-v-75594bd3] {
+  margin-left: auto;
+  align-self: center;
+}
+.image-grid[data-v-75594bd3] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, auto));
   grid-gap: 1rem;

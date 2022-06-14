@@ -15150,7 +15150,7 @@ const _hoisted_6$1 = { class: "filter" };
 const _hoisted_7$1 = { class: "filter" };
 const _hoisted_8 = { class: "filter" };
 const _hoisted_9 = { class: "filter" };
-const _hoisted_10 = { class: "filter" };
+const _hoisted_10 = { class: "filter filter-found" };
 const _hoisted_11 = { class: "image-grid" };
 const _hoisted_12 = ["onClick"];
 const _hoisted_13 = ["src", "alt"];
@@ -15187,51 +15187,53 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock(Fragment, null, [
         createBaseVNode("div", _hoisted_1$1, [
           createBaseVNode("div", _hoisted_2$1, [
-            createBaseVNode("form", _hoisted_3$1, [
-              createBaseVNode("div", _hoisted_4$1, [
-                createVNode(_sfc_main$2, {
-                  "model-options": availableCategories,
-                  modelValue: selectedCategories.value,
-                  "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => selectedCategories.value = $event)
-                }, null, 8, ["modelValue"])
-              ]),
-              createBaseVNode("div", _hoisted_5$1, [
-                createVNode(_sfc_main$2, {
-                  "model-options": unref(availableAttacks),
-                  modelValue: selectedAttacks.value,
-                  "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => selectedAttacks.value = $event)
-                }, null, 8, ["model-options", "modelValue"])
-              ]),
-              createBaseVNode("div", _hoisted_6$1, [
-                createVNode(_sfc_main$2, {
-                  "model-options": unref(availableEquips),
-                  modelValue: selectedEquips.value,
-                  "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selectedEquips.value = $event)
-                }, null, 8, ["model-options", "modelValue"])
-              ]),
-              createBaseVNode("div", _hoisted_7$1, [
-                createVNode(_sfc_main$2, {
-                  "model-options": unref(availableTraits),
-                  modelValue: selectedTraits.value,
-                  "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => selectedTraits.value = $event)
-                }, null, 8, ["model-options", "modelValue"])
-              ]),
-              createBaseVNode("div", _hoisted_8, [
-                createVNode(_sfc_main$2, {
-                  "model-options": unref(availableExpansions),
-                  modelValue: selectedExpansions.value,
-                  "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => selectedExpansions.value = $event)
-                }, null, 8, ["model-options", "modelValue"])
-              ]),
-              createBaseVNode("div", _hoisted_9, [
-                withDirectives(createBaseVNode("input", {
-                  "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => needle.value = $event),
-                  placeholder: "filter by name"
-                }, null, 512), [
-                  [vModelText, needle.value]
-                ])
-              ]),
-              createBaseVNode("div", _hoisted_10, toDisplayString(unref(items).length) + " weapons found", 1)
+            createBaseVNode("form", null, [
+              createBaseVNode("div", _hoisted_3$1, [
+                createBaseVNode("div", _hoisted_4$1, [
+                  createVNode(_sfc_main$2, {
+                    "model-options": availableCategories,
+                    modelValue: selectedCategories.value,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => selectedCategories.value = $event)
+                  }, null, 8, ["modelValue"])
+                ]),
+                createBaseVNode("div", _hoisted_5$1, [
+                  createVNode(_sfc_main$2, {
+                    "model-options": unref(availableAttacks),
+                    modelValue: selectedAttacks.value,
+                    "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => selectedAttacks.value = $event)
+                  }, null, 8, ["model-options", "modelValue"])
+                ]),
+                createBaseVNode("div", _hoisted_6$1, [
+                  createVNode(_sfc_main$2, {
+                    "model-options": unref(availableEquips),
+                    modelValue: selectedEquips.value,
+                    "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selectedEquips.value = $event)
+                  }, null, 8, ["model-options", "modelValue"])
+                ]),
+                createBaseVNode("div", _hoisted_7$1, [
+                  createVNode(_sfc_main$2, {
+                    "model-options": unref(availableTraits),
+                    modelValue: selectedTraits.value,
+                    "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => selectedTraits.value = $event)
+                  }, null, 8, ["model-options", "modelValue"])
+                ]),
+                createBaseVNode("div", _hoisted_8, [
+                  createVNode(_sfc_main$2, {
+                    "model-options": unref(availableExpansions),
+                    modelValue: selectedExpansions.value,
+                    "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => selectedExpansions.value = $event)
+                  }, null, 8, ["model-options", "modelValue"])
+                ]),
+                createBaseVNode("div", _hoisted_9, [
+                  withDirectives(createBaseVNode("input", {
+                    "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => needle.value = $event),
+                    placeholder: "filter by name"
+                  }, null, 512), [
+                    [vModelText, needle.value]
+                  ])
+                ]),
+                createBaseVNode("div", _hoisted_10, toDisplayString(unref(items).length) + " weapons found ", 1)
+              ])
             ])
           ])
         ]),
@@ -15257,7 +15259,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var WeaponSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-c32a6294"]]);
+var WeaponSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-75594bd3"]]);
 const _hoisted_1 = { class: "modal-dialog modal-dialog-centered" };
 const _hoisted_2 = { class: "modal-content" };
 const _hoisted_3 = { class: "modal-header" };
