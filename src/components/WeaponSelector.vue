@@ -7,6 +7,8 @@ import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
 import { makeListFilter } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
 
+defineEmits<{ (e: "select", weapon: Weapon): void }>();
+
 const needle = ref("");
 
 function matchName(weapon: Weapon): boolean {
@@ -119,7 +121,7 @@ const items = computed(() =>
       v-for="item in items"
       :key="item.name"
     >
-      <a href="#">
+      <a href="#" @click="$emit('select', item)">
         <img :src="item.image" :alt="item.name" class="w-100 rounded-3" />
       </a>
     </div>

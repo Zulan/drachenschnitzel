@@ -12,9 +12,12 @@ body {
  move content so that it doesn't jump when scrollbar appears
  https://stackoverflow.com/a/35437970/620382
 */
+/*
+disabled because it messes with bootstrap modal vertical stuff
 @media screen and (min-width: 960px) {
   html {
     margin-left: calc(100vw - 100%);
     margin-right: 0;
   }
 }
+*/
