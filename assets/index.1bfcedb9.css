@@ -49,13 +49,28 @@ disabled because it messes with bootstrap modal vertical stuff
   width: 4rem;
 }
 
-a img[data-v-e8f7140e] {
+a img[data-v-c32a6294] {
   z-index: 0;
   transition: transform 0.2s;
 }
-a:hover img[data-v-e8f7140e] {
+a:hover img[data-v-c32a6294] {
   z-index: 1;
   transform: scale(1.2);
+}
+.filter-grid[data-v-c32a6294] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.filter[data-v-c32a6294] {
+  width: fit-content;
+  display: inline-block;
+  overflow: auto;
+}
+.image-grid[data-v-c32a6294] {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+  grid-gap: 1rem;
 }
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

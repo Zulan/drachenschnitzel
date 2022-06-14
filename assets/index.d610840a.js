@@ -3507,6 +3507,135 @@ function getSequence(arr) {
   return result;
 }
 const isTeleport = (type) => type.__isTeleport;
+const isTeleportDisabled = (props) => props && (props.disabled || props.disabled === "");
+const isTargetSVG = (target) => typeof SVGElement !== "undefined" && target instanceof SVGElement;
+const resolveTarget = (props, select) => {
+  const targetSelector = props && props.to;
+  if (isString(targetSelector)) {
+    if (!select) {
+      return null;
+    } else {
+      const target = select(targetSelector);
+      return target;
+    }
+  } else {
+    return targetSelector;
+  }
+};
+const TeleportImpl = {
+  __isTeleport: true,
+  process(n1, n2, container, anchor, parentComponent, parentSuspense, isSVG, slotScopeIds, optimized, internals) {
+    const { mc: mountChildren, pc: patchChildren, pbc: patchBlockChildren, o: { insert, querySelector, createText, createComment } } = internals;
+    const disabled2 = isTeleportDisabled(n2.props);
+    let { shapeFlag, children, dynamicChildren } = n2;
+    if (n1 == null) {
+      const placeholder = n2.el = createText("");
+      const mainAnchor = n2.anchor = createText("");
+      insert(placeholder, container, anchor);
+      insert(mainAnchor, container, anchor);
+      const target = n2.target = resolveTarget(n2.props, querySelector);
+      const targetAnchor = n2.targetAnchor = createText("");
+      if (target) {
+        insert(targetAnchor, target);
+        isSVG = isSVG || isTargetSVG(target);
+      }
+      const mount = (container2, anchor2) => {
+        if (shapeFlag & 16) {
+          mountChildren(children, container2, anchor2, parentComponent, parentSuspense, isSVG, slotScopeIds, optimized);
+        }
+      };
+      if (disabled2) {
+        mount(container, mainAnchor);
+      } else if (target) {
+        mount(target, targetAnchor);
+      }
+    } else {
+      n2.el = n1.el;
+      const mainAnchor = n2.anchor = n1.anchor;
+      const target = n2.target = n1.target;
+      const targetAnchor = n2.targetAnchor = n1.targetAnchor;
+      const wasDisabled = isTeleportDisabled(n1.props);
+      const currentContainer = wasDisabled ? container : target;
+      const currentAnchor = wasDisabled ? mainAnchor : targetAnchor;
+      isSVG = isSVG || isTargetSVG(target);
+      if (dynamicChildren) {
+        patchBlockChildren(n1.dynamicChildren, dynamicChildren, currentContainer, parentComponent, parentSuspense, isSVG, slotScopeIds);
+        traverseStaticChildren(n1, n2, true);
+      } else if (!optimized) {
+        patchChildren(n1, n2, currentContainer, currentAnchor, parentComponent, parentSuspense, isSVG, slotScopeIds, false);
+      }
+      if (disabled2) {
+        if (!wasDisabled) {
+          moveTeleport(n2, container, mainAnchor, internals, 1);
+        }
+      } else {
+        if ((n2.props && n2.props.to) !== (n1.props && n1.props.to)) {
+          const nextTarget = n2.target = resolveTarget(n2.props, querySelector);
+          if (nextTarget) {
+            moveTeleport(n2, nextTarget, null, internals, 0);
+          }
+        } else if (wasDisabled) {
+          moveTeleport(n2, target, targetAnchor, internals, 1);
+        }
+      }
+    }
+  },
+  remove(vnode, parentComponent, parentSuspense, optimized, { um: unmount, o: { remove: hostRemove } }, doRemove) {
+    const { shapeFlag, children, anchor, targetAnchor, target, props } = vnode;
+    if (target) {
+      hostRemove(targetAnchor);
+    }
+    if (doRemove || !isTeleportDisabled(props)) {
+      hostRemove(anchor);
+      if (shapeFlag & 16) {
+        for (let i2 = 0; i2 < children.length; i2++) {
+          const child = children[i2];
+          unmount(child, parentComponent, parentSuspense, true, !!child.dynamicChildren);
+        }
+      }
+    }
+  },
+  move: moveTeleport,
+  hydrate: hydrateTeleport
+};
+function moveTeleport(vnode, container, parentAnchor, { o: { insert }, m: move }, moveType = 2) {
+  if (moveType === 0) {
+    insert(vnode.targetAnchor, container, parentAnchor);
+  }
+  const { el, anchor, shapeFlag, children, props } = vnode;
+  const isReorder = moveType === 2;
+  if (isReorder) {
+    insert(el, container, parentAnchor);
+  }
+  if (!isReorder || isTeleportDisabled(props)) {
+    if (shapeFlag & 16) {
+      for (let i2 = 0; i2 < children.length; i2++) {
+        move(children[i2], container, parentAnchor, 2);
+      }
+    }
+  }
+  if (isReorder) {
+    insert(anchor, container, parentAnchor);
+  }
+}
+function hydrateTeleport(node, vnode, parentComponent, parentSuspense, slotScopeIds, optimized, { o: { nextSibling, parentNode, querySelector } }, hydrateChildren) {
+  const target = vnode.target = resolveTarget(vnode.props, querySelector);
+  if (target) {
+    const targetNode = target._lpa || target.firstChild;
+    if (vnode.shapeFlag & 16) {
+      if (isTeleportDisabled(vnode.props)) {
+        vnode.anchor = hydrateChildren(nextSibling(node), vnode, parentNode(node), parentComponent, parentSuspense, slotScopeIds, optimized);
+        vnode.targetAnchor = targetNode;
+      } else {
+        vnode.anchor = nextSibling(node);
+        vnode.targetAnchor = hydrateChildren(targetNode, vnode, target, parentComponent, parentSuspense, slotScopeIds, optimized);
+      }
+      target._lpa = vnode.targetAnchor && nextSibling(vnode.targetAnchor);
+    }
+  }
+  return vnode.anchor && nextSibling(vnode.anchor);
+}
+const Teleport = TeleportImpl;
 const COMPONENTS = "components";
 function resolveComponent(name, maybeSelfReference) {
   return resolveAsset(COMPONENTS, name, true, maybeSelfReference) || name;
@@ -3559,6 +3688,9 @@ function setupBlock(vnode) {
 }
 function createElementBlock(type, props, children, patchFlag, dynamicProps, shapeFlag) {
   return setupBlock(createBaseVNode(type, props, children, patchFlag, dynamicProps, shapeFlag, true));
+}
+function createBlock(type, props, children, patchFlag, dynamicProps) {
+  return setupBlock(createVNode(type, props, children, patchFlag, dynamicProps, true));
 }
 function isVNode(value) {
   return value ? value.__v_isVNode === true : false;
@@ -4594,6 +4726,30 @@ function getCheckboxValue(el, checked) {
   const key = checked ? "_trueValue" : "_falseValue";
   return key in el ? el[key] : checked;
 }
+const systemModifiers = ["ctrl", "shift", "alt", "meta"];
+const modifierGuards = {
+  stop: (e) => e.stopPropagation(),
+  prevent: (e) => e.preventDefault(),
+  self: (e) => e.target !== e.currentTarget,
+  ctrl: (e) => !e.ctrlKey,
+  shift: (e) => !e.shiftKey,
+  alt: (e) => !e.altKey,
+  meta: (e) => !e.metaKey,
+  left: (e) => "button" in e && e.button !== 0,
+  middle: (e) => "button" in e && e.button !== 1,
+  right: (e) => "button" in e && e.button !== 2,
+  exact: (e, modifiers) => systemModifiers.some((m) => e[`${m}Key`] && !modifiers.includes(m))
+};
+const withModifiers = (fn2, modifiers) => {
+  return (event, ...args) => {
+    for (let i2 = 0; i2 < modifiers.length; i2++) {
+      const guard = modifierGuards[modifiers[i2]];
+      if (guard && guard(event, modifiers))
+        return;
+    }
+    return fn2(event, ...args);
+  };
+};
 const rendererOptions = extend({ patchProp }, nodeOps);
 let renderer;
 function ensureRenderer() {
@@ -14987,15 +15143,15 @@ function makeListFilter(selectionRef, match) {
 var WeaponSelector_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _hoisted_1$1 = { class: "card mb-3" };
 const _hoisted_2$1 = { class: "card-body" };
-const _hoisted_3$1 = { class: "row g-1" };
-const _hoisted_4$1 = { class: "col-6 col-lg-2" };
-const _hoisted_5$1 = { class: "col-6 col-lg-3" };
-const _hoisted_6$1 = { class: "col-12 col-lg-6 overflow-auto" };
-const _hoisted_7$1 = { class: "col-12 overflow-auto" };
-const _hoisted_8 = { class: "col-12 overflow-auto" };
-const _hoisted_9 = { class: "col-12 col-md-6" };
-const _hoisted_10 = { class: "col-12 col-md-6 text-end" };
-const _hoisted_11 = { class: "row g-2" };
+const _hoisted_3$1 = { class: "filter-grid" };
+const _hoisted_4$1 = { class: "filter" };
+const _hoisted_5$1 = { class: "filter" };
+const _hoisted_6$1 = { class: "filter" };
+const _hoisted_7$1 = { class: "filter" };
+const _hoisted_8 = { class: "filter" };
+const _hoisted_9 = { class: "filter" };
+const _hoisted_10 = { class: "filter" };
+const _hoisted_11 = { class: "image-grid" };
 const _hoisted_12 = ["onClick"];
 const _hoisted_13 = ["src", "alt"];
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
@@ -15075,19 +15231,18 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                   [vModelText, needle.value]
                 ])
               ]),
-              createBaseVNode("div", _hoisted_10, toDisplayString(unref(items).length) + " weapons found ", 1)
+              createBaseVNode("div", _hoisted_10, toDisplayString(unref(items).length) + " weapons found", 1)
             ])
           ])
         ]),
         createBaseVNode("div", _hoisted_11, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(items), (item) => {
             return openBlock(), createElementBlock("div", {
-              class: "col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2",
               key: item.name
             }, [
               createBaseVNode("a", {
-                href: "#",
-                onClick: ($event) => _ctx.$emit("select", item)
+                href: "",
+                onClick: withModifiers(($event) => _ctx.$emit("select", item), ["prevent"])
               }, [
                 createBaseVNode("img", {
                   src: item.image,
@@ -15102,7 +15257,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var WeaponSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-e8f7140e"]]);
+var WeaponSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-c32a6294"]]);
 const _hoisted_1 = { class: "modal-dialog modal-dialog-centered" };
 const _hoisted_2 = { class: "modal-content" };
 const _hoisted_3 = { class: "modal-header" };
@@ -15119,8 +15274,9 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const weaponDetailElement = ref(null);
     const selectedWeapon = ref(weapons[0]);
-    function selectWeapon(weapon) {
+    async function selectWeapon(weapon) {
       selectedWeapon.value = weapon;
+      await nextTick();
       if (weaponDetailElement.value === null) {
         throw Error("Internal error");
       }
@@ -15130,29 +15286,31 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock(Fragment, null, [
         createVNode(WeaponSelector, { onSelect: selectWeapon }),
-        createBaseVNode("div", {
-          class: "modal fade",
-          ref_key: "weaponDetailElement",
-          ref: weaponDetailElement,
-          tabindex: "-1",
-          "aria-hidden": "true"
-        }, [
-          createBaseVNode("div", _hoisted_1, [
-            createBaseVNode("div", _hoisted_2, [
-              createBaseVNode("div", _hoisted_3, [
-                createBaseVNode("h5", _hoisted_4, toDisplayString(selectedWeapon.value.name), 1),
-                _hoisted_5
-              ]),
-              createBaseVNode("div", _hoisted_6, [
-                createBaseVNode("img", {
-                  src: selectedWeapon.value.image,
-                  alt: selectedWeapon.value.name,
-                  class: "w-100 rounded-3"
-                }, null, 8, _hoisted_7)
+        (openBlock(), createBlock(Teleport, { to: "body" }, [
+          createBaseVNode("div", {
+            class: "modal",
+            ref_key: "weaponDetailElement",
+            ref: weaponDetailElement,
+            tabindex: "-1",
+            "aria-hidden": "true"
+          }, [
+            createBaseVNode("div", _hoisted_1, [
+              createBaseVNode("div", _hoisted_2, [
+                createBaseVNode("div", _hoisted_3, [
+                  createBaseVNode("h5", _hoisted_4, toDisplayString(selectedWeapon.value.name), 1),
+                  _hoisted_5
+                ]),
+                createBaseVNode("div", _hoisted_6, [
+                  createBaseVNode("img", {
+                    src: selectedWeapon.value.image,
+                    alt: selectedWeapon.value.name,
+                    class: "w-100 rounded-3"
+                  }, null, 8, _hoisted_7)
+                ])
               ])
             ])
-          ])
-        ], 512)
+          ], 512)
+        ]))
       ], 64);
     };
   }
