@@ -121,7 +121,7 @@ const items = computed(() =>
       v-for="item in items"
       :key="item.name"
     >
-      <a href="#" @click="$emit('select', item)">
+      <a href="" @click.prevent="$emit('select', item)">
         <img :src="item.image" :alt="item.name" class="w-100 rounded-3" />
       </a>
     </div>
