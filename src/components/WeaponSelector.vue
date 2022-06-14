@@ -75,43 +75,41 @@ const items = computed(() =>
 <template>
   <div class="card mb-3">
     <div class="card-body">
-      <form class="row g-1">
-        <div class="col-6 col-lg-2">
+      <form class="filter-grid">
+        <div class="filter">
           <FilterButtonGroup
             :model-options="availableCategories"
             v-model="selectedCategories"
           />
         </div>
-        <div class="col-6 col-lg-3">
+        <div class="filter">
           <FilterButtonGroup
             :model-options="availableAttacks"
             v-model="selectedAttacks"
           />
         </div>
-        <div class="col-12 col-lg-6 overflow-auto">
+        <div class="filter">
           <FilterButtonGroup
             :model-options="availableEquips"
             v-model="selectedEquips"
           />
         </div>
-        <div class="col-12 overflow-auto">
+        <div class="filter">
           <FilterButtonGroup
             :model-options="availableTraits"
             v-model="selectedTraits"
           />
         </div>
-        <div class="col-12 overflow-auto">
+        <div class="filter">
           <FilterButtonGroup
             :model-options="availableExpansions"
             v-model="selectedExpansions"
           />
         </div>
-        <div class="col-12 col-md-6">
+        <div class="filter">
           <input v-model="needle" placeholder="filter by name" />
         </div>
-        <div class="col-12 col-md-6 text-end">
-          {{ items.length }} weapons found
-        </div>
+        <div class="filter">{{ items.length }} weapons found</div>
       </form>
     </div>
   </div>
@@ -132,6 +130,18 @@ a img {
 a:hover img {
   z-index: 1;
   transform: scale(1.2);
+}
+
+.filter-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter {
+  width: fit-content;
+  display: inline-block;
+  overflow: auto;
 }
 
 .image-grid {
