@@ -115,12 +115,8 @@ const items = computed(() =>
       </form>
     </div>
   </div>
-  <div class="row g-2">
-    <div
-      class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2"
-      v-for="item in items"
-      :key="item.name"
-    >
+  <div class="image-grid">
+    <div v-for="item in items" :key="item.name">
       <a href="" @click.prevent="$emit('select', item)">
         <img :src="item.image" :alt="item.name" class="w-100 rounded-3" />
       </a>
@@ -136,5 +132,11 @@ a img {
 a:hover img {
   z-index: 1;
   transform: scale(1.2);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+  grid-gap: 1rem;
 }
 </style>
