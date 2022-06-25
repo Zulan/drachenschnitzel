@@ -42,15 +42,16 @@ async function selectMonster(monster: Monster) {
             ></button>
           </div>
           <div class="modal-body">
-            <div class="row">
-              <div class="col">
+            <!-- not using gutter but margin for the vertical stack -->
+            <div class="row g-0">
+              <div class="col-12 col-md m-1">
                 <img
                   :src="selectedMonster.image.front"
                   :alt="`${selectedMonster.name} front`"
                   class="w-100 rounded-3"
                 />
               </div>
-              <div class="col">
+              <div class="col-12 col-md m-1">
                 <img
                   :src="selectedMonster.image.back"
                   :alt="`${selectedMonster.name} back`"

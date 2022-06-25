@@ -106,25 +106,94 @@ const items = computed(() =>
   </div>
   <div class="image-grid">
     <div v-for="item in items" :key="item.nameAct">
-      <a href="" @click.prevent="$emit('select', item)">
-        <img
-          :src="item.image.front"
-          :alt="item.nameAct"
-          class="w-100 rounded-3"
-        />
+      <a class="monster-card" href="" @click.prevent="$emit('select', item)">
+        <div class="flip-icon">
+          <font-awesome-icon icon="rotate-left" size="5x" />
+        </div>
+        <div class="monster-card-inner">
+          <img
+            :src="item.image.front"
+            :alt="item.nameAct"
+            class="monster-front rounded-3"
+          />
+          <img
+            :src="item.image.back"
+            :alt="item.nameAct"
+            class="monster-back rounded-3"
+          />
+        </div>
       </a>
     </div>
   </div>
 </template>
 
 <style scoped>
-a img {
+/*Flip stuff based on https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+.monster-card {
+  position: relative;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
   z-index: 0;
-  transition: transform 0.2s;
 }
-a:hover img {
-  z-index: 1;
+
+.monster-card-inner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.monster-card:hover {
+  z-index: 50;
+}
+
+.monster-card:hover > .flip-icon {
+  z-index: 100;
+}
+
+.monster-card:hover > .monster-card-inner {
   transform: scale(1.2);
+}
+
+.monster-front {
+  position: absolute;
+}
+
+.monster-back {
+  position: relative;
+  transform: rotateY(180deg);
+}
+
+.monster-front,
+.monster-back {
+  width: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-icon {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 75%;
+}
+
+.flip-icon:hover {
+  color: gray;
+  opacity: 50%;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip icon container */
+.flip-icon:hover ~ .monster-card-inner {
+  transform: rotateY(180deg) scale(1.2);
 }
 
 .filter-grid {
