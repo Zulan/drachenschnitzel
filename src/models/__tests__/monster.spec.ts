@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { Act, Monster, Trait } from "../monster";
 import { Attack } from "../items";
+import { assetUrl } from "../../utils/assets";
 
 describe("parseMonster", () => {
   it("example", () => {
@@ -39,8 +40,8 @@ describe("parseMonster", () => {
     expect(shade.attack).toBe(Attack.Melee);
     expect(shade.expansion).toBe("Shards Of Everdark");
     expect(shade.image).toEqual({
-      front: "monsters/shade-se-act2-front.png",
-      back: "monsters/shade-se-act2-back.png",
+      front: assetUrl("d2e/monsters/shade-se-act2-front.png"),
+      back: assetUrl("d2e/monsters/shade-se-act2-back.png"),
     });
     expect(shade.traits).toEqual([Trait.Cursed, Trait.Dark]);
   });
