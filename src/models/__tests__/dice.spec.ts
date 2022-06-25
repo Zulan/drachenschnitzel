@@ -4,7 +4,7 @@ import { CombatDie, DefenseDie, DiceSet } from "../dice";
 
 describe("CombatDie", () => {
   it("define", () => {
-    const die = new CombatDie("purple", [[0, 0, 0, true], [3], [1, 1, 1]]);
+    const die = new CombatDie("black", [[0, 0, 0, true], [3], [1, 1, 1]]);
     expect(die.sides.length).toEqual(3);
     expect(die.sides[0].damage).toBe(0);
     expect(die.sides[0].range).toBe(0);
@@ -23,15 +23,15 @@ describe("CombatDie", () => {
 
 describe("DefenseDie", () => {
   it("define", () => {
-    const die = new DefenseDie("pink", [0, 1]);
+    const die = new DefenseDie("black", [0, 1]);
     expect(die.sides.length).toEqual(2);
     expect(die.sides[0].shields).toBe(0);
     expect(die.sides[1].shields).toBe(1);
   });
 });
 
-const dieA = new DefenseDie("A", [0, 1]);
-const dieB = new DefenseDie("B", [0, 2]);
+const dieA = new DefenseDie("gray", [0, 1]);
+const dieB = new DefenseDie("black", [0, 2]);
 
 describe("DiceSet", () => {
   it("iterate and linear", () => {

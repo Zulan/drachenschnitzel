@@ -11,8 +11,8 @@ import { ObjectCounter } from "@/utils/collections";
 
 const brownDie = new DefenseDie("brown", [0, 0, 0, 1, 1, 2]);
 const blackDie = new DefenseDie("black", [0, 2, 2, 2, 3, 4]);
-const simpleDefenseDie = new DefenseDie("simpleDense", [0, 1]);
-const simpleCombatDie = new CombatDie("simpleCombat", [
+const simpleDefenseDie = new DefenseDie("black", [0, 1]);
+const simpleCombatDie = new CombatDie("red", [
   [1, 2],
   [2, 0, 1],
 ]);
