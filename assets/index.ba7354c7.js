@@ -6702,13 +6702,13 @@ function useRouter() {
   return inject(routerKey);
 }
 var App_vue_vue_type_style_index_0_lang = "";
-const _hoisted_1$5 = { class: "navbar navbar-expand-lg navbar-light bg-light" };
-const _hoisted_2$4 = { class: "container" };
-const _hoisted_3$4 = /* @__PURE__ */ createBaseVNode("a", {
+const _hoisted_1$7 = { class: "navbar navbar-expand-lg navbar-light bg-light" };
+const _hoisted_2$6 = { class: "container" };
+const _hoisted_3$6 = /* @__PURE__ */ createBaseVNode("a", {
   class: "navbar-brand",
   href: "#"
 }, "\u{1F409} Drachenschnitzel", -1);
-const _hoisted_4$4 = /* @__PURE__ */ createBaseVNode("button", {
+const _hoisted_4$6 = /* @__PURE__ */ createBaseVNode("button", {
   class: "navbar-toggler",
   type: "button",
   "data-bs-toggle": "collapse",
@@ -6719,13 +6719,13 @@ const _hoisted_4$4 = /* @__PURE__ */ createBaseVNode("button", {
 }, [
   /* @__PURE__ */ createBaseVNode("span", { class: "navbar-toggler-icon" })
 ], -1);
-const _hoisted_5$4 = {
+const _hoisted_5$6 = {
   class: "collapse navbar-collapse",
   id: "navbarSupportedContent"
 };
-const _hoisted_6$3 = { class: "navbar-nav me-auto mb-2 mb-lg-0" };
-const _hoisted_7$3 = { class: "container pt-2" };
-const _sfc_main$6 = /* @__PURE__ */ defineComponent({
+const _hoisted_6$5 = { class: "navbar-nav me-auto mb-2 mb-lg-0" };
+const _hoisted_7$5 = { class: "container pt-2" };
+const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const router2 = useRouter();
     const routes = computed(() => {
@@ -6736,12 +6736,12 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock(Fragment, null, [
         createBaseVNode("header", null, [
-          createBaseVNode("nav", _hoisted_1$5, [
-            createBaseVNode("div", _hoisted_2$4, [
-              _hoisted_3$4,
-              _hoisted_4$4,
-              createBaseVNode("div", _hoisted_5$4, [
-                createBaseVNode("ul", _hoisted_6$3, [
+          createBaseVNode("nav", _hoisted_1$7, [
+            createBaseVNode("div", _hoisted_2$6, [
+              _hoisted_3$6,
+              _hoisted_4$6,
+              createBaseVNode("div", _hoisted_5$6, [
+                createBaseVNode("ul", _hoisted_6$5, [
                   (openBlock(true), createElementBlock(Fragment, null, renderList(unref(routes), (route) => {
                     return openBlock(), createElementBlock("li", {
                       class: "nav-item",
@@ -6765,7 +6765,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
             ])
           ])
         ]),
-        createBaseVNode("div", _hoisted_7$3, [
+        createBaseVNode("div", _hoisted_7$5, [
           createVNode(unref(RouterView))
         ])
       ], 64);
@@ -6812,712 +6812,2982 @@ var __glob_0_7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProp
   __proto__: null,
   "default": yellowTop
 }, Symbol.toStringTag, { value: "Module" }));
-var archaicScrollSn = "/drachenschnitzel/assets/archaic-scroll-sn.2c2e1d41.png";
+var arcaneBoltBgMageRunemaster = "/drachenschnitzel/assets/arcane-bolt-bg-mage-runemaster.3f2d2347.png";
 var __glob_0_8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": arcaneBoltBgMageRunemaster
+}, Symbol.toStringTag, { value: "Module" }));
+var blackWidowsWebTfScoutStalker = "/drachenschnitzel/assets/black-widows-web-tf-scout-stalker.5a1e1223.png";
+var __glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": blackWidowsWebTfScoutStalker
+}, Symbol.toStringTag, { value: "Module" }));
+var ceremonialStaffSotpHealerHierophant = "/drachenschnitzel/assets/ceremonial-staff-sotp-healer-hierophant.a90d934c.png";
+var __glob_0_10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ceremonialStaffSotpHealerHierophant
+}, Symbol.toStringTag, { value: "Module" }));
+var chippedGreataxeBgWarriorBerserker = "/drachenschnitzel/assets/chipped-greataxe-bg-warrior-berserker.9e615f41.png";
+var __glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chippedGreataxeBgWarriorBerserker
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsApothecaryBack = "/drachenschnitzel/assets/class-skills-apothecary-back.8bc70a15.png";
+var __glob_0_12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsApothecaryBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsBardBack = "/drachenschnitzel/assets/class-skills-bard-back.d4e1c0ad.png";
+var __glob_0_13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsBardBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsBeastmasterBack = "/drachenschnitzel/assets/class-skills-beastmaster-back.eaa78ca6.png";
+var __glob_0_14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsBeastmasterBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsBerserkerBack = "/drachenschnitzel/assets/class-skills-berserker-back.028065f4.png";
+var __glob_0_15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsBerserkerBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsBountyHunterBack = "/drachenschnitzel/assets/class-skills-bounty-hunter-back.2c704bc7.png";
+var __glob_0_16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsBountyHunterBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsChampionBack = "/drachenschnitzel/assets/class-skills-champion-back.982d66a7.png";
+var __glob_0_17 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsChampionBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsConjurerBack = "/drachenschnitzel/assets/class-skills-conjurer-back.6a0df57c.png";
+var __glob_0_18 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsConjurerBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsDiscipleBack = "/drachenschnitzel/assets/class-skills-disciple-back.b714788b.png";
+var __glob_0_19 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsDiscipleBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsElementalistBack = "/drachenschnitzel/assets/class-skills-elementalist-back.52a9def2.png";
+var __glob_0_20 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsElementalistBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsGeomancerBack = "/drachenschnitzel/assets/class-skills-geomancer-back.7d28b7fc.png";
+var __glob_0_21 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsGeomancerBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsHexerBack = "/drachenschnitzel/assets/class-skills-hexer-back.958a933c.png";
+var __glob_0_22 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsHexerBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsHierophantBack = "/drachenschnitzel/assets/class-skills-hierophant-back.628292cb.png";
+var __glob_0_23 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsHierophantBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsKnightBack = "/drachenschnitzel/assets/class-skills-knight-back.670aff2c.png";
+var __glob_0_24 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsKnightBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsMarshalBack = "/drachenschnitzel/assets/class-skills-marshal-back.082a8ef5.png";
+var __glob_0_25 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsMarshalBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsNecromancerBack = "/drachenschnitzel/assets/class-skills-necromancer-back.d6cbfc18.png";
+var __glob_0_26 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsNecromancerBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsProphetBack = "/drachenschnitzel/assets/class-skills-prophet-back.519d2c1b.png";
+var __glob_0_27 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsProphetBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsPsychicBack = "/drachenschnitzel/assets/class-skills-psychic-back.9d5bcb74.png";
+var __glob_0_28 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsPsychicBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsRunemasterBack = "/drachenschnitzel/assets/class-skills-runemaster-back.c48994da.png";
+var __glob_0_29 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsRunemasterBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsShadowWalkerBack = "/drachenschnitzel/assets/class-skills-shadow-walker-back.ed64f9b3.png";
+var __glob_0_30 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsShadowWalkerBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsSkirmisherBack = "/drachenschnitzel/assets/class-skills-skirmisher-back.6c510fce.png";
+var __glob_0_31 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsSkirmisherBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsSoulReaperBack = "/drachenschnitzel/assets/class-skills-soul-reaper-back.fd5a7210.png";
+var __glob_0_32 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsSoulReaperBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsSpiritspeakerBack = "/drachenschnitzel/assets/class-skills-spiritspeaker-back.031c202d.png";
+var __glob_0_33 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsSpiritspeakerBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsStalkerBack = "/drachenschnitzel/assets/class-skills-stalker-back.21ed10c0.png";
+var __glob_0_34 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsStalkerBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsThiefBack = "/drachenschnitzel/assets/class-skills-thief-back.ba645643.png";
+var __glob_0_35 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsThiefBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsTreasureHunterBack = "/drachenschnitzel/assets/class-skills-treasure-hunter-back.f1f958be.png";
+var __glob_0_36 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsTreasureHunterBack
+}, Symbol.toStringTag, { value: "Module" }));
+var classSkillsWildlanderBack = "/drachenschnitzel/assets/class-skills-wildlander-back.de6f182a.png";
+var __glob_0_37 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": classSkillsWildlanderBack
+}, Symbol.toStringTag, { value: "Module" }));
+var doubleCrossbowMrScoutBountyHunter = "/drachenschnitzel/assets/double-crossbow-mr-scout-bounty-hunter.1562843c.png";
+var __glob_0_38 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": doubleCrossbowMrScoutBountyHunter
+}, Symbol.toStringTag, { value: "Module" }));
+var featheredHatchetSnScoutShadowWalker = "/drachenschnitzel/assets/feathered-hatchet-sn-scout-shadow-walker.37c660c1.png";
+var __glob_0_39 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": featheredHatchetSnScoutShadowWalker
+}, Symbol.toStringTag, { value: "Module" }));
+var harvesterScytheLlHealerSoulReaper = "/drachenschnitzel/assets/harvester-scythe-ll-healer-soul-reaper.28139c76.png";
+var __glob_0_40 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": harvesterScytheLlHealerSoulReaper
+}, Symbol.toStringTag, { value: "Module" }));
+var hornOfCourageLwWarriorChampion = "/drachenschnitzel/assets/horn-of-courage-lw-warrior-champion.6085810e.png";
+var __glob_0_41 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hornOfCourageLwWarriorChampion
+}, Symbol.toStringTag, { value: "Module" }));
+var huntingKnifeTfScoutStalker = "/drachenschnitzel/assets/hunting-knife-tf-scout-stalker.1235feaa.png";
+var __glob_0_42 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": huntingKnifeTfScoutStalker
+}, Symbol.toStringTag, { value: "Module" }));
+var huntingSpearLrWarriorBeastmaster = "/drachenschnitzel/assets/hunting-spear-lr-warrior-beastmaster.4acccff7.png";
+var __glob_0_43 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": huntingSpearLrWarriorBeastmaster
+}, Symbol.toStringTag, { value: "Module" }));
+var ironFlailTfHealerProphet = "/drachenschnitzel/assets/iron-flail-tf-healer-prophet.de20252b.png";
+var __glob_0_44 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironFlailTfHealerProphet
+}, Symbol.toStringTag, { value: "Module" }));
+var ironLongswordBgWarriorKnight = "/drachenschnitzel/assets/iron-longsword-bg-warrior-knight.33bd80cb.png";
+var __glob_0_45 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironLongswordBgWarriorKnight
+}, Symbol.toStringTag, { value: "Module" }));
+var ironMaceBgHealerDisciple = "/drachenschnitzel/assets/iron-mace-bg-healer-disciple.3566c414.png";
+var __glob_0_46 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironMaceBgHealerDisciple
+}, Symbol.toStringTag, { value: "Module" }));
+var jaggedHandaxeSnWarriorSkirmisher = "/drachenschnitzel/assets/jagged-handaxe-sn-warrior-skirmisher.14128423.png";
+var __glob_0_47 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": jaggedHandaxeSnWarriorSkirmisher
+}, Symbol.toStringTag, { value: "Module" }));
+var leatherWhipLrScoutTreasureHunter = "/drachenschnitzel/assets/leather-whip-lr-scout-treasure-hunter.a4afb06b.png";
+var __glob_0_48 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": leatherWhipLrScoutTreasureHunter
+}, Symbol.toStringTag, { value: "Module" }));
+var luckyCharmBgScoutThief = "/drachenschnitzel/assets/lucky-charm-bg-scout-thief.ca124029.png";
+var __glob_0_49 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": luckyCharmBgScoutThief
+}, Symbol.toStringTag, { value: "Module" }));
+var luteSnHealerBard = "/drachenschnitzel/assets/lute-sn-healer-bard.d138096e.png";
+var __glob_0_50 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": luteSnHealerBard
+}, Symbol.toStringTag, { value: "Module" }));
+var mindsEyeTurbanSotpMagePsychic = "/drachenschnitzel/assets/minds-eye-turban-sotp-mage-psychic.688d6be6.png";
+var __glob_0_51 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": mindsEyeTurbanSotpMagePsychic
+}, Symbol.toStringTag, { value: "Module" }));
+var mirrorOfSoulsLlHealerSoulReaper = "/drachenschnitzel/assets/mirror-of-souls-ll-healer-soul-reaper.ca3f89c1.png";
+var __glob_0_52 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": mirrorOfSoulsLlHealerSoulReaper
+}, Symbol.toStringTag, { value: "Module" }));
+var oakStaffBgHealerSpiritspeaker = "/drachenschnitzel/assets/oak-staff-bg-healer-spiritspeaker.533d29a1.png";
+var __glob_0_53 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": oakStaffBgHealerSpiritspeaker
+}, Symbol.toStringTag, { value: "Module" }));
+var prismaticStaffSnMageConjurer = "/drachenschnitzel/assets/prismatic-staff-sn-mage-conjurer.7dbcb35a.png";
+var __glob_0_54 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": prismaticStaffSnMageConjurer
+}, Symbol.toStringTag, { value: "Module" }));
+var reapersScytheBgMageNecromancer = "/drachenschnitzel/assets/reapers-scythe-bg-mage-necromancer.4e858bf0.png";
+var __glob_0_55 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": reapersScytheBgMageNecromancer
+}, Symbol.toStringTag, { value: "Module" }));
+var runeshardCacheLlMageElementalist = "/drachenschnitzel/assets/runeshard-cache-ll-mage-elementalist.291e507e.png";
+var __glob_0_56 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": runeshardCacheLlMageElementalist
+}, Symbol.toStringTag, { value: "Module" }));
+var rustedHandaxeSnWarriorSkirmisher = "/drachenschnitzel/assets/rusted-handaxe-sn-warrior-skirmisher.478ce992.png";
+var __glob_0_57 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": rustedHandaxeSnWarriorSkirmisher
+}, Symbol.toStringTag, { value: "Module" }));
+var sacredScripturesSotpHealerHierophant = "/drachenschnitzel/assets/sacred-scriptures-sotp-healer-hierophant.3eb65ea3.png";
+var __glob_0_58 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sacredScripturesSotpHealerHierophant
+}, Symbol.toStringTag, { value: "Module" }));
+var sagesTomeTfHealerProphet = "/drachenschnitzel/assets/sages-tome-tf-healer-prophet.89e3769d.png";
+var __glob_0_59 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sagesTomeTfHealerProphet
+}, Symbol.toStringTag, { value: "Module" }));
+var shadowDartsSotpMagePsychic = "/drachenschnitzel/assets/shadow-darts-sotp-mage-psychic.9ce94a72.png";
+var __glob_0_60 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadowDartsSotpMagePsychic
+}, Symbol.toStringTag, { value: "Module" }));
+var signetRingMrWarriorMarshall = "/drachenschnitzel/assets/signet-ring-mr-warrior-marshall.c760baba.png";
+var __glob_0_61 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": signetRingMrWarriorMarshall
+}, Symbol.toStringTag, { value: "Module" }));
+var skinningKnifeLrWarriorBeastmaster = "/drachenschnitzel/assets/skinning-knife-lr-warrior-beastmaster.250babfe.png";
+var __glob_0_62 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": skinningKnifeLrWarriorBeastmaster
+}, Symbol.toStringTag, { value: "Module" }));
+var smokingVialsLrHealerApothecary = "/drachenschnitzel/assets/smoking-vials-lr-healer-apothecary.ad0ef937.png";
+var __glob_0_63 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": smokingVialsLrHealerApothecary
+}, Symbol.toStringTag, { value: "Module" }));
+var spireOfConfluxLlMageElementalist = "/drachenschnitzel/assets/spire-of-conflux-ll-mage-elementalist.e5a603a3.png";
+var __glob_0_64 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": spireOfConfluxLlMageElementalist
+}, Symbol.toStringTag, { value: "Module" }));
+var staffOfTheGraveLrMageHexer = "/drachenschnitzel/assets/staff-of-the-grave-lr-mage-hexer.63bb8adc.png";
+var __glob_0_65 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": staffOfTheGraveLrMageHexer
+}, Symbol.toStringTag, { value: "Module" }));
+var stasisRuneLwMageGeomancer = "/drachenschnitzel/assets/stasis-rune-lw-mage-geomancer.78356188.png";
+var __glob_0_66 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": stasisRuneLwMageGeomancer
+}, Symbol.toStringTag, { value: "Module" }));
+var theDeadMansCompassLrScoutTreasureHunter = "/drachenschnitzel/assets/the-dead-mans-compass-lr-scout-treasure-hunter.446e5ad5.png";
+var __glob_0_67 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theDeadMansCompassLrScoutTreasureHunter
+}, Symbol.toStringTag, { value: "Module" }));
+var throwingKnivesBgScoutThief = "/drachenschnitzel/assets/throwing-knives-bg-scout-thief.85505e4c.png";
+var __glob_0_68 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": throwingKnivesBgScoutThief
+}, Symbol.toStringTag, { value: "Module" }));
+var travelersBladeSnHealerBard = "/drachenschnitzel/assets/travelers-blade-sn-healer-bard.997ae197.png";
+var __glob_0_69 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": travelersBladeSnHealerBard
+}, Symbol.toStringTag, { value: "Module" }));
+var tribalCloakSnScoutShadowWalker = "/drachenschnitzel/assets/tribal-cloak-sn-scout-shadow-walker.0f67127e.png";
+var __glob_0_70 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": tribalCloakSnScoutShadowWalker
+}, Symbol.toStringTag, { value: "Module" }));
+var warHammerMrWarriorMarshall = "/drachenschnitzel/assets/war-hammer-mr-warrior-marshall.a8385cc9.png";
+var __glob_0_71 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": warHammerMrWarriorMarshall
+}, Symbol.toStringTag, { value: "Module" }));
+var woodenShieldBgHealerDisciple = "/drachenschnitzel/assets/wooden-shield-bg-healer-disciple.33c7d248.png";
+var __glob_0_72 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": woodenShieldBgHealerDisciple
+}, Symbol.toStringTag, { value: "Module" }));
+var woodenShieldBgWarriorKnight = "/drachenschnitzel/assets/wooden-shield-bg-warrior-knight.0fa47831.png";
+var __glob_0_73 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": woodenShieldBgWarriorKnight
+}, Symbol.toStringTag, { value: "Module" }));
+var wornGreatswordLwWarriorChampion = "/drachenschnitzel/assets/worn-greatsword-lw-warrior-champion.49dd8253.png";
+var __glob_0_74 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wornGreatswordLwWarriorChampion
+}, Symbol.toStringTag, { value: "Module" }));
+var yewShortbowBgScoutWildlander = "/drachenschnitzel/assets/yew-shortbow-bg-scout-wildlander.7a5a6f49.png";
+var __glob_0_75 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": yewShortbowBgScoutWildlander
+}, Symbol.toStringTag, { value: "Module" }));
+var arachyuraLrAct1Back = "/drachenschnitzel/assets/arachyura-lr-act1-back.9e76f77b.png";
+var __glob_0_76 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": arachyuraLrAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var arachyuraLrAct1Front = "/drachenschnitzel/assets/arachyura-lr-act1-front.44ff34b9.png";
+var __glob_0_77 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": arachyuraLrAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var arachyuraLrAct2Back = "/drachenschnitzel/assets/arachyura-lr-act2-back.3c5677c6.png";
+var __glob_0_78 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": arachyuraLrAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var arachyuraLrAct2Front = "/drachenschnitzel/assets/arachyura-lr-act2-front.504dc385.png";
+var __glob_0_79 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": arachyuraLrAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var banditMrAct1Back = "/drachenschnitzel/assets/bandit-mr-act1-back.0a08ca3c.png";
+var __glob_0_80 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": banditMrAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var banditMrAct1Front = "/drachenschnitzel/assets/bandit-mr-act1-front.f5063107.png";
+var __glob_0_81 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": banditMrAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var banditMrAct2Back = "/drachenschnitzel/assets/bandit-mr-act2-back.23273172.png";
+var __glob_0_82 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": banditMrAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var banditMrAct2Front = "/drachenschnitzel/assets/bandit-mr-act2-front.8d6cbdb9.png";
+var __glob_0_83 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": banditMrAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var baneSpiderCkAct1Back = "/drachenschnitzel/assets/bane-spider-ck-act1-back.6c8d82b5.png";
+var __glob_0_84 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": baneSpiderCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var baneSpiderCkAct1Front = "/drachenschnitzel/assets/bane-spider-ck-act1-front.3d9d347f.png";
+var __glob_0_85 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": baneSpiderCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var baneSpiderCkAct2Back = "/drachenschnitzel/assets/bane-spider-ck-act2-back.b43da6b6.png";
+var __glob_0_86 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": baneSpiderCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var baneSpiderCkAct2Front = "/drachenschnitzel/assets/bane-spider-ck-act2-front.bfa9176f.png";
+var __glob_0_87 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": baneSpiderCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var baneSpiderOoAct1Back = "/drachenschnitzel/assets/bane-spider-oo-act1-back.8481e533.png";
+var __glob_0_88 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": baneSpiderOoAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var baneSpiderOoAct1Front = "/drachenschnitzel/assets/bane-spider-oo-act1-front.7699b7aa.png";
+var __glob_0_89 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": baneSpiderOoAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var baneSpiderOoAct2Back = "/drachenschnitzel/assets/bane-spider-oo-act2-back.d89ada40.png";
+var __glob_0_90 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": baneSpiderOoAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var baneSpiderOoAct2Front = "/drachenschnitzel/assets/bane-spider-oo-act2-front.07907a02.png";
+var __glob_0_91 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": baneSpiderOoAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var barghestBgAct1Back = "/drachenschnitzel/assets/barghest-bg-act1-back.c1f4dd3a.png";
+var __glob_0_92 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": barghestBgAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var barghestBgAct1Front = "/drachenschnitzel/assets/barghest-bg-act1-front.bf4212bb.png";
+var __glob_0_93 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": barghestBgAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var barghestBgAct2Back = "/drachenschnitzel/assets/barghest-bg-act2-back.14ac8613.png";
+var __glob_0_94 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": barghestBgAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var barghestBgAct2Front = "/drachenschnitzel/assets/barghest-bg-act2-front.1e154c0d.png";
+var __glob_0_95 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": barghestBgAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var beastmanCkAct1Back = "/drachenschnitzel/assets/beastman-ck-act1-back.52dc620c.png";
+var __glob_0_96 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beastmanCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var beastmanCkAct1Front = "/drachenschnitzel/assets/beastman-ck-act1-front.d0d88fac.png";
+var __glob_0_97 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beastmanCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var beastmanCkAct2Back = "/drachenschnitzel/assets/beastman-ck-act2-back.f4dd3e58.png";
+var __glob_0_98 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beastmanCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var beastmanCkAct2Front = "/drachenschnitzel/assets/beastman-ck-act2-front.34b80550.png";
+var __glob_0_99 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beastmanCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var beastmanOoAct1Back = "/drachenschnitzel/assets/beastman-oo-act1-back.ebbc8370.png";
+var __glob_0_100 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beastmanOoAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var beastmanOoAct1Front = "/drachenschnitzel/assets/beastman-oo-act1-front.e7f7104b.png";
+var __glob_0_101 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beastmanOoAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var beastmanOoAct2Back = "/drachenschnitzel/assets/beastman-oo-act2-back.31a1e629.png";
+var __glob_0_102 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beastmanOoAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var beastmanOoAct2Front = "/drachenschnitzel/assets/beastman-oo-act2-front.38e504b1.png";
+var __glob_0_103 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": beastmanOoAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodApeCkAct1Back = "/drachenschnitzel/assets/blood-ape-ck-act1-back.0ed65692.png";
+var __glob_0_104 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodApeCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodApeCkAct1Front = "/drachenschnitzel/assets/blood-ape-ck-act1-front.c9cfecf2.png";
+var __glob_0_105 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodApeCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodApeCkAct2Back = "/drachenschnitzel/assets/blood-ape-ck-act2-back.711ec046.png";
+var __glob_0_106 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodApeCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodApeCkAct2Front = "/drachenschnitzel/assets/blood-ape-ck-act2-front.e5002f4f.png";
+var __glob_0_107 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodApeCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodApeSsAct1Back = "/drachenschnitzel/assets/blood-ape-ss-act1-back.d3133abd.png";
+var __glob_0_108 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodApeSsAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodApeSsAct1Front = "/drachenschnitzel/assets/blood-ape-ss-act1-front.bcfd55fb.png";
+var __glob_0_109 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodApeSsAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodApeSsAct2Back = "/drachenschnitzel/assets/blood-ape-ss-act2-back.73528bbe.png";
+var __glob_0_110 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodApeSsAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var bloodApeSsAct2Front = "/drachenschnitzel/assets/blood-ape-ss-act2-front.1a3a87d3.png";
+var __glob_0_111 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bloodApeSsAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var boneHorrorMbAct1Back = "/drachenschnitzel/assets/bone-horror-mb-act1-back.d78505d9.png";
+var __glob_0_112 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": boneHorrorMbAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var boneHorrorMbAct1Front = "/drachenschnitzel/assets/bone-horror-mb-act1-front.5132e97a.png";
+var __glob_0_113 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": boneHorrorMbAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var boneHorrorMbAct2Back = "/drachenschnitzel/assets/bone-horror-mb-act2-back.6ef83a89.png";
+var __glob_0_114 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": boneHorrorMbAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var boneHorrorMbAct2Front = "/drachenschnitzel/assets/bone-horror-mb-act2-front.23970a02.png";
+var __glob_0_115 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": boneHorrorMbAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var broodwalkerMbAct1Back = "/drachenschnitzel/assets/broodwalker-mb-act1-back.63f5b0d2.png";
+var __glob_0_116 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": broodwalkerMbAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var broodwalkerMbAct1Front = "/drachenschnitzel/assets/broodwalker-mb-act1-front.a0ccd054.png";
+var __glob_0_117 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": broodwalkerMbAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var broodwalkerMbAct2Back = "/drachenschnitzel/assets/broodwalker-mb-act2-back.6bccbfcc.png";
+var __glob_0_118 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": broodwalkerMbAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var broodwalkerMbAct2Front = "/drachenschnitzel/assets/broodwalker-mb-act2-front.898253fd.png";
+var __glob_0_119 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": broodwalkerMbAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var burrowingHorrorSotpAct1Back = "/drachenschnitzel/assets/burrowing-horror-sotp-act1-back.cbb1848b.png";
+var __glob_0_120 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": burrowingHorrorSotpAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var burrowingHorrorSotpAct1Front = "/drachenschnitzel/assets/burrowing-horror-sotp-act1-front.6fda8cee.png";
+var __glob_0_121 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": burrowingHorrorSotpAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var burrowingHorrorSotpAct2Back = "/drachenschnitzel/assets/burrowing-horror-sotp-act2-back.03163699.png";
+var __glob_0_122 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": burrowingHorrorSotpAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var burrowingHorrorSotpAct2Front = "/drachenschnitzel/assets/burrowing-horror-sotp-act2-front.afb518fe.png";
+var __glob_0_123 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": burrowingHorrorSotpAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var carrionDrakeLrAct1Back = "/drachenschnitzel/assets/carrion-drake-lr-act1-back.eead2997.png";
+var __glob_0_124 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": carrionDrakeLrAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var carrionDrakeLrAct1Front = "/drachenschnitzel/assets/carrion-drake-lr-act1-front.e80f49bc.png";
+var __glob_0_125 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": carrionDrakeLrAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var carrionDrakeLrAct2Back = "/drachenschnitzel/assets/carrion-drake-lr-act2-back.db0d3d1d.png";
+var __glob_0_126 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": carrionDrakeLrAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var carrionDrakeLrAct2Front = "/drachenschnitzel/assets/carrion-drake-lr-act2-front.5ee599cd.png";
+var __glob_0_127 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": carrionDrakeLrAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var caveSpiderBgAct1Back = "/drachenschnitzel/assets/cave-spider-bg-act1-back.864acbb8.png";
+var __glob_0_128 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": caveSpiderBgAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var caveSpiderBgAct1Front = "/drachenschnitzel/assets/cave-spider-bg-act1-front.5a5d38ab.png";
+var __glob_0_129 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": caveSpiderBgAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var caveSpiderBgAct2Back = "/drachenschnitzel/assets/cave-spider-bg-act2-back.08cbfeec.png";
+var __glob_0_130 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": caveSpiderBgAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var caveSpiderBgAct2Front = "/drachenschnitzel/assets/cave-spider-bg-act2-front.020e4e5d.png";
+var __glob_0_131 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": caveSpiderBgAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var changelingSnAct1Back = "/drachenschnitzel/assets/changeling-sn-act1-back.dc71e116.png";
+var __glob_0_132 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": changelingSnAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var changelingSnAct1Front = "/drachenschnitzel/assets/changeling-sn-act1-front.0b086173.png";
+var __glob_0_133 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": changelingSnAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var changelingSnAct2Back = "/drachenschnitzel/assets/changeling-sn-act2-back.60b0b3f3.png";
+var __glob_0_134 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": changelingSnAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var changelingSnAct2Front = "/drachenschnitzel/assets/changeling-sn-act2-front.f524e3f8.png";
+var __glob_0_135 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": changelingSnAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var chaosBeastCdAct1Back = "/drachenschnitzel/assets/chaos-beast-cd-act1-back.f0fc3f97.png";
+var __glob_0_136 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chaosBeastCdAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var chaosBeastCdAct1Front = "/drachenschnitzel/assets/chaos-beast-cd-act1-front.5a9d8293.png";
+var __glob_0_137 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chaosBeastCdAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var chaosBeastCdAct2Back = "/drachenschnitzel/assets/chaos-beast-cd-act2-back.99472ab3.png";
+var __glob_0_138 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chaosBeastCdAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var chaosBeastCdAct2Front = "/drachenschnitzel/assets/chaos-beast-cd-act2-front.f2ec4407.png";
+var __glob_0_139 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chaosBeastCdAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var chaosBeastCkAct1Back = "/drachenschnitzel/assets/chaos-beast-ck-act1-back.68c4a774.png";
+var __glob_0_140 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chaosBeastCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var chaosBeastCkAct1Front = "/drachenschnitzel/assets/chaos-beast-ck-act1-front.13992e3a.png";
+var __glob_0_141 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chaosBeastCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var chaosBeastCkAct2Back = "/drachenschnitzel/assets/chaos-beast-ck-act2-back.e864be7d.png";
+var __glob_0_142 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chaosBeastCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var chaosBeastCkAct2Front = "/drachenschnitzel/assets/chaos-beast-ck-act2-front.f4afcf47.png";
+var __glob_0_143 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": chaosBeastCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var crowHagTcAct1Back = "/drachenschnitzel/assets/crow-hag-tc-act1-back.1ef901c6.png";
+var __glob_0_144 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": crowHagTcAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var crowHagTcAct1Front = "/drachenschnitzel/assets/crow-hag-tc-act1-front.01ae46c5.png";
+var __glob_0_145 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": crowHagTcAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var crowHagTcAct2Back = "/drachenschnitzel/assets/crow-hag-tc-act2-back.aafe4028.png";
+var __glob_0_146 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": crowHagTcAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var crowHagTcAct2Front = "/drachenschnitzel/assets/crow-hag-tc-act2-front.7f4566a8.png";
+var __glob_0_147 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": crowHagTcAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var cryptDragonCkAct1Back = "/drachenschnitzel/assets/crypt-dragon-ck-act1-back.d6776718.png";
+var __glob_0_148 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cryptDragonCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var cryptDragonCkAct1Front = "/drachenschnitzel/assets/crypt-dragon-ck-act1-front.22e26904.png";
+var __glob_0_149 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cryptDragonCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var cryptDragonCkAct2Back = "/drachenschnitzel/assets/crypt-dragon-ck-act2-back.41832ced.png";
+var __glob_0_150 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cryptDragonCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var cryptDragonCkAct2Front = "/drachenschnitzel/assets/crypt-dragon-ck-act2-front.27154652.png";
+var __glob_0_151 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cryptDragonCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var cryptDragonGdAct1Back = "/drachenschnitzel/assets/crypt-dragon-gd-act1-back.ee123ac0.png";
+var __glob_0_152 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cryptDragonGdAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var cryptDragonGdAct1Front = "/drachenschnitzel/assets/crypt-dragon-gd-act1-front.aa74329d.png";
+var __glob_0_153 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cryptDragonGdAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var cryptDragonGdAct2Back = "/drachenschnitzel/assets/crypt-dragon-gd-act2-back.132eb1a7.png";
+var __glob_0_154 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cryptDragonGdAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var cryptDragonGdAct2Front = "/drachenschnitzel/assets/crypt-dragon-gd-act2-front.2339b94f.png";
+var __glob_0_155 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": cryptDragonGdAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var darkMinotaurSeAct1Back = "/drachenschnitzel/assets/dark-minotaur-se-act1-back.d3c9cd15.png";
+var __glob_0_156 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkMinotaurSeAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var darkMinotaurSeAct1Front = "/drachenschnitzel/assets/dark-minotaur-se-act1-front.25cbdabd.png";
+var __glob_0_157 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkMinotaurSeAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var darkMinotaurSeAct2Back = "/drachenschnitzel/assets/dark-minotaur-se-act2-back.8af1ea27.png";
+var __glob_0_158 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkMinotaurSeAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var darkMinotaurSeAct2Front = "/drachenschnitzel/assets/dark-minotaur-se-act2-front.027d6d10.png";
+var __glob_0_159 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkMinotaurSeAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var darkPriestCkAct1Back = "/drachenschnitzel/assets/dark-priest-ck-act1-back.5b5bc2a6.png";
+var __glob_0_160 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkPriestCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var darkPriestCkAct1Front = "/drachenschnitzel/assets/dark-priest-ck-act1-front.68f8e992.png";
+var __glob_0_161 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkPriestCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var darkPriestCkAct2Back = "/drachenschnitzel/assets/dark-priest-ck-act2-back.c4ddaf78.png";
+var __glob_0_162 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkPriestCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var darkPriestCkAct2Front = "/drachenschnitzel/assets/dark-priest-ck-act2-front.076e1010.png";
+var __glob_0_163 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkPriestCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var darkPriestGdAct1Back = "/drachenschnitzel/assets/dark-priest-gd-act1-back.f1a4a032.png";
+var __glob_0_164 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkPriestGdAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var darkPriestGdAct1Front = "/drachenschnitzel/assets/dark-priest-gd-act1-front.4e1896b5.png";
+var __glob_0_165 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkPriestGdAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var darkPriestGdAct2Back = "/drachenschnitzel/assets/dark-priest-gd-act2-back.310e8393.png";
+var __glob_0_166 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkPriestGdAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var darkPriestGdAct2Front = "/drachenschnitzel/assets/dark-priest-gd-act2-front.14b975e4.png";
+var __glob_0_167 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": darkPriestGdAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var deepElfBwAct1Back = "/drachenschnitzel/assets/deep-elf-bw-act1-back.2ee7cd76.png";
+var __glob_0_168 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": deepElfBwAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var deepElfBwAct1Front = "/drachenschnitzel/assets/deep-elf-bw-act1-front.ba0455e0.png";
+var __glob_0_169 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": deepElfBwAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var deepElfBwAct2Back = "/drachenschnitzel/assets/deep-elf-bw-act2-back.dad20d59.png";
+var __glob_0_170 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": deepElfBwAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var deepElfBwAct2Front = "/drachenschnitzel/assets/deep-elf-bw-act2-front.5bddbdbe.png";
+var __glob_0_171 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": deepElfBwAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var deepElfCkAct1Back = "/drachenschnitzel/assets/deep-elf-ck-act1-back.2f97be77.png";
+var __glob_0_172 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": deepElfCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var deepElfCkAct1Front = "/drachenschnitzel/assets/deep-elf-ck-act1-front.bc775d1e.png";
+var __glob_0_173 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": deepElfCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var deepElfCkAct2Back = "/drachenschnitzel/assets/deep-elf-ck-act2-back.2c6c44fa.png";
+var __glob_0_174 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": deepElfCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var deepElfCkAct2Front = "/drachenschnitzel/assets/deep-elf-ck-act2-front.13de06be.png";
+var __glob_0_175 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": deepElfCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var demonLordCkAct1Back = "/drachenschnitzel/assets/demon-lord-ck-act1-back.a58c3677.png";
+var __glob_0_176 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": demonLordCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var demonLordCkAct1Front = "/drachenschnitzel/assets/demon-lord-ck-act1-front.b3e308ba.png";
+var __glob_0_177 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": demonLordCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var demonLordCkAct2Back = "/drachenschnitzel/assets/demon-lord-ck-act2-back.1d0c8e24.png";
+var __glob_0_178 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": demonLordCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var demonLordCkAct2Front = "/drachenschnitzel/assets/demon-lord-ck-act2-front.4283b66e.png";
+var __glob_0_179 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": demonLordCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var demonLordTcAct1Back = "/drachenschnitzel/assets/demon-lord-tc-act1-back.cc977a06.png";
+var __glob_0_180 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": demonLordTcAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var demonLordTcAct1Front = "/drachenschnitzel/assets/demon-lord-tc-act1-front.db5281ae.png";
+var __glob_0_181 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": demonLordTcAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var demonLordTcAct2Back = "/drachenschnitzel/assets/demon-lord-tc-act2-back.fd36e70d.png";
+var __glob_0_182 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": demonLordTcAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var demonLordTcAct2Front = "/drachenschnitzel/assets/demon-lord-tc-act2-front.41d12e09.png";
+var __glob_0_183 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": demonLordTcAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var elementalBgAct1Back = "/drachenschnitzel/assets/elemental-bg-act1-back.a4e59841.png";
+var __glob_0_184 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": elementalBgAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var elementalBgAct1Front = "/drachenschnitzel/assets/elemental-bg-act1-front.5d3dd60f.png";
+var __glob_0_185 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": elementalBgAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var elementalBgAct2Back = "/drachenschnitzel/assets/elemental-bg-act2-back.f5c8b1dc.png";
+var __glob_0_186 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": elementalBgAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var elementalBgAct2Front = "/drachenschnitzel/assets/elemental-bg-act2-front.15eba80f.png";
+var __glob_0_187 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": elementalBgAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ettinBgAct1Back = "/drachenschnitzel/assets/ettin-bg-act1-back.bbd1be77.png";
+var __glob_0_188 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ettinBgAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ettinBgAct1Front = "/drachenschnitzel/assets/ettin-bg-act1-front.e96870df.png";
+var __glob_0_189 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ettinBgAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ettinBgAct2Back = "/drachenschnitzel/assets/ettin-bg-act2-back.384ba91c.png";
+var __glob_0_190 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ettinBgAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ettinBgAct2Front = "/drachenschnitzel/assets/ettin-bg-act2-front.41fa615b.png";
+var __glob_0_191 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ettinBgAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ferroxCkAct1Back = "/drachenschnitzel/assets/ferrox-ck-act1-back.5ad39e38.png";
+var __glob_0_192 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ferroxCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ferroxCkAct1Front = "/drachenschnitzel/assets/ferrox-ck-act1-front.6f87d908.png";
+var __glob_0_193 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ferroxCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ferroxCkAct2Back = "/drachenschnitzel/assets/ferrox-ck-act2-back.238409e8.png";
+var __glob_0_194 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ferroxCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ferroxCkAct2Front = "/drachenschnitzel/assets/ferrox-ck-act2-front.5c05aae7.png";
+var __glob_0_195 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ferroxCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ferroxSsAct1Back = "/drachenschnitzel/assets/ferrox-ss-act1-back.e84f7a75.png";
+var __glob_0_196 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ferroxSsAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ferroxSsAct1Front = "/drachenschnitzel/assets/ferrox-ss-act1-front.bb5eaf29.png";
+var __glob_0_197 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ferroxSsAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ferroxSsAct2Back = "/drachenschnitzel/assets/ferrox-ss-act2-back.9fef77ad.png";
+var __glob_0_198 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ferroxSsAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ferroxSsAct2Front = "/drachenschnitzel/assets/ferrox-ss-act2-front.fdf91830.png";
+var __glob_0_199 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ferroxSsAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var fireImpsLwAct1Back = "/drachenschnitzel/assets/fire-imps-lw-act1-back.85224f6b.png";
+var __glob_0_200 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fireImpsLwAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var fireImpsLwAct1Front = "/drachenschnitzel/assets/fire-imps-lw-act1-front.c4f71653.png";
+var __glob_0_201 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fireImpsLwAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var fireImpsLwAct2Back = "/drachenschnitzel/assets/fire-imps-lw-act2-back.3a8c0315.png";
+var __glob_0_202 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fireImpsLwAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var fireImpsLwAct2Front = "/drachenschnitzel/assets/fire-imps-lw-act2-front.37a6c3f2.png";
+var __glob_0_203 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fireImpsLwAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var fleshMoulderBgAct1Back = "/drachenschnitzel/assets/flesh-moulder-bg-act1-back.9ec9d80c.png";
+var __glob_0_204 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fleshMoulderBgAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var fleshMoulderBgAct1Front = "/drachenschnitzel/assets/flesh-moulder-bg-act1-front.492758dc.png";
+var __glob_0_205 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fleshMoulderBgAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var fleshMoulderBgAct2Back = "/drachenschnitzel/assets/flesh-moulder-bg-act2-back.71820c4f.png";
+var __glob_0_206 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fleshMoulderBgAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var fleshMoulderBgAct2Front = "/drachenschnitzel/assets/flesh-moulder-bg-act2-front.db833077.png";
+var __glob_0_207 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fleshMoulderBgAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var giantCdAct1Back = "/drachenschnitzel/assets/giant-cd-act1-back.71205f6b.png";
+var __glob_0_208 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": giantCdAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var giantCdAct1Front = "/drachenschnitzel/assets/giant-cd-act1-front.2ca02026.png";
+var __glob_0_209 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": giantCdAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var giantCdAct2Back = "/drachenschnitzel/assets/giant-cd-act2-back.1a6f195a.png";
+var __glob_0_210 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": giantCdAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var giantCdAct2Front = "/drachenschnitzel/assets/giant-cd-act2-front.1fc513a1.png";
+var __glob_0_211 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": giantCdAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var giantCkAct1Back = "/drachenschnitzel/assets/giant-ck-act1-back.cf123ef6.png";
+var __glob_0_212 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": giantCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var giantCkAct1Front = "/drachenschnitzel/assets/giant-ck-act1-front.fa73f464.png";
+var __glob_0_213 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": giantCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var giantCkAct2Back = "/drachenschnitzel/assets/giant-ck-act2-back.4b0e0f21.png";
+var __glob_0_214 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": giantCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var giantCkAct2Front = "/drachenschnitzel/assets/giant-ck-act2-front.232c020a.png";
+var __glob_0_215 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": giantCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var goblinArcherBgAct1Back = "/drachenschnitzel/assets/goblin-archer-bg-act1-back.6797b3d5.png";
+var __glob_0_216 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goblinArcherBgAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var goblinArcherBgAct1Front = "/drachenschnitzel/assets/goblin-archer-bg-act1-front.14785357.png";
+var __glob_0_217 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goblinArcherBgAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var goblinArcherBgAct2Back = "/drachenschnitzel/assets/goblin-archer-bg-act2-back.8682147c.png";
+var __glob_0_218 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goblinArcherBgAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var goblinArcherBgAct2Front = "/drachenschnitzel/assets/goblin-archer-bg-act2-front.df945dc8.png";
+var __glob_0_219 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goblinArcherBgAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var goblinWitcherLrAct1Back = "/drachenschnitzel/assets/goblin-witcher-lr-act1-back.373c4617.png";
+var __glob_0_220 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goblinWitcherLrAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var goblinWitcherLrAct1Front = "/drachenschnitzel/assets/goblin-witcher-lr-act1-front.6dd351e3.png";
+var __glob_0_221 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goblinWitcherLrAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var goblinWitcherLrAct2Back = "/drachenschnitzel/assets/goblin-witcher-lr-act2-back.ad665f01.png";
+var __glob_0_222 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goblinWitcherLrAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var goblinWitcherLrAct2Front = "/drachenschnitzel/assets/goblin-witcher-lr-act2-front.b1a454a7.png";
+var __glob_0_223 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": goblinWitcherLrAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var golemCfAct1Back = "/drachenschnitzel/assets/golem-cf-act1-back.c1ea32d1.png";
+var __glob_0_224 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": golemCfAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var golemCfAct1Front = "/drachenschnitzel/assets/golem-cf-act1-front.a635c6d9.png";
+var __glob_0_225 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": golemCfAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var golemCfAct2Back = "/drachenschnitzel/assets/golem-cf-act2-back.60ff9954.png";
+var __glob_0_226 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": golemCfAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var golemCfAct2Front = "/drachenschnitzel/assets/golem-cf-act2-front.ce9e8dfb.png";
+var __glob_0_227 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": golemCfAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var golemCkAct1Back = "/drachenschnitzel/assets/golem-ck-act1-back.d8710a1f.png";
+var __glob_0_228 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": golemCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var golemCkAct1Front = "/drachenschnitzel/assets/golem-ck-act1-front.d63c6287.png";
+var __glob_0_229 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": golemCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var golemCkAct2Back = "/drachenschnitzel/assets/golem-ck-act2-back.c90cc62e.png";
+var __glob_0_230 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": golemCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var golemCkAct2Front = "/drachenschnitzel/assets/golem-ck-act2-front.61478a5e.png";
+var __glob_0_231 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": golemCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var harpyTfAct1Back = "/drachenschnitzel/assets/harpy-tf-act1-back.f05d2b29.png";
+var __glob_0_232 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": harpyTfAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var harpyTfAct1Front = "/drachenschnitzel/assets/harpy-tf-act1-front.a12e0b51.png";
+var __glob_0_233 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": harpyTfAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var harpyTfAct2Back = "/drachenschnitzel/assets/harpy-tf-act2-back.93eb60c0.png";
+var __glob_0_234 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": harpyTfAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var harpyTfAct2Front = "/drachenschnitzel/assets/harpy-tf-act2-front.2739692f.png";
+var __glob_0_235 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": harpyTfAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var hellhoundBwAct1Back = "/drachenschnitzel/assets/hellhound-bw-act1-back.40a77bd0.png";
+var __glob_0_236 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hellhoundBwAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var hellhoundBwAct1Front = "/drachenschnitzel/assets/hellhound-bw-act1-front.0fefb670.png";
+var __glob_0_237 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hellhoundBwAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var hellhoundBwAct2Back = "/drachenschnitzel/assets/hellhound-bw-act2-back.05b47409.png";
+var __glob_0_238 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hellhoundBwAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var hellhoundBwAct2Front = "/drachenschnitzel/assets/hellhound-bw-act2-front.6bb1aa7f.png";
+var __glob_0_239 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hellhoundBwAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var hellhoundCkAct1Back = "/drachenschnitzel/assets/hellhound-ck-act1-back.f36a17a2.png";
+var __glob_0_240 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hellhoundCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var hellhoundCkAct1Front = "/drachenschnitzel/assets/hellhound-ck-act1-front.38ace7ad.png";
+var __glob_0_241 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hellhoundCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var hellhoundCkAct2Back = "/drachenschnitzel/assets/hellhound-ck-act2-back.3b42133c.png";
+var __glob_0_242 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hellhoundCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var hellhoundCkAct2Front = "/drachenschnitzel/assets/hellhound-ck-act2-front.d5b07c74.png";
+var __glob_0_243 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hellhoundCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var hybridSentinelLwAct1Back = "/drachenschnitzel/assets/hybrid-sentinel-lw-act1-back.d7292ea0.png";
+var __glob_0_244 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hybridSentinelLwAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var hybridSentinelLwAct1Front = "/drachenschnitzel/assets/hybrid-sentinel-lw-act1-front.9db174b1.png";
+var __glob_0_245 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hybridSentinelLwAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var hybridSentinelLwAct2Back = "/drachenschnitzel/assets/hybrid-sentinel-lw-act2-back.a04fda11.png";
+var __glob_0_246 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hybridSentinelLwAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var hybridSentinelLwAct2Front = "/drachenschnitzel/assets/hybrid-sentinel-lw-act2-front.2b9f80ac.png";
+var __glob_0_247 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": hybridSentinelLwAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var iceWyrmCkAct1Back = "/drachenschnitzel/assets/ice-wyrm-ck-act1-back.fe3240fa.png";
+var __glob_0_248 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": iceWyrmCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var iceWyrmCkAct1Front = "/drachenschnitzel/assets/ice-wyrm-ck-act1-front.d1897b92.png";
+var __glob_0_249 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": iceWyrmCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var iceWyrmCkAct2Back = "/drachenschnitzel/assets/ice-wyrm-ck-act2-back.4fdde70c.png";
+var __glob_0_250 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": iceWyrmCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var iceWyrmCkAct2Front = "/drachenschnitzel/assets/ice-wyrm-ck-act2-front.121c4582.png";
+var __glob_0_251 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": iceWyrmCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var iceWyrmSeAct1Back = "/drachenschnitzel/assets/ice-wyrm-se-act1-back.c5526521.png";
+var __glob_0_252 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": iceWyrmSeAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var iceWyrmSeAct1Front = "/drachenschnitzel/assets/ice-wyrm-se-act1-front.345a8e1b.png";
+var __glob_0_253 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": iceWyrmSeAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var iceWyrmSeAct2Back = "/drachenschnitzel/assets/ice-wyrm-se-act2-back.152bea4b.png";
+var __glob_0_254 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": iceWyrmSeAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var iceWyrmSeAct2Front = "/drachenschnitzel/assets/ice-wyrm-se-act2-front.f7a0f7a5.png";
+var __glob_0_255 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": iceWyrmSeAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ironboundSnAct1Back = "/drachenschnitzel/assets/ironbound-sn-act1-back.fb30a8f9.png";
+var __glob_0_256 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironboundSnAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ironboundSnAct1Front = "/drachenschnitzel/assets/ironbound-sn-act1-front.4f2dc701.png";
+var __glob_0_257 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironboundSnAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ironboundSnAct2Back = "/drachenschnitzel/assets/ironbound-sn-act2-back.2014a4c2.png";
+var __glob_0_258 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironboundSnAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ironboundSnAct2Front = "/drachenschnitzel/assets/ironbound-sn-act2-front.0b215704.png";
+var __glob_0_259 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ironboundSnAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var koboldBwAct1Back = "/drachenschnitzel/assets/kobold-bw-act1-back.efecbcfb.png";
+var __glob_0_260 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": koboldBwAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var koboldBwAct1Front = "/drachenschnitzel/assets/kobold-bw-act1-front.660d6e12.png";
+var __glob_0_261 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": koboldBwAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var koboldBwAct2Back = "/drachenschnitzel/assets/kobold-bw-act2-back.3e255cf5.png";
+var __glob_0_262 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": koboldBwAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var koboldBwAct2Front = "/drachenschnitzel/assets/kobold-bw-act2-front.14285466.png";
+var __glob_0_263 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": koboldBwAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var koboldCkAct1Back = "/drachenschnitzel/assets/kobold-ck-act1-back.b2c22fb7.png";
+var __glob_0_264 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": koboldCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var koboldCkAct1Front = "/drachenschnitzel/assets/kobold-ck-act1-front.4c013be9.png";
+var __glob_0_265 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": koboldCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var koboldCkAct2Back = "/drachenschnitzel/assets/kobold-ck-act2-back.22d2d2d0.png";
+var __glob_0_266 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": koboldCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var koboldCkAct2Front = "/drachenschnitzel/assets/kobold-ck-act2-front.d5842622.png";
+var __glob_0_267 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": koboldCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var lavaBeetleCdAct1Back = "/drachenschnitzel/assets/lava-beetle-cd-act1-back.2428a48d.png";
+var __glob_0_268 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lavaBeetleCdAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var lavaBeetleCdAct1Front = "/drachenschnitzel/assets/lava-beetle-cd-act1-front.fadb6c01.png";
+var __glob_0_269 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lavaBeetleCdAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var lavaBeetleCdAct2Back = "/drachenschnitzel/assets/lava-beetle-cd-act2-back.0f9e1107.png";
+var __glob_0_270 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lavaBeetleCdAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var lavaBeetleCdAct2Front = "/drachenschnitzel/assets/lava-beetle-cd-act2-front.a4312d1a.png";
+var __glob_0_271 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lavaBeetleCdAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var lavaBeetleCkAct1Back = "/drachenschnitzel/assets/lava-beetle-ck-act1-back.dfda4f3d.png";
+var __glob_0_272 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lavaBeetleCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var lavaBeetleCkAct1Front = "/drachenschnitzel/assets/lava-beetle-ck-act1-front.4fa86e90.png";
+var __glob_0_273 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lavaBeetleCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var lavaBeetleCkAct2Back = "/drachenschnitzel/assets/lava-beetle-ck-act2-back.4434f744.png";
+var __glob_0_274 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lavaBeetleCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var lavaBeetleCkAct2Front = "/drachenschnitzel/assets/lava-beetle-ck-act2-front.70a5516f.png";
+var __glob_0_275 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": lavaBeetleCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var manticoreCkAct1Back = "/drachenschnitzel/assets/manticore-ck-act1-back.d7dce950.png";
+var __glob_0_276 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": manticoreCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var manticoreCkAct1Front = "/drachenschnitzel/assets/manticore-ck-act1-front.c736fdb2.png";
+var __glob_0_277 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": manticoreCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var manticoreCkAct2Back = "/drachenschnitzel/assets/manticore-ck-act2-back.cbaaca80.png";
+var __glob_0_278 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": manticoreCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var manticoreCkAct2Front = "/drachenschnitzel/assets/manticore-ck-act2-front.8e75699d.png";
+var __glob_0_279 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": manticoreCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var manticoreVdAct1Back = "/drachenschnitzel/assets/manticore-vd-act1-back.297097bf.png";
+var __glob_0_280 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": manticoreVdAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var manticoreVdAct1Front = "/drachenschnitzel/assets/manticore-vd-act1-front.9e393065.png";
+var __glob_0_281 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": manticoreVdAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var manticoreVdAct2Back = "/drachenschnitzel/assets/manticore-vd-act2-back.66bc2c56.png";
+var __glob_0_282 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": manticoreVdAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var manticoreVdAct2Front = "/drachenschnitzel/assets/manticore-vd-act2-front.2c098a09.png";
+var __glob_0_283 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": manticoreVdAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var marrowPriestCrAct1Back = "/drachenschnitzel/assets/marrow-priest-cr-act1-back.043114b1.png";
+var __glob_0_284 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": marrowPriestCrAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var marrowPriestCrAct1Front = "/drachenschnitzel/assets/marrow-priest-cr-act1-front.1648726f.png";
+var __glob_0_285 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": marrowPriestCrAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var marrowPriestCrAct2Back = "/drachenschnitzel/assets/marrow-priest-cr-act2-back.d8a59dd0.png";
+var __glob_0_286 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": marrowPriestCrAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var marrowPriestCrAct2Front = "/drachenschnitzel/assets/marrow-priest-cr-act2-front.09eb060a.png";
+var __glob_0_287 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": marrowPriestCrAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var medusaCfAct1Back = "/drachenschnitzel/assets/medusa-cf-act1-back.e9c8c8b9.png";
+var __glob_0_288 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": medusaCfAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var medusaCfAct1Front = "/drachenschnitzel/assets/medusa-cf-act1-front.c0888c91.png";
+var __glob_0_289 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": medusaCfAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var medusaCfAct2Back = "/drachenschnitzel/assets/medusa-cf-act2-back.23290022.png";
+var __glob_0_290 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": medusaCfAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var medusaCfAct2Front = "/drachenschnitzel/assets/medusa-cf-act2-front.15525503.png";
+var __glob_0_291 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": medusaCfAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var medusaCkAct1Back = "/drachenschnitzel/assets/medusa-ck-act1-back.7a94782b.png";
+var __glob_0_292 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": medusaCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var medusaCkAct1Front = "/drachenschnitzel/assets/medusa-ck-act1-front.8efab0c2.png";
+var __glob_0_293 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": medusaCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var medusaCkAct2Back = "/drachenschnitzel/assets/medusa-ck-act2-back.fb5638c8.png";
+var __glob_0_294 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": medusaCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var medusaCkAct2Front = "/drachenschnitzel/assets/medusa-ck-act2-front.8d2a35da.png";
+var __glob_0_295 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": medusaCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var merriodBgAct1Back = "/drachenschnitzel/assets/merriod-bg-act1-back.7ade1a82.png";
+var __glob_0_296 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": merriodBgAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var merriodBgAct1Front = "/drachenschnitzel/assets/merriod-bg-act1-front.675d0543.png";
+var __glob_0_297 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": merriodBgAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var merriodBgAct2Back = "/drachenschnitzel/assets/merriod-bg-act2-back.6e815d08.png";
+var __glob_0_298 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": merriodBgAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var merriodBgAct2Front = "/drachenschnitzel/assets/merriod-bg-act2-front.aec42f7e.png";
+var __glob_0_299 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": merriodBgAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var nagaCkAct1Back = "/drachenschnitzel/assets/naga-ck-act1-back.20f46daa.png";
+var __glob_0_300 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": nagaCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var nagaCkAct1Front = "/drachenschnitzel/assets/naga-ck-act1-front.0f74b985.png";
+var __glob_0_301 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": nagaCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var nagaCkAct2Back = "/drachenschnitzel/assets/naga-ck-act2-back.9a0328f0.png";
+var __glob_0_302 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": nagaCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var nagaCkAct2Front = "/drachenschnitzel/assets/naga-ck-act2-front.7d9c7f7b.png";
+var __glob_0_303 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": nagaCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var nagaSsAct1Back = "/drachenschnitzel/assets/naga-ss-act1-back.dd03bfdb.png";
+var __glob_0_304 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": nagaSsAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var nagaSsAct1Front = "/drachenschnitzel/assets/naga-ss-act1-front.13be3d95.png";
+var __glob_0_305 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": nagaSsAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var nagaSsAct2Back = "/drachenschnitzel/assets/naga-ss-act2-back.49e17906.png";
+var __glob_0_306 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": nagaSsAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var nagaSsAct2Front = "/drachenschnitzel/assets/naga-ss-act2-front.4393f1ff.png";
+var __glob_0_307 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": nagaSsAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ogreCkAct1Back = "/drachenschnitzel/assets/ogre-ck-act1-back.d3c4f6e7.png";
+var __glob_0_308 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ogreCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ogreCkAct1Front = "/drachenschnitzel/assets/ogre-ck-act1-front.3998662d.png";
+var __glob_0_309 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ogreCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ogreCkAct2Back = "/drachenschnitzel/assets/ogre-ck-act2-back.5b5534ea.png";
+var __glob_0_310 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ogreCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ogreCkAct2Front = "/drachenschnitzel/assets/ogre-ck-act2-front.69a45335.png";
+var __glob_0_311 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ogreCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ogreVdAct1Back = "/drachenschnitzel/assets/ogre-vd-act1-back.9edbd567.png";
+var __glob_0_312 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ogreVdAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ogreVdAct1Front = "/drachenschnitzel/assets/ogre-vd-act1-front.4d08f9e8.png";
+var __glob_0_313 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ogreVdAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ogreVdAct2Back = "/drachenschnitzel/assets/ogre-vd-act2-back.4b7659d9.png";
+var __glob_0_314 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ogreVdAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ogreVdAct2Front = "/drachenschnitzel/assets/ogre-vd-act2-front.985beef0.png";
+var __glob_0_315 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ogreVdAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var plagueWormTfAct1Back = "/drachenschnitzel/assets/plague-worm-tf-act1-back.bc00aaa9.png";
+var __glob_0_316 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": plagueWormTfAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var plagueWormTfAct1Front = "/drachenschnitzel/assets/plague-worm-tf-act1-front.0b268b47.png";
+var __glob_0_317 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": plagueWormTfAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var plagueWormTfAct2Back = "/drachenschnitzel/assets/plague-worm-tf-act2-back.ea85dcf7.png";
+var __glob_0_318 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": plagueWormTfAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var plagueWormTfAct2Front = "/drachenschnitzel/assets/plague-worm-tf-act2-front.129d4aaf.png";
+var __glob_0_319 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": plagueWormTfAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ratSwarmSnAct1Back = "/drachenschnitzel/assets/rat-swarm-sn-act1-back.067f83b7.png";
+var __glob_0_320 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ratSwarmSnAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ratSwarmSnAct1Front = "/drachenschnitzel/assets/rat-swarm-sn-act1-front.d5c3315f.png";
+var __glob_0_321 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ratSwarmSnAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ratSwarmSnAct2Back = "/drachenschnitzel/assets/rat-swarm-sn-act2-back.f472b4d1.png";
+var __glob_0_322 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ratSwarmSnAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ratSwarmSnAct2Front = "/drachenschnitzel/assets/rat-swarm-sn-act2-front.b1019edd.png";
+var __glob_0_323 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ratSwarmSnAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var razorwingCkAct1Back = "/drachenschnitzel/assets/razorwing-ck-act1-back.ad510ae7.png";
+var __glob_0_324 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": razorwingCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var razorwingCkAct1Front = "/drachenschnitzel/assets/razorwing-ck-act1-front.64610413.png";
+var __glob_0_325 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": razorwingCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var razorwingCkAct2Back = "/drachenschnitzel/assets/razorwing-ck-act2-back.d0788259.png";
+var __glob_0_326 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": razorwingCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var razorwingCkAct2Front = "/drachenschnitzel/assets/razorwing-ck-act2-front.6d2dbef4.png";
+var __glob_0_327 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": razorwingCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var razorwingOoAct1Back = "/drachenschnitzel/assets/razorwing-oo-act1-back.8f9c2ae2.png";
+var __glob_0_328 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": razorwingOoAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var razorwingOoAct1Front = "/drachenschnitzel/assets/razorwing-oo-act1-front.4a32f5ab.png";
+var __glob_0_329 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": razorwingOoAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var razorwingOoAct2Back = "/drachenschnitzel/assets/razorwing-oo-act2-back.c7e39fb4.png";
+var __glob_0_330 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": razorwingOoAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var razorwingOoAct2Front = "/drachenschnitzel/assets/razorwing-oo-act2-front.cf28c702.png";
+var __glob_0_331 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": razorwingOoAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var reanimateMbAct1Back = "/drachenschnitzel/assets/reanimate-mb-act1-back.874f3454.png";
+var __glob_0_332 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": reanimateMbAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var reanimateMbAct1Front = "/drachenschnitzel/assets/reanimate-mb-act1-front.e5c00f03.png";
+var __glob_0_333 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": reanimateMbAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var reanimateMbAct2Back = "/drachenschnitzel/assets/reanimate-mb-act2-back.ab6b7ed9.png";
+var __glob_0_334 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": reanimateMbAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var reanimateMbAct2Front = "/drachenschnitzel/assets/reanimate-mb-act2-front.a8073602.png";
+var __glob_0_335 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": reanimateMbAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var sarcophagusGuardSotpAct1Back = "/drachenschnitzel/assets/sarcophagus-guard-sotp-act1-back.c237c25a.png";
+var __glob_0_336 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sarcophagusGuardSotpAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var sarcophagusGuardSotpAct1Front = "/drachenschnitzel/assets/sarcophagus-guard-sotp-act1-front.e1780cd5.png";
+var __glob_0_337 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sarcophagusGuardSotpAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var sarcophagusGuardSotpAct2Back = "/drachenschnitzel/assets/sarcophagus-guard-sotp-act2-back.fb4a156e.png";
+var __glob_0_338 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sarcophagusGuardSotpAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var sarcophagusGuardSotpAct2Front = "/drachenschnitzel/assets/sarcophagus-guard-sotp-act2-front.cd9be606.png";
+var __glob_0_339 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sarcophagusGuardSotpAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var shadeCkAct1Back = "/drachenschnitzel/assets/shade-ck-act1-back.39f924d3.png";
+var __glob_0_340 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadeCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var shadeCkAct1Front = "/drachenschnitzel/assets/shade-ck-act1-front.e9b9fc06.png";
+var __glob_0_341 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadeCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var shadeCkAct2Back = "/drachenschnitzel/assets/shade-ck-act2-back.199c21ac.png";
+var __glob_0_342 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadeCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var shadeCkAct2Front = "/drachenschnitzel/assets/shade-ck-act2-front.ec57bfeb.png";
+var __glob_0_343 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadeCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var shadeSeAct1Back = "/drachenschnitzel/assets/shade-se-act1-back.7f996958.png";
+var __glob_0_344 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadeSeAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var shadeSeAct1Front = "/drachenschnitzel/assets/shade-se-act1-front.05718738.png";
+var __glob_0_345 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadeSeAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var shadeSeAct2Back = "/drachenschnitzel/assets/shade-se-act2-back.c9c20a8d.png";
+var __glob_0_346 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadeSeAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var shadeSeAct2Front = "/drachenschnitzel/assets/shade-se-act2-front.4b5dd384.png";
+var __glob_0_347 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadeSeAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var shadowDragonBgAct1Back = "/drachenschnitzel/assets/shadow-dragon-bg-act1-back.3a4b61bb.png";
+var __glob_0_348 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadowDragonBgAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var shadowDragonBgAct1Front = "/drachenschnitzel/assets/shadow-dragon-bg-act1-front.d4dec084.png";
+var __glob_0_349 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadowDragonBgAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var shadowDragonBgAct2Back = "/drachenschnitzel/assets/shadow-dragon-bg-act2-back.b1fb933e.png";
+var __glob_0_350 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadowDragonBgAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var shadowDragonBgAct2Front = "/drachenschnitzel/assets/shadow-dragon-bg-act2-front.1dca2685.png";
+var __glob_0_351 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadowDragonBgAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var shamblingColossusCrAct1Back = "/drachenschnitzel/assets/shambling-colossus-cr-act1-back.95c49171.png";
+var __glob_0_352 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shamblingColossusCrAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var shamblingColossusCrAct1Front = "/drachenschnitzel/assets/shambling-colossus-cr-act1-front.edba2297.png";
+var __glob_0_353 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shamblingColossusCrAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var shamblingColossusCrAct2Back = "/drachenschnitzel/assets/shambling-colossus-cr-act2-back.33cb8239.png";
+var __glob_0_354 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shamblingColossusCrAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var shamblingColossusCrAct2Front = "/drachenschnitzel/assets/shambling-colossus-cr-act2-front.e59de334.png";
+var __glob_0_355 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shamblingColossusCrAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var skeletonArcherCkAct1Back = "/drachenschnitzel/assets/skeleton-archer-ck-act1-back.5ef9cc7e.png";
+var __glob_0_356 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": skeletonArcherCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var skeletonArcherCkAct1Front = "/drachenschnitzel/assets/skeleton-archer-ck-act1-front.9e5a0040.png";
+var __glob_0_357 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": skeletonArcherCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var skeletonArcherCkAct2Back = "/drachenschnitzel/assets/skeleton-archer-ck-act2-back.b61d4a1f.png";
+var __glob_0_358 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": skeletonArcherCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var skeletonArcherCkAct2Front = "/drachenschnitzel/assets/skeleton-archer-ck-act2-front.f1d90b61.png";
+var __glob_0_359 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": skeletonArcherCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var skeletonArcherTcAct1Back = "/drachenschnitzel/assets/skeleton-archer-tc-act1-back.a8116f95.png";
+var __glob_0_360 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": skeletonArcherTcAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var skeletonArcherTcAct1Front = "/drachenschnitzel/assets/skeleton-archer-tc-act1-front.00ba9f2c.png";
+var __glob_0_361 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": skeletonArcherTcAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var skeletonArcherTcAct2Back = "/drachenschnitzel/assets/skeleton-archer-tc-act2-back.faa0f9e7.png";
+var __glob_0_362 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": skeletonArcherTcAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var skeletonArcherTcAct2Front = "/drachenschnitzel/assets/skeleton-archer-tc-act2-front.9dfbd751.png";
+var __glob_0_363 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": skeletonArcherTcAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var sorcererCfAct1Back = "/drachenschnitzel/assets/sorcerer-cf-act1-back.3ae527eb.png";
+var __glob_0_364 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sorcererCfAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var sorcererCfAct1Front = "/drachenschnitzel/assets/sorcerer-cf-act1-front.423f9967.png";
+var __glob_0_365 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sorcererCfAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var sorcererCfAct2Back = "/drachenschnitzel/assets/sorcerer-cf-act2-back.3f306c22.png";
+var __glob_0_366 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sorcererCfAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var sorcererCfAct2Front = "/drachenschnitzel/assets/sorcerer-cf-act2-front.7248167a.png";
+var __glob_0_367 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sorcererCfAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var sorcererCkAct1Back = "/drachenschnitzel/assets/sorcerer-ck-act1-back.3233286b.png";
+var __glob_0_368 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sorcererCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var sorcererCkAct1Front = "/drachenschnitzel/assets/sorcerer-ck-act1-front.1fff6e19.png";
+var __glob_0_369 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sorcererCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var sorcererCkAct2Back = "/drachenschnitzel/assets/sorcerer-ck-act2-back.c03e07ca.png";
+var __glob_0_370 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sorcererCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var sorcererCkAct2Front = "/drachenschnitzel/assets/sorcerer-ck-act2-front.4d20eba3.png";
+var __glob_0_371 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sorcererCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var theDispossessedCrAct1Back = "/drachenschnitzel/assets/the-dispossessed-cr-act1-back.f10f64ee.png";
+var __glob_0_372 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theDispossessedCrAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var theDispossessedCrAct1Front = "/drachenschnitzel/assets/the-dispossessed-cr-act1-front.9463915e.png";
+var __glob_0_373 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theDispossessedCrAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var theDispossessedCrAct2Back = "/drachenschnitzel/assets/the-dispossessed-cr-act2-back.76141904.png";
+var __glob_0_374 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theDispossessedCrAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var theDispossessedCrAct2Front = "/drachenschnitzel/assets/the-dispossessed-cr-act2-front.77ce8a8a.png";
+var __glob_0_375 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theDispossessedCrAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var trollCkAct1Back = "/drachenschnitzel/assets/troll-ck-act1-back.801615a9.png";
+var __glob_0_376 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": trollCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var trollCkAct1Front = "/drachenschnitzel/assets/troll-ck-act1-front.9b1a7acb.png";
+var __glob_0_377 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": trollCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var trollCkAct2Back = "/drachenschnitzel/assets/troll-ck-act2-back.7449ba1d.png";
+var __glob_0_378 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": trollCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var trollCkAct2Front = "/drachenschnitzel/assets/troll-ck-act2-front.42378ed7.png";
+var __glob_0_379 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": trollCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var trollVdAct1Back = "/drachenschnitzel/assets/troll-vd-act1-back.aff3677f.png";
+var __glob_0_380 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": trollVdAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var trollVdAct1Front = "/drachenschnitzel/assets/troll-vd-act1-front.8bfd8468.png";
+var __glob_0_381 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": trollVdAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var trollVdAct2Back = "/drachenschnitzel/assets/troll-vd-act2-back.00bdd1cb.png";
+var __glob_0_382 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": trollVdAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var trollVdAct2Front = "/drachenschnitzel/assets/troll-vd-act2-front.bcf980b7.png";
+var __glob_0_383 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": trollVdAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var volucrixReaverLrAct1Back = "/drachenschnitzel/assets/volucrix-reaver-lr-act1-back.9726ebaf.png";
+var __glob_0_384 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": volucrixReaverLrAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var volucrixReaverLrAct1Front = "/drachenschnitzel/assets/volucrix-reaver-lr-act1-front.8967ad27.png";
+var __glob_0_385 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": volucrixReaverLrAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var volucrixReaverLrAct2Back = "/drachenschnitzel/assets/volucrix-reaver-lr-act2-back.b0e29aff.png";
+var __glob_0_386 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": volucrixReaverLrAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var volucrixReaverLrAct2Front = "/drachenschnitzel/assets/volucrix-reaver-lr-act2-front.f9b09e4b.png";
+var __glob_0_387 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": volucrixReaverLrAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var wendigoCkAct1Back = "/drachenschnitzel/assets/wendigo-ck-act1-back.fd61645e.png";
+var __glob_0_388 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wendigoCkAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var wendigoCkAct1Front = "/drachenschnitzel/assets/wendigo-ck-act1-front.5a11eca5.png";
+var __glob_0_389 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wendigoCkAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var wendigoCkAct2Back = "/drachenschnitzel/assets/wendigo-ck-act2-back.3e4ee0ae.png";
+var __glob_0_390 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wendigoCkAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var wendigoCkAct2Front = "/drachenschnitzel/assets/wendigo-ck-act2-front.476e16d3.png";
+var __glob_0_391 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wendigoCkAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var wendigoGdAct1Back = "/drachenschnitzel/assets/wendigo-gd-act1-back.37ba49c8.png";
+var __glob_0_392 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wendigoGdAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var wendigoGdAct1Front = "/drachenschnitzel/assets/wendigo-gd-act1-front.cfe62add.png";
+var __glob_0_393 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wendigoGdAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var wendigoGdAct2Back = "/drachenschnitzel/assets/wendigo-gd-act2-back.92bfb3f1.png";
+var __glob_0_394 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wendigoGdAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var wendigoGdAct2Front = "/drachenschnitzel/assets/wendigo-gd-act2-front.689eca09.png";
+var __glob_0_395 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wendigoGdAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var wraithMrAct1Back = "/drachenschnitzel/assets/wraith-mr-act1-back.1822833a.png";
+var __glob_0_396 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wraithMrAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var wraithMrAct1Front = "/drachenschnitzel/assets/wraith-mr-act1-front.7631d85b.png";
+var __glob_0_397 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wraithMrAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var wraithMrAct2Back = "/drachenschnitzel/assets/wraith-mr-act2-back.90f9198c.png";
+var __glob_0_398 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wraithMrAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var wraithMrAct2Front = "/drachenschnitzel/assets/wraith-mr-act2-front.a155ba03.png";
+var __glob_0_399 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wraithMrAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ynfernaelHulkSnAct1Back = "/drachenschnitzel/assets/ynfernael-hulk-sn-act1-back.f5d4d047.png";
+var __glob_0_400 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ynfernaelHulkSnAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ynfernaelHulkSnAct1Front = "/drachenschnitzel/assets/ynfernael-hulk-sn-act1-front.e12adea1.png";
+var __glob_0_401 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ynfernaelHulkSnAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var ynfernaelHulkSnAct2Back = "/drachenschnitzel/assets/ynfernael-hulk-sn-act2-back.c80b7a4e.png";
+var __glob_0_402 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ynfernaelHulkSnAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var ynfernaelHulkSnAct2Front = "/drachenschnitzel/assets/ynfernael-hulk-sn-act2-front.0d5363aa.png";
+var __glob_0_403 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ynfernaelHulkSnAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var zombieBgAct1Back = "/drachenschnitzel/assets/zombie-bg-act1-back.8795627c.png";
+var __glob_0_404 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": zombieBgAct1Back
+}, Symbol.toStringTag, { value: "Module" }));
+var zombieBgAct1Front = "/drachenschnitzel/assets/zombie-bg-act1-front.3b17dc65.png";
+var __glob_0_405 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": zombieBgAct1Front
+}, Symbol.toStringTag, { value: "Module" }));
+var zombieBgAct2Back = "/drachenschnitzel/assets/zombie-bg-act2-back.288b99ef.png";
+var __glob_0_406 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": zombieBgAct2Back
+}, Symbol.toStringTag, { value: "Module" }));
+var zombieBgAct2Front = "/drachenschnitzel/assets/zombie-bg-act2-front.afd2a50a.png";
+var __glob_0_407 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": zombieBgAct2Front
+}, Symbol.toStringTag, { value: "Module" }));
+var auriumMailLw = "/drachenschnitzel/assets/aurium-mail-lw.d19514cd.png";
+var __glob_0_408 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": auriumMailLw
+}, Symbol.toStringTag, { value: "Module" }));
+var bonebornBowCr = "/drachenschnitzel/assets/boneborn-bow-cr.45743777.png";
+var __glob_0_409 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bonebornBowCr
+}, Symbol.toStringTag, { value: "Module" }));
+var bookOfStarsMr = "/drachenschnitzel/assets/book-of-stars-mr.a534670c.png";
+var __glob_0_410 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bookOfStarsMr
+}, Symbol.toStringTag, { value: "Module" }));
+var dawnbladeBg = "/drachenschnitzel/assets/dawnblade-bg.90a20448.png";
+var __glob_0_411 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": dawnbladeBg
+}, Symbol.toStringTag, { value: "Module" }));
+var fearEaterMb = "/drachenschnitzel/assets/fear-eater-mb.d37d411b.png";
+var __glob_0_412 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fearEaterMb
+}, Symbol.toStringTag, { value: "Module" }));
+var forewarnedRingCr = "/drachenschnitzel/assets/forewarned-ring-cr.95101ed5.png";
+var __glob_0_413 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": forewarnedRingCr
+}, Symbol.toStringTag, { value: "Module" }));
+var fortunasDiceBg = "/drachenschnitzel/assets/fortunas-dice-bg.cea7b7fa.png";
+var __glob_0_414 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fortunasDiceBg
+}, Symbol.toStringTag, { value: "Module" }));
+var gauntletsOfPowerLr = "/drachenschnitzel/assets/gauntlets-of-power-lr.2c98eb89.png";
+var __glob_0_415 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": gauntletsOfPowerLr
+}, Symbol.toStringTag, { value: "Module" }));
+var immunityElixirTf = "/drachenschnitzel/assets/immunity-elixir-tf.b264b36e.png";
+var __glob_0_416 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": immunityElixirTf
+}, Symbol.toStringTag, { value: "Module" }));
+var livingHeartLr = "/drachenschnitzel/assets/living-heart-lr.70810439.png";
+var __glob_0_417 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": livingHeartLr
+}, Symbol.toStringTag, { value: "Module" }));
+var mendingTalismanTf = "/drachenschnitzel/assets/mending-talisman-tf.e702a723.png";
+var __glob_0_418 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": mendingTalismanTf
+}, Symbol.toStringTag, { value: "Module" }));
+var robesOfTheLastCr$1 = "/drachenschnitzel/assets/robes-of-the-last-cr.6c673698.png";
+var __glob_0_419 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": robesOfTheLastCr$1
+}, Symbol.toStringTag, { value: "Module" }));
+var shadowPlotterSn$1 = "/drachenschnitzel/assets/shadow-plotter-sn.3c5ae740.png";
+var __glob_0_420 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadowPlotterSn$1
+}, Symbol.toStringTag, { value: "Module" }));
+var shardsOfIthyndrusMr$1 = "/drachenschnitzel/assets/shards-of-ithyndrus-mr.c921fa05.png";
+var __glob_0_421 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shardsOfIthyndrusMr$1
+}, Symbol.toStringTag, { value: "Module" }));
+var shieldOfTheDarkGodBg = "/drachenschnitzel/assets/shield-of-the-dark-god-bg.c351710a.png";
+var __glob_0_422 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shieldOfTheDarkGodBg
+}, Symbol.toStringTag, { value: "Module" }));
+var spiritedScytheSn = "/drachenschnitzel/assets/spirited-scythe-sn.1e233649.png";
+var __glob_0_423 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": spiritedScytheSn
+}, Symbol.toStringTag, { value: "Module" }));
+var staffOfLightBg = "/drachenschnitzel/assets/staff-of-light-bg.727444c6.png";
+var __glob_0_424 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": staffOfLightBg
+}, Symbol.toStringTag, { value: "Module" }));
+var sunStoneLr = "/drachenschnitzel/assets/sun-stone-lr.a3f9931c.png";
+var __glob_0_425 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sunStoneLr
+}, Symbol.toStringTag, { value: "Module" }));
+var theManorsHeartMr$1 = "/drachenschnitzel/assets/the-manors-heart-mr.7150a853.png";
+var __glob_0_426 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theManorsHeartMr$1
+}, Symbol.toStringTag, { value: "Module" }));
+var theShadowRuneBg$1 = "/drachenschnitzel/assets/the-shadow-rune-bg.75d69caf.png";
+var __glob_0_427 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theShadowRuneBg$1
+}, Symbol.toStringTag, { value: "Module" }));
+var theWhiteCrownMb = "/drachenschnitzel/assets/the-white-crown-mb.1bb724c8.png";
+var __glob_0_428 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theWhiteCrownMb
+}, Symbol.toStringTag, { value: "Module" }));
+var trueshotBg = "/drachenschnitzel/assets/trueshot-bg.a1505775.png";
+var __glob_0_429 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": trueshotBg
+}, Symbol.toStringTag, { value: "Module" }));
+var undertakersCoatMb$1 = "/drachenschnitzel/assets/undertakers-coat-mb.90905f48.png";
+var __glob_0_430 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": undertakersCoatMb$1
+}, Symbol.toStringTag, { value: "Module" }));
+var valyndrasBaneLw = "/drachenschnitzel/assets/valyndras-bane-lw.e1fed3b5.png";
+var __glob_0_431 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": valyndrasBaneLw
+}, Symbol.toStringTag, { value: "Module" }));
+var wanderersStoneMr = "/drachenschnitzel/assets/wanderers-stone-mr.98d6b0b4.png";
+var __glob_0_432 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": wanderersStoneMr
+}, Symbol.toStringTag, { value: "Module" }));
+var workmansRingTf = "/drachenschnitzel/assets/workmans-ring-tf.9a4ef49a.png";
+var __glob_0_433 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": workmansRingTf
+}, Symbol.toStringTag, { value: "Module" }));
+var ynfernalRuneSn$1 = "/drachenschnitzel/assets/ynfernal-rune-sn.e8cfc945.png";
+var __glob_0_434 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ynfernalRuneSn$1
+}, Symbol.toStringTag, { value: "Module" }));
+var azatheasTriumphCr = "/drachenschnitzel/assets/azatheas-triumph-cr.88b74771.png";
+var __glob_0_435 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": azatheasTriumphCr
+}, Symbol.toStringTag, { value: "Module" }));
+var bandOfForesightCr = "/drachenschnitzel/assets/band-of-foresight-cr.a968e50d.png";
+var __glob_0_436 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bandOfForesightCr
+}, Symbol.toStringTag, { value: "Module" }));
+var bladeOfBrivalaMb = "/drachenschnitzel/assets/blade-of-brivala-mb.8aa5fd96.png";
+var __glob_0_437 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bladeOfBrivalaMb
+}, Symbol.toStringTag, { value: "Module" }));
+var bonesOfWoeBg = "/drachenschnitzel/assets/bones-of-woe-bg.38647f1b.png";
+var __glob_0_438 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": bonesOfWoeBg
+}, Symbol.toStringTag, { value: "Module" }));
+var curativeVialTf = "/drachenschnitzel/assets/curative-vial-tf.cf316a0c.png";
+var __glob_0_439 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": curativeVialTf
+}, Symbol.toStringTag, { value: "Module" }));
+var duskbladeBg = "/drachenschnitzel/assets/duskblade-bg.51d474c7.png";
+var __glob_0_440 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": duskbladeBg
+}, Symbol.toStringTag, { value: "Module" }));
+var fallenHeartLr = "/drachenschnitzel/assets/fallen-heart-lr.5266c64c.png";
+var __glob_0_441 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": fallenHeartLr
+}, Symbol.toStringTag, { value: "Module" }));
+var gauntletsOfSpiteLr = "/drachenschnitzel/assets/gauntlets-of-spite-lr.decb465a.png";
+var __glob_0_442 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": gauntletsOfSpiteLr
+}, Symbol.toStringTag, { value: "Module" }));
+var herMajestysMaliceLw = "/drachenschnitzel/assets/her-majestys-malice-lw.47d995e5.png";
+var __glob_0_443 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": herMajestysMaliceLw
+}, Symbol.toStringTag, { value: "Module" }));
+var omenOfBlightTf = "/drachenschnitzel/assets/omen-of-blight-tf.4149e9f3.png";
+var __glob_0_444 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": omenOfBlightTf
+}, Symbol.toStringTag, { value: "Module" }));
+var robesOfTheLastCr = "/drachenschnitzel/assets/robes-of-the-last-cr.278a6e19.png";
+var __glob_0_445 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": robesOfTheLastCr
+}, Symbol.toStringTag, { value: "Module" }));
+var scorpionsKissBg = "/drachenschnitzel/assets/scorpions-kiss-bg.8f084b89.png";
+var __glob_0_446 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": scorpionsKissBg
+}, Symbol.toStringTag, { value: "Module" }));
+var shadowPlotterSn = "/drachenschnitzel/assets/shadow-plotter-sn.f3c17b94.png";
+var __glob_0_447 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shadowPlotterSn
+}, Symbol.toStringTag, { value: "Module" }));
+var shardsOfIthyndrusMr = "/drachenschnitzel/assets/shards-of-ithyndrus-mr.81ee8b9b.png";
+var __glob_0_448 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shardsOfIthyndrusMr
+}, Symbol.toStringTag, { value: "Module" }));
+var shieldOfZoreksFavorBg = "/drachenschnitzel/assets/shield-of-zoreks-favor-bg.3fd095b1.png";
+var __glob_0_449 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": shieldOfZoreksFavorBg
+}, Symbol.toStringTag, { value: "Module" }));
+var soullessScytheSn = "/drachenschnitzel/assets/soulless-scythe-sn.da6b8277.png";
+var __glob_0_450 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": soullessScytheSn
+}, Symbol.toStringTag, { value: "Module" }));
+var staffOfShadowsBg = "/drachenschnitzel/assets/staff-of-shadows-bg.a297e7ab.png";
+var __glob_0_451 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": staffOfShadowsBg
+}, Symbol.toStringTag, { value: "Module" }));
+var stoneOfWaywardMeansMr = "/drachenschnitzel/assets/stone-of-wayward-means-mr.0049e6f5.png";
+var __glob_0_452 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": stoneOfWaywardMeansMr
+}, Symbol.toStringTag, { value: "Module" }));
+var sunsFuryLr = "/drachenschnitzel/assets/suns-fury-lr.27c9faca.png";
+var __glob_0_453 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": sunsFuryLr
+}, Symbol.toStringTag, { value: "Module" }));
+var taskmastersRingTf = "/drachenschnitzel/assets/taskmasters-ring-tf.a6099314.png";
+var __glob_0_454 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": taskmastersRingTf
+}, Symbol.toStringTag, { value: "Module" }));
+var theManorsHeartMr = "/drachenschnitzel/assets/the-manors-heart-mr.c5fa2464.png";
+var __glob_0_455 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theManorsHeartMr
+}, Symbol.toStringTag, { value: "Module" }));
+var theShadowRuneBg = "/drachenschnitzel/assets/the-shadow-rune-bg.446f17f6.png";
+var __glob_0_456 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": theShadowRuneBg
+}, Symbol.toStringTag, { value: "Module" }));
+var tomeOfTheFiveLiesMr = "/drachenschnitzel/assets/tome-of-the-five-lies-mr.2b91bd92.png";
+var __glob_0_457 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": tomeOfTheFiveLiesMr
+}, Symbol.toStringTag, { value: "Module" }));
+var undertakersCoatMb = "/drachenschnitzel/assets/undertakers-coat-mb.b89ed2ff.png";
+var __glob_0_458 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": undertakersCoatMb
+}, Symbol.toStringTag, { value: "Module" }));
+var valyndrasGiftLw = "/drachenschnitzel/assets/valyndras-gift-lw.7a49701d.png";
+var __glob_0_459 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": valyndrasGiftLw
+}, Symbol.toStringTag, { value: "Module" }));
+var waiqarsFavorMb = "/drachenschnitzel/assets/waiqars-favor-mb.8e0ebb5f.png";
+var __glob_0_460 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": waiqarsFavorMb
+}, Symbol.toStringTag, { value: "Module" }));
+var ynfernalRuneSn = "/drachenschnitzel/assets/ynfernal-rune-sn.71fef9b0.png";
+var __glob_0_461 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": ynfernalRuneSn
+}, Symbol.toStringTag, { value: "Module" }));
+var archaicScrollSn = "/drachenschnitzel/assets/archaic-scroll-sn.2c2e1d41.png";
+var __glob_0_462 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": archaicScrollSn
 }, Symbol.toStringTag, { value: "Module" }));
 var bagOfTricksSotp = "/drachenschnitzel/assets/bag-of-tricks-sotp.b0609529.png";
-var __glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_463 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bagOfTricksSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var baronsCloakSn = "/drachenschnitzel/assets/barons-cloak-sn.51d271a4.png";
-var __glob_0_10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_464 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baronsCloakSn
 }, Symbol.toStringTag, { value: "Module" }));
 var battleTomeMb = "/drachenschnitzel/assets/battle-tome-mb.819ac44e.png";
-var __glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_465 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": battleTomeMb
 }, Symbol.toStringTag, { value: "Module" }));
 var beardedAxeLr = "/drachenschnitzel/assets/bearded-axe-lr.71bff0dc.png";
-var __glob_0_12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_466 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beardedAxeLr
 }, Symbol.toStringTag, { value: "Module" }));
 var beltOfAlchemyTf = "/drachenschnitzel/assets/belt-of-alchemy-tf.8467f2c0.png";
-var __glob_0_13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_467 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beltOfAlchemyTf
 }, Symbol.toStringTag, { value: "Module" }));
 var beltOfWaterwalkingTf = "/drachenschnitzel/assets/belt-of-waterwalking-tf.b7cd53a9.png";
-var __glob_0_14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_468 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beltOfWaterwalkingTf
 }, Symbol.toStringTag, { value: "Module" }));
 var blessedShieldMr = "/drachenschnitzel/assets/blessed-shield-mr.955a1a13.png";
-var __glob_0_15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_469 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blessedShieldMr
 }, Symbol.toStringTag, { value: "Module" }));
 var bloodscriptRingMb = "/drachenschnitzel/assets/bloodscript-ring-mb.e8ad3a47.png";
-var __glob_0_16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_470 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodscriptRingMb
 }, Symbol.toStringTag, { value: "Module" }));
 var bloodyDaggerSn = "/drachenschnitzel/assets/bloody-dagger-sn.fc2bd241.png";
-var __glob_0_17 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_471 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodyDaggerSn
 }, Symbol.toStringTag, { value: "Module" }));
 var boneBladeSn = "/drachenschnitzel/assets/bone-blade-sn.2ce790f2.png";
-var __glob_0_18 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_472 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boneBladeSn
 }, Symbol.toStringTag, { value: "Module" }));
 var bootsOfIronSn = "/drachenschnitzel/assets/boots-of-iron-sn.ccb3d24f.png";
-var __glob_0_19 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_473 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bootsOfIronSn
 }, Symbol.toStringTag, { value: "Module" }));
 var bowOfBoneLr = "/drachenschnitzel/assets/bow-of-bone-lr.23543e7d.png";
-var __glob_0_20 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_474 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bowOfBoneLr
 }, Symbol.toStringTag, { value: "Module" }));
 var chainmailBg = "/drachenschnitzel/assets/chainmail-bg.ad509624.png";
-var __glob_0_21 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_475 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chainmailBg
 }, Symbol.toStringTag, { value: "Module" }));
 var cityGuardsBowSn = "/drachenschnitzel/assets/city-guards-bow-sn.3f8cd58c.png";
-var __glob_0_22 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_476 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cityGuardsBowSn
 }, Symbol.toStringTag, { value: "Module" }));
 var cloakOfMistsSn = "/drachenschnitzel/assets/cloak-of-mists-sn.a6d8d2e5.png";
-var __glob_0_23 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_477 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cloakOfMistsSn
 }, Symbol.toStringTag, { value: "Module" }));
 var corpsebugBroochMb = "/drachenschnitzel/assets/corpsebug-brooch-mb.291ecdd9.png";
-var __glob_0_24 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_478 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": corpsebugBroochMb
 }, Symbol.toStringTag, { value: "Module" }));
 var crossbowBg = "/drachenschnitzel/assets/crossbow-bg.21a10dec.png";
-var __glob_0_25 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_479 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": crossbowBg
 }, Symbol.toStringTag, { value: "Module" }));
 var crystalOfMiragesSotp = "/drachenschnitzel/assets/crystal-of-mirages-sotp.022b193a.png";
-var __glob_0_26 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_480 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": crystalOfMiragesSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var deflectingShieldTf = "/drachenschnitzel/assets/deflecting-shield-tf.5ebb6d1e.png";
-var __glob_0_27 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_481 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deflectingShieldTf
 }, Symbol.toStringTag, { value: "Module" }));
 var direFlailTf = "/drachenschnitzel/assets/dire-flail-tf.03261afd.png";
-var __glob_0_28 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_482 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": direFlailTf
 }, Symbol.toStringTag, { value: "Module" }));
 var elmGreatbowBg = "/drachenschnitzel/assets/elm-greatbow-bg.259058e8.png";
-var __glob_0_29 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_483 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elmGreatbowBg
 }, Symbol.toStringTag, { value: "Module" }));
 var elvenBootsLr = "/drachenschnitzel/assets/elven-boots-lr.509f024b.png";
-var __glob_0_30 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_484 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elvenBootsLr
 }, Symbol.toStringTag, { value: "Module" }));
 var flashPowderLw = "/drachenschnitzel/assets/flash-powder-lw.f9d4ce2e.png";
-var __glob_0_31 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_485 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": flashPowderLw
 }, Symbol.toStringTag, { value: "Module" }));
 var goldenOrbMaceSotp = "/drachenschnitzel/assets/golden-orb-mace-sotp.266d97ed.png";
-var __glob_0_32 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_486 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goldenOrbMaceSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var guardianAxeTf = "/drachenschnitzel/assets/guardian-axe-tf.dbc903fd.png";
-var __glob_0_33 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_487 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": guardianAxeTf
 }, Symbol.toStringTag, { value: "Module" }));
 var halberdLw = "/drachenschnitzel/assets/halberd-lw.73895fd2.png";
-var __glob_0_34 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_488 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": halberdLw
 }, Symbol.toStringTag, { value: "Module" }));
 var handbowLw = "/drachenschnitzel/assets/handbow-lw.7acf4191.png";
-var __glob_0_35 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_489 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": handbowLw
 }, Symbol.toStringTag, { value: "Module" }));
 var heavyCloakBg = "/drachenschnitzel/assets/heavy-cloak-bg.d69b52a7.png";
-var __glob_0_36 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_490 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": heavyCloakBg
 }, Symbol.toStringTag, { value: "Module" }));
 var immolationBg = "/drachenschnitzel/assets/immolation-bg.9b459bd5.png";
-var __glob_0_37 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_491 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": immolationBg
 }, Symbol.toStringTag, { value: "Module" }));
 var incendiaryArrowsSn = "/drachenschnitzel/assets/incendiary-arrows-sn.9c7e4fd9.png";
-var __glob_0_38 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_492 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": incendiaryArrowsSn
 }, Symbol.toStringTag, { value: "Module" }));
 var ironBattleaxeBg = "/drachenschnitzel/assets/iron-battleaxe-bg.63228f9e.png";
-var __glob_0_39 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_493 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironBattleaxeBg
 }, Symbol.toStringTag, { value: "Module" }));
 var ironShieldBg = "/drachenschnitzel/assets/iron-shield-bg.aa54a6de.png";
-var __glob_0_40 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_494 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironShieldBg
 }, Symbol.toStringTag, { value: "Module" }));
 var ironSpearBg = "/drachenschnitzel/assets/iron-spear-bg.c18d730d.png";
-var __glob_0_41 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_495 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironSpearBg
 }, Symbol.toStringTag, { value: "Module" }));
 var ironboundRuneSn = "/drachenschnitzel/assets/ironbound-rune-sn.2b00450a.png";
-var __glob_0_42 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_496 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundRuneSn
 }, Symbol.toStringTag, { value: "Module" }));
 var jeweledMaceSn = "/drachenschnitzel/assets/jeweled-mace-sn.04d9c482.png";
-var __glob_0_43 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_497 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": jeweledMaceSn
 }, Symbol.toStringTag, { value: "Module" }));
 var jinnsLampLr = "/drachenschnitzel/assets/jinns-lamp-lr.abfdf88a.png";
-var __glob_0_44 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_498 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": jinnsLampLr
 }, Symbol.toStringTag, { value: "Module" }));
 var leatherArmorBg = "/drachenschnitzel/assets/leather-armor-bg.269f34c1.png";
-var __glob_0_45 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_499 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": leatherArmorBg
 }, Symbol.toStringTag, { value: "Module" }));
 var lifedrainScepterTf = "/drachenschnitzel/assets/lifedrain-scepter-tf.b38e1c6c.png";
-var __glob_0_46 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_500 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lifedrainScepterTf
 }, Symbol.toStringTag, { value: "Module" }));
 var lightHammerBg = "/drachenschnitzel/assets/light-hammer-bg.e74b891b.png";
-var __glob_0_47 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_501 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lightHammerBg
 }, Symbol.toStringTag, { value: "Module" }));
 var luckyCharmBg = "/drachenschnitzel/assets/lucky-charm-bg.2361cdab.png";
-var __glob_0_48 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_502 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": luckyCharmBg
 }, Symbol.toStringTag, { value: "Module" }));
 var maceOfAverLr = "/drachenschnitzel/assets/mace-of-aver-lr.8dc62eaf.png";
-var __glob_0_49 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_503 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": maceOfAverLr
 }, Symbol.toStringTag, { value: "Module" }));
 var magicStaffBg = "/drachenschnitzel/assets/magic-staff-bg.7842831a.png";
-var __glob_0_50 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_504 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": magicStaffBg
 }, Symbol.toStringTag, { value: "Module" }));
 var magmaBlastLw = "/drachenschnitzel/assets/magma-blast-lw.444b7fb6.png";
-var __glob_0_51 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_505 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": magmaBlastLw
 }, Symbol.toStringTag, { value: "Module" }));
 var manaWeaveBg = "/drachenschnitzel/assets/mana-weave-bg.8e32f207.png";
-var __glob_0_52 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_506 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manaWeaveBg
 }, Symbol.toStringTag, { value: "Module" }));
 var mapstoneTf = "/drachenschnitzel/assets/mapstone-tf.e8ef3754.png";
-var __glob_0_53 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_507 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": mapstoneTf
 }, Symbol.toStringTag, { value: "Module" }));
 var marshCloakMb = "/drachenschnitzel/assets/marsh-cloak-mb.fee7d552.png";
-var __glob_0_54 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_508 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": marshCloakMb
 }, Symbol.toStringTag, { value: "Module" }));
 var mistbaneMb = "/drachenschnitzel/assets/mistbane-mb.ed10d055.png";
-var __glob_0_55 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_509 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": mistbaneMb
 }, Symbol.toStringTag, { value: "Module" }));
 var phoenixPendantSn = "/drachenschnitzel/assets/phoenix-pendant-sn.b4853cf4.png";
-var __glob_0_56 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_510 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": phoenixPendantSn
 }, Symbol.toStringTag, { value: "Module" }));
 var piercingArrowsSotp = "/drachenschnitzel/assets/piercing-arrows-sotp.04866578.png";
-var __glob_0_57 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_511 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": piercingArrowsSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var poisonedBlowgunLr = "/drachenschnitzel/assets/poisoned-blowgun-lr.d2c63354.png";
-var __glob_0_58 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_512 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": poisonedBlowgunLr
 }, Symbol.toStringTag, { value: "Module" }));
 var ringOfPowerBg = "/drachenschnitzel/assets/ring-of-power-bg.6b828f74.png";
-var __glob_0_59 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_513 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ringOfPowerBg
 }, Symbol.toStringTag, { value: "Module" }));
 var runePlateLr = "/drachenschnitzel/assets/rune-plate-lr.ed5ac275.png";
-var __glob_0_60 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_514 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runePlateLr
 }, Symbol.toStringTag, { value: "Module" }));
 var scarPitGreavesSotp = "/drachenschnitzel/assets/scar-pit-greaves-sotp.f176bda1.png";
-var __glob_0_61 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_515 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": scarPitGreavesSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var scorpionHelmBg = "/drachenschnitzel/assets/scorpion-helm-bg.af60f3e5.png";
-var __glob_0_62 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_516 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": scorpionHelmBg
 }, Symbol.toStringTag, { value: "Module" }));
 var serpentDaggerLr = "/drachenschnitzel/assets/serpent-dagger-lr.7ea1d488.png";
-var __glob_0_63 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_517 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": serpentDaggerLr
 }, Symbol.toStringTag, { value: "Module" }));
 var shadowBracersMr = "/drachenschnitzel/assets/shadow-bracers-mr.60f0b296.png";
-var __glob_0_64 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_518 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowBracersMr
 }, Symbol.toStringTag, { value: "Module" }));
 var shieldOfLightLr = "/drachenschnitzel/assets/shield-of-light-lr.6c1acaaf.png";
-var __glob_0_65 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_519 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shieldOfLightLr
 }, Symbol.toStringTag, { value: "Module" }));
 var shopItemsAct1Back = "/drachenschnitzel/assets/shop-items-act1-back.5010252f.png";
-var __glob_0_66 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_520 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shopItemsAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
 var slingBg = "/drachenschnitzel/assets/sling-bg.43c78ae7.png";
-var __glob_0_67 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_521 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": slingBg
 }, Symbol.toStringTag, { value: "Module" }));
 var soulboundSwordMb = "/drachenschnitzel/assets/soulbound-sword-mb.24da41da.png";
-var __glob_0_68 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_522 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": soulboundSwordMb
 }, Symbol.toStringTag, { value: "Module" }));
 var soulstoneMb = "/drachenschnitzel/assets/soulstone-mb.6ddbc232.png";
-var __glob_0_69 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_523 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": soulstoneMb
 }, Symbol.toStringTag, { value: "Module" }));
 var staffOfGreyhavenMr = "/drachenschnitzel/assets/staff-of-greyhaven-mr.258605e7.png";
-var __glob_0_70 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_524 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": staffOfGreyhavenMr
 }, Symbol.toStringTag, { value: "Module" }));
 var steelBroadswordBg = "/drachenschnitzel/assets/steel-broadsword-bg.697d4c86.png";
-var __glob_0_71 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_525 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": steelBroadswordBg
 }, Symbol.toStringTag, { value: "Module" }));
 var sunBlessedRuneSotp = "/drachenschnitzel/assets/sun-blessed-rune-sotp.83591539.png";
-var __glob_0_72 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_526 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunBlessedRuneSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var sunburstBg = "/drachenschnitzel/assets/sunburst-bg.3a3f3fbd.png";
-var __glob_0_73 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_527 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunburstBg
 }, Symbol.toStringTag, { value: "Module" }));
 var sunspearSotp = "/drachenschnitzel/assets/sunspear-sotp.c64ba84c.png";
-var __glob_0_74 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_528 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunspearSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var teleportationRuneLr = "/drachenschnitzel/assets/teleportation-rune-lr.ba49ab60.png";
-var __glob_0_75 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_529 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": teleportationRuneLr
 }, Symbol.toStringTag, { value: "Module" }));
 var thiefsVestLr = "/drachenschnitzel/assets/thiefs-vest-lr.61c5aae6.png";
-var __glob_0_76 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_530 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": thiefsVestLr
 }, Symbol.toStringTag, { value: "Module" }));
 var tridentTf = "/drachenschnitzel/assets/trident-tf.42ea7cd6.png";
-var __glob_0_77 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_531 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": tridentTf
 }, Symbol.toStringTag, { value: "Module" }));
 var undyingSkullMr = "/drachenschnitzel/assets/undying-skull-mr.0b0b6017.png";
-var __glob_0_78 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_532 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": undyingSkullMr
 }, Symbol.toStringTag, { value: "Module" }));
 var viziersGarmentSotp = "/drachenschnitzel/assets/viziers-garment-sotp.071b319d.png";
-var __glob_0_79 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_533 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": viziersGarmentSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var whiteWolfCloakMr = "/drachenschnitzel/assets/white-wolf-cloak-mr.f836c1ae.png";
-var __glob_0_80 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_534 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": whiteWolfCloakMr
 }, Symbol.toStringTag, { value: "Module" }));
 var witchHazelBowMb = "/drachenschnitzel/assets/witch-hazel-bow-mb.70f1c48e.png";
-var __glob_0_81 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_535 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": witchHazelBowMb
 }, Symbol.toStringTag, { value: "Module" }));
 var beltOfStrengthTf = "/drachenschnitzel/assets/belt-of-strength-tf.3a4215ac.png";
-var __glob_0_82 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_536 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beltOfStrengthTf
 }, Symbol.toStringTag, { value: "Module" }));
 var blackIronHelmLr = "/drachenschnitzel/assets/black-iron-helm-lr.9b76f3ed.png";
-var __glob_0_83 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_537 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blackIronHelmLr
 }, Symbol.toStringTag, { value: "Module" }));
 var blastingRuneTf = "/drachenschnitzel/assets/blasting-rune-tf.b9857bd2.png";
-var __glob_0_84 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_538 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blastingRuneTf
 }, Symbol.toStringTag, { value: "Module" }));
 var blessedArmorCr = "/drachenschnitzel/assets/blessed-armor-cr.e44388e6.png";
-var __glob_0_85 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_539 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blessedArmorCr
 }, Symbol.toStringTag, { value: "Module" }));
 var bloodthirstyBracersCr = "/drachenschnitzel/assets/bloodthirsty-bracers-cr.430819ec.png";
-var __glob_0_86 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_540 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodthirstyBracersCr
 }, Symbol.toStringTag, { value: "Module" }));
 var boneWandCr = "/drachenschnitzel/assets/bone-wand-cr.05aaaed1.png";
-var __glob_0_87 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_541 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boneWandCr
 }, Symbol.toStringTag, { value: "Module" }));
 var boomerangTf = "/drachenschnitzel/assets/boomerang-tf.76ab85e0.png";
-var __glob_0_88 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_542 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boomerangTf
 }, Symbol.toStringTag, { value: "Module" }));
 var bowOfTheEclipseLr = "/drachenschnitzel/assets/bow-of-the-eclipse-lr.a10a07af.png";
-var __glob_0_89 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_543 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bowOfTheEclipseLr
 }, Symbol.toStringTag, { value: "Module" }));
 var bowOfTheSkyLw = "/drachenschnitzel/assets/bow-of-the-sky-lw.ad41b8c7.png";
-var __glob_0_90 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_544 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bowOfTheSkyLw
 }, Symbol.toStringTag, { value: "Module" }));
 var chainSickleSotp = "/drachenschnitzel/assets/chain-sickle-sotp.ebad8dfd.png";
-var __glob_0_91 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_545 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chainSickleSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var cloakOfDeceptionLr = "/drachenschnitzel/assets/cloak-of-deception-lr.d94085f5.png";
-var __glob_0_92 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_546 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cloakOfDeceptionLr
 }, Symbol.toStringTag, { value: "Module" }));
 var demonhideLeatherBg = "/drachenschnitzel/assets/demonhide-leather-bg.d91df0c1.png";
-var __glob_0_93 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_547 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonhideLeatherBg
 }, Symbol.toStringTag, { value: "Module" }));
 var dragontoothHammerBg = "/drachenschnitzel/assets/dragontooth-hammer-bg.08ff50e7.png";
-var __glob_0_94 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_548 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": dragontoothHammerBg
 }, Symbol.toStringTag, { value: "Module" }));
 var dwarvenFirebombBg = "/drachenschnitzel/assets/dwarven-firebomb-bg.d5591649.png";
-var __glob_0_95 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_549 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": dwarvenFirebombBg
 }, Symbol.toStringTag, { value: "Module" }));
 var elvenCloakBg = "/drachenschnitzel/assets/elven-cloak-bg.f18f9d79.png";
-var __glob_0_96 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_550 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elvenCloakBg
 }, Symbol.toStringTag, { value: "Module" }));
 var eyeOfTheNightSotp = "/drachenschnitzel/assets/eye-of-the-night-sotp.09de7789.png";
-var __glob_0_97 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_551 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": eyeOfTheNightSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var fistsOfIronCr = "/drachenschnitzel/assets/fists-of-iron-cr.c234c2f4.png";
-var __glob_0_98 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_552 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fistsOfIronCr
 }, Symbol.toStringTag, { value: "Module" }));
 var glaiveTf = "/drachenschnitzel/assets/glaive-tf.7817d21f.png";
-var __glob_0_99 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_553 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": glaiveTf
 }, Symbol.toStringTag, { value: "Module" }));
 var goldenMaskSn = "/drachenschnitzel/assets/golden-mask-sn.1ddab5b5.png";
-var __glob_0_100 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_554 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goldenMaskSn
 }, Symbol.toStringTag, { value: "Module" }));
 var grindingAxeBg = "/drachenschnitzel/assets/grinding-axe-bg.a11562ae.png";
-var __glob_0_101 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_555 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": grindingAxeBg
 }, Symbol.toStringTag, { value: "Module" }));
 var hammerOfDoomMr = "/drachenschnitzel/assets/hammer-of-doom-mr.4cfc4a0d.png";
-var __glob_0_102 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_556 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hammerOfDoomMr
 }, Symbol.toStringTag, { value: "Module" }));
 var heartSeekerMr = "/drachenschnitzel/assets/heart-seeker-mr.6e7f5f5b.png";
-var __glob_0_103 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_557 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": heartSeekerMr
 }, Symbol.toStringTag, { value: "Module" }));
 var heavySteelShieldBg = "/drachenschnitzel/assets/heavy-steel-shield-bg.654d6adb.png";
-var __glob_0_104 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_558 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": heavySteelShieldBg
 }, Symbol.toStringTag, { value: "Module" }));
 var hornedShieldCr = "/drachenschnitzel/assets/horned-shield-cr.b06a9eec.png";
-var __glob_0_105 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_559 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hornedShieldCr
 }, Symbol.toStringTag, { value: "Module" }));
 var ibisBowSotp = "/drachenschnitzel/assets/ibis-bow-sotp.4b5201db.png";
-var __glob_0_106 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_560 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ibisBowSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var iceStormBg = "/drachenschnitzel/assets/ice-storm-bg.8bcd103a.png";
-var __glob_0_107 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_561 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceStormBg
 }, Symbol.toStringTag, { value: "Module" }));
 var inscribedRobesLw = "/drachenschnitzel/assets/inscribed-robes-lw.02f56b4a.png";
-var __glob_0_108 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_562 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": inscribedRobesLw
 }, Symbol.toStringTag, { value: "Module" }));
 var ironBoundRingBg = "/drachenschnitzel/assets/iron-bound-ring-bg.1c5ebb80.png";
-var __glob_0_109 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_563 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironBoundRingBg
 }, Symbol.toStringTag, { value: "Module" }));
 var ironClawsLr = "/drachenschnitzel/assets/iron-claws-lr.42bc857b.png";
-var __glob_0_110 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_564 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironClawsLr
 }, Symbol.toStringTag, { value: "Module" }));
 var ironboundGlaiveSn = "/drachenschnitzel/assets/ironbound-glaive-sn.fd68143d.png";
-var __glob_0_111 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_565 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundGlaiveSn
 }, Symbol.toStringTag, { value: "Module" }));
 var ironboundShieldSn = "/drachenschnitzel/assets/ironbound-shield-sn.03c7c2c9.png";
-var __glob_0_112 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_566 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundShieldSn
 }, Symbol.toStringTag, { value: "Module" }));
 var latariLongbowBg = "/drachenschnitzel/assets/latari-longbow-bg.ca4e4420.png";
-var __glob_0_113 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_567 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": latariLongbowBg
 }, Symbol.toStringTag, { value: "Module" }));
 var lightningJavelinCr = "/drachenschnitzel/assets/lightning-javelin-cr.6e859533.png";
-var __glob_0_114 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_568 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lightningJavelinCr
 }, Symbol.toStringTag, { value: "Module" }));
 var lightningStrikeBg = "/drachenschnitzel/assets/lightning-strike-bg.0b116cad.png";
-var __glob_0_115 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_569 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lightningStrikeBg
 }, Symbol.toStringTag, { value: "Module" }));
 var lostCaliphsCrookSotp = "/drachenschnitzel/assets/lost-caliphs-crook-sotp.33b08ec7.png";
-var __glob_0_116 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_570 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lostCaliphsCrookSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var maceOfKellosBg = "/drachenschnitzel/assets/mace-of-kellos-bg.8f326ef0.png";
-var __glob_0_117 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_571 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": maceOfKellosBg
 }, Symbol.toStringTag, { value: "Module" }));
 var maskOfHorrorsCr = "/drachenschnitzel/assets/mask-of-horrors-cr.c05b2398.png";
-var __glob_0_118 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_572 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": maskOfHorrorsCr
 }, Symbol.toStringTag, { value: "Module" }));
 var mercifulBootsLw = "/drachenschnitzel/assets/merciful-boots-lw.c4e1cdf8.png";
-var __glob_0_119 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_573 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": mercifulBootsLw
 }, Symbol.toStringTag, { value: "Module" }));
 var nerekhallPlateSn = "/drachenschnitzel/assets/nerekhall-plate-sn.c32afe3e.png";
-var __glob_0_120 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_574 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nerekhallPlateSn
 }, Symbol.toStringTag, { value: "Module" }));
 var obsidianGreataxeLr = "/drachenschnitzel/assets/obsidian-greataxe-lr.7a26721c.png";
-var __glob_0_121 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_575 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": obsidianGreataxeLr
 }, Symbol.toStringTag, { value: "Module" }));
 var obsidianScalemailLr = "/drachenschnitzel/assets/obsidian-scalemail-lr.4aa0cb79.png";
-var __glob_0_122 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_576 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": obsidianScalemailLr
 }, Symbol.toStringTag, { value: "Module" }));
 var platemailBg = "/drachenschnitzel/assets/platemail-bg.3e5bb492.png";
-var __glob_0_123 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_577 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": platemailBg
 }, Symbol.toStringTag, { value: "Module" }));
 var rageBladeLr = "/drachenschnitzel/assets/rage-blade-lr.7d2743d8.png";
-var __glob_0_124 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_578 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": rageBladeLr
 }, Symbol.toStringTag, { value: "Module" }));
 var ratToothDaggerSn = "/drachenschnitzel/assets/rat-tooth-dagger-sn.792bb96d.png";
-var __glob_0_125 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_579 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ratToothDaggerSn
 }, Symbol.toStringTag, { value: "Module" }));
 var repeatingCrossbowSn = "/drachenschnitzel/assets/repeating-crossbow-sn.0da20a86.png";
-var __glob_0_126 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_580 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": repeatingCrossbowSn
 }, Symbol.toStringTag, { value: "Module" }));
 var runeOfBladesSn = "/drachenschnitzel/assets/rune-of-blades-sn.3bee2377.png";
-var __glob_0_127 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_581 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runeOfBladesSn
 }, Symbol.toStringTag, { value: "Module" }));
 var runeOfFateMr = "/drachenschnitzel/assets/rune-of-fate-mr.89f9d346.png";
-var __glob_0_128 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_582 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runeOfFateMr
 }, Symbol.toStringTag, { value: "Module" }));
 var runeOfMiseryLr = "/drachenschnitzel/assets/rune-of-misery-lr.4a152d34.png";
-var __glob_0_129 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_583 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runeOfMiseryLr
 }, Symbol.toStringTag, { value: "Module" }));
 var runeTouchedLeatherCr = "/drachenschnitzel/assets/rune-touched-leather-cr.5fa68ed9.png";
-var __glob_0_130 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_584 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runeTouchedLeatherCr
 }, Symbol.toStringTag, { value: "Module" }));
 var sashOfTheSlayerCr = "/drachenschnitzel/assets/sash-of-the-slayer-cr.84a0407c.png";
-var __glob_0_131 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_585 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sashOfTheSlayerCr
 }, Symbol.toStringTag, { value: "Module" }));
 var scalemailLw = "/drachenschnitzel/assets/scalemail-lw.208a2e27.png";
-var __glob_0_132 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_586 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": scalemailLw
 }, Symbol.toStringTag, { value: "Module" }));
 var scarabAmuletSotp = "/drachenschnitzel/assets/scarab-amulet-sotp.fc2b2f33.png";
-var __glob_0_133 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_587 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": scarabAmuletSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var shadowTomeSn = "/drachenschnitzel/assets/shadow-tome-sn.ddf163f1.png";
-var __glob_0_134 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_588 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowTomeSn
 }, Symbol.toStringTag, { value: "Module" }));
 var shimmeringShieldSotp = "/drachenschnitzel/assets/shimmering-shield-sotp.5e3bfe61.png";
-var __glob_0_135 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_589 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shimmeringShieldSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var shopItemsAct2Back = "/drachenschnitzel/assets/shop-items-act2-back.f0e4dab2.png";
-var __glob_0_136 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_590 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shopItemsAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
 var shroudOfDuskLr = "/drachenschnitzel/assets/shroud-of-dusk-lr.b44156da.png";
-var __glob_0_137 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_591 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shroudOfDuskLr
 }, Symbol.toStringTag, { value: "Module" }));
 var staffOfKellosLw = "/drachenschnitzel/assets/staff-of-kellos-lw.f842d2a6.png";
-var __glob_0_138 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_592 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": staffOfKellosLw
 }, Symbol.toStringTag, { value: "Module" }));
 var staffOfTheWildLr = "/drachenschnitzel/assets/staff-of-the-wild-lr.5be473ff.png";
-var __glob_0_139 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_593 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": staffOfTheWildLr
 }, Symbol.toStringTag, { value: "Module" }));
 var starOfAtarSotp = "/drachenschnitzel/assets/star-of-atar-sotp.f960bb9c.png";
-var __glob_0_140 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_594 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": starOfAtarSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var starOfKellosSn = "/drachenschnitzel/assets/star-of-kellos-sn.f9870a90.png";
-var __glob_0_141 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_595 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": starOfKellosSn
 }, Symbol.toStringTag, { value: "Module" }));
 var starmetalKhopeshSotp = "/drachenschnitzel/assets/starmetal-khopesh-sotp.6cf72bc5.png";
-var __glob_0_142 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_596 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": starmetalKhopeshSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var steelGreatswordBg = "/drachenschnitzel/assets/steel-greatsword-bg.b1f871ed.png";
-var __glob_0_143 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_597 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": steelGreatswordBg
 }, Symbol.toStringTag, { value: "Module" }));
 var stoneArmorTf = "/drachenschnitzel/assets/stone-armor-tf.43aa22f7.png";
-var __glob_0_144 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_598 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": stoneArmorTf
 }, Symbol.toStringTag, { value: "Module" }));
 var sunlightWardSotp = "/drachenschnitzel/assets/sunlight-ward-sotp.60343091.png";
-var __glob_0_145 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_599 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunlightWardSotp
 }, Symbol.toStringTag, { value: "Module" }));
 var tivalCrystalBg = "/drachenschnitzel/assets/tival-crystal-bg.19ecfe09.png";
-var __glob_0_146 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_600 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": tivalCrystalBg
 }, Symbol.toStringTag, { value: "Module" }));
 var vestmentsOfKellosSn = "/drachenschnitzel/assets/vestments-of-kellos-sn.51b66153.png";
-var __glob_0_147 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_601 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": vestmentsOfKellosSn
 }, Symbol.toStringTag, { value: "Module" }));
 var wingedBladeMr = "/drachenschnitzel/assets/winged-blade-mr.15defe3f.png";
-var __glob_0_148 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var __glob_0_602 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wingedBladeMr
 }, Symbol.toStringTag, { value: "Module" }));
-const assets = { "../assets/base.css": __glob_0_0, "../assets/dice/black-top.png": __glob_0_1, "../assets/dice/blue-top.png": __glob_0_2, "../assets/dice/brown-top.png": __glob_0_3, "../assets/dice/gray-top.png": __glob_0_4, "../assets/dice/green-top.png": __glob_0_5, "../assets/dice/red-top.png": __glob_0_6, "../assets/dice/yellow-top.png": __glob_0_7, "../assets/d2e/shop-items/act1/archaic-scroll-sn.png": __glob_0_8, "../assets/d2e/shop-items/act1/bag-of-tricks-sotp.png": __glob_0_9, "../assets/d2e/shop-items/act1/barons-cloak-sn.png": __glob_0_10, "../assets/d2e/shop-items/act1/battle-tome-mb.png": __glob_0_11, "../assets/d2e/shop-items/act1/bearded-axe-lr.png": __glob_0_12, "../assets/d2e/shop-items/act1/belt-of-alchemy-tf.png": __glob_0_13, "../assets/d2e/shop-items/act1/belt-of-waterwalking-tf.png": __glob_0_14, "../assets/d2e/shop-items/act1/blessed-shield-mr.png": __glob_0_15, "../assets/d2e/shop-items/act1/bloodscript-ring-mb.png": __glob_0_16, "../assets/d2e/shop-items/act1/bloody-dagger-sn.png": __glob_0_17, "../assets/d2e/shop-items/act1/bone-blade-sn.png": __glob_0_18, "../assets/d2e/shop-items/act1/boots-of-iron-sn.png": __glob_0_19, "../assets/d2e/shop-items/act1/bow-of-bone-lr.png": __glob_0_20, "../assets/d2e/shop-items/act1/chainmail-bg.png": __glob_0_21, "../assets/d2e/shop-items/act1/city-guards-bow-sn.png": __glob_0_22, "../assets/d2e/shop-items/act1/cloak-of-mists-sn.png": __glob_0_23, "../assets/d2e/shop-items/act1/corpsebug-brooch-mb.png": __glob_0_24, "../assets/d2e/shop-items/act1/crossbow-bg.png": __glob_0_25, "../assets/d2e/shop-items/act1/crystal-of-mirages-sotp.png": __glob_0_26, "../assets/d2e/shop-items/act1/deflecting-shield-tf.png": __glob_0_27, "../assets/d2e/shop-items/act1/dire-flail-tf.png": __glob_0_28, "../assets/d2e/shop-items/act1/elm-greatbow-bg.png": __glob_0_29, "../assets/d2e/shop-items/act1/elven-boots-lr.png": __glob_0_30, "../assets/d2e/shop-items/act1/flash-powder-lw.png": __glob_0_31, "../assets/d2e/shop-items/act1/golden-orb-mace-sotp.png": __glob_0_32, "../assets/d2e/shop-items/act1/guardian-axe-tf.png": __glob_0_33, "../assets/d2e/shop-items/act1/halberd-lw.png": __glob_0_34, "../assets/d2e/shop-items/act1/handbow-lw.png": __glob_0_35, "../assets/d2e/shop-items/act1/heavy-cloak-bg.png": __glob_0_36, "../assets/d2e/shop-items/act1/immolation-bg.png": __glob_0_37, "../assets/d2e/shop-items/act1/incendiary-arrows-sn.png": __glob_0_38, "../assets/d2e/shop-items/act1/iron-battleaxe-bg.png": __glob_0_39, "../assets/d2e/shop-items/act1/iron-shield-bg.png": __glob_0_40, "../assets/d2e/shop-items/act1/iron-spear-bg.png": __glob_0_41, "../assets/d2e/shop-items/act1/ironbound-rune-sn.png": __glob_0_42, "../assets/d2e/shop-items/act1/jeweled-mace-sn.png": __glob_0_43, "../assets/d2e/shop-items/act1/jinns-lamp-lr.png": __glob_0_44, "../assets/d2e/shop-items/act1/leather-armor-bg.png": __glob_0_45, "../assets/d2e/shop-items/act1/lifedrain-scepter-tf.png": __glob_0_46, "../assets/d2e/shop-items/act1/light-hammer-bg.png": __glob_0_47, "../assets/d2e/shop-items/act1/lucky-charm-bg.png": __glob_0_48, "../assets/d2e/shop-items/act1/mace-of-aver-lr.png": __glob_0_49, "../assets/d2e/shop-items/act1/magic-staff-bg.png": __glob_0_50, "../assets/d2e/shop-items/act1/magma-blast-lw.png": __glob_0_51, "../assets/d2e/shop-items/act1/mana-weave-bg.png": __glob_0_52, "../assets/d2e/shop-items/act1/mapstone-tf.png": __glob_0_53, "../assets/d2e/shop-items/act1/marsh-cloak-mb.png": __glob_0_54, "../assets/d2e/shop-items/act1/mistbane-mb.png": __glob_0_55, "../assets/d2e/shop-items/act1/phoenix-pendant-sn.png": __glob_0_56, "../assets/d2e/shop-items/act1/piercing-arrows-sotp.png": __glob_0_57, "../assets/d2e/shop-items/act1/poisoned-blowgun-lr.png": __glob_0_58, "../assets/d2e/shop-items/act1/ring-of-power-bg.png": __glob_0_59, "../assets/d2e/shop-items/act1/rune-plate-lr.png": __glob_0_60, "../assets/d2e/shop-items/act1/scar-pit-greaves-sotp.png": __glob_0_61, "../assets/d2e/shop-items/act1/scorpion-helm-bg.png": __glob_0_62, "../assets/d2e/shop-items/act1/serpent-dagger-lr.png": __glob_0_63, "../assets/d2e/shop-items/act1/shadow-bracers-mr.png": __glob_0_64, "../assets/d2e/shop-items/act1/shield-of-light-lr.png": __glob_0_65, "../assets/d2e/shop-items/act1/shop-items-act1-back.png": __glob_0_66, "../assets/d2e/shop-items/act1/sling-bg.png": __glob_0_67, "../assets/d2e/shop-items/act1/soulbound-sword-mb.png": __glob_0_68, "../assets/d2e/shop-items/act1/soulstone-mb.png": __glob_0_69, "../assets/d2e/shop-items/act1/staff-of-greyhaven-mr.png": __glob_0_70, "../assets/d2e/shop-items/act1/steel-broadsword-bg.png": __glob_0_71, "../assets/d2e/shop-items/act1/sun-blessed-rune-sotp.png": __glob_0_72, "../assets/d2e/shop-items/act1/sunburst-bg.png": __glob_0_73, "../assets/d2e/shop-items/act1/sunspear-sotp.png": __glob_0_74, "../assets/d2e/shop-items/act1/teleportation-rune-lr.png": __glob_0_75, "../assets/d2e/shop-items/act1/thiefs-vest-lr.png": __glob_0_76, "../assets/d2e/shop-items/act1/trident-tf.png": __glob_0_77, "../assets/d2e/shop-items/act1/undying-skull-mr.png": __glob_0_78, "../assets/d2e/shop-items/act1/viziers-garment-sotp.png": __glob_0_79, "../assets/d2e/shop-items/act1/white-wolf-cloak-mr.png": __glob_0_80, "../assets/d2e/shop-items/act1/witch-hazel-bow-mb.png": __glob_0_81, "../assets/d2e/shop-items/act2/belt-of-strength-tf.png": __glob_0_82, "../assets/d2e/shop-items/act2/black-iron-helm-lr.png": __glob_0_83, "../assets/d2e/shop-items/act2/blasting-rune-tf.png": __glob_0_84, "../assets/d2e/shop-items/act2/blessed-armor-cr.png": __glob_0_85, "../assets/d2e/shop-items/act2/bloodthirsty-bracers-cr.png": __glob_0_86, "../assets/d2e/shop-items/act2/bone-wand-cr.png": __glob_0_87, "../assets/d2e/shop-items/act2/boomerang-tf.png": __glob_0_88, "../assets/d2e/shop-items/act2/bow-of-the-eclipse-lr.png": __glob_0_89, "../assets/d2e/shop-items/act2/bow-of-the-sky-lw.png": __glob_0_90, "../assets/d2e/shop-items/act2/chain-sickle-sotp.png": __glob_0_91, "../assets/d2e/shop-items/act2/cloak-of-deception-lr.png": __glob_0_92, "../assets/d2e/shop-items/act2/demonhide-leather-bg.png": __glob_0_93, "../assets/d2e/shop-items/act2/dragontooth-hammer-bg.png": __glob_0_94, "../assets/d2e/shop-items/act2/dwarven-firebomb-bg.png": __glob_0_95, "../assets/d2e/shop-items/act2/elven-cloak-bg.png": __glob_0_96, "../assets/d2e/shop-items/act2/eye-of-the-night-sotp.png": __glob_0_97, "../assets/d2e/shop-items/act2/fists-of-iron-cr.png": __glob_0_98, "../assets/d2e/shop-items/act2/glaive-tf.png": __glob_0_99, "../assets/d2e/shop-items/act2/golden-mask-sn.png": __glob_0_100, "../assets/d2e/shop-items/act2/grinding-axe-bg.png": __glob_0_101, "../assets/d2e/shop-items/act2/hammer-of-doom-mr.png": __glob_0_102, "../assets/d2e/shop-items/act2/heart-seeker-mr.png": __glob_0_103, "../assets/d2e/shop-items/act2/heavy-steel-shield-bg.png": __glob_0_104, "../assets/d2e/shop-items/act2/horned-shield-cr.png": __glob_0_105, "../assets/d2e/shop-items/act2/ibis-bow-sotp.png": __glob_0_106, "../assets/d2e/shop-items/act2/ice-storm-bg.png": __glob_0_107, "../assets/d2e/shop-items/act2/inscribed-robes-lw.png": __glob_0_108, "../assets/d2e/shop-items/act2/iron-bound-ring-bg.png": __glob_0_109, "../assets/d2e/shop-items/act2/iron-claws-lr.png": __glob_0_110, "../assets/d2e/shop-items/act2/ironbound-glaive-sn.png": __glob_0_111, "../assets/d2e/shop-items/act2/ironbound-shield-sn.png": __glob_0_112, "../assets/d2e/shop-items/act2/latari-longbow-bg.png": __glob_0_113, "../assets/d2e/shop-items/act2/lightning-javelin-cr.png": __glob_0_114, "../assets/d2e/shop-items/act2/lightning-strike-bg.png": __glob_0_115, "../assets/d2e/shop-items/act2/lost-caliphs-crook-sotp.png": __glob_0_116, "../assets/d2e/shop-items/act2/mace-of-kellos-bg.png": __glob_0_117, "../assets/d2e/shop-items/act2/mask-of-horrors-cr.png": __glob_0_118, "../assets/d2e/shop-items/act2/merciful-boots-lw.png": __glob_0_119, "../assets/d2e/shop-items/act2/nerekhall-plate-sn.png": __glob_0_120, "../assets/d2e/shop-items/act2/obsidian-greataxe-lr.png": __glob_0_121, "../assets/d2e/shop-items/act2/obsidian-scalemail-lr.png": __glob_0_122, "../assets/d2e/shop-items/act2/platemail-bg.png": __glob_0_123, "../assets/d2e/shop-items/act2/rage-blade-lr.png": __glob_0_124, "../assets/d2e/shop-items/act2/rat-tooth-dagger-sn.png": __glob_0_125, "../assets/d2e/shop-items/act2/repeating-crossbow-sn.png": __glob_0_126, "../assets/d2e/shop-items/act2/rune-of-blades-sn.png": __glob_0_127, "../assets/d2e/shop-items/act2/rune-of-fate-mr.png": __glob_0_128, "../assets/d2e/shop-items/act2/rune-of-misery-lr.png": __glob_0_129, "../assets/d2e/shop-items/act2/rune-touched-leather-cr.png": __glob_0_130, "../assets/d2e/shop-items/act2/sash-of-the-slayer-cr.png": __glob_0_131, "../assets/d2e/shop-items/act2/scalemail-lw.png": __glob_0_132, "../assets/d2e/shop-items/act2/scarab-amulet-sotp.png": __glob_0_133, "../assets/d2e/shop-items/act2/shadow-tome-sn.png": __glob_0_134, "../assets/d2e/shop-items/act2/shimmering-shield-sotp.png": __glob_0_135, "../assets/d2e/shop-items/act2/shop-items-act2-back.png": __glob_0_136, "../assets/d2e/shop-items/act2/shroud-of-dusk-lr.png": __glob_0_137, "../assets/d2e/shop-items/act2/staff-of-kellos-lw.png": __glob_0_138, "../assets/d2e/shop-items/act2/staff-of-the-wild-lr.png": __glob_0_139, "../assets/d2e/shop-items/act2/star-of-atar-sotp.png": __glob_0_140, "../assets/d2e/shop-items/act2/star-of-kellos-sn.png": __glob_0_141, "../assets/d2e/shop-items/act2/starmetal-khopesh-sotp.png": __glob_0_142, "../assets/d2e/shop-items/act2/steel-greatsword-bg.png": __glob_0_143, "../assets/d2e/shop-items/act2/stone-armor-tf.png": __glob_0_144, "../assets/d2e/shop-items/act2/sunlight-ward-sotp.png": __glob_0_145, "../assets/d2e/shop-items/act2/tival-crystal-bg.png": __glob_0_146, "../assets/d2e/shop-items/act2/vestments-of-kellos-sn.png": __glob_0_147, "../assets/d2e/shop-items/act2/winged-blade-mr.png": __glob_0_148 };
+const assets = { "../assets/base.css": __glob_0_0, "../assets/dice/black-top.png": __glob_0_1, "../assets/dice/blue-top.png": __glob_0_2, "../assets/dice/brown-top.png": __glob_0_3, "../assets/dice/gray-top.png": __glob_0_4, "../assets/dice/green-top.png": __glob_0_5, "../assets/dice/red-top.png": __glob_0_6, "../assets/dice/yellow-top.png": __glob_0_7, "../assets/d2e/class-items/arcane-bolt-bg-mage-runemaster.png": __glob_0_8, "../assets/d2e/class-items/black-widows-web-tf-scout-stalker.png": __glob_0_9, "../assets/d2e/class-items/ceremonial-staff-sotp-healer-hierophant.png": __glob_0_10, "../assets/d2e/class-items/chipped-greataxe-bg-warrior-berserker.png": __glob_0_11, "../assets/d2e/class-items/class-skills-apothecary-back.png": __glob_0_12, "../assets/d2e/class-items/class-skills-bard-back.png": __glob_0_13, "../assets/d2e/class-items/class-skills-beastmaster-back.png": __glob_0_14, "../assets/d2e/class-items/class-skills-berserker-back.png": __glob_0_15, "../assets/d2e/class-items/class-skills-bounty-hunter-back.png": __glob_0_16, "../assets/d2e/class-items/class-skills-champion-back.png": __glob_0_17, "../assets/d2e/class-items/class-skills-conjurer-back.png": __glob_0_18, "../assets/d2e/class-items/class-skills-disciple-back.png": __glob_0_19, "../assets/d2e/class-items/class-skills-elementalist-back.png": __glob_0_20, "../assets/d2e/class-items/class-skills-geomancer-back.png": __glob_0_21, "../assets/d2e/class-items/class-skills-hexer-back.png": __glob_0_22, "../assets/d2e/class-items/class-skills-hierophant-back.png": __glob_0_23, "../assets/d2e/class-items/class-skills-knight-back.png": __glob_0_24, "../assets/d2e/class-items/class-skills-marshal-back.png": __glob_0_25, "../assets/d2e/class-items/class-skills-necromancer-back.png": __glob_0_26, "../assets/d2e/class-items/class-skills-prophet-back.png": __glob_0_27, "../assets/d2e/class-items/class-skills-psychic-back.png": __glob_0_28, "../assets/d2e/class-items/class-skills-runemaster-back.png": __glob_0_29, "../assets/d2e/class-items/class-skills-shadow-walker-back.png": __glob_0_30, "../assets/d2e/class-items/class-skills-skirmisher-back.png": __glob_0_31, "../assets/d2e/class-items/class-skills-soul-reaper-back.png": __glob_0_32, "../assets/d2e/class-items/class-skills-spiritspeaker-back.png": __glob_0_33, "../assets/d2e/class-items/class-skills-stalker-back.png": __glob_0_34, "../assets/d2e/class-items/class-skills-thief-back.png": __glob_0_35, "../assets/d2e/class-items/class-skills-treasure-hunter-back.png": __glob_0_36, "../assets/d2e/class-items/class-skills-wildlander-back.png": __glob_0_37, "../assets/d2e/class-items/double-crossbow-mr-scout-bounty-hunter.png": __glob_0_38, "../assets/d2e/class-items/feathered-hatchet-sn-scout-shadow-walker.png": __glob_0_39, "../assets/d2e/class-items/harvester-scythe-ll-healer-soul-reaper.png": __glob_0_40, "../assets/d2e/class-items/horn-of-courage-lw-warrior-champion.png": __glob_0_41, "../assets/d2e/class-items/hunting-knife-tf-scout-stalker.png": __glob_0_42, "../assets/d2e/class-items/hunting-spear-lr-warrior-beastmaster.png": __glob_0_43, "../assets/d2e/class-items/iron-flail-tf-healer-prophet.png": __glob_0_44, "../assets/d2e/class-items/iron-longsword-bg-warrior-knight.png": __glob_0_45, "../assets/d2e/class-items/iron-mace-bg-healer-disciple.png": __glob_0_46, "../assets/d2e/class-items/jagged-handaxe-sn-warrior-skirmisher.png": __glob_0_47, "../assets/d2e/class-items/leather-whip-lr-scout-treasure-hunter.png": __glob_0_48, "../assets/d2e/class-items/lucky-charm-bg-scout-thief.png": __glob_0_49, "../assets/d2e/class-items/lute-sn-healer-bard.png": __glob_0_50, "../assets/d2e/class-items/minds-eye-turban-sotp-mage-psychic.png": __glob_0_51, "../assets/d2e/class-items/mirror-of-souls-ll-healer-soul-reaper.png": __glob_0_52, "../assets/d2e/class-items/oak-staff-bg-healer-spiritspeaker.png": __glob_0_53, "../assets/d2e/class-items/prismatic-staff-sn-mage-conjurer.png": __glob_0_54, "../assets/d2e/class-items/reapers-scythe-bg-mage-necromancer.png": __glob_0_55, "../assets/d2e/class-items/runeshard-cache-ll-mage-elementalist.png": __glob_0_56, "../assets/d2e/class-items/rusted-handaxe-sn-warrior-skirmisher.png": __glob_0_57, "../assets/d2e/class-items/sacred-scriptures-sotp-healer-hierophant.png": __glob_0_58, "../assets/d2e/class-items/sages-tome-tf-healer-prophet.png": __glob_0_59, "../assets/d2e/class-items/shadow-darts-sotp-mage-psychic.png": __glob_0_60, "../assets/d2e/class-items/signet-ring-mr-warrior-marshall.png": __glob_0_61, "../assets/d2e/class-items/skinning-knife-lr-warrior-beastmaster.png": __glob_0_62, "../assets/d2e/class-items/smoking-vials-lr-healer-apothecary.png": __glob_0_63, "../assets/d2e/class-items/spire-of-conflux-ll-mage-elementalist.png": __glob_0_64, "../assets/d2e/class-items/staff-of-the-grave-lr-mage-hexer.png": __glob_0_65, "../assets/d2e/class-items/stasis-rune-lw-mage-geomancer.png": __glob_0_66, "../assets/d2e/class-items/the-dead-mans-compass-lr-scout-treasure-hunter.png": __glob_0_67, "../assets/d2e/class-items/throwing-knives-bg-scout-thief.png": __glob_0_68, "../assets/d2e/class-items/travelers-blade-sn-healer-bard.png": __glob_0_69, "../assets/d2e/class-items/tribal-cloak-sn-scout-shadow-walker.png": __glob_0_70, "../assets/d2e/class-items/war-hammer-mr-warrior-marshall.png": __glob_0_71, "../assets/d2e/class-items/wooden-shield-bg-healer-disciple.png": __glob_0_72, "../assets/d2e/class-items/wooden-shield-bg-warrior-knight.png": __glob_0_73, "../assets/d2e/class-items/worn-greatsword-lw-warrior-champion.png": __glob_0_74, "../assets/d2e/class-items/yew-shortbow-bg-scout-wildlander.png": __glob_0_75, "../assets/d2e/monsters/arachyura-lr-act1-back.png": __glob_0_76, "../assets/d2e/monsters/arachyura-lr-act1-front.png": __glob_0_77, "../assets/d2e/monsters/arachyura-lr-act2-back.png": __glob_0_78, "../assets/d2e/monsters/arachyura-lr-act2-front.png": __glob_0_79, "../assets/d2e/monsters/bandit-mr-act1-back.png": __glob_0_80, "../assets/d2e/monsters/bandit-mr-act1-front.png": __glob_0_81, "../assets/d2e/monsters/bandit-mr-act2-back.png": __glob_0_82, "../assets/d2e/monsters/bandit-mr-act2-front.png": __glob_0_83, "../assets/d2e/monsters/bane-spider-ck-act1-back.png": __glob_0_84, "../assets/d2e/monsters/bane-spider-ck-act1-front.png": __glob_0_85, "../assets/d2e/monsters/bane-spider-ck-act2-back.png": __glob_0_86, "../assets/d2e/monsters/bane-spider-ck-act2-front.png": __glob_0_87, "../assets/d2e/monsters/bane-spider-oo-act1-back.png": __glob_0_88, "../assets/d2e/monsters/bane-spider-oo-act1-front.png": __glob_0_89, "../assets/d2e/monsters/bane-spider-oo-act2-back.png": __glob_0_90, "../assets/d2e/monsters/bane-spider-oo-act2-front.png": __glob_0_91, "../assets/d2e/monsters/barghest-bg-act1-back.png": __glob_0_92, "../assets/d2e/monsters/barghest-bg-act1-front.png": __glob_0_93, "../assets/d2e/monsters/barghest-bg-act2-back.png": __glob_0_94, "../assets/d2e/monsters/barghest-bg-act2-front.png": __glob_0_95, "../assets/d2e/monsters/beastman-ck-act1-back.png": __glob_0_96, "../assets/d2e/monsters/beastman-ck-act1-front.png": __glob_0_97, "../assets/d2e/monsters/beastman-ck-act2-back.png": __glob_0_98, "../assets/d2e/monsters/beastman-ck-act2-front.png": __glob_0_99, "../assets/d2e/monsters/beastman-oo-act1-back.png": __glob_0_100, "../assets/d2e/monsters/beastman-oo-act1-front.png": __glob_0_101, "../assets/d2e/monsters/beastman-oo-act2-back.png": __glob_0_102, "../assets/d2e/monsters/beastman-oo-act2-front.png": __glob_0_103, "../assets/d2e/monsters/blood-ape-ck-act1-back.png": __glob_0_104, "../assets/d2e/monsters/blood-ape-ck-act1-front.png": __glob_0_105, "../assets/d2e/monsters/blood-ape-ck-act2-back.png": __glob_0_106, "../assets/d2e/monsters/blood-ape-ck-act2-front.png": __glob_0_107, "../assets/d2e/monsters/blood-ape-ss-act1-back.png": __glob_0_108, "../assets/d2e/monsters/blood-ape-ss-act1-front.png": __glob_0_109, "../assets/d2e/monsters/blood-ape-ss-act2-back.png": __glob_0_110, "../assets/d2e/monsters/blood-ape-ss-act2-front.png": __glob_0_111, "../assets/d2e/monsters/bone-horror-mb-act1-back.png": __glob_0_112, "../assets/d2e/monsters/bone-horror-mb-act1-front.png": __glob_0_113, "../assets/d2e/monsters/bone-horror-mb-act2-back.png": __glob_0_114, "../assets/d2e/monsters/bone-horror-mb-act2-front.png": __glob_0_115, "../assets/d2e/monsters/broodwalker-mb-act1-back.png": __glob_0_116, "../assets/d2e/monsters/broodwalker-mb-act1-front.png": __glob_0_117, "../assets/d2e/monsters/broodwalker-mb-act2-back.png": __glob_0_118, "../assets/d2e/monsters/broodwalker-mb-act2-front.png": __glob_0_119, "../assets/d2e/monsters/burrowing-horror-sotp-act1-back.png": __glob_0_120, "../assets/d2e/monsters/burrowing-horror-sotp-act1-front.png": __glob_0_121, "../assets/d2e/monsters/burrowing-horror-sotp-act2-back.png": __glob_0_122, "../assets/d2e/monsters/burrowing-horror-sotp-act2-front.png": __glob_0_123, "../assets/d2e/monsters/carrion-drake-lr-act1-back.png": __glob_0_124, "../assets/d2e/monsters/carrion-drake-lr-act1-front.png": __glob_0_125, "../assets/d2e/monsters/carrion-drake-lr-act2-back.png": __glob_0_126, "../assets/d2e/monsters/carrion-drake-lr-act2-front.png": __glob_0_127, "../assets/d2e/monsters/cave-spider-bg-act1-back.png": __glob_0_128, "../assets/d2e/monsters/cave-spider-bg-act1-front.png": __glob_0_129, "../assets/d2e/monsters/cave-spider-bg-act2-back.png": __glob_0_130, "../assets/d2e/monsters/cave-spider-bg-act2-front.png": __glob_0_131, "../assets/d2e/monsters/changeling-sn-act1-back.png": __glob_0_132, "../assets/d2e/monsters/changeling-sn-act1-front.png": __glob_0_133, "../assets/d2e/monsters/changeling-sn-act2-back.png": __glob_0_134, "../assets/d2e/monsters/changeling-sn-act2-front.png": __glob_0_135, "../assets/d2e/monsters/chaos-beast-cd-act1-back.png": __glob_0_136, "../assets/d2e/monsters/chaos-beast-cd-act1-front.png": __glob_0_137, "../assets/d2e/monsters/chaos-beast-cd-act2-back.png": __glob_0_138, "../assets/d2e/monsters/chaos-beast-cd-act2-front.png": __glob_0_139, "../assets/d2e/monsters/chaos-beast-ck-act1-back.png": __glob_0_140, "../assets/d2e/monsters/chaos-beast-ck-act1-front.png": __glob_0_141, "../assets/d2e/monsters/chaos-beast-ck-act2-back.png": __glob_0_142, "../assets/d2e/monsters/chaos-beast-ck-act2-front.png": __glob_0_143, "../assets/d2e/monsters/crow-hag-tc-act1-back.png": __glob_0_144, "../assets/d2e/monsters/crow-hag-tc-act1-front.png": __glob_0_145, "../assets/d2e/monsters/crow-hag-tc-act2-back.png": __glob_0_146, "../assets/d2e/monsters/crow-hag-tc-act2-front.png": __glob_0_147, "../assets/d2e/monsters/crypt-dragon-ck-act1-back.png": __glob_0_148, "../assets/d2e/monsters/crypt-dragon-ck-act1-front.png": __glob_0_149, "../assets/d2e/monsters/crypt-dragon-ck-act2-back.png": __glob_0_150, "../assets/d2e/monsters/crypt-dragon-ck-act2-front.png": __glob_0_151, "../assets/d2e/monsters/crypt-dragon-gd-act1-back.png": __glob_0_152, "../assets/d2e/monsters/crypt-dragon-gd-act1-front.png": __glob_0_153, "../assets/d2e/monsters/crypt-dragon-gd-act2-back.png": __glob_0_154, "../assets/d2e/monsters/crypt-dragon-gd-act2-front.png": __glob_0_155, "../assets/d2e/monsters/dark-minotaur-se-act1-back.png": __glob_0_156, "../assets/d2e/monsters/dark-minotaur-se-act1-front.png": __glob_0_157, "../assets/d2e/monsters/dark-minotaur-se-act2-back.png": __glob_0_158, "../assets/d2e/monsters/dark-minotaur-se-act2-front.png": __glob_0_159, "../assets/d2e/monsters/dark-priest-ck-act1-back.png": __glob_0_160, "../assets/d2e/monsters/dark-priest-ck-act1-front.png": __glob_0_161, "../assets/d2e/monsters/dark-priest-ck-act2-back.png": __glob_0_162, "../assets/d2e/monsters/dark-priest-ck-act2-front.png": __glob_0_163, "../assets/d2e/monsters/dark-priest-gd-act1-back.png": __glob_0_164, "../assets/d2e/monsters/dark-priest-gd-act1-front.png": __glob_0_165, "../assets/d2e/monsters/dark-priest-gd-act2-back.png": __glob_0_166, "../assets/d2e/monsters/dark-priest-gd-act2-front.png": __glob_0_167, "../assets/d2e/monsters/deep-elf-bw-act1-back.png": __glob_0_168, "../assets/d2e/monsters/deep-elf-bw-act1-front.png": __glob_0_169, "../assets/d2e/monsters/deep-elf-bw-act2-back.png": __glob_0_170, "../assets/d2e/monsters/deep-elf-bw-act2-front.png": __glob_0_171, "../assets/d2e/monsters/deep-elf-ck-act1-back.png": __glob_0_172, "../assets/d2e/monsters/deep-elf-ck-act1-front.png": __glob_0_173, "../assets/d2e/monsters/deep-elf-ck-act2-back.png": __glob_0_174, "../assets/d2e/monsters/deep-elf-ck-act2-front.png": __glob_0_175, "../assets/d2e/monsters/demon-lord-ck-act1-back.png": __glob_0_176, "../assets/d2e/monsters/demon-lord-ck-act1-front.png": __glob_0_177, "../assets/d2e/monsters/demon-lord-ck-act2-back.png": __glob_0_178, "../assets/d2e/monsters/demon-lord-ck-act2-front.png": __glob_0_179, "../assets/d2e/monsters/demon-lord-tc-act1-back.png": __glob_0_180, "../assets/d2e/monsters/demon-lord-tc-act1-front.png": __glob_0_181, "../assets/d2e/monsters/demon-lord-tc-act2-back.png": __glob_0_182, "../assets/d2e/monsters/demon-lord-tc-act2-front.png": __glob_0_183, "../assets/d2e/monsters/elemental-bg-act1-back.png": __glob_0_184, "../assets/d2e/monsters/elemental-bg-act1-front.png": __glob_0_185, "../assets/d2e/monsters/elemental-bg-act2-back.png": __glob_0_186, "../assets/d2e/monsters/elemental-bg-act2-front.png": __glob_0_187, "../assets/d2e/monsters/ettin-bg-act1-back.png": __glob_0_188, "../assets/d2e/monsters/ettin-bg-act1-front.png": __glob_0_189, "../assets/d2e/monsters/ettin-bg-act2-back.png": __glob_0_190, "../assets/d2e/monsters/ettin-bg-act2-front.png": __glob_0_191, "../assets/d2e/monsters/ferrox-ck-act1-back.png": __glob_0_192, "../assets/d2e/monsters/ferrox-ck-act1-front.png": __glob_0_193, "../assets/d2e/monsters/ferrox-ck-act2-back.png": __glob_0_194, "../assets/d2e/monsters/ferrox-ck-act2-front.png": __glob_0_195, "../assets/d2e/monsters/ferrox-ss-act1-back.png": __glob_0_196, "../assets/d2e/monsters/ferrox-ss-act1-front.png": __glob_0_197, "../assets/d2e/monsters/ferrox-ss-act2-back.png": __glob_0_198, "../assets/d2e/monsters/ferrox-ss-act2-front.png": __glob_0_199, "../assets/d2e/monsters/fire-imps-lw-act1-back.png": __glob_0_200, "../assets/d2e/monsters/fire-imps-lw-act1-front.png": __glob_0_201, "../assets/d2e/monsters/fire-imps-lw-act2-back.png": __glob_0_202, "../assets/d2e/monsters/fire-imps-lw-act2-front.png": __glob_0_203, "../assets/d2e/monsters/flesh-moulder-bg-act1-back.png": __glob_0_204, "../assets/d2e/monsters/flesh-moulder-bg-act1-front.png": __glob_0_205, "../assets/d2e/monsters/flesh-moulder-bg-act2-back.png": __glob_0_206, "../assets/d2e/monsters/flesh-moulder-bg-act2-front.png": __glob_0_207, "../assets/d2e/monsters/giant-cd-act1-back.png": __glob_0_208, "../assets/d2e/monsters/giant-cd-act1-front.png": __glob_0_209, "../assets/d2e/monsters/giant-cd-act2-back.png": __glob_0_210, "../assets/d2e/monsters/giant-cd-act2-front.png": __glob_0_211, "../assets/d2e/monsters/giant-ck-act1-back.png": __glob_0_212, "../assets/d2e/monsters/giant-ck-act1-front.png": __glob_0_213, "../assets/d2e/monsters/giant-ck-act2-back.png": __glob_0_214, "../assets/d2e/monsters/giant-ck-act2-front.png": __glob_0_215, "../assets/d2e/monsters/goblin-archer-bg-act1-back.png": __glob_0_216, "../assets/d2e/monsters/goblin-archer-bg-act1-front.png": __glob_0_217, "../assets/d2e/monsters/goblin-archer-bg-act2-back.png": __glob_0_218, "../assets/d2e/monsters/goblin-archer-bg-act2-front.png": __glob_0_219, "../assets/d2e/monsters/goblin-witcher-lr-act1-back.png": __glob_0_220, "../assets/d2e/monsters/goblin-witcher-lr-act1-front.png": __glob_0_221, "../assets/d2e/monsters/goblin-witcher-lr-act2-back.png": __glob_0_222, "../assets/d2e/monsters/goblin-witcher-lr-act2-front.png": __glob_0_223, "../assets/d2e/monsters/golem-cf-act1-back.png": __glob_0_224, "../assets/d2e/monsters/golem-cf-act1-front.png": __glob_0_225, "../assets/d2e/monsters/golem-cf-act2-back.png": __glob_0_226, "../assets/d2e/monsters/golem-cf-act2-front.png": __glob_0_227, "../assets/d2e/monsters/golem-ck-act1-back.png": __glob_0_228, "../assets/d2e/monsters/golem-ck-act1-front.png": __glob_0_229, "../assets/d2e/monsters/golem-ck-act2-back.png": __glob_0_230, "../assets/d2e/monsters/golem-ck-act2-front.png": __glob_0_231, "../assets/d2e/monsters/harpy-tf-act1-back.png": __glob_0_232, "../assets/d2e/monsters/harpy-tf-act1-front.png": __glob_0_233, "../assets/d2e/monsters/harpy-tf-act2-back.png": __glob_0_234, "../assets/d2e/monsters/harpy-tf-act2-front.png": __glob_0_235, "../assets/d2e/monsters/hellhound-bw-act1-back.png": __glob_0_236, "../assets/d2e/monsters/hellhound-bw-act1-front.png": __glob_0_237, "../assets/d2e/monsters/hellhound-bw-act2-back.png": __glob_0_238, "../assets/d2e/monsters/hellhound-bw-act2-front.png": __glob_0_239, "../assets/d2e/monsters/hellhound-ck-act1-back.png": __glob_0_240, "../assets/d2e/monsters/hellhound-ck-act1-front.png": __glob_0_241, "../assets/d2e/monsters/hellhound-ck-act2-back.png": __glob_0_242, "../assets/d2e/monsters/hellhound-ck-act2-front.png": __glob_0_243, "../assets/d2e/monsters/hybrid-sentinel-lw-act1-back.png": __glob_0_244, "../assets/d2e/monsters/hybrid-sentinel-lw-act1-front.png": __glob_0_245, "../assets/d2e/monsters/hybrid-sentinel-lw-act2-back.png": __glob_0_246, "../assets/d2e/monsters/hybrid-sentinel-lw-act2-front.png": __glob_0_247, "../assets/d2e/monsters/ice-wyrm-ck-act1-back.png": __glob_0_248, "../assets/d2e/monsters/ice-wyrm-ck-act1-front.png": __glob_0_249, "../assets/d2e/monsters/ice-wyrm-ck-act2-back.png": __glob_0_250, "../assets/d2e/monsters/ice-wyrm-ck-act2-front.png": __glob_0_251, "../assets/d2e/monsters/ice-wyrm-se-act1-back.png": __glob_0_252, "../assets/d2e/monsters/ice-wyrm-se-act1-front.png": __glob_0_253, "../assets/d2e/monsters/ice-wyrm-se-act2-back.png": __glob_0_254, "../assets/d2e/monsters/ice-wyrm-se-act2-front.png": __glob_0_255, "../assets/d2e/monsters/ironbound-sn-act1-back.png": __glob_0_256, "../assets/d2e/monsters/ironbound-sn-act1-front.png": __glob_0_257, "../assets/d2e/monsters/ironbound-sn-act2-back.png": __glob_0_258, "../assets/d2e/monsters/ironbound-sn-act2-front.png": __glob_0_259, "../assets/d2e/monsters/kobold-bw-act1-back.png": __glob_0_260, "../assets/d2e/monsters/kobold-bw-act1-front.png": __glob_0_261, "../assets/d2e/monsters/kobold-bw-act2-back.png": __glob_0_262, "../assets/d2e/monsters/kobold-bw-act2-front.png": __glob_0_263, "../assets/d2e/monsters/kobold-ck-act1-back.png": __glob_0_264, "../assets/d2e/monsters/kobold-ck-act1-front.png": __glob_0_265, "../assets/d2e/monsters/kobold-ck-act2-back.png": __glob_0_266, "../assets/d2e/monsters/kobold-ck-act2-front.png": __glob_0_267, "../assets/d2e/monsters/lava-beetle-cd-act1-back.png": __glob_0_268, "../assets/d2e/monsters/lava-beetle-cd-act1-front.png": __glob_0_269, "../assets/d2e/monsters/lava-beetle-cd-act2-back.png": __glob_0_270, "../assets/d2e/monsters/lava-beetle-cd-act2-front.png": __glob_0_271, "../assets/d2e/monsters/lava-beetle-ck-act1-back.png": __glob_0_272, "../assets/d2e/monsters/lava-beetle-ck-act1-front.png": __glob_0_273, "../assets/d2e/monsters/lava-beetle-ck-act2-back.png": __glob_0_274, "../assets/d2e/monsters/lava-beetle-ck-act2-front.png": __glob_0_275, "../assets/d2e/monsters/manticore-ck-act1-back.png": __glob_0_276, "../assets/d2e/monsters/manticore-ck-act1-front.png": __glob_0_277, "../assets/d2e/monsters/manticore-ck-act2-back.png": __glob_0_278, "../assets/d2e/monsters/manticore-ck-act2-front.png": __glob_0_279, "../assets/d2e/monsters/manticore-vd-act1-back.png": __glob_0_280, "../assets/d2e/monsters/manticore-vd-act1-front.png": __glob_0_281, "../assets/d2e/monsters/manticore-vd-act2-back.png": __glob_0_282, "../assets/d2e/monsters/manticore-vd-act2-front.png": __glob_0_283, "../assets/d2e/monsters/marrow-priest-cr-act1-back.png": __glob_0_284, "../assets/d2e/monsters/marrow-priest-cr-act1-front.png": __glob_0_285, "../assets/d2e/monsters/marrow-priest-cr-act2-back.png": __glob_0_286, "../assets/d2e/monsters/marrow-priest-cr-act2-front.png": __glob_0_287, "../assets/d2e/monsters/medusa-cf-act1-back.png": __glob_0_288, "../assets/d2e/monsters/medusa-cf-act1-front.png": __glob_0_289, "../assets/d2e/monsters/medusa-cf-act2-back.png": __glob_0_290, "../assets/d2e/monsters/medusa-cf-act2-front.png": __glob_0_291, "../assets/d2e/monsters/medusa-ck-act1-back.png": __glob_0_292, "../assets/d2e/monsters/medusa-ck-act1-front.png": __glob_0_293, "../assets/d2e/monsters/medusa-ck-act2-back.png": __glob_0_294, "../assets/d2e/monsters/medusa-ck-act2-front.png": __glob_0_295, "../assets/d2e/monsters/merriod-bg-act1-back.png": __glob_0_296, "../assets/d2e/monsters/merriod-bg-act1-front.png": __glob_0_297, "../assets/d2e/monsters/merriod-bg-act2-back.png": __glob_0_298, "../assets/d2e/monsters/merriod-bg-act2-front.png": __glob_0_299, "../assets/d2e/monsters/naga-ck-act1-back.png": __glob_0_300, "../assets/d2e/monsters/naga-ck-act1-front.png": __glob_0_301, "../assets/d2e/monsters/naga-ck-act2-back.png": __glob_0_302, "../assets/d2e/monsters/naga-ck-act2-front.png": __glob_0_303, "../assets/d2e/monsters/naga-ss-act1-back.png": __glob_0_304, "../assets/d2e/monsters/naga-ss-act1-front.png": __glob_0_305, "../assets/d2e/monsters/naga-ss-act2-back.png": __glob_0_306, "../assets/d2e/monsters/naga-ss-act2-front.png": __glob_0_307, "../assets/d2e/monsters/ogre-ck-act1-back.png": __glob_0_308, "../assets/d2e/monsters/ogre-ck-act1-front.png": __glob_0_309, "../assets/d2e/monsters/ogre-ck-act2-back.png": __glob_0_310, "../assets/d2e/monsters/ogre-ck-act2-front.png": __glob_0_311, "../assets/d2e/monsters/ogre-vd-act1-back.png": __glob_0_312, "../assets/d2e/monsters/ogre-vd-act1-front.png": __glob_0_313, "../assets/d2e/monsters/ogre-vd-act2-back.png": __glob_0_314, "../assets/d2e/monsters/ogre-vd-act2-front.png": __glob_0_315, "../assets/d2e/monsters/plague-worm-tf-act1-back.png": __glob_0_316, "../assets/d2e/monsters/plague-worm-tf-act1-front.png": __glob_0_317, "../assets/d2e/monsters/plague-worm-tf-act2-back.png": __glob_0_318, "../assets/d2e/monsters/plague-worm-tf-act2-front.png": __glob_0_319, "../assets/d2e/monsters/rat-swarm-sn-act1-back.png": __glob_0_320, "../assets/d2e/monsters/rat-swarm-sn-act1-front.png": __glob_0_321, "../assets/d2e/monsters/rat-swarm-sn-act2-back.png": __glob_0_322, "../assets/d2e/monsters/rat-swarm-sn-act2-front.png": __glob_0_323, "../assets/d2e/monsters/razorwing-ck-act1-back.png": __glob_0_324, "../assets/d2e/monsters/razorwing-ck-act1-front.png": __glob_0_325, "../assets/d2e/monsters/razorwing-ck-act2-back.png": __glob_0_326, "../assets/d2e/monsters/razorwing-ck-act2-front.png": __glob_0_327, "../assets/d2e/monsters/razorwing-oo-act1-back.png": __glob_0_328, "../assets/d2e/monsters/razorwing-oo-act1-front.png": __glob_0_329, "../assets/d2e/monsters/razorwing-oo-act2-back.png": __glob_0_330, "../assets/d2e/monsters/razorwing-oo-act2-front.png": __glob_0_331, "../assets/d2e/monsters/reanimate-mb-act1-back.png": __glob_0_332, "../assets/d2e/monsters/reanimate-mb-act1-front.png": __glob_0_333, "../assets/d2e/monsters/reanimate-mb-act2-back.png": __glob_0_334, "../assets/d2e/monsters/reanimate-mb-act2-front.png": __glob_0_335, "../assets/d2e/monsters/sarcophagus-guard-sotp-act1-back.png": __glob_0_336, "../assets/d2e/monsters/sarcophagus-guard-sotp-act1-front.png": __glob_0_337, "../assets/d2e/monsters/sarcophagus-guard-sotp-act2-back.png": __glob_0_338, "../assets/d2e/monsters/sarcophagus-guard-sotp-act2-front.png": __glob_0_339, "../assets/d2e/monsters/shade-ck-act1-back.png": __glob_0_340, "../assets/d2e/monsters/shade-ck-act1-front.png": __glob_0_341, "../assets/d2e/monsters/shade-ck-act2-back.png": __glob_0_342, "../assets/d2e/monsters/shade-ck-act2-front.png": __glob_0_343, "../assets/d2e/monsters/shade-se-act1-back.png": __glob_0_344, "../assets/d2e/monsters/shade-se-act1-front.png": __glob_0_345, "../assets/d2e/monsters/shade-se-act2-back.png": __glob_0_346, "../assets/d2e/monsters/shade-se-act2-front.png": __glob_0_347, "../assets/d2e/monsters/shadow-dragon-bg-act1-back.png": __glob_0_348, "../assets/d2e/monsters/shadow-dragon-bg-act1-front.png": __glob_0_349, "../assets/d2e/monsters/shadow-dragon-bg-act2-back.png": __glob_0_350, "../assets/d2e/monsters/shadow-dragon-bg-act2-front.png": __glob_0_351, "../assets/d2e/monsters/shambling-colossus-cr-act1-back.png": __glob_0_352, "../assets/d2e/monsters/shambling-colossus-cr-act1-front.png": __glob_0_353, "../assets/d2e/monsters/shambling-colossus-cr-act2-back.png": __glob_0_354, "../assets/d2e/monsters/shambling-colossus-cr-act2-front.png": __glob_0_355, "../assets/d2e/monsters/skeleton-archer-ck-act1-back.png": __glob_0_356, "../assets/d2e/monsters/skeleton-archer-ck-act1-front.png": __glob_0_357, "../assets/d2e/monsters/skeleton-archer-ck-act2-back.png": __glob_0_358, "../assets/d2e/monsters/skeleton-archer-ck-act2-front.png": __glob_0_359, "../assets/d2e/monsters/skeleton-archer-tc-act1-back.png": __glob_0_360, "../assets/d2e/monsters/skeleton-archer-tc-act1-front.png": __glob_0_361, "../assets/d2e/monsters/skeleton-archer-tc-act2-back.png": __glob_0_362, "../assets/d2e/monsters/skeleton-archer-tc-act2-front.png": __glob_0_363, "../assets/d2e/monsters/sorcerer-cf-act1-back.png": __glob_0_364, "../assets/d2e/monsters/sorcerer-cf-act1-front.png": __glob_0_365, "../assets/d2e/monsters/sorcerer-cf-act2-back.png": __glob_0_366, "../assets/d2e/monsters/sorcerer-cf-act2-front.png": __glob_0_367, "../assets/d2e/monsters/sorcerer-ck-act1-back.png": __glob_0_368, "../assets/d2e/monsters/sorcerer-ck-act1-front.png": __glob_0_369, "../assets/d2e/monsters/sorcerer-ck-act2-back.png": __glob_0_370, "../assets/d2e/monsters/sorcerer-ck-act2-front.png": __glob_0_371, "../assets/d2e/monsters/the-dispossessed-cr-act1-back.png": __glob_0_372, "../assets/d2e/monsters/the-dispossessed-cr-act1-front.png": __glob_0_373, "../assets/d2e/monsters/the-dispossessed-cr-act2-back.png": __glob_0_374, "../assets/d2e/monsters/the-dispossessed-cr-act2-front.png": __glob_0_375, "../assets/d2e/monsters/troll-ck-act1-back.png": __glob_0_376, "../assets/d2e/monsters/troll-ck-act1-front.png": __glob_0_377, "../assets/d2e/monsters/troll-ck-act2-back.png": __glob_0_378, "../assets/d2e/monsters/troll-ck-act2-front.png": __glob_0_379, "../assets/d2e/monsters/troll-vd-act1-back.png": __glob_0_380, "../assets/d2e/monsters/troll-vd-act1-front.png": __glob_0_381, "../assets/d2e/monsters/troll-vd-act2-back.png": __glob_0_382, "../assets/d2e/monsters/troll-vd-act2-front.png": __glob_0_383, "../assets/d2e/monsters/volucrix-reaver-lr-act1-back.png": __glob_0_384, "../assets/d2e/monsters/volucrix-reaver-lr-act1-front.png": __glob_0_385, "../assets/d2e/monsters/volucrix-reaver-lr-act2-back.png": __glob_0_386, "../assets/d2e/monsters/volucrix-reaver-lr-act2-front.png": __glob_0_387, "../assets/d2e/monsters/wendigo-ck-act1-back.png": __glob_0_388, "../assets/d2e/monsters/wendigo-ck-act1-front.png": __glob_0_389, "../assets/d2e/monsters/wendigo-ck-act2-back.png": __glob_0_390, "../assets/d2e/monsters/wendigo-ck-act2-front.png": __glob_0_391, "../assets/d2e/monsters/wendigo-gd-act1-back.png": __glob_0_392, "../assets/d2e/monsters/wendigo-gd-act1-front.png": __glob_0_393, "../assets/d2e/monsters/wendigo-gd-act2-back.png": __glob_0_394, "../assets/d2e/monsters/wendigo-gd-act2-front.png": __glob_0_395, "../assets/d2e/monsters/wraith-mr-act1-back.png": __glob_0_396, "../assets/d2e/monsters/wraith-mr-act1-front.png": __glob_0_397, "../assets/d2e/monsters/wraith-mr-act2-back.png": __glob_0_398, "../assets/d2e/monsters/wraith-mr-act2-front.png": __glob_0_399, "../assets/d2e/monsters/ynfernael-hulk-sn-act1-back.png": __glob_0_400, "../assets/d2e/monsters/ynfernael-hulk-sn-act1-front.png": __glob_0_401, "../assets/d2e/monsters/ynfernael-hulk-sn-act2-back.png": __glob_0_402, "../assets/d2e/monsters/ynfernael-hulk-sn-act2-front.png": __glob_0_403, "../assets/d2e/monsters/zombie-bg-act1-back.png": __glob_0_404, "../assets/d2e/monsters/zombie-bg-act1-front.png": __glob_0_405, "../assets/d2e/monsters/zombie-bg-act2-back.png": __glob_0_406, "../assets/d2e/monsters/zombie-bg-act2-front.png": __glob_0_407, "../assets/d2e/relics/heroes/aurium-mail-lw.png": __glob_0_408, "../assets/d2e/relics/heroes/boneborn-bow-cr.png": __glob_0_409, "../assets/d2e/relics/heroes/book-of-stars-mr.png": __glob_0_410, "../assets/d2e/relics/heroes/dawnblade-bg.png": __glob_0_411, "../assets/d2e/relics/heroes/fear-eater-mb.png": __glob_0_412, "../assets/d2e/relics/heroes/forewarned-ring-cr.png": __glob_0_413, "../assets/d2e/relics/heroes/fortunas-dice-bg.png": __glob_0_414, "../assets/d2e/relics/heroes/gauntlets-of-power-lr.png": __glob_0_415, "../assets/d2e/relics/heroes/immunity-elixir-tf.png": __glob_0_416, "../assets/d2e/relics/heroes/living-heart-lr.png": __glob_0_417, "../assets/d2e/relics/heroes/mending-talisman-tf.png": __glob_0_418, "../assets/d2e/relics/heroes/robes-of-the-last-cr.png": __glob_0_419, "../assets/d2e/relics/heroes/shadow-plotter-sn.png": __glob_0_420, "../assets/d2e/relics/heroes/shards-of-ithyndrus-mr.png": __glob_0_421, "../assets/d2e/relics/heroes/shield-of-the-dark-god-bg.png": __glob_0_422, "../assets/d2e/relics/heroes/spirited-scythe-sn.png": __glob_0_423, "../assets/d2e/relics/heroes/staff-of-light-bg.png": __glob_0_424, "../assets/d2e/relics/heroes/sun-stone-lr.png": __glob_0_425, "../assets/d2e/relics/heroes/the-manors-heart-mr.png": __glob_0_426, "../assets/d2e/relics/heroes/the-shadow-rune-bg.png": __glob_0_427, "../assets/d2e/relics/heroes/the-white-crown-mb.png": __glob_0_428, "../assets/d2e/relics/heroes/trueshot-bg.png": __glob_0_429, "../assets/d2e/relics/heroes/undertakers-coat-mb.png": __glob_0_430, "../assets/d2e/relics/heroes/valyndras-bane-lw.png": __glob_0_431, "../assets/d2e/relics/heroes/wanderers-stone-mr.png": __glob_0_432, "../assets/d2e/relics/heroes/workmans-ring-tf.png": __glob_0_433, "../assets/d2e/relics/heroes/ynfernal-rune-sn.png": __glob_0_434, "../assets/d2e/relics/lieutenants/azatheas-triumph-cr.png": __glob_0_435, "../assets/d2e/relics/lieutenants/band-of-foresight-cr.png": __glob_0_436, "../assets/d2e/relics/lieutenants/blade-of-brivala-mb.png": __glob_0_437, "../assets/d2e/relics/lieutenants/bones-of-woe-bg.png": __glob_0_438, "../assets/d2e/relics/lieutenants/curative-vial-tf.png": __glob_0_439, "../assets/d2e/relics/lieutenants/duskblade-bg.png": __glob_0_440, "../assets/d2e/relics/lieutenants/fallen-heart-lr.png": __glob_0_441, "../assets/d2e/relics/lieutenants/gauntlets-of-spite-lr.png": __glob_0_442, "../assets/d2e/relics/lieutenants/her-majestys-malice-lw.png": __glob_0_443, "../assets/d2e/relics/lieutenants/omen-of-blight-tf.png": __glob_0_444, "../assets/d2e/relics/lieutenants/robes-of-the-last-cr.png": __glob_0_445, "../assets/d2e/relics/lieutenants/scorpions-kiss-bg.png": __glob_0_446, "../assets/d2e/relics/lieutenants/shadow-plotter-sn.png": __glob_0_447, "../assets/d2e/relics/lieutenants/shards-of-ithyndrus-mr.png": __glob_0_448, "../assets/d2e/relics/lieutenants/shield-of-zoreks-favor-bg.png": __glob_0_449, "../assets/d2e/relics/lieutenants/soulless-scythe-sn.png": __glob_0_450, "../assets/d2e/relics/lieutenants/staff-of-shadows-bg.png": __glob_0_451, "../assets/d2e/relics/lieutenants/stone-of-wayward-means-mr.png": __glob_0_452, "../assets/d2e/relics/lieutenants/suns-fury-lr.png": __glob_0_453, "../assets/d2e/relics/lieutenants/taskmasters-ring-tf.png": __glob_0_454, "../assets/d2e/relics/lieutenants/the-manors-heart-mr.png": __glob_0_455, "../assets/d2e/relics/lieutenants/the-shadow-rune-bg.png": __glob_0_456, "../assets/d2e/relics/lieutenants/tome-of-the-five-lies-mr.png": __glob_0_457, "../assets/d2e/relics/lieutenants/undertakers-coat-mb.png": __glob_0_458, "../assets/d2e/relics/lieutenants/valyndras-gift-lw.png": __glob_0_459, "../assets/d2e/relics/lieutenants/waiqars-favor-mb.png": __glob_0_460, "../assets/d2e/relics/lieutenants/ynfernal-rune-sn.png": __glob_0_461, "../assets/d2e/shop-items/act1/archaic-scroll-sn.png": __glob_0_462, "../assets/d2e/shop-items/act1/bag-of-tricks-sotp.png": __glob_0_463, "../assets/d2e/shop-items/act1/barons-cloak-sn.png": __glob_0_464, "../assets/d2e/shop-items/act1/battle-tome-mb.png": __glob_0_465, "../assets/d2e/shop-items/act1/bearded-axe-lr.png": __glob_0_466, "../assets/d2e/shop-items/act1/belt-of-alchemy-tf.png": __glob_0_467, "../assets/d2e/shop-items/act1/belt-of-waterwalking-tf.png": __glob_0_468, "../assets/d2e/shop-items/act1/blessed-shield-mr.png": __glob_0_469, "../assets/d2e/shop-items/act1/bloodscript-ring-mb.png": __glob_0_470, "../assets/d2e/shop-items/act1/bloody-dagger-sn.png": __glob_0_471, "../assets/d2e/shop-items/act1/bone-blade-sn.png": __glob_0_472, "../assets/d2e/shop-items/act1/boots-of-iron-sn.png": __glob_0_473, "../assets/d2e/shop-items/act1/bow-of-bone-lr.png": __glob_0_474, "../assets/d2e/shop-items/act1/chainmail-bg.png": __glob_0_475, "../assets/d2e/shop-items/act1/city-guards-bow-sn.png": __glob_0_476, "../assets/d2e/shop-items/act1/cloak-of-mists-sn.png": __glob_0_477, "../assets/d2e/shop-items/act1/corpsebug-brooch-mb.png": __glob_0_478, "../assets/d2e/shop-items/act1/crossbow-bg.png": __glob_0_479, "../assets/d2e/shop-items/act1/crystal-of-mirages-sotp.png": __glob_0_480, "../assets/d2e/shop-items/act1/deflecting-shield-tf.png": __glob_0_481, "../assets/d2e/shop-items/act1/dire-flail-tf.png": __glob_0_482, "../assets/d2e/shop-items/act1/elm-greatbow-bg.png": __glob_0_483, "../assets/d2e/shop-items/act1/elven-boots-lr.png": __glob_0_484, "../assets/d2e/shop-items/act1/flash-powder-lw.png": __glob_0_485, "../assets/d2e/shop-items/act1/golden-orb-mace-sotp.png": __glob_0_486, "../assets/d2e/shop-items/act1/guardian-axe-tf.png": __glob_0_487, "../assets/d2e/shop-items/act1/halberd-lw.png": __glob_0_488, "../assets/d2e/shop-items/act1/handbow-lw.png": __glob_0_489, "../assets/d2e/shop-items/act1/heavy-cloak-bg.png": __glob_0_490, "../assets/d2e/shop-items/act1/immolation-bg.png": __glob_0_491, "../assets/d2e/shop-items/act1/incendiary-arrows-sn.png": __glob_0_492, "../assets/d2e/shop-items/act1/iron-battleaxe-bg.png": __glob_0_493, "../assets/d2e/shop-items/act1/iron-shield-bg.png": __glob_0_494, "../assets/d2e/shop-items/act1/iron-spear-bg.png": __glob_0_495, "../assets/d2e/shop-items/act1/ironbound-rune-sn.png": __glob_0_496, "../assets/d2e/shop-items/act1/jeweled-mace-sn.png": __glob_0_497, "../assets/d2e/shop-items/act1/jinns-lamp-lr.png": __glob_0_498, "../assets/d2e/shop-items/act1/leather-armor-bg.png": __glob_0_499, "../assets/d2e/shop-items/act1/lifedrain-scepter-tf.png": __glob_0_500, "../assets/d2e/shop-items/act1/light-hammer-bg.png": __glob_0_501, "../assets/d2e/shop-items/act1/lucky-charm-bg.png": __glob_0_502, "../assets/d2e/shop-items/act1/mace-of-aver-lr.png": __glob_0_503, "../assets/d2e/shop-items/act1/magic-staff-bg.png": __glob_0_504, "../assets/d2e/shop-items/act1/magma-blast-lw.png": __glob_0_505, "../assets/d2e/shop-items/act1/mana-weave-bg.png": __glob_0_506, "../assets/d2e/shop-items/act1/mapstone-tf.png": __glob_0_507, "../assets/d2e/shop-items/act1/marsh-cloak-mb.png": __glob_0_508, "../assets/d2e/shop-items/act1/mistbane-mb.png": __glob_0_509, "../assets/d2e/shop-items/act1/phoenix-pendant-sn.png": __glob_0_510, "../assets/d2e/shop-items/act1/piercing-arrows-sotp.png": __glob_0_511, "../assets/d2e/shop-items/act1/poisoned-blowgun-lr.png": __glob_0_512, "../assets/d2e/shop-items/act1/ring-of-power-bg.png": __glob_0_513, "../assets/d2e/shop-items/act1/rune-plate-lr.png": __glob_0_514, "../assets/d2e/shop-items/act1/scar-pit-greaves-sotp.png": __glob_0_515, "../assets/d2e/shop-items/act1/scorpion-helm-bg.png": __glob_0_516, "../assets/d2e/shop-items/act1/serpent-dagger-lr.png": __glob_0_517, "../assets/d2e/shop-items/act1/shadow-bracers-mr.png": __glob_0_518, "../assets/d2e/shop-items/act1/shield-of-light-lr.png": __glob_0_519, "../assets/d2e/shop-items/act1/shop-items-act1-back.png": __glob_0_520, "../assets/d2e/shop-items/act1/sling-bg.png": __glob_0_521, "../assets/d2e/shop-items/act1/soulbound-sword-mb.png": __glob_0_522, "../assets/d2e/shop-items/act1/soulstone-mb.png": __glob_0_523, "../assets/d2e/shop-items/act1/staff-of-greyhaven-mr.png": __glob_0_524, "../assets/d2e/shop-items/act1/steel-broadsword-bg.png": __glob_0_525, "../assets/d2e/shop-items/act1/sun-blessed-rune-sotp.png": __glob_0_526, "../assets/d2e/shop-items/act1/sunburst-bg.png": __glob_0_527, "../assets/d2e/shop-items/act1/sunspear-sotp.png": __glob_0_528, "../assets/d2e/shop-items/act1/teleportation-rune-lr.png": __glob_0_529, "../assets/d2e/shop-items/act1/thiefs-vest-lr.png": __glob_0_530, "../assets/d2e/shop-items/act1/trident-tf.png": __glob_0_531, "../assets/d2e/shop-items/act1/undying-skull-mr.png": __glob_0_532, "../assets/d2e/shop-items/act1/viziers-garment-sotp.png": __glob_0_533, "../assets/d2e/shop-items/act1/white-wolf-cloak-mr.png": __glob_0_534, "../assets/d2e/shop-items/act1/witch-hazel-bow-mb.png": __glob_0_535, "../assets/d2e/shop-items/act2/belt-of-strength-tf.png": __glob_0_536, "../assets/d2e/shop-items/act2/black-iron-helm-lr.png": __glob_0_537, "../assets/d2e/shop-items/act2/blasting-rune-tf.png": __glob_0_538, "../assets/d2e/shop-items/act2/blessed-armor-cr.png": __glob_0_539, "../assets/d2e/shop-items/act2/bloodthirsty-bracers-cr.png": __glob_0_540, "../assets/d2e/shop-items/act2/bone-wand-cr.png": __glob_0_541, "../assets/d2e/shop-items/act2/boomerang-tf.png": __glob_0_542, "../assets/d2e/shop-items/act2/bow-of-the-eclipse-lr.png": __glob_0_543, "../assets/d2e/shop-items/act2/bow-of-the-sky-lw.png": __glob_0_544, "../assets/d2e/shop-items/act2/chain-sickle-sotp.png": __glob_0_545, "../assets/d2e/shop-items/act2/cloak-of-deception-lr.png": __glob_0_546, "../assets/d2e/shop-items/act2/demonhide-leather-bg.png": __glob_0_547, "../assets/d2e/shop-items/act2/dragontooth-hammer-bg.png": __glob_0_548, "../assets/d2e/shop-items/act2/dwarven-firebomb-bg.png": __glob_0_549, "../assets/d2e/shop-items/act2/elven-cloak-bg.png": __glob_0_550, "../assets/d2e/shop-items/act2/eye-of-the-night-sotp.png": __glob_0_551, "../assets/d2e/shop-items/act2/fists-of-iron-cr.png": __glob_0_552, "../assets/d2e/shop-items/act2/glaive-tf.png": __glob_0_553, "../assets/d2e/shop-items/act2/golden-mask-sn.png": __glob_0_554, "../assets/d2e/shop-items/act2/grinding-axe-bg.png": __glob_0_555, "../assets/d2e/shop-items/act2/hammer-of-doom-mr.png": __glob_0_556, "../assets/d2e/shop-items/act2/heart-seeker-mr.png": __glob_0_557, "../assets/d2e/shop-items/act2/heavy-steel-shield-bg.png": __glob_0_558, "../assets/d2e/shop-items/act2/horned-shield-cr.png": __glob_0_559, "../assets/d2e/shop-items/act2/ibis-bow-sotp.png": __glob_0_560, "../assets/d2e/shop-items/act2/ice-storm-bg.png": __glob_0_561, "../assets/d2e/shop-items/act2/inscribed-robes-lw.png": __glob_0_562, "../assets/d2e/shop-items/act2/iron-bound-ring-bg.png": __glob_0_563, "../assets/d2e/shop-items/act2/iron-claws-lr.png": __glob_0_564, "../assets/d2e/shop-items/act2/ironbound-glaive-sn.png": __glob_0_565, "../assets/d2e/shop-items/act2/ironbound-shield-sn.png": __glob_0_566, "../assets/d2e/shop-items/act2/latari-longbow-bg.png": __glob_0_567, "../assets/d2e/shop-items/act2/lightning-javelin-cr.png": __glob_0_568, "../assets/d2e/shop-items/act2/lightning-strike-bg.png": __glob_0_569, "../assets/d2e/shop-items/act2/lost-caliphs-crook-sotp.png": __glob_0_570, "../assets/d2e/shop-items/act2/mace-of-kellos-bg.png": __glob_0_571, "../assets/d2e/shop-items/act2/mask-of-horrors-cr.png": __glob_0_572, "../assets/d2e/shop-items/act2/merciful-boots-lw.png": __glob_0_573, "../assets/d2e/shop-items/act2/nerekhall-plate-sn.png": __glob_0_574, "../assets/d2e/shop-items/act2/obsidian-greataxe-lr.png": __glob_0_575, "../assets/d2e/shop-items/act2/obsidian-scalemail-lr.png": __glob_0_576, "../assets/d2e/shop-items/act2/platemail-bg.png": __glob_0_577, "../assets/d2e/shop-items/act2/rage-blade-lr.png": __glob_0_578, "../assets/d2e/shop-items/act2/rat-tooth-dagger-sn.png": __glob_0_579, "../assets/d2e/shop-items/act2/repeating-crossbow-sn.png": __glob_0_580, "../assets/d2e/shop-items/act2/rune-of-blades-sn.png": __glob_0_581, "../assets/d2e/shop-items/act2/rune-of-fate-mr.png": __glob_0_582, "../assets/d2e/shop-items/act2/rune-of-misery-lr.png": __glob_0_583, "../assets/d2e/shop-items/act2/rune-touched-leather-cr.png": __glob_0_584, "../assets/d2e/shop-items/act2/sash-of-the-slayer-cr.png": __glob_0_585, "../assets/d2e/shop-items/act2/scalemail-lw.png": __glob_0_586, "../assets/d2e/shop-items/act2/scarab-amulet-sotp.png": __glob_0_587, "../assets/d2e/shop-items/act2/shadow-tome-sn.png": __glob_0_588, "../assets/d2e/shop-items/act2/shimmering-shield-sotp.png": __glob_0_589, "../assets/d2e/shop-items/act2/shop-items-act2-back.png": __glob_0_590, "../assets/d2e/shop-items/act2/shroud-of-dusk-lr.png": __glob_0_591, "../assets/d2e/shop-items/act2/staff-of-kellos-lw.png": __glob_0_592, "../assets/d2e/shop-items/act2/staff-of-the-wild-lr.png": __glob_0_593, "../assets/d2e/shop-items/act2/star-of-atar-sotp.png": __glob_0_594, "../assets/d2e/shop-items/act2/star-of-kellos-sn.png": __glob_0_595, "../assets/d2e/shop-items/act2/starmetal-khopesh-sotp.png": __glob_0_596, "../assets/d2e/shop-items/act2/steel-greatsword-bg.png": __glob_0_597, "../assets/d2e/shop-items/act2/stone-armor-tf.png": __glob_0_598, "../assets/d2e/shop-items/act2/sunlight-ward-sotp.png": __glob_0_599, "../assets/d2e/shop-items/act2/tival-crystal-bg.png": __glob_0_600, "../assets/d2e/shop-items/act2/vestments-of-kellos-sn.png": __glob_0_601, "../assets/d2e/shop-items/act2/winged-blade-mr.png": __glob_0_602 };
 function assetUrl(path) {
   const key = Object.keys(assets).find((fullPath) => fullPath.endsWith(`/assets/${path}`));
   if (key === void 0) {
@@ -7692,14 +9962,14 @@ var _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _hoisted_1$4 = { class: "container" };
-const _hoisted_2$3 = { class: "list-inline" };
-const _hoisted_3$3 = ["src", "onClick", "alt"];
-const _hoisted_4$3 = { class: "container" };
-const _hoisted_5$3 = { class: "list-inline" };
-const _hoisted_6$2 = ["src", "onClick", "alt"];
-const _hoisted_7$2 = { class: "list-inline-item" };
-const _sfc_main$5 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$6 = { class: "container" };
+const _hoisted_2$5 = { class: "list-inline" };
+const _hoisted_3$5 = ["src", "onClick", "alt"];
+const _hoisted_4$5 = { class: "container" };
+const _hoisted_5$5 = { class: "list-inline" };
+const _hoisted_6$4 = ["src", "onClick", "alt"];
+const _hoisted_7$4 = { class: "list-inline-item" };
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const fight = useFightStore();
     const pool = [...fight.combatDicePool, ...fight.defenseDicePool];
@@ -7707,8 +9977,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       const _component_font_awesome_icon = resolveComponent("font-awesome-icon");
       return openBlock(), createElementBlock(Fragment, null, [
-        createBaseVNode("div", _hoisted_1$4, [
-          createBaseVNode("ul", _hoisted_2$3, [
+        createBaseVNode("div", _hoisted_1$6, [
+          createBaseVNode("ul", _hoisted_2$5, [
             (openBlock(), createElementBlock(Fragment, null, renderList(pool, (die) => {
               return createBaseVNode("li", {
                 key: die.color,
@@ -7719,13 +9989,13 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
                   class: "dice",
                   onClick: ($event) => unref(fight).addDie(die),
                   alt: die.color
-                }, null, 8, _hoisted_3$3)
+                }, null, 8, _hoisted_3$5)
               ]);
             }), 64))
           ])
         ]),
-        createBaseVNode("div", _hoisted_4$3, [
-          createBaseVNode("ul", _hoisted_5$3, [
+        createBaseVNode("div", _hoisted_4$5, [
+          createBaseVNode("ul", _hoisted_5$5, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(unref(dice), ([die, count]) => {
               return openBlock(), createElementBlock(Fragment, { key: die }, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(count, (n) => {
@@ -7738,12 +10008,12 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
                       class: "dice",
                       onClick: ($event) => unref(fight).removeDie(die),
                       alt: die.color
-                    }, null, 8, _hoisted_6$2)
+                    }, null, 8, _hoisted_6$4)
                   ]);
                 }), 128))
               ], 64);
             }), 128)),
-            createBaseVNode("li", _hoisted_7$2, [
+            createBaseVNode("li", _hoisted_7$4, [
               createVNode(_component_font_awesome_icon, {
                 icon: "recycle",
                 size: "3x",
@@ -7757,7 +10027,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var DiceSelector = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-779b4ae4"]]);
+var DiceSelector = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-779b4ae4"]]);
 class ObjectCounter {
   constructor(entries) {
     __publicField(this, "map");
@@ -8075,8 +10345,8 @@ if (typeof window !== "undefined") {
 if (GlobalVue !== null && GlobalVue !== void 0) {
   app$1.use(plugin);
 }
-const _hoisted_1$3 = { class: "container" };
-const _sfc_main$4 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$5 = { class: "container" };
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const fight = useFightStore();
     const damageHistogram = computed(() => effectiveDamage(roll([...fight.combatDiceSet.linear(), ...fight.defenseDiceSet.linear()])));
@@ -8090,7 +10360,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
       ...damageHistogram.value.entries()
     ]);
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$3, [
+      return openBlock(), createElementBlock("div", _hoisted_1$5, [
         createBaseVNode("ul", null, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(damageHistogram).entries(), ([damage, count]) => {
             return openBlock(), createElementBlock("li", { key: damage }, " Damage: " + toDisplayString(damage) + ": " + toDisplayString(count), 1);
@@ -8105,12 +10375,12 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock(Fragment, null, [
         createVNode(DiceSelector),
-        createVNode(_sfc_main$4)
+        createVNode(_sfc_main$6)
       ], 64);
     };
   }
@@ -12932,7 +15202,7 @@ function parseShopWeapon(json, combatDice) {
   });
 }
 function isWeapon(json) {
-  return json.attack != "-";
+  return json.attack != void 0 && json.attack != "-";
 }
 var jsonShopItems = [
   {
@@ -15021,7 +17291,1637 @@ var jsonShopItems = [
     xws: "sunlightward"
   }
 ];
-const weapons = jsonShopItems.filter(isWeapon).map((weapon) => parseShopWeapon(weapon, combatDiceByColor));
+var jsonRelics = [
+  {
+    name: "Aurium Mail",
+    points: 0,
+    traits: "Heavy Armor",
+    attack: "-",
+    equip: "Armor",
+    dice: "Black",
+    rules: "Before rolling your defense dice, exhaust this card to add 1 additional brown die to your defense pool.",
+    expansion: "Lair Of The Wyrm",
+    image: "relics/heroes/aurium-mail-lw.png",
+    xws: "auriummail"
+  },
+  {
+    name: "Valyndra's Gift",
+    points: 1,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Before any attack roll, exhaust this card to choose this lieutenant or a figure adjacent to this lieutenant. The chosen figure adds 1 gray die to his defense pool.",
+    expansion: "Lair Of The Wyrm",
+    image: "relics/lieutenants/valyndras-gift-lw.png",
+    xws: "valyndrasgift"
+  },
+  {
+    name: "Book Of Stars",
+    points: 2,
+    traits: "Book",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Apply +1 to your Knowledge (to a maximum of 6). Action: Test Knowledge. If you pass, discard 1 Condition card from 1 hero of your choice.",
+    expansion: "Manor Of Ravens",
+    image: "relics/heroes/book-of-stars-mr.png",
+    xws: "bookofstars"
+  },
+  {
+    name: "Tome Of The Five Lies",
+    points: 3,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Exhaust this card after drawing your starting hand. Shuffle those cards back into the Overlord deck and then draw a number of cards equal to the number of heroes.",
+    expansion: "Manor Of Ravens",
+    image: "relics/lieutenants/tome-of-the-five-lies-mr.png",
+    xws: "tomeofthefivelies"
+  },
+  {
+    name: "Boneborn Bow",
+    points: 4,
+    traits: "Bow",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Yellow Yellow",
+    rules: "You cannot be Terrified. Surge: +2 Hearts. Surge: Pierce 2. Surge: +4 Range.",
+    expansion: "The Chains That Rust",
+    image: "relics/heroes/boneborn-bow-cr.png",
+    xws: "bonebornbow"
+  },
+  {
+    name: "Azathea's Triumph",
+    points: 5,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "This lieutenant applies +4 to his Health (even while this card is exhausted). Action: Exhaust this card to deal 2 Hearts to a hero in this lieutenant's line of sight.",
+    expansion: "The Chains That Rust",
+    image: "relics/lieutenants/azatheas-triumph-cr.png",
+    xws: "azatheastriumph"
+  },
+  {
+    name: "Dawnblade",
+    points: 6,
+    traits: "Blade",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Red Yellow",
+    rules: "Surge: +3 Hearts. Surge: This attack affects a second monster adjacent to you.",
+    expansion: "Base Game",
+    image: "relics/heroes/dawnblade-bg.png",
+    xws: "dawnblade"
+  },
+  {
+    name: "Duskblade",
+    points: 7,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "A hero that starts his turn adjacent to this lieutenant receives -1 Speed for that turn. Each of this lieutenant's attacks gains: Surge: Pierce 5",
+    expansion: "Base Game",
+    image: "relics/lieutenants/duskblade-bg.png",
+    xws: "duskblade"
+  },
+  {
+    name: "Fear Eater",
+    points: 8,
+    traits: "Blade",
+    attack: "Melee",
+    equip: "Two Hands",
+    dice: "Blue Red",
+    rules: "Surge: Terrify. Each time you declare an attack that targets a Terrified monster, that attack gains: Surge: +2 Hearts, Recover 2 Hearts.",
+    expansion: "Mists Of Bilehall",
+    image: "relics/heroes/fear-eater-mb.png",
+    xws: "feareater"
+  },
+  {
+    name: "Blade Of Brivala",
+    points: 9,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Each attack performed by this lieutenant gains: Surge: If this attack deals at least 1 Heart, choose 1 hero within 3 spaces of the target. That hero is Terrified.",
+    expansion: "Mists Of Bilehall",
+    image: "relics/lieutenants/blade-of-brivala-mb.png",
+    xws: "bladeofbrivala"
+  },
+  {
+    name: "Forewarned Ring",
+    points: 10,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Each time the overlord plays an Overlord card, before that card is resolved, you may recover 1 Heart.",
+    expansion: "The Chains That Rust",
+    image: "relics/heroes/forewarned-ring-cr.png",
+    xws: "forewarnedring"
+  },
+  {
+    name: "Band Of Foresight",
+    points: 11,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Exhaust this card during your turn and name an Overlord card trait. Reveal the top card of your deck. If it has the trait you named, add it to your hand. Otherwise, discard it.",
+    expansion: "The Chains That Rust",
+    image: "relics/lieutenants/band-of-foresight-cr.png",
+    xws: "bandofforesight"
+  },
+  {
+    name: "Fortuna's Dice",
+    points: 12,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card and suffer 1 Fatigue to reroll any 1 die you have just rolled.",
+    expansion: "Base Game",
+    image: "relics/heroes/fortunas-dice-bg.png",
+    xws: "fortunasdice"
+  },
+  {
+    name: "Bones Of Woe",
+    points: 13,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "At the start of each of your turns, roll the blue attack die. On a Surge, draw 1 Overlord card.",
+    expansion: "Base Game",
+    image: "relics/lieutenants/bones-of-woe-bg.png",
+    xws: "bonesofwoe"
+  },
+  {
+    name: "Gauntlets Of Power",
+    points: 14,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card to cancel 1 Surge from an attack targeting you. Then place 1 Fatigue on this card. You may discard 1 Fatigue from this card when attacking to gain 1 Surge.",
+    expansion: "Labyrinth Of Ruin",
+    image: "relics/heroes/gauntlets-of-power-lr.png",
+    xws: "gauntletsofpower"
+  },
+  {
+    name: "Gauntlets Of Spite",
+    points: 15,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Exhaust this card to cancel 1 Surge from an attack targeting this lieutenant. Then place 1 Fatigue on this card. You may discard 1 Fatigue from this card when this lieutenant is attacking to gain 1 Surge.",
+    expansion: "Labyrinth Of Ruin",
+    image: "relics/lieutenants/gauntlets-of-spite-lr.png",
+    xws: "gauntletsofspite"
+  },
+  {
+    name: "Immunity Elixir",
+    points: 16,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "You gain +2 Health. You cannot be Diseased. This card cannot be traded between heroes.",
+    expansion: "The Trollfens",
+    image: "relics/heroes/immunity-elixir-tf.png",
+    xws: "immunityelixir"
+  },
+  {
+    name: "Curative Vial",
+    points: 17,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "This lieutenant gains: Action: Exhaust this card. This lieutenant or an adjacent monster may discard 1 Condition token.",
+    expansion: "The Trollfens",
+    image: "relics/lieutenants/curative-vial-tf.png",
+    xws: "curativevial"
+  },
+  {
+    name: "Living Heart",
+    points: 18,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card to revive all heroes within 3 spaces of you. Each revived hero rolls 3 red power dice instead of 2. Limit once per encounter.",
+    expansion: "Labyrinth Of Ruin",
+    image: "relics/heroes/living-heart-lr.png",
+    xws: "livingheart"
+  },
+  {
+    name: "Fallen Heart",
+    points: 19,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Exhaust this card when a minion or master monster is defeated. Roll 1 red power die, the monster immediately recovers Hearts equal to the Hearts rolled. Limit once per encounter.",
+    expansion: "Labyrinth Of Ruin",
+    image: "relics/lieutenants/fallen-heart-lr.png",
+    xws: "fallenheart"
+  },
+  {
+    name: "Mending Talisman",
+    points: 20,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Action: Exhaust this card and choose a hero. Roll 1 red power die. The chosen hero recovers Hearts equal to the Hearts rolled and may discard 1 Condition card or infection token.",
+    expansion: "The Trollfens",
+    image: "relics/heroes/mending-talisman-tf.png",
+    xws: "mendingtalisman"
+  },
+  {
+    name: "Omen Of Blight",
+    points: 21,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "This lieutenant gains: Surge: If this attack deals at least 1 Heart (after the defense roll), choose 1 condition. The target suffers the chosen condition.",
+    expansion: "The Trollfens",
+    image: "relics/lieutenants/omen-of-blight-tf.png",
+    xws: "omenofblight"
+  },
+  {
+    name: "Robes Of The Last",
+    points: 22,
+    traits: "Cloak",
+    attack: "-",
+    equip: "Armor",
+    dice: "Gray",
+    rules: "While you are the target of an attack, add 1 Shield to your defense results for each Surge spent by the figure performing the attack.",
+    expansion: "The Chains That Rust",
+    image: "relics/heroes/robes-of-the-last-cr.png",
+    xws: "robesofthelast"
+  },
+  {
+    name: "Robes Of The Last",
+    points: 23,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Each master monster in this group applies +2 to its Health. Each hero within 3 spaces of 1 or more monsters in this group applies -1 to his Knowledge (to a minimum of 1).",
+    expansion: "The Chains That Rust",
+    image: "relics/lieutenants/robes-of-the-last-cr.png",
+    xws: "robesofthelast"
+  },
+  {
+    name: "Shadow Plotter",
+    points: 24,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card during your turn. The overlord reveals his hand. This card does not refresh as normal. Refresh this card at the start of each encounter.",
+    expansion: "Shadow Of Nerekhall",
+    image: "relics/heroes/shadow-plotter-sn.png",
+    xws: "shadowplotter"
+  },
+  {
+    name: "Shadow Plotter",
+    points: 25,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Exhaust this card during your turn to draw 3 Overlord cards. Add 1 card to your hand and discard the other 2 cards. Then, this lieutenant suffers 2 Hearts.",
+    expansion: "Shadow Of Nerekhall",
+    image: "relics/lieutenants/shadow-plotter-sn.png",
+    xws: "shadowplotter"
+  },
+  {
+    name: "Shards Of Ithyndrus",
+    points: 26,
+    traits: "Exotic, Magic",
+    attack: "Range",
+    equip: "One Hand",
+    dice: "Blue Yellow",
+    rules: "Surge: Recover 2 Hearts. Surge: Recover 2 Fatigue. Surge: Pierce 2.",
+    expansion: "Manor Of Ravens",
+    image: "relics/heroes/shards-of-ithyndrus-mr.png",
+    xws: "shardsofithyndrus"
+  },
+  {
+    name: "Shards Of Ithyndrus",
+    points: 27,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Exhaust this card when a monster in this group performs an attack, after dice are rolled, to add 1 Surge to the results.",
+    expansion: "Manor Of Ravens",
+    image: "relics/lieutenants/shards-of-ithyndrus-mr.png",
+    xws: "shardsofithyndrus"
+  },
+  {
+    name: "Shield Of The Dark God",
+    points: 28,
+    traits: "Shield",
+    attack: "-",
+    equip: "One Hand",
+    dice: "-",
+    rules: "Exhaust this card after rolling defense dice to reroll some or all of the defense dice. Keep the new result only if it is better.",
+    expansion: "Base Game",
+    image: "relics/heroes/shield-of-the-dark-god-bg.png",
+    xws: "shieldofthedarkgod"
+  },
+  {
+    name: "Shield Of Zorek's Favor",
+    points: 29,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Each time an attack targeting this lieutenant is resolved and he is not defeated, he tests Might. If he passes, the attacker suffers 1 Heart for each Shield rolled on this test.",
+    expansion: "Base Game",
+    image: "relics/lieutenants/shield-of-zoreks-favor-bg.png",
+    xws: "shieldofzoreksfavor"
+  },
+  {
+    name: "Spirited Scythe",
+    points: 30,
+    traits: "Blade, Staff",
+    attack: "Melee",
+    equip: "Two Hands",
+    dice: "Blue Red Red",
+    rules: "Action: Perform an attack targeting each monster adjacent to you. Each monster rolls defense dice separately. Each monster that suffers at least 1 Heart is Bleeding.",
+    expansion: "Shadow Of Nerekhall",
+    image: "relics/heroes/spirited-scythe-sn.png",
+    xws: "spiritedscythe"
+  },
+  {
+    name: "Soulless Scythe",
+    points: 31,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Exhaust this card when this lieutenant enters a space adjacent to a hero. That hero is Bleeding. Each attack this lieutenant performs that targets a Bleeding hero gains Pierce 3.",
+    expansion: "Shadow Of Nerekhall",
+    image: "relics/lieutenants/soulless-scythe-sn.png",
+    xws: "soullessscythe"
+  },
+  {
+    name: "Staff Of Light",
+    points: 32,
+    traits: "Magic, Staff",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Yellow",
+    rules: "Action: Each hero within 3 spaces of you recovers 1 Heart and 1 Fatigue. Surge: +2 Hearts. Surge: Recover 1 Heart.",
+    expansion: "Base Game",
+    image: "relics/heroes/staff-of-light-bg.png",
+    xws: "staffoflight"
+  },
+  {
+    name: "Staff Of Shadows",
+    points: 33,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Exhaust this card and discard 1 Overlord card from your hand to either draw 1 Overlord card or force a reroll of any 1 die. You may do this at any time, even of it's not your turn.",
+    expansion: "Base Game",
+    image: "relics/lieutenants/staff-of-shadows-bg.png",
+    xws: "staffofshadows"
+  },
+  {
+    name: "Sun Stone",
+    points: 34,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Add 1 additional green power die to your attack pool. If you are defeated, place the sun stone token in your space.",
+    expansion: "Labyrinth Of Ruin",
+    image: "relics/heroes/sun-stone-lr.png",
+    xws: "sunstone"
+  },
+  {
+    name: "Sun's Fury",
+    points: 35,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Add 1 additional green power die to this lieutenant's attack pool. Return this card to the game box during any Campaign phase to gain 1 XP.",
+    expansion: "Labyrinth Of Ruin",
+    image: "relics/lieutenants/suns-fury-lr.png",
+    xws: "sunsfury"
+  },
+  {
+    name: "The Manor's Heart",
+    points: 36,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card during your turn. Recover Hearts or Fatigue equal to the number of Overlord cards in the overlord's discard pile. Limit once per quest.",
+    expansion: "Manor Of Ravens",
+    image: "relics/heroes/the-manors-heart-mr.png",
+    xws: "themanorsheart"
+  },
+  {
+    name: "The Manor's Heart",
+    points: 37,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Each master monster of this group gains: Action: Perform an attack. Measure range and line of sight from 1 minion monster in this monster's group.",
+    expansion: "Manor Of Ravens",
+    image: "relics/lieutenants/the-manors-heart-mr.png",
+    xws: "themanorsheart"
+  },
+  {
+    name: "The Shadow Rune",
+    points: 38,
+    traits: "Magic, Rune",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Yellow Yellow",
+    rules: "Each time you defeat a monster with this weapon, recover 1 Fatigue. Surge: +1 Range, +1 Heart. Surge: +2 Hearts.",
+    expansion: "Base Game",
+    image: "relics/heroes/the-shadow-rune-bg.png",
+    xws: "theshadowrune"
+  },
+  {
+    name: "The Shadow Rune",
+    points: 39,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Zachareth Only. Each of your attacks gain: Surge: +2 Hearts. Surge: +1 Range, +1 Heart. Surge: Draw 1 Overlord card.",
+    expansion: "Base Game",
+    image: "relics/lieutenants/the-shadow-rune-bg.png",
+    xws: "theshadowrune"
+  },
+  {
+    name: "The White Crown",
+    points: 40,
+    traits: "Helmet",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Apply +1 to each hero's Willpower (to a maximum of 6). You may unequip this card when a hero fails a Willpower test to reroll that test. Limit 1 Helmet equipped at a time.",
+    expansion: "Mists Of Bilehall",
+    image: "relics/heroes/the-white-crown-mb.png",
+    xws: "thewhitecrown"
+  },
+  {
+    name: "Waiqar's Favor",
+    points: 41,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Each monster in this group cannot be Terrified. Each master monster in this group gains: Surge: Recover 3 Hearts.",
+    expansion: "Mists Of Bilehall",
+    image: "relics/lieutenants/waiqars-favor-mb.png",
+    xws: "waiqarsfavor"
+  },
+  {
+    name: "Trueshot",
+    points: 42,
+    traits: "Bow",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Red Yellow",
+    rules: "+3 Range. Surge: Move the target 1 space. Surge: +2 Hearts.",
+    expansion: "Base Game",
+    image: "relics/heroes/trueshot-bg.png",
+    xws: "trueshot"
+  },
+  {
+    name: "Scorpion's Kiss",
+    points: 43,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "This lieutenant gains: Action: Exhaust this card and choose a hero in your line of sight. That hero tests Awareness. If he fails, he is Immobilized and Poisoned. If he passes, he only suffers 1 of those conditions of your choice.",
+    expansion: "Base Game",
+    image: "relics/lieutenants/scorpions-kiss-bg.png",
+    xws: "scorpionskiss"
+  },
+  {
+    name: "Undertaker's Coat",
+    points: 44,
+    traits: "Light Armor",
+    attack: "-",
+    equip: "Armor",
+    dice: "-",
+    rules: "Apply +2 to your Health. At the start of your turn, you may suffer 1 Fatigue to place the hero token of a knocked-out hero adjacent to you.",
+    expansion: "Mists Of Bilehall",
+    image: "relics/heroes/undertakers-coat-mb.png",
+    xws: "undertakerscoat"
+  },
+  {
+    name: "Undertaker's Coat",
+    points: 45,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Exhaust this card after this lieutenant rolls defense dice and rolls 1 or more blanks. Add a number of Shields to the results equal to this lieutenant's Knowledge.",
+    expansion: "Mists Of Bilehall",
+    image: "relics/lieutenants/undertakers-coat-mb.png",
+    xws: "undertakerscoat"
+  },
+  {
+    name: "Valyndra's Bane",
+    points: 46,
+    traits: "Blade",
+    attack: "Melee",
+    equip: "Two Hands",
+    dice: "Blue Red Yellow",
+    rules: "Each time you attack a large monster, you may add 1 yellow power die to your attack roll. Surge: Pierce 3.",
+    expansion: "Lair Of The Wyrm",
+    image: "relics/heroes/valyndras-bane-lw.png",
+    xws: "valyndrasbane"
+  },
+  {
+    name: "Her Majesty's Malice",
+    points: 47,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Each of your attacks gains: Surge Surge: After resolving this attack, you may perform a second attack action against the same target (once per turn).",
+    expansion: "Lair Of The Wyrm",
+    image: "relics/lieutenants/her-majestys-malice-lw.png",
+    xws: "hermajestysmalice"
+  },
+  {
+    name: "Wanderer's Stone",
+    points: 48,
+    traits: "Rune",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Each time you declare a move action, recover 1 Fatigue.",
+    expansion: "Manor Of Ravens",
+    image: "relics/heroes/wanderers-stone-mr.png",
+    xws: "wanderersstone"
+  },
+  {
+    name: "Stone Of Wayward Means",
+    points: 49,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Each monster in this group gains: Surge: Doom",
+    expansion: "Manor Of Ravens",
+    image: "relics/lieutenants/stone-of-wayward-means-mr.png",
+    xws: "stoneofwaywardmeans"
+  },
+  {
+    name: "Workman's Ring",
+    points: 50,
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Each time you would suffer any amount of Fatigue, you may instead place it on this card (to a maximum of 3). Discard all Fatigue on this card at the end of each encounter.",
+    expansion: "The Trollfens",
+    image: "relics/heroes/workmans-ring-tf.png",
+    xws: "workmansring"
+  },
+  {
+    name: "Taskmaster's Ring",
+    points: 51,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "Each of this lieutenant's attacks gains: Surge: Gain 2 movement points.",
+    expansion: "The Trollfens",
+    image: "relics/lieutenants/taskmasters-ring-tf.png",
+    xws: "taskmastersring"
+  },
+  {
+    name: "Ynfernal Rune",
+    points: 52,
+    traits: "Magic, Rune",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Red Green",
+    rules: "Each time you perform an attack with this weapon, suffer 1 Heart. +3 Range. Surge Surge: +3 Hearts.",
+    expansion: "Shadow Of Nerekhall",
+    image: "relics/heroes/ynfernal-rune-sn.png",
+    xws: "ynfernalrune"
+  },
+  {
+    name: "Ynfernal Rune",
+    points: 53,
+    traits: "-",
+    attack: "-",
+    equip: "-",
+    dice: "-",
+    rules: "This lieutenant ignores the effects of hazard spaces. Each attack this lieutenant performs gains: Surge: +2 Hearts",
+    expansion: "Shadow Of Nerekhall",
+    image: "relics/lieutenants/ynfernal-rune-sn.png",
+    xws: "ynfernalrune"
+  }
+];
+var jsonClassItems = [
+  {
+    name: "Chipped Greataxe",
+    points: 0,
+    archetype: "Warrior",
+    "class": "Berserker",
+    traits: "Axe",
+    attack: "Melee",
+    equip: "Two Hands",
+    dice: "Blue Red",
+    rules: "Surge: +1 Heart. Surge: +1 Heart.",
+    expansion: "Base Game",
+    image: "class-items/chipped-greataxe-bg-warrior-berserker.png",
+    xws: "chippedgreataxe"
+  },
+  {
+    name: "Chipped Greataxe",
+    points: 1,
+    archetype: "Warrior",
+    "class": "Berserker",
+    expansion: "Base Game",
+    image: "class-items/class-skills-berserker-back.png",
+    xws: "chippedgreataxe"
+  },
+  {
+    name: "Iron Longsword",
+    points: 2,
+    archetype: "Warrior",
+    "class": "Knight",
+    traits: "Blade",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Red",
+    rules: "Surge: You may force the target to reroll 1 defense die.",
+    expansion: "Base Game",
+    image: "class-items/iron-longsword-bg-warrior-knight.png",
+    xws: "ironlongsword"
+  },
+  {
+    name: "Iron Longsword",
+    points: 3,
+    archetype: "Warrior",
+    "class": "Knight",
+    expansion: "Base Game",
+    image: "class-items/class-skills-knight-back.png",
+    xws: "ironlongsword"
+  },
+  {
+    name: "Wooden Shield",
+    points: 4,
+    archetype: "Warrior",
+    "class": "Knight",
+    traits: "Shield",
+    attack: "-",
+    equip: "One Hand",
+    dice: "-",
+    rules: "Exhaust this card after rolling defense dice to add 1 Shield to the results.",
+    expansion: "Base Game",
+    image: "class-items/wooden-shield-bg-warrior-knight.png",
+    xws: "woodenshield"
+  },
+  {
+    name: "Wooden Shield",
+    points: 5,
+    archetype: "Warrior",
+    "class": "Knight",
+    expansion: "Base Game",
+    image: "class-items/class-skills-knight-back.png",
+    xws: "woodenshield"
+  },
+  {
+    name: "Iron Mace",
+    points: 6,
+    archetype: "Healer",
+    "class": "Disciple",
+    traits: "Hammer",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Yellow",
+    rules: "Surge: Stun",
+    expansion: "Base Game",
+    image: "class-items/iron-mace-bg-healer-disciple.png",
+    xws: "ironmace"
+  },
+  {
+    name: "Iron Mace",
+    points: 7,
+    archetype: "Healer",
+    "class": "Disciple",
+    expansion: "Base Game",
+    image: "class-items/class-skills-disciple-back.png",
+    xws: "ironmace"
+  },
+  {
+    name: "Wooden Shield",
+    points: 8,
+    archetype: "Healer",
+    "class": "Disciple",
+    traits: "Shield",
+    attack: "-",
+    equip: "One Hand",
+    dice: "-",
+    rules: "Exhaust this card after rolling defense dice to add 1 Shield to the results.",
+    expansion: "Base Game",
+    image: "class-items/wooden-shield-bg-healer-disciple.png",
+    xws: "woodenshield"
+  },
+  {
+    name: "Wooden Shield",
+    points: 9,
+    archetype: "Healer",
+    "class": "Disciple",
+    expansion: "Base Game",
+    image: "class-items/class-skills-disciple-back.png",
+    xws: "woodenshield"
+  },
+  {
+    name: "Oak Staff",
+    points: 10,
+    archetype: "Healer",
+    "class": "Spiritspeaker",
+    traits: "Staff",
+    attack: "Melee",
+    equip: "Two Hands",
+    dice: "Blue Yellow",
+    rules: "Reach. Surge: +1 Heart",
+    expansion: "Base Game",
+    image: "class-items/oak-staff-bg-healer-spiritspeaker.png",
+    xws: "oakstaff"
+  },
+  {
+    name: "Oak Staff",
+    points: 11,
+    archetype: "Healer",
+    "class": "Spiritspeaker",
+    expansion: "Base Game",
+    image: "class-items/class-skills-spiritspeaker-back.png",
+    xws: "oakstaff"
+  },
+  {
+    name: "Reaper's Scythe",
+    points: 12,
+    archetype: "Mage",
+    "class": "Necromancer",
+    traits: "Magic, Staff",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Yellow",
+    rules: "Each time you defeat a monster with this weapon, recover 1 Heart. Surge: +1 Range.",
+    expansion: "Base Game",
+    image: "class-items/reapers-scythe-bg-mage-necromancer.png",
+    xws: "reapersscythe"
+  },
+  {
+    name: "Reaper's Scythe",
+    points: 13,
+    archetype: "Mage",
+    "class": "Necromancer",
+    expansion: "Base Game",
+    image: "class-items/class-skills-necromancer-back.png",
+    xws: "reapersscythe"
+  },
+  {
+    name: "Arcane Bolt",
+    points: 14,
+    archetype: "Mage",
+    "class": "Runemaster",
+    traits: "Magic, Rune",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Yellow",
+    rules: "Surge: +1 Range. Surge: Pierce 2.",
+    expansion: "Base Game",
+    image: "class-items/arcane-bolt-bg-mage-runemaster.png",
+    xws: "arcanebolt"
+  },
+  {
+    name: "Arcane Bolt",
+    points: 15,
+    archetype: "Mage",
+    "class": "Runemaster",
+    expansion: "Base Game",
+    image: "class-items/class-skills-runemaster-back.png",
+    xws: "arcanebolt"
+  },
+  {
+    name: "Throwing Knives",
+    points: 16,
+    archetype: "Scout",
+    "class": "Thief",
+    traits: "Blade",
+    attack: "Range",
+    equip: "One Hand",
+    dice: "Blue Yellow",
+    rules: "When attacking an adjacent monster, gain +1 Heart. Surge: +1 Range.",
+    expansion: "Base Game",
+    image: "class-items/throwing-knives-bg-scout-thief.png",
+    xws: "throwingknives"
+  },
+  {
+    name: "Throwing Knives",
+    points: 17,
+    archetype: "Scout",
+    "class": "Thief",
+    expansion: "Base Game",
+    image: "class-items/class-skills-thief-back.png",
+    xws: "throwingknives"
+  },
+  {
+    name: "Lucky Charm",
+    points: 18,
+    archetype: "Scout",
+    "class": "Thief",
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card to reroll an attribute test. You must keep the new results.",
+    expansion: "Base Game",
+    image: "class-items/lucky-charm-bg-scout-thief.png",
+    xws: "luckycharm"
+  },
+  {
+    name: "Lucky Charm",
+    points: 19,
+    archetype: "Scout",
+    "class": "Thief",
+    expansion: "Base Game",
+    image: "class-items/class-skills-thief-back.png",
+    xws: "luckycharm"
+  },
+  {
+    name: "Yew Shortbow",
+    points: 20,
+    archetype: "Scout",
+    "class": "Wildlander",
+    traits: "Bow",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Yellow",
+    rules: "Surge: +2 Range. Surge: +1 Heart.",
+    expansion: "Base Game",
+    image: "class-items/yew-shortbow-bg-scout-wildlander.png",
+    xws: "yewshortbow"
+  },
+  {
+    name: "Yew Shortbow",
+    points: 21,
+    archetype: "Scout",
+    "class": "Wildlander",
+    expansion: "Base Game",
+    image: "class-items/class-skills-wildlander-back.png",
+    xws: "yewshortbow"
+  },
+  {
+    name: "Worn Greatsword",
+    points: 22,
+    archetype: "Warrior",
+    "class": "Champion",
+    traits: "Blade",
+    attack: "Melee",
+    equip: "Two Hands",
+    dice: "Blue Red",
+    rules: "Before rolling your attack dice, you may suffer 1 Fatigue to add 1 Surge to your attack results. Surge: +1 Heart.",
+    expansion: "Lair Of The Wyrm",
+    image: "class-items/worn-greatsword-lw-warrior-champion.png",
+    xws: "worngreatsword"
+  },
+  {
+    name: "Worn Greatsword",
+    points: 23,
+    archetype: "Warrior",
+    "class": "Champion",
+    expansion: "Lair Of The Wyrm",
+    image: "class-items/class-skills-champion-back.png",
+    xws: "worngreatsword"
+  },
+  {
+    name: "Horn Of Courage",
+    points: 24,
+    archetype: "Warrior",
+    "class": "Champion",
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card during your turn and choose another hero within 3 spaces of you. The chosen hero gains 1 valor.",
+    expansion: "Lair Of The Wyrm",
+    image: "class-items/horn-of-courage-lw-warrior-champion.png",
+    xws: "hornofcourage"
+  },
+  {
+    name: "Horn Of Courage",
+    points: 25,
+    archetype: "Warrior",
+    "class": "Champion",
+    expansion: "Lair Of The Wyrm",
+    image: "class-items/class-skills-champion-back.png",
+    xws: "hornofcourage"
+  },
+  {
+    name: "Stasis Rune",
+    points: 26,
+    archetype: "Mage",
+    "class": "Geomancer",
+    traits: "Magic, Rune",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Yellow",
+    rules: "Surge: +1 Heart. Surge Surge: Immobilize.",
+    expansion: "Lair Of The Wyrm",
+    image: "class-items/stasis-rune-lw-mage-geomancer.png",
+    xws: "stasisrune"
+  },
+  {
+    name: "Stasis Rune",
+    points: 27,
+    archetype: "Mage",
+    "class": "Geomancer",
+    expansion: "Lair Of The Wyrm",
+    image: "class-items/class-skills-geomancer-back.png",
+    xws: "stasisrune"
+  },
+  {
+    name: "Hunting Spear",
+    points: 28,
+    archetype: "Warrior",
+    "class": "Beastmaster",
+    traits: "Exotic",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Red",
+    rules: "Reach. Surge: Pierce 1.",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/hunting-spear-lr-warrior-beastmaster.png",
+    xws: "huntingspear"
+  },
+  {
+    name: "Hunting Spear",
+    points: 29,
+    archetype: "Warrior",
+    "class": "Beastmaster",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/class-skills-beastmaster-back.png",
+    xws: "huntingspear"
+  },
+  {
+    name: "Skinning Knife",
+    points: 30,
+    archetype: "Warrior",
+    "class": "Beastmaster",
+    traits: "Blade",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Green",
+    rules: "If the target has any number of damage tokens, this attack gains: Surge: +3 Hearts.",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/skinning-knife-lr-warrior-beastmaster.png",
+    xws: "skinningknife"
+  },
+  {
+    name: "Skinning Knife",
+    points: 31,
+    archetype: "Warrior",
+    "class": "Beastmaster",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/class-skills-beastmaster-back.png",
+    xws: "skinningknife"
+  },
+  {
+    name: "Smoking Vials",
+    points: 32,
+    archetype: "Healer",
+    "class": "Apothecary",
+    traits: "Exotic",
+    attack: "Range",
+    equip: "One Hand",
+    dice: "Blue Green",
+    rules: "Surge Surge: +3 Hearts. Surge: Poison.",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/smoking-vials-lr-healer-apothecary.png",
+    xws: "smokingvials"
+  },
+  {
+    name: "Smoking Vials",
+    points: 33,
+    archetype: "Healer",
+    "class": "Apothecary",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/class-skills-apothecary-back.png",
+    xws: "smokingvials"
+  },
+  {
+    name: "Staff Of The Grave",
+    points: 34,
+    archetype: "Mage",
+    "class": "Hexer",
+    traits: "Magic, Staff",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Green",
+    rules: "Surge: +1 Range. Surge: +1 Heart and Recover 1 Heart.",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/staff-of-the-grave-lr-mage-hexer.png",
+    xws: "staffofthegrave"
+  },
+  {
+    name: "Staff Of The Grave",
+    points: 35,
+    archetype: "Mage",
+    "class": "Hexer",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/class-skills-hexer-back.png",
+    xws: "staffofthegrave"
+  },
+  {
+    name: "Leather Whip",
+    points: 36,
+    archetype: "Scout",
+    "class": "Treasure Hunter",
+    traits: "Exotic",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Yellow",
+    rules: "Reach. Surge: Pierce 1. Surge: Move the target 1 space.",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/leather-whip-lr-scout-treasure-hunter.png",
+    xws: "leatherwhip"
+  },
+  {
+    name: "Leather Whip",
+    points: 37,
+    archetype: "Scout",
+    "class": "Treasure Hunter",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/class-skills-treasure-hunter-back.png",
+    xws: "leatherwhip"
+  },
+  {
+    name: "The Dead Man's Compass",
+    points: 38,
+    archetype: "Scout",
+    "class": "Treasure Hunter",
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card during your turn. If you are within 3 spaces of a search token, immediately gain 1 movement point.",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/the-dead-mans-compass-lr-scout-treasure-hunter.png",
+    xws: "thedeadmanscompass"
+  },
+  {
+    name: "The Dead Man's Compass",
+    points: 39,
+    archetype: "Scout",
+    "class": "Treasure Hunter",
+    expansion: "Labyrinth Of Ruin",
+    image: "class-items/class-skills-treasure-hunter-back.png",
+    xws: "thedeadmanscompass"
+  },
+  {
+    name: "Iron Flail",
+    points: 40,
+    archetype: "Healer",
+    "class": "Prophet",
+    traits: "Hammer, Exotic",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Yellow",
+    rules: "Reach. If your other hand is empty, you attacks gain +1 Heart.",
+    expansion: "The Trollfens",
+    image: "class-items/iron-flail-tf-healer-prophet.png",
+    xws: "ironflail"
+  },
+  {
+    name: "Iron Flail",
+    points: 41,
+    archetype: "Healer",
+    "class": "Prophet",
+    expansion: "The Trollfens",
+    image: "class-items/class-skills-prophet-back.png",
+    xws: "ironflail"
+  },
+  {
+    name: "Sage's Tome",
+    points: 42,
+    archetype: "Healer",
+    "class": "Prophet",
+    traits: "Book",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card before rolling dice for an attribute test to subtract 1 Shield from the results.",
+    expansion: "The Trollfens",
+    image: "class-items/sages-tome-tf-healer-prophet.png",
+    xws: "sagestome"
+  },
+  {
+    name: "Sage's Tome",
+    points: 43,
+    archetype: "Healer",
+    "class": "Prophet",
+    expansion: "The Trollfens",
+    image: "class-items/class-skills-prophet-back.png",
+    xws: "sagestome"
+  },
+  {
+    name: "Black Widow's Web",
+    points: 44,
+    archetype: "Scout",
+    "class": "Stalker",
+    traits: "Exotic",
+    attack: "Range",
+    equip: "One Hand",
+    dice: "Blue Green",
+    rules: "Surge: Immobilize. Surge: +1 Heart.",
+    expansion: "The Trollfens",
+    image: "class-items/black-widows-web-tf-scout-stalker.png",
+    xws: "blackwidowsweb"
+  },
+  {
+    name: "Black Widow's Web",
+    points: 45,
+    archetype: "Scout",
+    "class": "Stalker",
+    expansion: "The Trollfens",
+    image: "class-items/class-skills-stalker-back.png",
+    xws: "blackwidowsweb"
+  },
+  {
+    name: "Hunting Knife",
+    points: 46,
+    archetype: "Scout",
+    "class": "Stalker",
+    traits: "Blade",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Yellow",
+    rules: "Surge: +1 Heart. Surge: Recover 1 Fatigue.",
+    expansion: "The Trollfens",
+    image: "class-items/hunting-knife-tf-scout-stalker.png",
+    xws: "huntingknife"
+  },
+  {
+    name: "Hunting Knife",
+    points: 47,
+    archetype: "Scout",
+    "class": "Stalker",
+    expansion: "The Trollfens",
+    image: "class-items/class-skills-stalker-back.png",
+    xws: "huntingknife"
+  },
+  {
+    name: "Jagged Handaxe",
+    points: 48,
+    archetype: "Warrior",
+    "class": "Skirmisher",
+    traits: "Axe",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Yellow",
+    rules: "Before you roll attack dice, you may suffer 1 Fatigue to replace the yellow power die with the red power die. Surge: Pierce 1.",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/jagged-handaxe-sn-warrior-skirmisher.png",
+    xws: "jaggedhandaxe"
+  },
+  {
+    name: "Jagged Handaxe",
+    points: 49,
+    archetype: "Warrior",
+    "class": "Skirmisher",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/class-skills-skirmisher-back.png",
+    xws: "jaggedhandaxe"
+  },
+  {
+    name: "Rusted Handaxe",
+    points: 50,
+    archetype: "Warrior",
+    "class": "Skirmisher",
+    traits: "Axe",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Green",
+    rules: "After you roll attack dice, you may suffer 1 Fatigue to reroll 1 power die. Surge: +2 Hearts.",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/rusted-handaxe-sn-warrior-skirmisher.png",
+    xws: "rustedhandaxe"
+  },
+  {
+    name: "Rusted Handaxe",
+    points: 51,
+    archetype: "Warrior",
+    "class": "Skirmisher",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/class-skills-skirmisher-back.png",
+    xws: "rustedhandaxe"
+  },
+  {
+    name: "Traveler's Blade",
+    points: 52,
+    archetype: "Healer",
+    "class": "Bard",
+    traits: "Blade",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Yellow",
+    rules: "Surge: Pierce 1. Surge: Gain 1 movement point.",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/travelers-blade-sn-healer-bard.png",
+    xws: "travelersblade"
+  },
+  {
+    name: "Traveler's Blade",
+    points: 53,
+    archetype: "Healer",
+    "class": "Bard",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/class-skills-bard-back.png",
+    xws: "travelersblade"
+  },
+  {
+    name: "Lute",
+    points: 54,
+    archetype: "Healer",
+    "class": "Bard",
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card during your turn and suffer 1 Fatigue to choose a hero within 3 spaces of you. That hero recovers 1 Fatigue.",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/lute-sn-healer-bard.png",
+    xws: "lute"
+  },
+  {
+    name: "Lute",
+    points: 55,
+    archetype: "Healer",
+    "class": "Bard",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/class-skills-bard-back.png",
+    xws: "lute"
+  },
+  {
+    name: "Prismatic Staff",
+    points: 56,
+    archetype: "Mage",
+    "class": "Conjurer",
+    traits: "Magic, Staff",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Green",
+    rules: "Surge: +1 Heart. Surge: +1 Heart. Surge: Stun.",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/prismatic-staff-sn-mage-conjurer.png",
+    xws: "prismaticstaff"
+  },
+  {
+    name: "Prismatic Staff",
+    points: 57,
+    archetype: "Mage",
+    "class": "Conjurer",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/class-skills-conjurer-back.png",
+    xws: "prismaticstaff"
+  },
+  {
+    name: "Feathered Hatchet",
+    points: 58,
+    archetype: "Scout",
+    "class": "Shadow Walker",
+    traits: "Axe, Exotic",
+    attack: "Range",
+    equip: "One Hand",
+    dice: "Blue Red",
+    rules: "Surge: +1 Range. Surge: Bleed.",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/feathered-hatchet-sn-scout-shadow-walker.png",
+    xws: "featherhatchet"
+  },
+  {
+    name: "Feathered Hatchet",
+    points: 59,
+    archetype: "Scout",
+    "class": "Shadow Walker",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/class-skills-shadow-walker-back.png",
+    xws: "featherhatchet"
+  },
+  {
+    name: "Tribal Cloak",
+    points: 60,
+    archetype: "Scout",
+    "class": "Shadow Walker",
+    traits: "Cloak",
+    attack: "-",
+    equip: "Armor",
+    dice: "-",
+    rules: "Exhaust this card when you perform a rest action. While this card is exhausted, add 1 additional brown die to your defense pool.",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/tribal-cloak-sn-scout-shadow-walker.png",
+    xws: "tribalcloak"
+  },
+  {
+    name: "Tribal Cloak",
+    points: 61,
+    archetype: "Scout",
+    "class": "Shadow Walker",
+    expansion: "Shadow Of Nerekhall",
+    image: "class-items/class-skills-shadow-walker-back.png",
+    xws: "tribalcloak"
+  },
+  {
+    name: "War Hammer",
+    points: 62,
+    archetype: "Warrior",
+    "class": "Marshall",
+    traits: "Hammer",
+    attack: "Melee",
+    equip: "Two Hands",
+    dice: "Blue Red",
+    rules: "Reach. You cannot spend Surges to recover fatigue. Surge: +2 Hearts.",
+    expansion: "Manor Of Ravens",
+    image: "class-items/war-hammer-mr-warrior-marshall.png",
+    xws: "warhammer"
+  },
+  {
+    name: "War Hammer",
+    points: 63,
+    archetype: "Warrior",
+    "class": "Marshall",
+    expansion: "Manor Of Ravens",
+    image: "class-items/class-skills-marshal-back.png",
+    xws: "warhammer"
+  },
+  {
+    name: "Signet Ring",
+    points: 64,
+    archetype: "Warrior",
+    "class": "Marshall",
+    traits: "Ring",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card when you or an adjacent hero is attacked, before dice are rolled, to add 1 Shield to the results.",
+    expansion: "Manor Of Ravens",
+    image: "class-items/signet-ring-mr-warrior-marshall.png",
+    xws: "signetring"
+  },
+  {
+    name: "Signet Ring",
+    points: 65,
+    archetype: "Warrior",
+    "class": "Marshall",
+    expansion: "Manor Of Ravens",
+    image: "class-items/class-skills-marshal-back.png",
+    xws: "signetring"
+  },
+  {
+    name: "Double Crossbow",
+    points: 66,
+    archetype: "Scout",
+    "class": "Bounty Hunter",
+    traits: "Bow, Exotic",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Red",
+    rules: "Surge: Pierce 1. Surge: +1 Range.",
+    expansion: "Manor Of Ravens",
+    image: "class-items/double-crossbow-mr-scout-bounty-hunter.png",
+    xws: "doublecrossbow"
+  },
+  {
+    name: "Double Crossbow",
+    points: 67,
+    archetype: "Scout",
+    "class": "Bounty Hunter",
+    expansion: "Manor Of Ravens",
+    image: "class-items/class-skills-bounty-hunter-back.png",
+    xws: "doublecrossbow"
+  },
+  {
+    name: "Harvester Scythe",
+    points: 68,
+    archetype: "Healer",
+    "class": "Soul Reaper",
+    traits: "Magic, Blade, Staff",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Yellow",
+    rules: "After you defeat a monster with this weapon, recover 1 Heart. Surge: Pierce 1",
+    expansion: "Lost Legends",
+    image: "class-items/harvester-scythe-ll-healer-soul-reaper.png",
+    xws: "harvesterscythe"
+  },
+  {
+    name: "Harvester Scythe",
+    points: 69,
+    archetype: "Healer",
+    "class": "Soul Reaper",
+    expansion: "Lost Legends",
+    image: "class-items/class-skills-soul-reaper-back.png",
+    xws: "harvesterscythe"
+  },
+  {
+    name: "Mirror of Souls",
+    points: 70,
+    archetype: "Healer",
+    "class": "Soul Reaper",
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Each time you discard 1 of your Conditions, place 1 damage token on Essence Harvest.",
+    expansion: "Lost Legends",
+    image: "class-items/mirror-of-souls-ll-healer-soul-reaper.png",
+    xws: "mirrorofsouls"
+  },
+  {
+    name: "Mirror of Souls",
+    points: 71,
+    archetype: "Healer",
+    "class": "Soul Reaper",
+    expansion: "Lost Legends",
+    image: "class-items/class-skills-soul-reaper-back.png",
+    xws: "mirrorofsouls"
+  },
+  {
+    name: "Runeshard Cache",
+    points: 72,
+    archetype: "Mage",
+    "class": "Elementalist",
+    traits: "Trinket",
+    attack: "-",
+    equip: "Other",
+    dice: "-",
+    rules: "Exhaust this card after you defeat a monster with a Magic weapon. While this card is exhausted, it is an exhausted Elemental card.",
+    expansion: "Lost Legends",
+    image: "class-items/runeshard-cache-ll-mage-elementalist.png",
+    xws: "runeshardcache"
+  },
+  {
+    name: "Runeshard Cache",
+    points: 73,
+    archetype: "Mage",
+    "class": "Elementalist",
+    expansion: "Lost Legends",
+    image: "class-items/class-skills-elementalist-back.png",
+    xws: "runeshardcache"
+  },
+  {
+    name: "Spire of Conflux",
+    points: 74,
+    archetype: "Mage",
+    "class": "Elementalist",
+    traits: "Magic, Staff",
+    attack: "Range",
+    equip: "Two Hands",
+    dice: "Blue Yellow",
+    rules: "Surge: +1 Heart. Surge: If 2 or more of your Elemental cards are exhausted, +2 Hearts.",
+    expansion: "Lost Legends",
+    image: "class-items/spire-of-conflux-ll-mage-elementalist.png",
+    xws: "spireofconflux"
+  },
+  {
+    name: "Spire of Conflux",
+    points: 75,
+    archetype: "Mage",
+    "class": "Elementalist",
+    expansion: "Lost Legends",
+    image: "class-items/class-skills-elementalist-back.png",
+    xws: "spireofconflux"
+  },
+  {
+    name: "Ceremonial Staff",
+    points: 76,
+    archetype: "Healer",
+    "class": "Hierophant",
+    traits: "Exotic, Staff",
+    attack: "Melee",
+    equip: "One Hand",
+    dice: "Blue Red",
+    rules: "Surge: Curse. Surge: Recover 1 Fatigue.",
+    expansion: "Sands Of The Past",
+    image: "class-items/ceremonial-staff-sotp-healer-hierophant.png",
+    xws: "ceremonialstaff"
+  },
+  {
+    name: "Ceremonial Staff",
+    points: 77,
+    archetype: "Healer",
+    "class": "Hierophant",
+    expansion: "Sands Of The Past",
+    image: "class-items/class-skills-hierophant-back.png",
+    xws: "ceremonialstaff"
+  },
+  {
+    name: "Sacred Scriptures",
+    points: 78,
+    archetype: "Healer",
+    "class": "Hierophant",
+    traits: "Book",
+    attack: "-",
+    equip: "Trinket",
+    dice: "-",
+    rules: "While you are adjacent to your Bandaged Servant, add 1 Shield to your defense results.",
+    expansion: "Sands Of The Past",
+    image: "class-items/sacred-scriptures-sotp-healer-hierophant.png",
+    xws: "sacredscriptures"
+  },
+  {
+    name: "Sacred Scriptures",
+    points: 79,
+    archetype: "Healer",
+    "class": "Hierophant",
+    expansion: "Sands Of The Past",
+    image: "class-items/class-skills-hierophant-back.png",
+    xws: "sacredscriptures"
+  },
+  {
+    name: "Shadow Darts",
+    points: 80,
+    archetype: "Mage",
+    "class": "Psychic",
+    traits: "Exotic, Magic",
+    attack: "Range",
+    equip: "One Hand",
+    dice: "Blue Green",
+    rules: "Pierce 1. Surge: Blind. Surge: +1 Range, +1 Heart.",
+    expansion: "Sands Of The Past",
+    image: "class-items/shadow-darts-sotp-mage-psychic.png",
+    xws: "shadowdarts"
+  },
+  {
+    name: "Shadow Darts",
+    points: 81,
+    archetype: "Mage",
+    "class": "Psychic",
+    expansion: "Sands Of The Past",
+    image: "class-items/class-skills-psychic-back.png",
+    xws: "shadowdarts"
+  },
+  {
+    name: "Mind's Eye Turban",
+    points: 82,
+    archetype: "Mage",
+    "class": "Psychic",
+    traits: "Helmet",
+    attack: "-",
+    equip: "Trinket",
+    dice: "-",
+    rules: "At the end of your turn, if you have fatigue tokens equal to your Stamina, recover 1 Fatigue. Limit 1 Helmet equipped at a time.",
+    expansion: "Sands Of The Past",
+    image: "class-items/minds-eye-turban-sotp-mage-psychic.png",
+    xws: "mindseyeturban"
+  },
+  {
+    name: "Mind's Eye Turban",
+    points: 83,
+    archetype: "Mage",
+    "class": "Psychic",
+    traits: "Helmet",
+    attack: "-",
+    equip: "Trinket",
+    dice: "-",
+    rules: "At the end of your turn, if you have fatigue tokens equal to your Stamina, recover 1 Fatigue. Limit 1 Helmet equipped at a time.",
+    expansion: "Sands Of The Past",
+    image: "class-items/class-skills-psychic-back.png",
+    xws: "mindseyeturban"
+  }
+];
+const shopWeapons = jsonShopItems.filter(isWeapon).map((weapon) => parseShopWeapon(weapon, combatDiceByColor));
+const relicWeapons = jsonRelics.filter(isWeapon).map((weapon) => parseShopWeapon(__spreadValues({ act: Category.Relic }, weapon), combatDiceByColor));
+const classWeapons = jsonClassItems.filter(isWeapon).map((weapon) => parseShopWeapon(__spreadValues({ act: Category.Class }, weapon), combatDiceByColor));
+const weapons = [
+  ...shopWeapons,
+  ...relicWeapons,
+  ...classWeapons
+];
 var getRandomValues;
 var rnds8 = new Uint8Array(16);
 function rng() {
@@ -15066,15 +18966,15 @@ function v4(options, buf, offset2) {
 function removeWhitespace(value) {
   return value.replace(/\s+/g, "");
 }
-const _hoisted_1$2 = {
+const _hoisted_1$4 = {
   class: "btn-group",
   role: "group"
 };
-const _hoisted_2$2 = ["disabled", "checked", "id"];
-const _hoisted_3$2 = ["for"];
-const _hoisted_4$2 = ["value", "id"];
-const _hoisted_5$2 = ["for"];
-const _sfc_main$2 = /* @__PURE__ */ defineComponent({
+const _hoisted_2$4 = ["for"];
+const _hoisted_3$4 = ["disabled", "checked", "id"];
+const _hoisted_4$4 = ["value", "id"];
+const _hoisted_5$4 = ["for"];
+const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   props: {
     modelOptions: null,
     modelValue: null
@@ -15093,7 +18993,11 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     });
     const id = v4();
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$2, [
+      return openBlock(), createElementBlock("div", _hoisted_1$4, [
+        createBaseVNode("label", {
+          class: "btn btn-outline-primary btn-sm",
+          for: `${unref(id)}-all`
+        }, "All", 8, _hoisted_2$4),
         createBaseVNode("input", {
           type: "checkbox",
           class: "btn-check",
@@ -15101,11 +19005,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
           disabled: unref(modelValue).length === 0,
           checked: unref(modelValue).length === 0,
           id: `${unref(id)}-all`
-        }, null, 40, _hoisted_2$2),
-        createBaseVNode("label", {
-          class: "btn btn-outline-primary btn-sm",
-          for: `${unref(id)}-all`
-        }, "All", 8, _hoisted_3$2),
+        }, null, 40, _hoisted_3$4),
         (openBlock(true), createElementBlock(Fragment, null, renderList(unref(modelOptions), (value) => {
           return openBlock(), createElementBlock(Fragment, { key: value }, [
             withDirectives(createBaseVNode("input", {
@@ -15114,13 +19014,13 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
               "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => isRef(localValue) ? localValue.value = $event : null),
               value,
               id: `${unref(id)}-${unref(removeWhitespace)(value)}`
-            }, null, 8, _hoisted_4$2), [
+            }, null, 8, _hoisted_4$4), [
               [vModelCheckbox, unref(localValue)]
             ]),
             createBaseVNode("label", {
               class: "btn btn-outline-primary btn-sm",
               for: `${unref(id)}-${unref(removeWhitespace)(value)}`
-            }, toDisplayString(value), 9, _hoisted_5$2)
+            }, toDisplayString(value), 9, _hoisted_5$4)
           ], 64);
         }), 128))
       ]);
@@ -15141,20 +19041,20 @@ function makeListFilter(selectionRef, match) {
   };
 }
 var WeaponSelector_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _hoisted_1$1 = { class: "card mb-3" };
-const _hoisted_2$1 = { class: "card-body" };
-const _hoisted_3$1 = { class: "filter-grid" };
-const _hoisted_4$1 = { class: "filter" };
-const _hoisted_5$1 = { class: "filter" };
-const _hoisted_6$1 = { class: "filter" };
-const _hoisted_7$1 = { class: "filter" };
-const _hoisted_8 = { class: "filter" };
-const _hoisted_9 = { class: "filter" };
-const _hoisted_10 = { class: "filter filter-found" };
-const _hoisted_11 = { class: "image-grid" };
-const _hoisted_12 = ["onClick"];
-const _hoisted_13 = ["src", "alt"];
-const _sfc_main$1 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$3 = { class: "card mb-3" };
+const _hoisted_2$3 = { class: "card-body" };
+const _hoisted_3$3 = { class: "filter-grid" };
+const _hoisted_4$3 = { class: "filter" };
+const _hoisted_5$3 = { class: "filter" };
+const _hoisted_6$3 = { class: "filter" };
+const _hoisted_7$3 = { class: "filter" };
+const _hoisted_8$2 = { class: "filter" };
+const _hoisted_9$2 = { class: "filter" };
+const _hoisted_10$2 = { class: "filter filter-found" };
+const _hoisted_11$2 = { class: "image-grid" };
+const _hoisted_12$1 = ["onClick"];
+const _hoisted_13$1 = ["src", "alt"];
+const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   emits: ["select"],
   setup(__props) {
     const needle = ref("");
@@ -15164,7 +19064,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       }
       return weapon.name.toLowerCase().includes(needle.value.toLowerCase());
     }
-    const availableCategories = [Category.ActI, Category.ActII];
+    const availableCategories = Object.values(Category);
     const selectedCategories = ref([]);
     const matchCategory = makeListFilter(selectedCategories, (thing, selected) => thing.category === selected);
     const availableTraits = Object.values(WeaponTrait);
@@ -15185,46 +19085,46 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     const items = computed(() => weapons.filter(matchName).filter(matchCategory).filter(matchAttacks).filter(matchTraits).filter(matchEquips).filter(matchExpansions));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock(Fragment, null, [
-        createBaseVNode("div", _hoisted_1$1, [
-          createBaseVNode("div", _hoisted_2$1, [
+        createBaseVNode("div", _hoisted_1$3, [
+          createBaseVNode("div", _hoisted_2$3, [
             createBaseVNode("form", null, [
-              createBaseVNode("div", _hoisted_3$1, [
-                createBaseVNode("div", _hoisted_4$1, [
-                  createVNode(_sfc_main$2, {
-                    "model-options": availableCategories,
+              createBaseVNode("div", _hoisted_3$3, [
+                createBaseVNode("div", _hoisted_4$3, [
+                  createVNode(_sfc_main$4, {
+                    "model-options": unref(availableCategories),
                     modelValue: selectedCategories.value,
                     "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => selectedCategories.value = $event)
-                  }, null, 8, ["modelValue"])
+                  }, null, 8, ["model-options", "modelValue"])
                 ]),
-                createBaseVNode("div", _hoisted_5$1, [
-                  createVNode(_sfc_main$2, {
+                createBaseVNode("div", _hoisted_5$3, [
+                  createVNode(_sfc_main$4, {
                     "model-options": unref(availableAttacks),
                     modelValue: selectedAttacks.value,
                     "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => selectedAttacks.value = $event)
                   }, null, 8, ["model-options", "modelValue"])
                 ]),
-                createBaseVNode("div", _hoisted_6$1, [
-                  createVNode(_sfc_main$2, {
+                createBaseVNode("div", _hoisted_6$3, [
+                  createVNode(_sfc_main$4, {
                     "model-options": unref(availableEquips),
                     modelValue: selectedEquips.value,
                     "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selectedEquips.value = $event)
                   }, null, 8, ["model-options", "modelValue"])
                 ]),
-                createBaseVNode("div", _hoisted_7$1, [
-                  createVNode(_sfc_main$2, {
+                createBaseVNode("div", _hoisted_7$3, [
+                  createVNode(_sfc_main$4, {
                     "model-options": unref(availableTraits),
                     modelValue: selectedTraits.value,
                     "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => selectedTraits.value = $event)
                   }, null, 8, ["model-options", "modelValue"])
                 ]),
-                createBaseVNode("div", _hoisted_8, [
-                  createVNode(_sfc_main$2, {
+                createBaseVNode("div", _hoisted_8$2, [
+                  createVNode(_sfc_main$4, {
                     "model-options": unref(availableExpansions),
                     modelValue: selectedExpansions.value,
                     "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => selectedExpansions.value = $event)
                   }, null, 8, ["model-options", "modelValue"])
                 ]),
-                createBaseVNode("div", _hoisted_9, [
+                createBaseVNode("div", _hoisted_9$2, [
                   withDirectives(createBaseVNode("input", {
                     "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => needle.value = $event),
                     placeholder: "filter by name"
@@ -15232,12 +19132,12 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                     [vModelText, needle.value]
                   ])
                 ]),
-                createBaseVNode("div", _hoisted_10, toDisplayString(unref(items).length) + " weapons found ", 1)
+                createBaseVNode("div", _hoisted_10$2, toDisplayString(unref(items).length) + " weapons found ", 1)
               ])
             ])
           ])
         ]),
-        createBaseVNode("div", _hoisted_11, [
+        createBaseVNode("div", _hoisted_11$2, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(items), (item) => {
             return openBlock(), createElementBlock("div", {
               key: item.name
@@ -15250,8 +19150,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                   src: item.image,
                   alt: item.name,
                   class: "w-100 rounded-3"
-                }, null, 8, _hoisted_13)
-              ], 8, _hoisted_12)
+                }, null, 8, _hoisted_13$1)
+              ], 8, _hoisted_12$1)
             ]);
           }), 128))
         ])
@@ -15259,20 +19159,20 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var WeaponSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-75594bd3"]]);
-const _hoisted_1 = { class: "modal-dialog modal-dialog-centered" };
-const _hoisted_2 = { class: "modal-content" };
-const _hoisted_3 = { class: "modal-header" };
-const _hoisted_4 = { class: "modal-title" };
-const _hoisted_5 = /* @__PURE__ */ createBaseVNode("button", {
+var WeaponSelector = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-27d9188c"]]);
+const _hoisted_1$2 = { class: "modal-dialog modal-dialog-centered" };
+const _hoisted_2$2 = { class: "modal-content" };
+const _hoisted_3$2 = { class: "modal-header" };
+const _hoisted_4$2 = { class: "modal-title" };
+const _hoisted_5$2 = /* @__PURE__ */ createBaseVNode("button", {
   type: "button",
   class: "btn-close",
   "data-bs-dismiss": "modal",
   "aria-label": "Close"
 }, null, -1);
-const _hoisted_6 = { class: "modal-body" };
-const _hoisted_7 = ["src", "alt"];
-const _sfc_main = /* @__PURE__ */ defineComponent({
+const _hoisted_6$2 = { class: "modal-body" };
+const _hoisted_7$2 = ["src", "alt"];
+const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const weaponDetailElement = ref(null);
     const selectedWeapon = ref(weapons[0]);
@@ -15296,18 +19196,5901 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             tabindex: "-1",
             "aria-hidden": "true"
           }, [
-            createBaseVNode("div", _hoisted_1, [
-              createBaseVNode("div", _hoisted_2, [
-                createBaseVNode("div", _hoisted_3, [
-                  createBaseVNode("h5", _hoisted_4, toDisplayString(selectedWeapon.value.name), 1),
-                  _hoisted_5
+            createBaseVNode("div", _hoisted_1$2, [
+              createBaseVNode("div", _hoisted_2$2, [
+                createBaseVNode("div", _hoisted_3$2, [
+                  createBaseVNode("h5", _hoisted_4$2, toDisplayString(selectedWeapon.value.name), 1),
+                  _hoisted_5$2
                 ]),
-                createBaseVNode("div", _hoisted_6, [
+                createBaseVNode("div", _hoisted_6$2, [
                   createBaseVNode("img", {
                     src: selectedWeapon.value.image,
                     alt: selectedWeapon.value.name,
                     class: "w-100 rounded-3"
-                  }, null, 8, _hoisted_7)
+                  }, null, 8, _hoisted_7$2)
+                ])
+              ])
+            ])
+          ], 512)
+        ]))
+      ], 64);
+    };
+  }
+});
+class AssertionError extends Error {
+}
+function assert(value, message = "assertion failed") {
+  if (!value) {
+    throw new AssertionError(message);
+  }
+}
+var Act = /* @__PURE__ */ ((Act2) => {
+  Act2["I"] = "I";
+  Act2["II"] = "II";
+  return Act2;
+})(Act || {});
+var Trait = /* @__PURE__ */ ((Trait2) => {
+  Trait2["Building"] = "Building";
+  Trait2["Cave"] = "Cave";
+  Trait2["Civilized"] = "Civilized";
+  Trait2["Cold"] = "Cold";
+  Trait2["Cursed"] = "Cursed";
+  Trait2["Dark"] = "Dark";
+  Trait2["Hot"] = "Hot";
+  Trait2["Mountain"] = "Mountain";
+  Trait2["Water"] = "Water";
+  Trait2["Wilderness"] = "Wilderness";
+  return Trait2;
+})(Trait || {});
+class Monster {
+  constructor(jsonFront, jsonBack) {
+    __publicField(this, "name");
+    __publicField(this, "act");
+    __publicField(this, "attack");
+    __publicField(this, "expansion");
+    __publicField(this, "image");
+    __publicField(this, "traits");
+    assert(jsonFront.name == jsonBack.name);
+    this.name = jsonFront.name;
+    assert(jsonFront.act == jsonBack.act);
+    this.act = enumFromStringValue(Act, jsonFront.act);
+    this.attack = enumFromStringValue(Attack, jsonFront.attack);
+    assert(jsonFront.expansion == jsonBack.expansion);
+    this.expansion = jsonFront.expansion;
+    this.image = {
+      front: assetUrl(`d2e/${jsonFront.image}`),
+      back: assetUrl(`d2e/${jsonBack.image}`)
+    };
+    this.traits = jsonBack.traits.map((trait) => enumFromStringValue(Trait, trait));
+    assert(jsonFront.xws == jsonBack.xws, `${jsonFront.xws} != ${jsonBack.xws}`);
+  }
+  get nameAct() {
+    return `${this.name} Act ${this.act}`;
+  }
+}
+var jsonMonsters = [
+  {
+    name: "Barghest",
+    points: 0,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Red, Abilities: Action: Howl, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 6, Defense: Gray, Attack: Blue Red, Abilities: Night Stalker, Action: Howl, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/barghest-bg-act1-front.png",
+    xws: "barghest"
+  },
+  {
+    name: "Barghest",
+    points: 1,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Dark"
+    ],
+    "ability rules": [
+      "Night Stalker: If attacked by any non-adjacent hero, this monster may add 1 brown die to its defense roll.",
+      "Howl: Each hero within 3 spaces of this monster must test Willpower. Each hero that fails suffers 1 Fatigue."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/barghest-bg-act1-back.png",
+    xws: "barghest"
+  },
+  {
+    name: "Barghest",
+    points: 2,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Black, Attack: Blue Red, Abilities: Action: Howl, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 8, Defense: Black, Attack: Blue Red Yellow, Abilities: Night Stalker, Action: Howl, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/barghest-bg-act2-front.png",
+    xws: "barghest"
+  },
+  {
+    name: "Barghest",
+    points: 3,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Dark"
+    ],
+    "ability rules": [
+      "Night Stalker: If attacked by any non-adjacent hero, this monster may add 1 brown die to its defense roll.",
+      "Howl: Each hero within 3 spaces of this monster must test Willpower. Each hero that fails suffers 1 Fatigue."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/barghest-bg-act2-back.png",
+    xws: "barghest"
+  },
+  {
+    name: "Cave Spider",
+    points: 4,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 3, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Poison, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Web, Surge: Poison, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/cave-spider-bg-act1-front.png",
+    xws: "cavespider"
+  },
+  {
+    name: "Cave Spider",
+    points: 5,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Cave"
+    ],
+    "ability rules": [
+      "Web: Each hero adjacent to this monster must suffer 1 Fatigue to move out of his current space; this is in addition to any other Fatigue suffered to move.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/cave-spider-bg-act1-back.png",
+    xws: "cavespider"
+  },
+  {
+    name: "Cave Spider",
+    points: 6,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow Yellow, Abilities: Surge: Poison, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Yellow Yellow, Abilities: Web, Surge: Poison, Surge: +2 Hearts, Surge: +1 Heart"
+    ],
+    expansion: "Base Game",
+    image: "monsters/cave-spider-bg-act2-front.png",
+    xws: "cavespider"
+  },
+  {
+    name: "Cave Spider",
+    points: 7,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Cave"
+    ],
+    "ability rules": [
+      "Web: Each hero adjacent to this monster must suffer 1 Fatigue to move out of his current space; this is in addition to any other Fatigue suffered to move.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/cave-spider-bg-act2-back.png",
+    xws: "cavespider"
+  },
+  {
+    name: "Elemental",
+    points: 8,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Black, Attack: Blue Red, Abilities: Surge: Fire, Surge: Earth, Surge: Water, Surge: Air",
+      "Master: Speed: 4, Health: 6, Defense: Black, Attack: Blue Red, Abilities: Surge: Fire, Surge: Earth, Surge: Water, Surge: Air"
+    ],
+    expansion: "Base Game",
+    image: "monsters/elemental-bg-act1-front.png",
+    xws: "elemental"
+  },
+  {
+    name: "Elemental",
+    points: 9,
+    act: "I",
+    traits: [
+      "Cold",
+      "Hot"
+    ],
+    "ability rules": [
+      "Fire: Perform an attack targeting all figures adjacent to this monster. Each figure rolls defense dice separately.",
+      "Earth: Each hero adjacent to this monster must test Awareness. Each hero that fails is Immobilized.",
+      "Water: Each hero adjacent to this monster must test Willpower. Each hero that fails suffers 2 Fatigue.",
+      "Air: Until the start of your next turn, this monster cannot be affected by any attacks, and heroes may move through it."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/elemental-bg-act1-back.png",
+    xws: "elemental"
+  },
+  {
+    name: "Elemental",
+    points: 10,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 8, Defense: Black Brown, Attack: Blue Yellow Red, Abilities: Surge: Fire, Surge: Earth, Surge: Water, Surge: Air",
+      "Master: Speed: 4, Health: 10, Defense: Black Brown, Attack: Blue Yellow Red, Abilities: Surge: Fire, Surge: Earth, Surge: Water, Surge: Air"
+    ],
+    expansion: "Base Game",
+    image: "monsters/elemental-bg-act2-front.png",
+    xws: "elemental"
+  },
+  {
+    name: "Elemental",
+    points: 11,
+    act: "II",
+    traits: [
+      "Cold",
+      "Hot"
+    ],
+    "ability rules": [
+      "Fire: Perform an attack targeting all figures adjacent to this monster. Each figure rolls defense dice separately.",
+      "Earth: Each hero adjacent to this monster must test Awareness. Each hero that fails is Immobilized.",
+      "Water: Each hero adjacent to this monster must test Willpower. Each hero that fails suffers 2 Fatigue.",
+      "Air: Until the start of your next turn, this monster cannot be affected by any attacks, and heroes may move through it."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/elemental-bg-act2-back.png",
+    xws: "elemental"
+  },
+  {
+    name: "Ettin",
+    points: 12,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Gray Gray, Attack: Blue Red, Abilities: Reach, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 8, Defense: Gray Gray, Attack: Blue Red, Abilities: Reach, Action: Throw, Surge: +3 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/ettin-bg-act1-front.png",
+    xws: "ettin"
+  },
+  {
+    name: "Ettin",
+    points: 13,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Cave"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Throw: Choose a hero adjacent to this monster. That hero must test Might. If he fails, remove the hero from the map, then place him on any empty space within 3 spaces of his original space. He counts as entering that space. Then the hero suffers 1 Heart."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/ettin-bg-act1-back.png",
+    xws: "ettin"
+  },
+  {
+    name: "Ettin",
+    points: 14,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 7, Defense: Black Gray, Attack: Blue Red Red, Abilities: Reach, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 9, Defense: Black Gray, Attack: Blue Red Red, Abilities: Reach, Action: Throw, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/ettin-bg-act2-front.png",
+    xws: "ettin"
+  },
+  {
+    name: "Ettin",
+    points: 15,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Cave"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Throw: Choose a hero adjacent to this monster. That hero must test Might. If he fails, remove the hero from the map, then place him on any empty space within 3 spaces of his original space. He counts as entering that space. Then the hero suffers 1 Heart."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/ettin-bg-act2-back.png",
+    xws: "ettin"
+  },
+  {
+    name: "Flesh Moulder",
+    points: 16,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Mend 1, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Action: Heal, Surge: Mend 2, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/flesh-moulder-bg-act1-front.png",
+    xws: "fleshmoulder"
+  },
+  {
+    name: "Flesh Moulder",
+    points: 17,
+    act: "I",
+    traits: [
+      "Cursed",
+      "Civilized"
+    ],
+    "ability rules": [
+      "Heal: Choose a monster within 3 spaces of this monster and roll 1 red power die. The chosen monster recovers Hearts equal to the Hearts rolled.",
+      "Mend X: This monster recovers X Hearts."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/flesh-moulder-bg-act1-back.png",
+    xws: "fleshmoulder"
+  },
+  {
+    name: "Flesh Moulder",
+    points: 18,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray Brown, Attack: Blue Yellow, Abilities: Surge: Mend 2, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 7, Defense: Gray Brown, Attack: Blue Yellow Yellow, Abilities: Action: Heal, Surge: Mend 3, Surge: +3 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/flesh-moulder-bg-act2-front.png",
+    xws: "fleshmoulder"
+  },
+  {
+    name: "Flesh Moulder",
+    points: 19,
+    act: "II",
+    traits: [
+      "Cursed",
+      "Civilized"
+    ],
+    "ability rules": [
+      "Heal: Choose a monster within 3 spaces of this monster and roll 1 red power die. The chosen monster recovers Hearts equal to the Hearts rolled.",
+      "Mend X: This monster recovers X Hearts."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/flesh-moulder-bg-act2-back.png",
+    xws: "fleshmoulder"
+  },
+  {
+    name: "Goblin Archer",
+    points: 20,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 5, Health: 2, Defense: Gray, Attack: Blue Yellow, Abilities: Scamper, Cowardly, Surge: +1 Range, Surge: +1 Heart",
+      "Master: Speed: 5, Health: 4, Defense: Gray, Attack: Blue Yellow, Abilities: Scamper, Surge: +2 Range, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/goblin-archer-bg-act1-front.png",
+    xws: "goblinarcher"
+  },
+  {
+    name: "Goblin Archer",
+    points: 21,
+    act: "I",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Scamper: This monster may move through spaces containing heroes.",
+      "Cowardly: This monster cannot spend surges on abilities unless it is within 3 spaces of any master monster or a lieutenant."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/goblin-archer-bg-act1-back.png",
+    xws: "goblinarcher"
+  },
+  {
+    name: "Goblin Archer",
+    points: 22,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 5, Health: 4, Defense: Gray, Attack: Blue Yellow, Abilities: Scamper, Cowardly, Surge: +2 Range, Surge: +2 Hearts",
+      "Master: Speed: 5, Health: 6, Defense: Gray, Attack: Blue Yellow Yellow, Abilities: Scamper, Surge: +3 Range, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/goblin-archer-bg-act2-front.png",
+    xws: "goblinarcher"
+  },
+  {
+    name: "Goblin Archer",
+    points: 23,
+    act: "II",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Scamper: This monster may move through spaces containing heroes.",
+      "Cowardly: This monster cannot spend surges on abilities unless it is within 3 spaces of any master monster or a lieutenant."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/goblin-archer-bg-act2-back.png",
+    xws: "goblinarcher"
+  },
+  {
+    name: "Merriod",
+    points: 24,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Black, Attack: Blue Red, Abilities: Reach, Surge: Immobilize, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 7, Defense: Black, Attack: Blue Red, Abilities: Reach, Flail, Surge: Immobilize, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/merriod-bg-act1-front.png",
+    xws: "merriod"
+  },
+  {
+    name: "Merriod",
+    points: 25,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Water"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Flail: When attacking, this monster may target 2 separate heroes. This monster makes 1 attack roll and each hero rolls defense dice separately.",
+      "Immobilize: If this attack deals at least 1 Heart (after the defense roll), the target is Immobilized."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/merriod-bg-act1-back.png",
+    xws: "merriod"
+  },
+  {
+    name: "Merriod",
+    points: 26,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 7, Defense: Gray Gray, Attack: Blue Red Yellow, Abilities: Reach, Surge: Immobilize, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 9, Defense: Gray Gray, Attack: Blue Red Yellow, Abilities: Reach, Flail, Surge: Immobilize, Surge: +3 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/merriod-bg-act2-front.png",
+    xws: "merriod"
+  },
+  {
+    name: "Merriod",
+    points: 27,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Water"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Flail: When attacking, this monster may target 2 separate heroes. This monster makes 1 attack roll and each hero rolls defense dice separately.",
+      "Immobilize: If this attack deals at least 1 Heart (after the defense roll), the target is Immobilized."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/merriod-bg-act2-back.png",
+    xws: "merriod"
+  },
+  {
+    name: "Shadow Dragon",
+    points: 28,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 6, Defense: Gray Gray, Attack: Blue Red, Abilities: Shadow, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 9, Defense: Gray Gray, Attack: Blue Red, Abilities: Shadow, Surge: Fire Breath, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/shadow-dragon-bg-act1-front.png",
+    xws: "shadowdragon"
+  },
+  {
+    name: "Shadow Dragon",
+    points: 29,
+    act: "I",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Shadow: A hero adjacent to this monster that declares an attack must spend 1 Surge or the attack is considered a miss.",
+      "Fire Breath: Starting with the target space, trace a path of 4 spaces in any direction. All figures on this path are affected by this attack. Each figure rolls defense dice separately."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/shadow-dragon-bg-act1-back.png",
+    xws: "shadowdragon"
+  },
+  {
+    name: "Shadow Dragon",
+    points: 30,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 8, Defense: Black Gray, Attack: Blue Red Red, Abilities: Shadow, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 10, Defense: Black Gray, Attack: Blue Red Red, Abilities: Shadow, Surge: Fire Breath, Surge: +3 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/shadow-dragon-bg-act2-front.png",
+    xws: "shadowdragon"
+  },
+  {
+    name: "Shadow Dragon",
+    points: 31,
+    act: "II",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Shadow: A hero adjacent to this monster that declares an attack must spend 1 Surge or the attack is considered a miss.",
+      "Fire Breath: Starting with the target space, trace a path of 4 spaces in any direction. All figures on this path are affected by this attack. Each figure rolls defense dice separately."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/shadow-dragon-bg-act2-back.png",
+    xws: "shadowdragon"
+  },
+  {
+    name: "Zombie",
+    points: 32,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 3, Defense: Brown, Attack: Blue Yellow, Abilities: Shambling, Surge: Disease, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 6, Defense: Brown, Attack: Blue Yellow, Abilities: Shambling, Action: Grab, Surge: Disease, Surge: +1 Heart"
+    ],
+    expansion: "Base Game",
+    image: "monsters/zombie-bg-act1-front.png",
+    xws: "zombie"
+  },
+  {
+    name: "Zombie",
+    points: 33,
+    act: "I",
+    traits: [
+      "Cursed",
+      "Building"
+    ],
+    "ability rules": [
+      "Shambling: This monster may not perform more than 1 move action during a single turn.",
+      "Grab: Choose a hero adjacent to this monster. The hero must test Might. If he fails, he is Immobilized.",
+      "Disease: If this attack deals at least 1 Heart (after the defense roll), the target is Diseased."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/zombie-bg-act1-back.png",
+    xws: "zombie"
+  },
+  {
+    name: "Zombie",
+    points: 34,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Brown, Attack: Blue Yellow, Abilities: Shambling, Surge: Disease, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 9, Defense: Brown, Attack: Blue Yellow Red, Abilities: Shambling, Action: Grab, Surge: Disease, Surge: +2 Hearts"
+    ],
+    expansion: "Base Game",
+    image: "monsters/zombie-bg-act2-front.png",
+    xws: "zombie"
+  },
+  {
+    name: "Zombie",
+    points: 35,
+    act: "II",
+    traits: [
+      "Cursed",
+      "Building"
+    ],
+    "ability rules": [
+      "Shambling: This monster may not perform more than 1 move action during a single turn.",
+      "Grab: Choose a hero adjacent to this monster. The hero must test Might. If he fails, he is Immobilized.",
+      "Disease: If this attack deals at least 1 Heart (after the defense roll), the target is Diseased."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Base Game",
+    image: "monsters/zombie-bg-act2-back.png",
+    xws: "zombie"
+  },
+  {
+    name: "CK-Bane Spider",
+    points: 36,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Red, Abilities: Surge: Poison, Surge: Pierce 1",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Red, Abilities: Action: Cocoon, Surge: Poison, Surge: Pierce 2"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/bane-spider-ck-act1-front.png",
+    xws: "banespider"
+  },
+  {
+    name: "CK-Bane Spider",
+    points: 37,
+    act: "I",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Cocoon: Each hero adjacent to this monster must test Awareness. Each hero that fails is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/bane-spider-ck-act1-back.png",
+    xws: "banespider"
+  },
+  {
+    name: "CK-Bane Spider",
+    points: 38,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Gray Brown, Attack: Blue Red, Abilities: Surge: Poison, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 9, Defense: Gray Brown, Attack: Blue Red, Abilities: Action: Cocoon, Surge: Poison, Surge: Pierce 3"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/bane-spider-ck-act2-front.png",
+    xws: "banespider"
+  },
+  {
+    name: "CK-Bane Spider",
+    points: 39,
+    act: "II",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Cocoon: Each hero adjacent to this monster must test Awareness. Each hero that fails is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/bane-spider-ck-act2-back.png",
+    xws: "banespider"
+  },
+  {
+    name: "CK-Beastman",
+    points: 40,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 2, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Command, Ravage, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/beastman-ck-act1-front.png",
+    xws: "beastman"
+  },
+  {
+    name: "CK-Beastman",
+    points: 41,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Wilderness"
+    ],
+    "ability rules": [
+      "Command: Each minion within 3 spaces of this monster may reroll 1 die on each of its attacks. Each minion may only benefit from one monster with Command at a time.",
+      "Ravage: Both of this monster's actions on a turn may be attack actions."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/beastman-ck-act1-back.png",
+    xws: "beastman"
+  },
+  {
+    name: "CK-Beastman",
+    points: 42,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 4, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Surge: +2 Hearts",
+      "Master: Speed: 5, Health: 6, Defense: Gray, Attack: Blue Red Yellow, Abilities: Command, Ravage, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/beastman-ck-act2-front.png",
+    xws: "beastman"
+  },
+  {
+    name: "CK-Beastman",
+    points: 43,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Wilderness"
+    ],
+    "ability rules": [
+      "Command: Each minion within 3 spaces of this monster may reroll 1 die on each of its attacks. Each minion may only benefit from one monster with Command at a time.",
+      "Ravage: Both of this monster's actions on a turn may be attack actions."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/beastman-ck-act2-back.png",
+    xws: "beastman"
+  },
+  {
+    name: "CK-Blood Ape",
+    points: 44,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Action: Leap Attack, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/blood-ape-ck-act1-front.png",
+    xws: "bloodape"
+  },
+  {
+    name: "CK-Blood Ape",
+    points: 45,
+    act: "I",
+    traits: [
+      "Cave",
+      "Hot"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Leap Attack: This monster may move its Speed, ignoring enemy figures as it does so. When if finishes its movement, perform a single attack that targets each figure this monster moved through. Each figure rolls defense dice separately. Limit once per turn."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/blood-ape-ck-act1-back.png",
+    xws: "bloodape"
+  },
+  {
+    name: "CK-Blood Ape",
+    points: 46,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Red Yellow, Abilities: Ravage, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 9, Defense: Gray, Attack: Blue Red Red, Abilities: Ravage, Action: Leap Attack, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/blood-ape-ck-act2-front.png",
+    xws: "bloodape"
+  },
+  {
+    name: "CK-Blood Ape",
+    points: 47,
+    act: "II",
+    traits: [
+      "Cave",
+      "Hot"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Leap Attack: This monster may move its Speed, ignoring enemy figures as it does so. When if finishes its movement, perform a single attack that targets each figure this monster moved through. Each figure rolls defense dice separately. Limit once per turn."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/blood-ape-ck-act2-back.png",
+    xws: "bloodape"
+  },
+  {
+    name: "CK-Chaos Beast",
+    points: 48,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Gray, Attack: Blank, Abilities: Morph, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 6, Defense: Gray, Attack: Blank, Abilities: Morph, Sorcery 2, Surge: +1 Heart"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/chaos-beast-ck-act1-front.png",
+    xws: "chaosbeast"
+  },
+  {
+    name: "CK-Chaos Beast",
+    points: 49,
+    act: "I",
+    traits: [
+      "Dark",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Morph: When this monster attacks, it uses the dice of a figure (overlord's choice) in its lind of sight. If a hero is chosen, the overlord may choose which of the hero's equipped weapons to use. The monster cannot use any of the figure's other abilities, just the dice.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/chaos-beast-ck-act1-back.png",
+    xws: "chaosbeast"
+  },
+  {
+    name: "CK-Chaos Beast",
+    points: 50,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 7, Defense: Gray, Attack: Blank, Abilities: Morph, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 10, Defense: Gray, Attack: Blank, Abilities: Morph, Sorcery 3, Surge: +1 Heart"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/chaos-beast-ck-act2-front.png",
+    xws: "chaosbeast"
+  },
+  {
+    name: "CK-Chaos Beast",
+    points: 51,
+    act: "II",
+    traits: [
+      "Dark",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Morph: When this monster attacks, it uses the dice of a figure (overlord's choice) in its lind of sight. If a hero is chosen, the overlord may choose which of the hero's equipped weapons to use. The monster cannot use any of the figure's other abilities, just the dice.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/chaos-beast-ck-act2-back.png",
+    xws: "chaosbeast"
+  },
+  {
+    name: "CK-Crypt Dragon",
+    points: 52,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Gray Gray, Attack: Blue Yellow, Abilities: Surge: Blast, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 7, Defense: Gray Gray, Attack: Blue Yellow, Abilities: Action: Cause Fear, Surge: Blast, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/crypt-dragon-ck-act1-front.png",
+    xws: "cryptdragon"
+  },
+  {
+    name: "CK-Crypt Dragon",
+    points: 53,
+    act: "I",
+    traits: [
+      "Dark",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Cause Fear: Choose a hero adjacent to this monster. That hero must test Willpower. If he fails, he moves 2 spaces directly away from this monster and is Immobilized.",
+      "Blast: This attack affects all figures adjacent to the target space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/crypt-dragon-ck-act1-back.png",
+    xws: "cryptdragon"
+  },
+  {
+    name: "CK-Crypt Dragon",
+    points: 54,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 6, Defense: Black Gray, Attack: Blue Red Yellow, Abilities: Surge: Blast, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 10, Defense: Black Gray, Attack: Blue Red Yellow, Abilities: Action: Cause Fear, Surge: Blast, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/crypt-dragon-ck-act2-front.png",
+    xws: "cryptdragon"
+  },
+  {
+    name: "CK-Crypt Dragon",
+    points: 55,
+    act: "II",
+    traits: [
+      "Dark",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Cause Fear: Choose a hero adjacent to this monster. That hero must test Willpower. If he fails, he moves 2 spaces directly away from this monster and is Immobilized.",
+      "Blast: This attack affects all figures adjacent to the target space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/crypt-dragon-ck-act2-back.png",
+    xws: "cryptdragon"
+  },
+  {
+    name: "CK-Dark Priest",
+    points: 56,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 2, Defense: Brown, Attack: Blue Yellow, Abilities: Action: Dark Prayer, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 5, Defense: Brown, Attack: Blue Yellow, Abilities: Action: Dark Prayer, Action: Heal, Surge: +1 Heart"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/dark-priest-ck-act1-front.png",
+    xws: "darkpriest"
+  },
+  {
+    name: "CK-Dark Priest",
+    points: 57,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Dark Prayer: Each hero within 3 spaces of this monster must test Willpower. Each hero that fails suffers 1 Fatigue.",
+      "Heal: Choose a monster within 3 spaces of this monster and roll 1 red power die. That monster recovers Hearts equal to the Hearts rolled."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/dark-priest-ck-act1-back.png",
+    xws: "darkpriest"
+  },
+  {
+    name: "CK-Dark Priest",
+    points: 58,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Brown, Attack: Blue Yellow, Abilities: Action: Dark Prayer, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 8, Defense: Brown, Attack: Blue Yellow Yellow, Abilities: Action: Dark Prayer, Action: Heal, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/dark-priest-ck-act2-front.png",
+    xws: "darkpriest"
+  },
+  {
+    name: "CK-Dark Priest",
+    points: 59,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Dark Prayer: Each hero within 3 spaces of this monster must test Willpower. Each hero that fails suffers 1 Fatigue.",
+      "Heal: Choose a monster within 3 spaces of this monster and roll 1 red power die. That monster recovers Hearts equal to the Hearts rolled."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/dark-priest-ck-act2-back.png",
+    xws: "darkpriest"
+  },
+  {
+    name: "CK-Deep Elf",
+    points: 60,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 7, Defense: Brown, Attack: Blue Yellow, Abilities: Stealthy, Pierce 2, Surge: +1 Heart",
+      "Master: Speed: 5, Health: 9, Defense: Brown, Attack: Blue Yellow, Abilities: Stealthy, Pierce 4, Surge: +1 Heart"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/deep-elf-ck-act1-front.png",
+    xws: "deepelf"
+  },
+  {
+    name: "CK-Deep Elf",
+    points: 61,
+    act: "I",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Stealthy: Each attack that targets this monster must roll 3 additional range beyond the normally required amount or the attack is a miss.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/deep-elf-ck-act1-back.png",
+    xws: "deepelf"
+  },
+  {
+    name: "CK-Deep Elf",
+    points: 62,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 8, Defense: Gray, Attack: Blue Yellow, Abilities: Stealthy, Pierce 2, Surge: +2 Hearts",
+      "Master: Speed: 5, Health: 10, Defense: Gray, Attack: Blue Yellow, Abilities: Stealthy, Pierce 4, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/deep-elf-ck-act2-front.png",
+    xws: "deepelf"
+  },
+  {
+    name: "CK-Deep Elf",
+    points: 63,
+    act: "II",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Stealthy: Each attack that targets this monster must roll 3 additional range beyond the normally required amount or the attack is a miss.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/deep-elf-ck-act2-back.png",
+    xws: "deepelf"
+  },
+  {
+    name: "CK-Demon Lord",
+    points: 64,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 6, Defense: Gray Gray, Attack: Blue Yellow, Abilities: Sorcery 2, Surge: Wither",
+      "Master: Speed: 3, Health: 9, Defense: Gray Gray, Attack: Blue Yellow, Abilities: Aura 1, Sorcery 3, Surge: Wither"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/demon-lord-ck-act1-front.png",
+    xws: "demonlord"
+  },
+  {
+    name: "CK-Demon Lord",
+    points: 65,
+    act: "I",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Aura 1: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Heart.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Wither: The target suffers 1 Fatigue."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/demon-lord-ck-act1-back.png",
+    xws: "demonlord"
+  },
+  {
+    name: "CK-Demon Lord",
+    points: 66,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 8, Defense: Gray Gray, Attack: Blue Yellow Yellow, Abilities: Sorcery 2, Surge: Wither",
+      "Master: Speed: 3, Health: 12, Defense: Gray Gray, Attack: Blue Red Yellow, Abilities: Aura 1, Sorcery 3, Surge: Wither"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/demon-lord-ck-act2-front.png",
+    xws: "demonlord"
+  },
+  {
+    name: "CK-Demon Lord",
+    points: 67,
+    act: "II",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Aura 1: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Heart.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Wither: The target suffers 1 Fatigue."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/demon-lord-ck-act2-back.png",
+    xws: "demonlord"
+  },
+  {
+    name: "CK-Ferrox",
+    points: 68,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Red, Abilities: Surge: Disease, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Action: Leech, Surge: Disease, Surge: Pierce 2"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ferrox-ck-act1-front.png",
+    xws: "ferrox"
+  },
+  {
+    name: "CK-Ferrox",
+    points: 69,
+    act: "I",
+    traits: [
+      "Cave",
+      "Water"
+    ],
+    "ability rules": [
+      "Leech: Choose a hero adjacent to this monster. That hero must test Might. If he fails, roll 1 yellow power die. The hero suffers 1 Fatigue per Heart rolled, and this monster recovers 1 Heart per Fatigue suffered.",
+      "Disease: If this attack deals at least 1 Heart (after the defense roll), the target is Diseased.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ferrox-ck-act1-back.png",
+    xws: "ferrox"
+  },
+  {
+    name: "CK-Ferrox",
+    points: 70,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray Brown, Attack: Blue Red Yellow, Abilities: Surge: Disease, Surge: Pierce 3",
+      "Master: Speed: 4, Health: 8, Defense: Gray Brown, Attack: Blue Red Yellow, Abilities: Action: Leech, Surge: Disease, Surge: Pierce 3"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ferrox-ck-act2-front.png",
+    xws: "ferrox"
+  },
+  {
+    name: "CK-Ferrox",
+    points: 71,
+    act: "II",
+    traits: [
+      "Cave",
+      "Water"
+    ],
+    "ability rules": [
+      "Leech: Choose a hero adjacent to this monster. That hero must test Might. If he fails, roll 1 yellow power die. The hero suffers 1 Fatigue per Heart rolled, and this monster recovers 1 Heart per Fatigue suffered.",
+      "Disease: If this attack deals at least 1 Heart (after the defense roll), the target is Diseased.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ferrox-ck-act2-back.png",
+    xws: "ferrox"
+  },
+  {
+    name: "CK-Giant",
+    points: 72,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 10, Defense: Black, Attack: Blue Red, Abilities: Reach, Surge: Stun",
+      "Master: Speed: 3, Health: 12, Defense: Black, Attack: Blue Red, Abilities: Reach, Action: Sweep, Surge: Stun"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/giant-ck-act1-front.png",
+    xws: "giant"
+  },
+  {
+    name: "CK-Giant",
+    points: 73,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Wilderness"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Sweep: Perform an attack. This attack affects each figure within range of this monster's attack. Each figure rolls defense dice separately.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/giant-ck-act1-back.png",
+    xws: "giant"
+  },
+  {
+    name: "CK-Giant",
+    points: 74,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 12, Defense: Black, Attack: Blue Red Yellow, Abilities: Reach, Surge: Stun",
+      "Master: Speed: 3, Health: 15, Defense: Black, Attack: Blue Red Red, Abilities: Reach, Action: Sweep, Surge: Stun"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/giant-ck-act2-front.png",
+    xws: "giant"
+  },
+  {
+    name: "CK-Giant",
+    points: 75,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Wilderness"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Sweep: Perform an attack. This attack affects each figure within range of this monster's attack. Each figure rolls defense dice separately.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/giant-ck-act2-back.png",
+    xws: "giant"
+  },
+  {
+    name: "CK-Golem",
+    points: 76,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 8, Defense: Black, Attack: Blue Red, Abilities: Ironskin, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 10, Defense: Black, Attack: Blue Red, Abilities: Ironskin, Unmovable, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/golem-ck-act1-front.png",
+    xws: "golem"
+  },
+  {
+    name: "CK-Golem",
+    points: 77,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Building"
+    ],
+    "ability rules": [
+      "Ironskin: This monster is immune to Pierce and to all conditions.",
+      "Unmovable: This monster may choose to ignore any game effect that would force it to move."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/golem-ck-act1-back.png",
+    xws: "golem"
+  },
+  {
+    name: "CK-Golem",
+    points: 78,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 10, Defense: Black Gray, Attack: Blue Red Red, Abilities: Ironskin, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 12, Defense: Black Gray, Attack: Blue Red Red, Abilities: Ironskin, Unmovable, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/golem-ck-act2-front.png",
+    xws: "golem"
+  },
+  {
+    name: "CK-Golem",
+    points: 79,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Building"
+    ],
+    "ability rules": [
+      "Ironskin: This monster is immune to Pierce and to all conditions.",
+      "Unmovable: This monster may choose to ignore any game effect that would force it to move."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/golem-ck-act2-back.png",
+    xws: "golem"
+  },
+  {
+    name: "CK-Hellhound",
+    points: 80,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 3, Defense: Gray, Attack: Blue Red, Abilities: Surge: Fire Breath, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 6, Defense: Gray, Attack: Blue Red, Abilities: Aura 1, Surge: Fire Breath, Surge: Pierce 2"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/hellhound-ck-act1-front.png",
+    xws: "hellhound"
+  },
+  {
+    name: "CK-Hellhound",
+    points: 81,
+    act: "I",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Aura 1: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Heart.",
+      "Fire Breath: Starting with the target space, trace a path of 4 spaces in any direction. All figures on this path are affected by this attack. Each figure rolls defense dice separately.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/hellhound-ck-act1-back.png",
+    xws: "hellhound"
+  },
+  {
+    name: "CK-Hellhound",
+    points: 82,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Surge: Fire Breath, Surge: Pierce 3",
+      "Master: Speed: 5, Health: 8, Defense: Gray, Attack: Blue Red Yellow, Abilities: Aura 1, Surge: Fire Breath, Surge: Pierce 4"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/hellhound-ck-act2-front.png",
+    xws: "hellhound"
+  },
+  {
+    name: "CK-Hellhound",
+    points: 83,
+    act: "II",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Aura 1: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Heart.",
+      "Fire Breath: Starting with the target space, trace a path of 4 spaces in any direction. All figures on this path are affected by this attack. Each figure rolls defense dice separately.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/hellhound-ck-act2-back.png",
+    xws: "hellhound"
+  },
+  {
+    name: "CK-Ice Wyrm",
+    points: 84,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 7, Defense: Gray Gray, Attack: Blue Red, Abilities: Reach, Freezing",
+      "Master: Speed: 4, Health: 9, Defense: Gray Gray, Attack: Blue Red, Abilities: Reach, Freezing, Swallow"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ice-wyrm-ck-act1-front.png",
+    xws: "icewyrm"
+  },
+  {
+    name: "CK-Ice Wyrm",
+    points: 85,
+    act: "I",
+    traits: [
+      "Cold",
+      "Cave"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Freezing: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Fatigue.",
+      "Swallow: If a hero is defeated by this monster, remove his hero token from the map and place it on this monster's base. The hero cannot be revived until this monster is defeated, at which point his hero token is placed in one of this monster's spaces."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ice-wyrm-ck-act1-back.png",
+    xws: "icewyrm"
+  },
+  {
+    name: "CK-Ice Wyrm",
+    points: 86,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 11, Defense: Gray Gray, Attack: Blue Red Red, Abilities: Reach, Freezing",
+      "Master: Speed: 4, Health: 14, Defense: Gray Gray, Attack: Blue Red Red, Abilities: Reach, Freezing, Swallow"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ice-wyrm-ck-act2-front.png",
+    xws: "icewyrm"
+  },
+  {
+    name: "CK-Ice Wyrm",
+    points: 87,
+    act: "II",
+    traits: [
+      "Cold",
+      "Cave"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Freezing: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Fatigue.",
+      "Swallow: If a hero is defeated by this monster, remove his hero token from the map and place it on this monster's base. The hero cannot be revived until this monster is defeated, at which point his hero token is placed in one of this monster's spaces."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ice-wyrm-ck-act2-back.png",
+    xws: "icewyrm"
+  },
+  {
+    name: "CK-Kobold",
+    points: 88,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 2, Defense: Brown, Attack: Blue, Abilities: Scamper, Surge: Swarm",
+      "Master: Speed: 3, Health: 4, Defense: Brown, Attack: Blue, Abilities: Scamper, Split, Surge: Swarm"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/kobold-ck-act1-front.png",
+    xws: "kobold"
+  },
+  {
+    name: "CK-Kobold",
+    points: 89,
+    act: "I",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Scamper: This monster may move through spaces containing heroes.",
+      "Split: When this monster is defeated, replace it with 2 minions of the same type in the closest available empty spaces, ignoring group limits.",
+      "Swarm: This monster deals +1 Heart for each other monster adjacent to the target."
+    ],
+    "group size": [
+      "2 Heroes: 3,1",
+      "3 Heroes: 5,2",
+      "4 Heroes: 6,3"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/kobold-ck-act1-back.png",
+    xws: "kobold"
+  },
+  {
+    name: "CK-Kobold",
+    points: 90,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Brown, Attack: Blue, Abilities: Scamper, Surge: Swarm",
+      "Master: Speed: 4, Health: 6, Defense: Brown, Attack: Blue Yellow, Abilities: Scamper, Split, Surge: Swarm"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/kobold-ck-act2-front.png",
+    xws: "kobold"
+  },
+  {
+    name: "CK-Kobold",
+    points: 91,
+    act: "II",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Scamper: This monster may move through spaces containing heroes.",
+      "Split: When this monster is defeated, replace it with 2 minions of the same type in the closest available empty spaces, ignoring group limits.",
+      "Swarm: This monster deals +1 Heart for each other monster adjacent to the target."
+    ],
+    "group size": [
+      "2 Heroes: 3,1",
+      "3 Heroes: 5,2",
+      "4 Heroes: 6,3"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/kobold-ck-act2-back.png",
+    xws: "kobold"
+  },
+  {
+    name: "CK-Lava Beetle",
+    points: 92,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 3, Defense: Gray, Attack: Blue Red, Abilities: Surge: Blast, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Blast, Surge: +1 Heart"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/lava-beetle-ck-act1-front.png",
+    xws: "lavabeetle"
+  },
+  {
+    name: "CK-Lava Beetle",
+    points: 93,
+    act: "I",
+    traits: [
+      "Hot",
+      "Cave"
+    ],
+    "ability rules": [
+      "Blast: This attack affects all figures adjacent to the target space. Master lava beetles do not need a Surge for this ability; their attacks may always have Blast."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/lava-beetle-ck-act1-back.png",
+    xws: "lavabeetle"
+  },
+  {
+    name: "CK-Lava Beetle",
+    points: 94,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Surge: Blast, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 7, Defense: Gray, Attack: Blue Red Yellow, Abilities: Blast, Surge: +2 Hearts, Surge: +1 Heart"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/lava-beetle-ck-act2-front.png",
+    xws: "lavabeetle"
+  },
+  {
+    name: "CK-Lava Beetle",
+    points: 95,
+    act: "II",
+    traits: [
+      "Hot",
+      "Cave"
+    ],
+    "ability rules": [
+      "Blast: This attack affects all figures adjacent to the target space. Master lava beetles do not need a Surge for this ability; their attacks may always have Blast."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/lava-beetle-ck-act2-back.png",
+    xws: "lavabeetle"
+  },
+  {
+    name: "CK-Manticore",
+    points: 96,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Ravage, Surge: Pierce 2, Surge: +1 Range",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Yellow, Abilities: Ravage, Surge: Pierce 3, Surge: Poison, Surge: +1 Range"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/manticore-ck-act1-front.png",
+    xws: "manticore"
+  },
+  {
+    name: "CK-Manticore",
+    points: 97,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Dark"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/manticore-ck-act1-back.png",
+    xws: "manticore"
+  },
+  {
+    name: "CK-Manticore",
+    points: 98,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Yellow Yellow, Abilities: Ravage, Surge: Pierce 3, Surge: +2 Range",
+      "Master: Speed: 4, Health: 9, Defense: Gray, Attack: Blue Yellow Yellow, Abilities: Ravage, Surge: Pierce 4, Surge: Poison, Surge: +2 Range"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/manticore-ck-act2-front.png",
+    xws: "manticore"
+  },
+  {
+    name: "CK-Manticore",
+    points: 99,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Dark"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/manticore-ck-act2-back.png",
+    xws: "manticore"
+  },
+  {
+    name: "CK-Medusa",
+    points: 100,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Immobilize, Surge: Poison",
+      "Master: Speed: 4, Health: 6, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Immobilize, Surge: Poison, Surge: Stun"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/medusa-ck-act1-front.png",
+    xws: "medusa"
+  },
+  {
+    name: "CK-Medusa",
+    points: 101,
+    act: "I",
+    traits: [
+      "Cursed",
+      "Building"
+    ],
+    "ability rules": [
+      "Immobilize: If this attack deals at least 1 Heart (after the defense roll), the target is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/medusa-ck-act1-back.png",
+    xws: "medusa"
+  },
+  {
+    name: "CK-Medusa",
+    points: 102,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Gray Brown, Attack: Blue Yellow Yellow, Abilities: Surge: Immobilize, Surge: Poison",
+      "Master: Speed: 4, Health: 9, Defense: Gray BRown, Attack: Blue Yellow Yellow, Abilities: Surge: Immobilize, Surge: Poison, Surge: Stun"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/medusa-ck-act2-front.png",
+    xws: "medusa"
+  },
+  {
+    name: "CK-Medusa",
+    points: 103,
+    act: "II",
+    traits: [
+      "Cursed",
+      "Building"
+    ],
+    "ability rules": [
+      "Immobilize: If this attack deals at least 1 Heart (after the defense roll), the target is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/medusa-ck-act2-back.png",
+    xws: "medusa"
+  },
+  {
+    name: "CK-Naga",
+    points: 104,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Black, Attack: Blue Red, Abilities: Sorcery 1, Action: Grab",
+      "Master: Speed: 4, Health: 5, Defense: Black, Attack: Blue Red, Abilities: Sorcery 2, Action: Grab, Surge: Poison"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/naga-ck-act1-front.png",
+    xws: "naga"
+  },
+  {
+    name: "CK-Naga",
+    points: 105,
+    act: "I",
+    traits: [
+      "Water",
+      "Cave"
+    ],
+    "ability rules": [
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Grab: Choose a hero adjacent to this monster. The hero must test Might. If he fails he is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/naga-ck-act1-back.png",
+    xws: "naga"
+  },
+  {
+    name: "CK-Naga",
+    points: 106,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Black, Attack: Blue Red, Abilities: Sorcery 3, Action: Grab",
+      "Master: Speed: 4, Health: 7, Defense: Black, Attack: Blue Red Yellow, Abilities: Sorcery 3, Action: Grab, Surge: Poison"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/naga-ck-act2-front.png",
+    xws: "naga"
+  },
+  {
+    name: "CK-Naga",
+    points: 107,
+    act: "II",
+    traits: [
+      "Water",
+      "Cave"
+    ],
+    "ability rules": [
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Grab: Choose a hero adjacent to this monster. The hero must test Might. If he fails he is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/naga-ck-act2-back.png",
+    xws: "naga"
+  },
+  {
+    name: "CK-Ogre",
+    points: 108,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 6, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Knockback, Surge: +3 Hearts",
+      "Master: Speed: 3, Health: 8, Defense: Gray, Attack: Blue Red, Abilities: Undying, Surge: Knockback, Surge: +3 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ogre-ck-act1-front.png",
+    xws: "ogre"
+  },
+  {
+    name: "CK-Ogre",
+    points: 109,
+    act: "I",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Undying: When this monster is defeated, remove it from the map and then replace it with a minion of the same type, ignoring group limits.",
+      "Knockback: Remove the target from the map, then place him on any empty space within 3 spaces of his original space. He counts as entering that space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ogre-ck-act1-back.png",
+    xws: "ogre"
+  },
+  {
+    name: "CK-Ogre",
+    points: 110,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 9, Defense: Gray, Attack: Blue Red, Abilities: Surge: Knockback, Surge: +3 Hearts",
+      "Master: Speed: 3, Health: 12, Defense: Gray, Attack: Blue Red Yellow, Abilities: Undying, Surge: Knockback, Surge: +3 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ogre-ck-act2-front.png",
+    xws: "ogre"
+  },
+  {
+    name: "CK-Ogre",
+    points: 111,
+    act: "II",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Undying: When this monster is defeated, remove it from the map and then replace it with a minion of the same type, ignoring group limits.",
+      "Knockback: Remove the target from the map, then place him on any empty space within 3 spaces of his original space. He counts as entering that space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/ogre-ck-act2-back.png",
+    xws: "ogre"
+  },
+  {
+    name: "CK-Razorwing",
+    points: 112,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 4, Defense: Brown, Attack: Blue Yellow, Abilities: Fly, Surge: +1 Heart",
+      "Master: Speed: 6, Health: 6, Defense: Brown, Attack: Blue Yellow, Abilities: Fly, Surge: Stun, Surge: +1 Heart"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/razorwing-ck-act1-front.png",
+    xws: "razorwing"
+  },
+  {
+    name: "CK-Razorwing",
+    points: 113,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Cave"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/razorwing-ck-act1-back.png",
+    xws: "razorwing"
+  },
+  {
+    name: "CK-Razorwing",
+    points: 114,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 7, Defense: Brown, Attack: Blue Yellow, Abilities: Fly, Surge: +2 Hearts",
+      "Master: Speed: 6, Health: 9, Defense: Brown, Attack: Blue Yellow Yellow, Abilities: Fly, Surge: Stun, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/razorwing-ck-act2-front.png",
+    xws: "razorwing"
+  },
+  {
+    name: "CK-Razorwing",
+    points: 115,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Cave"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/razorwing-ck-act2-back.png",
+    xws: "razorwing"
+  },
+  {
+    name: "CK-Shade",
+    points: 116,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 2, Defense: Black, Attack: Blue Yellow, Abilities: Fly, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 4, Defense: Black, Attack: Blue Yellow, Abilities: Fly, Action: Leech, Surge: Pierce 2"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/shade-ck-act1-front.png",
+    xws: "shade"
+  },
+  {
+    name: "CK-Shade",
+    points: 117,
+    act: "I",
+    traits: [
+      "Cursed",
+      "Dark"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Leech: Choose a hero adjacent to this monster. That hero must test Might. If he fails, roll 1 yellow power die. The hero suffers 1 Fatigue per Heart rolled, and this monster recovers 1 Heart per Fatigue suffered.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/shade-ck-act1-back.png",
+    xws: "shade"
+  },
+  {
+    name: "CK-Shade",
+    points: 118,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 4, Defense: Black, Attack: Blue Red, Abilities: Fly, Surge: Pierce 2",
+      "Master: Speed: 5, Health: 6, Defense: Black, Attack: Blue Red Yellow, Abilities: Fly, Action: Leech, Surge: Pierce 2"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/shade-ck-act2-front.png",
+    xws: "shade"
+  },
+  {
+    name: "CK-Shade",
+    points: 119,
+    act: "II",
+    traits: [
+      "Cursed",
+      "Dark"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Leech: Choose a hero adjacent to this monster. That hero must test Might. If he fails, roll 1 yellow power die. The hero suffers 1 Fatigue per Heart rolled, and this monster recovers 1 Heart per Fatigue suffered.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/shade-ck-act2-back.png",
+    xws: "shade"
+  },
+  {
+    name: "CK-Skeleton Archer",
+    points: 120,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 2, Defense: Brown, Attack: Blue Yellow, Abilities: Pierce 1, Surge: +1 Range",
+      "Master: Speed: 4, Health: 5, Defense: Brown, Attack: Blue Yellow, Abilities: Pierce 1, Undying, Surge: +1 Range, Surge: +1 Heart"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/skeleton-archer-ck-act1-front.png",
+    xws: "skeletonarcher"
+  },
+  {
+    name: "CK-Skeleton Archer",
+    points: 121,
+    act: "I",
+    traits: [
+      "Cursed",
+      "Civilized"
+    ],
+    "ability rules": [
+      "Pierce X: This attack ignores X Shields rolled on the defense dice.",
+      "Undying: When this monster is defeated, remove it from the map and then replace it with a minion of the same type, ignoring group limits."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/skeleton-archer-ck-act1-back.png",
+    xws: "skeletonarcher"
+  },
+  {
+    name: "CK-Skeleton Archer",
+    points: 122,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Brown, Attack: Blue Yellow, Abilities: Pierce 2, Surge: +1 Heart, Surge: +2 Range",
+      "Master: Speed: 4, Health: 8, Defense: Brown, Attack: Blue Yellow, Abilities: Pierce 2, Undying, Surge: +2 Range, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/skeleton-archer-ck-act2-front.png",
+    xws: "skeletonarcher"
+  },
+  {
+    name: "CK-Skeleton Archer",
+    points: 123,
+    act: "II",
+    traits: [
+      "Cursed",
+      "Civilized"
+    ],
+    "ability rules": [
+      "Pierce X: This attack ignores X Shields rolled on the defense dice.",
+      "Undying: When this monster is defeated, remove it from the map and then replace it with a minion of the same type, ignoring group limits."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/skeleton-archer-ck-act2-back.png",
+    xws: "skeletonarcher"
+  },
+  {
+    name: "CK-Sorcerer",
+    points: 124,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 3, Defense: Gray, Attack: Blue Yellow, Abilities: Sorcery 2, Action: Summon",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Sorcery 3, Undying, Action: Summon"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/sorcerer-ck-act1-front.png",
+    xws: "sorcerer"
+  },
+  {
+    name: "CK-Sorcerer",
+    points: 125,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Building"
+    ],
+    "ability rules": [
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Undying: When this monster is defeated, remove it from the map and then replace it with a minion of the same type, ignoring group limits.",
+      "Summon: Choose a minion within 3 spaces of this monster. Place that minion in an empty space adjacent to this monster."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/sorcerer-ck-act1-back.png",
+    xws: "sorcerer"
+  },
+  {
+    name: "CK-Sorcerer",
+    points: 126,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Sorcery 2, Action: Summon",
+      "Master: Speed: 4, Health: 8, Defense: Gray, Attack: Blue Red, Abilities: Sorcery 3, Undying, Action: Summon"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/sorcerer-ck-act2-front.png",
+    xws: "sorcerer"
+  },
+  {
+    name: "CK-Sorcerer",
+    points: 127,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Building"
+    ],
+    "ability rules": [
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Undying: When this monster is defeated, remove it from the map and then replace it with a minion of the same type, ignoring group limits.",
+      "Summon: Choose a minion within 3 spaces of this monster. Place that minion in an empty space adjacent to this monster."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/sorcerer-ck-act2-back.png",
+    xws: "sorcerer"
+  },
+  {
+    name: "CK-Troll",
+    points: 128,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 8, Defense: Gray, Attack: Blue Red, Abilities: Reach, Action: Bash",
+      "Master: Speed: 3, Health: 10, Defense: Gray, Attack: Blue Red, Abilities: Reach, Action: Bash, Action: Sweep"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/troll-ck-act1-front.png",
+    xws: "troll"
+  },
+  {
+    name: "CK-Troll",
+    points: 129,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Cave"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Bash: Choose an adjacent hero. That hero must test Awareness. If he fails, he suffers 3 Hearts.",
+      "Sweep: Perform an attack. This attack effects each figure within range of this monster's attack. Each figure rolls defense dice separately."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/troll-ck-act1-back.png",
+    xws: "troll"
+  },
+  {
+    name: "CK-Troll",
+    points: 130,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 10, Defense: Gray, Attack: Blue Red Red, Abilities: Reach, Action: Bash",
+      "Master: Speed: 3, Health: 13, Defense: Gray, Attack: Blue Red Red, Abilities: Reach, Action: Bash, Action: Sweep"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/troll-ck-act2-front.png",
+    xws: "troll"
+  },
+  {
+    name: "CK-Troll",
+    points: 131,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Cave"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Bash: Choose an adjacent hero. That hero must test Awareness. If he fails, he suffers 3 Hearts.",
+      "Sweep: Perform an attack. This attack effects each figure within range of this monster's attack. Each figure rolls defense dice separately."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/troll-ck-act2-back.png",
+    xws: "troll"
+  },
+  {
+    name: "CK-Wendigo",
+    points: 132,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Stealthy, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Red, Abilities: Freezing, Ravage, Stealthy, Surge: +1 Heart"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/wendigo-ck-act1-front.png",
+    xws: "wendigo"
+  },
+  {
+    name: "CK-Wendigo",
+    points: 133,
+    act: "I",
+    traits: [
+      "Cold",
+      "Cave"
+    ],
+    "ability rules": [
+      "Freezing: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Fatigue.",
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Stealthy: Each attack that targets this monster must roll 3 additional range beyond the normally required amount or the attack is a miss."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/wendigo-ck-act1-back.png",
+    xws: "wendigo"
+  },
+  {
+    name: "CK-Wendigo",
+    points: 134,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Stealthy, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 10, Defense: Gray, Attack: Blue Red Yellow, Abilities: Freezing, Ravage, Stealthy, Surge: +2 Hearts"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/wendigo-ck-act2-front.png",
+    xws: "wendigo"
+  },
+  {
+    name: "CK-Wendigo",
+    points: 135,
+    act: "II",
+    traits: [
+      "Cold",
+      "Cave"
+    ],
+    "ability rules": [
+      "Freezing: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Fatigue.",
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Stealthy: Each attack that targets this monster must roll 3 additional range beyond the normally required amount or the attack is a miss."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Conversion Kit",
+    image: "monsters/wendigo-ck-act2-back.png",
+    xws: "wendigo"
+  },
+  {
+    name: "Fire Imps",
+    points: 136,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 5, Health: 2, Defense: Gray, Attack: Blue Yellow, Abilities: Flame Fiend, Surge: +1 Range, Surge: Burn",
+      "Master: Speed: 5, Health: 4, Defense: Gray, Attack: Blue Yellow, Abilities: Combustible, Flame Fiend, Surge: +1 Heart, Surge: Burn"
+    ],
+    expansion: "Lair Of The Wyrm",
+    image: "monsters/fire-imps-lw-act1-front.png",
+    xws: "fire-imps"
+  },
+  {
+    name: "Fire Imps",
+    points: 137,
+    act: "I",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Combustible: When this monster is defeated, each hero adjacent to this monster suffers 1 Heart.",
+      "Flame Fiend: This monster ignores all effects of lava. Each time this monster ends its turn in a space containing lava, it recovers 1 Heart. In addition, this monster never suffers Hearts from burning.",
+      "Burn: If this attack deals at least 1 Heart (after the defense roll), the target is Burning."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 3,2"
+    ],
+    expansion: "Lair Of The Wyrm",
+    image: "monsters/fire-imps-lw-act1-back.png",
+    xws: "fire-imps"
+  },
+  {
+    name: "Fire Imps",
+    points: 138,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 5, Health: 4, Defense: Gray, Attack: Blue Yellow, Abilities: Flame Fiend, Surge: +1 Range, Surge: Burn",
+      "Master: Speed: 5, Health: 6, Defense: Gray, Attack: Blue Yellow Yellow, Abilities: Combustible, Flame Fiend, Surge: +1 Heart, Surge: Burn"
+    ],
+    expansion: "Lair Of The Wyrm",
+    image: "monsters/fire-imps-lw-act2-front.png",
+    xws: "fire-imps"
+  },
+  {
+    name: "Fire Imps",
+    points: 139,
+    act: "II",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Combustible: When this monster is defeated, each hero adjacent to this monster suffers 1 Heart.",
+      "Flame Fiend: This monster ignores all effects of lava. Each time this monster ends its turn in a space containing lava, it recovers 1 Heart. In addition, this monster never suffers Hearts from burning.",
+      "Burn: If this attack deals at least 1 Heart (after the defense roll), the target is Burning."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 3,2"
+    ],
+    expansion: "Lair Of The Wyrm",
+    image: "monsters/fire-imps-lw-act2-back.png",
+    xws: "fire-imps"
+  },
+  {
+    name: "Hybrid Sentinel",
+    points: 140,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Black, Attack: Blue Red, Abilities: Fly, Prey on the Weak, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 8, Defense: Black, Attack: Blue Red, Abilities: Fly, Prey on the Weak, Surge: Fire Breath, Surge: +1 Heart"
+    ],
+    expansion: "Lair Of The Wyrm",
+    image: "monsters/hybrid-sentinel-lw-act1-front.png",
+    xws: "hybridsentinel"
+  },
+  {
+    name: "Hybrid Sentinel",
+    points: 141,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Cave"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Prey on the Weak: Each of this monster's attacks targeting a hero with 2 or less Might gains +1 Heart.",
+      "Fire Breath: Starting with the target space, trace a path of 4 spaces in any direction. All figures on this path are affected by this attack. Each figure rolls defense dice separately."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Lair Of The Wyrm",
+    image: "monsters/hybrid-sentinel-lw-act1-back.png",
+    xws: "hybridsentinel"
+  },
+  {
+    name: "Hybrid Sentinel",
+    points: 142,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Black Brown, Attack: Blue Red, Abilities: Fly, Prey on the Weak, Surge: +1 Heart, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 9, Defense: Black Gray, Attack: Blue Yellow Red, Abilities: Fly, Prey on the Weak, Surge: Fire Breath, Surge: +2 Hearts"
+    ],
+    expansion: "Lair Of The Wyrm",
+    image: "monsters/hybrid-sentinel-lw-act2-front.png",
+    xws: "hybridsentinel"
+  },
+  {
+    name: "Hybrid Sentinel",
+    points: 143,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Cave"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Prey on the Weak: Each of this monster's attacks targeting a hero with 2 or less Might gains +1 Heart.",
+      "Fire Breath: Starting with the target space, trace a path of 4 spaces in any direction. All figures on this path are affected by this attack. Each figure rolls defense dice separately."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Lair Of The Wyrm",
+    image: "monsters/hybrid-sentinel-lw-act2-back.png",
+    xws: "hybridsentinel"
+  },
+  {
+    name: "Arachyura",
+    points: 144,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Gray Brown, Attack: Blue Red Green, Abilities: Action: Pincer Attack, Surge Surge: Pierce 1",
+      "Master: Speed: 3, Health: 7, Defense: Gray Brown, Attack: Blue Red Green, Abilities: Action: Lingering Curse, Pincer Attack, Surge Surge: Pierce 2"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/arachyura-lr-act1-front.png",
+    xws: "arachyura"
+  },
+  {
+    name: "Arachyura",
+    points: 145,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Lingering Curse: When this monster is defeated, each adjacent hero must test Willpower. Each hero that fails is Cursed.",
+      "Pincer Attack: Perform an attack targeting up to 2 heroes adjacent to this monster. 1 attack roll is made but each hero rolls defense dice separately. Each target that suffers at least 1 Heart from this attack (after the defense roll) is Immobilized.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/arachyura-lr-act1-back.png",
+    xws: "arachyura"
+  },
+  {
+    name: "Arachyura",
+    points: 146,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 7, Defense: Black, Attack: Blue Red Green, Abilities: Action: Pincer Attack, Surge Surge: Pierce 2",
+      "Master: Speed: 3, Health: 9, Defense: Black, Attack: Blue Red Green, Abilities: Action: Lingering Curse, Pincer Attack, Surge Surge: Pierce 3"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/arachyura-lr-act2-front.png",
+    xws: "arachyura"
+  },
+  {
+    name: "Arachyura",
+    points: 147,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Lingering Curse: When this monster is defeated, each adjacent hero must test Willpower. Each hero that fails is Cursed.",
+      "Pincer Attack: Perform an attack targeting up to 2 heroes adjacent to this monster. 1 attack roll is made but each hero rolls defense dice separately. Each target that suffers at least 1 Heart from this attack (after the defense roll) is Immobilized.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/arachyura-lr-act2-back.png",
+    xws: "arachyura"
+  },
+  {
+    name: "Carrion Drake",
+    points: 148,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 6, Defense: Gray, Attack: Blue Yellow, Abilities: Fly, Surge: Disease, Surge: +1 Heart",
+      "Master: Speed: 5, Health: 8, Defense: Gray, Attack: Blue Yellow, Abilities: Fly, Plagued, Surge: Disease, Surge: +2 Hearts"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/carrion-drake-lr-act1-front.png",
+    xws: "carriondrake"
+  },
+  {
+    name: "Carrion Drake",
+    points: 149,
+    act: "I",
+    traits: [
+      "Water",
+      "Dark"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Plagued: When a hero adjacent to this monster would discard a Poisoned or a Diseased Condition card, he instead keeps the card.",
+      "Disease: If this attack deals at least 1 Heart (after the defense roll), the target is Diseased."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/carrion-drake-lr-act1-back.png",
+    xws: "carriondrake"
+  },
+  {
+    name: "Carrion Drake",
+    points: 150,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 7, Defense: Gray Brown, Attack: Blue Yellow Green, Abilities: Fly, Surge: Disease, Surge: +1 Heart, Surge: +1 Heart",
+      "Master: Speed: 5, Health: 10, Defense: Gray Gray, Attack: Blue Yellow Green, Abilities: Fly, Plagued, Surge: Disease, Surge: +2 Hearts"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/carrion-drake-lr-act2-front.png",
+    xws: "carriondrake"
+  },
+  {
+    name: "Carrion Drake",
+    points: 151,
+    act: "II",
+    traits: [
+      "Water",
+      "Dark"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Plagued: When a hero adjacent to this monster would discard a Poisoned or a Diseased Condition card, he instead keeps the card.",
+      "Disease: If this attack deals at least 1 Heart (after the defense roll), the target is Diseased."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/carrion-drake-lr-act2-back.png",
+    xws: "carriondrake"
+  },
+  {
+    name: "Goblin Witcher",
+    points: 152,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 3, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Curse, Surge: +1 Range",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Action: Bewitch, Surge: Curse, Surge: +2 Range"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/goblin-witcher-lr-act1-front.png",
+    xws: "goblinwitcher"
+  },
+  {
+    name: "Goblin Witcher",
+    points: 153,
+    act: "I",
+    traits: [
+      "Building",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Bewitch: Move each adjacent Cursed hero up to 2 spaces in any direction of your choice.",
+      "Curse: If this attack deals at least 1 Heart (after the defense roll), the target is Cursed."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/goblin-witcher-lr-act1-back.png",
+    xws: "goblinwitcher"
+  },
+  {
+    name: "Goblin Witcher",
+    points: 154,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Curse, Surge: +2 Range, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 8, Defense: Gray, Attack: Blue Yellow Green, Abilities: Action: Bewitch, Surge: Curse, Surge: +2 Range, Surge: +2 Hearts"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/goblin-witcher-lr-act2-front.png",
+    xws: "goblinwitcher"
+  },
+  {
+    name: "Goblin Witcher",
+    points: 155,
+    act: "II",
+    traits: [
+      "Building",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Bewitch: Move each adjacent Cursed hero up to 2 spaces in any direction of your choice.",
+      "Curse: If this attack deals at least 1 Heart (after the defense roll), the target is Cursed."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/goblin-witcher-lr-act2-back.png",
+    xws: "goblinwitcher"
+  },
+  {
+    name: "Volucrix Reaver",
+    points: 156,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 3, Defense: Gray, Attack: Blue Yellow, Abilities: Action: Skirmish, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Ravage, Action: Skirmish, Surge: Pierce 2, Surge: +1 Heart"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/volucrix-reaver-lr-act1-front.png",
+    xws: "volucrixreaver"
+  },
+  {
+    name: "Volucrix Reaver",
+    points: 157,
+    act: "I",
+    traits: [
+      "Building",
+      "Mountain"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Skirmish: This monster may move 3 spaces, the perform an attack.",
+      "Pierce 2: This attack ignores 2 Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/volucrix-reaver-lr-act1-back.png",
+    xws: "volucrixreaver"
+  },
+  {
+    name: "Volucrix Reaver",
+    points: 158,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray Brown, Attack: Blue Red, Abilities: Action: Skirmish, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 6, Defense: Gray Brown, Attack: Blue Red, Abilities: Ravage, Action: Skirmish, Surge: Pierce 3, Surge: +2 Hearts"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/volucrix-reaver-lr-act2-front.png",
+    xws: "volucrixreaver"
+  },
+  {
+    name: "Volucrix Reaver",
+    points: 159,
+    act: "II",
+    traits: [
+      "Building",
+      "Mountain"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Skirmish: This monster may move 3 spaces, the perform an attack.",
+      "Pierce 2: This attack ignores 2 Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Labyrinth Of Ruin",
+    image: "monsters/volucrix-reaver-lr-act2-back.png",
+    xws: "volucrixreaver"
+  },
+  {
+    name: "Harpy",
+    points: 160,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 3, Defense: Gray, Attack: Blue Green, Abilities: Fly, Surge: Swarm",
+      "Master: Speed: 5, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Fly, Action: Flock, Surge: Swarm"
+    ],
+    expansion: "The Trollfens",
+    image: "monsters/harpy-tf-act1-front.png",
+    xws: "harpy"
+  },
+  {
+    name: "Harpy",
+    points: 161,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Mountain"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Flock: Each minion monster from this monster group within 5 spaces of this monster may immediately move 2 spaces.",
+      "Swarm: This monster deals +1 Heart for each other monster adjacent to the target."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "The Trollfens",
+    image: "monsters/harpy-tf-act1-back.png",
+    xws: "harpy"
+  },
+  {
+    name: "Harpy",
+    points: 162,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 4, Defense: Gray, Attack: Blue Yellow Green, Abilities: Fly, Surge: Swarm",
+      "Master: Speed: 5, Health: 6, Defense: Gray, Attack: Blue Yellow Red, Abilities: Fly, Action: Flock, Surge: Swarm"
+    ],
+    expansion: "The Trollfens",
+    image: "monsters/harpy-tf-act2-front.png",
+    xws: "harpy"
+  },
+  {
+    name: "Harpy",
+    points: 163,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Mountain"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Flock: Each minion monster from this monster group within 5 spaces of this monster may immediately move 2 spaces.",
+      "Swarm: This monster deals +1 Heart for each other monster adjacent to the target."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "The Trollfens",
+    image: "monsters/harpy-tf-act2-back.png",
+    xws: "harpy"
+  },
+  {
+    name: "Plague Worm",
+    points: 164,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 2, Health: 5, Defense: Gray Brown, Attack: Blue Red, Abilities: Action: Burrow, Surge: +1 Heart, Surge: Weaken",
+      "Master: Speed: 2, Health: 7, Defense: Gray Brown, Attack: Blue Red, Abilities: Pestilence, Action: Burrow, Surge: +2 Hearts, Surge: Weaken"
+    ],
+    expansion: "The Trollfens",
+    image: "monsters/plague-worm-tf-act1-front.png",
+    xws: "plagueworm"
+  },
+  {
+    name: "Plague Worm",
+    points: 165,
+    act: "I",
+    traits: [
+      "Water",
+      "Cave"
+    ],
+    "ability rules": [
+      "Pestilence: Each hero adjacent to this monster at the start of his turn must test Willpower. Each hero that fails is Diseased.",
+      "Burrow: Remove this figure from the map and place it in an empty or occupied space up to 3 spaces away. Each figure occupying any target space is moved to the closest empty space of your choice and suffers 1 Fatigue. Limit once per monster per turn.",
+      "Weaken: If this attack deals at least 1 Heart (after the defense roll), the target is Weakened."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "The Trollfens",
+    image: "monsters/plague-worm-tf-act1-back.png",
+    xws: "plagueworm"
+  },
+  {
+    name: "Plague Worm",
+    points: 166,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 2, Health: 6, Defense: Gray Gray, Attack: Blue Red Green, Abilities: Action: Burrow, Surge: +2 Hearts, Surge: Weaken",
+      "Master: Speed: 2, Health: 9, Defense: Gray Gray, Attack: Blue Red Green, Abilities: Pestilence, Action: Burrow, Surge: +3 Hearts, Surge: Weaken"
+    ],
+    expansion: "The Trollfens",
+    image: "monsters/plague-worm-tf-act2-front.png",
+    xws: "plagueworm"
+  },
+  {
+    name: "Plague Worm",
+    points: 167,
+    act: "II",
+    traits: [
+      "Water",
+      "Cave"
+    ],
+    "ability rules": [
+      "Pestilence: Each hero adjacent to this monster at the start of his turn must test Willpower. Each hero that fails is Diseased.",
+      "Burrow: Remove this figure from the map and place it in an empty or occupied space up to 3 spaces away. Each figure occupying any target space is moved to the closest empty space of your choice and suffers 1 Fatigue. Limit once per monster per turn.",
+      "Weaken: If this attack deals at least 1 Heart (after the defense roll), the target is Weakened."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "The Trollfens",
+    image: "monsters/plague-worm-tf-act2-back.png",
+    xws: "plagueworm"
+  },
+  {
+    name: "Changeling",
+    points: 168,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray Brown, Attack: Blue Red, Abilities: Action: Whisper, Surge: Wither, Surge: Bleed",
+      "Master: Speed: 4, Health: 6, Defense: Gray Brown, Attack: Blue Red, Abilities: Hideous Laughter, Action: Whisper, Surge: Wither, Surge: Bleed"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/changeling-sn-act1-front.png",
+    xws: "changeling"
+  },
+  {
+    name: "Changeling",
+    points: 169,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Hideous Laughter: Each hero within 3 spaces of this monster applies -1 to his Might, Willpower, Knowledge, and Awareness (to a minimum of 1).",
+      "Whisper: Each hero adjacent to this monster tests Willpower. Each hero who fails moves 1 space in the direction of your choice.",
+      "Wither: The target suffers 1 Fatigue.",
+      "Bleed: If this attack deals at least 1 Heart (after the defense roll), the target is Bleeding."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/changeling-sn-act1-back.png",
+    xws: "changeling"
+  },
+  {
+    name: "Changeling",
+    points: 170,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Black Brown, Attack: Blue Red, Abilities: Action: Whisper, Surge: Wither, Surge: Bleed",
+      "Master: Speed: 4, Health: 8, Defense: Black Brown, Attack: Blue Red Yellow, Abilities: Hideous Laughter, Action: Whisper, Surge: Wither, Surge: Bleed"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/changeling-sn-act2-front.png",
+    xws: "changeling"
+  },
+  {
+    name: "Changeling",
+    points: 171,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Hideous Laughter: Each hero within 3 spaces of this monster applies -1 to his Might, Willpower, Knowledge, and Awareness (to a minimum of 1).",
+      "Whisper: Each hero adjacent to this monster tests Willpower. Each hero who fails moves 1 space in the direction of your choice.",
+      "Wither: The target suffers 1 Fatigue.",
+      "Bleed: If this attack deals at least 1 Heart (after the defense roll), the target is Bleeding."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/changeling-sn-act2-back.png",
+    xws: "changeling"
+  },
+  {
+    name: "Ironbound",
+    points: 172,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 2, Health: 8, Defense: Gray Gray, Attack: Blue Red, Abilities: Reach, Ironskin, Protect",
+      "Master: Speed: 2, Health: 10, Defense: Gray Gray, Attack: Blue Red, Abilities: Reach, Ironskin, Protect, Surge: +2 Hearts"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/ironbound-sn-act1-front.png",
+    xws: "ironbound"
+  },
+  {
+    name: "Ironbound",
+    points: 173,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Building"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Ironskin: This monster is immune to Pierce and to all Conditions.",
+      "Protect: Each time a figure in this monster's line of sight performs an attack targeting a figure adjacent to this monster, before dice are rolled, this monster may suffer 1 Heart to become the target of the attack. Range and line of sight are still measured to the original target space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/ironbound-sn-act1-back.png",
+    xws: "ironbound"
+  },
+  {
+    name: "Ironbound",
+    points: 174,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 2, Health: 10, Defense: Gray Black, Attack: Blue Red Green, Abilities: Reach, Ironskin, Protect, Surge Surge: +2 Hearts",
+      "Master: Speed: 2, Health: 12, Defense: Gray Black, Attack: Blue Red Green, Abilities: Reach, Ironskin, Protect, Surge: +3 Hearts"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/ironbound-sn-act2-front.png",
+    xws: "ironbound"
+  },
+  {
+    name: "Ironbound",
+    points: 175,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Building"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Ironskin: This monster is immune to Pierce and to all Conditions.",
+      "Protect: Each time a figure in this monster's line of sight performs an attack targeting a figure adjacent to this monster, before dice are rolled, this monster may suffer 1 Heart to become the target of the attack. Range and line of sight are still measured to the original target space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/ironbound-sn-act2-back.png",
+    xws: "ironbound"
+  },
+  {
+    name: "Rat Swarm",
+    points: 176,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 4, Defense: Brown, Attack: Green, Abilities: Action: Merge, Action: Rend, Surge: Feast",
+      "Master: Speed: 3, Health: 5, Defense: Brown, Attack: Green, Abilities: Ravenous, Action: Merge, Action: Rend, Surge: Feast"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/rat-swarm-sn-act1-front.png",
+    xws: "ratswarm"
+  },
+  {
+    name: "Rat Swarm",
+    points: 177,
+    act: "I",
+    traits: [
+      "Building",
+      "Dark"
+    ],
+    "ability rules": [
+      "Ravenous: When attacking a hero that is Bleeding, this monster adds 1 Surge to its attack results.",
+      "Merge: Choose 1 monster adjacent to this monster of the same group. This monster suffers Hearts equal to its remaining health, and the chosen monster recovers an equal amount of Hearts.",
+      "Rend: Choose a hero adjacent to this monster to test Might. If he fails, he is Bleeding.",
+      "Feast: This attack gains +X Hearts, where X is equal to this monster's remaining Health."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/rat-swarm-sn-act1-back.png",
+    xws: "ratswarm"
+  },
+  {
+    name: "Rat Swarm",
+    points: 178,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Gray, Attack: Green, Abilities: Action: Merge, Action: Rend, Surge: Feast",
+      "Master: Speed: 3, Health: 6, Defense: Gray, Attack: Green, Abilities: Ravenous, Action: Merge, Action: Rend, Surge: Feast"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/rat-swarm-sn-act2-front.png",
+    xws: "ratswarm"
+  },
+  {
+    name: "Rat Swarm",
+    points: 179,
+    act: "II",
+    traits: [
+      "Building",
+      "Dark"
+    ],
+    "ability rules": [
+      "Ravenous: When attacking a hero that is Bleeding, this monster adds 1 Surge to its attack results.",
+      "Merge: Choose 1 monster adjacent to this monster of the same group. This monster suffers Hearts equal to its remaining health, and the chosen monster recovers an equal amount of Hearts.",
+      "Rend: Choose a hero adjacent to this monster to test Might. If he fails, he is Bleeding.",
+      "Feast: This attack gains +X Hearts, where X is equal to this monster's remaining Health."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/rat-swarm-sn-act2-back.png",
+    xws: "ratswarm"
+  },
+  {
+    name: "Ynfernael Hulk",
+    points: 180,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 8, Defense: Gray, Attack: Blue Red, Abilities: Action: Bloodrush, Surge: Knockback",
+      "Master: Speed: 3, Health: 9, Defense: Gray, Attack: Blue Red, Abilities: Action: Bloodrush, Surge: Charge, Surge: Knockback"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/ynfernael-hulk-sn-act1-front.png",
+    xws: "ynfernaelhulk"
+  },
+  {
+    name: "Ynfernael Hulk",
+    points: 181,
+    act: "I",
+    traits: [
+      "Cursed",
+      "Hot"
+    ],
+    "ability rules": [
+      "Bloodrush: This monster suffers 1 Heart and gains 5 movement points. Limit once per turn.",
+      "Charge: If this monster was not adjacent to the target at the start of this turn, this attack gains +3 Hearts.",
+      "Knockback: Remove the target from the map, then place him on any empty space within 3 spaces of his original space. He counts as entering that space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/ynfernael-hulk-sn-act1-back.png",
+    xws: "ynfernaelhulk"
+  },
+  {
+    name: "Ynfernael Hulk",
+    points: 182,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 9, Defense: Black, Attack: Blue Red Yellow, Abilities: Action: Bloodrush, Surge: Knockback",
+      "Master: Speed: 3, Health: 10, Defense: Black, Attack: Blue Red Yellow, Abilities: Action: Bloodrush, Surge: Charge, Surge: Knockback"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/ynfernael-hulk-sn-act2-front.png",
+    xws: "ynfernaelhulk"
+  },
+  {
+    name: "Ynfernael Hulk",
+    points: 183,
+    act: "II",
+    traits: [
+      "Cursed",
+      "Hot"
+    ],
+    "ability rules": [
+      "Bloodrush: This monster suffers 1 Heart and gains 5 movement points. Limit once per turn.",
+      "Charge: If this monster was not adjacent to the target at the start of this turn, this attack gains +3 Hearts.",
+      "Knockback: Remove the target from the map, then place him on any empty space within 3 spaces of his original space. He counts as entering that space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Shadow Of Nerekhall",
+    image: "monsters/ynfernael-hulk-sn-act2-back.png",
+    xws: "ynfernaelhulk"
+  },
+  {
+    name: "Bandit",
+    points: 184,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Brown, Attack: Blue Red, Abilities: Action: Pillage, Surge: Poison, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Action: Pillage, Surge: Black Venom, Surge: +2 Hearts"
+    ],
+    expansion: "Manor Of Ravens",
+    image: "monsters/bandit-mr-act1-front.png",
+    xws: "bandit"
+  },
+  {
+    name: "Bandit",
+    points: 185,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Building"
+    ],
+    "ability rules": [
+      "Pillage: Perform an attack that targets an adjacent hero. If that hero is knocked out by this attack, choose 1 of his Search cards and shuffle it into the Search deck.",
+      "Black Venom: If this attack deals at least 1 Heart (after the defense roll), the target is Doomed and Poisoned.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Manor Of Ravens",
+    image: "monsters/bandit-mr-act1-back.png",
+    xws: "bandit"
+  },
+  {
+    name: "Bandit",
+    points: 186,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Gray, Attack: Blue Red, Abilities: Action: Pillage, Surge: Poison, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 7, Defense: Black, Attack: Blue Yellow Yellow, Abilities: Action: Pillage, Surge: Black Venom, Surge: +2 Hearts"
+    ],
+    expansion: "Manor Of Ravens",
+    image: "monsters/bandit-mr-act2-front.png",
+    xws: "bandit"
+  },
+  {
+    name: "Bandit",
+    points: 187,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Building"
+    ],
+    "ability rules": [
+      "Pillage: Perform an attack that targets an adjacent hero. If that hero is knocked out by this attack, choose 1 of his Search cards and shuffle it into the Search deck.",
+      "Black Venom: If this attack deals at least 1 Heart (after the defense roll), the target is Doomed and Poisoned.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Manor Of Ravens",
+    image: "monsters/bandit-mr-act2-back.png",
+    xws: "bandit"
+  },
+  {
+    name: "Wraith",
+    points: 188,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Action: Death Cry, Surge: Doom, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Yellow, Abilities: Reaper, Action: Death Cry, Surge: Doom, Surge: +2 Hearts"
+    ],
+    expansion: "Manor Of Ravens",
+    image: "monsters/wraith-mr-act1-front.png",
+    xws: "wraith"
+  },
+  {
+    name: "Wraith",
+    points: 189,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Reaper: When a hero within 5 spaces of this monster is knocked out, this monster may immediately move up to its Speed and then perform an attack. Limit once per round.",
+      "Death Cry: Choose 1 hero within 3 spaces of this monster. That hero tests Willpower. If he fails, he is Doomed or suffers 1 Heart, your choice. Limit once per round.",
+      "Doom: If this attack deals at least 1 Heart (after the defense roll), the target is Doomed."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Manor Of Ravens",
+    image: "monsters/wraith-mr-act1-back.png",
+    xws: "wraith"
+  },
+  {
+    name: "Wraith",
+    points: 190,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 5, Health: 6, Defense: Black, Attack: Blue Yellow, Abilities: Action: Death Cry, Surge: Doom, Surge: +2 Hearts",
+      "Master: Speed: 5, Health: 8, Defense: Black, Attack: Blue Red Yellow, Abilities: Reaper, Action: Death Cry, Surge: Doom, Surge: +3 Hearts"
+    ],
+    expansion: "Manor Of Ravens",
+    image: "monsters/wraith-mr-act2-front.png",
+    xws: "wraith"
+  },
+  {
+    name: "Wraith",
+    points: 191,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Reaper: When a hero within 5 spaces of this monster is knocked out, this monster may immediately move up to its Speed and then perform an attack. Limit once per round.",
+      "Death Cry: Choose 1 hero within 3 spaces of this monster. That hero tests Willpower. If he fails, he is Doomed or suffers 1 Heart, your choice. Limit once per round.",
+      "Doom: If this attack deals at least 1 Heart (after the defense roll), the target is Doomed."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Manor Of Ravens",
+    image: "monsters/wraith-mr-act2-back.png",
+    xws: "wraith"
+  },
+  {
+    name: "Bone Horror",
+    points: 192,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Extend, Lithesome, Surge: Pierce 1",
+      "Master: Speed: 5, Health: 7, Defense: Gray, Attack: Blue Yellow, Abilities: Extend, Lithesome, Surge: Lash, Surge: Pierce 2"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/bone-horror-mb-act1-front.png",
+    xws: "bonehorror"
+  },
+  {
+    name: "Bone Horror",
+    points: 193,
+    act: "I",
+    traits: [
+      "Cave",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Extend: Each time this monster performs an attack, it may target a figure up to 3 spaces away and in its line of sight.",
+      "Lithesome: Friendly figures do not block this monster's line of sight.",
+      "Lash: After this attack resolves, place the target in an empty space up to 2 spaces away from this monster.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/bone-horror-mb-act1-back.png",
+    xws: "bonehorror"
+  },
+  {
+    name: "Bone Horror",
+    points: 194,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 6, Defense: Black, Attack: Blue Red, Abilities: Extend, Lithesome, Surge: Pierce 1",
+      "Master: Speed: 5, Health: 9, Defense: Black, Attack: Blue Red Yellow, Abilities: Extend, Lithesome, Surge: Lash, Surge: Pierce 2"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/bone-horror-mb-act2-front.png",
+    xws: "bonehorror"
+  },
+  {
+    name: "Bone Horror",
+    points: 195,
+    act: "II",
+    traits: [
+      "Cave",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Extend: Each time this monster performs an attack, it may target a figure up to 3 spaces away and in its line of sight.",
+      "Lithesome: Friendly figures do not block this monster's line of sight.",
+      "Lash: After this attack resolves, place the target in an empty space up to 2 spaces away from this monster.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/bone-horror-mb-act2-back.png",
+    xws: "bonehorror"
+  },
+  {
+    name: "Broodwalker",
+    points: 196,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 2, Health: 7, Defense: Brown, Attack: Blue Yellow, Abilities: Overflowing, Surge: Terrify, Surge: +1 Heart",
+      "Master: Speed: 2, Health: 10, Defense: Brown, Attack: Blue Yellow, Abilities: Hive Defense, Overflowing, Surge: +1 Heart, Surge: Colonize"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/broodwalker-mb-act1-front.png",
+    xws: "broodwalker"
+  },
+  {
+    name: "Broodwalker",
+    points: 197,
+    act: "I",
+    traits: [
+      "Dark",
+      "Building"
+    ],
+    "ability rules": [
+      "Hive Defense: Heroes treat each space adjacent to this monster as a Hazard space.",
+      "Overflowing: Heroes treat each space adjacent to this monster as a Sludge space.",
+      "Colonize: If this attack deals at least 1 Heart (after the defense roll), the target is Immobilized and Terrified.",
+      "Terrify: If this attack deals at least 1 Heart (after the defense roll), the target is Terrified."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/broodwalker-mb-act1-back.png",
+    xws: "broodwalker"
+  },
+  {
+    name: "Broodwalker",
+    points: 198,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 2, Health: 8, Defense: Gray, Attack: Blue Yellow Yellow, Abilities: Overflowing, Surge: Terrify, Surge: +1 Heart",
+      "Master: Speed: 2, Health: 12, Defense: Gray, Attack: Blue Red Yellow, Abilities: Hive Defense, Overflowing, Surge: +1 Heart, Surge: Colonize"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/broodwalker-mb-act2-front.png",
+    xws: "broodwalker"
+  },
+  {
+    name: "Broodwalker",
+    points: 199,
+    act: "II",
+    traits: [
+      "Dark",
+      "Building"
+    ],
+    "ability rules": [
+      "Hive Defense: Heroes treat each space adjacent to this monster as a Hazard space.",
+      "Overflowing: Heroes treat each space adjacent to this monster as a Sludge space.",
+      "Colonize: If this attack deals at least 1 Heart (after the defense roll), the target is Immobilized and Terrified.",
+      "Terrify: If this attack deals at least 1 Heart (after the defense roll), the target is Terrified."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/broodwalker-mb-act2-back.png",
+    xws: "broodwalker"
+  },
+  {
+    name: "Reanimate",
+    points: 200,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 3, Defense: Brown, Attack: Blue, Abilities: Phalanx, Reanimation, Surge: Swarm",
+      "Master: Speed: 3, Health: 5, Defense: Brown, Attack: Blue Red, Abilities: Phalanx, Reanimation, Action: Maneuver, Surge: Swarm"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/reanimate-mb-act1-front.png",
+    xws: "reanimate"
+  },
+  {
+    name: "Reanimate",
+    points: 201,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Phalanx: If this monster is adjacent to a figure from its monster group, replace its brown defense die with 1 gray defense die.",
+      "Reanimation: Each time this monster suffers Hearts and is not defeated, it recovers Hearts equal to either the amount suffered or the number of monsters from this monster group within 3 spaces of it, whichever is less.",
+      "Maneuver: Choose 1 minion monster adjacent to this monster. That monster gains 2 movement points.",
+      "Swarm: This monster deals +1 Heart for each other monster adjacent to the target."
+    ],
+    "group size": [
+      "2 Heroes: 3,1",
+      "3 Heroes: 3,2",
+      "4 Heroes: 4,2"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/reanimate-mb-act1-back.png",
+    xws: "reanimate"
+  },
+  {
+    name: "Reanimate",
+    points: 202,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Brown, Attack: Yellow, Abilities: Phalanx, Reanimation, Surge: Swarm",
+      "Master: Speed: 3, Health: 8, Defense: Brown, Attack: Blue Yellow Yellow, Abilities: Phalanx, Reanimation, Action: Maneuver, Surge: Swarm"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/reanimate-mb-act2-front.png",
+    xws: "reanimate"
+  },
+  {
+    name: "Reanimate",
+    points: 203,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Phalanx: If this monster is adjacent to a figure from its monster group, replace its brown defense die with 1 gray defense die.",
+      "Reanimation: Each time this monster suffers Hearts and is not defeated, it recovers Hearts equal to either the amount suffered or the number of monsters from this monster group within 3 spaces of it, whichever is less.",
+      "Maneuver: Choose 1 minion monster adjacent to this monster. That monster gains 2 movement points.",
+      "Swarm: This monster deals +1 Heart for each other monster adjacent to the target."
+    ],
+    "group size": [
+      "2 Heroes: 3,1",
+      "3 Heroes: 3,2",
+      "4 Heroes: 4,2"
+    ],
+    expansion: "Mists Of Bilehall",
+    image: "monsters/reanimate-mb-act2-back.png",
+    xws: "reanimate"
+  },
+  {
+    name: "Marrow Priest",
+    points: 204,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 7, Defense: Gray Brown, Attack: Blue Yellow, Abilities: Shadow Step, Surge: Mortal Binding, Surge: +1 Heart",
+      "Master: Speed: 5, Health: 9, Defense: Gray Brown, Attack: Blue Yellow, Abilities: Shadow Step, Surge: Mortal Binding, Surge: +1 Heart"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/marrow-priest-cr-act1-front.png",
+    xws: "marrowpriest"
+  },
+  {
+    name: "Marrow Priest",
+    points: 205,
+    act: "I",
+    traits: [
+      "Dark",
+      "Building"
+    ],
+    "ability rules": [
+      "Shadow Step: Each time a hero performs an attack that targets this monster, he may spend 1 Surge. If he does not, this monster gains 5 movement points after the attack resolves.",
+      "Mortal Binding: The target tests Knowledge. If he fails, place his hero token on this card. A hero whose token is on this card cannot recover Hearts by any means. When a monster from this group is defeated or a hero is knocked out, discard all hero tokens from this card."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/marrow-priest-cr-act1-back.png",
+    xws: "marrowpriest"
+  },
+  {
+    name: "Marrow Priest",
+    points: 206,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 8, Defense: Gray Gray, Attack: Blue Yellow Yellow, Abilities: Shadow Step, Surge: Mortal Binding, Surge: +1 Heart",
+      "Master: Speed: 5, Health: 10, Defense: Gray Gray, Attack: Blue Yellow Yellow, Abilities: Shadow Step, Surge: Mortal Binding, Surge: +1 Heart"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/marrow-priest-cr-act2-front.png",
+    xws: "marrowpriest"
+  },
+  {
+    name: "Marrow Priest",
+    points: 207,
+    act: "II",
+    traits: [
+      "Dark",
+      "Building"
+    ],
+    "ability rules": [
+      "Shadow Step: Each time a hero performs an attack that targets this monster, he may spend 1 Surge. If he does not, this monster gains 5 movement points after the attack resolves.",
+      "Mortal Binding: The target tests Knowledge. If he fails, place his hero token on this card. A hero whose token is on this card cannot recover Hearts by any means. When a monster from this group is defeated or a hero is knocked out, discard all hero tokens from this card."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/marrow-priest-cr-act2-back.png",
+    xws: "marrowpriest"
+  },
+  {
+    name: "Shambling Colossus",
+    points: 208,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Black, Attack: Blue Red, Abilities: Puncture, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 8, Defense: Black, Attack: Blue Red, Abilities: Harrowing, Puncture, Surge: +1 Heart"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/shambling-colossus-cr-act1-front.png",
+    xws: "shamblingcolossus"
+  },
+  {
+    name: "Shambling Colossus",
+    points: 209,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Harrowing: Each time a hero within 3 spaces of this monster performs an attack that targets this monster, before rolling dice, that hero tests Willpower. If he fails, he is Terrified.",
+      "Puncture: Each of this monster's attacks ignored 1 Shield for each defense die rolled by the target of that attack."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/shambling-colossus-cr-act1-back.png",
+    xws: "shamblingcolossus"
+  },
+  {
+    name: "Shambling Colossus",
+    points: 210,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 7, Defense: Black, Attack: Blue Red, Abilities: Puncture, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 9, Defense: Black, Attack: Blue Red Yellow, Abilities: Harrowing, Puncture, Surge: +2 Hearts"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/shambling-colossus-cr-act2-front.png",
+    xws: "shamblingcolossus"
+  },
+  {
+    name: "Shambling Colossus",
+    points: 211,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Harrowing: Each time a hero within 3 spaces of this monster performs an attack that targets this monster, before rolling dice, that hero tests Willpower. If he fails, he is Terrified.",
+      "Puncture: Each of this monster's attacks ignored 1 Shield for each defense die rolled by the target of that attack."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/shambling-colossus-cr-act2-back.png",
+    xws: "shamblingcolossus"
+  },
+  {
+    name: "The Dispossessed",
+    points: 212,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 2, Health: 6, Defense: Gray, Attack: Blue Yellow, Abilities: Ethereal Hold, Surge: Fearbrand, Surge: +1 Heart",
+      "Master: Speed: 2, Health: 8, Defense: Gray, Attack: Blue Yellow, Abilities: Ethereal Hold, Surge: Fearbrand, Surge: Terrify, Surge: +1 Heart"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/the-dispossessed-cr-act1-front.png",
+    xws: "thedispossessed"
+  },
+  {
+    name: "The Dispossessed",
+    points: 213,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Ethereal Hold: At the start of the overlord's turn, this monster may discard 1 hero token from its base. If it does, remove it from the map and place it within 3 spaces of the corresponding hero.",
+      "Fearbrand: Choose a hero in this monster's line of sight and place that hero's hero token on this monster's base.",
+      "Terrify: If this attack deals at least 1 Heart (after the defense roll), the target is Terrified."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/the-dispossessed-cr-act1-back.png",
+    xws: "thedispossessed"
+  },
+  {
+    name: "The Dispossessed",
+    points: 214,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 2, Health: 8, Defense: Gray Brown, Attack: Blue Yellow, Abilities: Ethereal Hold, Surge: Fearbrand, Surge: +2 Hearts",
+      "Master: Speed: 2, Health: 10, Defense: Gray Brown, Attack: Blue Yellow Yellow, Abilities: Ethereal Hold, Surge: Fearbrand, Surge: Terrify, Surge: +2 Hearts"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/the-dispossessed-cr-act2-front.png",
+    xws: "thedispossessed"
+  },
+  {
+    name: "The Dispossessed",
+    points: 215,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Ethereal Hold: At the start of the overlord's turn, this monster may discard 1 hero token from its base. If it does, remove it from the map and place it within 3 spaces of the corresponding hero.",
+      "Fearbrand: Choose a hero in this monster's line of sight and place that hero's hero token on this monster's base.",
+      "Terrify: If this attack deals at least 1 Heart (after the defense roll), the target is Terrified."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "The Chains That Rust",
+    image: "monsters/the-dispossessed-cr-act2-back.png",
+    xws: "thedispossessed"
+  },
+  {
+    name: "Bane Spider",
+    points: 216,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Red, Abilities: Surge: Poison, Surge: Pierce 1",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Red, Abilities: Action: Cocoon, Surge: Poison, Surge: Pierce 2"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/bane-spider-oo-act1-front.png",
+    xws: "banespider"
+  },
+  {
+    name: "Bane Spider",
+    points: 217,
+    act: "I",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Cocoon: Each hero adjacent to this monster must test Awareness. Each hero who fails is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/bane-spider-oo-act1-back.png",
+    xws: "banespider"
+  },
+  {
+    name: "Bane Spider",
+    points: 218,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Gray Brown, Attack: Blue Red, Abilities: Surge: Poison, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 9, Defense: Gray Brown, Attack: Blue Red Yellow, Abilities: Action: Cocoon, Surge: Poison, Surge: Pierce 3"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/bane-spider-oo-act2-front.png",
+    xws: "banespider"
+  },
+  {
+    name: "Bane Spider",
+    points: 219,
+    act: "II",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Cocoon: Each hero adjacent to this monster must test Awareness. Each hero that fails is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/bane-spider-oo-act2-back.png",
+    xws: "banespider"
+  },
+  {
+    name: "Beastman",
+    points: 220,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Yellow, Abilities: Ravage, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Command, Ravage, Surge: +2 Hearts"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/beastman-oo-act1-front.png",
+    xws: "beastman"
+  },
+  {
+    name: "Beastman",
+    points: 221,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Wilderness"
+    ],
+    "ability rules": [
+      "Command: Each minion within 3 spaces of this monster may reroll 1 die on each of its attacks. Each minion can only benefit from 1 monster with Command during each of its attacks.",
+      "Ravage: Both of this monster's actions on a turn may be attack actions."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/beastman-oo-act1-back.png",
+    xws: "beastman"
+  },
+  {
+    name: "Beastman",
+    points: 222,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Surge: +2 Hearts",
+      "Master: Speed: 5, Health: 6, Defense: Gray, Attack: Blue Red Yellow, Abilities: Command, Ravage, Surge: +2 Hearts"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/beastman-oo-act2-front.png",
+    xws: "beastman"
+  },
+  {
+    name: "Beastman",
+    points: 223,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Wilderness"
+    ],
+    "ability rules": [
+      "Command: Each minion within 3 spaces of this monster may reroll 1 die on each of its attacks. Each minion can only benefit from 1 monster with Command during each of its attacks.",
+      "Ravage: Both of this monster's actions on a turn may be attack actions."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/beastman-oo-act2-back.png",
+    xws: "beastman"
+  },
+  {
+    name: "Razorwing",
+    points: 224,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 4, Defense: Brown, Attack: Blue Yellow, Abilities: Fly, Surge: +1 Heart",
+      "Master: Speed: 6, Health: 6, Defense: Brown, Attack: Blue Yellow, Abilities: Fly, Surge: Stun, Surge: +1 Heart"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/razorwing-oo-act1-front.png",
+    xws: "razorwing"
+  },
+  {
+    name: "Razorwing",
+    points: 225,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Cave"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/razorwing-oo-act1-back.png",
+    xws: "razorwing"
+  },
+  {
+    name: "Razorwing",
+    points: 226,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 7, Defense: Brown, Attack: Blue Yellow, Abilities: Fly, Surge: +2 Hearts",
+      "Master: Speed: 6, Health: 9, Defense: Brown, Attack: Blue Yellow Yellow, Abilities: Fly, Surge: Stun, Surge: +2 Hearts"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/razorwing-oo-act2-front.png",
+    xws: "razorwing"
+  },
+  {
+    name: "Razorwing",
+    points: 227,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Cave"
+    ],
+    "ability rules": [
+      "Fly: This monster may ignore enemy figures and the effects of terrain while moving. It must end its movement in an empty space following normal movement rules.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Oath Of The Outcast",
+    image: "monsters/razorwing-oo-act2-back.png",
+    xws: "razorwing"
+  },
+  {
+    name: "Chaos Beast",
+    points: 228,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Gray, Attack: Blank, Abilities: Morph, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 6, Defense: Gray, Attack: Blank, Abilities: Morph, Sorcery 2, Surge: +1 Heart"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/chaos-beast-cd-act1-front.png",
+    xws: "chaosbeast"
+  },
+  {
+    name: "Chaos Beast",
+    points: 229,
+    act: "I",
+    traits: [
+      "Dark",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Morph: When this monster attacks, it uses the dice of a figure (overlord's choice) in its lind of sight. If a hero is chosen, the overlord may choose which of the hero's equipped weapons to use. The monster cannot use any of the figure's other abilities.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/chaos-beast-cd-act1-back.png",
+    xws: "chaosbeast"
+  },
+  {
+    name: "Chaos Beast",
+    points: 230,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 7, Defense: Gray, Attack: Blank, Abilities: Morph, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 10, Defense: Gray, Attack: Blank, Abilities: Morph, Sorcery 3, Surge: +1 Heart"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/chaos-beast-cd-act2-front.png",
+    xws: "chaosbeast"
+  },
+  {
+    name: "Chaos Beast",
+    points: 231,
+    act: "II",
+    traits: [
+      "Dark",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Morph: When this monster attacks, it uses the dice of a figure (overlord's choice) in its lind of sight. If a hero is chosen, the overlord may choose which of the hero's equipped weapons to use. The monster cannot use any of the figure's other abilities.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/chaos-beast-cd-act2-back.png",
+    xws: "chaosbeast"
+  },
+  {
+    name: "Giant",
+    points: 232,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 10, Defense: Black, Attack: Blue Red, Abilities: Reach, Surge: Stun",
+      "Master: Speed: 3, Health: 12, Defense: Black, Attack: Blue Red, Abilities: Reach, Action: Sweep, Surge: Stun"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/giant-cd-act1-front.png",
+    xws: "giant"
+  },
+  {
+    name: "Giant",
+    points: 233,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Wilderness"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Sweep: Perform an attack. This attack affects each figure within two spaces and line of sight of this monster. Each figure rolls defense dice separately.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/giant-cd-act1-back.png",
+    xws: "giant"
+  },
+  {
+    name: "Giant",
+    points: 234,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 12, Defense: Black, Attack: Blue Red Yellow, Abilities: Reach, Surge: Stun",
+      "Master: Speed: 3, Health: 15, Defense: Black, Attack: Blue Red Red, Abilities: Reach, Action: Sweep, Surge: Stun"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/giant-cd-act2-front.png",
+    xws: "giant"
+  },
+  {
+    name: "Giant",
+    points: 235,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Wilderness"
+    ],
+    "ability rules": [
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Sweep: Perform an attack. This attack affects each figure within two spaces and line of sight of this monster. Each figure rolls defense dice separately.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/giant-cd-act2-back.png",
+    xws: "giant"
+  },
+  {
+    name: "Lava Beetle",
+    points: 236,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 3, Defense: Gray, Attack: Blue Red, Abilities: Surge: Blast, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Blast, Surge: +1 Heart"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/lava-beetle-cd-act1-front.png",
+    xws: "lavabeetle"
+  },
+  {
+    name: "Lava Beetle",
+    points: 237,
+    act: "I",
+    traits: [
+      "Hot",
+      "Cave"
+    ],
+    "ability rules": [
+      "Blast: This attack affects all figures adjacent to the target space."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/lava-beetle-cd-act1-back.png",
+    xws: "lavabeetle"
+  },
+  {
+    name: "Lava Beetle",
+    points: 238,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Surge: Blast, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 7, Defense: Gray, Attack: Blue Red Yellow, Abilities: Blast, Surge: +2 Hearts, Surge: +1 Heart"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/lava-beetle-cd-act2-front.png",
+    xws: "lavabeetle"
+  },
+  {
+    name: "Lava Beetle",
+    points: 239,
+    act: "II",
+    traits: [
+      "Hot",
+      "Cave"
+    ],
+    "ability rules": [
+      "Blast: This attack affects all figures adjacent to the target space."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Crown Of Destiny",
+    image: "monsters/lava-beetle-cd-act2-back.png",
+    xws: "lavabeetle"
+  },
+  {
+    name: "Golem",
+    points: 240,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 8, Defense: Black, Attack: Blue Red, Abilities: Ironskin, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 10, Defense: Black, Attack: Blue Red, Abilities: Ironskin, Unmovable, Surge: +2 Hearts"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/golem-cf-act1-front.png",
+    xws: "golem"
+  },
+  {
+    name: "Golem",
+    points: 241,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Building"
+    ],
+    "ability rules": [
+      "Ironskin: This monster is immune to Pierce and to all conditions.",
+      "Unmovable: This monster may choose to ignore any game effect that would force it to move."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/golem-cf-act1-back.png",
+    xws: "golem"
+  },
+  {
+    name: "Golem",
+    points: 242,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 10, Defense: Black Gray, Attack: Blue Red Red, Abilities: Ironskin, Surge: +1 Heart",
+      "Master: Speed: 3, Health: 12, Defense: Black Gray, Attack: Blue Red Red, Abilities: Ironskin, Unmovable, Surge: +2 Hearts"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/golem-cf-act2-front.png",
+    xws: "golem"
+  },
+  {
+    name: "Golem",
+    points: 243,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Building"
+    ],
+    "ability rules": [
+      "Ironskin: This monster is immune to Pierce and to all conditions.",
+      "Unmovable: This monster may choose to ignore any game effect that would force it to move."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/golem-cf-act2-back.png",
+    xws: "golem"
+  },
+  {
+    name: "Medusa",
+    points: 244,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Immobilize, Surge: Poison",
+      "Master: Speed: 4, Health: 6, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Immobilize, Surge: Poison, Surge: Stun"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/medusa-cf-act1-front.png",
+    xws: "medusa"
+  },
+  {
+    name: "Medusa",
+    points: 245,
+    act: "I",
+    traits: [
+      "Cursed",
+      "Building"
+    ],
+    "ability rules": [
+      "Immobilize: If this attack deals at least 1 Heart (after the defense roll), the target is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/medusa-cf-act1-back.png",
+    xws: "medusa"
+  },
+  {
+    name: "Medusa",
+    points: 246,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Gray Brown, Attack: Blue Yellow Yellow, Abilities: Surge: Immobilize, Surge: Poison",
+      "Master: Speed: 4, Health: 9, Defense: Gray Brown, Attack: Blue Yellow Yellow, Abilities: Surge: Immobilize, Surge: Poison, Surge: Stun"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/medusa-cf-act2-front.png",
+    xws: "medusa"
+  },
+  {
+    name: "Medusa",
+    points: 247,
+    act: "II",
+    traits: [
+      "Cursed",
+      "Building"
+    ],
+    "ability rules": [
+      "Immobilize: If this attack deals at least 1 Heart (after the defense roll), the target is Immobilized.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned.",
+      "Stun: If this attack deals at least 1 Heart (after the defense roll), the target is Stunned."
+    ],
+    "group size": [
+      "2 Heroes: 2,0",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/medusa-cf-act2-back.png",
+    xws: "medusa"
+  },
+  {
+    name: "Sorcerer",
+    points: 248,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 3, Defense: Gray, Attack: Blue Yellow, Abilities: Sorcery 2, Action: Summon",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Death Wish, Sorcery 3, Action: Summon"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/sorcerer-cf-act1-front.png",
+    xws: "sorcerer"
+  },
+  {
+    name: "Sorcerer",
+    points: 249,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Building"
+    ],
+    "ability rules": [
+      "Death Wish: When this master monster would be defeated, the overlord may choose 1 minion monster of the same group to be defeated instead. If he does, this master monster recovers all Hearts.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Summon: Choose a minion monster within 3 spaces of this monster. Place that minion monster in an empty space adjacent to this monster."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/sorcerer-cf-act1-back.png",
+    xws: "sorcerer"
+  },
+  {
+    name: "Sorcerer",
+    points: 250,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Sorcery 2, Action: Summon",
+      "Master: Speed: 4, Health: 8, Defense: Gray, Attack: Blue Red, Abilities: Death Wish, Sorcery 3, Action: Summon"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/sorcerer-cf-act2-front.png",
+    xws: "sorcerer"
+  },
+  {
+    name: "Sorcerer",
+    points: 251,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Building"
+    ],
+    "ability rules": [
+      "Death Wish: When this master monster would be defeated, the overlord may choose 1 minion monster of the same group to be defeated instead. If he does, this master monster recovers all Hearts.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Summon: Choose a minion monster within 3 spaces of this monster. Place that minion monster in an empty space adjacent to this monster."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Crusade Of The Forgotten",
+    image: "monsters/sorcerer-cf-act2-back.png",
+    xws: "sorcerer"
+  },
+  {
+    name: "Crypt Dragon",
+    points: 252,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 5, Defense: Gray Gray, Attack: Blue Yellow, Abilities: Surge: Blast, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 7, Defense: Gray Gray, Attack: Blue Yellow, Abilities: Action: Cause Fear, Surge: Blast, Surge: +2 Hearts"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/crypt-dragon-gd-act1-front.png",
+    xws: "cryptdragon"
+  },
+  {
+    name: "Crypt Dragon",
+    points: 253,
+    act: "I",
+    traits: [
+      "Dark",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Cause Fear: Choose a hero adjacent to this monster. That hero must test Willpower. If he fails, he moves 2 spaces directly away from this monster and is Immobilized.",
+      "Blast: This attack affects all figures adjacent to the target space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/crypt-dragon-gd-act1-back.png",
+    xws: "cryptdragon"
+  },
+  {
+    name: "Crypt Dragon",
+    points: 254,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 7, Defense: Black Gray, Attack: Blue Red Yellow, Abilities: Horrifying, Surge: Blast, Surge: +2 Hearts",
+      "Master: Speed: 3, Health: 10, Defense: Black Gray, Attack: Blue Red Yellow, Abilities: Horrifying, Action: Cause Fear, Surge: Blast, Surge: +2 Hearts"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/crypt-dragon-gd-act2-front.png",
+    xws: "cryptdragon"
+  },
+  {
+    name: "Crypt Dragon",
+    points: 255,
+    act: "II",
+    traits: [
+      "Dark",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Horrifying: Each hero adjacent to 1 or more monsters with Horrifying applies -1 to his Willpower (to a minimum of 1).",
+      "Cause Fear: Choose a hero adjacent to this monster. That hero must test Willpower. If he fails, he moves 2 spaces directly away from this monster and is Immobilized.",
+      "Blast: This attack affects all figures adjacent to the target space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/crypt-dragon-gd-act2-back.png",
+    xws: "cryptdragon"
+  },
+  {
+    name: "Dark Priest",
+    points: 256,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Brown, Attack: Blue Yellow, Abilities: Action: Dark Prayer, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 6, Defense: Brown, Attack: Blue Yellow, Abilities: Action: Dark Prayer, Action: Heal, Surge: +1 Heart"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/dark-priest-gd-act1-front.png",
+    xws: "darkpriest"
+  },
+  {
+    name: "Dark Priest",
+    points: 257,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Dark Prayer: Choose 1 hero within 5 spaces of this monster. That hero tests Willpower. If he fails, he suffers 1 Fatigue.",
+      "Heal: Choose a monster within 3 spaces of this monster and roll 1 red power die. That monster recovers Hearts equal to the Hearts rolled."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/dark-priest-gd-act1-back.png",
+    xws: "darkpriest"
+  },
+  {
+    name: "Dark Priest",
+    points: 258,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 7, Defense: Brown, Attack: Blue Yellow, Abilities: Action: Dark Prayer, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 9, Defense: Brown, Attack: Blue Yellow Yellow, Abilities: Horrifying, Action: Dark Prayer, Action: Heal, Surge: +2 Hearts"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/dark-priest-gd-act2-front.png",
+    xws: "darkpriest"
+  },
+  {
+    name: "Dark Priest",
+    points: 259,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Horrifying: Each hero adjacent to 1 or more monsters with Horrifying applies -1 to his Willpower (to a minimum of 1).",
+      "Dark Prayer: Choose 1 hero within 5 spaces of this monster. That hero tests Willpower. If he fails, he suffers 1 Fatigue.",
+      "Heal: Choose a monster within 3 spaces of this monster and roll 1 red power die. That monster recovers Hearts equal to the Hearts rolled."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/dark-priest-gd-act2-back.png",
+    xws: "darkpriest"
+  },
+  {
+    name: "Wendigo",
+    points: 260,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Stealthy, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Red, Abilities: Freezing, Ravage, Stealthy, Surge: +1 Heart"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/wendigo-gd-act1-front.png",
+    xws: "wendigo"
+  },
+  {
+    name: "Wendigo",
+    points: 261,
+    act: "I",
+    traits: [
+      "Cold",
+      "Cave"
+    ],
+    "ability rules": [
+      "Freezing: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Fatigue.",
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Stealthy: Each attack that targets this monster must roll 3 additional range beyond the normally required amount or the attack is a miss."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/wendigo-gd-act1-back.png",
+    xws: "wendigo"
+  },
+  {
+    name: "Wendigo",
+    points: 262,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Stealthy, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 10, Defense: Gray, Attack: Blue Red Yellow, Abilities: Freezing, Ravage, Stealthy, Surge: +2 Hearts"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/wendigo-gd-act2-front.png",
+    xws: "wendigo"
+  },
+  {
+    name: "Wendigo",
+    points: 263,
+    act: "II",
+    traits: [
+      "Cold",
+      "Cave"
+    ],
+    "ability rules": [
+      "Freezing: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Fatigue.",
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Stealthy: Each attack that targets this monster must roll 3 additional range beyond the normally required amount or the attack is a miss."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Guardians Of Deephall",
+    image: "monsters/wendigo-gd-act2-back.png",
+    xws: "wendigo"
+  },
+  {
+    name: "Manticore",
+    points: 264,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Ravage, Surge: Pierce 2, Surge: +1 Range",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Yellow, Abilities: Ravage, Surge: Pierce 3, Surge: Poison, Surge: +1 Range"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/manticore-vd-act1-front.png",
+    xws: "manticore"
+  },
+  {
+    name: "Manticore",
+    points: 265,
+    act: "I",
+    traits: [
+      "Wilderness",
+      "Dark"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/manticore-vd-act1-back.png",
+    xws: "manticore"
+  },
+  {
+    name: "Manticore",
+    points: 266,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Yellow Yellow, Abilities: Ravage, Surge: Pierce 3, Surge: +2 Range",
+      "Master: Speed: 4, Health: 9, Defense: Gray, Attack: Blue Yellow Yellow, Abilities: Ravage, Surge: Pierce 4, Surge: Poison, Surge: +2 Range"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/manticore-vd-act2-front.png",
+    xws: "manticore"
+  },
+  {
+    name: "Manticore",
+    points: 267,
+    act: "II",
+    traits: [
+      "Wilderness",
+      "Dark"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/manticore-vd-act2-back.png",
+    xws: "manticore"
+  },
+  {
+    name: "Ogre",
+    points: 268,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 6, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Knockback, Surge: +3 Hearts",
+      "Master: Speed: 3, Health: 9, Defense: Gray, Attack: Blue Red, Abilities: Fleshmonger, Surge: Knockback, Surge: +3 Hearts"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/ogre-vd-act1-front.png",
+    xws: "ogre"
+  },
+  {
+    name: "Ogre",
+    points: 269,
+    act: "I",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Fleshmonger: Each time a hero whose hero token is not on this card suffers 1 or more Hearts from an attack performed by this monster, place 1 of his hero tokens on this card. For each hero token on this card, this monster applies +2 to its Health. When this monster is defeated, discard all hero tokens from this card.",
+      "Knockback: Remove the target from the map, then place him on any empty space within 3 spaces of his original space. He counts as entering that space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/ogre-vd-act1-back.png",
+    xws: "ogre"
+  },
+  {
+    name: "Ogre",
+    points: 270,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 9, Defense: Gray, Attack: Blue Yellow, Abilities: Surge: Knockback, Surge: +3 Hearts",
+      "Master: Speed: 3, Health: 12, Defense: Gray, Attack: Blue Red Yellow, Abilities: Fleshmonger, Surge: Knockback, Surge: +3 Hearts"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/ogre-vd-act2-front.png",
+    xws: "ogre"
+  },
+  {
+    name: "Ogre",
+    points: 271,
+    act: "II",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Fleshmonger: Each time a hero whose hero token is not on this card suffers 1 or more Hearts from an attack performed by this monster, place 1 of his hero tokens on this card. For each hero token on this card, this monster applies +2 to its Health. When this monster is defeated, discard all hero tokens from this card.",
+      "Knockback: Remove the target from the map, then place him on any empty space within 3 spaces of his original space. He counts as entering that space."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/ogre-vd-act2-back.png",
+    xws: "ogre"
+  },
+  {
+    name: "Troll",
+    points: 272,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 8, Defense: Gray, Attack: Blue Red, Abilities: Backswing, Reach",
+      "Master: Speed: 3, Health: 10, Defense: Gray, Attack: Blue Red, Abilities: Backswing, Reach, Action: Sweep"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/troll-vd-act1-front.png",
+    xws: "troll"
+  },
+  {
+    name: "Troll",
+    points: 273,
+    act: "I",
+    traits: [
+      "Mountain",
+      "Cave"
+    ],
+    "ability rules": [
+      "Backswing: Use immediately after performing an attack to choose any number of figures affected by that attack. Each of those figures tests Awareness. If none of the figures pass, each chose figure suffers 2 Hearts and is Stunned.",
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Sweep: Perform an attack. This attack effects each figure within 2 spaces and line of sight of this monster. Each figure rolls defense dice separately."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/troll-vd-act1-back.png",
+    xws: "troll"
+  },
+  {
+    name: "Troll",
+    points: 274,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 10, Defense: Gray, Attack: Blue Red Red, Abilities: Backswing, Reach",
+      "Master: Speed: 3, Health: 13, Defense: Gray, Attack: Blue Red Red, Abilities: Backswing, Reach, Action: Sweep"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/troll-vd-act2-front.png",
+    xws: "troll"
+  },
+  {
+    name: "Troll",
+    points: 275,
+    act: "II",
+    traits: [
+      "Mountain",
+      "Cave"
+    ],
+    "ability rules": [
+      "Backswing: Use immediately after performing an attack to choose any number of figures affected by that attack. Each of those figures tests Awareness. If none of the figures pass, each chose figure suffers 2 Hearts and is Stunned.",
+      "Reach: This monster may attack targets up to 2 spaces away.",
+      "Sweep: Perform an attack. This attack effects each figure within 2 spaces and line of sight of this monster. Each figure rolls defense dice separately."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Visions Of Dawn",
+    image: "monsters/troll-vd-act2-back.png",
+    xws: "troll"
+  },
+  {
+    name: "Deep Elf",
+    points: 276,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 7, Defense: Brown, Attack: Blue Yellow, Abilities: Stealthy, Pierce 2, Surge: +1 Heart",
+      "Master: Speed: 5, Health: 9, Defense: Brown, Attack: Blue Yellow, Abilities: Riposte, Stealthy, Pierce 3, Surge: +1 Heart"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/deep-elf-bw-act1-front.png",
+    xws: "deepelf"
+  },
+  {
+    name: "Deep Elf",
+    points: 277,
+    act: "I",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Riposte: Each time an adjacent figure resolves an attack that affects this monster, that figure suffers Hearts equal to the defense results; if the attack is a miss, the figure suffers Hearts equal to the Hearts rolled instead.",
+      "Stealthy: Each attack that targets this monster must roll 3 additional range beyond the normally required amount or the attack is a miss.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/deep-elf-bw-act1-back.png",
+    xws: "deepelf"
+  },
+  {
+    name: "Deep Elf",
+    points: 278,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 8, Defense: Gray, Attack: Blue Yellow, Abilities: Stealthy, Pierce 2, Surge: +2 Hearts",
+      "Master: Speed: 5, Health: 10, Defense: Gray, Attack: Blue Yellow, Abilities: Riposte, Stealthy, Pierce 4, Surge: +2 Hearts"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/deep-elf-bw-act2-front.png",
+    xws: "deepelf"
+  },
+  {
+    name: "Deep Elf",
+    points: 279,
+    act: "II",
+    traits: [
+      "Dark",
+      "Cave"
+    ],
+    "ability rules": [
+      "Riposte: Each time an adjacent figure resolves an attack that affects this monster, that figure suffers Hearts equal to the defense results; if the attack is a miss, the figure suffers Hearts equal to the Hearts rolled instead.",
+      "Stealthy: Each attack that targets this monster must roll 3 additional range beyond the normally required amount or the attack is a miss.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/deep-elf-bw-act2-back.png",
+    xws: "deepelf"
+  },
+  {
+    name: "Hellhound",
+    points: 280,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Red, Abilities: Surge: Hunt, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 6, Defense: Gray, Attack: Blue Red, Abilities: Surge: Hunt, Surge: Fire Breath, Surge: Pierce 2"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/hellhound-bw-act1-front.png",
+    xws: "hellhound"
+  },
+  {
+    name: "Hellhound",
+    points: 281,
+    act: "I",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Hunt: After this attack resolves, you may remove the target from the map and place it in an empty space adjacent to this monster.",
+      "Fire Breath: Starting with the target space, trace a path of 4 spaces in any direction. All figures on this path are affected by this attack. Each figure rolls defense dice separately.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/hellhound-bw-act1-back.png",
+    xws: "hellhound"
+  },
+  {
+    name: "Hellhound",
+    points: 282,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 6, Defense: Black, Attack: Blue Red, Abilities: Surge: Hunt, Surge: Pierce 3",
+      "Master: Speed: 5, Health: 8, Defense: Black, Attack: Blue Red Yellow, Abilities: Surge: Hunt, Surge: Fire Breath, Surge: Pierce 3"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/hellhound-bw-act2-front.png",
+    xws: "hellhound"
+  },
+  {
+    name: "Hellhound",
+    points: 283,
+    act: "II",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Hunt: After this attack resolves, you may remove the target from the map and place it in an empty space adjacent to this monster.",
+      "Fire Breath: Starting with the target space, trace a path of 4 spaces in any direction. All figures on this path are affected by this attack. Each figure rolls defense dice separately.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/hellhound-bw-act2-back.png",
+    xws: "hellhound"
+  },
+  {
+    name: "Kobold",
+    points: 284,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 3, Health: 2, Defense: Brown, Attack: Blue, Abilities: Scamper, Small Beginnings, Surge: Swarm",
+      "Master: Speed: 3, Health: 5, Defense: Brown, Attack: Blue Yellow, Abilities: Scamper, Spawner, Surge: Swarm"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/kobold-bw-act1-front.png",
+    xws: "kobold"
+  },
+  {
+    name: "Kobold",
+    points: 285,
+    act: "I",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Scamper: This monster may move through spaces containing heroes.",
+      "Small Beginnings: Do not place this monster during Setup.",
+      "Spawner: At the start of each overlord turn, place 1 minion Kobold adjacent to this monster, respecting group limits.",
+      "Swarm: This monster deals +1 Heart for each other monster adjacent to the target."
+    ],
+    "group size": [
+      "2 Heroes: 4,2",
+      "3 Heroes: 8,2",
+      "4 Heroes: 9,3"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/kobold-bw-act1-back.png",
+    xws: "kobold"
+  },
+  {
+    name: "Kobold",
+    points: 286,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Brown, Attack: Blue, Abilities: Scamper, Small Beginnings, Surge: Swarm",
+      "Master: Speed: 4, Health: 7, Defense: Brown, Attack: Blue Yellow, Abilities: Scamper, Spawner, Surge: Swarm"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/kobold-bw-act2-front.png",
+    xws: "kobold"
+  },
+  {
+    name: "Kobold",
+    points: 287,
+    act: "II",
+    traits: [
+      "Building",
+      "Cave"
+    ],
+    "ability rules": [
+      "Scamper: This monster may move through spaces containing heroes.",
+      "Small Beginnings: Do not place this monster during Setup.",
+      "Spawner: At the start of each overlord turn, place 1 minion Kobold adjacent to this monster, respecting group limits.",
+      "Swarm: This monster deals +1 Heart for each other monster adjacent to the target."
+    ],
+    "group size": [
+      "2 Heroes: 4,2",
+      "3 Heroes: 8,2",
+      "4 Heroes: 9,3"
+    ],
+    expansion: "Bonds Of The Wild",
+    image: "monsters/kobold-bw-act2-back.png",
+    xws: "kobold"
+  },
+  {
+    name: "Crow Hag",
+    points: 288,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Yellow, Abilities: Lifethirst 1, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 7, Defense: Black, Attack: Blue Yellow, Abilities: Lifethirst 1, Action: Death Omen, Surge: +1 Heart"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/crow-hag-tc-act1-front.png",
+    xws: "crowhag"
+  },
+  {
+    name: "Crow Hag",
+    points: 289,
+    act: "I",
+    traits: [
+      "Dark",
+      "Civilized"
+    ],
+    "ability rules": [
+      "Lifethirst X: Each time a hero within 5 spaces of this monster recovers 1 or more Hearts, that hero reduces the amount of Hearts recovered by X (to a minimum of 0).",
+      "Death Omen: Choose 1 hero in this monster's line of sight. That hero may choose to suffer 2 Hearts. If he does not, he suffers 1 condition of your choice."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/crow-hag-tc-act1-back.png",
+    xws: "crowhag"
+  },
+  {
+    name: "Crow Hag",
+    points: 290,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 5, Health: 7, Defense: Black, Attack: Blue Yellow, Abilities: Lifethirst 1, Surge: +2 Hearts",
+      "Master: Speed: 5, Health: 9, Defense: Black Gray, Attack: Blue Yellow, Abilities: Lifethirst 2, Action: Death Omen, Surge: +2 Hearts"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/crow-hag-tc-act2-front.png",
+    xws: "crowhag"
+  },
+  {
+    name: "Crow Hag",
+    points: 291,
+    act: "II",
+    traits: [
+      "Dark",
+      "Civilized"
+    ],
+    "ability rules": [
+      "Lifethirst X: Each time a hero within 5 spaces of this monster recovers 1 or more Hearts, that hero reduces the amount of Hearts recovered by X (to a minimum of 0).",
+      "Death Omen: Choose 1 hero in this monster's line of sight. That hero may choose to suffer 2 Hearts. If he does not, he suffers 1 condition of your choice."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/crow-hag-tc-act2-back.png",
+    xws: "crowhag"
+  },
+  {
+    name: "Demon Lord",
+    points: 292,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 6, Defense: Gray Gray, Attack: Blue Yellow, Abilities: Sorcery 2, Surge: Wither",
+      "Master: Speed: 3, Health: 9, Defense: Gray Gray, Attack: Blue Yellow, Abilities: Aura 1, Sorcery 3, Surge: Wither"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/demon-lord-tc-act1-front.png",
+    xws: "demonlord"
+  },
+  {
+    name: "Demon Lord",
+    points: 293,
+    act: "I",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Aura X: Each time a hero enters a space adjacent to this monster, that hero suffers X Hearts.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Wither: The target suffers 1 Fatigue."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/demon-lord-tc-act1-back.png",
+    xws: "demonlord"
+  },
+  {
+    name: "Demon Lord",
+    points: 294,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 3, Health: 8, Defense: Gray Gray, Attack: Blue Yellow Yellow, Abilities: Sorcery 2, Surge: Wither",
+      "Master: Speed: 3, Health: 12, Defense: Gray Gray, Attack: Blue Red Yellow, Abilities: Aura 1, Sorcery 3, Surge: Wither"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/demon-lord-tc-act2-front.png",
+    xws: "demonlord"
+  },
+  {
+    name: "Demon Lord",
+    points: 295,
+    act: "II",
+    traits: [
+      "Hot",
+      "Cursed"
+    ],
+    "ability rules": [
+      "Aura 1: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Heart.",
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Wither: That target suffers 1 Fatigue."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/demon-lord-tc-act2-back.png",
+    xws: "demonlord"
+  },
+  {
+    name: "Skeleton Archer",
+    points: 296,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 3, Defense: Brown, Attack: Blue Yellow, Abilities: Pierce 1, Reanimation, Surge: +1 Range",
+      "Master: Speed: 4, Health: 6, Defense: Brown, Attack: Blue Yellow, Abilities: Pierce 1, Reanimation, Surge: +1 Range, Surge: +1 Heart"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/skeleton-archer-tc-act1-front.png",
+    xws: "skeletonarcher"
+  },
+  {
+    name: "Skeleton Archer",
+    points: 297,
+    act: "I",
+    traits: [
+      "Cursed",
+      "Civilized"
+    ],
+    "ability rules": [
+      "Pierce X: This attack ignores X Shields rolled on the defense dice.",
+      "Reanimation: Each time this monster suffers Hearts and is not defeated, it recovers Hearts equal to either the amount suffered or the number of monsters from this monster group within 3 spaces of it, whichever is less."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/skeleton-archer-tc-act1-back.png",
+    xws: "skeletonarcher"
+  },
+  {
+    name: "Skeleton Archer",
+    points: 298,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Brown, Attack: Blue Yellow, Abilities: Pierce 1, Reanimation, Surge: +2 Range, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 8, Defense: Brown, Attack: Blue Yellow, Abilities: Pierce 2, Reanimation, Surge: +2 Range, Surge: +2 Hearts"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/skeleton-archer-tc-act2-front.png",
+    xws: "skeletonarcher"
+  },
+  {
+    name: "Skeleton Archer",
+    points: 299,
+    act: "II",
+    traits: [
+      "Cursed",
+      "Civilized"
+    ],
+    "ability rules": [
+      "Pierce X: This attack ignores X Shields rolled on the defense dice.",
+      "Reanimation: Each time this monster suffers Hearts and is not defeated, it recovers Hearts equal to either the amount suffered or the number of monsters from this monster group within 3 spaces of it, whichever is less."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Treaty Of Champions",
+    image: "monsters/skeleton-archer-tc-act2-back.png",
+    xws: "skeletonarcher"
+  },
+  {
+    name: "Blood Ape",
+    points: 300,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Surge: +1 Heart",
+      "Master: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Red, Abilities: Ravage, Action: Leap Attack, Surge: +2 Hearts"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/blood-ape-ss-act1-front.png",
+    xws: "bloodape"
+  },
+  {
+    name: "Blood Ape",
+    points: 301,
+    act: "I",
+    traits: [
+      "Cave",
+      "Hot"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Leap Attack: This monster moves up to its Speed. During this movement, it may move through spaces containing enemy figures. Then, perform an attack that affects each figure this monster moved through during this action."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/blood-ape-ss-act1-back.png",
+    xws: "bloodape"
+  },
+  {
+    name: "Blood Ape",
+    points: 302,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 7, Defense: Gray, Attack: Blue Red Yellow, Abilities: Ravage, Surge: +2 Hearts",
+      "Master: Speed: 4, Health: 9, Defense: Gray, Attack: Blue Red Red, Abilities: Ravage, Action: Leap Attack, Surge: +2 Hearts"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/blood-ape-ss-act2-front.png",
+    xws: "bloodape"
+  },
+  {
+    name: "Blood Ape",
+    points: 303,
+    act: "II",
+    traits: [
+      "Cave",
+      "Hot"
+    ],
+    "ability rules": [
+      "Ravage: Both of this monster's actions on a turn may be attack actions.",
+      "Leap Attack: This monster moves up to its Speed. During this movement, it may move through spaces containing enemy figures. Then, perform an attack that affects each figure this monster moved through during this action."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/blood-ape-ss-act2-back.png",
+    xws: "bloodape"
+  },
+  {
+    name: "Ferrox",
+    points: 304,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 4, Defense: Gray, Attack: Blue Red, Abilities: Surge: Disease, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 5, Defense: Gray, Attack: Blue Red, Abilities: Action: Extract, Surge: Disease, Surge: Pierce 2"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/ferrox-ss-act1-front.png",
+    xws: "ferrox"
+  },
+  {
+    name: "Ferrox",
+    points: 305,
+    act: "I",
+    traits: [
+      "Cave",
+      "Water"
+    ],
+    "ability rules": [
+      "Extract: Choose a hero adjacent to this monster. That hero tests Might. If he fails, that hero suffers 2 Fatigue, and this monster recovers 2 Hearts.",
+      "Disease: If this attack deals at least 1 Heart (after the defense roll), the target is Diseased.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/ferrox-ss-act1-back.png",
+    xws: "ferrox"
+  },
+  {
+    name: "Ferrox",
+    points: 306,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Gray Brown, Attack: Blue Red Yellow, Abilities: Surge: Disease, Surge: Pierce 3",
+      "Master: Speed: 4, Health: 8, Defense: Gray Brown, Attack: Blue Red Yellow, Abilities: Action: Extract, Surge: Disease, Surge: Pierce 3"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/ferrox-ss-act2-front.png",
+    xws: "ferrox"
+  },
+  {
+    name: "Ferrox",
+    points: 307,
+    act: "II",
+    traits: [
+      "Cave",
+      "Water"
+    ],
+    "ability rules": [
+      "Extract: Choose a hero adjacent to this monster. That hero tests Might. If he fails, that hero suffers 2 Fatigue, and this monster recovers 2 Hearts.",
+      "Disease: If this attack deals at least 1 Heart (after the defense roll), the target is Diseased.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,1",
+      "3 Heroes: 2,1",
+      "4 Heroes: 3,1"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/ferrox-ss-act2-back.png",
+    xws: "ferrox"
+  },
+  {
+    name: "Naga",
+    points: 308,
+    act: "I",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 5, Defense: Black, Attack: Blue Red, Abilities: Sorcery 1, Surge: Poison",
+      "Master: Speed: 4, Health: 6, Defense: Black, Attack: Blue Red, Abilities: Sorcery 2, Action: Constrict, Surge: Poison"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/naga-ss-act1-front.png",
+    xws: "naga"
+  },
+  {
+    name: "Naga",
+    points: 309,
+    act: "I",
+    traits: [
+      "Water",
+      "Cave"
+    ],
+    "ability rules": [
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Constrict: Choose 1 hero adjacent to this monster. That hero tests Might. If he fails, he is Immobilized, this monster may move 1 space, and then you may place the hero in an empty space adjacent to this monster.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/naga-ss-act1-back.png",
+    xws: "naga"
+  },
+  {
+    name: "Naga",
+    points: 310,
+    act: "II",
+    attack: "Range",
+    characteristics: [
+      "Minion: Speed: 4, Health: 6, Defense: Black, Attack: Blue Red, Abilities: Sorcery 3, Surge: Poison",
+      "Master: Speed: 4, Health: 8, Defense: Black, Attack: Blue Red Yellow, Abilities: Sorcery 3, Action: Constrict, Surge: Poison"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/naga-ss-act2-front.png",
+    xws: "naga"
+  },
+  {
+    name: "Naga",
+    points: 311,
+    act: "II",
+    traits: [
+      "Water",
+      "Cave"
+    ],
+    "ability rules": [
+      "Sorcery X: After making an attack roll, this monster may convert up to X range to Hearts, or up to X Hearts to range.",
+      "Constrict: Choose 1 hero adjacent to this monster. That hero tests Might. If he fails, he is Immobilized, this monster may move 1 space, and then you may place the hero in an empty space adjacent to this monster.",
+      "Poison: If this attack deals at least 1 Heart (after the defense roll), the target is Poisoned."
+    ],
+    "group size": [
+      "2 Heroes: 0,1",
+      "3 Heroes: 1,1",
+      "4 Heroes: 2,1"
+    ],
+    expansion: "Stewards Of The Secret",
+    image: "monsters/naga-ss-act2-back.png",
+    xws: "naga"
+  },
+  {
+    name: "Dark Minotaur",
+    points: 312,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 8, Defense: Brown, Attack: Blue, Abilities: Bull Rush, Filthy Murk, Putrid Boils, Surge: Pierce 1",
+      "Master: Speed: 4, Health: 8, Defense: Black, Attack: Blue, Abilities: Bull Rush, Filthy Murk, Putrid Boils, Surge: Pierce 2"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/dark-minotaur-se-act1-front.png",
+    xws: "darkminotaur"
+  },
+  {
+    name: "Dark Minotaur",
+    points: 313,
+    act: "I",
+    traits: [
+      "Civilized",
+      "Dark"
+    ],
+    "ability rules": [
+      "Bull Rush: Each time this monster targets a space that it was not adjacent to at the start of its activation, add 1 red power die to its attack pool.",
+      "Filthy Murk: At the end of this monster's activation, each hero within 3 spaces of it is Diseased.",
+      "Putrid Boils: Each time a Diseased hero within 3 spaces of 1 or more monsters with Putrid Boils voluntarily suffers 1 or more Fatigue, that hero suffers 1 Heart.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/dark-minotaur-se-act1-back.png",
+    xws: "darkminotaur"
+  },
+  {
+    name: "Dark Minotaur",
+    points: 314,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 10, Defense: Gray Brown, Attack: Blue Red, Abilities: Bull Rush, Filthy Murk, Putrid Boils, Surge: Pierce 2",
+      "Master: Speed: 4, Health: 10, Defense: Gray Black, Attack: Blue Red, Abilities: Bull Rush, Filthy Murk, Putrid Boils, Surge: Pierce 4"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/dark-minotaur-se-act2-front.png",
+    xws: "darkminotaur"
+  },
+  {
+    name: "Dark Minotaur",
+    points: 315,
+    act: "II",
+    traits: [
+      "Civilized",
+      "Dark"
+    ],
+    "ability rules": [
+      "Bull Rush: Each time this monster targets a space that it was not adjacent to at the start of its activation, add 1 red power die to its attack pool.",
+      "Filthy Murk: At the end of this monster's activation, each hero within 3 spaces of it is Diseased.",
+      "Putrid Boils: Each time a Diseased hero within 3 spaces of 1 or more monsters with Putrid Boils voluntarily suffers 1 or more Fatigue, that hero suffers 1 Heart.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/dark-minotaur-se-act2-back.png",
+    xws: "darkminotaur"
+  },
+  {
+    name: "Ice Wyrm",
+    points: 316,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 7, Defense: Gray Gray, Attack: Blue Red, Abilities: Entomb, Reach",
+      "Master: Speed: 4, Health: 9, Defense: Gray Gray, Attack: Blue Red, Abilities: Entomb, Freezing, Reach"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/ice-wyrm-se-act1-front.png",
+    xws: "icewyrm"
+  },
+  {
+    name: "Ice Wyrm",
+    points: 317,
+    act: "I",
+    traits: [
+      "Cold",
+      "Cave"
+    ],
+    "ability rules": [
+      "Entomb: Knocked-out heroes within 1 space of this monster can only recover Hearts from stand up actions and heroic feats.",
+      "Freezing: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Fatigue.",
+      "Reach: This monster may attack targets up to 2 spaces away."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/ice-wyrm-se-act1-back.png",
+    xws: "icewyrm"
+  },
+  {
+    name: "Ice Wyrm",
+    points: 318,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 11, Defense: Gray Gray, Attack: Blue Red Red, Abilities: Entomb, Reach",
+      "Master: Speed: 4, Health: 14, Defense: Gray Gray, Attack: Blue Red Red, Abilities: Entomb, Freezing, Reach"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/ice-wyrm-se-act2-front.png",
+    xws: "icewyrm"
+  },
+  {
+    name: "Ice Wyrm",
+    points: 319,
+    act: "II",
+    traits: [
+      "Cold",
+      "Cave"
+    ],
+    "ability rules": [
+      "Entomb: Knocked-out heroes within 1 space of this monster can only recover Hearts from stand up actions and heroic feats.",
+      "Freezing: Each time a hero enters a space adjacent to this monster, that hero suffers 1 Fatigue.",
+      "Reach: This monster may attack targets up to 2 spaces away."
+    ],
+    "group size": [
+      "2 Heroes: 1,0",
+      "3 Heroes: 0,1",
+      "4 Heroes: 1,1"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/ice-wyrm-se-act2-back.png",
+    xws: "icewyrm"
+  },
+  {
+    name: "Shade",
+    points: 320,
+    act: "I",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 4, Health: 2, Defense: Black, Attack: Blue Yellow, Abilities: Soul Shackle 1, Action: Flicker, Surge: Pierce 1",
+      "Master: Speed: 4, Health: 5, Defense: Black, Attack: Blue Yellow, Abilities: Soul Shackle 2, Action: Flicker, Surge: Pierce 2"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/shade-se-act1-front.png",
+    xws: "shade"
+  },
+  {
+    name: "Shade",
+    points: 321,
+    act: "I",
+    traits: [
+      "Cursed",
+      "Dark"
+    ],
+    "ability rules": [
+      "Soul Shackle X: Each time a hero within 3 spaces of this monster recovers 1 or more Fatigue, this monster may suffer X Hearts to reduce the amount of Fatigue recovered by X (to a minimum of 0).",
+      "Flicker: Choose 1 hero within 3 spaces of this monster. Remove this monster from the map and place it adjacent to that hero. Then, if this monster has not performed an attack this activation, that hero tests Awareness. If he fails, perform an attack with this monster that targets that hero.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/shade-se-act1-back.png",
+    xws: "shade"
+  },
+  {
+    name: "Shade",
+    points: 322,
+    act: "II",
+    attack: "Melee",
+    characteristics: [
+      "Minion: Speed: 5, Health: 4, Defense: Black, Attack: Blue Red, Abilities: Soul Shackle 1, Action: Flicker, Surge: Pierce 1",
+      "Master: Speed: 5, Health: 7, Defense: Black, Attack: Blue Red Yellow, Abilities: Soul Shackle 3, Action: Flicker, Surge: Pierce 2"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/shade-se-act2-front.png",
+    xws: "shade"
+  },
+  {
+    name: "Shade",
+    points: 323,
+    act: "II",
+    traits: [
+      "Cursed",
+      "Dark"
+    ],
+    "ability rules": [
+      "Soul Shackle X: Each time a hero within 3 spaces of this monster recovers 1 or more Fatigue, this monster may suffer X Hearts to reduce the amount of Fatigue recovered by X (to a minimum of 0).",
+      "Flicker: Choose 1 hero within 3 spaces of this monster. Remove this monster from the map and place it adjacent to that hero. Then, if this monster has not performed an attack this activation, that hero tests Awareness. If he fails, perform an attack with this monster that targets that hero.",
+      "Pierce X: This attack ignores X Shields rolled on the defense dice."
+    ],
+    "group size": [
+      "2 Heroes: 2,1",
+      "3 Heroes: 3,1",
+      "4 Heroes: 4,1"
+    ],
+    expansion: "Shards Of Everdark",
+    image: "monsters/shade-se-act2-back.png",
+    xws: "shade"
+  }
+];
+function pairwise(arr) {
+  assert(arr.length % 2 == 0, "pairwise length must be even");
+  return {
+    [Symbol.iterator]: function* () {
+      for (let i2 = 0; i2 < arr.length; i2 = i2 + 2)
+        yield [arr[i2], arr[i2 + 1]];
+    }
+  };
+}
+const monsters = Array.from(pairwise(jsonMonsters)).map(([jsonFront, jsonBack]) => new Monster(jsonFront, jsonBack));
+var MonsterSelector_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _hoisted_1$1 = { class: "card mb-3" };
+const _hoisted_2$1 = { class: "card-body" };
+const _hoisted_3$1 = { class: "filter-grid" };
+const _hoisted_4$1 = { class: "filter" };
+const _hoisted_5$1 = { class: "filter" };
+const _hoisted_6$1 = { class: "filter" };
+const _hoisted_7$1 = { class: "filter" };
+const _hoisted_8$1 = { class: "filter" };
+const _hoisted_9$1 = { class: "filter filter-found" };
+const _hoisted_10$1 = { class: "image-grid" };
+const _hoisted_11$1 = ["onClick"];
+const _hoisted_12 = { class: "flip-icon" };
+const _hoisted_13 = { class: "monster-card-inner" };
+const _hoisted_14 = ["src", "alt"];
+const _hoisted_15 = ["src", "alt"];
+const _sfc_main$1 = /* @__PURE__ */ defineComponent({
+  emits: ["select"],
+  setup(__props) {
+    const needle = ref("");
+    function matchName(monster) {
+      if (needle.value === "") {
+        return true;
+      }
+      return monster.name.toLowerCase().includes(needle.value.toLowerCase());
+    }
+    const availableActs = [Act.I, Act.II];
+    const selectedActs = ref([]);
+    const matchActs = makeListFilter(selectedActs, (thing, selected) => thing.act === selected);
+    const availableTraits = Object.values(Trait);
+    const selectedTraits = ref([]);
+    const matchTraits = makeListFilter(selectedTraits, (thing, selected) => thing.traits.includes(enumFromStringValue(Trait, selected)));
+    const availableAttacks = Object.values(Attack);
+    const selectedAttacks = ref([]);
+    const matchAttacks = makeListFilter(selectedAttacks, (thing, selected) => thing.attack === selected);
+    function onlyUnique(value, index, self2) {
+      return self2.indexOf(value) === index;
+    }
+    const availableExpansions = monsters.map((monster) => monster.expansion).filter(onlyUnique).sort();
+    const selectedExpansions = ref([]);
+    const matchExpansions = makeListFilter(selectedExpansions, (thing, selected) => thing.expansion === selected);
+    const items = computed(() => monsters.filter(matchName).filter(matchActs).filter(matchTraits).filter(matchAttacks).filter(matchExpansions));
+    return (_ctx, _cache) => {
+      const _component_font_awesome_icon = resolveComponent("font-awesome-icon");
+      return openBlock(), createElementBlock(Fragment, null, [
+        createBaseVNode("div", _hoisted_1$1, [
+          createBaseVNode("div", _hoisted_2$1, [
+            createBaseVNode("form", null, [
+              createBaseVNode("div", _hoisted_3$1, [
+                createBaseVNode("div", _hoisted_4$1, [
+                  createVNode(_sfc_main$4, {
+                    "model-options": availableActs,
+                    modelValue: selectedActs.value,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => selectedActs.value = $event)
+                  }, null, 8, ["modelValue"])
+                ]),
+                createBaseVNode("div", _hoisted_5$1, [
+                  createVNode(_sfc_main$4, {
+                    "model-options": unref(availableTraits),
+                    modelValue: selectedTraits.value,
+                    "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => selectedTraits.value = $event)
+                  }, null, 8, ["model-options", "modelValue"])
+                ]),
+                createBaseVNode("div", _hoisted_6$1, [
+                  createVNode(_sfc_main$4, {
+                    "model-options": unref(availableAttacks),
+                    modelValue: selectedAttacks.value,
+                    "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selectedAttacks.value = $event)
+                  }, null, 8, ["model-options", "modelValue"])
+                ]),
+                createBaseVNode("div", _hoisted_7$1, [
+                  createVNode(_sfc_main$4, {
+                    "model-options": unref(availableExpansions),
+                    modelValue: selectedExpansions.value,
+                    "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => selectedExpansions.value = $event)
+                  }, null, 8, ["model-options", "modelValue"])
+                ]),
+                createBaseVNode("div", _hoisted_8$1, [
+                  withDirectives(createBaseVNode("input", {
+                    "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => needle.value = $event),
+                    placeholder: "filter by name"
+                  }, null, 512), [
+                    [vModelText, needle.value]
+                  ])
+                ]),
+                createBaseVNode("div", _hoisted_9$1, toDisplayString(unref(items).length) + " monsters found ", 1)
+              ])
+            ])
+          ])
+        ]),
+        createBaseVNode("div", _hoisted_10$1, [
+          (openBlock(true), createElementBlock(Fragment, null, renderList(unref(items), (item) => {
+            return openBlock(), createElementBlock("div", {
+              key: item.nameAct
+            }, [
+              createBaseVNode("div", {
+                class: "monster-card",
+                onClick: ($event) => _ctx.$emit("select", item)
+              }, [
+                createBaseVNode("div", _hoisted_12, [
+                  createVNode(_component_font_awesome_icon, {
+                    icon: "rotate-left",
+                    size: "5x"
+                  })
+                ]),
+                createBaseVNode("div", _hoisted_13, [
+                  createBaseVNode("img", {
+                    src: item.image.front,
+                    alt: item.nameAct,
+                    class: "monster-front rounded-3"
+                  }, null, 8, _hoisted_14),
+                  createBaseVNode("img", {
+                    src: item.image.back,
+                    alt: item.nameAct,
+                    class: "monster-back rounded-3"
+                  }, null, 8, _hoisted_15)
+                ])
+              ], 8, _hoisted_11$1)
+            ]);
+          }), 128))
+        ])
+      ], 64);
+    };
+  }
+});
+var MonsterSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-0ab99304"]]);
+const _hoisted_1 = { class: "modal-dialog modal-dialog-centered modal-lg" };
+const _hoisted_2 = { class: "modal-content" };
+const _hoisted_3 = { class: "modal-header" };
+const _hoisted_4 = { class: "modal-title" };
+const _hoisted_5 = /* @__PURE__ */ createBaseVNode("button", {
+  type: "button",
+  class: "btn-close",
+  "data-bs-dismiss": "modal",
+  "aria-label": "Close"
+}, null, -1);
+const _hoisted_6 = { class: "modal-body" };
+const _hoisted_7 = { class: "row g-0" };
+const _hoisted_8 = { class: "col-12 col-md m-1" };
+const _hoisted_9 = ["src", "alt"];
+const _hoisted_10 = { class: "col-12 col-md m-1" };
+const _hoisted_11 = ["src", "alt"];
+const _sfc_main = /* @__PURE__ */ defineComponent({
+  setup(__props) {
+    const monsterDetailElement = ref(null);
+    const selectedMonster = ref(monsters[0]);
+    async function selectMonster(monster) {
+      selectedMonster.value = monster;
+      await nextTick();
+      if (monsterDetailElement.value === null) {
+        throw Error("Internal error");
+      }
+      const monsterDetailModal = new Modal(monsterDetailElement.value);
+      monsterDetailModal.show();
+    }
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock(Fragment, null, [
+        createVNode(MonsterSelector, { onSelect: selectMonster }),
+        (openBlock(), createBlock(Teleport, { to: "body" }, [
+          createBaseVNode("div", {
+            class: "modal",
+            ref_key: "monsterDetailElement",
+            ref: monsterDetailElement,
+            tabindex: "-1",
+            "aria-hidden": "true"
+          }, [
+            createBaseVNode("div", _hoisted_1, [
+              createBaseVNode("div", _hoisted_2, [
+                createBaseVNode("div", _hoisted_3, [
+                  createBaseVNode("h5", _hoisted_4, toDisplayString(selectedMonster.value.name), 1),
+                  _hoisted_5
+                ]),
+                createBaseVNode("div", _hoisted_6, [
+                  createBaseVNode("div", _hoisted_7, [
+                    createBaseVNode("div", _hoisted_8, [
+                      createBaseVNode("img", {
+                        src: selectedMonster.value.image.front,
+                        alt: `${selectedMonster.value.name} front`,
+                        class: "w-100 rounded-3"
+                      }, null, 8, _hoisted_9)
+                    ]),
+                    createBaseVNode("div", _hoisted_10, [
+                      createBaseVNode("img", {
+                        src: selectedMonster.value.image.back,
+                        alt: `${selectedMonster.value.name} back`,
+                        class: "w-100 rounded-3"
+                      }, null, 8, _hoisted_11)
+                    ])
+                  ])
                 ])
               ])
             ])
@@ -15323,11 +25106,16 @@ const router = createRouter({
     {
       path: "/",
       name: "\u{1F3B2} Dice",
-      component: _sfc_main$3
+      component: _sfc_main$5
     },
     {
       path: "/weapons",
       name: "\u{1F5E1} Weapons",
+      component: _sfc_main$2
+    },
+    {
+      path: "/monsters",
+      name: "\u{1F409} Monsters",
       component: _sfc_main
     }
   ]
@@ -27571,7 +37359,7 @@ var _iconsCache = {
   faYinYang,
   faZ
 };
-const app = createApp(_sfc_main$6);
+const app = createApp(_sfc_main$8);
 app.use(createPinia());
 app.use(router);
 library$1.add(_iconsCache);
