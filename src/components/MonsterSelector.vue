@@ -106,7 +106,7 @@ const items = computed(() =>
   </div>
   <div class="image-grid">
     <div v-for="item in items" :key="item.nameAct">
-      <a class="monster-card" href="" @click.prevent="$emit('select', item)">
+      <div class="monster-card" @click="$emit('select', item)">
         <div class="flip-icon">
           <font-awesome-icon icon="rotate-left" size="5x" />
         </div>
@@ -122,7 +122,7 @@ const items = computed(() =>
             class="monster-back rounded-3"
           />
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </template>
@@ -132,9 +132,8 @@ const items = computed(() =>
 .monster-card {
   position: relative;
   perspective: 1000px;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
   z-index: 0;
+  cursor: pointer;
 }
 
 .monster-card-inner {
