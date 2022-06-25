@@ -26,6 +26,11 @@ const id = uuidv4();
 
 <template>
   <div class="btn-group" role="group">
+    <!--
+    Order matters here - the label must be the first (and later the last)
+    child to render the button group correctly.
+    -->
+    <label class="btn btn-outline-primary btn-sm" :for="`${id}-all`">All</label>
     <input
       type="checkbox"
       class="btn-check"
@@ -34,7 +39,6 @@ const id = uuidv4();
       :checked="modelValue.length === 0"
       :id="`${id}-all`"
     />
-    <label class="btn btn-outline-primary btn-sm" :for="`${id}-all`">All</label>
     <template v-for="value in modelOptions" :key="value">
       <input
         type="checkbox"
