@@ -59,12 +59,9 @@ export interface Weapon extends Item {
   dice: CombatDie[];
 }
 
-export interface JsonShopItem {
+export interface JsonItem {
   name: string;
   points: number;
-  count: number;
-  act: string;
-  cost: number;
   traits: string;
   attack: string;
   equip: string;
@@ -73,6 +70,12 @@ export interface JsonShopItem {
   expansion: string;
   image: string;
   xws: string;
+}
+
+export interface JsonShopItem extends JsonItem {
+  count: number;
+  act: string;
+  cost: number;
 }
 
 export function parseDice<D extends Die>(
@@ -116,6 +119,6 @@ export function parseShopWeapon(
   };
 }
 
-export function isWeapon(json: JsonShopItem): boolean {
+export function isWeapon(json: JsonItem): boolean {
   return json.attack != "-";
 }

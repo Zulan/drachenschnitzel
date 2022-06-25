@@ -18,7 +18,7 @@ function matchName(weapon: Weapon): boolean {
   return weapon.name.toLowerCase().includes(needle.value.toLowerCase());
 }
 
-const availableCategories = [Category.ActI, Category.ActII];
+const availableCategories = Object.values(Category);
 const selectedCategories = ref([]);
 const matchCategory = makeListFilter(
   selectedCategories,
