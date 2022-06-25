@@ -183,10 +183,11 @@ const items = computed(() =>
   justify-content: center;
   align-items: center;
   opacity: 75%;
+  color: var(--bs-primary);
 }
 
 .flip-icon:hover {
-  color: gray;
+  color: var(--bs-secondary);
   opacity: 50%;
 }
 
