@@ -1,8 +1,10 @@
 import { isWeapon, parseShopWeapon, Category } from "@/models/items";
-import type { JsonShopItem } from "@/models/items";
+import type { JsonShopItem, JsonItem } from "@/models/items";
 import type { Weapon } from "@/models/items";
+
 import jsonShopItems from "@/data/d2e/shop-items.json";
 import jsonRelics from "@/data/d2e/relics.json";
+import jsonClassItems from "@/data/d2e/class-items.json";
 import { combatDiceByColor } from "@/data/dicePool";
 
 export const shopWeapons: Weapon[] = jsonShopItems
@@ -18,4 +20,17 @@ export const relicWeapons: Weapon[] = jsonRelics
     )
   );
 
-export const weapons: Weapon[] = [...shopWeapons, ...relicWeapons];
+export const classWeapons: Weapon[] = (jsonClassItems as JsonItem[])
+  .filter(isWeapon)
+  .map((weapon) =>
+    parseShopWeapon(
+      { act: Category.Class, ...weapon } as JsonShopItem,
+      combatDiceByColor
+    )
+  );
+
+export const weapons: Weapon[] = [
+  ...shopWeapons,
+  ...relicWeapons,
+  ...classWeapons,
+];

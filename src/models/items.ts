@@ -120,5 +120,5 @@ export function parseShopWeapon(
 }
 
 export function isWeapon(json: JsonItem): boolean {
-  return json.attack != "-";
+  return json.attack != undefined && json.attack != "-";
 }

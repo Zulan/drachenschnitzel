@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 
-import { relicWeapons, shopWeapons, weapons } from "../items";
+import { relicWeapons, classWeapons, shopWeapons, weapons } from "../items";
 
 describe("items", () => {
   it("shop weapons", () => {
@@ -8,6 +8,9 @@ describe("items", () => {
   });
   it("relic weapons", () => {
     expect(relicWeapons.length).toBeGreaterThan(0);
+  });
+  it("class weapons", () => {
+    expect(classWeapons.length).toBeGreaterThan(0);
   });
   it("all weapons", () => {
     expect(weapons.length).toBeGreaterThan(0);
