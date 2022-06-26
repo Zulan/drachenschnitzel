@@ -112,7 +112,7 @@ const selectedItems = computed(() =>
     </div>
   </ControlCard>
   <div class="image-grid">
-    <div v-for="item in selectedItems" :key="item.name">
+    <div v-for="item in selectedItems" :key="item">
       <a href="" @click.prevent="$emit('select', item)">
         <img :src="item.image" :alt="item.name" class="w-100 rounded-3" />
       </a>
