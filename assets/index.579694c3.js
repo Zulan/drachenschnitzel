@@ -34455,17 +34455,17 @@ function pairwise(arr) {
 }
 const monsters = Array.from(pairwise(jsonMonsters)).map(([jsonFront, jsonBack]) => new Monster(jsonFront, jsonBack)).filter((monster) => monster.expansion !== "Conversion Kit");
 var MonsterSelector_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _withScopeId$1 = (n) => (pushScopeId("data-v-6dcc967d"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-278334fa"), n = n(), popScopeId(), n);
 const _hoisted_1$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("label", {
   for: "random-count",
   class: "me-2"
 }, "Select", -1));
 const _hoisted_2$3 = { class: "d-inline-block" };
 const _hoisted_3$3 = { class: "form-check" };
-const _hoisted_4$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("label", {
+const _hoisted_4$3 = {
   class: "form-check-label",
   for: "random-check"
-}, "random monsters", -1));
+};
 const _hoisted_5$3 = { class: "found" };
 const _hoisted_6$3 = /* @__PURE__ */ createTextVNode("monster");
 const _hoisted_7$3 = /* @__PURE__ */ createTextVNode(" selected ");
@@ -34561,7 +34561,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
                   }, null, 512), [
                     [vModelCheckbox, randomCheck.value]
                   ]),
-                  _hoisted_4$3
+                  createBaseVNode("label", _hoisted_4$3, "random " + toDisplayString(randomCount.value === 1 ? "monster" : "monsters"), 1)
                 ])
               ])
             ]),
@@ -34614,7 +34614,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var MonsterSelector = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-6dcc967d"]]);
+var MonsterSelector = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-278334fa"]]);
 const _hoisted_1$2 = { class: "modal-dialog modal-dialog-centered modal-lg" };
 const _hoisted_2$2 = { class: "modal-content" };
 const _hoisted_3$2 = { class: "modal-header" };
@@ -34688,17 +34688,17 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   }
 });
 var ItemSelector_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _withScopeId = (n) => (pushScopeId("data-v-44316bc4"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-10e0d7f0"), n = n(), popScopeId(), n);
 const _hoisted_1$1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("label", {
   for: "random-count",
   class: "me-2"
 }, "Select", -1));
-const _hoisted_2$1 = { style: { "display": "inline-block" } };
+const _hoisted_2$1 = { class: "d-inline-block" };
 const _hoisted_3$1 = { class: "form-check" };
-const _hoisted_4$1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("label", {
+const _hoisted_4$1 = {
   class: "form-check-label",
   for: "random-check"
-}, "random items", -1));
+};
 const _hoisted_5$1 = { class: "found" };
 const _hoisted_6$1 = /* @__PURE__ */ createTextVNode("item");
 const _hoisted_7$1 = /* @__PURE__ */ createTextVNode(" found ");
@@ -34754,15 +34754,19 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
             }, null, 8, ["model-options", "modelValue"]),
             withDirectives(createBaseVNode("input", {
               "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => needle.value = $event),
-              placeholder: "filter by name"
+              placeholder: "filter by name",
+              id: "filter-name",
+              class: "form-control"
             }, null, 512), [
               [vModelText, needle.value]
             ]),
             createBaseVNode("div", null, [
               _hoisted_1$1,
               withDirectives(createBaseVNode("input", {
+                type: "number",
+                min: "1",
                 id: "random-count",
-                class: "me-2",
+                class: "me-2 form-control",
                 "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => randomCount.value = $event)
               }, null, 512), [
                 [vModelText, randomCount.value]
@@ -34777,7 +34781,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                   }, null, 512), [
                     [vModelCheckbox, randomCheck.value]
                   ]),
-                  _hoisted_4$1
+                  createBaseVNode("label", _hoisted_4$1, "random " + toDisplayString(randomCount.value === 1 ? "item" : "items"), 1)
                 ])
               ])
             ]),
@@ -34817,7 +34821,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var ItemSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-44316bc4"]]);
+var ItemSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-10e0d7f0"]]);
 const _hoisted_1 = { class: "modal-dialog modal-dialog-centered" };
 const _hoisted_2 = { class: "modal-content" };
 const _hoisted_3 = { class: "modal-header" };

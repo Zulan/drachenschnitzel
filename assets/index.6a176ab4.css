@@ -9476,42 +9476,42 @@ a:hover img[data-v-75cb42f0] {
 }
 
 /*Flip stuff based on https://www.w3schools.com/howto/howto_css_flip_card.asp*/
-.monster-card[data-v-6dcc967d] {
+.monster-card[data-v-278334fa] {
   position: relative;
   perspective: 1000px;
   z-index: 0;
   cursor: pointer;
 }
-.monster-card-inner[data-v-6dcc967d] {
+.monster-card-inner[data-v-278334fa] {
   position: relative;
   width: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-.monster-card[data-v-6dcc967d]:hover {
+.monster-card[data-v-278334fa]:hover {
   z-index: 50;
 }
-.monster-card:hover > .flip-icon[data-v-6dcc967d] {
+.monster-card:hover > .flip-icon[data-v-278334fa] {
   z-index: 100;
 }
-.monster-card:hover > .monster-card-inner[data-v-6dcc967d] {
+.monster-card:hover > .monster-card-inner[data-v-278334fa] {
   transform: scale(1.2);
 }
-.monster-front[data-v-6dcc967d] {
+.monster-front[data-v-278334fa] {
   position: absolute;
 }
-.monster-back[data-v-6dcc967d] {
+.monster-back[data-v-278334fa] {
   position: relative;
   transform: rotateY(180deg);
 }
-.monster-front[data-v-6dcc967d],
-.monster-back[data-v-6dcc967d] {
+.monster-front[data-v-278334fa],
+.monster-back[data-v-278334fa] {
   width: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-.flip-icon[data-v-6dcc967d] {
+.flip-icon[data-v-278334fa] {
   position: absolute;
   height: 100%;
   width: 50%;
@@ -9524,51 +9524,57 @@ a:hover img[data-v-75cb42f0] {
   opacity: 75%;
   color: var(--bs-primary);
 }
-.flip-icon[data-v-6dcc967d]:hover {
+.flip-icon[data-v-278334fa]:hover {
   color: var(--bs-secondary);
   opacity: 50%;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip icon container */
-.flip-icon:hover ~ .monster-card-inner[data-v-6dcc967d] {
+.flip-icon:hover ~ .monster-card-inner[data-v-278334fa] {
   transform: rotateY(180deg) scale(1.2);
 }
-.found[data-v-6dcc967d] {
+.found[data-v-278334fa] {
   margin-left: auto;
   align-self: center;
 }
-.image-grid[data-v-6dcc967d] {
+.image-grid[data-v-278334fa] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, auto));
   grid-gap: 1rem;
 }
-.form-control[data-v-6dcc967d] {
+.form-control[data-v-278334fa] {
   display: inline-block;
 }
-#filter-name[data-v-6dcc967d] {
+#filter-name[data-v-278334fa] {
   width: 14em;
 }
-#random-count[data-v-6dcc967d] {
+#random-count[data-v-278334fa] {
   width: 4em;
 }
 
-a img[data-v-44316bc4] {
+a img[data-v-10e0d7f0] {
   z-index: 0;
   transition: transform 0.2s;
 }
-a:hover img[data-v-44316bc4] {
+a:hover img[data-v-10e0d7f0] {
   z-index: 1;
   transform: scale(1.2);
 }
-.found[data-v-44316bc4] {
+.found[data-v-10e0d7f0] {
   margin-left: auto;
   align-self: center;
 }
-.image-grid[data-v-44316bc4] {
+.image-grid[data-v-10e0d7f0] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, auto));
   grid-gap: 1rem;
 }
-#random-count[data-v-44316bc4] {
-  width: 2em;
+.form-control[data-v-10e0d7f0] {
+  display: inline-block;
+}
+#filter-name[data-v-10e0d7f0] {
+  width: 14em;
+}
+#random-count[data-v-10e0d7f0] {
+  width: 4em;
 }
