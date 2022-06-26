@@ -6,7 +6,7 @@ import { Act, Trait, traitIcon } from "@/models/monster";
 import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
 import { makeListFilter } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
-import { Attack } from "@/models/items";
+import { Attack } from "@/models/common";
 
 defineEmits<{ (e: "select", monster: Monster): void }>();
 

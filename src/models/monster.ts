@@ -1,7 +1,7 @@
-import { Attack } from "@/models/items";
 import { assert } from "@/utils/assert";
 import { enumFromStringValue } from "@/utils/enum";
 import { assetUrl } from "@/utils/assets";
+import { Attack } from "@/models/common";
 
 export enum Act {
   I = "I",

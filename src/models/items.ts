@@ -1,16 +1,7 @@
 import type { CombatDie, Die } from "@/models/dice";
 import { assetUrl } from "@/utils/assets";
 import { enumFromStringValue } from "@/utils/enum";
-
-// export function enumFromStringValue<T>(
-//   enm: { [s: string]: T },
-//   value: string
-// ): T {
-//   if ((Object.values(enm) as unknown as string[]).includes(value)) {
-//     return value as unknown as T;
-//   }
-//   throw new Error(`Invalid enum value: ${value}`);
-// }
+import { Attack } from "@/models/common";
 
 export enum Category {
   ActI = "I",
@@ -37,11 +28,6 @@ export enum WeaponTrait {
   Rune = "Rune",
   Staff = "Staff",
   Wand = "Wand",
-}
-
-export enum Attack {
-  Melee = "Melee",
-  Range = "Range",
 }
 
 export interface Item {

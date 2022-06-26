@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { Act, Monster, Trait } from "../monster";
-import { Attack } from "../items";
 import { assetUrl } from "../../utils/assets";
+import { Attack } from "../common";
 
 describe("parseMonster", () => {
   it("example", () => {

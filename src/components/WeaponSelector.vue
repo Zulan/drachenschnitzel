@@ -2,10 +2,11 @@
 import { computed, ref } from "vue";
 import { weapons } from "@/data/items";
 import type { Weapon } from "@/models/items";
-import { Attack, Category, Equip, WeaponTrait } from "@/models/items";
+import { Category, Equip, WeaponTrait } from "@/models/items";
 import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
 import { makeListFilter } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
+import { Attack } from "@/models/common";
 
 defineEmits<{ (e: "select", weapon: Weapon): void }>();
 

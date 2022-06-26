@@ -1,7 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 
 import {
-  Attack,
   Category,
   Equip,
   isWeapon,
@@ -13,6 +12,7 @@ import {
 import jsonShopItems from "@/data/d2e/shop-items.json";
 import { combatDiceByColor } from "../../data/dicePool";
 import type { CombatDie } from "../dice";
+import { Attack } from "../common";
 
 vi.mock("../../utils/assets.ts");
 
