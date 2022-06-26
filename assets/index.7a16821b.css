@@ -49,71 +49,75 @@ disabled because it messes with bootstrap modal vertical stuff
   width: 4rem;
 }
 
-a img[data-v-27d9188c] {
+.icon[data-v-fbf427f6] {
+  height: 3em;
+}
+
+a img[data-v-7d550c73] {
   z-index: 0;
   transition: transform 0.2s;
 }
-a:hover img[data-v-27d9188c] {
+a:hover img[data-v-7d550c73] {
   z-index: 1;
   transform: scale(1.2);
 }
-.filter-grid[data-v-27d9188c] {
+.filter-grid[data-v-7d550c73] {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.filter[data-v-27d9188c] {
+.filter[data-v-7d550c73] {
   width: fit-content;
   display: inline-block;
   overflow: auto;
 }
-.filter-found[data-v-27d9188c] {
+.filter-found[data-v-7d550c73] {
   margin-left: auto;
   align-self: center;
 }
-.image-grid[data-v-27d9188c] {
+.image-grid[data-v-7d550c73] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, auto));
   grid-gap: 1rem;
 }
 
 /*Flip stuff based on https://www.w3schools.com/howto/howto_css_flip_card.asp*/
-.monster-card[data-v-0ab99304] {
+.monster-card[data-v-763bb4bf] {
   position: relative;
   perspective: 1000px;
   z-index: 0;
   cursor: pointer;
 }
-.monster-card-inner[data-v-0ab99304] {
+.monster-card-inner[data-v-763bb4bf] {
   position: relative;
   width: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-.monster-card[data-v-0ab99304]:hover {
+.monster-card[data-v-763bb4bf]:hover {
   z-index: 50;
 }
-.monster-card:hover > .flip-icon[data-v-0ab99304] {
+.monster-card:hover > .flip-icon[data-v-763bb4bf] {
   z-index: 100;
 }
-.monster-card:hover > .monster-card-inner[data-v-0ab99304] {
+.monster-card:hover > .monster-card-inner[data-v-763bb4bf] {
   transform: scale(1.2);
 }
-.monster-front[data-v-0ab99304] {
+.monster-front[data-v-763bb4bf] {
   position: absolute;
 }
-.monster-back[data-v-0ab99304] {
+.monster-back[data-v-763bb4bf] {
   position: relative;
   transform: rotateY(180deg);
 }
-.monster-front[data-v-0ab99304],
-.monster-back[data-v-0ab99304] {
+.monster-front[data-v-763bb4bf],
+.monster-back[data-v-763bb4bf] {
   width: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-.flip-icon[data-v-0ab99304] {
+.flip-icon[data-v-763bb4bf] {
   position: absolute;
   height: 100%;
   width: 50%;
@@ -126,30 +130,30 @@ a:hover img[data-v-27d9188c] {
   opacity: 75%;
   color: var(--bs-primary);
 }
-.flip-icon[data-v-0ab99304]:hover {
+.flip-icon[data-v-763bb4bf]:hover {
   color: var(--bs-secondary);
   opacity: 50%;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip icon container */
-.flip-icon:hover ~ .monster-card-inner[data-v-0ab99304] {
+.flip-icon:hover ~ .monster-card-inner[data-v-763bb4bf] {
   transform: rotateY(180deg) scale(1.2);
 }
-.filter-grid[data-v-0ab99304] {
+.filter-grid[data-v-763bb4bf] {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.filter[data-v-0ab99304] {
+.filter[data-v-763bb4bf] {
   width: fit-content;
   display: inline-block;
   overflow: auto;
 }
-.filter-found[data-v-0ab99304] {
+.filter-found[data-v-763bb4bf] {
   margin-left: auto;
   align-self: center;
 }
-.image-grid[data-v-0ab99304] {
+.image-grid[data-v-763bb4bf] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, auto));
   grid-gap: 1rem;

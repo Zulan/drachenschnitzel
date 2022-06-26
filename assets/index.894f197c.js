@@ -3815,6 +3815,9 @@ function cloneVNode(vnode, extraProps, mergeRef = false) {
 function createTextVNode(text2 = " ", flag = 0) {
   return createVNode(Text, null, text2, flag);
 }
+function createCommentVNode(text2 = "", asBlock = false) {
+  return asBlock ? (openBlock(), createBlock(Comment, null, text2)) : createVNode(Comment, null, text2);
+}
 function normalizeVNode(child) {
   if (child == null || typeof child === "boolean") {
     return createVNode(Comment);
@@ -6723,7 +6726,7 @@ const _hoisted_5$6 = {
   class: "collapse navbar-collapse",
   id: "navbarSupportedContent"
 };
-const _hoisted_6$5 = { class: "navbar-nav me-auto mb-2 mb-lg-0" };
+const _hoisted_6$6 = { class: "navbar-nav me-auto mb-2 mb-lg-0" };
 const _hoisted_7$5 = { class: "container pt-2" };
 const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   setup(__props) {
@@ -6741,7 +6744,7 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
               _hoisted_3$6,
               _hoisted_4$6,
               createBaseVNode("div", _hoisted_5$6, [
-                createBaseVNode("ul", _hoisted_6$5, [
+                createBaseVNode("ul", _hoisted_6$6, [
                   (openBlock(true), createElementBlock(Fragment, null, renderList(unref(routes), (route) => {
                     return openBlock(), createElementBlock("li", {
                       class: "nav-item",
@@ -6777,12 +6780,12 @@ var __glob_0_0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProp
   __proto__: null,
   "default": base
 }, Symbol.toStringTag, { value: "Module" }));
-var blackTop = "/drachenschnitzel/assets/black-top.efa8b0bb.png";
+var blackTop = "/assets/black-top.efa8b0bb.png";
 var __glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blackTop
 }, Symbol.toStringTag, { value: "Module" }));
-var blueTop = "/drachenschnitzel/assets/blue-top.31b0db19.png";
+var blueTop = "/assets/blue-top.31b0db19.png";
 var __glob_0_2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blueTop
@@ -6797,2997 +6800,3047 @@ var __glob_0_4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProp
   __proto__: null,
   "default": grayTop
 }, Symbol.toStringTag, { value: "Module" }));
-var greenTop = "/drachenschnitzel/assets/green-top.eaecad1d.png";
+var greenTop = "/assets/green-top.eaecad1d.png";
 var __glob_0_5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": greenTop
 }, Symbol.toStringTag, { value: "Module" }));
-var redTop = "/drachenschnitzel/assets/red-top.53617625.png";
+var redTop = "/assets/red-top.53617625.png";
 var __glob_0_6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": redTop
 }, Symbol.toStringTag, { value: "Module" }));
-var yellowTop = "/drachenschnitzel/assets/yellow-top.f345839e.png";
+var yellowTop = "/assets/yellow-top.f345839e.png";
 var __glob_0_7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": yellowTop
 }, Symbol.toStringTag, { value: "Module" }));
-var arcaneBoltBgMageRunemaster = "/drachenschnitzel/assets/arcane-bolt-bg-mage-runemaster.3f2d2347.png";
+var Building = "/assets/Building.a6bcc462.webp";
 var __glob_0_8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Building
+}, Symbol.toStringTag, { value: "Module" }));
+var Cave = "/assets/Cave.e75f2fd4.webp";
+var __glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Cave
+}, Symbol.toStringTag, { value: "Module" }));
+var Civilized = "/assets/Civilized.ac473397.webp";
+var __glob_0_10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Civilized
+}, Symbol.toStringTag, { value: "Module" }));
+var Cold = "/assets/Cold.02314279.webp";
+var __glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Cold
+}, Symbol.toStringTag, { value: "Module" }));
+var Cursed = "/assets/Cursed.7d4107e7.webp";
+var __glob_0_12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Cursed
+}, Symbol.toStringTag, { value: "Module" }));
+var Dark = "/assets/Dark.9d544893.webp";
+var __glob_0_13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Dark
+}, Symbol.toStringTag, { value: "Module" }));
+var Hot = "/assets/Hot.08cbb70b.webp";
+var __glob_0_14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Hot
+}, Symbol.toStringTag, { value: "Module" }));
+var Mountain = "/assets/Mountain.2217db00.webp";
+var __glob_0_15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Mountain
+}, Symbol.toStringTag, { value: "Module" }));
+var Water = "/assets/Water.cdfd0c51.webp";
+var __glob_0_16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Water
+}, Symbol.toStringTag, { value: "Module" }));
+var Wilderness = "/assets/Wilderness.0c48488f.webp";
+var __glob_0_17 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": Wilderness
+}, Symbol.toStringTag, { value: "Module" }));
+var arcaneBoltBgMageRunemaster = "/assets/arcane-bolt-bg-mage-runemaster.3f2d2347.png";
+var __glob_0_18 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": arcaneBoltBgMageRunemaster
 }, Symbol.toStringTag, { value: "Module" }));
-var blackWidowsWebTfScoutStalker = "/drachenschnitzel/assets/black-widows-web-tf-scout-stalker.5a1e1223.png";
-var __glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var blackWidowsWebTfScoutStalker = "/assets/black-widows-web-tf-scout-stalker.5a1e1223.png";
+var __glob_0_19 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blackWidowsWebTfScoutStalker
 }, Symbol.toStringTag, { value: "Module" }));
-var ceremonialStaffSotpHealerHierophant = "/drachenschnitzel/assets/ceremonial-staff-sotp-healer-hierophant.a90d934c.png";
-var __glob_0_10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ceremonialStaffSotpHealerHierophant = "/assets/ceremonial-staff-sotp-healer-hierophant.a90d934c.png";
+var __glob_0_20 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ceremonialStaffSotpHealerHierophant
 }, Symbol.toStringTag, { value: "Module" }));
-var chippedGreataxeBgWarriorBerserker = "/drachenschnitzel/assets/chipped-greataxe-bg-warrior-berserker.9e615f41.png";
-var __glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chippedGreataxeBgWarriorBerserker = "/assets/chipped-greataxe-bg-warrior-berserker.9e615f41.png";
+var __glob_0_21 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chippedGreataxeBgWarriorBerserker
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsApothecaryBack = "/drachenschnitzel/assets/class-skills-apothecary-back.8bc70a15.png";
-var __glob_0_12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsApothecaryBack = "/assets/class-skills-apothecary-back.8bc70a15.png";
+var __glob_0_22 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsApothecaryBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsBardBack = "/drachenschnitzel/assets/class-skills-bard-back.d4e1c0ad.png";
-var __glob_0_13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsBardBack = "/assets/class-skills-bard-back.d4e1c0ad.png";
+var __glob_0_23 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsBardBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsBeastmasterBack = "/drachenschnitzel/assets/class-skills-beastmaster-back.eaa78ca6.png";
-var __glob_0_14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsBeastmasterBack = "/assets/class-skills-beastmaster-back.eaa78ca6.png";
+var __glob_0_24 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsBeastmasterBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsBerserkerBack = "/drachenschnitzel/assets/class-skills-berserker-back.028065f4.png";
-var __glob_0_15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsBerserkerBack = "/assets/class-skills-berserker-back.028065f4.png";
+var __glob_0_25 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsBerserkerBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsBountyHunterBack = "/drachenschnitzel/assets/class-skills-bounty-hunter-back.2c704bc7.png";
-var __glob_0_16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsBountyHunterBack = "/assets/class-skills-bounty-hunter-back.2c704bc7.png";
+var __glob_0_26 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsBountyHunterBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsChampionBack = "/drachenschnitzel/assets/class-skills-champion-back.982d66a7.png";
-var __glob_0_17 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsChampionBack = "/assets/class-skills-champion-back.982d66a7.png";
+var __glob_0_27 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsChampionBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsConjurerBack = "/drachenschnitzel/assets/class-skills-conjurer-back.6a0df57c.png";
-var __glob_0_18 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsConjurerBack = "/assets/class-skills-conjurer-back.6a0df57c.png";
+var __glob_0_28 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsConjurerBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsDiscipleBack = "/drachenschnitzel/assets/class-skills-disciple-back.b714788b.png";
-var __glob_0_19 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsDiscipleBack = "/assets/class-skills-disciple-back.b714788b.png";
+var __glob_0_29 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsDiscipleBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsElementalistBack = "/drachenschnitzel/assets/class-skills-elementalist-back.52a9def2.png";
-var __glob_0_20 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsElementalistBack = "/assets/class-skills-elementalist-back.52a9def2.png";
+var __glob_0_30 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsElementalistBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsGeomancerBack = "/drachenschnitzel/assets/class-skills-geomancer-back.7d28b7fc.png";
-var __glob_0_21 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsGeomancerBack = "/assets/class-skills-geomancer-back.7d28b7fc.png";
+var __glob_0_31 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsGeomancerBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsHexerBack = "/drachenschnitzel/assets/class-skills-hexer-back.958a933c.png";
-var __glob_0_22 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsHexerBack = "/assets/class-skills-hexer-back.958a933c.png";
+var __glob_0_32 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsHexerBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsHierophantBack = "/drachenschnitzel/assets/class-skills-hierophant-back.628292cb.png";
-var __glob_0_23 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsHierophantBack = "/assets/class-skills-hierophant-back.628292cb.png";
+var __glob_0_33 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsHierophantBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsKnightBack = "/drachenschnitzel/assets/class-skills-knight-back.670aff2c.png";
-var __glob_0_24 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsKnightBack = "/assets/class-skills-knight-back.670aff2c.png";
+var __glob_0_34 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsKnightBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsMarshalBack = "/drachenschnitzel/assets/class-skills-marshal-back.082a8ef5.png";
-var __glob_0_25 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsMarshalBack = "/assets/class-skills-marshal-back.082a8ef5.png";
+var __glob_0_35 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsMarshalBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsNecromancerBack = "/drachenschnitzel/assets/class-skills-necromancer-back.d6cbfc18.png";
-var __glob_0_26 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsNecromancerBack = "/assets/class-skills-necromancer-back.d6cbfc18.png";
+var __glob_0_36 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsNecromancerBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsProphetBack = "/drachenschnitzel/assets/class-skills-prophet-back.519d2c1b.png";
-var __glob_0_27 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsProphetBack = "/assets/class-skills-prophet-back.519d2c1b.png";
+var __glob_0_37 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsProphetBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsPsychicBack = "/drachenschnitzel/assets/class-skills-psychic-back.9d5bcb74.png";
-var __glob_0_28 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsPsychicBack = "/assets/class-skills-psychic-back.9d5bcb74.png";
+var __glob_0_38 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsPsychicBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsRunemasterBack = "/drachenschnitzel/assets/class-skills-runemaster-back.c48994da.png";
-var __glob_0_29 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsRunemasterBack = "/assets/class-skills-runemaster-back.c48994da.png";
+var __glob_0_39 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsRunemasterBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsShadowWalkerBack = "/drachenschnitzel/assets/class-skills-shadow-walker-back.ed64f9b3.png";
-var __glob_0_30 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsShadowWalkerBack = "/assets/class-skills-shadow-walker-back.ed64f9b3.png";
+var __glob_0_40 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsShadowWalkerBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsSkirmisherBack = "/drachenschnitzel/assets/class-skills-skirmisher-back.6c510fce.png";
-var __glob_0_31 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsSkirmisherBack = "/assets/class-skills-skirmisher-back.6c510fce.png";
+var __glob_0_41 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsSkirmisherBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsSoulReaperBack = "/drachenschnitzel/assets/class-skills-soul-reaper-back.fd5a7210.png";
-var __glob_0_32 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsSoulReaperBack = "/assets/class-skills-soul-reaper-back.fd5a7210.png";
+var __glob_0_42 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsSoulReaperBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsSpiritspeakerBack = "/drachenschnitzel/assets/class-skills-spiritspeaker-back.031c202d.png";
-var __glob_0_33 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsSpiritspeakerBack = "/assets/class-skills-spiritspeaker-back.031c202d.png";
+var __glob_0_43 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsSpiritspeakerBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsStalkerBack = "/drachenschnitzel/assets/class-skills-stalker-back.21ed10c0.png";
-var __glob_0_34 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsStalkerBack = "/assets/class-skills-stalker-back.21ed10c0.png";
+var __glob_0_44 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsStalkerBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsThiefBack = "/drachenschnitzel/assets/class-skills-thief-back.ba645643.png";
-var __glob_0_35 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsThiefBack = "/assets/class-skills-thief-back.ba645643.png";
+var __glob_0_45 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsThiefBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsTreasureHunterBack = "/drachenschnitzel/assets/class-skills-treasure-hunter-back.f1f958be.png";
-var __glob_0_36 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsTreasureHunterBack = "/assets/class-skills-treasure-hunter-back.f1f958be.png";
+var __glob_0_46 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsTreasureHunterBack
 }, Symbol.toStringTag, { value: "Module" }));
-var classSkillsWildlanderBack = "/drachenschnitzel/assets/class-skills-wildlander-back.de6f182a.png";
-var __glob_0_37 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var classSkillsWildlanderBack = "/assets/class-skills-wildlander-back.de6f182a.png";
+var __glob_0_47 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": classSkillsWildlanderBack
 }, Symbol.toStringTag, { value: "Module" }));
-var doubleCrossbowMrScoutBountyHunter = "/drachenschnitzel/assets/double-crossbow-mr-scout-bounty-hunter.1562843c.png";
-var __glob_0_38 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var doubleCrossbowMrScoutBountyHunter = "/assets/double-crossbow-mr-scout-bounty-hunter.1562843c.png";
+var __glob_0_48 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": doubleCrossbowMrScoutBountyHunter
 }, Symbol.toStringTag, { value: "Module" }));
-var featheredHatchetSnScoutShadowWalker = "/drachenschnitzel/assets/feathered-hatchet-sn-scout-shadow-walker.37c660c1.png";
-var __glob_0_39 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var featheredHatchetSnScoutShadowWalker = "/assets/feathered-hatchet-sn-scout-shadow-walker.37c660c1.png";
+var __glob_0_49 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": featheredHatchetSnScoutShadowWalker
 }, Symbol.toStringTag, { value: "Module" }));
-var harvesterScytheLlHealerSoulReaper = "/drachenschnitzel/assets/harvester-scythe-ll-healer-soul-reaper.28139c76.png";
-var __glob_0_40 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var harvesterScytheLlHealerSoulReaper = "/assets/harvester-scythe-ll-healer-soul-reaper.28139c76.png";
+var __glob_0_50 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": harvesterScytheLlHealerSoulReaper
 }, Symbol.toStringTag, { value: "Module" }));
-var hornOfCourageLwWarriorChampion = "/drachenschnitzel/assets/horn-of-courage-lw-warrior-champion.6085810e.png";
-var __glob_0_41 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hornOfCourageLwWarriorChampion = "/assets/horn-of-courage-lw-warrior-champion.6085810e.png";
+var __glob_0_51 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hornOfCourageLwWarriorChampion
 }, Symbol.toStringTag, { value: "Module" }));
-var huntingKnifeTfScoutStalker = "/drachenschnitzel/assets/hunting-knife-tf-scout-stalker.1235feaa.png";
-var __glob_0_42 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var huntingKnifeTfScoutStalker = "/assets/hunting-knife-tf-scout-stalker.1235feaa.png";
+var __glob_0_52 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": huntingKnifeTfScoutStalker
 }, Symbol.toStringTag, { value: "Module" }));
-var huntingSpearLrWarriorBeastmaster = "/drachenschnitzel/assets/hunting-spear-lr-warrior-beastmaster.4acccff7.png";
-var __glob_0_43 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var huntingSpearLrWarriorBeastmaster = "/assets/hunting-spear-lr-warrior-beastmaster.4acccff7.png";
+var __glob_0_53 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": huntingSpearLrWarriorBeastmaster
 }, Symbol.toStringTag, { value: "Module" }));
-var ironFlailTfHealerProphet = "/drachenschnitzel/assets/iron-flail-tf-healer-prophet.de20252b.png";
-var __glob_0_44 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironFlailTfHealerProphet = "/assets/iron-flail-tf-healer-prophet.de20252b.png";
+var __glob_0_54 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironFlailTfHealerProphet
 }, Symbol.toStringTag, { value: "Module" }));
-var ironLongswordBgWarriorKnight = "/drachenschnitzel/assets/iron-longsword-bg-warrior-knight.33bd80cb.png";
-var __glob_0_45 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironLongswordBgWarriorKnight = "/assets/iron-longsword-bg-warrior-knight.33bd80cb.png";
+var __glob_0_55 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironLongswordBgWarriorKnight
 }, Symbol.toStringTag, { value: "Module" }));
-var ironMaceBgHealerDisciple = "/drachenschnitzel/assets/iron-mace-bg-healer-disciple.3566c414.png";
-var __glob_0_46 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironMaceBgHealerDisciple = "/assets/iron-mace-bg-healer-disciple.3566c414.png";
+var __glob_0_56 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironMaceBgHealerDisciple
 }, Symbol.toStringTag, { value: "Module" }));
-var jaggedHandaxeSnWarriorSkirmisher = "/drachenschnitzel/assets/jagged-handaxe-sn-warrior-skirmisher.14128423.png";
-var __glob_0_47 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var jaggedHandaxeSnWarriorSkirmisher = "/assets/jagged-handaxe-sn-warrior-skirmisher.14128423.png";
+var __glob_0_57 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": jaggedHandaxeSnWarriorSkirmisher
 }, Symbol.toStringTag, { value: "Module" }));
-var leatherWhipLrScoutTreasureHunter = "/drachenschnitzel/assets/leather-whip-lr-scout-treasure-hunter.a4afb06b.png";
-var __glob_0_48 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var leatherWhipLrScoutTreasureHunter = "/assets/leather-whip-lr-scout-treasure-hunter.a4afb06b.png";
+var __glob_0_58 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": leatherWhipLrScoutTreasureHunter
 }, Symbol.toStringTag, { value: "Module" }));
-var luckyCharmBgScoutThief = "/drachenschnitzel/assets/lucky-charm-bg-scout-thief.ca124029.png";
-var __glob_0_49 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var luckyCharmBgScoutThief = "/assets/lucky-charm-bg-scout-thief.ca124029.png";
+var __glob_0_59 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": luckyCharmBgScoutThief
 }, Symbol.toStringTag, { value: "Module" }));
-var luteSnHealerBard = "/drachenschnitzel/assets/lute-sn-healer-bard.d138096e.png";
-var __glob_0_50 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var luteSnHealerBard = "/assets/lute-sn-healer-bard.d138096e.png";
+var __glob_0_60 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": luteSnHealerBard
 }, Symbol.toStringTag, { value: "Module" }));
-var mindsEyeTurbanSotpMagePsychic = "/drachenschnitzel/assets/minds-eye-turban-sotp-mage-psychic.688d6be6.png";
-var __glob_0_51 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var mindsEyeTurbanSotpMagePsychic = "/assets/minds-eye-turban-sotp-mage-psychic.688d6be6.png";
+var __glob_0_61 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": mindsEyeTurbanSotpMagePsychic
 }, Symbol.toStringTag, { value: "Module" }));
-var mirrorOfSoulsLlHealerSoulReaper = "/drachenschnitzel/assets/mirror-of-souls-ll-healer-soul-reaper.ca3f89c1.png";
-var __glob_0_52 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var mirrorOfSoulsLlHealerSoulReaper = "/assets/mirror-of-souls-ll-healer-soul-reaper.ca3f89c1.png";
+var __glob_0_62 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": mirrorOfSoulsLlHealerSoulReaper
 }, Symbol.toStringTag, { value: "Module" }));
-var oakStaffBgHealerSpiritspeaker = "/drachenschnitzel/assets/oak-staff-bg-healer-spiritspeaker.533d29a1.png";
-var __glob_0_53 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var oakStaffBgHealerSpiritspeaker = "/assets/oak-staff-bg-healer-spiritspeaker.533d29a1.png";
+var __glob_0_63 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": oakStaffBgHealerSpiritspeaker
 }, Symbol.toStringTag, { value: "Module" }));
-var prismaticStaffSnMageConjurer = "/drachenschnitzel/assets/prismatic-staff-sn-mage-conjurer.7dbcb35a.png";
-var __glob_0_54 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var prismaticStaffSnMageConjurer = "/assets/prismatic-staff-sn-mage-conjurer.7dbcb35a.png";
+var __glob_0_64 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": prismaticStaffSnMageConjurer
 }, Symbol.toStringTag, { value: "Module" }));
-var reapersScytheBgMageNecromancer = "/drachenschnitzel/assets/reapers-scythe-bg-mage-necromancer.4e858bf0.png";
-var __glob_0_55 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var reapersScytheBgMageNecromancer = "/assets/reapers-scythe-bg-mage-necromancer.4e858bf0.png";
+var __glob_0_65 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": reapersScytheBgMageNecromancer
 }, Symbol.toStringTag, { value: "Module" }));
-var runeshardCacheLlMageElementalist = "/drachenschnitzel/assets/runeshard-cache-ll-mage-elementalist.291e507e.png";
-var __glob_0_56 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var runeshardCacheLlMageElementalist = "/assets/runeshard-cache-ll-mage-elementalist.291e507e.png";
+var __glob_0_66 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runeshardCacheLlMageElementalist
 }, Symbol.toStringTag, { value: "Module" }));
-var rustedHandaxeSnWarriorSkirmisher = "/drachenschnitzel/assets/rusted-handaxe-sn-warrior-skirmisher.478ce992.png";
-var __glob_0_57 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var rustedHandaxeSnWarriorSkirmisher = "/assets/rusted-handaxe-sn-warrior-skirmisher.478ce992.png";
+var __glob_0_67 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": rustedHandaxeSnWarriorSkirmisher
 }, Symbol.toStringTag, { value: "Module" }));
-var sacredScripturesSotpHealerHierophant = "/drachenschnitzel/assets/sacred-scriptures-sotp-healer-hierophant.3eb65ea3.png";
-var __glob_0_58 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sacredScripturesSotpHealerHierophant = "/assets/sacred-scriptures-sotp-healer-hierophant.3eb65ea3.png";
+var __glob_0_68 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sacredScripturesSotpHealerHierophant
 }, Symbol.toStringTag, { value: "Module" }));
-var sagesTomeTfHealerProphet = "/drachenschnitzel/assets/sages-tome-tf-healer-prophet.89e3769d.png";
-var __glob_0_59 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sagesTomeTfHealerProphet = "/assets/sages-tome-tf-healer-prophet.89e3769d.png";
+var __glob_0_69 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sagesTomeTfHealerProphet
 }, Symbol.toStringTag, { value: "Module" }));
-var shadowDartsSotpMagePsychic = "/drachenschnitzel/assets/shadow-darts-sotp-mage-psychic.9ce94a72.png";
-var __glob_0_60 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadowDartsSotpMagePsychic = "/assets/shadow-darts-sotp-mage-psychic.9ce94a72.png";
+var __glob_0_70 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowDartsSotpMagePsychic
 }, Symbol.toStringTag, { value: "Module" }));
-var signetRingMrWarriorMarshall = "/drachenschnitzel/assets/signet-ring-mr-warrior-marshall.c760baba.png";
-var __glob_0_61 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var signetRingMrWarriorMarshall = "/assets/signet-ring-mr-warrior-marshall.c760baba.png";
+var __glob_0_71 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": signetRingMrWarriorMarshall
 }, Symbol.toStringTag, { value: "Module" }));
-var skinningKnifeLrWarriorBeastmaster = "/drachenschnitzel/assets/skinning-knife-lr-warrior-beastmaster.250babfe.png";
-var __glob_0_62 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var skinningKnifeLrWarriorBeastmaster = "/assets/skinning-knife-lr-warrior-beastmaster.250babfe.png";
+var __glob_0_72 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skinningKnifeLrWarriorBeastmaster
 }, Symbol.toStringTag, { value: "Module" }));
-var smokingVialsLrHealerApothecary = "/drachenschnitzel/assets/smoking-vials-lr-healer-apothecary.ad0ef937.png";
-var __glob_0_63 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var smokingVialsLrHealerApothecary = "/assets/smoking-vials-lr-healer-apothecary.ad0ef937.png";
+var __glob_0_73 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": smokingVialsLrHealerApothecary
 }, Symbol.toStringTag, { value: "Module" }));
-var spireOfConfluxLlMageElementalist = "/drachenschnitzel/assets/spire-of-conflux-ll-mage-elementalist.e5a603a3.png";
-var __glob_0_64 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var spireOfConfluxLlMageElementalist = "/assets/spire-of-conflux-ll-mage-elementalist.e5a603a3.png";
+var __glob_0_74 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": spireOfConfluxLlMageElementalist
 }, Symbol.toStringTag, { value: "Module" }));
-var staffOfTheGraveLrMageHexer = "/drachenschnitzel/assets/staff-of-the-grave-lr-mage-hexer.63bb8adc.png";
-var __glob_0_65 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var staffOfTheGraveLrMageHexer = "/assets/staff-of-the-grave-lr-mage-hexer.63bb8adc.png";
+var __glob_0_75 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": staffOfTheGraveLrMageHexer
 }, Symbol.toStringTag, { value: "Module" }));
-var stasisRuneLwMageGeomancer = "/drachenschnitzel/assets/stasis-rune-lw-mage-geomancer.78356188.png";
-var __glob_0_66 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var stasisRuneLwMageGeomancer = "/assets/stasis-rune-lw-mage-geomancer.78356188.png";
+var __glob_0_76 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": stasisRuneLwMageGeomancer
 }, Symbol.toStringTag, { value: "Module" }));
-var theDeadMansCompassLrScoutTreasureHunter = "/drachenschnitzel/assets/the-dead-mans-compass-lr-scout-treasure-hunter.446e5ad5.png";
-var __glob_0_67 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theDeadMansCompassLrScoutTreasureHunter = "/assets/the-dead-mans-compass-lr-scout-treasure-hunter.446e5ad5.png";
+var __glob_0_77 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theDeadMansCompassLrScoutTreasureHunter
 }, Symbol.toStringTag, { value: "Module" }));
-var throwingKnivesBgScoutThief = "/drachenschnitzel/assets/throwing-knives-bg-scout-thief.85505e4c.png";
-var __glob_0_68 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var throwingKnivesBgScoutThief = "/assets/throwing-knives-bg-scout-thief.85505e4c.png";
+var __glob_0_78 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": throwingKnivesBgScoutThief
 }, Symbol.toStringTag, { value: "Module" }));
-var travelersBladeSnHealerBard = "/drachenschnitzel/assets/travelers-blade-sn-healer-bard.997ae197.png";
-var __glob_0_69 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var travelersBladeSnHealerBard = "/assets/travelers-blade-sn-healer-bard.997ae197.png";
+var __glob_0_79 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": travelersBladeSnHealerBard
 }, Symbol.toStringTag, { value: "Module" }));
-var tribalCloakSnScoutShadowWalker = "/drachenschnitzel/assets/tribal-cloak-sn-scout-shadow-walker.0f67127e.png";
-var __glob_0_70 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var tribalCloakSnScoutShadowWalker = "/assets/tribal-cloak-sn-scout-shadow-walker.0f67127e.png";
+var __glob_0_80 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": tribalCloakSnScoutShadowWalker
 }, Symbol.toStringTag, { value: "Module" }));
-var warHammerMrWarriorMarshall = "/drachenschnitzel/assets/war-hammer-mr-warrior-marshall.a8385cc9.png";
-var __glob_0_71 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var warHammerMrWarriorMarshall = "/assets/war-hammer-mr-warrior-marshall.a8385cc9.png";
+var __glob_0_81 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": warHammerMrWarriorMarshall
 }, Symbol.toStringTag, { value: "Module" }));
-var woodenShieldBgHealerDisciple = "/drachenschnitzel/assets/wooden-shield-bg-healer-disciple.33c7d248.png";
-var __glob_0_72 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var woodenShieldBgHealerDisciple = "/assets/wooden-shield-bg-healer-disciple.33c7d248.png";
+var __glob_0_82 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": woodenShieldBgHealerDisciple
 }, Symbol.toStringTag, { value: "Module" }));
-var woodenShieldBgWarriorKnight = "/drachenschnitzel/assets/wooden-shield-bg-warrior-knight.0fa47831.png";
-var __glob_0_73 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var woodenShieldBgWarriorKnight = "/assets/wooden-shield-bg-warrior-knight.0fa47831.png";
+var __glob_0_83 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": woodenShieldBgWarriorKnight
 }, Symbol.toStringTag, { value: "Module" }));
-var wornGreatswordLwWarriorChampion = "/drachenschnitzel/assets/worn-greatsword-lw-warrior-champion.49dd8253.png";
-var __glob_0_74 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wornGreatswordLwWarriorChampion = "/assets/worn-greatsword-lw-warrior-champion.49dd8253.png";
+var __glob_0_84 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wornGreatswordLwWarriorChampion
 }, Symbol.toStringTag, { value: "Module" }));
-var yewShortbowBgScoutWildlander = "/drachenschnitzel/assets/yew-shortbow-bg-scout-wildlander.7a5a6f49.png";
-var __glob_0_75 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var yewShortbowBgScoutWildlander = "/assets/yew-shortbow-bg-scout-wildlander.7a5a6f49.png";
+var __glob_0_85 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": yewShortbowBgScoutWildlander
 }, Symbol.toStringTag, { value: "Module" }));
-var arachyuraLrAct1Back = "/drachenschnitzel/assets/arachyura-lr-act1-back.9e76f77b.png";
-var __glob_0_76 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var arachyuraLrAct1Back = "/assets/arachyura-lr-act1-back.9e76f77b.png";
+var __glob_0_86 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": arachyuraLrAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var arachyuraLrAct1Front = "/drachenschnitzel/assets/arachyura-lr-act1-front.44ff34b9.png";
-var __glob_0_77 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var arachyuraLrAct1Front = "/assets/arachyura-lr-act1-front.44ff34b9.png";
+var __glob_0_87 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": arachyuraLrAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var arachyuraLrAct2Back = "/drachenschnitzel/assets/arachyura-lr-act2-back.3c5677c6.png";
-var __glob_0_78 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var arachyuraLrAct2Back = "/assets/arachyura-lr-act2-back.3c5677c6.png";
+var __glob_0_88 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": arachyuraLrAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var arachyuraLrAct2Front = "/drachenschnitzel/assets/arachyura-lr-act2-front.504dc385.png";
-var __glob_0_79 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var arachyuraLrAct2Front = "/assets/arachyura-lr-act2-front.504dc385.png";
+var __glob_0_89 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": arachyuraLrAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var banditMrAct1Back = "/drachenschnitzel/assets/bandit-mr-act1-back.0a08ca3c.png";
-var __glob_0_80 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var banditMrAct1Back = "/assets/bandit-mr-act1-back.0a08ca3c.png";
+var __glob_0_90 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": banditMrAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var banditMrAct1Front = "/drachenschnitzel/assets/bandit-mr-act1-front.f5063107.png";
-var __glob_0_81 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var banditMrAct1Front = "/assets/bandit-mr-act1-front.f5063107.png";
+var __glob_0_91 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": banditMrAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var banditMrAct2Back = "/drachenschnitzel/assets/bandit-mr-act2-back.23273172.png";
-var __glob_0_82 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var banditMrAct2Back = "/assets/bandit-mr-act2-back.23273172.png";
+var __glob_0_92 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": banditMrAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var banditMrAct2Front = "/drachenschnitzel/assets/bandit-mr-act2-front.8d6cbdb9.png";
-var __glob_0_83 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var banditMrAct2Front = "/assets/bandit-mr-act2-front.8d6cbdb9.png";
+var __glob_0_93 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": banditMrAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var baneSpiderCkAct1Back = "/drachenschnitzel/assets/bane-spider-ck-act1-back.6c8d82b5.png";
-var __glob_0_84 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var baneSpiderCkAct1Back = "/assets/bane-spider-ck-act1-back.6c8d82b5.png";
+var __glob_0_94 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baneSpiderCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var baneSpiderCkAct1Front = "/drachenschnitzel/assets/bane-spider-ck-act1-front.3d9d347f.png";
-var __glob_0_85 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var baneSpiderCkAct1Front = "/assets/bane-spider-ck-act1-front.3d9d347f.png";
+var __glob_0_95 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baneSpiderCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var baneSpiderCkAct2Back = "/drachenschnitzel/assets/bane-spider-ck-act2-back.b43da6b6.png";
-var __glob_0_86 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var baneSpiderCkAct2Back = "/assets/bane-spider-ck-act2-back.b43da6b6.png";
+var __glob_0_96 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baneSpiderCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var baneSpiderCkAct2Front = "/drachenschnitzel/assets/bane-spider-ck-act2-front.bfa9176f.png";
-var __glob_0_87 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var baneSpiderCkAct2Front = "/assets/bane-spider-ck-act2-front.bfa9176f.png";
+var __glob_0_97 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baneSpiderCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var baneSpiderOoAct1Back = "/drachenschnitzel/assets/bane-spider-oo-act1-back.8481e533.png";
-var __glob_0_88 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var baneSpiderOoAct1Back = "/assets/bane-spider-oo-act1-back.8481e533.png";
+var __glob_0_98 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baneSpiderOoAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var baneSpiderOoAct1Front = "/drachenschnitzel/assets/bane-spider-oo-act1-front.7699b7aa.png";
-var __glob_0_89 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var baneSpiderOoAct1Front = "/assets/bane-spider-oo-act1-front.7699b7aa.png";
+var __glob_0_99 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baneSpiderOoAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var baneSpiderOoAct2Back = "/drachenschnitzel/assets/bane-spider-oo-act2-back.d89ada40.png";
-var __glob_0_90 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var baneSpiderOoAct2Back = "/assets/bane-spider-oo-act2-back.d89ada40.png";
+var __glob_0_100 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baneSpiderOoAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var baneSpiderOoAct2Front = "/drachenschnitzel/assets/bane-spider-oo-act2-front.07907a02.png";
-var __glob_0_91 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var baneSpiderOoAct2Front = "/assets/bane-spider-oo-act2-front.07907a02.png";
+var __glob_0_101 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baneSpiderOoAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var barghestBgAct1Back = "/drachenschnitzel/assets/barghest-bg-act1-back.c1f4dd3a.png";
-var __glob_0_92 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var barghestBgAct1Back = "/assets/barghest-bg-act1-back.c1f4dd3a.png";
+var __glob_0_102 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": barghestBgAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var barghestBgAct1Front = "/drachenschnitzel/assets/barghest-bg-act1-front.bf4212bb.png";
-var __glob_0_93 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var barghestBgAct1Front = "/assets/barghest-bg-act1-front.bf4212bb.png";
+var __glob_0_103 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": barghestBgAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var barghestBgAct2Back = "/drachenschnitzel/assets/barghest-bg-act2-back.14ac8613.png";
-var __glob_0_94 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var barghestBgAct2Back = "/assets/barghest-bg-act2-back.14ac8613.png";
+var __glob_0_104 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": barghestBgAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var barghestBgAct2Front = "/drachenschnitzel/assets/barghest-bg-act2-front.1e154c0d.png";
-var __glob_0_95 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var barghestBgAct2Front = "/assets/barghest-bg-act2-front.1e154c0d.png";
+var __glob_0_105 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": barghestBgAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var beastmanCkAct1Back = "/drachenschnitzel/assets/beastman-ck-act1-back.52dc620c.png";
-var __glob_0_96 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beastmanCkAct1Back = "/assets/beastman-ck-act1-back.52dc620c.png";
+var __glob_0_106 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beastmanCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var beastmanCkAct1Front = "/drachenschnitzel/assets/beastman-ck-act1-front.d0d88fac.png";
-var __glob_0_97 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beastmanCkAct1Front = "/assets/beastman-ck-act1-front.d0d88fac.png";
+var __glob_0_107 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beastmanCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var beastmanCkAct2Back = "/drachenschnitzel/assets/beastman-ck-act2-back.f4dd3e58.png";
-var __glob_0_98 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beastmanCkAct2Back = "/assets/beastman-ck-act2-back.f4dd3e58.png";
+var __glob_0_108 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beastmanCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var beastmanCkAct2Front = "/drachenschnitzel/assets/beastman-ck-act2-front.34b80550.png";
-var __glob_0_99 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beastmanCkAct2Front = "/assets/beastman-ck-act2-front.34b80550.png";
+var __glob_0_109 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beastmanCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var beastmanOoAct1Back = "/drachenschnitzel/assets/beastman-oo-act1-back.ebbc8370.png";
-var __glob_0_100 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beastmanOoAct1Back = "/assets/beastman-oo-act1-back.ebbc8370.png";
+var __glob_0_110 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beastmanOoAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var beastmanOoAct1Front = "/drachenschnitzel/assets/beastman-oo-act1-front.e7f7104b.png";
-var __glob_0_101 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beastmanOoAct1Front = "/assets/beastman-oo-act1-front.e7f7104b.png";
+var __glob_0_111 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beastmanOoAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var beastmanOoAct2Back = "/drachenschnitzel/assets/beastman-oo-act2-back.31a1e629.png";
-var __glob_0_102 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beastmanOoAct2Back = "/assets/beastman-oo-act2-back.31a1e629.png";
+var __glob_0_112 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beastmanOoAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var beastmanOoAct2Front = "/drachenschnitzel/assets/beastman-oo-act2-front.38e504b1.png";
-var __glob_0_103 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beastmanOoAct2Front = "/assets/beastman-oo-act2-front.38e504b1.png";
+var __glob_0_113 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beastmanOoAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodApeCkAct1Back = "/drachenschnitzel/assets/blood-ape-ck-act1-back.0ed65692.png";
-var __glob_0_104 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodApeCkAct1Back = "/assets/blood-ape-ck-act1-back.0ed65692.png";
+var __glob_0_114 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodApeCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodApeCkAct1Front = "/drachenschnitzel/assets/blood-ape-ck-act1-front.c9cfecf2.png";
-var __glob_0_105 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodApeCkAct1Front = "/assets/blood-ape-ck-act1-front.c9cfecf2.png";
+var __glob_0_115 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodApeCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodApeCkAct2Back = "/drachenschnitzel/assets/blood-ape-ck-act2-back.711ec046.png";
-var __glob_0_106 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodApeCkAct2Back = "/assets/blood-ape-ck-act2-back.711ec046.png";
+var __glob_0_116 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodApeCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodApeCkAct2Front = "/drachenschnitzel/assets/blood-ape-ck-act2-front.e5002f4f.png";
-var __glob_0_107 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodApeCkAct2Front = "/assets/blood-ape-ck-act2-front.e5002f4f.png";
+var __glob_0_117 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodApeCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodApeSsAct1Back = "/drachenschnitzel/assets/blood-ape-ss-act1-back.d3133abd.png";
-var __glob_0_108 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodApeSsAct1Back = "/assets/blood-ape-ss-act1-back.d3133abd.png";
+var __glob_0_118 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodApeSsAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodApeSsAct1Front = "/drachenschnitzel/assets/blood-ape-ss-act1-front.bcfd55fb.png";
-var __glob_0_109 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodApeSsAct1Front = "/assets/blood-ape-ss-act1-front.bcfd55fb.png";
+var __glob_0_119 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodApeSsAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodApeSsAct2Back = "/drachenschnitzel/assets/blood-ape-ss-act2-back.73528bbe.png";
-var __glob_0_110 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodApeSsAct2Back = "/assets/blood-ape-ss-act2-back.73528bbe.png";
+var __glob_0_120 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodApeSsAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodApeSsAct2Front = "/drachenschnitzel/assets/blood-ape-ss-act2-front.1a3a87d3.png";
-var __glob_0_111 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodApeSsAct2Front = "/assets/blood-ape-ss-act2-front.1a3a87d3.png";
+var __glob_0_121 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodApeSsAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var boneHorrorMbAct1Back = "/drachenschnitzel/assets/bone-horror-mb-act1-back.d78505d9.png";
-var __glob_0_112 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var boneHorrorMbAct1Back = "/assets/bone-horror-mb-act1-back.d78505d9.png";
+var __glob_0_122 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boneHorrorMbAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var boneHorrorMbAct1Front = "/drachenschnitzel/assets/bone-horror-mb-act1-front.5132e97a.png";
-var __glob_0_113 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var boneHorrorMbAct1Front = "/assets/bone-horror-mb-act1-front.5132e97a.png";
+var __glob_0_123 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boneHorrorMbAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var boneHorrorMbAct2Back = "/drachenschnitzel/assets/bone-horror-mb-act2-back.6ef83a89.png";
-var __glob_0_114 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var boneHorrorMbAct2Back = "/assets/bone-horror-mb-act2-back.6ef83a89.png";
+var __glob_0_124 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boneHorrorMbAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var boneHorrorMbAct2Front = "/drachenschnitzel/assets/bone-horror-mb-act2-front.23970a02.png";
-var __glob_0_115 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var boneHorrorMbAct2Front = "/assets/bone-horror-mb-act2-front.23970a02.png";
+var __glob_0_125 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boneHorrorMbAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var broodwalkerMbAct1Back = "/drachenschnitzel/assets/broodwalker-mb-act1-back.63f5b0d2.png";
-var __glob_0_116 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var broodwalkerMbAct1Back = "/assets/broodwalker-mb-act1-back.63f5b0d2.png";
+var __glob_0_126 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": broodwalkerMbAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var broodwalkerMbAct1Front = "/drachenschnitzel/assets/broodwalker-mb-act1-front.a0ccd054.png";
-var __glob_0_117 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var broodwalkerMbAct1Front = "/assets/broodwalker-mb-act1-front.a0ccd054.png";
+var __glob_0_127 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": broodwalkerMbAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var broodwalkerMbAct2Back = "/drachenschnitzel/assets/broodwalker-mb-act2-back.6bccbfcc.png";
-var __glob_0_118 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var broodwalkerMbAct2Back = "/assets/broodwalker-mb-act2-back.6bccbfcc.png";
+var __glob_0_128 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": broodwalkerMbAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var broodwalkerMbAct2Front = "/drachenschnitzel/assets/broodwalker-mb-act2-front.898253fd.png";
-var __glob_0_119 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var broodwalkerMbAct2Front = "/assets/broodwalker-mb-act2-front.898253fd.png";
+var __glob_0_129 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": broodwalkerMbAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var burrowingHorrorSotpAct1Back = "/drachenschnitzel/assets/burrowing-horror-sotp-act1-back.cbb1848b.png";
-var __glob_0_120 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var burrowingHorrorSotpAct1Back = "/assets/burrowing-horror-sotp-act1-back.cbb1848b.png";
+var __glob_0_130 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": burrowingHorrorSotpAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var burrowingHorrorSotpAct1Front = "/drachenschnitzel/assets/burrowing-horror-sotp-act1-front.6fda8cee.png";
-var __glob_0_121 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var burrowingHorrorSotpAct1Front = "/assets/burrowing-horror-sotp-act1-front.6fda8cee.png";
+var __glob_0_131 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": burrowingHorrorSotpAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var burrowingHorrorSotpAct2Back = "/drachenschnitzel/assets/burrowing-horror-sotp-act2-back.03163699.png";
-var __glob_0_122 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var burrowingHorrorSotpAct2Back = "/assets/burrowing-horror-sotp-act2-back.03163699.png";
+var __glob_0_132 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": burrowingHorrorSotpAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var burrowingHorrorSotpAct2Front = "/drachenschnitzel/assets/burrowing-horror-sotp-act2-front.afb518fe.png";
-var __glob_0_123 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var burrowingHorrorSotpAct2Front = "/assets/burrowing-horror-sotp-act2-front.afb518fe.png";
+var __glob_0_133 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": burrowingHorrorSotpAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var carrionDrakeLrAct1Back = "/drachenschnitzel/assets/carrion-drake-lr-act1-back.eead2997.png";
-var __glob_0_124 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var carrionDrakeLrAct1Back = "/assets/carrion-drake-lr-act1-back.eead2997.png";
+var __glob_0_134 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": carrionDrakeLrAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var carrionDrakeLrAct1Front = "/drachenschnitzel/assets/carrion-drake-lr-act1-front.e80f49bc.png";
-var __glob_0_125 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var carrionDrakeLrAct1Front = "/assets/carrion-drake-lr-act1-front.e80f49bc.png";
+var __glob_0_135 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": carrionDrakeLrAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var carrionDrakeLrAct2Back = "/drachenschnitzel/assets/carrion-drake-lr-act2-back.db0d3d1d.png";
-var __glob_0_126 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var carrionDrakeLrAct2Back = "/assets/carrion-drake-lr-act2-back.db0d3d1d.png";
+var __glob_0_136 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": carrionDrakeLrAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var carrionDrakeLrAct2Front = "/drachenschnitzel/assets/carrion-drake-lr-act2-front.5ee599cd.png";
-var __glob_0_127 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var carrionDrakeLrAct2Front = "/assets/carrion-drake-lr-act2-front.5ee599cd.png";
+var __glob_0_137 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": carrionDrakeLrAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var caveSpiderBgAct1Back = "/drachenschnitzel/assets/cave-spider-bg-act1-back.864acbb8.png";
-var __glob_0_128 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var caveSpiderBgAct1Back = "/assets/cave-spider-bg-act1-back.864acbb8.png";
+var __glob_0_138 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": caveSpiderBgAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var caveSpiderBgAct1Front = "/drachenschnitzel/assets/cave-spider-bg-act1-front.5a5d38ab.png";
-var __glob_0_129 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var caveSpiderBgAct1Front = "/assets/cave-spider-bg-act1-front.5a5d38ab.png";
+var __glob_0_139 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": caveSpiderBgAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var caveSpiderBgAct2Back = "/drachenschnitzel/assets/cave-spider-bg-act2-back.08cbfeec.png";
-var __glob_0_130 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var caveSpiderBgAct2Back = "/assets/cave-spider-bg-act2-back.08cbfeec.png";
+var __glob_0_140 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": caveSpiderBgAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var caveSpiderBgAct2Front = "/drachenschnitzel/assets/cave-spider-bg-act2-front.020e4e5d.png";
-var __glob_0_131 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var caveSpiderBgAct2Front = "/assets/cave-spider-bg-act2-front.020e4e5d.png";
+var __glob_0_141 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": caveSpiderBgAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var changelingSnAct1Back = "/drachenschnitzel/assets/changeling-sn-act1-back.dc71e116.png";
-var __glob_0_132 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var changelingSnAct1Back = "/assets/changeling-sn-act1-back.dc71e116.png";
+var __glob_0_142 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": changelingSnAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var changelingSnAct1Front = "/drachenschnitzel/assets/changeling-sn-act1-front.0b086173.png";
-var __glob_0_133 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var changelingSnAct1Front = "/assets/changeling-sn-act1-front.0b086173.png";
+var __glob_0_143 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": changelingSnAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var changelingSnAct2Back = "/drachenschnitzel/assets/changeling-sn-act2-back.60b0b3f3.png";
-var __glob_0_134 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var changelingSnAct2Back = "/assets/changeling-sn-act2-back.60b0b3f3.png";
+var __glob_0_144 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": changelingSnAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var changelingSnAct2Front = "/drachenschnitzel/assets/changeling-sn-act2-front.f524e3f8.png";
-var __glob_0_135 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var changelingSnAct2Front = "/assets/changeling-sn-act2-front.f524e3f8.png";
+var __glob_0_145 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": changelingSnAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var chaosBeastCdAct1Back = "/drachenschnitzel/assets/chaos-beast-cd-act1-back.f0fc3f97.png";
-var __glob_0_136 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chaosBeastCdAct1Back = "/assets/chaos-beast-cd-act1-back.f0fc3f97.png";
+var __glob_0_146 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chaosBeastCdAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var chaosBeastCdAct1Front = "/drachenschnitzel/assets/chaos-beast-cd-act1-front.5a9d8293.png";
-var __glob_0_137 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chaosBeastCdAct1Front = "/assets/chaos-beast-cd-act1-front.5a9d8293.png";
+var __glob_0_147 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chaosBeastCdAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var chaosBeastCdAct2Back = "/drachenschnitzel/assets/chaos-beast-cd-act2-back.99472ab3.png";
-var __glob_0_138 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chaosBeastCdAct2Back = "/assets/chaos-beast-cd-act2-back.99472ab3.png";
+var __glob_0_148 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chaosBeastCdAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var chaosBeastCdAct2Front = "/drachenschnitzel/assets/chaos-beast-cd-act2-front.f2ec4407.png";
-var __glob_0_139 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chaosBeastCdAct2Front = "/assets/chaos-beast-cd-act2-front.f2ec4407.png";
+var __glob_0_149 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chaosBeastCdAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var chaosBeastCkAct1Back = "/drachenschnitzel/assets/chaos-beast-ck-act1-back.68c4a774.png";
-var __glob_0_140 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chaosBeastCkAct1Back = "/assets/chaos-beast-ck-act1-back.68c4a774.png";
+var __glob_0_150 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chaosBeastCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var chaosBeastCkAct1Front = "/drachenschnitzel/assets/chaos-beast-ck-act1-front.13992e3a.png";
-var __glob_0_141 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chaosBeastCkAct1Front = "/assets/chaos-beast-ck-act1-front.13992e3a.png";
+var __glob_0_151 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chaosBeastCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var chaosBeastCkAct2Back = "/drachenschnitzel/assets/chaos-beast-ck-act2-back.e864be7d.png";
-var __glob_0_142 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chaosBeastCkAct2Back = "/assets/chaos-beast-ck-act2-back.e864be7d.png";
+var __glob_0_152 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chaosBeastCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var chaosBeastCkAct2Front = "/drachenschnitzel/assets/chaos-beast-ck-act2-front.f4afcf47.png";
-var __glob_0_143 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chaosBeastCkAct2Front = "/assets/chaos-beast-ck-act2-front.f4afcf47.png";
+var __glob_0_153 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chaosBeastCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var crowHagTcAct1Back = "/drachenschnitzel/assets/crow-hag-tc-act1-back.1ef901c6.png";
-var __glob_0_144 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var crowHagTcAct1Back = "/assets/crow-hag-tc-act1-back.1ef901c6.png";
+var __glob_0_154 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": crowHagTcAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var crowHagTcAct1Front = "/drachenschnitzel/assets/crow-hag-tc-act1-front.01ae46c5.png";
-var __glob_0_145 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var crowHagTcAct1Front = "/assets/crow-hag-tc-act1-front.01ae46c5.png";
+var __glob_0_155 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": crowHagTcAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var crowHagTcAct2Back = "/drachenschnitzel/assets/crow-hag-tc-act2-back.aafe4028.png";
-var __glob_0_146 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var crowHagTcAct2Back = "/assets/crow-hag-tc-act2-back.aafe4028.png";
+var __glob_0_156 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": crowHagTcAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var crowHagTcAct2Front = "/drachenschnitzel/assets/crow-hag-tc-act2-front.7f4566a8.png";
-var __glob_0_147 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var crowHagTcAct2Front = "/assets/crow-hag-tc-act2-front.7f4566a8.png";
+var __glob_0_157 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": crowHagTcAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var cryptDragonCkAct1Back = "/drachenschnitzel/assets/crypt-dragon-ck-act1-back.d6776718.png";
-var __glob_0_148 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cryptDragonCkAct1Back = "/assets/crypt-dragon-ck-act1-back.d6776718.png";
+var __glob_0_158 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cryptDragonCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var cryptDragonCkAct1Front = "/drachenschnitzel/assets/crypt-dragon-ck-act1-front.22e26904.png";
-var __glob_0_149 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cryptDragonCkAct1Front = "/assets/crypt-dragon-ck-act1-front.22e26904.png";
+var __glob_0_159 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cryptDragonCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var cryptDragonCkAct2Back = "/drachenschnitzel/assets/crypt-dragon-ck-act2-back.41832ced.png";
-var __glob_0_150 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cryptDragonCkAct2Back = "/assets/crypt-dragon-ck-act2-back.41832ced.png";
+var __glob_0_160 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cryptDragonCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var cryptDragonCkAct2Front = "/drachenschnitzel/assets/crypt-dragon-ck-act2-front.27154652.png";
-var __glob_0_151 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cryptDragonCkAct2Front = "/assets/crypt-dragon-ck-act2-front.27154652.png";
+var __glob_0_161 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cryptDragonCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var cryptDragonGdAct1Back = "/drachenschnitzel/assets/crypt-dragon-gd-act1-back.ee123ac0.png";
-var __glob_0_152 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cryptDragonGdAct1Back = "/assets/crypt-dragon-gd-act1-back.ee123ac0.png";
+var __glob_0_162 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cryptDragonGdAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var cryptDragonGdAct1Front = "/drachenschnitzel/assets/crypt-dragon-gd-act1-front.aa74329d.png";
-var __glob_0_153 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cryptDragonGdAct1Front = "/assets/crypt-dragon-gd-act1-front.aa74329d.png";
+var __glob_0_163 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cryptDragonGdAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var cryptDragonGdAct2Back = "/drachenschnitzel/assets/crypt-dragon-gd-act2-back.132eb1a7.png";
-var __glob_0_154 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cryptDragonGdAct2Back = "/assets/crypt-dragon-gd-act2-back.132eb1a7.png";
+var __glob_0_164 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cryptDragonGdAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var cryptDragonGdAct2Front = "/drachenschnitzel/assets/crypt-dragon-gd-act2-front.2339b94f.png";
-var __glob_0_155 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cryptDragonGdAct2Front = "/assets/crypt-dragon-gd-act2-front.2339b94f.png";
+var __glob_0_165 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cryptDragonGdAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var darkMinotaurSeAct1Back = "/drachenschnitzel/assets/dark-minotaur-se-act1-back.d3c9cd15.png";
-var __glob_0_156 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkMinotaurSeAct1Back = "/assets/dark-minotaur-se-act1-back.d3c9cd15.png";
+var __glob_0_166 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkMinotaurSeAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var darkMinotaurSeAct1Front = "/drachenschnitzel/assets/dark-minotaur-se-act1-front.25cbdabd.png";
-var __glob_0_157 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkMinotaurSeAct1Front = "/assets/dark-minotaur-se-act1-front.25cbdabd.png";
+var __glob_0_167 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkMinotaurSeAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var darkMinotaurSeAct2Back = "/drachenschnitzel/assets/dark-minotaur-se-act2-back.8af1ea27.png";
-var __glob_0_158 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkMinotaurSeAct2Back = "/assets/dark-minotaur-se-act2-back.8af1ea27.png";
+var __glob_0_168 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkMinotaurSeAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var darkMinotaurSeAct2Front = "/drachenschnitzel/assets/dark-minotaur-se-act2-front.027d6d10.png";
-var __glob_0_159 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkMinotaurSeAct2Front = "/assets/dark-minotaur-se-act2-front.027d6d10.png";
+var __glob_0_169 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkMinotaurSeAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var darkPriestCkAct1Back = "/drachenschnitzel/assets/dark-priest-ck-act1-back.5b5bc2a6.png";
-var __glob_0_160 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkPriestCkAct1Back = "/assets/dark-priest-ck-act1-back.5b5bc2a6.png";
+var __glob_0_170 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkPriestCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var darkPriestCkAct1Front = "/drachenschnitzel/assets/dark-priest-ck-act1-front.68f8e992.png";
-var __glob_0_161 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkPriestCkAct1Front = "/assets/dark-priest-ck-act1-front.68f8e992.png";
+var __glob_0_171 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkPriestCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var darkPriestCkAct2Back = "/drachenschnitzel/assets/dark-priest-ck-act2-back.c4ddaf78.png";
-var __glob_0_162 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkPriestCkAct2Back = "/assets/dark-priest-ck-act2-back.c4ddaf78.png";
+var __glob_0_172 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkPriestCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var darkPriestCkAct2Front = "/drachenschnitzel/assets/dark-priest-ck-act2-front.076e1010.png";
-var __glob_0_163 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkPriestCkAct2Front = "/assets/dark-priest-ck-act2-front.076e1010.png";
+var __glob_0_173 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkPriestCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var darkPriestGdAct1Back = "/drachenschnitzel/assets/dark-priest-gd-act1-back.f1a4a032.png";
-var __glob_0_164 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkPriestGdAct1Back = "/assets/dark-priest-gd-act1-back.f1a4a032.png";
+var __glob_0_174 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkPriestGdAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var darkPriestGdAct1Front = "/drachenschnitzel/assets/dark-priest-gd-act1-front.4e1896b5.png";
-var __glob_0_165 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkPriestGdAct1Front = "/assets/dark-priest-gd-act1-front.4e1896b5.png";
+var __glob_0_175 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkPriestGdAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var darkPriestGdAct2Back = "/drachenschnitzel/assets/dark-priest-gd-act2-back.310e8393.png";
-var __glob_0_166 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkPriestGdAct2Back = "/assets/dark-priest-gd-act2-back.310e8393.png";
+var __glob_0_176 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkPriestGdAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var darkPriestGdAct2Front = "/drachenschnitzel/assets/dark-priest-gd-act2-front.14b975e4.png";
-var __glob_0_167 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var darkPriestGdAct2Front = "/assets/dark-priest-gd-act2-front.14b975e4.png";
+var __glob_0_177 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": darkPriestGdAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var deepElfBwAct1Back = "/drachenschnitzel/assets/deep-elf-bw-act1-back.2ee7cd76.png";
-var __glob_0_168 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var deepElfBwAct1Back = "/assets/deep-elf-bw-act1-back.2ee7cd76.png";
+var __glob_0_178 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deepElfBwAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var deepElfBwAct1Front = "/drachenschnitzel/assets/deep-elf-bw-act1-front.ba0455e0.png";
-var __glob_0_169 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var deepElfBwAct1Front = "/assets/deep-elf-bw-act1-front.ba0455e0.png";
+var __glob_0_179 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deepElfBwAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var deepElfBwAct2Back = "/drachenschnitzel/assets/deep-elf-bw-act2-back.dad20d59.png";
-var __glob_0_170 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var deepElfBwAct2Back = "/assets/deep-elf-bw-act2-back.dad20d59.png";
+var __glob_0_180 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deepElfBwAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var deepElfBwAct2Front = "/drachenschnitzel/assets/deep-elf-bw-act2-front.5bddbdbe.png";
-var __glob_0_171 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var deepElfBwAct2Front = "/assets/deep-elf-bw-act2-front.5bddbdbe.png";
+var __glob_0_181 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deepElfBwAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var deepElfCkAct1Back = "/drachenschnitzel/assets/deep-elf-ck-act1-back.2f97be77.png";
-var __glob_0_172 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var deepElfCkAct1Back = "/assets/deep-elf-ck-act1-back.2f97be77.png";
+var __glob_0_182 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deepElfCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var deepElfCkAct1Front = "/drachenschnitzel/assets/deep-elf-ck-act1-front.bc775d1e.png";
-var __glob_0_173 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var deepElfCkAct1Front = "/assets/deep-elf-ck-act1-front.bc775d1e.png";
+var __glob_0_183 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deepElfCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var deepElfCkAct2Back = "/drachenschnitzel/assets/deep-elf-ck-act2-back.2c6c44fa.png";
-var __glob_0_174 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var deepElfCkAct2Back = "/assets/deep-elf-ck-act2-back.2c6c44fa.png";
+var __glob_0_184 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deepElfCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var deepElfCkAct2Front = "/drachenschnitzel/assets/deep-elf-ck-act2-front.13de06be.png";
-var __glob_0_175 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var deepElfCkAct2Front = "/assets/deep-elf-ck-act2-front.13de06be.png";
+var __glob_0_185 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deepElfCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var demonLordCkAct1Back = "/drachenschnitzel/assets/demon-lord-ck-act1-back.a58c3677.png";
-var __glob_0_176 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var demonLordCkAct1Back = "/assets/demon-lord-ck-act1-back.a58c3677.png";
+var __glob_0_186 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonLordCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var demonLordCkAct1Front = "/drachenschnitzel/assets/demon-lord-ck-act1-front.b3e308ba.png";
-var __glob_0_177 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var demonLordCkAct1Front = "/assets/demon-lord-ck-act1-front.b3e308ba.png";
+var __glob_0_187 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonLordCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var demonLordCkAct2Back = "/drachenschnitzel/assets/demon-lord-ck-act2-back.1d0c8e24.png";
-var __glob_0_178 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var demonLordCkAct2Back = "/assets/demon-lord-ck-act2-back.1d0c8e24.png";
+var __glob_0_188 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonLordCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var demonLordCkAct2Front = "/drachenschnitzel/assets/demon-lord-ck-act2-front.4283b66e.png";
-var __glob_0_179 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var demonLordCkAct2Front = "/assets/demon-lord-ck-act2-front.4283b66e.png";
+var __glob_0_189 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonLordCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var demonLordTcAct1Back = "/drachenschnitzel/assets/demon-lord-tc-act1-back.cc977a06.png";
-var __glob_0_180 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var demonLordTcAct1Back = "/assets/demon-lord-tc-act1-back.cc977a06.png";
+var __glob_0_190 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonLordTcAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var demonLordTcAct1Front = "/drachenschnitzel/assets/demon-lord-tc-act1-front.db5281ae.png";
-var __glob_0_181 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var demonLordTcAct1Front = "/assets/demon-lord-tc-act1-front.db5281ae.png";
+var __glob_0_191 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonLordTcAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var demonLordTcAct2Back = "/drachenschnitzel/assets/demon-lord-tc-act2-back.fd36e70d.png";
-var __glob_0_182 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var demonLordTcAct2Back = "/assets/demon-lord-tc-act2-back.fd36e70d.png";
+var __glob_0_192 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonLordTcAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var demonLordTcAct2Front = "/drachenschnitzel/assets/demon-lord-tc-act2-front.41d12e09.png";
-var __glob_0_183 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var demonLordTcAct2Front = "/assets/demon-lord-tc-act2-front.41d12e09.png";
+var __glob_0_193 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonLordTcAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var elementalBgAct1Back = "/drachenschnitzel/assets/elemental-bg-act1-back.a4e59841.png";
-var __glob_0_184 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var elementalBgAct1Back = "/assets/elemental-bg-act1-back.a4e59841.png";
+var __glob_0_194 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elementalBgAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var elementalBgAct1Front = "/drachenschnitzel/assets/elemental-bg-act1-front.5d3dd60f.png";
-var __glob_0_185 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var elementalBgAct1Front = "/assets/elemental-bg-act1-front.5d3dd60f.png";
+var __glob_0_195 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elementalBgAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var elementalBgAct2Back = "/drachenschnitzel/assets/elemental-bg-act2-back.f5c8b1dc.png";
-var __glob_0_186 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var elementalBgAct2Back = "/assets/elemental-bg-act2-back.f5c8b1dc.png";
+var __glob_0_196 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elementalBgAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var elementalBgAct2Front = "/drachenschnitzel/assets/elemental-bg-act2-front.15eba80f.png";
-var __glob_0_187 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var elementalBgAct2Front = "/assets/elemental-bg-act2-front.15eba80f.png";
+var __glob_0_197 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elementalBgAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ettinBgAct1Back = "/drachenschnitzel/assets/ettin-bg-act1-back.bbd1be77.png";
-var __glob_0_188 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ettinBgAct1Back = "/assets/ettin-bg-act1-back.bbd1be77.png";
+var __glob_0_198 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ettinBgAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ettinBgAct1Front = "/drachenschnitzel/assets/ettin-bg-act1-front.e96870df.png";
-var __glob_0_189 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ettinBgAct1Front = "/assets/ettin-bg-act1-front.e96870df.png";
+var __glob_0_199 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ettinBgAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ettinBgAct2Back = "/drachenschnitzel/assets/ettin-bg-act2-back.384ba91c.png";
-var __glob_0_190 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ettinBgAct2Back = "/assets/ettin-bg-act2-back.384ba91c.png";
+var __glob_0_200 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ettinBgAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ettinBgAct2Front = "/drachenschnitzel/assets/ettin-bg-act2-front.41fa615b.png";
-var __glob_0_191 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ettinBgAct2Front = "/assets/ettin-bg-act2-front.41fa615b.png";
+var __glob_0_201 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ettinBgAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ferroxCkAct1Back = "/drachenschnitzel/assets/ferrox-ck-act1-back.5ad39e38.png";
-var __glob_0_192 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ferroxCkAct1Back = "/assets/ferrox-ck-act1-back.5ad39e38.png";
+var __glob_0_202 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ferroxCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ferroxCkAct1Front = "/drachenschnitzel/assets/ferrox-ck-act1-front.6f87d908.png";
-var __glob_0_193 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ferroxCkAct1Front = "/assets/ferrox-ck-act1-front.6f87d908.png";
+var __glob_0_203 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ferroxCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ferroxCkAct2Back = "/drachenschnitzel/assets/ferrox-ck-act2-back.238409e8.png";
-var __glob_0_194 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ferroxCkAct2Back = "/assets/ferrox-ck-act2-back.238409e8.png";
+var __glob_0_204 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ferroxCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ferroxCkAct2Front = "/drachenschnitzel/assets/ferrox-ck-act2-front.5c05aae7.png";
-var __glob_0_195 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ferroxCkAct2Front = "/assets/ferrox-ck-act2-front.5c05aae7.png";
+var __glob_0_205 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ferroxCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ferroxSsAct1Back = "/drachenschnitzel/assets/ferrox-ss-act1-back.e84f7a75.png";
-var __glob_0_196 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ferroxSsAct1Back = "/assets/ferrox-ss-act1-back.e84f7a75.png";
+var __glob_0_206 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ferroxSsAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ferroxSsAct1Front = "/drachenschnitzel/assets/ferrox-ss-act1-front.bb5eaf29.png";
-var __glob_0_197 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ferroxSsAct1Front = "/assets/ferrox-ss-act1-front.bb5eaf29.png";
+var __glob_0_207 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ferroxSsAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ferroxSsAct2Back = "/drachenschnitzel/assets/ferrox-ss-act2-back.9fef77ad.png";
-var __glob_0_198 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ferroxSsAct2Back = "/assets/ferrox-ss-act2-back.9fef77ad.png";
+var __glob_0_208 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ferroxSsAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ferroxSsAct2Front = "/drachenschnitzel/assets/ferrox-ss-act2-front.fdf91830.png";
-var __glob_0_199 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ferroxSsAct2Front = "/assets/ferrox-ss-act2-front.fdf91830.png";
+var __glob_0_209 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ferroxSsAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var fireImpsLwAct1Back = "/drachenschnitzel/assets/fire-imps-lw-act1-back.85224f6b.png";
-var __glob_0_200 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fireImpsLwAct1Back = "/assets/fire-imps-lw-act1-back.85224f6b.png";
+var __glob_0_210 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fireImpsLwAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var fireImpsLwAct1Front = "/drachenschnitzel/assets/fire-imps-lw-act1-front.c4f71653.png";
-var __glob_0_201 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fireImpsLwAct1Front = "/assets/fire-imps-lw-act1-front.c4f71653.png";
+var __glob_0_211 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fireImpsLwAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var fireImpsLwAct2Back = "/drachenschnitzel/assets/fire-imps-lw-act2-back.3a8c0315.png";
-var __glob_0_202 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fireImpsLwAct2Back = "/assets/fire-imps-lw-act2-back.3a8c0315.png";
+var __glob_0_212 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fireImpsLwAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var fireImpsLwAct2Front = "/drachenschnitzel/assets/fire-imps-lw-act2-front.37a6c3f2.png";
-var __glob_0_203 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fireImpsLwAct2Front = "/assets/fire-imps-lw-act2-front.37a6c3f2.png";
+var __glob_0_213 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fireImpsLwAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var fleshMoulderBgAct1Back = "/drachenschnitzel/assets/flesh-moulder-bg-act1-back.9ec9d80c.png";
-var __glob_0_204 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fleshMoulderBgAct1Back = "/assets/flesh-moulder-bg-act1-back.9ec9d80c.png";
+var __glob_0_214 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fleshMoulderBgAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var fleshMoulderBgAct1Front = "/drachenschnitzel/assets/flesh-moulder-bg-act1-front.492758dc.png";
-var __glob_0_205 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fleshMoulderBgAct1Front = "/assets/flesh-moulder-bg-act1-front.492758dc.png";
+var __glob_0_215 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fleshMoulderBgAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var fleshMoulderBgAct2Back = "/drachenschnitzel/assets/flesh-moulder-bg-act2-back.71820c4f.png";
-var __glob_0_206 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fleshMoulderBgAct2Back = "/assets/flesh-moulder-bg-act2-back.71820c4f.png";
+var __glob_0_216 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fleshMoulderBgAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var fleshMoulderBgAct2Front = "/drachenschnitzel/assets/flesh-moulder-bg-act2-front.db833077.png";
-var __glob_0_207 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fleshMoulderBgAct2Front = "/assets/flesh-moulder-bg-act2-front.db833077.png";
+var __glob_0_217 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fleshMoulderBgAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var giantCdAct1Back = "/drachenschnitzel/assets/giant-cd-act1-back.71205f6b.png";
-var __glob_0_208 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var giantCdAct1Back = "/assets/giant-cd-act1-back.71205f6b.png";
+var __glob_0_218 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": giantCdAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var giantCdAct1Front = "/drachenschnitzel/assets/giant-cd-act1-front.2ca02026.png";
-var __glob_0_209 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var giantCdAct1Front = "/assets/giant-cd-act1-front.2ca02026.png";
+var __glob_0_219 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": giantCdAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var giantCdAct2Back = "/drachenschnitzel/assets/giant-cd-act2-back.1a6f195a.png";
-var __glob_0_210 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var giantCdAct2Back = "/assets/giant-cd-act2-back.1a6f195a.png";
+var __glob_0_220 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": giantCdAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var giantCdAct2Front = "/drachenschnitzel/assets/giant-cd-act2-front.1fc513a1.png";
-var __glob_0_211 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var giantCdAct2Front = "/assets/giant-cd-act2-front.1fc513a1.png";
+var __glob_0_221 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": giantCdAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var giantCkAct1Back = "/drachenschnitzel/assets/giant-ck-act1-back.cf123ef6.png";
-var __glob_0_212 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var giantCkAct1Back = "/assets/giant-ck-act1-back.cf123ef6.png";
+var __glob_0_222 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": giantCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var giantCkAct1Front = "/drachenschnitzel/assets/giant-ck-act1-front.fa73f464.png";
-var __glob_0_213 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var giantCkAct1Front = "/assets/giant-ck-act1-front.fa73f464.png";
+var __glob_0_223 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": giantCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var giantCkAct2Back = "/drachenschnitzel/assets/giant-ck-act2-back.4b0e0f21.png";
-var __glob_0_214 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var giantCkAct2Back = "/assets/giant-ck-act2-back.4b0e0f21.png";
+var __glob_0_224 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": giantCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var giantCkAct2Front = "/drachenschnitzel/assets/giant-ck-act2-front.232c020a.png";
-var __glob_0_215 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var giantCkAct2Front = "/assets/giant-ck-act2-front.232c020a.png";
+var __glob_0_225 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": giantCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var goblinArcherBgAct1Back = "/drachenschnitzel/assets/goblin-archer-bg-act1-back.6797b3d5.png";
-var __glob_0_216 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goblinArcherBgAct1Back = "/assets/goblin-archer-bg-act1-back.6797b3d5.png";
+var __glob_0_226 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goblinArcherBgAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var goblinArcherBgAct1Front = "/drachenschnitzel/assets/goblin-archer-bg-act1-front.14785357.png";
-var __glob_0_217 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goblinArcherBgAct1Front = "/assets/goblin-archer-bg-act1-front.14785357.png";
+var __glob_0_227 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goblinArcherBgAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var goblinArcherBgAct2Back = "/drachenschnitzel/assets/goblin-archer-bg-act2-back.8682147c.png";
-var __glob_0_218 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goblinArcherBgAct2Back = "/assets/goblin-archer-bg-act2-back.8682147c.png";
+var __glob_0_228 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goblinArcherBgAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var goblinArcherBgAct2Front = "/drachenschnitzel/assets/goblin-archer-bg-act2-front.df945dc8.png";
-var __glob_0_219 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goblinArcherBgAct2Front = "/assets/goblin-archer-bg-act2-front.df945dc8.png";
+var __glob_0_229 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goblinArcherBgAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var goblinWitcherLrAct1Back = "/drachenschnitzel/assets/goblin-witcher-lr-act1-back.373c4617.png";
-var __glob_0_220 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goblinWitcherLrAct1Back = "/assets/goblin-witcher-lr-act1-back.373c4617.png";
+var __glob_0_230 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goblinWitcherLrAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var goblinWitcherLrAct1Front = "/drachenschnitzel/assets/goblin-witcher-lr-act1-front.6dd351e3.png";
-var __glob_0_221 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goblinWitcherLrAct1Front = "/assets/goblin-witcher-lr-act1-front.6dd351e3.png";
+var __glob_0_231 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goblinWitcherLrAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var goblinWitcherLrAct2Back = "/drachenschnitzel/assets/goblin-witcher-lr-act2-back.ad665f01.png";
-var __glob_0_222 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goblinWitcherLrAct2Back = "/assets/goblin-witcher-lr-act2-back.ad665f01.png";
+var __glob_0_232 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goblinWitcherLrAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var goblinWitcherLrAct2Front = "/drachenschnitzel/assets/goblin-witcher-lr-act2-front.b1a454a7.png";
-var __glob_0_223 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goblinWitcherLrAct2Front = "/assets/goblin-witcher-lr-act2-front.b1a454a7.png";
+var __glob_0_233 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goblinWitcherLrAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var golemCfAct1Back = "/drachenschnitzel/assets/golem-cf-act1-back.c1ea32d1.png";
-var __glob_0_224 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var golemCfAct1Back = "/assets/golem-cf-act1-back.c1ea32d1.png";
+var __glob_0_234 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": golemCfAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var golemCfAct1Front = "/drachenschnitzel/assets/golem-cf-act1-front.a635c6d9.png";
-var __glob_0_225 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var golemCfAct1Front = "/assets/golem-cf-act1-front.a635c6d9.png";
+var __glob_0_235 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": golemCfAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var golemCfAct2Back = "/drachenschnitzel/assets/golem-cf-act2-back.60ff9954.png";
-var __glob_0_226 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var golemCfAct2Back = "/assets/golem-cf-act2-back.60ff9954.png";
+var __glob_0_236 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": golemCfAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var golemCfAct2Front = "/drachenschnitzel/assets/golem-cf-act2-front.ce9e8dfb.png";
-var __glob_0_227 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var golemCfAct2Front = "/assets/golem-cf-act2-front.ce9e8dfb.png";
+var __glob_0_237 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": golemCfAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var golemCkAct1Back = "/drachenschnitzel/assets/golem-ck-act1-back.d8710a1f.png";
-var __glob_0_228 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var golemCkAct1Back = "/assets/golem-ck-act1-back.d8710a1f.png";
+var __glob_0_238 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": golemCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var golemCkAct1Front = "/drachenschnitzel/assets/golem-ck-act1-front.d63c6287.png";
-var __glob_0_229 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var golemCkAct1Front = "/assets/golem-ck-act1-front.d63c6287.png";
+var __glob_0_239 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": golemCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var golemCkAct2Back = "/drachenschnitzel/assets/golem-ck-act2-back.c90cc62e.png";
-var __glob_0_230 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var golemCkAct2Back = "/assets/golem-ck-act2-back.c90cc62e.png";
+var __glob_0_240 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": golemCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var golemCkAct2Front = "/drachenschnitzel/assets/golem-ck-act2-front.61478a5e.png";
-var __glob_0_231 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var golemCkAct2Front = "/assets/golem-ck-act2-front.61478a5e.png";
+var __glob_0_241 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": golemCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var harpyTfAct1Back = "/drachenschnitzel/assets/harpy-tf-act1-back.f05d2b29.png";
-var __glob_0_232 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var harpyTfAct1Back = "/assets/harpy-tf-act1-back.f05d2b29.png";
+var __glob_0_242 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": harpyTfAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var harpyTfAct1Front = "/drachenschnitzel/assets/harpy-tf-act1-front.a12e0b51.png";
-var __glob_0_233 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var harpyTfAct1Front = "/assets/harpy-tf-act1-front.a12e0b51.png";
+var __glob_0_243 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": harpyTfAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var harpyTfAct2Back = "/drachenschnitzel/assets/harpy-tf-act2-back.93eb60c0.png";
-var __glob_0_234 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var harpyTfAct2Back = "/assets/harpy-tf-act2-back.93eb60c0.png";
+var __glob_0_244 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": harpyTfAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var harpyTfAct2Front = "/drachenschnitzel/assets/harpy-tf-act2-front.2739692f.png";
-var __glob_0_235 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var harpyTfAct2Front = "/assets/harpy-tf-act2-front.2739692f.png";
+var __glob_0_245 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": harpyTfAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var hellhoundBwAct1Back = "/drachenschnitzel/assets/hellhound-bw-act1-back.40a77bd0.png";
-var __glob_0_236 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hellhoundBwAct1Back = "/assets/hellhound-bw-act1-back.40a77bd0.png";
+var __glob_0_246 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hellhoundBwAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var hellhoundBwAct1Front = "/drachenschnitzel/assets/hellhound-bw-act1-front.0fefb670.png";
-var __glob_0_237 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hellhoundBwAct1Front = "/assets/hellhound-bw-act1-front.0fefb670.png";
+var __glob_0_247 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hellhoundBwAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var hellhoundBwAct2Back = "/drachenschnitzel/assets/hellhound-bw-act2-back.05b47409.png";
-var __glob_0_238 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hellhoundBwAct2Back = "/assets/hellhound-bw-act2-back.05b47409.png";
+var __glob_0_248 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hellhoundBwAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var hellhoundBwAct2Front = "/drachenschnitzel/assets/hellhound-bw-act2-front.6bb1aa7f.png";
-var __glob_0_239 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hellhoundBwAct2Front = "/assets/hellhound-bw-act2-front.6bb1aa7f.png";
+var __glob_0_249 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hellhoundBwAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var hellhoundCkAct1Back = "/drachenschnitzel/assets/hellhound-ck-act1-back.f36a17a2.png";
-var __glob_0_240 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hellhoundCkAct1Back = "/assets/hellhound-ck-act1-back.f36a17a2.png";
+var __glob_0_250 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hellhoundCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var hellhoundCkAct1Front = "/drachenschnitzel/assets/hellhound-ck-act1-front.38ace7ad.png";
-var __glob_0_241 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hellhoundCkAct1Front = "/assets/hellhound-ck-act1-front.38ace7ad.png";
+var __glob_0_251 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hellhoundCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var hellhoundCkAct2Back = "/drachenschnitzel/assets/hellhound-ck-act2-back.3b42133c.png";
-var __glob_0_242 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hellhoundCkAct2Back = "/assets/hellhound-ck-act2-back.3b42133c.png";
+var __glob_0_252 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hellhoundCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var hellhoundCkAct2Front = "/drachenschnitzel/assets/hellhound-ck-act2-front.d5b07c74.png";
-var __glob_0_243 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hellhoundCkAct2Front = "/assets/hellhound-ck-act2-front.d5b07c74.png";
+var __glob_0_253 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hellhoundCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var hybridSentinelLwAct1Back = "/drachenschnitzel/assets/hybrid-sentinel-lw-act1-back.d7292ea0.png";
-var __glob_0_244 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hybridSentinelLwAct1Back = "/assets/hybrid-sentinel-lw-act1-back.d7292ea0.png";
+var __glob_0_254 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hybridSentinelLwAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var hybridSentinelLwAct1Front = "/drachenschnitzel/assets/hybrid-sentinel-lw-act1-front.9db174b1.png";
-var __glob_0_245 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hybridSentinelLwAct1Front = "/assets/hybrid-sentinel-lw-act1-front.9db174b1.png";
+var __glob_0_255 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hybridSentinelLwAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var hybridSentinelLwAct2Back = "/drachenschnitzel/assets/hybrid-sentinel-lw-act2-back.a04fda11.png";
-var __glob_0_246 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hybridSentinelLwAct2Back = "/assets/hybrid-sentinel-lw-act2-back.a04fda11.png";
+var __glob_0_256 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hybridSentinelLwAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var hybridSentinelLwAct2Front = "/drachenschnitzel/assets/hybrid-sentinel-lw-act2-front.2b9f80ac.png";
-var __glob_0_247 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hybridSentinelLwAct2Front = "/assets/hybrid-sentinel-lw-act2-front.2b9f80ac.png";
+var __glob_0_257 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hybridSentinelLwAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var iceWyrmCkAct1Back = "/drachenschnitzel/assets/ice-wyrm-ck-act1-back.fe3240fa.png";
-var __glob_0_248 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var iceWyrmCkAct1Back = "/assets/ice-wyrm-ck-act1-back.fe3240fa.png";
+var __glob_0_258 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceWyrmCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var iceWyrmCkAct1Front = "/drachenschnitzel/assets/ice-wyrm-ck-act1-front.d1897b92.png";
-var __glob_0_249 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var iceWyrmCkAct1Front = "/assets/ice-wyrm-ck-act1-front.d1897b92.png";
+var __glob_0_259 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceWyrmCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var iceWyrmCkAct2Back = "/drachenschnitzel/assets/ice-wyrm-ck-act2-back.4fdde70c.png";
-var __glob_0_250 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var iceWyrmCkAct2Back = "/assets/ice-wyrm-ck-act2-back.4fdde70c.png";
+var __glob_0_260 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceWyrmCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var iceWyrmCkAct2Front = "/drachenschnitzel/assets/ice-wyrm-ck-act2-front.121c4582.png";
-var __glob_0_251 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var iceWyrmCkAct2Front = "/assets/ice-wyrm-ck-act2-front.121c4582.png";
+var __glob_0_261 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceWyrmCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var iceWyrmSeAct1Back = "/drachenschnitzel/assets/ice-wyrm-se-act1-back.c5526521.png";
-var __glob_0_252 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var iceWyrmSeAct1Back = "/assets/ice-wyrm-se-act1-back.c5526521.png";
+var __glob_0_262 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceWyrmSeAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var iceWyrmSeAct1Front = "/drachenschnitzel/assets/ice-wyrm-se-act1-front.345a8e1b.png";
-var __glob_0_253 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var iceWyrmSeAct1Front = "/assets/ice-wyrm-se-act1-front.345a8e1b.png";
+var __glob_0_263 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceWyrmSeAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var iceWyrmSeAct2Back = "/drachenschnitzel/assets/ice-wyrm-se-act2-back.152bea4b.png";
-var __glob_0_254 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var iceWyrmSeAct2Back = "/assets/ice-wyrm-se-act2-back.152bea4b.png";
+var __glob_0_264 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceWyrmSeAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var iceWyrmSeAct2Front = "/drachenschnitzel/assets/ice-wyrm-se-act2-front.f7a0f7a5.png";
-var __glob_0_255 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var iceWyrmSeAct2Front = "/assets/ice-wyrm-se-act2-front.f7a0f7a5.png";
+var __glob_0_265 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceWyrmSeAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ironboundSnAct1Back = "/drachenschnitzel/assets/ironbound-sn-act1-back.fb30a8f9.png";
-var __glob_0_256 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironboundSnAct1Back = "/assets/ironbound-sn-act1-back.fb30a8f9.png";
+var __glob_0_266 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundSnAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ironboundSnAct1Front = "/drachenschnitzel/assets/ironbound-sn-act1-front.4f2dc701.png";
-var __glob_0_257 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironboundSnAct1Front = "/assets/ironbound-sn-act1-front.4f2dc701.png";
+var __glob_0_267 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundSnAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ironboundSnAct2Back = "/drachenschnitzel/assets/ironbound-sn-act2-back.2014a4c2.png";
-var __glob_0_258 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironboundSnAct2Back = "/assets/ironbound-sn-act2-back.2014a4c2.png";
+var __glob_0_268 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundSnAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ironboundSnAct2Front = "/drachenschnitzel/assets/ironbound-sn-act2-front.0b215704.png";
-var __glob_0_259 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironboundSnAct2Front = "/assets/ironbound-sn-act2-front.0b215704.png";
+var __glob_0_269 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundSnAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var koboldBwAct1Back = "/drachenschnitzel/assets/kobold-bw-act1-back.efecbcfb.png";
-var __glob_0_260 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var koboldBwAct1Back = "/assets/kobold-bw-act1-back.efecbcfb.png";
+var __glob_0_270 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": koboldBwAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var koboldBwAct1Front = "/drachenschnitzel/assets/kobold-bw-act1-front.660d6e12.png";
-var __glob_0_261 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var koboldBwAct1Front = "/assets/kobold-bw-act1-front.660d6e12.png";
+var __glob_0_271 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": koboldBwAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var koboldBwAct2Back = "/drachenschnitzel/assets/kobold-bw-act2-back.3e255cf5.png";
-var __glob_0_262 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var koboldBwAct2Back = "/assets/kobold-bw-act2-back.3e255cf5.png";
+var __glob_0_272 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": koboldBwAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var koboldBwAct2Front = "/drachenschnitzel/assets/kobold-bw-act2-front.14285466.png";
-var __glob_0_263 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var koboldBwAct2Front = "/assets/kobold-bw-act2-front.14285466.png";
+var __glob_0_273 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": koboldBwAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var koboldCkAct1Back = "/drachenschnitzel/assets/kobold-ck-act1-back.b2c22fb7.png";
-var __glob_0_264 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var koboldCkAct1Back = "/assets/kobold-ck-act1-back.b2c22fb7.png";
+var __glob_0_274 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": koboldCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var koboldCkAct1Front = "/drachenschnitzel/assets/kobold-ck-act1-front.4c013be9.png";
-var __glob_0_265 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var koboldCkAct1Front = "/assets/kobold-ck-act1-front.4c013be9.png";
+var __glob_0_275 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": koboldCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var koboldCkAct2Back = "/drachenschnitzel/assets/kobold-ck-act2-back.22d2d2d0.png";
-var __glob_0_266 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var koboldCkAct2Back = "/assets/kobold-ck-act2-back.22d2d2d0.png";
+var __glob_0_276 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": koboldCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var koboldCkAct2Front = "/drachenschnitzel/assets/kobold-ck-act2-front.d5842622.png";
-var __glob_0_267 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var koboldCkAct2Front = "/assets/kobold-ck-act2-front.d5842622.png";
+var __glob_0_277 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": koboldCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var lavaBeetleCdAct1Back = "/drachenschnitzel/assets/lava-beetle-cd-act1-back.2428a48d.png";
-var __glob_0_268 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lavaBeetleCdAct1Back = "/assets/lava-beetle-cd-act1-back.2428a48d.png";
+var __glob_0_278 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lavaBeetleCdAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var lavaBeetleCdAct1Front = "/drachenschnitzel/assets/lava-beetle-cd-act1-front.fadb6c01.png";
-var __glob_0_269 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lavaBeetleCdAct1Front = "/assets/lava-beetle-cd-act1-front.fadb6c01.png";
+var __glob_0_279 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lavaBeetleCdAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var lavaBeetleCdAct2Back = "/drachenschnitzel/assets/lava-beetle-cd-act2-back.0f9e1107.png";
-var __glob_0_270 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lavaBeetleCdAct2Back = "/assets/lava-beetle-cd-act2-back.0f9e1107.png";
+var __glob_0_280 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lavaBeetleCdAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var lavaBeetleCdAct2Front = "/drachenschnitzel/assets/lava-beetle-cd-act2-front.a4312d1a.png";
-var __glob_0_271 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lavaBeetleCdAct2Front = "/assets/lava-beetle-cd-act2-front.a4312d1a.png";
+var __glob_0_281 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lavaBeetleCdAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var lavaBeetleCkAct1Back = "/drachenschnitzel/assets/lava-beetle-ck-act1-back.dfda4f3d.png";
-var __glob_0_272 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lavaBeetleCkAct1Back = "/assets/lava-beetle-ck-act1-back.dfda4f3d.png";
+var __glob_0_282 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lavaBeetleCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var lavaBeetleCkAct1Front = "/drachenschnitzel/assets/lava-beetle-ck-act1-front.4fa86e90.png";
-var __glob_0_273 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lavaBeetleCkAct1Front = "/assets/lava-beetle-ck-act1-front.4fa86e90.png";
+var __glob_0_283 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lavaBeetleCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var lavaBeetleCkAct2Back = "/drachenschnitzel/assets/lava-beetle-ck-act2-back.4434f744.png";
-var __glob_0_274 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lavaBeetleCkAct2Back = "/assets/lava-beetle-ck-act2-back.4434f744.png";
+var __glob_0_284 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lavaBeetleCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var lavaBeetleCkAct2Front = "/drachenschnitzel/assets/lava-beetle-ck-act2-front.70a5516f.png";
-var __glob_0_275 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lavaBeetleCkAct2Front = "/assets/lava-beetle-ck-act2-front.70a5516f.png";
+var __glob_0_285 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lavaBeetleCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var manticoreCkAct1Back = "/drachenschnitzel/assets/manticore-ck-act1-back.d7dce950.png";
-var __glob_0_276 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var manticoreCkAct1Back = "/assets/manticore-ck-act1-back.d7dce950.png";
+var __glob_0_286 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manticoreCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var manticoreCkAct1Front = "/drachenschnitzel/assets/manticore-ck-act1-front.c736fdb2.png";
-var __glob_0_277 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var manticoreCkAct1Front = "/assets/manticore-ck-act1-front.c736fdb2.png";
+var __glob_0_287 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manticoreCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var manticoreCkAct2Back = "/drachenschnitzel/assets/manticore-ck-act2-back.cbaaca80.png";
-var __glob_0_278 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var manticoreCkAct2Back = "/assets/manticore-ck-act2-back.cbaaca80.png";
+var __glob_0_288 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manticoreCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var manticoreCkAct2Front = "/drachenschnitzel/assets/manticore-ck-act2-front.8e75699d.png";
-var __glob_0_279 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var manticoreCkAct2Front = "/assets/manticore-ck-act2-front.8e75699d.png";
+var __glob_0_289 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manticoreCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var manticoreVdAct1Back = "/drachenschnitzel/assets/manticore-vd-act1-back.297097bf.png";
-var __glob_0_280 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var manticoreVdAct1Back = "/assets/manticore-vd-act1-back.297097bf.png";
+var __glob_0_290 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manticoreVdAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var manticoreVdAct1Front = "/drachenschnitzel/assets/manticore-vd-act1-front.9e393065.png";
-var __glob_0_281 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var manticoreVdAct1Front = "/assets/manticore-vd-act1-front.9e393065.png";
+var __glob_0_291 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manticoreVdAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var manticoreVdAct2Back = "/drachenschnitzel/assets/manticore-vd-act2-back.66bc2c56.png";
-var __glob_0_282 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var manticoreVdAct2Back = "/assets/manticore-vd-act2-back.66bc2c56.png";
+var __glob_0_292 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manticoreVdAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var manticoreVdAct2Front = "/drachenschnitzel/assets/manticore-vd-act2-front.2c098a09.png";
-var __glob_0_283 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var manticoreVdAct2Front = "/assets/manticore-vd-act2-front.2c098a09.png";
+var __glob_0_293 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manticoreVdAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var marrowPriestCrAct1Back = "/drachenschnitzel/assets/marrow-priest-cr-act1-back.043114b1.png";
-var __glob_0_284 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var marrowPriestCrAct1Back = "/assets/marrow-priest-cr-act1-back.043114b1.png";
+var __glob_0_294 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": marrowPriestCrAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var marrowPriestCrAct1Front = "/drachenschnitzel/assets/marrow-priest-cr-act1-front.1648726f.png";
-var __glob_0_285 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var marrowPriestCrAct1Front = "/assets/marrow-priest-cr-act1-front.1648726f.png";
+var __glob_0_295 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": marrowPriestCrAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var marrowPriestCrAct2Back = "/drachenschnitzel/assets/marrow-priest-cr-act2-back.d8a59dd0.png";
-var __glob_0_286 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var marrowPriestCrAct2Back = "/assets/marrow-priest-cr-act2-back.d8a59dd0.png";
+var __glob_0_296 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": marrowPriestCrAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var marrowPriestCrAct2Front = "/drachenschnitzel/assets/marrow-priest-cr-act2-front.09eb060a.png";
-var __glob_0_287 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var marrowPriestCrAct2Front = "/assets/marrow-priest-cr-act2-front.09eb060a.png";
+var __glob_0_297 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": marrowPriestCrAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var medusaCfAct1Back = "/drachenschnitzel/assets/medusa-cf-act1-back.e9c8c8b9.png";
-var __glob_0_288 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var medusaCfAct1Back = "/assets/medusa-cf-act1-back.e9c8c8b9.png";
+var __glob_0_298 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": medusaCfAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var medusaCfAct1Front = "/drachenschnitzel/assets/medusa-cf-act1-front.c0888c91.png";
-var __glob_0_289 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var medusaCfAct1Front = "/assets/medusa-cf-act1-front.c0888c91.png";
+var __glob_0_299 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": medusaCfAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var medusaCfAct2Back = "/drachenschnitzel/assets/medusa-cf-act2-back.23290022.png";
-var __glob_0_290 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var medusaCfAct2Back = "/assets/medusa-cf-act2-back.23290022.png";
+var __glob_0_300 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": medusaCfAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var medusaCfAct2Front = "/drachenschnitzel/assets/medusa-cf-act2-front.15525503.png";
-var __glob_0_291 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var medusaCfAct2Front = "/assets/medusa-cf-act2-front.15525503.png";
+var __glob_0_301 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": medusaCfAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var medusaCkAct1Back = "/drachenschnitzel/assets/medusa-ck-act1-back.7a94782b.png";
-var __glob_0_292 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var medusaCkAct1Back = "/assets/medusa-ck-act1-back.7a94782b.png";
+var __glob_0_302 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": medusaCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var medusaCkAct1Front = "/drachenschnitzel/assets/medusa-ck-act1-front.8efab0c2.png";
-var __glob_0_293 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var medusaCkAct1Front = "/assets/medusa-ck-act1-front.8efab0c2.png";
+var __glob_0_303 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": medusaCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var medusaCkAct2Back = "/drachenschnitzel/assets/medusa-ck-act2-back.fb5638c8.png";
-var __glob_0_294 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var medusaCkAct2Back = "/assets/medusa-ck-act2-back.fb5638c8.png";
+var __glob_0_304 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": medusaCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var medusaCkAct2Front = "/drachenschnitzel/assets/medusa-ck-act2-front.8d2a35da.png";
-var __glob_0_295 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var medusaCkAct2Front = "/assets/medusa-ck-act2-front.8d2a35da.png";
+var __glob_0_305 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": medusaCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var merriodBgAct1Back = "/drachenschnitzel/assets/merriod-bg-act1-back.7ade1a82.png";
-var __glob_0_296 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var merriodBgAct1Back = "/assets/merriod-bg-act1-back.7ade1a82.png";
+var __glob_0_306 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": merriodBgAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var merriodBgAct1Front = "/drachenschnitzel/assets/merriod-bg-act1-front.675d0543.png";
-var __glob_0_297 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var merriodBgAct1Front = "/assets/merriod-bg-act1-front.675d0543.png";
+var __glob_0_307 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": merriodBgAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var merriodBgAct2Back = "/drachenschnitzel/assets/merriod-bg-act2-back.6e815d08.png";
-var __glob_0_298 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var merriodBgAct2Back = "/assets/merriod-bg-act2-back.6e815d08.png";
+var __glob_0_308 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": merriodBgAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var merriodBgAct2Front = "/drachenschnitzel/assets/merriod-bg-act2-front.aec42f7e.png";
-var __glob_0_299 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var merriodBgAct2Front = "/assets/merriod-bg-act2-front.aec42f7e.png";
+var __glob_0_309 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": merriodBgAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var nagaCkAct1Back = "/drachenschnitzel/assets/naga-ck-act1-back.20f46daa.png";
-var __glob_0_300 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var nagaCkAct1Back = "/assets/naga-ck-act1-back.20f46daa.png";
+var __glob_0_310 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nagaCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var nagaCkAct1Front = "/drachenschnitzel/assets/naga-ck-act1-front.0f74b985.png";
-var __glob_0_301 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var nagaCkAct1Front = "/assets/naga-ck-act1-front.0f74b985.png";
+var __glob_0_311 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nagaCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var nagaCkAct2Back = "/drachenschnitzel/assets/naga-ck-act2-back.9a0328f0.png";
-var __glob_0_302 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var nagaCkAct2Back = "/assets/naga-ck-act2-back.9a0328f0.png";
+var __glob_0_312 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nagaCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var nagaCkAct2Front = "/drachenschnitzel/assets/naga-ck-act2-front.7d9c7f7b.png";
-var __glob_0_303 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var nagaCkAct2Front = "/assets/naga-ck-act2-front.7d9c7f7b.png";
+var __glob_0_313 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nagaCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var nagaSsAct1Back = "/drachenschnitzel/assets/naga-ss-act1-back.dd03bfdb.png";
-var __glob_0_304 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var nagaSsAct1Back = "/assets/naga-ss-act1-back.dd03bfdb.png";
+var __glob_0_314 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nagaSsAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var nagaSsAct1Front = "/drachenschnitzel/assets/naga-ss-act1-front.13be3d95.png";
-var __glob_0_305 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var nagaSsAct1Front = "/assets/naga-ss-act1-front.13be3d95.png";
+var __glob_0_315 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nagaSsAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var nagaSsAct2Back = "/drachenschnitzel/assets/naga-ss-act2-back.49e17906.png";
-var __glob_0_306 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var nagaSsAct2Back = "/assets/naga-ss-act2-back.49e17906.png";
+var __glob_0_316 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nagaSsAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var nagaSsAct2Front = "/drachenschnitzel/assets/naga-ss-act2-front.4393f1ff.png";
-var __glob_0_307 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var nagaSsAct2Front = "/assets/naga-ss-act2-front.4393f1ff.png";
+var __glob_0_317 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nagaSsAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ogreCkAct1Back = "/drachenschnitzel/assets/ogre-ck-act1-back.d3c4f6e7.png";
-var __glob_0_308 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ogreCkAct1Back = "/assets/ogre-ck-act1-back.d3c4f6e7.png";
+var __glob_0_318 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ogreCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ogreCkAct1Front = "/drachenschnitzel/assets/ogre-ck-act1-front.3998662d.png";
-var __glob_0_309 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ogreCkAct1Front = "/assets/ogre-ck-act1-front.3998662d.png";
+var __glob_0_319 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ogreCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ogreCkAct2Back = "/drachenschnitzel/assets/ogre-ck-act2-back.5b5534ea.png";
-var __glob_0_310 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ogreCkAct2Back = "/assets/ogre-ck-act2-back.5b5534ea.png";
+var __glob_0_320 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ogreCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ogreCkAct2Front = "/drachenschnitzel/assets/ogre-ck-act2-front.69a45335.png";
-var __glob_0_311 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ogreCkAct2Front = "/assets/ogre-ck-act2-front.69a45335.png";
+var __glob_0_321 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ogreCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ogreVdAct1Back = "/drachenschnitzel/assets/ogre-vd-act1-back.9edbd567.png";
-var __glob_0_312 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ogreVdAct1Back = "/assets/ogre-vd-act1-back.9edbd567.png";
+var __glob_0_322 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ogreVdAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ogreVdAct1Front = "/drachenschnitzel/assets/ogre-vd-act1-front.4d08f9e8.png";
-var __glob_0_313 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ogreVdAct1Front = "/assets/ogre-vd-act1-front.4d08f9e8.png";
+var __glob_0_323 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ogreVdAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ogreVdAct2Back = "/drachenschnitzel/assets/ogre-vd-act2-back.4b7659d9.png";
-var __glob_0_314 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ogreVdAct2Back = "/assets/ogre-vd-act2-back.4b7659d9.png";
+var __glob_0_324 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ogreVdAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ogreVdAct2Front = "/drachenschnitzel/assets/ogre-vd-act2-front.985beef0.png";
-var __glob_0_315 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ogreVdAct2Front = "/assets/ogre-vd-act2-front.985beef0.png";
+var __glob_0_325 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ogreVdAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var plagueWormTfAct1Back = "/drachenschnitzel/assets/plague-worm-tf-act1-back.bc00aaa9.png";
-var __glob_0_316 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var plagueWormTfAct1Back = "/assets/plague-worm-tf-act1-back.bc00aaa9.png";
+var __glob_0_326 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": plagueWormTfAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var plagueWormTfAct1Front = "/drachenschnitzel/assets/plague-worm-tf-act1-front.0b268b47.png";
-var __glob_0_317 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var plagueWormTfAct1Front = "/assets/plague-worm-tf-act1-front.0b268b47.png";
+var __glob_0_327 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": plagueWormTfAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var plagueWormTfAct2Back = "/drachenschnitzel/assets/plague-worm-tf-act2-back.ea85dcf7.png";
-var __glob_0_318 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var plagueWormTfAct2Back = "/assets/plague-worm-tf-act2-back.ea85dcf7.png";
+var __glob_0_328 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": plagueWormTfAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var plagueWormTfAct2Front = "/drachenschnitzel/assets/plague-worm-tf-act2-front.129d4aaf.png";
-var __glob_0_319 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var plagueWormTfAct2Front = "/assets/plague-worm-tf-act2-front.129d4aaf.png";
+var __glob_0_329 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": plagueWormTfAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ratSwarmSnAct1Back = "/drachenschnitzel/assets/rat-swarm-sn-act1-back.067f83b7.png";
-var __glob_0_320 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ratSwarmSnAct1Back = "/assets/rat-swarm-sn-act1-back.067f83b7.png";
+var __glob_0_330 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ratSwarmSnAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ratSwarmSnAct1Front = "/drachenschnitzel/assets/rat-swarm-sn-act1-front.d5c3315f.png";
-var __glob_0_321 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ratSwarmSnAct1Front = "/assets/rat-swarm-sn-act1-front.d5c3315f.png";
+var __glob_0_331 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ratSwarmSnAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ratSwarmSnAct2Back = "/drachenschnitzel/assets/rat-swarm-sn-act2-back.f472b4d1.png";
-var __glob_0_322 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ratSwarmSnAct2Back = "/assets/rat-swarm-sn-act2-back.f472b4d1.png";
+var __glob_0_332 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ratSwarmSnAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ratSwarmSnAct2Front = "/drachenschnitzel/assets/rat-swarm-sn-act2-front.b1019edd.png";
-var __glob_0_323 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ratSwarmSnAct2Front = "/assets/rat-swarm-sn-act2-front.b1019edd.png";
+var __glob_0_333 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ratSwarmSnAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var razorwingCkAct1Back = "/drachenschnitzel/assets/razorwing-ck-act1-back.ad510ae7.png";
-var __glob_0_324 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var razorwingCkAct1Back = "/assets/razorwing-ck-act1-back.ad510ae7.png";
+var __glob_0_334 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": razorwingCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var razorwingCkAct1Front = "/drachenschnitzel/assets/razorwing-ck-act1-front.64610413.png";
-var __glob_0_325 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var razorwingCkAct1Front = "/assets/razorwing-ck-act1-front.64610413.png";
+var __glob_0_335 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": razorwingCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var razorwingCkAct2Back = "/drachenschnitzel/assets/razorwing-ck-act2-back.d0788259.png";
-var __glob_0_326 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var razorwingCkAct2Back = "/assets/razorwing-ck-act2-back.d0788259.png";
+var __glob_0_336 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": razorwingCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var razorwingCkAct2Front = "/drachenschnitzel/assets/razorwing-ck-act2-front.6d2dbef4.png";
-var __glob_0_327 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var razorwingCkAct2Front = "/assets/razorwing-ck-act2-front.6d2dbef4.png";
+var __glob_0_337 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": razorwingCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var razorwingOoAct1Back = "/drachenschnitzel/assets/razorwing-oo-act1-back.8f9c2ae2.png";
-var __glob_0_328 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var razorwingOoAct1Back = "/assets/razorwing-oo-act1-back.8f9c2ae2.png";
+var __glob_0_338 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": razorwingOoAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var razorwingOoAct1Front = "/drachenschnitzel/assets/razorwing-oo-act1-front.4a32f5ab.png";
-var __glob_0_329 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var razorwingOoAct1Front = "/assets/razorwing-oo-act1-front.4a32f5ab.png";
+var __glob_0_339 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": razorwingOoAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var razorwingOoAct2Back = "/drachenschnitzel/assets/razorwing-oo-act2-back.c7e39fb4.png";
-var __glob_0_330 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var razorwingOoAct2Back = "/assets/razorwing-oo-act2-back.c7e39fb4.png";
+var __glob_0_340 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": razorwingOoAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var razorwingOoAct2Front = "/drachenschnitzel/assets/razorwing-oo-act2-front.cf28c702.png";
-var __glob_0_331 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var razorwingOoAct2Front = "/assets/razorwing-oo-act2-front.cf28c702.png";
+var __glob_0_341 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": razorwingOoAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var reanimateMbAct1Back = "/drachenschnitzel/assets/reanimate-mb-act1-back.874f3454.png";
-var __glob_0_332 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var reanimateMbAct1Back = "/assets/reanimate-mb-act1-back.874f3454.png";
+var __glob_0_342 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": reanimateMbAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var reanimateMbAct1Front = "/drachenschnitzel/assets/reanimate-mb-act1-front.e5c00f03.png";
-var __glob_0_333 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var reanimateMbAct1Front = "/assets/reanimate-mb-act1-front.e5c00f03.png";
+var __glob_0_343 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": reanimateMbAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var reanimateMbAct2Back = "/drachenschnitzel/assets/reanimate-mb-act2-back.ab6b7ed9.png";
-var __glob_0_334 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var reanimateMbAct2Back = "/assets/reanimate-mb-act2-back.ab6b7ed9.png";
+var __glob_0_344 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": reanimateMbAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var reanimateMbAct2Front = "/drachenschnitzel/assets/reanimate-mb-act2-front.a8073602.png";
-var __glob_0_335 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var reanimateMbAct2Front = "/assets/reanimate-mb-act2-front.a8073602.png";
+var __glob_0_345 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": reanimateMbAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var sarcophagusGuardSotpAct1Back = "/drachenschnitzel/assets/sarcophagus-guard-sotp-act1-back.c237c25a.png";
-var __glob_0_336 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sarcophagusGuardSotpAct1Back = "/assets/sarcophagus-guard-sotp-act1-back.c237c25a.png";
+var __glob_0_346 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sarcophagusGuardSotpAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var sarcophagusGuardSotpAct1Front = "/drachenschnitzel/assets/sarcophagus-guard-sotp-act1-front.e1780cd5.png";
-var __glob_0_337 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sarcophagusGuardSotpAct1Front = "/assets/sarcophagus-guard-sotp-act1-front.e1780cd5.png";
+var __glob_0_347 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sarcophagusGuardSotpAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var sarcophagusGuardSotpAct2Back = "/drachenschnitzel/assets/sarcophagus-guard-sotp-act2-back.fb4a156e.png";
-var __glob_0_338 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sarcophagusGuardSotpAct2Back = "/assets/sarcophagus-guard-sotp-act2-back.fb4a156e.png";
+var __glob_0_348 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sarcophagusGuardSotpAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var sarcophagusGuardSotpAct2Front = "/drachenschnitzel/assets/sarcophagus-guard-sotp-act2-front.cd9be606.png";
-var __glob_0_339 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sarcophagusGuardSotpAct2Front = "/assets/sarcophagus-guard-sotp-act2-front.cd9be606.png";
+var __glob_0_349 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sarcophagusGuardSotpAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var shadeCkAct1Back = "/drachenschnitzel/assets/shade-ck-act1-back.39f924d3.png";
-var __glob_0_340 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadeCkAct1Back = "/assets/shade-ck-act1-back.39f924d3.png";
+var __glob_0_350 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadeCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var shadeCkAct1Front = "/drachenschnitzel/assets/shade-ck-act1-front.e9b9fc06.png";
-var __glob_0_341 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadeCkAct1Front = "/assets/shade-ck-act1-front.e9b9fc06.png";
+var __glob_0_351 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadeCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var shadeCkAct2Back = "/drachenschnitzel/assets/shade-ck-act2-back.199c21ac.png";
-var __glob_0_342 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadeCkAct2Back = "/assets/shade-ck-act2-back.199c21ac.png";
+var __glob_0_352 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadeCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var shadeCkAct2Front = "/drachenschnitzel/assets/shade-ck-act2-front.ec57bfeb.png";
-var __glob_0_343 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadeCkAct2Front = "/assets/shade-ck-act2-front.ec57bfeb.png";
+var __glob_0_353 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadeCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var shadeSeAct1Back = "/drachenschnitzel/assets/shade-se-act1-back.7f996958.png";
-var __glob_0_344 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadeSeAct1Back = "/assets/shade-se-act1-back.7f996958.png";
+var __glob_0_354 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadeSeAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var shadeSeAct1Front = "/drachenschnitzel/assets/shade-se-act1-front.05718738.png";
-var __glob_0_345 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadeSeAct1Front = "/assets/shade-se-act1-front.05718738.png";
+var __glob_0_355 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadeSeAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var shadeSeAct2Back = "/drachenschnitzel/assets/shade-se-act2-back.c9c20a8d.png";
-var __glob_0_346 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadeSeAct2Back = "/assets/shade-se-act2-back.c9c20a8d.png";
+var __glob_0_356 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadeSeAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var shadeSeAct2Front = "/drachenschnitzel/assets/shade-se-act2-front.4b5dd384.png";
-var __glob_0_347 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadeSeAct2Front = "/assets/shade-se-act2-front.4b5dd384.png";
+var __glob_0_357 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadeSeAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var shadowDragonBgAct1Back = "/drachenschnitzel/assets/shadow-dragon-bg-act1-back.3a4b61bb.png";
-var __glob_0_348 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadowDragonBgAct1Back = "/assets/shadow-dragon-bg-act1-back.3a4b61bb.png";
+var __glob_0_358 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowDragonBgAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var shadowDragonBgAct1Front = "/drachenschnitzel/assets/shadow-dragon-bg-act1-front.d4dec084.png";
-var __glob_0_349 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadowDragonBgAct1Front = "/assets/shadow-dragon-bg-act1-front.d4dec084.png";
+var __glob_0_359 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowDragonBgAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var shadowDragonBgAct2Back = "/drachenschnitzel/assets/shadow-dragon-bg-act2-back.b1fb933e.png";
-var __glob_0_350 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadowDragonBgAct2Back = "/assets/shadow-dragon-bg-act2-back.b1fb933e.png";
+var __glob_0_360 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowDragonBgAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var shadowDragonBgAct2Front = "/drachenschnitzel/assets/shadow-dragon-bg-act2-front.1dca2685.png";
-var __glob_0_351 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadowDragonBgAct2Front = "/assets/shadow-dragon-bg-act2-front.1dca2685.png";
+var __glob_0_361 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowDragonBgAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var shamblingColossusCrAct1Back = "/drachenschnitzel/assets/shambling-colossus-cr-act1-back.95c49171.png";
-var __glob_0_352 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shamblingColossusCrAct1Back = "/assets/shambling-colossus-cr-act1-back.95c49171.png";
+var __glob_0_362 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shamblingColossusCrAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var shamblingColossusCrAct1Front = "/drachenschnitzel/assets/shambling-colossus-cr-act1-front.edba2297.png";
-var __glob_0_353 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shamblingColossusCrAct1Front = "/assets/shambling-colossus-cr-act1-front.edba2297.png";
+var __glob_0_363 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shamblingColossusCrAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var shamblingColossusCrAct2Back = "/drachenschnitzel/assets/shambling-colossus-cr-act2-back.33cb8239.png";
-var __glob_0_354 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shamblingColossusCrAct2Back = "/assets/shambling-colossus-cr-act2-back.33cb8239.png";
+var __glob_0_364 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shamblingColossusCrAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var shamblingColossusCrAct2Front = "/drachenschnitzel/assets/shambling-colossus-cr-act2-front.e59de334.png";
-var __glob_0_355 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shamblingColossusCrAct2Front = "/assets/shambling-colossus-cr-act2-front.e59de334.png";
+var __glob_0_365 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shamblingColossusCrAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var skeletonArcherCkAct1Back = "/drachenschnitzel/assets/skeleton-archer-ck-act1-back.5ef9cc7e.png";
-var __glob_0_356 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var skeletonArcherCkAct1Back = "/assets/skeleton-archer-ck-act1-back.5ef9cc7e.png";
+var __glob_0_366 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skeletonArcherCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var skeletonArcherCkAct1Front = "/drachenschnitzel/assets/skeleton-archer-ck-act1-front.9e5a0040.png";
-var __glob_0_357 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var skeletonArcherCkAct1Front = "/assets/skeleton-archer-ck-act1-front.9e5a0040.png";
+var __glob_0_367 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skeletonArcherCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var skeletonArcherCkAct2Back = "/drachenschnitzel/assets/skeleton-archer-ck-act2-back.b61d4a1f.png";
-var __glob_0_358 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var skeletonArcherCkAct2Back = "/assets/skeleton-archer-ck-act2-back.b61d4a1f.png";
+var __glob_0_368 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skeletonArcherCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var skeletonArcherCkAct2Front = "/drachenschnitzel/assets/skeleton-archer-ck-act2-front.f1d90b61.png";
-var __glob_0_359 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var skeletonArcherCkAct2Front = "/assets/skeleton-archer-ck-act2-front.f1d90b61.png";
+var __glob_0_369 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skeletonArcherCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var skeletonArcherTcAct1Back = "/drachenschnitzel/assets/skeleton-archer-tc-act1-back.a8116f95.png";
-var __glob_0_360 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var skeletonArcherTcAct1Back = "/assets/skeleton-archer-tc-act1-back.a8116f95.png";
+var __glob_0_370 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skeletonArcherTcAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var skeletonArcherTcAct1Front = "/drachenschnitzel/assets/skeleton-archer-tc-act1-front.00ba9f2c.png";
-var __glob_0_361 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var skeletonArcherTcAct1Front = "/assets/skeleton-archer-tc-act1-front.00ba9f2c.png";
+var __glob_0_371 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skeletonArcherTcAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var skeletonArcherTcAct2Back = "/drachenschnitzel/assets/skeleton-archer-tc-act2-back.faa0f9e7.png";
-var __glob_0_362 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var skeletonArcherTcAct2Back = "/assets/skeleton-archer-tc-act2-back.faa0f9e7.png";
+var __glob_0_372 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skeletonArcherTcAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var skeletonArcherTcAct2Front = "/drachenschnitzel/assets/skeleton-archer-tc-act2-front.9dfbd751.png";
-var __glob_0_363 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var skeletonArcherTcAct2Front = "/assets/skeleton-archer-tc-act2-front.9dfbd751.png";
+var __glob_0_373 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skeletonArcherTcAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var sorcererCfAct1Back = "/drachenschnitzel/assets/sorcerer-cf-act1-back.3ae527eb.png";
-var __glob_0_364 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sorcererCfAct1Back = "/assets/sorcerer-cf-act1-back.3ae527eb.png";
+var __glob_0_374 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sorcererCfAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var sorcererCfAct1Front = "/drachenschnitzel/assets/sorcerer-cf-act1-front.423f9967.png";
-var __glob_0_365 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sorcererCfAct1Front = "/assets/sorcerer-cf-act1-front.423f9967.png";
+var __glob_0_375 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sorcererCfAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var sorcererCfAct2Back = "/drachenschnitzel/assets/sorcerer-cf-act2-back.3f306c22.png";
-var __glob_0_366 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sorcererCfAct2Back = "/assets/sorcerer-cf-act2-back.3f306c22.png";
+var __glob_0_376 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sorcererCfAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var sorcererCfAct2Front = "/drachenschnitzel/assets/sorcerer-cf-act2-front.7248167a.png";
-var __glob_0_367 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sorcererCfAct2Front = "/assets/sorcerer-cf-act2-front.7248167a.png";
+var __glob_0_377 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sorcererCfAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var sorcererCkAct1Back = "/drachenschnitzel/assets/sorcerer-ck-act1-back.3233286b.png";
-var __glob_0_368 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sorcererCkAct1Back = "/assets/sorcerer-ck-act1-back.3233286b.png";
+var __glob_0_378 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sorcererCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var sorcererCkAct1Front = "/drachenschnitzel/assets/sorcerer-ck-act1-front.1fff6e19.png";
-var __glob_0_369 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sorcererCkAct1Front = "/assets/sorcerer-ck-act1-front.1fff6e19.png";
+var __glob_0_379 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sorcererCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var sorcererCkAct2Back = "/drachenschnitzel/assets/sorcerer-ck-act2-back.c03e07ca.png";
-var __glob_0_370 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sorcererCkAct2Back = "/assets/sorcerer-ck-act2-back.c03e07ca.png";
+var __glob_0_380 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sorcererCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var sorcererCkAct2Front = "/drachenschnitzel/assets/sorcerer-ck-act2-front.4d20eba3.png";
-var __glob_0_371 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sorcererCkAct2Front = "/assets/sorcerer-ck-act2-front.4d20eba3.png";
+var __glob_0_381 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sorcererCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var theDispossessedCrAct1Back = "/drachenschnitzel/assets/the-dispossessed-cr-act1-back.f10f64ee.png";
-var __glob_0_372 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theDispossessedCrAct1Back = "/assets/the-dispossessed-cr-act1-back.f10f64ee.png";
+var __glob_0_382 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theDispossessedCrAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var theDispossessedCrAct1Front = "/drachenschnitzel/assets/the-dispossessed-cr-act1-front.9463915e.png";
-var __glob_0_373 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theDispossessedCrAct1Front = "/assets/the-dispossessed-cr-act1-front.9463915e.png";
+var __glob_0_383 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theDispossessedCrAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var theDispossessedCrAct2Back = "/drachenschnitzel/assets/the-dispossessed-cr-act2-back.76141904.png";
-var __glob_0_374 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theDispossessedCrAct2Back = "/assets/the-dispossessed-cr-act2-back.76141904.png";
+var __glob_0_384 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theDispossessedCrAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var theDispossessedCrAct2Front = "/drachenschnitzel/assets/the-dispossessed-cr-act2-front.77ce8a8a.png";
-var __glob_0_375 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theDispossessedCrAct2Front = "/assets/the-dispossessed-cr-act2-front.77ce8a8a.png";
+var __glob_0_385 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theDispossessedCrAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var trollCkAct1Back = "/drachenschnitzel/assets/troll-ck-act1-back.801615a9.png";
-var __glob_0_376 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var trollCkAct1Back = "/assets/troll-ck-act1-back.801615a9.png";
+var __glob_0_386 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": trollCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var trollCkAct1Front = "/drachenschnitzel/assets/troll-ck-act1-front.9b1a7acb.png";
-var __glob_0_377 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var trollCkAct1Front = "/assets/troll-ck-act1-front.9b1a7acb.png";
+var __glob_0_387 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": trollCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var trollCkAct2Back = "/drachenschnitzel/assets/troll-ck-act2-back.7449ba1d.png";
-var __glob_0_378 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var trollCkAct2Back = "/assets/troll-ck-act2-back.7449ba1d.png";
+var __glob_0_388 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": trollCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var trollCkAct2Front = "/drachenschnitzel/assets/troll-ck-act2-front.42378ed7.png";
-var __glob_0_379 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var trollCkAct2Front = "/assets/troll-ck-act2-front.42378ed7.png";
+var __glob_0_389 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": trollCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var trollVdAct1Back = "/drachenschnitzel/assets/troll-vd-act1-back.aff3677f.png";
-var __glob_0_380 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var trollVdAct1Back = "/assets/troll-vd-act1-back.aff3677f.png";
+var __glob_0_390 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": trollVdAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var trollVdAct1Front = "/drachenschnitzel/assets/troll-vd-act1-front.8bfd8468.png";
-var __glob_0_381 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var trollVdAct1Front = "/assets/troll-vd-act1-front.8bfd8468.png";
+var __glob_0_391 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": trollVdAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var trollVdAct2Back = "/drachenschnitzel/assets/troll-vd-act2-back.00bdd1cb.png";
-var __glob_0_382 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var trollVdAct2Back = "/assets/troll-vd-act2-back.00bdd1cb.png";
+var __glob_0_392 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": trollVdAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var trollVdAct2Front = "/drachenschnitzel/assets/troll-vd-act2-front.bcf980b7.png";
-var __glob_0_383 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var trollVdAct2Front = "/assets/troll-vd-act2-front.bcf980b7.png";
+var __glob_0_393 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": trollVdAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var volucrixReaverLrAct1Back = "/drachenschnitzel/assets/volucrix-reaver-lr-act1-back.9726ebaf.png";
-var __glob_0_384 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var volucrixReaverLrAct1Back = "/assets/volucrix-reaver-lr-act1-back.9726ebaf.png";
+var __glob_0_394 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": volucrixReaverLrAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var volucrixReaverLrAct1Front = "/drachenschnitzel/assets/volucrix-reaver-lr-act1-front.8967ad27.png";
-var __glob_0_385 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var volucrixReaverLrAct1Front = "/assets/volucrix-reaver-lr-act1-front.8967ad27.png";
+var __glob_0_395 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": volucrixReaverLrAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var volucrixReaverLrAct2Back = "/drachenschnitzel/assets/volucrix-reaver-lr-act2-back.b0e29aff.png";
-var __glob_0_386 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var volucrixReaverLrAct2Back = "/assets/volucrix-reaver-lr-act2-back.b0e29aff.png";
+var __glob_0_396 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": volucrixReaverLrAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var volucrixReaverLrAct2Front = "/drachenschnitzel/assets/volucrix-reaver-lr-act2-front.f9b09e4b.png";
-var __glob_0_387 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var volucrixReaverLrAct2Front = "/assets/volucrix-reaver-lr-act2-front.f9b09e4b.png";
+var __glob_0_397 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": volucrixReaverLrAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var wendigoCkAct1Back = "/drachenschnitzel/assets/wendigo-ck-act1-back.fd61645e.png";
-var __glob_0_388 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wendigoCkAct1Back = "/assets/wendigo-ck-act1-back.fd61645e.png";
+var __glob_0_398 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wendigoCkAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var wendigoCkAct1Front = "/drachenschnitzel/assets/wendigo-ck-act1-front.5a11eca5.png";
-var __glob_0_389 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wendigoCkAct1Front = "/assets/wendigo-ck-act1-front.5a11eca5.png";
+var __glob_0_399 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wendigoCkAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var wendigoCkAct2Back = "/drachenschnitzel/assets/wendigo-ck-act2-back.3e4ee0ae.png";
-var __glob_0_390 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wendigoCkAct2Back = "/assets/wendigo-ck-act2-back.3e4ee0ae.png";
+var __glob_0_400 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wendigoCkAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var wendigoCkAct2Front = "/drachenschnitzel/assets/wendigo-ck-act2-front.476e16d3.png";
-var __glob_0_391 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wendigoCkAct2Front = "/assets/wendigo-ck-act2-front.476e16d3.png";
+var __glob_0_401 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wendigoCkAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var wendigoGdAct1Back = "/drachenschnitzel/assets/wendigo-gd-act1-back.37ba49c8.png";
-var __glob_0_392 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wendigoGdAct1Back = "/assets/wendigo-gd-act1-back.37ba49c8.png";
+var __glob_0_402 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wendigoGdAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var wendigoGdAct1Front = "/drachenschnitzel/assets/wendigo-gd-act1-front.cfe62add.png";
-var __glob_0_393 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wendigoGdAct1Front = "/assets/wendigo-gd-act1-front.cfe62add.png";
+var __glob_0_403 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wendigoGdAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var wendigoGdAct2Back = "/drachenschnitzel/assets/wendigo-gd-act2-back.92bfb3f1.png";
-var __glob_0_394 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wendigoGdAct2Back = "/assets/wendigo-gd-act2-back.92bfb3f1.png";
+var __glob_0_404 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wendigoGdAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var wendigoGdAct2Front = "/drachenschnitzel/assets/wendigo-gd-act2-front.689eca09.png";
-var __glob_0_395 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wendigoGdAct2Front = "/assets/wendigo-gd-act2-front.689eca09.png";
+var __glob_0_405 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wendigoGdAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var wraithMrAct1Back = "/drachenschnitzel/assets/wraith-mr-act1-back.1822833a.png";
-var __glob_0_396 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wraithMrAct1Back = "/assets/wraith-mr-act1-back.1822833a.png";
+var __glob_0_406 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wraithMrAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var wraithMrAct1Front = "/drachenschnitzel/assets/wraith-mr-act1-front.7631d85b.png";
-var __glob_0_397 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wraithMrAct1Front = "/assets/wraith-mr-act1-front.7631d85b.png";
+var __glob_0_407 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wraithMrAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var wraithMrAct2Back = "/drachenschnitzel/assets/wraith-mr-act2-back.90f9198c.png";
-var __glob_0_398 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wraithMrAct2Back = "/assets/wraith-mr-act2-back.90f9198c.png";
+var __glob_0_408 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wraithMrAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var wraithMrAct2Front = "/drachenschnitzel/assets/wraith-mr-act2-front.a155ba03.png";
-var __glob_0_399 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wraithMrAct2Front = "/assets/wraith-mr-act2-front.a155ba03.png";
+var __glob_0_409 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wraithMrAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ynfernaelHulkSnAct1Back = "/drachenschnitzel/assets/ynfernael-hulk-sn-act1-back.f5d4d047.png";
-var __glob_0_400 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ynfernaelHulkSnAct1Back = "/assets/ynfernael-hulk-sn-act1-back.f5d4d047.png";
+var __glob_0_410 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ynfernaelHulkSnAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ynfernaelHulkSnAct1Front = "/drachenschnitzel/assets/ynfernael-hulk-sn-act1-front.e12adea1.png";
-var __glob_0_401 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ynfernaelHulkSnAct1Front = "/assets/ynfernael-hulk-sn-act1-front.e12adea1.png";
+var __glob_0_411 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ynfernaelHulkSnAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var ynfernaelHulkSnAct2Back = "/drachenschnitzel/assets/ynfernael-hulk-sn-act2-back.c80b7a4e.png";
-var __glob_0_402 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ynfernaelHulkSnAct2Back = "/assets/ynfernael-hulk-sn-act2-back.c80b7a4e.png";
+var __glob_0_412 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ynfernaelHulkSnAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var ynfernaelHulkSnAct2Front = "/drachenschnitzel/assets/ynfernael-hulk-sn-act2-front.0d5363aa.png";
-var __glob_0_403 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ynfernaelHulkSnAct2Front = "/assets/ynfernael-hulk-sn-act2-front.0d5363aa.png";
+var __glob_0_413 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ynfernaelHulkSnAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var zombieBgAct1Back = "/drachenschnitzel/assets/zombie-bg-act1-back.8795627c.png";
-var __glob_0_404 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var zombieBgAct1Back = "/assets/zombie-bg-act1-back.8795627c.png";
+var __glob_0_414 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": zombieBgAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var zombieBgAct1Front = "/drachenschnitzel/assets/zombie-bg-act1-front.3b17dc65.png";
-var __glob_0_405 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var zombieBgAct1Front = "/assets/zombie-bg-act1-front.3b17dc65.png";
+var __glob_0_415 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": zombieBgAct1Front
 }, Symbol.toStringTag, { value: "Module" }));
-var zombieBgAct2Back = "/drachenschnitzel/assets/zombie-bg-act2-back.288b99ef.png";
-var __glob_0_406 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var zombieBgAct2Back = "/assets/zombie-bg-act2-back.288b99ef.png";
+var __glob_0_416 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": zombieBgAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var zombieBgAct2Front = "/drachenschnitzel/assets/zombie-bg-act2-front.afd2a50a.png";
-var __glob_0_407 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var zombieBgAct2Front = "/assets/zombie-bg-act2-front.afd2a50a.png";
+var __glob_0_417 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": zombieBgAct2Front
 }, Symbol.toStringTag, { value: "Module" }));
-var auriumMailLw = "/drachenschnitzel/assets/aurium-mail-lw.d19514cd.png";
-var __glob_0_408 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var auriumMailLw = "/assets/aurium-mail-lw.d19514cd.png";
+var __glob_0_418 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": auriumMailLw
 }, Symbol.toStringTag, { value: "Module" }));
-var bonebornBowCr = "/drachenschnitzel/assets/boneborn-bow-cr.45743777.png";
-var __glob_0_409 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bonebornBowCr = "/assets/boneborn-bow-cr.45743777.png";
+var __glob_0_419 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bonebornBowCr
 }, Symbol.toStringTag, { value: "Module" }));
-var bookOfStarsMr = "/drachenschnitzel/assets/book-of-stars-mr.a534670c.png";
-var __glob_0_410 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bookOfStarsMr = "/assets/book-of-stars-mr.a534670c.png";
+var __glob_0_420 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bookOfStarsMr
 }, Symbol.toStringTag, { value: "Module" }));
-var dawnbladeBg = "/drachenschnitzel/assets/dawnblade-bg.90a20448.png";
-var __glob_0_411 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var dawnbladeBg = "/assets/dawnblade-bg.90a20448.png";
+var __glob_0_421 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": dawnbladeBg
 }, Symbol.toStringTag, { value: "Module" }));
-var fearEaterMb = "/drachenschnitzel/assets/fear-eater-mb.d37d411b.png";
-var __glob_0_412 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fearEaterMb = "/assets/fear-eater-mb.d37d411b.png";
+var __glob_0_422 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fearEaterMb
 }, Symbol.toStringTag, { value: "Module" }));
-var forewarnedRingCr = "/drachenschnitzel/assets/forewarned-ring-cr.95101ed5.png";
-var __glob_0_413 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var forewarnedRingCr = "/assets/forewarned-ring-cr.95101ed5.png";
+var __glob_0_423 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": forewarnedRingCr
 }, Symbol.toStringTag, { value: "Module" }));
-var fortunasDiceBg = "/drachenschnitzel/assets/fortunas-dice-bg.cea7b7fa.png";
-var __glob_0_414 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fortunasDiceBg = "/assets/fortunas-dice-bg.cea7b7fa.png";
+var __glob_0_424 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fortunasDiceBg
 }, Symbol.toStringTag, { value: "Module" }));
-var gauntletsOfPowerLr = "/drachenschnitzel/assets/gauntlets-of-power-lr.2c98eb89.png";
-var __glob_0_415 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var gauntletsOfPowerLr = "/assets/gauntlets-of-power-lr.2c98eb89.png";
+var __glob_0_425 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": gauntletsOfPowerLr
 }, Symbol.toStringTag, { value: "Module" }));
-var immunityElixirTf = "/drachenschnitzel/assets/immunity-elixir-tf.b264b36e.png";
-var __glob_0_416 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var immunityElixirTf = "/assets/immunity-elixir-tf.b264b36e.png";
+var __glob_0_426 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": immunityElixirTf
 }, Symbol.toStringTag, { value: "Module" }));
-var livingHeartLr = "/drachenschnitzel/assets/living-heart-lr.70810439.png";
-var __glob_0_417 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var livingHeartLr = "/assets/living-heart-lr.70810439.png";
+var __glob_0_427 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": livingHeartLr
 }, Symbol.toStringTag, { value: "Module" }));
-var mendingTalismanTf = "/drachenschnitzel/assets/mending-talisman-tf.e702a723.png";
-var __glob_0_418 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var mendingTalismanTf = "/assets/mending-talisman-tf.e702a723.png";
+var __glob_0_428 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": mendingTalismanTf
 }, Symbol.toStringTag, { value: "Module" }));
-var robesOfTheLastCr$1 = "/drachenschnitzel/assets/robes-of-the-last-cr.6c673698.png";
-var __glob_0_419 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var robesOfTheLastCr$1 = "/assets/robes-of-the-last-cr.6c673698.png";
+var __glob_0_429 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": robesOfTheLastCr$1
 }, Symbol.toStringTag, { value: "Module" }));
-var shadowPlotterSn$1 = "/drachenschnitzel/assets/shadow-plotter-sn.3c5ae740.png";
-var __glob_0_420 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadowPlotterSn$1 = "/assets/shadow-plotter-sn.3c5ae740.png";
+var __glob_0_430 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowPlotterSn$1
 }, Symbol.toStringTag, { value: "Module" }));
-var shardsOfIthyndrusMr$1 = "/drachenschnitzel/assets/shards-of-ithyndrus-mr.c921fa05.png";
-var __glob_0_421 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shardsOfIthyndrusMr$1 = "/assets/shards-of-ithyndrus-mr.c921fa05.png";
+var __glob_0_431 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shardsOfIthyndrusMr$1
 }, Symbol.toStringTag, { value: "Module" }));
-var shieldOfTheDarkGodBg = "/drachenschnitzel/assets/shield-of-the-dark-god-bg.c351710a.png";
-var __glob_0_422 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shieldOfTheDarkGodBg = "/assets/shield-of-the-dark-god-bg.c351710a.png";
+var __glob_0_432 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shieldOfTheDarkGodBg
 }, Symbol.toStringTag, { value: "Module" }));
-var spiritedScytheSn = "/drachenschnitzel/assets/spirited-scythe-sn.1e233649.png";
-var __glob_0_423 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var spiritedScytheSn = "/assets/spirited-scythe-sn.1e233649.png";
+var __glob_0_433 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": spiritedScytheSn
 }, Symbol.toStringTag, { value: "Module" }));
-var staffOfLightBg = "/drachenschnitzel/assets/staff-of-light-bg.727444c6.png";
-var __glob_0_424 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var staffOfLightBg = "/assets/staff-of-light-bg.727444c6.png";
+var __glob_0_434 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": staffOfLightBg
 }, Symbol.toStringTag, { value: "Module" }));
-var sunStoneLr = "/drachenschnitzel/assets/sun-stone-lr.a3f9931c.png";
-var __glob_0_425 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sunStoneLr = "/assets/sun-stone-lr.a3f9931c.png";
+var __glob_0_435 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunStoneLr
 }, Symbol.toStringTag, { value: "Module" }));
-var theManorsHeartMr$1 = "/drachenschnitzel/assets/the-manors-heart-mr.7150a853.png";
-var __glob_0_426 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theManorsHeartMr$1 = "/assets/the-manors-heart-mr.7150a853.png";
+var __glob_0_436 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theManorsHeartMr$1
 }, Symbol.toStringTag, { value: "Module" }));
-var theShadowRuneBg$1 = "/drachenschnitzel/assets/the-shadow-rune-bg.75d69caf.png";
-var __glob_0_427 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theShadowRuneBg$1 = "/assets/the-shadow-rune-bg.75d69caf.png";
+var __glob_0_437 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theShadowRuneBg$1
 }, Symbol.toStringTag, { value: "Module" }));
-var theWhiteCrownMb = "/drachenschnitzel/assets/the-white-crown-mb.1bb724c8.png";
-var __glob_0_428 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theWhiteCrownMb = "/assets/the-white-crown-mb.1bb724c8.png";
+var __glob_0_438 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theWhiteCrownMb
 }, Symbol.toStringTag, { value: "Module" }));
-var trueshotBg = "/drachenschnitzel/assets/trueshot-bg.a1505775.png";
-var __glob_0_429 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var trueshotBg = "/assets/trueshot-bg.a1505775.png";
+var __glob_0_439 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": trueshotBg
 }, Symbol.toStringTag, { value: "Module" }));
-var undertakersCoatMb$1 = "/drachenschnitzel/assets/undertakers-coat-mb.90905f48.png";
-var __glob_0_430 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var undertakersCoatMb$1 = "/assets/undertakers-coat-mb.90905f48.png";
+var __glob_0_440 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": undertakersCoatMb$1
 }, Symbol.toStringTag, { value: "Module" }));
-var valyndrasBaneLw = "/drachenschnitzel/assets/valyndras-bane-lw.e1fed3b5.png";
-var __glob_0_431 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var valyndrasBaneLw = "/assets/valyndras-bane-lw.e1fed3b5.png";
+var __glob_0_441 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": valyndrasBaneLw
 }, Symbol.toStringTag, { value: "Module" }));
-var wanderersStoneMr = "/drachenschnitzel/assets/wanderers-stone-mr.98d6b0b4.png";
-var __glob_0_432 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wanderersStoneMr = "/assets/wanderers-stone-mr.98d6b0b4.png";
+var __glob_0_442 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wanderersStoneMr
 }, Symbol.toStringTag, { value: "Module" }));
-var workmansRingTf = "/drachenschnitzel/assets/workmans-ring-tf.9a4ef49a.png";
-var __glob_0_433 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var workmansRingTf = "/assets/workmans-ring-tf.9a4ef49a.png";
+var __glob_0_443 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": workmansRingTf
 }, Symbol.toStringTag, { value: "Module" }));
-var ynfernalRuneSn$1 = "/drachenschnitzel/assets/ynfernal-rune-sn.e8cfc945.png";
-var __glob_0_434 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ynfernalRuneSn$1 = "/assets/ynfernal-rune-sn.e8cfc945.png";
+var __glob_0_444 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ynfernalRuneSn$1
 }, Symbol.toStringTag, { value: "Module" }));
-var azatheasTriumphCr = "/drachenschnitzel/assets/azatheas-triumph-cr.88b74771.png";
-var __glob_0_435 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var azatheasTriumphCr = "/assets/azatheas-triumph-cr.88b74771.png";
+var __glob_0_445 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": azatheasTriumphCr
 }, Symbol.toStringTag, { value: "Module" }));
-var bandOfForesightCr = "/drachenschnitzel/assets/band-of-foresight-cr.a968e50d.png";
-var __glob_0_436 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bandOfForesightCr = "/assets/band-of-foresight-cr.a968e50d.png";
+var __glob_0_446 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bandOfForesightCr
 }, Symbol.toStringTag, { value: "Module" }));
-var bladeOfBrivalaMb = "/drachenschnitzel/assets/blade-of-brivala-mb.8aa5fd96.png";
-var __glob_0_437 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bladeOfBrivalaMb = "/assets/blade-of-brivala-mb.8aa5fd96.png";
+var __glob_0_447 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bladeOfBrivalaMb
 }, Symbol.toStringTag, { value: "Module" }));
-var bonesOfWoeBg = "/drachenschnitzel/assets/bones-of-woe-bg.38647f1b.png";
-var __glob_0_438 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bonesOfWoeBg = "/assets/bones-of-woe-bg.38647f1b.png";
+var __glob_0_448 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bonesOfWoeBg
 }, Symbol.toStringTag, { value: "Module" }));
-var curativeVialTf = "/drachenschnitzel/assets/curative-vial-tf.cf316a0c.png";
-var __glob_0_439 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var curativeVialTf = "/assets/curative-vial-tf.cf316a0c.png";
+var __glob_0_449 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": curativeVialTf
 }, Symbol.toStringTag, { value: "Module" }));
-var duskbladeBg = "/drachenschnitzel/assets/duskblade-bg.51d474c7.png";
-var __glob_0_440 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var duskbladeBg = "/assets/duskblade-bg.51d474c7.png";
+var __glob_0_450 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": duskbladeBg
 }, Symbol.toStringTag, { value: "Module" }));
-var fallenHeartLr = "/drachenschnitzel/assets/fallen-heart-lr.5266c64c.png";
-var __glob_0_441 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fallenHeartLr = "/assets/fallen-heart-lr.5266c64c.png";
+var __glob_0_451 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fallenHeartLr
 }, Symbol.toStringTag, { value: "Module" }));
-var gauntletsOfSpiteLr = "/drachenschnitzel/assets/gauntlets-of-spite-lr.decb465a.png";
-var __glob_0_442 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var gauntletsOfSpiteLr = "/assets/gauntlets-of-spite-lr.decb465a.png";
+var __glob_0_452 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": gauntletsOfSpiteLr
 }, Symbol.toStringTag, { value: "Module" }));
-var herMajestysMaliceLw = "/drachenschnitzel/assets/her-majestys-malice-lw.47d995e5.png";
-var __glob_0_443 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var herMajestysMaliceLw = "/assets/her-majestys-malice-lw.47d995e5.png";
+var __glob_0_453 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": herMajestysMaliceLw
 }, Symbol.toStringTag, { value: "Module" }));
-var omenOfBlightTf = "/drachenschnitzel/assets/omen-of-blight-tf.4149e9f3.png";
-var __glob_0_444 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var omenOfBlightTf = "/assets/omen-of-blight-tf.4149e9f3.png";
+var __glob_0_454 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": omenOfBlightTf
 }, Symbol.toStringTag, { value: "Module" }));
-var robesOfTheLastCr = "/drachenschnitzel/assets/robes-of-the-last-cr.278a6e19.png";
-var __glob_0_445 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var robesOfTheLastCr = "/assets/robes-of-the-last-cr.278a6e19.png";
+var __glob_0_455 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": robesOfTheLastCr
 }, Symbol.toStringTag, { value: "Module" }));
-var scorpionsKissBg = "/drachenschnitzel/assets/scorpions-kiss-bg.8f084b89.png";
-var __glob_0_446 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var scorpionsKissBg = "/assets/scorpions-kiss-bg.8f084b89.png";
+var __glob_0_456 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": scorpionsKissBg
 }, Symbol.toStringTag, { value: "Module" }));
-var shadowPlotterSn = "/drachenschnitzel/assets/shadow-plotter-sn.f3c17b94.png";
-var __glob_0_447 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadowPlotterSn = "/assets/shadow-plotter-sn.f3c17b94.png";
+var __glob_0_457 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowPlotterSn
 }, Symbol.toStringTag, { value: "Module" }));
-var shardsOfIthyndrusMr = "/drachenschnitzel/assets/shards-of-ithyndrus-mr.81ee8b9b.png";
-var __glob_0_448 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shardsOfIthyndrusMr = "/assets/shards-of-ithyndrus-mr.81ee8b9b.png";
+var __glob_0_458 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shardsOfIthyndrusMr
 }, Symbol.toStringTag, { value: "Module" }));
-var shieldOfZoreksFavorBg = "/drachenschnitzel/assets/shield-of-zoreks-favor-bg.3fd095b1.png";
-var __glob_0_449 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shieldOfZoreksFavorBg = "/assets/shield-of-zoreks-favor-bg.3fd095b1.png";
+var __glob_0_459 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shieldOfZoreksFavorBg
 }, Symbol.toStringTag, { value: "Module" }));
-var soullessScytheSn = "/drachenschnitzel/assets/soulless-scythe-sn.da6b8277.png";
-var __glob_0_450 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var soullessScytheSn = "/assets/soulless-scythe-sn.da6b8277.png";
+var __glob_0_460 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": soullessScytheSn
 }, Symbol.toStringTag, { value: "Module" }));
-var staffOfShadowsBg = "/drachenschnitzel/assets/staff-of-shadows-bg.a297e7ab.png";
-var __glob_0_451 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var staffOfShadowsBg = "/assets/staff-of-shadows-bg.a297e7ab.png";
+var __glob_0_461 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": staffOfShadowsBg
 }, Symbol.toStringTag, { value: "Module" }));
-var stoneOfWaywardMeansMr = "/drachenschnitzel/assets/stone-of-wayward-means-mr.0049e6f5.png";
-var __glob_0_452 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var stoneOfWaywardMeansMr = "/assets/stone-of-wayward-means-mr.0049e6f5.png";
+var __glob_0_462 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": stoneOfWaywardMeansMr
 }, Symbol.toStringTag, { value: "Module" }));
-var sunsFuryLr = "/drachenschnitzel/assets/suns-fury-lr.27c9faca.png";
-var __glob_0_453 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sunsFuryLr = "/assets/suns-fury-lr.27c9faca.png";
+var __glob_0_463 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunsFuryLr
 }, Symbol.toStringTag, { value: "Module" }));
-var taskmastersRingTf = "/drachenschnitzel/assets/taskmasters-ring-tf.a6099314.png";
-var __glob_0_454 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var taskmastersRingTf = "/assets/taskmasters-ring-tf.a6099314.png";
+var __glob_0_464 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": taskmastersRingTf
 }, Symbol.toStringTag, { value: "Module" }));
-var theManorsHeartMr = "/drachenschnitzel/assets/the-manors-heart-mr.c5fa2464.png";
-var __glob_0_455 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theManorsHeartMr = "/assets/the-manors-heart-mr.c5fa2464.png";
+var __glob_0_465 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theManorsHeartMr
 }, Symbol.toStringTag, { value: "Module" }));
-var theShadowRuneBg = "/drachenschnitzel/assets/the-shadow-rune-bg.446f17f6.png";
-var __glob_0_456 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var theShadowRuneBg = "/assets/the-shadow-rune-bg.446f17f6.png";
+var __glob_0_466 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": theShadowRuneBg
 }, Symbol.toStringTag, { value: "Module" }));
-var tomeOfTheFiveLiesMr = "/drachenschnitzel/assets/tome-of-the-five-lies-mr.2b91bd92.png";
-var __glob_0_457 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var tomeOfTheFiveLiesMr = "/assets/tome-of-the-five-lies-mr.2b91bd92.png";
+var __glob_0_467 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": tomeOfTheFiveLiesMr
 }, Symbol.toStringTag, { value: "Module" }));
-var undertakersCoatMb = "/drachenschnitzel/assets/undertakers-coat-mb.b89ed2ff.png";
-var __glob_0_458 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var undertakersCoatMb = "/assets/undertakers-coat-mb.b89ed2ff.png";
+var __glob_0_468 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": undertakersCoatMb
 }, Symbol.toStringTag, { value: "Module" }));
-var valyndrasGiftLw = "/drachenschnitzel/assets/valyndras-gift-lw.7a49701d.png";
-var __glob_0_459 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var valyndrasGiftLw = "/assets/valyndras-gift-lw.7a49701d.png";
+var __glob_0_469 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": valyndrasGiftLw
 }, Symbol.toStringTag, { value: "Module" }));
-var waiqarsFavorMb = "/drachenschnitzel/assets/waiqars-favor-mb.8e0ebb5f.png";
-var __glob_0_460 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var waiqarsFavorMb = "/assets/waiqars-favor-mb.8e0ebb5f.png";
+var __glob_0_470 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": waiqarsFavorMb
 }, Symbol.toStringTag, { value: "Module" }));
-var ynfernalRuneSn = "/drachenschnitzel/assets/ynfernal-rune-sn.71fef9b0.png";
-var __glob_0_461 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ynfernalRuneSn = "/assets/ynfernal-rune-sn.71fef9b0.png";
+var __glob_0_471 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ynfernalRuneSn
 }, Symbol.toStringTag, { value: "Module" }));
-var archaicScrollSn = "/drachenschnitzel/assets/archaic-scroll-sn.2c2e1d41.png";
-var __glob_0_462 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var archaicScrollSn = "/assets/archaic-scroll-sn.2c2e1d41.png";
+var __glob_0_472 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": archaicScrollSn
 }, Symbol.toStringTag, { value: "Module" }));
-var bagOfTricksSotp = "/drachenschnitzel/assets/bag-of-tricks-sotp.b0609529.png";
-var __glob_0_463 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bagOfTricksSotp = "/assets/bag-of-tricks-sotp.b0609529.png";
+var __glob_0_473 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bagOfTricksSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var baronsCloakSn = "/drachenschnitzel/assets/barons-cloak-sn.51d271a4.png";
-var __glob_0_464 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var baronsCloakSn = "/assets/barons-cloak-sn.51d271a4.png";
+var __glob_0_474 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": baronsCloakSn
 }, Symbol.toStringTag, { value: "Module" }));
-var battleTomeMb = "/drachenschnitzel/assets/battle-tome-mb.819ac44e.png";
-var __glob_0_465 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var battleTomeMb = "/assets/battle-tome-mb.819ac44e.png";
+var __glob_0_475 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": battleTomeMb
 }, Symbol.toStringTag, { value: "Module" }));
-var beardedAxeLr = "/drachenschnitzel/assets/bearded-axe-lr.71bff0dc.png";
-var __glob_0_466 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beardedAxeLr = "/assets/bearded-axe-lr.71bff0dc.png";
+var __glob_0_476 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beardedAxeLr
 }, Symbol.toStringTag, { value: "Module" }));
-var beltOfAlchemyTf = "/drachenschnitzel/assets/belt-of-alchemy-tf.8467f2c0.png";
-var __glob_0_467 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beltOfAlchemyTf = "/assets/belt-of-alchemy-tf.8467f2c0.png";
+var __glob_0_477 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beltOfAlchemyTf
 }, Symbol.toStringTag, { value: "Module" }));
-var beltOfWaterwalkingTf = "/drachenschnitzel/assets/belt-of-waterwalking-tf.b7cd53a9.png";
-var __glob_0_468 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beltOfWaterwalkingTf = "/assets/belt-of-waterwalking-tf.b7cd53a9.png";
+var __glob_0_478 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beltOfWaterwalkingTf
 }, Symbol.toStringTag, { value: "Module" }));
-var blessedShieldMr = "/drachenschnitzel/assets/blessed-shield-mr.955a1a13.png";
-var __glob_0_469 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var blessedShieldMr = "/assets/blessed-shield-mr.955a1a13.png";
+var __glob_0_479 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blessedShieldMr
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodscriptRingMb = "/drachenschnitzel/assets/bloodscript-ring-mb.e8ad3a47.png";
-var __glob_0_470 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodscriptRingMb = "/assets/bloodscript-ring-mb.e8ad3a47.png";
+var __glob_0_480 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodscriptRingMb
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodyDaggerSn = "/drachenschnitzel/assets/bloody-dagger-sn.fc2bd241.png";
-var __glob_0_471 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodyDaggerSn = "/assets/bloody-dagger-sn.fc2bd241.png";
+var __glob_0_481 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodyDaggerSn
 }, Symbol.toStringTag, { value: "Module" }));
-var boneBladeSn = "/drachenschnitzel/assets/bone-blade-sn.2ce790f2.png";
-var __glob_0_472 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var boneBladeSn = "/assets/bone-blade-sn.2ce790f2.png";
+var __glob_0_482 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boneBladeSn
 }, Symbol.toStringTag, { value: "Module" }));
-var bootsOfIronSn = "/drachenschnitzel/assets/boots-of-iron-sn.ccb3d24f.png";
-var __glob_0_473 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bootsOfIronSn = "/assets/boots-of-iron-sn.ccb3d24f.png";
+var __glob_0_483 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bootsOfIronSn
 }, Symbol.toStringTag, { value: "Module" }));
-var bowOfBoneLr = "/drachenschnitzel/assets/bow-of-bone-lr.23543e7d.png";
-var __glob_0_474 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bowOfBoneLr = "/assets/bow-of-bone-lr.23543e7d.png";
+var __glob_0_484 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bowOfBoneLr
 }, Symbol.toStringTag, { value: "Module" }));
-var chainmailBg = "/drachenschnitzel/assets/chainmail-bg.ad509624.png";
-var __glob_0_475 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chainmailBg = "/assets/chainmail-bg.ad509624.png";
+var __glob_0_485 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chainmailBg
 }, Symbol.toStringTag, { value: "Module" }));
-var cityGuardsBowSn = "/drachenschnitzel/assets/city-guards-bow-sn.3f8cd58c.png";
-var __glob_0_476 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cityGuardsBowSn = "/assets/city-guards-bow-sn.3f8cd58c.png";
+var __glob_0_486 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cityGuardsBowSn
 }, Symbol.toStringTag, { value: "Module" }));
-var cloakOfMistsSn = "/drachenschnitzel/assets/cloak-of-mists-sn.a6d8d2e5.png";
-var __glob_0_477 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cloakOfMistsSn = "/assets/cloak-of-mists-sn.a6d8d2e5.png";
+var __glob_0_487 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cloakOfMistsSn
 }, Symbol.toStringTag, { value: "Module" }));
-var corpsebugBroochMb = "/drachenschnitzel/assets/corpsebug-brooch-mb.291ecdd9.png";
-var __glob_0_478 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var corpsebugBroochMb = "/assets/corpsebug-brooch-mb.291ecdd9.png";
+var __glob_0_488 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": corpsebugBroochMb
 }, Symbol.toStringTag, { value: "Module" }));
-var crossbowBg = "/drachenschnitzel/assets/crossbow-bg.21a10dec.png";
-var __glob_0_479 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var crossbowBg = "/assets/crossbow-bg.21a10dec.png";
+var __glob_0_489 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": crossbowBg
 }, Symbol.toStringTag, { value: "Module" }));
-var crystalOfMiragesSotp = "/drachenschnitzel/assets/crystal-of-mirages-sotp.022b193a.png";
-var __glob_0_480 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var crystalOfMiragesSotp = "/assets/crystal-of-mirages-sotp.022b193a.png";
+var __glob_0_490 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": crystalOfMiragesSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var deflectingShieldTf = "/drachenschnitzel/assets/deflecting-shield-tf.5ebb6d1e.png";
-var __glob_0_481 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var deflectingShieldTf = "/assets/deflecting-shield-tf.5ebb6d1e.png";
+var __glob_0_491 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": deflectingShieldTf
 }, Symbol.toStringTag, { value: "Module" }));
-var direFlailTf = "/drachenschnitzel/assets/dire-flail-tf.03261afd.png";
-var __glob_0_482 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var direFlailTf = "/assets/dire-flail-tf.03261afd.png";
+var __glob_0_492 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": direFlailTf
 }, Symbol.toStringTag, { value: "Module" }));
-var elmGreatbowBg = "/drachenschnitzel/assets/elm-greatbow-bg.259058e8.png";
-var __glob_0_483 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var elmGreatbowBg = "/assets/elm-greatbow-bg.259058e8.png";
+var __glob_0_493 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elmGreatbowBg
 }, Symbol.toStringTag, { value: "Module" }));
-var elvenBootsLr = "/drachenschnitzel/assets/elven-boots-lr.509f024b.png";
-var __glob_0_484 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var elvenBootsLr = "/assets/elven-boots-lr.509f024b.png";
+var __glob_0_494 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elvenBootsLr
 }, Symbol.toStringTag, { value: "Module" }));
-var flashPowderLw = "/drachenschnitzel/assets/flash-powder-lw.f9d4ce2e.png";
-var __glob_0_485 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var flashPowderLw = "/assets/flash-powder-lw.f9d4ce2e.png";
+var __glob_0_495 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": flashPowderLw
 }, Symbol.toStringTag, { value: "Module" }));
-var goldenOrbMaceSotp = "/drachenschnitzel/assets/golden-orb-mace-sotp.266d97ed.png";
-var __glob_0_486 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goldenOrbMaceSotp = "/assets/golden-orb-mace-sotp.266d97ed.png";
+var __glob_0_496 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goldenOrbMaceSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var guardianAxeTf = "/drachenschnitzel/assets/guardian-axe-tf.dbc903fd.png";
-var __glob_0_487 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var guardianAxeTf = "/assets/guardian-axe-tf.dbc903fd.png";
+var __glob_0_497 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": guardianAxeTf
 }, Symbol.toStringTag, { value: "Module" }));
-var halberdLw = "/drachenschnitzel/assets/halberd-lw.73895fd2.png";
-var __glob_0_488 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var halberdLw = "/assets/halberd-lw.73895fd2.png";
+var __glob_0_498 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": halberdLw
 }, Symbol.toStringTag, { value: "Module" }));
-var handbowLw = "/drachenschnitzel/assets/handbow-lw.7acf4191.png";
-var __glob_0_489 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var handbowLw = "/assets/handbow-lw.7acf4191.png";
+var __glob_0_499 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": handbowLw
 }, Symbol.toStringTag, { value: "Module" }));
-var heavyCloakBg = "/drachenschnitzel/assets/heavy-cloak-bg.d69b52a7.png";
-var __glob_0_490 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var heavyCloakBg = "/assets/heavy-cloak-bg.d69b52a7.png";
+var __glob_0_500 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": heavyCloakBg
 }, Symbol.toStringTag, { value: "Module" }));
-var immolationBg = "/drachenschnitzel/assets/immolation-bg.9b459bd5.png";
-var __glob_0_491 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var immolationBg = "/assets/immolation-bg.9b459bd5.png";
+var __glob_0_501 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": immolationBg
 }, Symbol.toStringTag, { value: "Module" }));
-var incendiaryArrowsSn = "/drachenschnitzel/assets/incendiary-arrows-sn.9c7e4fd9.png";
-var __glob_0_492 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var incendiaryArrowsSn = "/assets/incendiary-arrows-sn.9c7e4fd9.png";
+var __glob_0_502 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": incendiaryArrowsSn
 }, Symbol.toStringTag, { value: "Module" }));
-var ironBattleaxeBg = "/drachenschnitzel/assets/iron-battleaxe-bg.63228f9e.png";
-var __glob_0_493 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironBattleaxeBg = "/assets/iron-battleaxe-bg.63228f9e.png";
+var __glob_0_503 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironBattleaxeBg
 }, Symbol.toStringTag, { value: "Module" }));
-var ironShieldBg = "/drachenschnitzel/assets/iron-shield-bg.aa54a6de.png";
-var __glob_0_494 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironShieldBg = "/assets/iron-shield-bg.aa54a6de.png";
+var __glob_0_504 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironShieldBg
 }, Symbol.toStringTag, { value: "Module" }));
-var ironSpearBg = "/drachenschnitzel/assets/iron-spear-bg.c18d730d.png";
-var __glob_0_495 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironSpearBg = "/assets/iron-spear-bg.c18d730d.png";
+var __glob_0_505 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironSpearBg
 }, Symbol.toStringTag, { value: "Module" }));
-var ironboundRuneSn = "/drachenschnitzel/assets/ironbound-rune-sn.2b00450a.png";
-var __glob_0_496 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironboundRuneSn = "/assets/ironbound-rune-sn.2b00450a.png";
+var __glob_0_506 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundRuneSn
 }, Symbol.toStringTag, { value: "Module" }));
-var jeweledMaceSn = "/drachenschnitzel/assets/jeweled-mace-sn.04d9c482.png";
-var __glob_0_497 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var jeweledMaceSn = "/assets/jeweled-mace-sn.04d9c482.png";
+var __glob_0_507 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": jeweledMaceSn
 }, Symbol.toStringTag, { value: "Module" }));
-var jinnsLampLr = "/drachenschnitzel/assets/jinns-lamp-lr.abfdf88a.png";
-var __glob_0_498 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var jinnsLampLr = "/assets/jinns-lamp-lr.abfdf88a.png";
+var __glob_0_508 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": jinnsLampLr
 }, Symbol.toStringTag, { value: "Module" }));
-var leatherArmorBg = "/drachenschnitzel/assets/leather-armor-bg.269f34c1.png";
-var __glob_0_499 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var leatherArmorBg = "/assets/leather-armor-bg.269f34c1.png";
+var __glob_0_509 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": leatherArmorBg
 }, Symbol.toStringTag, { value: "Module" }));
-var lifedrainScepterTf = "/drachenschnitzel/assets/lifedrain-scepter-tf.b38e1c6c.png";
-var __glob_0_500 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lifedrainScepterTf = "/assets/lifedrain-scepter-tf.b38e1c6c.png";
+var __glob_0_510 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lifedrainScepterTf
 }, Symbol.toStringTag, { value: "Module" }));
-var lightHammerBg = "/drachenschnitzel/assets/light-hammer-bg.e74b891b.png";
-var __glob_0_501 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lightHammerBg = "/assets/light-hammer-bg.e74b891b.png";
+var __glob_0_511 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lightHammerBg
 }, Symbol.toStringTag, { value: "Module" }));
-var luckyCharmBg = "/drachenschnitzel/assets/lucky-charm-bg.2361cdab.png";
-var __glob_0_502 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var luckyCharmBg = "/assets/lucky-charm-bg.2361cdab.png";
+var __glob_0_512 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": luckyCharmBg
 }, Symbol.toStringTag, { value: "Module" }));
-var maceOfAverLr = "/drachenschnitzel/assets/mace-of-aver-lr.8dc62eaf.png";
-var __glob_0_503 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var maceOfAverLr = "/assets/mace-of-aver-lr.8dc62eaf.png";
+var __glob_0_513 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": maceOfAverLr
 }, Symbol.toStringTag, { value: "Module" }));
-var magicStaffBg = "/drachenschnitzel/assets/magic-staff-bg.7842831a.png";
-var __glob_0_504 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var magicStaffBg = "/assets/magic-staff-bg.7842831a.png";
+var __glob_0_514 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": magicStaffBg
 }, Symbol.toStringTag, { value: "Module" }));
-var magmaBlastLw = "/drachenschnitzel/assets/magma-blast-lw.444b7fb6.png";
-var __glob_0_505 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var magmaBlastLw = "/assets/magma-blast-lw.444b7fb6.png";
+var __glob_0_515 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": magmaBlastLw
 }, Symbol.toStringTag, { value: "Module" }));
-var manaWeaveBg = "/drachenschnitzel/assets/mana-weave-bg.8e32f207.png";
-var __glob_0_506 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var manaWeaveBg = "/assets/mana-weave-bg.8e32f207.png";
+var __glob_0_516 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": manaWeaveBg
 }, Symbol.toStringTag, { value: "Module" }));
-var mapstoneTf = "/drachenschnitzel/assets/mapstone-tf.e8ef3754.png";
-var __glob_0_507 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var mapstoneTf = "/assets/mapstone-tf.e8ef3754.png";
+var __glob_0_517 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": mapstoneTf
 }, Symbol.toStringTag, { value: "Module" }));
-var marshCloakMb = "/drachenschnitzel/assets/marsh-cloak-mb.fee7d552.png";
-var __glob_0_508 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var marshCloakMb = "/assets/marsh-cloak-mb.fee7d552.png";
+var __glob_0_518 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": marshCloakMb
 }, Symbol.toStringTag, { value: "Module" }));
-var mistbaneMb = "/drachenschnitzel/assets/mistbane-mb.ed10d055.png";
-var __glob_0_509 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var mistbaneMb = "/assets/mistbane-mb.ed10d055.png";
+var __glob_0_519 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": mistbaneMb
 }, Symbol.toStringTag, { value: "Module" }));
-var phoenixPendantSn = "/drachenschnitzel/assets/phoenix-pendant-sn.b4853cf4.png";
-var __glob_0_510 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var phoenixPendantSn = "/assets/phoenix-pendant-sn.b4853cf4.png";
+var __glob_0_520 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": phoenixPendantSn
 }, Symbol.toStringTag, { value: "Module" }));
-var piercingArrowsSotp = "/drachenschnitzel/assets/piercing-arrows-sotp.04866578.png";
-var __glob_0_511 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var piercingArrowsSotp = "/assets/piercing-arrows-sotp.04866578.png";
+var __glob_0_521 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": piercingArrowsSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var poisonedBlowgunLr = "/drachenschnitzel/assets/poisoned-blowgun-lr.d2c63354.png";
-var __glob_0_512 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var poisonedBlowgunLr = "/assets/poisoned-blowgun-lr.d2c63354.png";
+var __glob_0_522 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": poisonedBlowgunLr
 }, Symbol.toStringTag, { value: "Module" }));
-var ringOfPowerBg = "/drachenschnitzel/assets/ring-of-power-bg.6b828f74.png";
-var __glob_0_513 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ringOfPowerBg = "/assets/ring-of-power-bg.6b828f74.png";
+var __glob_0_523 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ringOfPowerBg
 }, Symbol.toStringTag, { value: "Module" }));
-var runePlateLr = "/drachenschnitzel/assets/rune-plate-lr.ed5ac275.png";
-var __glob_0_514 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var runePlateLr = "/assets/rune-plate-lr.ed5ac275.png";
+var __glob_0_524 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runePlateLr
 }, Symbol.toStringTag, { value: "Module" }));
-var scarPitGreavesSotp = "/drachenschnitzel/assets/scar-pit-greaves-sotp.f176bda1.png";
-var __glob_0_515 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var scarPitGreavesSotp = "/assets/scar-pit-greaves-sotp.f176bda1.png";
+var __glob_0_525 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": scarPitGreavesSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var scorpionHelmBg = "/drachenschnitzel/assets/scorpion-helm-bg.af60f3e5.png";
-var __glob_0_516 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var scorpionHelmBg = "/assets/scorpion-helm-bg.af60f3e5.png";
+var __glob_0_526 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": scorpionHelmBg
 }, Symbol.toStringTag, { value: "Module" }));
-var serpentDaggerLr = "/drachenschnitzel/assets/serpent-dagger-lr.7ea1d488.png";
-var __glob_0_517 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var serpentDaggerLr = "/assets/serpent-dagger-lr.7ea1d488.png";
+var __glob_0_527 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": serpentDaggerLr
 }, Symbol.toStringTag, { value: "Module" }));
-var shadowBracersMr = "/drachenschnitzel/assets/shadow-bracers-mr.60f0b296.png";
-var __glob_0_518 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadowBracersMr = "/assets/shadow-bracers-mr.60f0b296.png";
+var __glob_0_528 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowBracersMr
 }, Symbol.toStringTag, { value: "Module" }));
-var shieldOfLightLr = "/drachenschnitzel/assets/shield-of-light-lr.6c1acaaf.png";
-var __glob_0_519 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shieldOfLightLr = "/assets/shield-of-light-lr.6c1acaaf.png";
+var __glob_0_529 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shieldOfLightLr
 }, Symbol.toStringTag, { value: "Module" }));
-var shopItemsAct1Back = "/drachenschnitzel/assets/shop-items-act1-back.5010252f.png";
-var __glob_0_520 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shopItemsAct1Back = "/assets/shop-items-act1-back.5010252f.png";
+var __glob_0_530 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shopItemsAct1Back
 }, Symbol.toStringTag, { value: "Module" }));
-var slingBg = "/drachenschnitzel/assets/sling-bg.43c78ae7.png";
-var __glob_0_521 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var slingBg = "/assets/sling-bg.43c78ae7.png";
+var __glob_0_531 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": slingBg
 }, Symbol.toStringTag, { value: "Module" }));
-var soulboundSwordMb = "/drachenschnitzel/assets/soulbound-sword-mb.24da41da.png";
-var __glob_0_522 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var soulboundSwordMb = "/assets/soulbound-sword-mb.24da41da.png";
+var __glob_0_532 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": soulboundSwordMb
 }, Symbol.toStringTag, { value: "Module" }));
-var soulstoneMb = "/drachenschnitzel/assets/soulstone-mb.6ddbc232.png";
-var __glob_0_523 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var soulstoneMb = "/assets/soulstone-mb.6ddbc232.png";
+var __glob_0_533 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": soulstoneMb
 }, Symbol.toStringTag, { value: "Module" }));
-var staffOfGreyhavenMr = "/drachenschnitzel/assets/staff-of-greyhaven-mr.258605e7.png";
-var __glob_0_524 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var staffOfGreyhavenMr = "/assets/staff-of-greyhaven-mr.258605e7.png";
+var __glob_0_534 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": staffOfGreyhavenMr
 }, Symbol.toStringTag, { value: "Module" }));
-var steelBroadswordBg = "/drachenschnitzel/assets/steel-broadsword-bg.697d4c86.png";
-var __glob_0_525 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var steelBroadswordBg = "/assets/steel-broadsword-bg.697d4c86.png";
+var __glob_0_535 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": steelBroadswordBg
 }, Symbol.toStringTag, { value: "Module" }));
-var sunBlessedRuneSotp = "/drachenschnitzel/assets/sun-blessed-rune-sotp.83591539.png";
-var __glob_0_526 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sunBlessedRuneSotp = "/assets/sun-blessed-rune-sotp.83591539.png";
+var __glob_0_536 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunBlessedRuneSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var sunburstBg = "/drachenschnitzel/assets/sunburst-bg.3a3f3fbd.png";
-var __glob_0_527 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sunburstBg = "/assets/sunburst-bg.3a3f3fbd.png";
+var __glob_0_537 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunburstBg
 }, Symbol.toStringTag, { value: "Module" }));
-var sunspearSotp = "/drachenschnitzel/assets/sunspear-sotp.c64ba84c.png";
-var __glob_0_528 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sunspearSotp = "/assets/sunspear-sotp.c64ba84c.png";
+var __glob_0_538 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunspearSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var teleportationRuneLr = "/drachenschnitzel/assets/teleportation-rune-lr.ba49ab60.png";
-var __glob_0_529 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var teleportationRuneLr = "/assets/teleportation-rune-lr.ba49ab60.png";
+var __glob_0_539 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": teleportationRuneLr
 }, Symbol.toStringTag, { value: "Module" }));
-var thiefsVestLr = "/drachenschnitzel/assets/thiefs-vest-lr.61c5aae6.png";
-var __glob_0_530 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var thiefsVestLr = "/assets/thiefs-vest-lr.61c5aae6.png";
+var __glob_0_540 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": thiefsVestLr
 }, Symbol.toStringTag, { value: "Module" }));
-var tridentTf = "/drachenschnitzel/assets/trident-tf.42ea7cd6.png";
-var __glob_0_531 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var tridentTf = "/assets/trident-tf.42ea7cd6.png";
+var __glob_0_541 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": tridentTf
 }, Symbol.toStringTag, { value: "Module" }));
-var undyingSkullMr = "/drachenschnitzel/assets/undying-skull-mr.0b0b6017.png";
-var __glob_0_532 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var undyingSkullMr = "/assets/undying-skull-mr.0b0b6017.png";
+var __glob_0_542 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": undyingSkullMr
 }, Symbol.toStringTag, { value: "Module" }));
-var viziersGarmentSotp = "/drachenschnitzel/assets/viziers-garment-sotp.071b319d.png";
-var __glob_0_533 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var viziersGarmentSotp = "/assets/viziers-garment-sotp.071b319d.png";
+var __glob_0_543 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": viziersGarmentSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var whiteWolfCloakMr = "/drachenschnitzel/assets/white-wolf-cloak-mr.f836c1ae.png";
-var __glob_0_534 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var whiteWolfCloakMr = "/assets/white-wolf-cloak-mr.f836c1ae.png";
+var __glob_0_544 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": whiteWolfCloakMr
 }, Symbol.toStringTag, { value: "Module" }));
-var witchHazelBowMb = "/drachenschnitzel/assets/witch-hazel-bow-mb.70f1c48e.png";
-var __glob_0_535 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var witchHazelBowMb = "/assets/witch-hazel-bow-mb.70f1c48e.png";
+var __glob_0_545 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": witchHazelBowMb
 }, Symbol.toStringTag, { value: "Module" }));
-var beltOfStrengthTf = "/drachenschnitzel/assets/belt-of-strength-tf.3a4215ac.png";
-var __glob_0_536 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var beltOfStrengthTf = "/assets/belt-of-strength-tf.3a4215ac.png";
+var __glob_0_546 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": beltOfStrengthTf
 }, Symbol.toStringTag, { value: "Module" }));
-var blackIronHelmLr = "/drachenschnitzel/assets/black-iron-helm-lr.9b76f3ed.png";
-var __glob_0_537 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var blackIronHelmLr = "/assets/black-iron-helm-lr.9b76f3ed.png";
+var __glob_0_547 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blackIronHelmLr
 }, Symbol.toStringTag, { value: "Module" }));
-var blastingRuneTf = "/drachenschnitzel/assets/blasting-rune-tf.b9857bd2.png";
-var __glob_0_538 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var blastingRuneTf = "/assets/blasting-rune-tf.b9857bd2.png";
+var __glob_0_548 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blastingRuneTf
 }, Symbol.toStringTag, { value: "Module" }));
-var blessedArmorCr = "/drachenschnitzel/assets/blessed-armor-cr.e44388e6.png";
-var __glob_0_539 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var blessedArmorCr = "/assets/blessed-armor-cr.e44388e6.png";
+var __glob_0_549 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": blessedArmorCr
 }, Symbol.toStringTag, { value: "Module" }));
-var bloodthirstyBracersCr = "/drachenschnitzel/assets/bloodthirsty-bracers-cr.430819ec.png";
-var __glob_0_540 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bloodthirstyBracersCr = "/assets/bloodthirsty-bracers-cr.430819ec.png";
+var __glob_0_550 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bloodthirstyBracersCr
 }, Symbol.toStringTag, { value: "Module" }));
-var boneWandCr = "/drachenschnitzel/assets/bone-wand-cr.05aaaed1.png";
-var __glob_0_541 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var boneWandCr = "/assets/bone-wand-cr.05aaaed1.png";
+var __glob_0_551 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boneWandCr
 }, Symbol.toStringTag, { value: "Module" }));
-var boomerangTf = "/drachenschnitzel/assets/boomerang-tf.76ab85e0.png";
-var __glob_0_542 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var boomerangTf = "/assets/boomerang-tf.76ab85e0.png";
+var __glob_0_552 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": boomerangTf
 }, Symbol.toStringTag, { value: "Module" }));
-var bowOfTheEclipseLr = "/drachenschnitzel/assets/bow-of-the-eclipse-lr.a10a07af.png";
-var __glob_0_543 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bowOfTheEclipseLr = "/assets/bow-of-the-eclipse-lr.a10a07af.png";
+var __glob_0_553 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bowOfTheEclipseLr
 }, Symbol.toStringTag, { value: "Module" }));
-var bowOfTheSkyLw = "/drachenschnitzel/assets/bow-of-the-sky-lw.ad41b8c7.png";
-var __glob_0_544 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var bowOfTheSkyLw = "/assets/bow-of-the-sky-lw.ad41b8c7.png";
+var __glob_0_554 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": bowOfTheSkyLw
 }, Symbol.toStringTag, { value: "Module" }));
-var chainSickleSotp = "/drachenschnitzel/assets/chain-sickle-sotp.ebad8dfd.png";
-var __glob_0_545 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var chainSickleSotp = "/assets/chain-sickle-sotp.ebad8dfd.png";
+var __glob_0_555 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": chainSickleSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var cloakOfDeceptionLr = "/drachenschnitzel/assets/cloak-of-deception-lr.d94085f5.png";
-var __glob_0_546 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var cloakOfDeceptionLr = "/assets/cloak-of-deception-lr.d94085f5.png";
+var __glob_0_556 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": cloakOfDeceptionLr
 }, Symbol.toStringTag, { value: "Module" }));
-var demonhideLeatherBg = "/drachenschnitzel/assets/demonhide-leather-bg.d91df0c1.png";
-var __glob_0_547 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var demonhideLeatherBg = "/assets/demonhide-leather-bg.d91df0c1.png";
+var __glob_0_557 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": demonhideLeatherBg
 }, Symbol.toStringTag, { value: "Module" }));
-var dragontoothHammerBg = "/drachenschnitzel/assets/dragontooth-hammer-bg.08ff50e7.png";
-var __glob_0_548 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var dragontoothHammerBg = "/assets/dragontooth-hammer-bg.08ff50e7.png";
+var __glob_0_558 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": dragontoothHammerBg
 }, Symbol.toStringTag, { value: "Module" }));
-var dwarvenFirebombBg = "/drachenschnitzel/assets/dwarven-firebomb-bg.d5591649.png";
-var __glob_0_549 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var dwarvenFirebombBg = "/assets/dwarven-firebomb-bg.d5591649.png";
+var __glob_0_559 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": dwarvenFirebombBg
 }, Symbol.toStringTag, { value: "Module" }));
-var elvenCloakBg = "/drachenschnitzel/assets/elven-cloak-bg.f18f9d79.png";
-var __glob_0_550 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var elvenCloakBg = "/assets/elven-cloak-bg.f18f9d79.png";
+var __glob_0_560 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": elvenCloakBg
 }, Symbol.toStringTag, { value: "Module" }));
-var eyeOfTheNightSotp = "/drachenschnitzel/assets/eye-of-the-night-sotp.09de7789.png";
-var __glob_0_551 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var eyeOfTheNightSotp = "/assets/eye-of-the-night-sotp.09de7789.png";
+var __glob_0_561 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": eyeOfTheNightSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var fistsOfIronCr = "/drachenschnitzel/assets/fists-of-iron-cr.c234c2f4.png";
-var __glob_0_552 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var fistsOfIronCr = "/assets/fists-of-iron-cr.c234c2f4.png";
+var __glob_0_562 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": fistsOfIronCr
 }, Symbol.toStringTag, { value: "Module" }));
-var glaiveTf = "/drachenschnitzel/assets/glaive-tf.7817d21f.png";
-var __glob_0_553 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var glaiveTf = "/assets/glaive-tf.7817d21f.png";
+var __glob_0_563 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": glaiveTf
 }, Symbol.toStringTag, { value: "Module" }));
-var goldenMaskSn = "/drachenschnitzel/assets/golden-mask-sn.1ddab5b5.png";
-var __glob_0_554 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var goldenMaskSn = "/assets/golden-mask-sn.1ddab5b5.png";
+var __glob_0_564 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": goldenMaskSn
 }, Symbol.toStringTag, { value: "Module" }));
-var grindingAxeBg = "/drachenschnitzel/assets/grinding-axe-bg.a11562ae.png";
-var __glob_0_555 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var grindingAxeBg = "/assets/grinding-axe-bg.a11562ae.png";
+var __glob_0_565 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": grindingAxeBg
 }, Symbol.toStringTag, { value: "Module" }));
-var hammerOfDoomMr = "/drachenschnitzel/assets/hammer-of-doom-mr.4cfc4a0d.png";
-var __glob_0_556 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hammerOfDoomMr = "/assets/hammer-of-doom-mr.4cfc4a0d.png";
+var __glob_0_566 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hammerOfDoomMr
 }, Symbol.toStringTag, { value: "Module" }));
-var heartSeekerMr = "/drachenschnitzel/assets/heart-seeker-mr.6e7f5f5b.png";
-var __glob_0_557 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var heartSeekerMr = "/assets/heart-seeker-mr.6e7f5f5b.png";
+var __glob_0_567 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": heartSeekerMr
 }, Symbol.toStringTag, { value: "Module" }));
-var heavySteelShieldBg = "/drachenschnitzel/assets/heavy-steel-shield-bg.654d6adb.png";
-var __glob_0_558 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var heavySteelShieldBg = "/assets/heavy-steel-shield-bg.654d6adb.png";
+var __glob_0_568 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": heavySteelShieldBg
 }, Symbol.toStringTag, { value: "Module" }));
-var hornedShieldCr = "/drachenschnitzel/assets/horned-shield-cr.b06a9eec.png";
-var __glob_0_559 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var hornedShieldCr = "/assets/horned-shield-cr.b06a9eec.png";
+var __glob_0_569 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": hornedShieldCr
 }, Symbol.toStringTag, { value: "Module" }));
-var ibisBowSotp = "/drachenschnitzel/assets/ibis-bow-sotp.4b5201db.png";
-var __glob_0_560 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ibisBowSotp = "/assets/ibis-bow-sotp.4b5201db.png";
+var __glob_0_570 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ibisBowSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var iceStormBg = "/drachenschnitzel/assets/ice-storm-bg.8bcd103a.png";
-var __glob_0_561 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var iceStormBg = "/assets/ice-storm-bg.8bcd103a.png";
+var __glob_0_571 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": iceStormBg
 }, Symbol.toStringTag, { value: "Module" }));
-var inscribedRobesLw = "/drachenschnitzel/assets/inscribed-robes-lw.02f56b4a.png";
-var __glob_0_562 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var inscribedRobesLw = "/assets/inscribed-robes-lw.02f56b4a.png";
+var __glob_0_572 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": inscribedRobesLw
 }, Symbol.toStringTag, { value: "Module" }));
-var ironBoundRingBg = "/drachenschnitzel/assets/iron-bound-ring-bg.1c5ebb80.png";
-var __glob_0_563 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironBoundRingBg = "/assets/iron-bound-ring-bg.1c5ebb80.png";
+var __glob_0_573 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironBoundRingBg
 }, Symbol.toStringTag, { value: "Module" }));
-var ironClawsLr = "/drachenschnitzel/assets/iron-claws-lr.42bc857b.png";
-var __glob_0_564 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironClawsLr = "/assets/iron-claws-lr.42bc857b.png";
+var __glob_0_574 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironClawsLr
 }, Symbol.toStringTag, { value: "Module" }));
-var ironboundGlaiveSn = "/drachenschnitzel/assets/ironbound-glaive-sn.fd68143d.png";
-var __glob_0_565 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironboundGlaiveSn = "/assets/ironbound-glaive-sn.fd68143d.png";
+var __glob_0_575 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundGlaiveSn
 }, Symbol.toStringTag, { value: "Module" }));
-var ironboundShieldSn = "/drachenschnitzel/assets/ironbound-shield-sn.03c7c2c9.png";
-var __glob_0_566 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ironboundShieldSn = "/assets/ironbound-shield-sn.03c7c2c9.png";
+var __glob_0_576 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ironboundShieldSn
 }, Symbol.toStringTag, { value: "Module" }));
-var latariLongbowBg = "/drachenschnitzel/assets/latari-longbow-bg.ca4e4420.png";
-var __glob_0_567 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var latariLongbowBg = "/assets/latari-longbow-bg.ca4e4420.png";
+var __glob_0_577 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": latariLongbowBg
 }, Symbol.toStringTag, { value: "Module" }));
-var lightningJavelinCr = "/drachenschnitzel/assets/lightning-javelin-cr.6e859533.png";
-var __glob_0_568 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lightningJavelinCr = "/assets/lightning-javelin-cr.6e859533.png";
+var __glob_0_578 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lightningJavelinCr
 }, Symbol.toStringTag, { value: "Module" }));
-var lightningStrikeBg = "/drachenschnitzel/assets/lightning-strike-bg.0b116cad.png";
-var __glob_0_569 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lightningStrikeBg = "/assets/lightning-strike-bg.0b116cad.png";
+var __glob_0_579 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lightningStrikeBg
 }, Symbol.toStringTag, { value: "Module" }));
-var lostCaliphsCrookSotp = "/drachenschnitzel/assets/lost-caliphs-crook-sotp.33b08ec7.png";
-var __glob_0_570 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var lostCaliphsCrookSotp = "/assets/lost-caliphs-crook-sotp.33b08ec7.png";
+var __glob_0_580 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": lostCaliphsCrookSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var maceOfKellosBg = "/drachenschnitzel/assets/mace-of-kellos-bg.8f326ef0.png";
-var __glob_0_571 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var maceOfKellosBg = "/assets/mace-of-kellos-bg.8f326ef0.png";
+var __glob_0_581 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": maceOfKellosBg
 }, Symbol.toStringTag, { value: "Module" }));
-var maskOfHorrorsCr = "/drachenschnitzel/assets/mask-of-horrors-cr.c05b2398.png";
-var __glob_0_572 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var maskOfHorrorsCr = "/assets/mask-of-horrors-cr.c05b2398.png";
+var __glob_0_582 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": maskOfHorrorsCr
 }, Symbol.toStringTag, { value: "Module" }));
-var mercifulBootsLw = "/drachenschnitzel/assets/merciful-boots-lw.c4e1cdf8.png";
-var __glob_0_573 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var mercifulBootsLw = "/assets/merciful-boots-lw.c4e1cdf8.png";
+var __glob_0_583 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": mercifulBootsLw
 }, Symbol.toStringTag, { value: "Module" }));
-var nerekhallPlateSn = "/drachenschnitzel/assets/nerekhall-plate-sn.c32afe3e.png";
-var __glob_0_574 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var nerekhallPlateSn = "/assets/nerekhall-plate-sn.c32afe3e.png";
+var __glob_0_584 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": nerekhallPlateSn
 }, Symbol.toStringTag, { value: "Module" }));
-var obsidianGreataxeLr = "/drachenschnitzel/assets/obsidian-greataxe-lr.7a26721c.png";
-var __glob_0_575 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var obsidianGreataxeLr = "/assets/obsidian-greataxe-lr.7a26721c.png";
+var __glob_0_585 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": obsidianGreataxeLr
 }, Symbol.toStringTag, { value: "Module" }));
-var obsidianScalemailLr = "/drachenschnitzel/assets/obsidian-scalemail-lr.4aa0cb79.png";
-var __glob_0_576 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var obsidianScalemailLr = "/assets/obsidian-scalemail-lr.4aa0cb79.png";
+var __glob_0_586 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": obsidianScalemailLr
 }, Symbol.toStringTag, { value: "Module" }));
-var platemailBg = "/drachenschnitzel/assets/platemail-bg.3e5bb492.png";
-var __glob_0_577 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var platemailBg = "/assets/platemail-bg.3e5bb492.png";
+var __glob_0_587 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": platemailBg
 }, Symbol.toStringTag, { value: "Module" }));
-var rageBladeLr = "/drachenschnitzel/assets/rage-blade-lr.7d2743d8.png";
-var __glob_0_578 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var rageBladeLr = "/assets/rage-blade-lr.7d2743d8.png";
+var __glob_0_588 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": rageBladeLr
 }, Symbol.toStringTag, { value: "Module" }));
-var ratToothDaggerSn = "/drachenschnitzel/assets/rat-tooth-dagger-sn.792bb96d.png";
-var __glob_0_579 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var ratToothDaggerSn = "/assets/rat-tooth-dagger-sn.792bb96d.png";
+var __glob_0_589 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ratToothDaggerSn
 }, Symbol.toStringTag, { value: "Module" }));
-var repeatingCrossbowSn = "/drachenschnitzel/assets/repeating-crossbow-sn.0da20a86.png";
-var __glob_0_580 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var repeatingCrossbowSn = "/assets/repeating-crossbow-sn.0da20a86.png";
+var __glob_0_590 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": repeatingCrossbowSn
 }, Symbol.toStringTag, { value: "Module" }));
-var runeOfBladesSn = "/drachenschnitzel/assets/rune-of-blades-sn.3bee2377.png";
-var __glob_0_581 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var runeOfBladesSn = "/assets/rune-of-blades-sn.3bee2377.png";
+var __glob_0_591 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runeOfBladesSn
 }, Symbol.toStringTag, { value: "Module" }));
-var runeOfFateMr = "/drachenschnitzel/assets/rune-of-fate-mr.89f9d346.png";
-var __glob_0_582 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var runeOfFateMr = "/assets/rune-of-fate-mr.89f9d346.png";
+var __glob_0_592 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runeOfFateMr
 }, Symbol.toStringTag, { value: "Module" }));
-var runeOfMiseryLr = "/drachenschnitzel/assets/rune-of-misery-lr.4a152d34.png";
-var __glob_0_583 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var runeOfMiseryLr = "/assets/rune-of-misery-lr.4a152d34.png";
+var __glob_0_593 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runeOfMiseryLr
 }, Symbol.toStringTag, { value: "Module" }));
-var runeTouchedLeatherCr = "/drachenschnitzel/assets/rune-touched-leather-cr.5fa68ed9.png";
-var __glob_0_584 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var runeTouchedLeatherCr = "/assets/rune-touched-leather-cr.5fa68ed9.png";
+var __glob_0_594 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": runeTouchedLeatherCr
 }, Symbol.toStringTag, { value: "Module" }));
-var sashOfTheSlayerCr = "/drachenschnitzel/assets/sash-of-the-slayer-cr.84a0407c.png";
-var __glob_0_585 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sashOfTheSlayerCr = "/assets/sash-of-the-slayer-cr.84a0407c.png";
+var __glob_0_595 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sashOfTheSlayerCr
 }, Symbol.toStringTag, { value: "Module" }));
-var scalemailLw = "/drachenschnitzel/assets/scalemail-lw.208a2e27.png";
-var __glob_0_586 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var scalemailLw = "/assets/scalemail-lw.208a2e27.png";
+var __glob_0_596 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": scalemailLw
 }, Symbol.toStringTag, { value: "Module" }));
-var scarabAmuletSotp = "/drachenschnitzel/assets/scarab-amulet-sotp.fc2b2f33.png";
-var __glob_0_587 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var scarabAmuletSotp = "/assets/scarab-amulet-sotp.fc2b2f33.png";
+var __glob_0_597 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": scarabAmuletSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var shadowTomeSn = "/drachenschnitzel/assets/shadow-tome-sn.ddf163f1.png";
-var __glob_0_588 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shadowTomeSn = "/assets/shadow-tome-sn.ddf163f1.png";
+var __glob_0_598 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shadowTomeSn
 }, Symbol.toStringTag, { value: "Module" }));
-var shimmeringShieldSotp = "/drachenschnitzel/assets/shimmering-shield-sotp.5e3bfe61.png";
-var __glob_0_589 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shimmeringShieldSotp = "/assets/shimmering-shield-sotp.5e3bfe61.png";
+var __glob_0_599 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shimmeringShieldSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var shopItemsAct2Back = "/drachenschnitzel/assets/shop-items-act2-back.f0e4dab2.png";
-var __glob_0_590 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shopItemsAct2Back = "/assets/shop-items-act2-back.f0e4dab2.png";
+var __glob_0_600 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shopItemsAct2Back
 }, Symbol.toStringTag, { value: "Module" }));
-var shroudOfDuskLr = "/drachenschnitzel/assets/shroud-of-dusk-lr.b44156da.png";
-var __glob_0_591 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var shroudOfDuskLr = "/assets/shroud-of-dusk-lr.b44156da.png";
+var __glob_0_601 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": shroudOfDuskLr
 }, Symbol.toStringTag, { value: "Module" }));
-var staffOfKellosLw = "/drachenschnitzel/assets/staff-of-kellos-lw.f842d2a6.png";
-var __glob_0_592 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var staffOfKellosLw = "/assets/staff-of-kellos-lw.f842d2a6.png";
+var __glob_0_602 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": staffOfKellosLw
 }, Symbol.toStringTag, { value: "Module" }));
-var staffOfTheWildLr = "/drachenschnitzel/assets/staff-of-the-wild-lr.5be473ff.png";
-var __glob_0_593 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var staffOfTheWildLr = "/assets/staff-of-the-wild-lr.5be473ff.png";
+var __glob_0_603 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": staffOfTheWildLr
 }, Symbol.toStringTag, { value: "Module" }));
-var starOfAtarSotp = "/drachenschnitzel/assets/star-of-atar-sotp.f960bb9c.png";
-var __glob_0_594 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var starOfAtarSotp = "/assets/star-of-atar-sotp.f960bb9c.png";
+var __glob_0_604 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": starOfAtarSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var starOfKellosSn = "/drachenschnitzel/assets/star-of-kellos-sn.f9870a90.png";
-var __glob_0_595 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var starOfKellosSn = "/assets/star-of-kellos-sn.f9870a90.png";
+var __glob_0_605 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": starOfKellosSn
 }, Symbol.toStringTag, { value: "Module" }));
-var starmetalKhopeshSotp = "/drachenschnitzel/assets/starmetal-khopesh-sotp.6cf72bc5.png";
-var __glob_0_596 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var starmetalKhopeshSotp = "/assets/starmetal-khopesh-sotp.6cf72bc5.png";
+var __glob_0_606 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": starmetalKhopeshSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var steelGreatswordBg = "/drachenschnitzel/assets/steel-greatsword-bg.b1f871ed.png";
-var __glob_0_597 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var steelGreatswordBg = "/assets/steel-greatsword-bg.b1f871ed.png";
+var __glob_0_607 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": steelGreatswordBg
 }, Symbol.toStringTag, { value: "Module" }));
-var stoneArmorTf = "/drachenschnitzel/assets/stone-armor-tf.43aa22f7.png";
-var __glob_0_598 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var stoneArmorTf = "/assets/stone-armor-tf.43aa22f7.png";
+var __glob_0_608 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": stoneArmorTf
 }, Symbol.toStringTag, { value: "Module" }));
-var sunlightWardSotp = "/drachenschnitzel/assets/sunlight-ward-sotp.60343091.png";
-var __glob_0_599 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var sunlightWardSotp = "/assets/sunlight-ward-sotp.60343091.png";
+var __glob_0_609 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": sunlightWardSotp
 }, Symbol.toStringTag, { value: "Module" }));
-var tivalCrystalBg = "/drachenschnitzel/assets/tival-crystal-bg.19ecfe09.png";
-var __glob_0_600 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var tivalCrystalBg = "/assets/tival-crystal-bg.19ecfe09.png";
+var __glob_0_610 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": tivalCrystalBg
 }, Symbol.toStringTag, { value: "Module" }));
-var vestmentsOfKellosSn = "/drachenschnitzel/assets/vestments-of-kellos-sn.51b66153.png";
-var __glob_0_601 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var vestmentsOfKellosSn = "/assets/vestments-of-kellos-sn.51b66153.png";
+var __glob_0_611 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": vestmentsOfKellosSn
 }, Symbol.toStringTag, { value: "Module" }));
-var wingedBladeMr = "/drachenschnitzel/assets/winged-blade-mr.15defe3f.png";
-var __glob_0_602 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var wingedBladeMr = "/assets/winged-blade-mr.15defe3f.png";
+var __glob_0_612 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": wingedBladeMr
 }, Symbol.toStringTag, { value: "Module" }));
-const assets = { "../assets/base.css": __glob_0_0, "../assets/dice/black-top.png": __glob_0_1, "../assets/dice/blue-top.png": __glob_0_2, "../assets/dice/brown-top.png": __glob_0_3, "../assets/dice/gray-top.png": __glob_0_4, "../assets/dice/green-top.png": __glob_0_5, "../assets/dice/red-top.png": __glob_0_6, "../assets/dice/yellow-top.png": __glob_0_7, "../assets/d2e/class-items/arcane-bolt-bg-mage-runemaster.png": __glob_0_8, "../assets/d2e/class-items/black-widows-web-tf-scout-stalker.png": __glob_0_9, "../assets/d2e/class-items/ceremonial-staff-sotp-healer-hierophant.png": __glob_0_10, "../assets/d2e/class-items/chipped-greataxe-bg-warrior-berserker.png": __glob_0_11, "../assets/d2e/class-items/class-skills-apothecary-back.png": __glob_0_12, "../assets/d2e/class-items/class-skills-bard-back.png": __glob_0_13, "../assets/d2e/class-items/class-skills-beastmaster-back.png": __glob_0_14, "../assets/d2e/class-items/class-skills-berserker-back.png": __glob_0_15, "../assets/d2e/class-items/class-skills-bounty-hunter-back.png": __glob_0_16, "../assets/d2e/class-items/class-skills-champion-back.png": __glob_0_17, "../assets/d2e/class-items/class-skills-conjurer-back.png": __glob_0_18, "../assets/d2e/class-items/class-skills-disciple-back.png": __glob_0_19, "../assets/d2e/class-items/class-skills-elementalist-back.png": __glob_0_20, "../assets/d2e/class-items/class-skills-geomancer-back.png": __glob_0_21, "../assets/d2e/class-items/class-skills-hexer-back.png": __glob_0_22, "../assets/d2e/class-items/class-skills-hierophant-back.png": __glob_0_23, "../assets/d2e/class-items/class-skills-knight-back.png": __glob_0_24, "../assets/d2e/class-items/class-skills-marshal-back.png": __glob_0_25, "../assets/d2e/class-items/class-skills-necromancer-back.png": __glob_0_26, "../assets/d2e/class-items/class-skills-prophet-back.png": __glob_0_27, "../assets/d2e/class-items/class-skills-psychic-back.png": __glob_0_28, "../assets/d2e/class-items/class-skills-runemaster-back.png": __glob_0_29, "../assets/d2e/class-items/class-skills-shadow-walker-back.png": __glob_0_30, "../assets/d2e/class-items/class-skills-skirmisher-back.png": __glob_0_31, "../assets/d2e/class-items/class-skills-soul-reaper-back.png": __glob_0_32, "../assets/d2e/class-items/class-skills-spiritspeaker-back.png": __glob_0_33, "../assets/d2e/class-items/class-skills-stalker-back.png": __glob_0_34, "../assets/d2e/class-items/class-skills-thief-back.png": __glob_0_35, "../assets/d2e/class-items/class-skills-treasure-hunter-back.png": __glob_0_36, "../assets/d2e/class-items/class-skills-wildlander-back.png": __glob_0_37, "../assets/d2e/class-items/double-crossbow-mr-scout-bounty-hunter.png": __glob_0_38, "../assets/d2e/class-items/feathered-hatchet-sn-scout-shadow-walker.png": __glob_0_39, "../assets/d2e/class-items/harvester-scythe-ll-healer-soul-reaper.png": __glob_0_40, "../assets/d2e/class-items/horn-of-courage-lw-warrior-champion.png": __glob_0_41, "../assets/d2e/class-items/hunting-knife-tf-scout-stalker.png": __glob_0_42, "../assets/d2e/class-items/hunting-spear-lr-warrior-beastmaster.png": __glob_0_43, "../assets/d2e/class-items/iron-flail-tf-healer-prophet.png": __glob_0_44, "../assets/d2e/class-items/iron-longsword-bg-warrior-knight.png": __glob_0_45, "../assets/d2e/class-items/iron-mace-bg-healer-disciple.png": __glob_0_46, "../assets/d2e/class-items/jagged-handaxe-sn-warrior-skirmisher.png": __glob_0_47, "../assets/d2e/class-items/leather-whip-lr-scout-treasure-hunter.png": __glob_0_48, "../assets/d2e/class-items/lucky-charm-bg-scout-thief.png": __glob_0_49, "../assets/d2e/class-items/lute-sn-healer-bard.png": __glob_0_50, "../assets/d2e/class-items/minds-eye-turban-sotp-mage-psychic.png": __glob_0_51, "../assets/d2e/class-items/mirror-of-souls-ll-healer-soul-reaper.png": __glob_0_52, "../assets/d2e/class-items/oak-staff-bg-healer-spiritspeaker.png": __glob_0_53, "../assets/d2e/class-items/prismatic-staff-sn-mage-conjurer.png": __glob_0_54, "../assets/d2e/class-items/reapers-scythe-bg-mage-necromancer.png": __glob_0_55, "../assets/d2e/class-items/runeshard-cache-ll-mage-elementalist.png": __glob_0_56, "../assets/d2e/class-items/rusted-handaxe-sn-warrior-skirmisher.png": __glob_0_57, "../assets/d2e/class-items/sacred-scriptures-sotp-healer-hierophant.png": __glob_0_58, "../assets/d2e/class-items/sages-tome-tf-healer-prophet.png": __glob_0_59, "../assets/d2e/class-items/shadow-darts-sotp-mage-psychic.png": __glob_0_60, "../assets/d2e/class-items/signet-ring-mr-warrior-marshall.png": __glob_0_61, "../assets/d2e/class-items/skinning-knife-lr-warrior-beastmaster.png": __glob_0_62, "../assets/d2e/class-items/smoking-vials-lr-healer-apothecary.png": __glob_0_63, "../assets/d2e/class-items/spire-of-conflux-ll-mage-elementalist.png": __glob_0_64, "../assets/d2e/class-items/staff-of-the-grave-lr-mage-hexer.png": __glob_0_65, "../assets/d2e/class-items/stasis-rune-lw-mage-geomancer.png": __glob_0_66, "../assets/d2e/class-items/the-dead-mans-compass-lr-scout-treasure-hunter.png": __glob_0_67, "../assets/d2e/class-items/throwing-knives-bg-scout-thief.png": __glob_0_68, "../assets/d2e/class-items/travelers-blade-sn-healer-bard.png": __glob_0_69, "../assets/d2e/class-items/tribal-cloak-sn-scout-shadow-walker.png": __glob_0_70, "../assets/d2e/class-items/war-hammer-mr-warrior-marshall.png": __glob_0_71, "../assets/d2e/class-items/wooden-shield-bg-healer-disciple.png": __glob_0_72, "../assets/d2e/class-items/wooden-shield-bg-warrior-knight.png": __glob_0_73, "../assets/d2e/class-items/worn-greatsword-lw-warrior-champion.png": __glob_0_74, "../assets/d2e/class-items/yew-shortbow-bg-scout-wildlander.png": __glob_0_75, "../assets/d2e/monsters/arachyura-lr-act1-back.png": __glob_0_76, "../assets/d2e/monsters/arachyura-lr-act1-front.png": __glob_0_77, "../assets/d2e/monsters/arachyura-lr-act2-back.png": __glob_0_78, "../assets/d2e/monsters/arachyura-lr-act2-front.png": __glob_0_79, "../assets/d2e/monsters/bandit-mr-act1-back.png": __glob_0_80, "../assets/d2e/monsters/bandit-mr-act1-front.png": __glob_0_81, "../assets/d2e/monsters/bandit-mr-act2-back.png": __glob_0_82, "../assets/d2e/monsters/bandit-mr-act2-front.png": __glob_0_83, "../assets/d2e/monsters/bane-spider-ck-act1-back.png": __glob_0_84, "../assets/d2e/monsters/bane-spider-ck-act1-front.png": __glob_0_85, "../assets/d2e/monsters/bane-spider-ck-act2-back.png": __glob_0_86, "../assets/d2e/monsters/bane-spider-ck-act2-front.png": __glob_0_87, "../assets/d2e/monsters/bane-spider-oo-act1-back.png": __glob_0_88, "../assets/d2e/monsters/bane-spider-oo-act1-front.png": __glob_0_89, "../assets/d2e/monsters/bane-spider-oo-act2-back.png": __glob_0_90, "../assets/d2e/monsters/bane-spider-oo-act2-front.png": __glob_0_91, "../assets/d2e/monsters/barghest-bg-act1-back.png": __glob_0_92, "../assets/d2e/monsters/barghest-bg-act1-front.png": __glob_0_93, "../assets/d2e/monsters/barghest-bg-act2-back.png": __glob_0_94, "../assets/d2e/monsters/barghest-bg-act2-front.png": __glob_0_95, "../assets/d2e/monsters/beastman-ck-act1-back.png": __glob_0_96, "../assets/d2e/monsters/beastman-ck-act1-front.png": __glob_0_97, "../assets/d2e/monsters/beastman-ck-act2-back.png": __glob_0_98, "../assets/d2e/monsters/beastman-ck-act2-front.png": __glob_0_99, "../assets/d2e/monsters/beastman-oo-act1-back.png": __glob_0_100, "../assets/d2e/monsters/beastman-oo-act1-front.png": __glob_0_101, "../assets/d2e/monsters/beastman-oo-act2-back.png": __glob_0_102, "../assets/d2e/monsters/beastman-oo-act2-front.png": __glob_0_103, "../assets/d2e/monsters/blood-ape-ck-act1-back.png": __glob_0_104, "../assets/d2e/monsters/blood-ape-ck-act1-front.png": __glob_0_105, "../assets/d2e/monsters/blood-ape-ck-act2-back.png": __glob_0_106, "../assets/d2e/monsters/blood-ape-ck-act2-front.png": __glob_0_107, "../assets/d2e/monsters/blood-ape-ss-act1-back.png": __glob_0_108, "../assets/d2e/monsters/blood-ape-ss-act1-front.png": __glob_0_109, "../assets/d2e/monsters/blood-ape-ss-act2-back.png": __glob_0_110, "../assets/d2e/monsters/blood-ape-ss-act2-front.png": __glob_0_111, "../assets/d2e/monsters/bone-horror-mb-act1-back.png": __glob_0_112, "../assets/d2e/monsters/bone-horror-mb-act1-front.png": __glob_0_113, "../assets/d2e/monsters/bone-horror-mb-act2-back.png": __glob_0_114, "../assets/d2e/monsters/bone-horror-mb-act2-front.png": __glob_0_115, "../assets/d2e/monsters/broodwalker-mb-act1-back.png": __glob_0_116, "../assets/d2e/monsters/broodwalker-mb-act1-front.png": __glob_0_117, "../assets/d2e/monsters/broodwalker-mb-act2-back.png": __glob_0_118, "../assets/d2e/monsters/broodwalker-mb-act2-front.png": __glob_0_119, "../assets/d2e/monsters/burrowing-horror-sotp-act1-back.png": __glob_0_120, "../assets/d2e/monsters/burrowing-horror-sotp-act1-front.png": __glob_0_121, "../assets/d2e/monsters/burrowing-horror-sotp-act2-back.png": __glob_0_122, "../assets/d2e/monsters/burrowing-horror-sotp-act2-front.png": __glob_0_123, "../assets/d2e/monsters/carrion-drake-lr-act1-back.png": __glob_0_124, "../assets/d2e/monsters/carrion-drake-lr-act1-front.png": __glob_0_125, "../assets/d2e/monsters/carrion-drake-lr-act2-back.png": __glob_0_126, "../assets/d2e/monsters/carrion-drake-lr-act2-front.png": __glob_0_127, "../assets/d2e/monsters/cave-spider-bg-act1-back.png": __glob_0_128, "../assets/d2e/monsters/cave-spider-bg-act1-front.png": __glob_0_129, "../assets/d2e/monsters/cave-spider-bg-act2-back.png": __glob_0_130, "../assets/d2e/monsters/cave-spider-bg-act2-front.png": __glob_0_131, "../assets/d2e/monsters/changeling-sn-act1-back.png": __glob_0_132, "../assets/d2e/monsters/changeling-sn-act1-front.png": __glob_0_133, "../assets/d2e/monsters/changeling-sn-act2-back.png": __glob_0_134, "../assets/d2e/monsters/changeling-sn-act2-front.png": __glob_0_135, "../assets/d2e/monsters/chaos-beast-cd-act1-back.png": __glob_0_136, "../assets/d2e/monsters/chaos-beast-cd-act1-front.png": __glob_0_137, "../assets/d2e/monsters/chaos-beast-cd-act2-back.png": __glob_0_138, "../assets/d2e/monsters/chaos-beast-cd-act2-front.png": __glob_0_139, "../assets/d2e/monsters/chaos-beast-ck-act1-back.png": __glob_0_140, "../assets/d2e/monsters/chaos-beast-ck-act1-front.png": __glob_0_141, "../assets/d2e/monsters/chaos-beast-ck-act2-back.png": __glob_0_142, "../assets/d2e/monsters/chaos-beast-ck-act2-front.png": __glob_0_143, "../assets/d2e/monsters/crow-hag-tc-act1-back.png": __glob_0_144, "../assets/d2e/monsters/crow-hag-tc-act1-front.png": __glob_0_145, "../assets/d2e/monsters/crow-hag-tc-act2-back.png": __glob_0_146, "../assets/d2e/monsters/crow-hag-tc-act2-front.png": __glob_0_147, "../assets/d2e/monsters/crypt-dragon-ck-act1-back.png": __glob_0_148, "../assets/d2e/monsters/crypt-dragon-ck-act1-front.png": __glob_0_149, "../assets/d2e/monsters/crypt-dragon-ck-act2-back.png": __glob_0_150, "../assets/d2e/monsters/crypt-dragon-ck-act2-front.png": __glob_0_151, "../assets/d2e/monsters/crypt-dragon-gd-act1-back.png": __glob_0_152, "../assets/d2e/monsters/crypt-dragon-gd-act1-front.png": __glob_0_153, "../assets/d2e/monsters/crypt-dragon-gd-act2-back.png": __glob_0_154, "../assets/d2e/monsters/crypt-dragon-gd-act2-front.png": __glob_0_155, "../assets/d2e/monsters/dark-minotaur-se-act1-back.png": __glob_0_156, "../assets/d2e/monsters/dark-minotaur-se-act1-front.png": __glob_0_157, "../assets/d2e/monsters/dark-minotaur-se-act2-back.png": __glob_0_158, "../assets/d2e/monsters/dark-minotaur-se-act2-front.png": __glob_0_159, "../assets/d2e/monsters/dark-priest-ck-act1-back.png": __glob_0_160, "../assets/d2e/monsters/dark-priest-ck-act1-front.png": __glob_0_161, "../assets/d2e/monsters/dark-priest-ck-act2-back.png": __glob_0_162, "../assets/d2e/monsters/dark-priest-ck-act2-front.png": __glob_0_163, "../assets/d2e/monsters/dark-priest-gd-act1-back.png": __glob_0_164, "../assets/d2e/monsters/dark-priest-gd-act1-front.png": __glob_0_165, "../assets/d2e/monsters/dark-priest-gd-act2-back.png": __glob_0_166, "../assets/d2e/monsters/dark-priest-gd-act2-front.png": __glob_0_167, "../assets/d2e/monsters/deep-elf-bw-act1-back.png": __glob_0_168, "../assets/d2e/monsters/deep-elf-bw-act1-front.png": __glob_0_169, "../assets/d2e/monsters/deep-elf-bw-act2-back.png": __glob_0_170, "../assets/d2e/monsters/deep-elf-bw-act2-front.png": __glob_0_171, "../assets/d2e/monsters/deep-elf-ck-act1-back.png": __glob_0_172, "../assets/d2e/monsters/deep-elf-ck-act1-front.png": __glob_0_173, "../assets/d2e/monsters/deep-elf-ck-act2-back.png": __glob_0_174, "../assets/d2e/monsters/deep-elf-ck-act2-front.png": __glob_0_175, "../assets/d2e/monsters/demon-lord-ck-act1-back.png": __glob_0_176, "../assets/d2e/monsters/demon-lord-ck-act1-front.png": __glob_0_177, "../assets/d2e/monsters/demon-lord-ck-act2-back.png": __glob_0_178, "../assets/d2e/monsters/demon-lord-ck-act2-front.png": __glob_0_179, "../assets/d2e/monsters/demon-lord-tc-act1-back.png": __glob_0_180, "../assets/d2e/monsters/demon-lord-tc-act1-front.png": __glob_0_181, "../assets/d2e/monsters/demon-lord-tc-act2-back.png": __glob_0_182, "../assets/d2e/monsters/demon-lord-tc-act2-front.png": __glob_0_183, "../assets/d2e/monsters/elemental-bg-act1-back.png": __glob_0_184, "../assets/d2e/monsters/elemental-bg-act1-front.png": __glob_0_185, "../assets/d2e/monsters/elemental-bg-act2-back.png": __glob_0_186, "../assets/d2e/monsters/elemental-bg-act2-front.png": __glob_0_187, "../assets/d2e/monsters/ettin-bg-act1-back.png": __glob_0_188, "../assets/d2e/monsters/ettin-bg-act1-front.png": __glob_0_189, "../assets/d2e/monsters/ettin-bg-act2-back.png": __glob_0_190, "../assets/d2e/monsters/ettin-bg-act2-front.png": __glob_0_191, "../assets/d2e/monsters/ferrox-ck-act1-back.png": __glob_0_192, "../assets/d2e/monsters/ferrox-ck-act1-front.png": __glob_0_193, "../assets/d2e/monsters/ferrox-ck-act2-back.png": __glob_0_194, "../assets/d2e/monsters/ferrox-ck-act2-front.png": __glob_0_195, "../assets/d2e/monsters/ferrox-ss-act1-back.png": __glob_0_196, "../assets/d2e/monsters/ferrox-ss-act1-front.png": __glob_0_197, "../assets/d2e/monsters/ferrox-ss-act2-back.png": __glob_0_198, "../assets/d2e/monsters/ferrox-ss-act2-front.png": __glob_0_199, "../assets/d2e/monsters/fire-imps-lw-act1-back.png": __glob_0_200, "../assets/d2e/monsters/fire-imps-lw-act1-front.png": __glob_0_201, "../assets/d2e/monsters/fire-imps-lw-act2-back.png": __glob_0_202, "../assets/d2e/monsters/fire-imps-lw-act2-front.png": __glob_0_203, "../assets/d2e/monsters/flesh-moulder-bg-act1-back.png": __glob_0_204, "../assets/d2e/monsters/flesh-moulder-bg-act1-front.png": __glob_0_205, "../assets/d2e/monsters/flesh-moulder-bg-act2-back.png": __glob_0_206, "../assets/d2e/monsters/flesh-moulder-bg-act2-front.png": __glob_0_207, "../assets/d2e/monsters/giant-cd-act1-back.png": __glob_0_208, "../assets/d2e/monsters/giant-cd-act1-front.png": __glob_0_209, "../assets/d2e/monsters/giant-cd-act2-back.png": __glob_0_210, "../assets/d2e/monsters/giant-cd-act2-front.png": __glob_0_211, "../assets/d2e/monsters/giant-ck-act1-back.png": __glob_0_212, "../assets/d2e/monsters/giant-ck-act1-front.png": __glob_0_213, "../assets/d2e/monsters/giant-ck-act2-back.png": __glob_0_214, "../assets/d2e/monsters/giant-ck-act2-front.png": __glob_0_215, "../assets/d2e/monsters/goblin-archer-bg-act1-back.png": __glob_0_216, "../assets/d2e/monsters/goblin-archer-bg-act1-front.png": __glob_0_217, "../assets/d2e/monsters/goblin-archer-bg-act2-back.png": __glob_0_218, "../assets/d2e/monsters/goblin-archer-bg-act2-front.png": __glob_0_219, "../assets/d2e/monsters/goblin-witcher-lr-act1-back.png": __glob_0_220, "../assets/d2e/monsters/goblin-witcher-lr-act1-front.png": __glob_0_221, "../assets/d2e/monsters/goblin-witcher-lr-act2-back.png": __glob_0_222, "../assets/d2e/monsters/goblin-witcher-lr-act2-front.png": __glob_0_223, "../assets/d2e/monsters/golem-cf-act1-back.png": __glob_0_224, "../assets/d2e/monsters/golem-cf-act1-front.png": __glob_0_225, "../assets/d2e/monsters/golem-cf-act2-back.png": __glob_0_226, "../assets/d2e/monsters/golem-cf-act2-front.png": __glob_0_227, "../assets/d2e/monsters/golem-ck-act1-back.png": __glob_0_228, "../assets/d2e/monsters/golem-ck-act1-front.png": __glob_0_229, "../assets/d2e/monsters/golem-ck-act2-back.png": __glob_0_230, "../assets/d2e/monsters/golem-ck-act2-front.png": __glob_0_231, "../assets/d2e/monsters/harpy-tf-act1-back.png": __glob_0_232, "../assets/d2e/monsters/harpy-tf-act1-front.png": __glob_0_233, "../assets/d2e/monsters/harpy-tf-act2-back.png": __glob_0_234, "../assets/d2e/monsters/harpy-tf-act2-front.png": __glob_0_235, "../assets/d2e/monsters/hellhound-bw-act1-back.png": __glob_0_236, "../assets/d2e/monsters/hellhound-bw-act1-front.png": __glob_0_237, "../assets/d2e/monsters/hellhound-bw-act2-back.png": __glob_0_238, "../assets/d2e/monsters/hellhound-bw-act2-front.png": __glob_0_239, "../assets/d2e/monsters/hellhound-ck-act1-back.png": __glob_0_240, "../assets/d2e/monsters/hellhound-ck-act1-front.png": __glob_0_241, "../assets/d2e/monsters/hellhound-ck-act2-back.png": __glob_0_242, "../assets/d2e/monsters/hellhound-ck-act2-front.png": __glob_0_243, "../assets/d2e/monsters/hybrid-sentinel-lw-act1-back.png": __glob_0_244, "../assets/d2e/monsters/hybrid-sentinel-lw-act1-front.png": __glob_0_245, "../assets/d2e/monsters/hybrid-sentinel-lw-act2-back.png": __glob_0_246, "../assets/d2e/monsters/hybrid-sentinel-lw-act2-front.png": __glob_0_247, "../assets/d2e/monsters/ice-wyrm-ck-act1-back.png": __glob_0_248, "../assets/d2e/monsters/ice-wyrm-ck-act1-front.png": __glob_0_249, "../assets/d2e/monsters/ice-wyrm-ck-act2-back.png": __glob_0_250, "../assets/d2e/monsters/ice-wyrm-ck-act2-front.png": __glob_0_251, "../assets/d2e/monsters/ice-wyrm-se-act1-back.png": __glob_0_252, "../assets/d2e/monsters/ice-wyrm-se-act1-front.png": __glob_0_253, "../assets/d2e/monsters/ice-wyrm-se-act2-back.png": __glob_0_254, "../assets/d2e/monsters/ice-wyrm-se-act2-front.png": __glob_0_255, "../assets/d2e/monsters/ironbound-sn-act1-back.png": __glob_0_256, "../assets/d2e/monsters/ironbound-sn-act1-front.png": __glob_0_257, "../assets/d2e/monsters/ironbound-sn-act2-back.png": __glob_0_258, "../assets/d2e/monsters/ironbound-sn-act2-front.png": __glob_0_259, "../assets/d2e/monsters/kobold-bw-act1-back.png": __glob_0_260, "../assets/d2e/monsters/kobold-bw-act1-front.png": __glob_0_261, "../assets/d2e/monsters/kobold-bw-act2-back.png": __glob_0_262, "../assets/d2e/monsters/kobold-bw-act2-front.png": __glob_0_263, "../assets/d2e/monsters/kobold-ck-act1-back.png": __glob_0_264, "../assets/d2e/monsters/kobold-ck-act1-front.png": __glob_0_265, "../assets/d2e/monsters/kobold-ck-act2-back.png": __glob_0_266, "../assets/d2e/monsters/kobold-ck-act2-front.png": __glob_0_267, "../assets/d2e/monsters/lava-beetle-cd-act1-back.png": __glob_0_268, "../assets/d2e/monsters/lava-beetle-cd-act1-front.png": __glob_0_269, "../assets/d2e/monsters/lava-beetle-cd-act2-back.png": __glob_0_270, "../assets/d2e/monsters/lava-beetle-cd-act2-front.png": __glob_0_271, "../assets/d2e/monsters/lava-beetle-ck-act1-back.png": __glob_0_272, "../assets/d2e/monsters/lava-beetle-ck-act1-front.png": __glob_0_273, "../assets/d2e/monsters/lava-beetle-ck-act2-back.png": __glob_0_274, "../assets/d2e/monsters/lava-beetle-ck-act2-front.png": __glob_0_275, "../assets/d2e/monsters/manticore-ck-act1-back.png": __glob_0_276, "../assets/d2e/monsters/manticore-ck-act1-front.png": __glob_0_277, "../assets/d2e/monsters/manticore-ck-act2-back.png": __glob_0_278, "../assets/d2e/monsters/manticore-ck-act2-front.png": __glob_0_279, "../assets/d2e/monsters/manticore-vd-act1-back.png": __glob_0_280, "../assets/d2e/monsters/manticore-vd-act1-front.png": __glob_0_281, "../assets/d2e/monsters/manticore-vd-act2-back.png": __glob_0_282, "../assets/d2e/monsters/manticore-vd-act2-front.png": __glob_0_283, "../assets/d2e/monsters/marrow-priest-cr-act1-back.png": __glob_0_284, "../assets/d2e/monsters/marrow-priest-cr-act1-front.png": __glob_0_285, "../assets/d2e/monsters/marrow-priest-cr-act2-back.png": __glob_0_286, "../assets/d2e/monsters/marrow-priest-cr-act2-front.png": __glob_0_287, "../assets/d2e/monsters/medusa-cf-act1-back.png": __glob_0_288, "../assets/d2e/monsters/medusa-cf-act1-front.png": __glob_0_289, "../assets/d2e/monsters/medusa-cf-act2-back.png": __glob_0_290, "../assets/d2e/monsters/medusa-cf-act2-front.png": __glob_0_291, "../assets/d2e/monsters/medusa-ck-act1-back.png": __glob_0_292, "../assets/d2e/monsters/medusa-ck-act1-front.png": __glob_0_293, "../assets/d2e/monsters/medusa-ck-act2-back.png": __glob_0_294, "../assets/d2e/monsters/medusa-ck-act2-front.png": __glob_0_295, "../assets/d2e/monsters/merriod-bg-act1-back.png": __glob_0_296, "../assets/d2e/monsters/merriod-bg-act1-front.png": __glob_0_297, "../assets/d2e/monsters/merriod-bg-act2-back.png": __glob_0_298, "../assets/d2e/monsters/merriod-bg-act2-front.png": __glob_0_299, "../assets/d2e/monsters/naga-ck-act1-back.png": __glob_0_300, "../assets/d2e/monsters/naga-ck-act1-front.png": __glob_0_301, "../assets/d2e/monsters/naga-ck-act2-back.png": __glob_0_302, "../assets/d2e/monsters/naga-ck-act2-front.png": __glob_0_303, "../assets/d2e/monsters/naga-ss-act1-back.png": __glob_0_304, "../assets/d2e/monsters/naga-ss-act1-front.png": __glob_0_305, "../assets/d2e/monsters/naga-ss-act2-back.png": __glob_0_306, "../assets/d2e/monsters/naga-ss-act2-front.png": __glob_0_307, "../assets/d2e/monsters/ogre-ck-act1-back.png": __glob_0_308, "../assets/d2e/monsters/ogre-ck-act1-front.png": __glob_0_309, "../assets/d2e/monsters/ogre-ck-act2-back.png": __glob_0_310, "../assets/d2e/monsters/ogre-ck-act2-front.png": __glob_0_311, "../assets/d2e/monsters/ogre-vd-act1-back.png": __glob_0_312, "../assets/d2e/monsters/ogre-vd-act1-front.png": __glob_0_313, "../assets/d2e/monsters/ogre-vd-act2-back.png": __glob_0_314, "../assets/d2e/monsters/ogre-vd-act2-front.png": __glob_0_315, "../assets/d2e/monsters/plague-worm-tf-act1-back.png": __glob_0_316, "../assets/d2e/monsters/plague-worm-tf-act1-front.png": __glob_0_317, "../assets/d2e/monsters/plague-worm-tf-act2-back.png": __glob_0_318, "../assets/d2e/monsters/plague-worm-tf-act2-front.png": __glob_0_319, "../assets/d2e/monsters/rat-swarm-sn-act1-back.png": __glob_0_320, "../assets/d2e/monsters/rat-swarm-sn-act1-front.png": __glob_0_321, "../assets/d2e/monsters/rat-swarm-sn-act2-back.png": __glob_0_322, "../assets/d2e/monsters/rat-swarm-sn-act2-front.png": __glob_0_323, "../assets/d2e/monsters/razorwing-ck-act1-back.png": __glob_0_324, "../assets/d2e/monsters/razorwing-ck-act1-front.png": __glob_0_325, "../assets/d2e/monsters/razorwing-ck-act2-back.png": __glob_0_326, "../assets/d2e/monsters/razorwing-ck-act2-front.png": __glob_0_327, "../assets/d2e/monsters/razorwing-oo-act1-back.png": __glob_0_328, "../assets/d2e/monsters/razorwing-oo-act1-front.png": __glob_0_329, "../assets/d2e/monsters/razorwing-oo-act2-back.png": __glob_0_330, "../assets/d2e/monsters/razorwing-oo-act2-front.png": __glob_0_331, "../assets/d2e/monsters/reanimate-mb-act1-back.png": __glob_0_332, "../assets/d2e/monsters/reanimate-mb-act1-front.png": __glob_0_333, "../assets/d2e/monsters/reanimate-mb-act2-back.png": __glob_0_334, "../assets/d2e/monsters/reanimate-mb-act2-front.png": __glob_0_335, "../assets/d2e/monsters/sarcophagus-guard-sotp-act1-back.png": __glob_0_336, "../assets/d2e/monsters/sarcophagus-guard-sotp-act1-front.png": __glob_0_337, "../assets/d2e/monsters/sarcophagus-guard-sotp-act2-back.png": __glob_0_338, "../assets/d2e/monsters/sarcophagus-guard-sotp-act2-front.png": __glob_0_339, "../assets/d2e/monsters/shade-ck-act1-back.png": __glob_0_340, "../assets/d2e/monsters/shade-ck-act1-front.png": __glob_0_341, "../assets/d2e/monsters/shade-ck-act2-back.png": __glob_0_342, "../assets/d2e/monsters/shade-ck-act2-front.png": __glob_0_343, "../assets/d2e/monsters/shade-se-act1-back.png": __glob_0_344, "../assets/d2e/monsters/shade-se-act1-front.png": __glob_0_345, "../assets/d2e/monsters/shade-se-act2-back.png": __glob_0_346, "../assets/d2e/monsters/shade-se-act2-front.png": __glob_0_347, "../assets/d2e/monsters/shadow-dragon-bg-act1-back.png": __glob_0_348, "../assets/d2e/monsters/shadow-dragon-bg-act1-front.png": __glob_0_349, "../assets/d2e/monsters/shadow-dragon-bg-act2-back.png": __glob_0_350, "../assets/d2e/monsters/shadow-dragon-bg-act2-front.png": __glob_0_351, "../assets/d2e/monsters/shambling-colossus-cr-act1-back.png": __glob_0_352, "../assets/d2e/monsters/shambling-colossus-cr-act1-front.png": __glob_0_353, "../assets/d2e/monsters/shambling-colossus-cr-act2-back.png": __glob_0_354, "../assets/d2e/monsters/shambling-colossus-cr-act2-front.png": __glob_0_355, "../assets/d2e/monsters/skeleton-archer-ck-act1-back.png": __glob_0_356, "../assets/d2e/monsters/skeleton-archer-ck-act1-front.png": __glob_0_357, "../assets/d2e/monsters/skeleton-archer-ck-act2-back.png": __glob_0_358, "../assets/d2e/monsters/skeleton-archer-ck-act2-front.png": __glob_0_359, "../assets/d2e/monsters/skeleton-archer-tc-act1-back.png": __glob_0_360, "../assets/d2e/monsters/skeleton-archer-tc-act1-front.png": __glob_0_361, "../assets/d2e/monsters/skeleton-archer-tc-act2-back.png": __glob_0_362, "../assets/d2e/monsters/skeleton-archer-tc-act2-front.png": __glob_0_363, "../assets/d2e/monsters/sorcerer-cf-act1-back.png": __glob_0_364, "../assets/d2e/monsters/sorcerer-cf-act1-front.png": __glob_0_365, "../assets/d2e/monsters/sorcerer-cf-act2-back.png": __glob_0_366, "../assets/d2e/monsters/sorcerer-cf-act2-front.png": __glob_0_367, "../assets/d2e/monsters/sorcerer-ck-act1-back.png": __glob_0_368, "../assets/d2e/monsters/sorcerer-ck-act1-front.png": __glob_0_369, "../assets/d2e/monsters/sorcerer-ck-act2-back.png": __glob_0_370, "../assets/d2e/monsters/sorcerer-ck-act2-front.png": __glob_0_371, "../assets/d2e/monsters/the-dispossessed-cr-act1-back.png": __glob_0_372, "../assets/d2e/monsters/the-dispossessed-cr-act1-front.png": __glob_0_373, "../assets/d2e/monsters/the-dispossessed-cr-act2-back.png": __glob_0_374, "../assets/d2e/monsters/the-dispossessed-cr-act2-front.png": __glob_0_375, "../assets/d2e/monsters/troll-ck-act1-back.png": __glob_0_376, "../assets/d2e/monsters/troll-ck-act1-front.png": __glob_0_377, "../assets/d2e/monsters/troll-ck-act2-back.png": __glob_0_378, "../assets/d2e/monsters/troll-ck-act2-front.png": __glob_0_379, "../assets/d2e/monsters/troll-vd-act1-back.png": __glob_0_380, "../assets/d2e/monsters/troll-vd-act1-front.png": __glob_0_381, "../assets/d2e/monsters/troll-vd-act2-back.png": __glob_0_382, "../assets/d2e/monsters/troll-vd-act2-front.png": __glob_0_383, "../assets/d2e/monsters/volucrix-reaver-lr-act1-back.png": __glob_0_384, "../assets/d2e/monsters/volucrix-reaver-lr-act1-front.png": __glob_0_385, "../assets/d2e/monsters/volucrix-reaver-lr-act2-back.png": __glob_0_386, "../assets/d2e/monsters/volucrix-reaver-lr-act2-front.png": __glob_0_387, "../assets/d2e/monsters/wendigo-ck-act1-back.png": __glob_0_388, "../assets/d2e/monsters/wendigo-ck-act1-front.png": __glob_0_389, "../assets/d2e/monsters/wendigo-ck-act2-back.png": __glob_0_390, "../assets/d2e/monsters/wendigo-ck-act2-front.png": __glob_0_391, "../assets/d2e/monsters/wendigo-gd-act1-back.png": __glob_0_392, "../assets/d2e/monsters/wendigo-gd-act1-front.png": __glob_0_393, "../assets/d2e/monsters/wendigo-gd-act2-back.png": __glob_0_394, "../assets/d2e/monsters/wendigo-gd-act2-front.png": __glob_0_395, "../assets/d2e/monsters/wraith-mr-act1-back.png": __glob_0_396, "../assets/d2e/monsters/wraith-mr-act1-front.png": __glob_0_397, "../assets/d2e/monsters/wraith-mr-act2-back.png": __glob_0_398, "../assets/d2e/monsters/wraith-mr-act2-front.png": __glob_0_399, "../assets/d2e/monsters/ynfernael-hulk-sn-act1-back.png": __glob_0_400, "../assets/d2e/monsters/ynfernael-hulk-sn-act1-front.png": __glob_0_401, "../assets/d2e/monsters/ynfernael-hulk-sn-act2-back.png": __glob_0_402, "../assets/d2e/monsters/ynfernael-hulk-sn-act2-front.png": __glob_0_403, "../assets/d2e/monsters/zombie-bg-act1-back.png": __glob_0_404, "../assets/d2e/monsters/zombie-bg-act1-front.png": __glob_0_405, "../assets/d2e/monsters/zombie-bg-act2-back.png": __glob_0_406, "../assets/d2e/monsters/zombie-bg-act2-front.png": __glob_0_407, "../assets/d2e/relics/heroes/aurium-mail-lw.png": __glob_0_408, "../assets/d2e/relics/heroes/boneborn-bow-cr.png": __glob_0_409, "../assets/d2e/relics/heroes/book-of-stars-mr.png": __glob_0_410, "../assets/d2e/relics/heroes/dawnblade-bg.png": __glob_0_411, "../assets/d2e/relics/heroes/fear-eater-mb.png": __glob_0_412, "../assets/d2e/relics/heroes/forewarned-ring-cr.png": __glob_0_413, "../assets/d2e/relics/heroes/fortunas-dice-bg.png": __glob_0_414, "../assets/d2e/relics/heroes/gauntlets-of-power-lr.png": __glob_0_415, "../assets/d2e/relics/heroes/immunity-elixir-tf.png": __glob_0_416, "../assets/d2e/relics/heroes/living-heart-lr.png": __glob_0_417, "../assets/d2e/relics/heroes/mending-talisman-tf.png": __glob_0_418, "../assets/d2e/relics/heroes/robes-of-the-last-cr.png": __glob_0_419, "../assets/d2e/relics/heroes/shadow-plotter-sn.png": __glob_0_420, "../assets/d2e/relics/heroes/shards-of-ithyndrus-mr.png": __glob_0_421, "../assets/d2e/relics/heroes/shield-of-the-dark-god-bg.png": __glob_0_422, "../assets/d2e/relics/heroes/spirited-scythe-sn.png": __glob_0_423, "../assets/d2e/relics/heroes/staff-of-light-bg.png": __glob_0_424, "../assets/d2e/relics/heroes/sun-stone-lr.png": __glob_0_425, "../assets/d2e/relics/heroes/the-manors-heart-mr.png": __glob_0_426, "../assets/d2e/relics/heroes/the-shadow-rune-bg.png": __glob_0_427, "../assets/d2e/relics/heroes/the-white-crown-mb.png": __glob_0_428, "../assets/d2e/relics/heroes/trueshot-bg.png": __glob_0_429, "../assets/d2e/relics/heroes/undertakers-coat-mb.png": __glob_0_430, "../assets/d2e/relics/heroes/valyndras-bane-lw.png": __glob_0_431, "../assets/d2e/relics/heroes/wanderers-stone-mr.png": __glob_0_432, "../assets/d2e/relics/heroes/workmans-ring-tf.png": __glob_0_433, "../assets/d2e/relics/heroes/ynfernal-rune-sn.png": __glob_0_434, "../assets/d2e/relics/lieutenants/azatheas-triumph-cr.png": __glob_0_435, "../assets/d2e/relics/lieutenants/band-of-foresight-cr.png": __glob_0_436, "../assets/d2e/relics/lieutenants/blade-of-brivala-mb.png": __glob_0_437, "../assets/d2e/relics/lieutenants/bones-of-woe-bg.png": __glob_0_438, "../assets/d2e/relics/lieutenants/curative-vial-tf.png": __glob_0_439, "../assets/d2e/relics/lieutenants/duskblade-bg.png": __glob_0_440, "../assets/d2e/relics/lieutenants/fallen-heart-lr.png": __glob_0_441, "../assets/d2e/relics/lieutenants/gauntlets-of-spite-lr.png": __glob_0_442, "../assets/d2e/relics/lieutenants/her-majestys-malice-lw.png": __glob_0_443, "../assets/d2e/relics/lieutenants/omen-of-blight-tf.png": __glob_0_444, "../assets/d2e/relics/lieutenants/robes-of-the-last-cr.png": __glob_0_445, "../assets/d2e/relics/lieutenants/scorpions-kiss-bg.png": __glob_0_446, "../assets/d2e/relics/lieutenants/shadow-plotter-sn.png": __glob_0_447, "../assets/d2e/relics/lieutenants/shards-of-ithyndrus-mr.png": __glob_0_448, "../assets/d2e/relics/lieutenants/shield-of-zoreks-favor-bg.png": __glob_0_449, "../assets/d2e/relics/lieutenants/soulless-scythe-sn.png": __glob_0_450, "../assets/d2e/relics/lieutenants/staff-of-shadows-bg.png": __glob_0_451, "../assets/d2e/relics/lieutenants/stone-of-wayward-means-mr.png": __glob_0_452, "../assets/d2e/relics/lieutenants/suns-fury-lr.png": __glob_0_453, "../assets/d2e/relics/lieutenants/taskmasters-ring-tf.png": __glob_0_454, "../assets/d2e/relics/lieutenants/the-manors-heart-mr.png": __glob_0_455, "../assets/d2e/relics/lieutenants/the-shadow-rune-bg.png": __glob_0_456, "../assets/d2e/relics/lieutenants/tome-of-the-five-lies-mr.png": __glob_0_457, "../assets/d2e/relics/lieutenants/undertakers-coat-mb.png": __glob_0_458, "../assets/d2e/relics/lieutenants/valyndras-gift-lw.png": __glob_0_459, "../assets/d2e/relics/lieutenants/waiqars-favor-mb.png": __glob_0_460, "../assets/d2e/relics/lieutenants/ynfernal-rune-sn.png": __glob_0_461, "../assets/d2e/shop-items/act1/archaic-scroll-sn.png": __glob_0_462, "../assets/d2e/shop-items/act1/bag-of-tricks-sotp.png": __glob_0_463, "../assets/d2e/shop-items/act1/barons-cloak-sn.png": __glob_0_464, "../assets/d2e/shop-items/act1/battle-tome-mb.png": __glob_0_465, "../assets/d2e/shop-items/act1/bearded-axe-lr.png": __glob_0_466, "../assets/d2e/shop-items/act1/belt-of-alchemy-tf.png": __glob_0_467, "../assets/d2e/shop-items/act1/belt-of-waterwalking-tf.png": __glob_0_468, "../assets/d2e/shop-items/act1/blessed-shield-mr.png": __glob_0_469, "../assets/d2e/shop-items/act1/bloodscript-ring-mb.png": __glob_0_470, "../assets/d2e/shop-items/act1/bloody-dagger-sn.png": __glob_0_471, "../assets/d2e/shop-items/act1/bone-blade-sn.png": __glob_0_472, "../assets/d2e/shop-items/act1/boots-of-iron-sn.png": __glob_0_473, "../assets/d2e/shop-items/act1/bow-of-bone-lr.png": __glob_0_474, "../assets/d2e/shop-items/act1/chainmail-bg.png": __glob_0_475, "../assets/d2e/shop-items/act1/city-guards-bow-sn.png": __glob_0_476, "../assets/d2e/shop-items/act1/cloak-of-mists-sn.png": __glob_0_477, "../assets/d2e/shop-items/act1/corpsebug-brooch-mb.png": __glob_0_478, "../assets/d2e/shop-items/act1/crossbow-bg.png": __glob_0_479, "../assets/d2e/shop-items/act1/crystal-of-mirages-sotp.png": __glob_0_480, "../assets/d2e/shop-items/act1/deflecting-shield-tf.png": __glob_0_481, "../assets/d2e/shop-items/act1/dire-flail-tf.png": __glob_0_482, "../assets/d2e/shop-items/act1/elm-greatbow-bg.png": __glob_0_483, "../assets/d2e/shop-items/act1/elven-boots-lr.png": __glob_0_484, "../assets/d2e/shop-items/act1/flash-powder-lw.png": __glob_0_485, "../assets/d2e/shop-items/act1/golden-orb-mace-sotp.png": __glob_0_486, "../assets/d2e/shop-items/act1/guardian-axe-tf.png": __glob_0_487, "../assets/d2e/shop-items/act1/halberd-lw.png": __glob_0_488, "../assets/d2e/shop-items/act1/handbow-lw.png": __glob_0_489, "../assets/d2e/shop-items/act1/heavy-cloak-bg.png": __glob_0_490, "../assets/d2e/shop-items/act1/immolation-bg.png": __glob_0_491, "../assets/d2e/shop-items/act1/incendiary-arrows-sn.png": __glob_0_492, "../assets/d2e/shop-items/act1/iron-battleaxe-bg.png": __glob_0_493, "../assets/d2e/shop-items/act1/iron-shield-bg.png": __glob_0_494, "../assets/d2e/shop-items/act1/iron-spear-bg.png": __glob_0_495, "../assets/d2e/shop-items/act1/ironbound-rune-sn.png": __glob_0_496, "../assets/d2e/shop-items/act1/jeweled-mace-sn.png": __glob_0_497, "../assets/d2e/shop-items/act1/jinns-lamp-lr.png": __glob_0_498, "../assets/d2e/shop-items/act1/leather-armor-bg.png": __glob_0_499, "../assets/d2e/shop-items/act1/lifedrain-scepter-tf.png": __glob_0_500, "../assets/d2e/shop-items/act1/light-hammer-bg.png": __glob_0_501, "../assets/d2e/shop-items/act1/lucky-charm-bg.png": __glob_0_502, "../assets/d2e/shop-items/act1/mace-of-aver-lr.png": __glob_0_503, "../assets/d2e/shop-items/act1/magic-staff-bg.png": __glob_0_504, "../assets/d2e/shop-items/act1/magma-blast-lw.png": __glob_0_505, "../assets/d2e/shop-items/act1/mana-weave-bg.png": __glob_0_506, "../assets/d2e/shop-items/act1/mapstone-tf.png": __glob_0_507, "../assets/d2e/shop-items/act1/marsh-cloak-mb.png": __glob_0_508, "../assets/d2e/shop-items/act1/mistbane-mb.png": __glob_0_509, "../assets/d2e/shop-items/act1/phoenix-pendant-sn.png": __glob_0_510, "../assets/d2e/shop-items/act1/piercing-arrows-sotp.png": __glob_0_511, "../assets/d2e/shop-items/act1/poisoned-blowgun-lr.png": __glob_0_512, "../assets/d2e/shop-items/act1/ring-of-power-bg.png": __glob_0_513, "../assets/d2e/shop-items/act1/rune-plate-lr.png": __glob_0_514, "../assets/d2e/shop-items/act1/scar-pit-greaves-sotp.png": __glob_0_515, "../assets/d2e/shop-items/act1/scorpion-helm-bg.png": __glob_0_516, "../assets/d2e/shop-items/act1/serpent-dagger-lr.png": __glob_0_517, "../assets/d2e/shop-items/act1/shadow-bracers-mr.png": __glob_0_518, "../assets/d2e/shop-items/act1/shield-of-light-lr.png": __glob_0_519, "../assets/d2e/shop-items/act1/shop-items-act1-back.png": __glob_0_520, "../assets/d2e/shop-items/act1/sling-bg.png": __glob_0_521, "../assets/d2e/shop-items/act1/soulbound-sword-mb.png": __glob_0_522, "../assets/d2e/shop-items/act1/soulstone-mb.png": __glob_0_523, "../assets/d2e/shop-items/act1/staff-of-greyhaven-mr.png": __glob_0_524, "../assets/d2e/shop-items/act1/steel-broadsword-bg.png": __glob_0_525, "../assets/d2e/shop-items/act1/sun-blessed-rune-sotp.png": __glob_0_526, "../assets/d2e/shop-items/act1/sunburst-bg.png": __glob_0_527, "../assets/d2e/shop-items/act1/sunspear-sotp.png": __glob_0_528, "../assets/d2e/shop-items/act1/teleportation-rune-lr.png": __glob_0_529, "../assets/d2e/shop-items/act1/thiefs-vest-lr.png": __glob_0_530, "../assets/d2e/shop-items/act1/trident-tf.png": __glob_0_531, "../assets/d2e/shop-items/act1/undying-skull-mr.png": __glob_0_532, "../assets/d2e/shop-items/act1/viziers-garment-sotp.png": __glob_0_533, "../assets/d2e/shop-items/act1/white-wolf-cloak-mr.png": __glob_0_534, "../assets/d2e/shop-items/act1/witch-hazel-bow-mb.png": __glob_0_535, "../assets/d2e/shop-items/act2/belt-of-strength-tf.png": __glob_0_536, "../assets/d2e/shop-items/act2/black-iron-helm-lr.png": __glob_0_537, "../assets/d2e/shop-items/act2/blasting-rune-tf.png": __glob_0_538, "../assets/d2e/shop-items/act2/blessed-armor-cr.png": __glob_0_539, "../assets/d2e/shop-items/act2/bloodthirsty-bracers-cr.png": __glob_0_540, "../assets/d2e/shop-items/act2/bone-wand-cr.png": __glob_0_541, "../assets/d2e/shop-items/act2/boomerang-tf.png": __glob_0_542, "../assets/d2e/shop-items/act2/bow-of-the-eclipse-lr.png": __glob_0_543, "../assets/d2e/shop-items/act2/bow-of-the-sky-lw.png": __glob_0_544, "../assets/d2e/shop-items/act2/chain-sickle-sotp.png": __glob_0_545, "../assets/d2e/shop-items/act2/cloak-of-deception-lr.png": __glob_0_546, "../assets/d2e/shop-items/act2/demonhide-leather-bg.png": __glob_0_547, "../assets/d2e/shop-items/act2/dragontooth-hammer-bg.png": __glob_0_548, "../assets/d2e/shop-items/act2/dwarven-firebomb-bg.png": __glob_0_549, "../assets/d2e/shop-items/act2/elven-cloak-bg.png": __glob_0_550, "../assets/d2e/shop-items/act2/eye-of-the-night-sotp.png": __glob_0_551, "../assets/d2e/shop-items/act2/fists-of-iron-cr.png": __glob_0_552, "../assets/d2e/shop-items/act2/glaive-tf.png": __glob_0_553, "../assets/d2e/shop-items/act2/golden-mask-sn.png": __glob_0_554, "../assets/d2e/shop-items/act2/grinding-axe-bg.png": __glob_0_555, "../assets/d2e/shop-items/act2/hammer-of-doom-mr.png": __glob_0_556, "../assets/d2e/shop-items/act2/heart-seeker-mr.png": __glob_0_557, "../assets/d2e/shop-items/act2/heavy-steel-shield-bg.png": __glob_0_558, "../assets/d2e/shop-items/act2/horned-shield-cr.png": __glob_0_559, "../assets/d2e/shop-items/act2/ibis-bow-sotp.png": __glob_0_560, "../assets/d2e/shop-items/act2/ice-storm-bg.png": __glob_0_561, "../assets/d2e/shop-items/act2/inscribed-robes-lw.png": __glob_0_562, "../assets/d2e/shop-items/act2/iron-bound-ring-bg.png": __glob_0_563, "../assets/d2e/shop-items/act2/iron-claws-lr.png": __glob_0_564, "../assets/d2e/shop-items/act2/ironbound-glaive-sn.png": __glob_0_565, "../assets/d2e/shop-items/act2/ironbound-shield-sn.png": __glob_0_566, "../assets/d2e/shop-items/act2/latari-longbow-bg.png": __glob_0_567, "../assets/d2e/shop-items/act2/lightning-javelin-cr.png": __glob_0_568, "../assets/d2e/shop-items/act2/lightning-strike-bg.png": __glob_0_569, "../assets/d2e/shop-items/act2/lost-caliphs-crook-sotp.png": __glob_0_570, "../assets/d2e/shop-items/act2/mace-of-kellos-bg.png": __glob_0_571, "../assets/d2e/shop-items/act2/mask-of-horrors-cr.png": __glob_0_572, "../assets/d2e/shop-items/act2/merciful-boots-lw.png": __glob_0_573, "../assets/d2e/shop-items/act2/nerekhall-plate-sn.png": __glob_0_574, "../assets/d2e/shop-items/act2/obsidian-greataxe-lr.png": __glob_0_575, "../assets/d2e/shop-items/act2/obsidian-scalemail-lr.png": __glob_0_576, "../assets/d2e/shop-items/act2/platemail-bg.png": __glob_0_577, "../assets/d2e/shop-items/act2/rage-blade-lr.png": __glob_0_578, "../assets/d2e/shop-items/act2/rat-tooth-dagger-sn.png": __glob_0_579, "../assets/d2e/shop-items/act2/repeating-crossbow-sn.png": __glob_0_580, "../assets/d2e/shop-items/act2/rune-of-blades-sn.png": __glob_0_581, "../assets/d2e/shop-items/act2/rune-of-fate-mr.png": __glob_0_582, "../assets/d2e/shop-items/act2/rune-of-misery-lr.png": __glob_0_583, "../assets/d2e/shop-items/act2/rune-touched-leather-cr.png": __glob_0_584, "../assets/d2e/shop-items/act2/sash-of-the-slayer-cr.png": __glob_0_585, "../assets/d2e/shop-items/act2/scalemail-lw.png": __glob_0_586, "../assets/d2e/shop-items/act2/scarab-amulet-sotp.png": __glob_0_587, "../assets/d2e/shop-items/act2/shadow-tome-sn.png": __glob_0_588, "../assets/d2e/shop-items/act2/shimmering-shield-sotp.png": __glob_0_589, "../assets/d2e/shop-items/act2/shop-items-act2-back.png": __glob_0_590, "../assets/d2e/shop-items/act2/shroud-of-dusk-lr.png": __glob_0_591, "../assets/d2e/shop-items/act2/staff-of-kellos-lw.png": __glob_0_592, "../assets/d2e/shop-items/act2/staff-of-the-wild-lr.png": __glob_0_593, "../assets/d2e/shop-items/act2/star-of-atar-sotp.png": __glob_0_594, "../assets/d2e/shop-items/act2/star-of-kellos-sn.png": __glob_0_595, "../assets/d2e/shop-items/act2/starmetal-khopesh-sotp.png": __glob_0_596, "../assets/d2e/shop-items/act2/steel-greatsword-bg.png": __glob_0_597, "../assets/d2e/shop-items/act2/stone-armor-tf.png": __glob_0_598, "../assets/d2e/shop-items/act2/sunlight-ward-sotp.png": __glob_0_599, "../assets/d2e/shop-items/act2/tival-crystal-bg.png": __glob_0_600, "../assets/d2e/shop-items/act2/vestments-of-kellos-sn.png": __glob_0_601, "../assets/d2e/shop-items/act2/winged-blade-mr.png": __glob_0_602 };
+const assets = { "../assets/base.css": __glob_0_0, "../assets/dice/black-top.png": __glob_0_1, "../assets/dice/blue-top.png": __glob_0_2, "../assets/dice/brown-top.png": __glob_0_3, "../assets/dice/gray-top.png": __glob_0_4, "../assets/dice/green-top.png": __glob_0_5, "../assets/dice/red-top.png": __glob_0_6, "../assets/dice/yellow-top.png": __glob_0_7, "../assets/monster-traits/Building.webp": __glob_0_8, "../assets/monster-traits/Cave.webp": __glob_0_9, "../assets/monster-traits/Civilized.webp": __glob_0_10, "../assets/monster-traits/Cold.webp": __glob_0_11, "../assets/monster-traits/Cursed.webp": __glob_0_12, "../assets/monster-traits/Dark.webp": __glob_0_13, "../assets/monster-traits/Hot.webp": __glob_0_14, "../assets/monster-traits/Mountain.webp": __glob_0_15, "../assets/monster-traits/Water.webp": __glob_0_16, "../assets/monster-traits/Wilderness.webp": __glob_0_17, "../assets/d2e/class-items/arcane-bolt-bg-mage-runemaster.png": __glob_0_18, "../assets/d2e/class-items/black-widows-web-tf-scout-stalker.png": __glob_0_19, "../assets/d2e/class-items/ceremonial-staff-sotp-healer-hierophant.png": __glob_0_20, "../assets/d2e/class-items/chipped-greataxe-bg-warrior-berserker.png": __glob_0_21, "../assets/d2e/class-items/class-skills-apothecary-back.png": __glob_0_22, "../assets/d2e/class-items/class-skills-bard-back.png": __glob_0_23, "../assets/d2e/class-items/class-skills-beastmaster-back.png": __glob_0_24, "../assets/d2e/class-items/class-skills-berserker-back.png": __glob_0_25, "../assets/d2e/class-items/class-skills-bounty-hunter-back.png": __glob_0_26, "../assets/d2e/class-items/class-skills-champion-back.png": __glob_0_27, "../assets/d2e/class-items/class-skills-conjurer-back.png": __glob_0_28, "../assets/d2e/class-items/class-skills-disciple-back.png": __glob_0_29, "../assets/d2e/class-items/class-skills-elementalist-back.png": __glob_0_30, "../assets/d2e/class-items/class-skills-geomancer-back.png": __glob_0_31, "../assets/d2e/class-items/class-skills-hexer-back.png": __glob_0_32, "../assets/d2e/class-items/class-skills-hierophant-back.png": __glob_0_33, "../assets/d2e/class-items/class-skills-knight-back.png": __glob_0_34, "../assets/d2e/class-items/class-skills-marshal-back.png": __glob_0_35, "../assets/d2e/class-items/class-skills-necromancer-back.png": __glob_0_36, "../assets/d2e/class-items/class-skills-prophet-back.png": __glob_0_37, "../assets/d2e/class-items/class-skills-psychic-back.png": __glob_0_38, "../assets/d2e/class-items/class-skills-runemaster-back.png": __glob_0_39, "../assets/d2e/class-items/class-skills-shadow-walker-back.png": __glob_0_40, "../assets/d2e/class-items/class-skills-skirmisher-back.png": __glob_0_41, "../assets/d2e/class-items/class-skills-soul-reaper-back.png": __glob_0_42, "../assets/d2e/class-items/class-skills-spiritspeaker-back.png": __glob_0_43, "../assets/d2e/class-items/class-skills-stalker-back.png": __glob_0_44, "../assets/d2e/class-items/class-skills-thief-back.png": __glob_0_45, "../assets/d2e/class-items/class-skills-treasure-hunter-back.png": __glob_0_46, "../assets/d2e/class-items/class-skills-wildlander-back.png": __glob_0_47, "../assets/d2e/class-items/double-crossbow-mr-scout-bounty-hunter.png": __glob_0_48, "../assets/d2e/class-items/feathered-hatchet-sn-scout-shadow-walker.png": __glob_0_49, "../assets/d2e/class-items/harvester-scythe-ll-healer-soul-reaper.png": __glob_0_50, "../assets/d2e/class-items/horn-of-courage-lw-warrior-champion.png": __glob_0_51, "../assets/d2e/class-items/hunting-knife-tf-scout-stalker.png": __glob_0_52, "../assets/d2e/class-items/hunting-spear-lr-warrior-beastmaster.png": __glob_0_53, "../assets/d2e/class-items/iron-flail-tf-healer-prophet.png": __glob_0_54, "../assets/d2e/class-items/iron-longsword-bg-warrior-knight.png": __glob_0_55, "../assets/d2e/class-items/iron-mace-bg-healer-disciple.png": __glob_0_56, "../assets/d2e/class-items/jagged-handaxe-sn-warrior-skirmisher.png": __glob_0_57, "../assets/d2e/class-items/leather-whip-lr-scout-treasure-hunter.png": __glob_0_58, "../assets/d2e/class-items/lucky-charm-bg-scout-thief.png": __glob_0_59, "../assets/d2e/class-items/lute-sn-healer-bard.png": __glob_0_60, "../assets/d2e/class-items/minds-eye-turban-sotp-mage-psychic.png": __glob_0_61, "../assets/d2e/class-items/mirror-of-souls-ll-healer-soul-reaper.png": __glob_0_62, "../assets/d2e/class-items/oak-staff-bg-healer-spiritspeaker.png": __glob_0_63, "../assets/d2e/class-items/prismatic-staff-sn-mage-conjurer.png": __glob_0_64, "../assets/d2e/class-items/reapers-scythe-bg-mage-necromancer.png": __glob_0_65, "../assets/d2e/class-items/runeshard-cache-ll-mage-elementalist.png": __glob_0_66, "../assets/d2e/class-items/rusted-handaxe-sn-warrior-skirmisher.png": __glob_0_67, "../assets/d2e/class-items/sacred-scriptures-sotp-healer-hierophant.png": __glob_0_68, "../assets/d2e/class-items/sages-tome-tf-healer-prophet.png": __glob_0_69, "../assets/d2e/class-items/shadow-darts-sotp-mage-psychic.png": __glob_0_70, "../assets/d2e/class-items/signet-ring-mr-warrior-marshall.png": __glob_0_71, "../assets/d2e/class-items/skinning-knife-lr-warrior-beastmaster.png": __glob_0_72, "../assets/d2e/class-items/smoking-vials-lr-healer-apothecary.png": __glob_0_73, "../assets/d2e/class-items/spire-of-conflux-ll-mage-elementalist.png": __glob_0_74, "../assets/d2e/class-items/staff-of-the-grave-lr-mage-hexer.png": __glob_0_75, "../assets/d2e/class-items/stasis-rune-lw-mage-geomancer.png": __glob_0_76, "../assets/d2e/class-items/the-dead-mans-compass-lr-scout-treasure-hunter.png": __glob_0_77, "../assets/d2e/class-items/throwing-knives-bg-scout-thief.png": __glob_0_78, "../assets/d2e/class-items/travelers-blade-sn-healer-bard.png": __glob_0_79, "../assets/d2e/class-items/tribal-cloak-sn-scout-shadow-walker.png": __glob_0_80, "../assets/d2e/class-items/war-hammer-mr-warrior-marshall.png": __glob_0_81, "../assets/d2e/class-items/wooden-shield-bg-healer-disciple.png": __glob_0_82, "../assets/d2e/class-items/wooden-shield-bg-warrior-knight.png": __glob_0_83, "../assets/d2e/class-items/worn-greatsword-lw-warrior-champion.png": __glob_0_84, "../assets/d2e/class-items/yew-shortbow-bg-scout-wildlander.png": __glob_0_85, "../assets/d2e/monsters/arachyura-lr-act1-back.png": __glob_0_86, "../assets/d2e/monsters/arachyura-lr-act1-front.png": __glob_0_87, "../assets/d2e/monsters/arachyura-lr-act2-back.png": __glob_0_88, "../assets/d2e/monsters/arachyura-lr-act2-front.png": __glob_0_89, "../assets/d2e/monsters/bandit-mr-act1-back.png": __glob_0_90, "../assets/d2e/monsters/bandit-mr-act1-front.png": __glob_0_91, "../assets/d2e/monsters/bandit-mr-act2-back.png": __glob_0_92, "../assets/d2e/monsters/bandit-mr-act2-front.png": __glob_0_93, "../assets/d2e/monsters/bane-spider-ck-act1-back.png": __glob_0_94, "../assets/d2e/monsters/bane-spider-ck-act1-front.png": __glob_0_95, "../assets/d2e/monsters/bane-spider-ck-act2-back.png": __glob_0_96, "../assets/d2e/monsters/bane-spider-ck-act2-front.png": __glob_0_97, "../assets/d2e/monsters/bane-spider-oo-act1-back.png": __glob_0_98, "../assets/d2e/monsters/bane-spider-oo-act1-front.png": __glob_0_99, "../assets/d2e/monsters/bane-spider-oo-act2-back.png": __glob_0_100, "../assets/d2e/monsters/bane-spider-oo-act2-front.png": __glob_0_101, "../assets/d2e/monsters/barghest-bg-act1-back.png": __glob_0_102, "../assets/d2e/monsters/barghest-bg-act1-front.png": __glob_0_103, "../assets/d2e/monsters/barghest-bg-act2-back.png": __glob_0_104, "../assets/d2e/monsters/barghest-bg-act2-front.png": __glob_0_105, "../assets/d2e/monsters/beastman-ck-act1-back.png": __glob_0_106, "../assets/d2e/monsters/beastman-ck-act1-front.png": __glob_0_107, "../assets/d2e/monsters/beastman-ck-act2-back.png": __glob_0_108, "../assets/d2e/monsters/beastman-ck-act2-front.png": __glob_0_109, "../assets/d2e/monsters/beastman-oo-act1-back.png": __glob_0_110, "../assets/d2e/monsters/beastman-oo-act1-front.png": __glob_0_111, "../assets/d2e/monsters/beastman-oo-act2-back.png": __glob_0_112, "../assets/d2e/monsters/beastman-oo-act2-front.png": __glob_0_113, "../assets/d2e/monsters/blood-ape-ck-act1-back.png": __glob_0_114, "../assets/d2e/monsters/blood-ape-ck-act1-front.png": __glob_0_115, "../assets/d2e/monsters/blood-ape-ck-act2-back.png": __glob_0_116, "../assets/d2e/monsters/blood-ape-ck-act2-front.png": __glob_0_117, "../assets/d2e/monsters/blood-ape-ss-act1-back.png": __glob_0_118, "../assets/d2e/monsters/blood-ape-ss-act1-front.png": __glob_0_119, "../assets/d2e/monsters/blood-ape-ss-act2-back.png": __glob_0_120, "../assets/d2e/monsters/blood-ape-ss-act2-front.png": __glob_0_121, "../assets/d2e/monsters/bone-horror-mb-act1-back.png": __glob_0_122, "../assets/d2e/monsters/bone-horror-mb-act1-front.png": __glob_0_123, "../assets/d2e/monsters/bone-horror-mb-act2-back.png": __glob_0_124, "../assets/d2e/monsters/bone-horror-mb-act2-front.png": __glob_0_125, "../assets/d2e/monsters/broodwalker-mb-act1-back.png": __glob_0_126, "../assets/d2e/monsters/broodwalker-mb-act1-front.png": __glob_0_127, "../assets/d2e/monsters/broodwalker-mb-act2-back.png": __glob_0_128, "../assets/d2e/monsters/broodwalker-mb-act2-front.png": __glob_0_129, "../assets/d2e/monsters/burrowing-horror-sotp-act1-back.png": __glob_0_130, "../assets/d2e/monsters/burrowing-horror-sotp-act1-front.png": __glob_0_131, "../assets/d2e/monsters/burrowing-horror-sotp-act2-back.png": __glob_0_132, "../assets/d2e/monsters/burrowing-horror-sotp-act2-front.png": __glob_0_133, "../assets/d2e/monsters/carrion-drake-lr-act1-back.png": __glob_0_134, "../assets/d2e/monsters/carrion-drake-lr-act1-front.png": __glob_0_135, "../assets/d2e/monsters/carrion-drake-lr-act2-back.png": __glob_0_136, "../assets/d2e/monsters/carrion-drake-lr-act2-front.png": __glob_0_137, "../assets/d2e/monsters/cave-spider-bg-act1-back.png": __glob_0_138, "../assets/d2e/monsters/cave-spider-bg-act1-front.png": __glob_0_139, "../assets/d2e/monsters/cave-spider-bg-act2-back.png": __glob_0_140, "../assets/d2e/monsters/cave-spider-bg-act2-front.png": __glob_0_141, "../assets/d2e/monsters/changeling-sn-act1-back.png": __glob_0_142, "../assets/d2e/monsters/changeling-sn-act1-front.png": __glob_0_143, "../assets/d2e/monsters/changeling-sn-act2-back.png": __glob_0_144, "../assets/d2e/monsters/changeling-sn-act2-front.png": __glob_0_145, "../assets/d2e/monsters/chaos-beast-cd-act1-back.png": __glob_0_146, "../assets/d2e/monsters/chaos-beast-cd-act1-front.png": __glob_0_147, "../assets/d2e/monsters/chaos-beast-cd-act2-back.png": __glob_0_148, "../assets/d2e/monsters/chaos-beast-cd-act2-front.png": __glob_0_149, "../assets/d2e/monsters/chaos-beast-ck-act1-back.png": __glob_0_150, "../assets/d2e/monsters/chaos-beast-ck-act1-front.png": __glob_0_151, "../assets/d2e/monsters/chaos-beast-ck-act2-back.png": __glob_0_152, "../assets/d2e/monsters/chaos-beast-ck-act2-front.png": __glob_0_153, "../assets/d2e/monsters/crow-hag-tc-act1-back.png": __glob_0_154, "../assets/d2e/monsters/crow-hag-tc-act1-front.png": __glob_0_155, "../assets/d2e/monsters/crow-hag-tc-act2-back.png": __glob_0_156, "../assets/d2e/monsters/crow-hag-tc-act2-front.png": __glob_0_157, "../assets/d2e/monsters/crypt-dragon-ck-act1-back.png": __glob_0_158, "../assets/d2e/monsters/crypt-dragon-ck-act1-front.png": __glob_0_159, "../assets/d2e/monsters/crypt-dragon-ck-act2-back.png": __glob_0_160, "../assets/d2e/monsters/crypt-dragon-ck-act2-front.png": __glob_0_161, "../assets/d2e/monsters/crypt-dragon-gd-act1-back.png": __glob_0_162, "../assets/d2e/monsters/crypt-dragon-gd-act1-front.png": __glob_0_163, "../assets/d2e/monsters/crypt-dragon-gd-act2-back.png": __glob_0_164, "../assets/d2e/monsters/crypt-dragon-gd-act2-front.png": __glob_0_165, "../assets/d2e/monsters/dark-minotaur-se-act1-back.png": __glob_0_166, "../assets/d2e/monsters/dark-minotaur-se-act1-front.png": __glob_0_167, "../assets/d2e/monsters/dark-minotaur-se-act2-back.png": __glob_0_168, "../assets/d2e/monsters/dark-minotaur-se-act2-front.png": __glob_0_169, "../assets/d2e/monsters/dark-priest-ck-act1-back.png": __glob_0_170, "../assets/d2e/monsters/dark-priest-ck-act1-front.png": __glob_0_171, "../assets/d2e/monsters/dark-priest-ck-act2-back.png": __glob_0_172, "../assets/d2e/monsters/dark-priest-ck-act2-front.png": __glob_0_173, "../assets/d2e/monsters/dark-priest-gd-act1-back.png": __glob_0_174, "../assets/d2e/monsters/dark-priest-gd-act1-front.png": __glob_0_175, "../assets/d2e/monsters/dark-priest-gd-act2-back.png": __glob_0_176, "../assets/d2e/monsters/dark-priest-gd-act2-front.png": __glob_0_177, "../assets/d2e/monsters/deep-elf-bw-act1-back.png": __glob_0_178, "../assets/d2e/monsters/deep-elf-bw-act1-front.png": __glob_0_179, "../assets/d2e/monsters/deep-elf-bw-act2-back.png": __glob_0_180, "../assets/d2e/monsters/deep-elf-bw-act2-front.png": __glob_0_181, "../assets/d2e/monsters/deep-elf-ck-act1-back.png": __glob_0_182, "../assets/d2e/monsters/deep-elf-ck-act1-front.png": __glob_0_183, "../assets/d2e/monsters/deep-elf-ck-act2-back.png": __glob_0_184, "../assets/d2e/monsters/deep-elf-ck-act2-front.png": __glob_0_185, "../assets/d2e/monsters/demon-lord-ck-act1-back.png": __glob_0_186, "../assets/d2e/monsters/demon-lord-ck-act1-front.png": __glob_0_187, "../assets/d2e/monsters/demon-lord-ck-act2-back.png": __glob_0_188, "../assets/d2e/monsters/demon-lord-ck-act2-front.png": __glob_0_189, "../assets/d2e/monsters/demon-lord-tc-act1-back.png": __glob_0_190, "../assets/d2e/monsters/demon-lord-tc-act1-front.png": __glob_0_191, "../assets/d2e/monsters/demon-lord-tc-act2-back.png": __glob_0_192, "../assets/d2e/monsters/demon-lord-tc-act2-front.png": __glob_0_193, "../assets/d2e/monsters/elemental-bg-act1-back.png": __glob_0_194, "../assets/d2e/monsters/elemental-bg-act1-front.png": __glob_0_195, "../assets/d2e/monsters/elemental-bg-act2-back.png": __glob_0_196, "../assets/d2e/monsters/elemental-bg-act2-front.png": __glob_0_197, "../assets/d2e/monsters/ettin-bg-act1-back.png": __glob_0_198, "../assets/d2e/monsters/ettin-bg-act1-front.png": __glob_0_199, "../assets/d2e/monsters/ettin-bg-act2-back.png": __glob_0_200, "../assets/d2e/monsters/ettin-bg-act2-front.png": __glob_0_201, "../assets/d2e/monsters/ferrox-ck-act1-back.png": __glob_0_202, "../assets/d2e/monsters/ferrox-ck-act1-front.png": __glob_0_203, "../assets/d2e/monsters/ferrox-ck-act2-back.png": __glob_0_204, "../assets/d2e/monsters/ferrox-ck-act2-front.png": __glob_0_205, "../assets/d2e/monsters/ferrox-ss-act1-back.png": __glob_0_206, "../assets/d2e/monsters/ferrox-ss-act1-front.png": __glob_0_207, "../assets/d2e/monsters/ferrox-ss-act2-back.png": __glob_0_208, "../assets/d2e/monsters/ferrox-ss-act2-front.png": __glob_0_209, "../assets/d2e/monsters/fire-imps-lw-act1-back.png": __glob_0_210, "../assets/d2e/monsters/fire-imps-lw-act1-front.png": __glob_0_211, "../assets/d2e/monsters/fire-imps-lw-act2-back.png": __glob_0_212, "../assets/d2e/monsters/fire-imps-lw-act2-front.png": __glob_0_213, "../assets/d2e/monsters/flesh-moulder-bg-act1-back.png": __glob_0_214, "../assets/d2e/monsters/flesh-moulder-bg-act1-front.png": __glob_0_215, "../assets/d2e/monsters/flesh-moulder-bg-act2-back.png": __glob_0_216, "../assets/d2e/monsters/flesh-moulder-bg-act2-front.png": __glob_0_217, "../assets/d2e/monsters/giant-cd-act1-back.png": __glob_0_218, "../assets/d2e/monsters/giant-cd-act1-front.png": __glob_0_219, "../assets/d2e/monsters/giant-cd-act2-back.png": __glob_0_220, "../assets/d2e/monsters/giant-cd-act2-front.png": __glob_0_221, "../assets/d2e/monsters/giant-ck-act1-back.png": __glob_0_222, "../assets/d2e/monsters/giant-ck-act1-front.png": __glob_0_223, "../assets/d2e/monsters/giant-ck-act2-back.png": __glob_0_224, "../assets/d2e/monsters/giant-ck-act2-front.png": __glob_0_225, "../assets/d2e/monsters/goblin-archer-bg-act1-back.png": __glob_0_226, "../assets/d2e/monsters/goblin-archer-bg-act1-front.png": __glob_0_227, "../assets/d2e/monsters/goblin-archer-bg-act2-back.png": __glob_0_228, "../assets/d2e/monsters/goblin-archer-bg-act2-front.png": __glob_0_229, "../assets/d2e/monsters/goblin-witcher-lr-act1-back.png": __glob_0_230, "../assets/d2e/monsters/goblin-witcher-lr-act1-front.png": __glob_0_231, "../assets/d2e/monsters/goblin-witcher-lr-act2-back.png": __glob_0_232, "../assets/d2e/monsters/goblin-witcher-lr-act2-front.png": __glob_0_233, "../assets/d2e/monsters/golem-cf-act1-back.png": __glob_0_234, "../assets/d2e/monsters/golem-cf-act1-front.png": __glob_0_235, "../assets/d2e/monsters/golem-cf-act2-back.png": __glob_0_236, "../assets/d2e/monsters/golem-cf-act2-front.png": __glob_0_237, "../assets/d2e/monsters/golem-ck-act1-back.png": __glob_0_238, "../assets/d2e/monsters/golem-ck-act1-front.png": __glob_0_239, "../assets/d2e/monsters/golem-ck-act2-back.png": __glob_0_240, "../assets/d2e/monsters/golem-ck-act2-front.png": __glob_0_241, "../assets/d2e/monsters/harpy-tf-act1-back.png": __glob_0_242, "../assets/d2e/monsters/harpy-tf-act1-front.png": __glob_0_243, "../assets/d2e/monsters/harpy-tf-act2-back.png": __glob_0_244, "../assets/d2e/monsters/harpy-tf-act2-front.png": __glob_0_245, "../assets/d2e/monsters/hellhound-bw-act1-back.png": __glob_0_246, "../assets/d2e/monsters/hellhound-bw-act1-front.png": __glob_0_247, "../assets/d2e/monsters/hellhound-bw-act2-back.png": __glob_0_248, "../assets/d2e/monsters/hellhound-bw-act2-front.png": __glob_0_249, "../assets/d2e/monsters/hellhound-ck-act1-back.png": __glob_0_250, "../assets/d2e/monsters/hellhound-ck-act1-front.png": __glob_0_251, "../assets/d2e/monsters/hellhound-ck-act2-back.png": __glob_0_252, "../assets/d2e/monsters/hellhound-ck-act2-front.png": __glob_0_253, "../assets/d2e/monsters/hybrid-sentinel-lw-act1-back.png": __glob_0_254, "../assets/d2e/monsters/hybrid-sentinel-lw-act1-front.png": __glob_0_255, "../assets/d2e/monsters/hybrid-sentinel-lw-act2-back.png": __glob_0_256, "../assets/d2e/monsters/hybrid-sentinel-lw-act2-front.png": __glob_0_257, "../assets/d2e/monsters/ice-wyrm-ck-act1-back.png": __glob_0_258, "../assets/d2e/monsters/ice-wyrm-ck-act1-front.png": __glob_0_259, "../assets/d2e/monsters/ice-wyrm-ck-act2-back.png": __glob_0_260, "../assets/d2e/monsters/ice-wyrm-ck-act2-front.png": __glob_0_261, "../assets/d2e/monsters/ice-wyrm-se-act1-back.png": __glob_0_262, "../assets/d2e/monsters/ice-wyrm-se-act1-front.png": __glob_0_263, "../assets/d2e/monsters/ice-wyrm-se-act2-back.png": __glob_0_264, "../assets/d2e/monsters/ice-wyrm-se-act2-front.png": __glob_0_265, "../assets/d2e/monsters/ironbound-sn-act1-back.png": __glob_0_266, "../assets/d2e/monsters/ironbound-sn-act1-front.png": __glob_0_267, "../assets/d2e/monsters/ironbound-sn-act2-back.png": __glob_0_268, "../assets/d2e/monsters/ironbound-sn-act2-front.png": __glob_0_269, "../assets/d2e/monsters/kobold-bw-act1-back.png": __glob_0_270, "../assets/d2e/monsters/kobold-bw-act1-front.png": __glob_0_271, "../assets/d2e/monsters/kobold-bw-act2-back.png": __glob_0_272, "../assets/d2e/monsters/kobold-bw-act2-front.png": __glob_0_273, "../assets/d2e/monsters/kobold-ck-act1-back.png": __glob_0_274, "../assets/d2e/monsters/kobold-ck-act1-front.png": __glob_0_275, "../assets/d2e/monsters/kobold-ck-act2-back.png": __glob_0_276, "../assets/d2e/monsters/kobold-ck-act2-front.png": __glob_0_277, "../assets/d2e/monsters/lava-beetle-cd-act1-back.png": __glob_0_278, "../assets/d2e/monsters/lava-beetle-cd-act1-front.png": __glob_0_279, "../assets/d2e/monsters/lava-beetle-cd-act2-back.png": __glob_0_280, "../assets/d2e/monsters/lava-beetle-cd-act2-front.png": __glob_0_281, "../assets/d2e/monsters/lava-beetle-ck-act1-back.png": __glob_0_282, "../assets/d2e/monsters/lava-beetle-ck-act1-front.png": __glob_0_283, "../assets/d2e/monsters/lava-beetle-ck-act2-back.png": __glob_0_284, "../assets/d2e/monsters/lava-beetle-ck-act2-front.png": __glob_0_285, "../assets/d2e/monsters/manticore-ck-act1-back.png": __glob_0_286, "../assets/d2e/monsters/manticore-ck-act1-front.png": __glob_0_287, "../assets/d2e/monsters/manticore-ck-act2-back.png": __glob_0_288, "../assets/d2e/monsters/manticore-ck-act2-front.png": __glob_0_289, "../assets/d2e/monsters/manticore-vd-act1-back.png": __glob_0_290, "../assets/d2e/monsters/manticore-vd-act1-front.png": __glob_0_291, "../assets/d2e/monsters/manticore-vd-act2-back.png": __glob_0_292, "../assets/d2e/monsters/manticore-vd-act2-front.png": __glob_0_293, "../assets/d2e/monsters/marrow-priest-cr-act1-back.png": __glob_0_294, "../assets/d2e/monsters/marrow-priest-cr-act1-front.png": __glob_0_295, "../assets/d2e/monsters/marrow-priest-cr-act2-back.png": __glob_0_296, "../assets/d2e/monsters/marrow-priest-cr-act2-front.png": __glob_0_297, "../assets/d2e/monsters/medusa-cf-act1-back.png": __glob_0_298, "../assets/d2e/monsters/medusa-cf-act1-front.png": __glob_0_299, "../assets/d2e/monsters/medusa-cf-act2-back.png": __glob_0_300, "../assets/d2e/monsters/medusa-cf-act2-front.png": __glob_0_301, "../assets/d2e/monsters/medusa-ck-act1-back.png": __glob_0_302, "../assets/d2e/monsters/medusa-ck-act1-front.png": __glob_0_303, "../assets/d2e/monsters/medusa-ck-act2-back.png": __glob_0_304, "../assets/d2e/monsters/medusa-ck-act2-front.png": __glob_0_305, "../assets/d2e/monsters/merriod-bg-act1-back.png": __glob_0_306, "../assets/d2e/monsters/merriod-bg-act1-front.png": __glob_0_307, "../assets/d2e/monsters/merriod-bg-act2-back.png": __glob_0_308, "../assets/d2e/monsters/merriod-bg-act2-front.png": __glob_0_309, "../assets/d2e/monsters/naga-ck-act1-back.png": __glob_0_310, "../assets/d2e/monsters/naga-ck-act1-front.png": __glob_0_311, "../assets/d2e/monsters/naga-ck-act2-back.png": __glob_0_312, "../assets/d2e/monsters/naga-ck-act2-front.png": __glob_0_313, "../assets/d2e/monsters/naga-ss-act1-back.png": __glob_0_314, "../assets/d2e/monsters/naga-ss-act1-front.png": __glob_0_315, "../assets/d2e/monsters/naga-ss-act2-back.png": __glob_0_316, "../assets/d2e/monsters/naga-ss-act2-front.png": __glob_0_317, "../assets/d2e/monsters/ogre-ck-act1-back.png": __glob_0_318, "../assets/d2e/monsters/ogre-ck-act1-front.png": __glob_0_319, "../assets/d2e/monsters/ogre-ck-act2-back.png": __glob_0_320, "../assets/d2e/monsters/ogre-ck-act2-front.png": __glob_0_321, "../assets/d2e/monsters/ogre-vd-act1-back.png": __glob_0_322, "../assets/d2e/monsters/ogre-vd-act1-front.png": __glob_0_323, "../assets/d2e/monsters/ogre-vd-act2-back.png": __glob_0_324, "../assets/d2e/monsters/ogre-vd-act2-front.png": __glob_0_325, "../assets/d2e/monsters/plague-worm-tf-act1-back.png": __glob_0_326, "../assets/d2e/monsters/plague-worm-tf-act1-front.png": __glob_0_327, "../assets/d2e/monsters/plague-worm-tf-act2-back.png": __glob_0_328, "../assets/d2e/monsters/plague-worm-tf-act2-front.png": __glob_0_329, "../assets/d2e/monsters/rat-swarm-sn-act1-back.png": __glob_0_330, "../assets/d2e/monsters/rat-swarm-sn-act1-front.png": __glob_0_331, "../assets/d2e/monsters/rat-swarm-sn-act2-back.png": __glob_0_332, "../assets/d2e/monsters/rat-swarm-sn-act2-front.png": __glob_0_333, "../assets/d2e/monsters/razorwing-ck-act1-back.png": __glob_0_334, "../assets/d2e/monsters/razorwing-ck-act1-front.png": __glob_0_335, "../assets/d2e/monsters/razorwing-ck-act2-back.png": __glob_0_336, "../assets/d2e/monsters/razorwing-ck-act2-front.png": __glob_0_337, "../assets/d2e/monsters/razorwing-oo-act1-back.png": __glob_0_338, "../assets/d2e/monsters/razorwing-oo-act1-front.png": __glob_0_339, "../assets/d2e/monsters/razorwing-oo-act2-back.png": __glob_0_340, "../assets/d2e/monsters/razorwing-oo-act2-front.png": __glob_0_341, "../assets/d2e/monsters/reanimate-mb-act1-back.png": __glob_0_342, "../assets/d2e/monsters/reanimate-mb-act1-front.png": __glob_0_343, "../assets/d2e/monsters/reanimate-mb-act2-back.png": __glob_0_344, "../assets/d2e/monsters/reanimate-mb-act2-front.png": __glob_0_345, "../assets/d2e/monsters/sarcophagus-guard-sotp-act1-back.png": __glob_0_346, "../assets/d2e/monsters/sarcophagus-guard-sotp-act1-front.png": __glob_0_347, "../assets/d2e/monsters/sarcophagus-guard-sotp-act2-back.png": __glob_0_348, "../assets/d2e/monsters/sarcophagus-guard-sotp-act2-front.png": __glob_0_349, "../assets/d2e/monsters/shade-ck-act1-back.png": __glob_0_350, "../assets/d2e/monsters/shade-ck-act1-front.png": __glob_0_351, "../assets/d2e/monsters/shade-ck-act2-back.png": __glob_0_352, "../assets/d2e/monsters/shade-ck-act2-front.png": __glob_0_353, "../assets/d2e/monsters/shade-se-act1-back.png": __glob_0_354, "../assets/d2e/monsters/shade-se-act1-front.png": __glob_0_355, "../assets/d2e/monsters/shade-se-act2-back.png": __glob_0_356, "../assets/d2e/monsters/shade-se-act2-front.png": __glob_0_357, "../assets/d2e/monsters/shadow-dragon-bg-act1-back.png": __glob_0_358, "../assets/d2e/monsters/shadow-dragon-bg-act1-front.png": __glob_0_359, "../assets/d2e/monsters/shadow-dragon-bg-act2-back.png": __glob_0_360, "../assets/d2e/monsters/shadow-dragon-bg-act2-front.png": __glob_0_361, "../assets/d2e/monsters/shambling-colossus-cr-act1-back.png": __glob_0_362, "../assets/d2e/monsters/shambling-colossus-cr-act1-front.png": __glob_0_363, "../assets/d2e/monsters/shambling-colossus-cr-act2-back.png": __glob_0_364, "../assets/d2e/monsters/shambling-colossus-cr-act2-front.png": __glob_0_365, "../assets/d2e/monsters/skeleton-archer-ck-act1-back.png": __glob_0_366, "../assets/d2e/monsters/skeleton-archer-ck-act1-front.png": __glob_0_367, "../assets/d2e/monsters/skeleton-archer-ck-act2-back.png": __glob_0_368, "../assets/d2e/monsters/skeleton-archer-ck-act2-front.png": __glob_0_369, "../assets/d2e/monsters/skeleton-archer-tc-act1-back.png": __glob_0_370, "../assets/d2e/monsters/skeleton-archer-tc-act1-front.png": __glob_0_371, "../assets/d2e/monsters/skeleton-archer-tc-act2-back.png": __glob_0_372, "../assets/d2e/monsters/skeleton-archer-tc-act2-front.png": __glob_0_373, "../assets/d2e/monsters/sorcerer-cf-act1-back.png": __glob_0_374, "../assets/d2e/monsters/sorcerer-cf-act1-front.png": __glob_0_375, "../assets/d2e/monsters/sorcerer-cf-act2-back.png": __glob_0_376, "../assets/d2e/monsters/sorcerer-cf-act2-front.png": __glob_0_377, "../assets/d2e/monsters/sorcerer-ck-act1-back.png": __glob_0_378, "../assets/d2e/monsters/sorcerer-ck-act1-front.png": __glob_0_379, "../assets/d2e/monsters/sorcerer-ck-act2-back.png": __glob_0_380, "../assets/d2e/monsters/sorcerer-ck-act2-front.png": __glob_0_381, "../assets/d2e/monsters/the-dispossessed-cr-act1-back.png": __glob_0_382, "../assets/d2e/monsters/the-dispossessed-cr-act1-front.png": __glob_0_383, "../assets/d2e/monsters/the-dispossessed-cr-act2-back.png": __glob_0_384, "../assets/d2e/monsters/the-dispossessed-cr-act2-front.png": __glob_0_385, "../assets/d2e/monsters/troll-ck-act1-back.png": __glob_0_386, "../assets/d2e/monsters/troll-ck-act1-front.png": __glob_0_387, "../assets/d2e/monsters/troll-ck-act2-back.png": __glob_0_388, "../assets/d2e/monsters/troll-ck-act2-front.png": __glob_0_389, "../assets/d2e/monsters/troll-vd-act1-back.png": __glob_0_390, "../assets/d2e/monsters/troll-vd-act1-front.png": __glob_0_391, "../assets/d2e/monsters/troll-vd-act2-back.png": __glob_0_392, "../assets/d2e/monsters/troll-vd-act2-front.png": __glob_0_393, "../assets/d2e/monsters/volucrix-reaver-lr-act1-back.png": __glob_0_394, "../assets/d2e/monsters/volucrix-reaver-lr-act1-front.png": __glob_0_395, "../assets/d2e/monsters/volucrix-reaver-lr-act2-back.png": __glob_0_396, "../assets/d2e/monsters/volucrix-reaver-lr-act2-front.png": __glob_0_397, "../assets/d2e/monsters/wendigo-ck-act1-back.png": __glob_0_398, "../assets/d2e/monsters/wendigo-ck-act1-front.png": __glob_0_399, "../assets/d2e/monsters/wendigo-ck-act2-back.png": __glob_0_400, "../assets/d2e/monsters/wendigo-ck-act2-front.png": __glob_0_401, "../assets/d2e/monsters/wendigo-gd-act1-back.png": __glob_0_402, "../assets/d2e/monsters/wendigo-gd-act1-front.png": __glob_0_403, "../assets/d2e/monsters/wendigo-gd-act2-back.png": __glob_0_404, "../assets/d2e/monsters/wendigo-gd-act2-front.png": __glob_0_405, "../assets/d2e/monsters/wraith-mr-act1-back.png": __glob_0_406, "../assets/d2e/monsters/wraith-mr-act1-front.png": __glob_0_407, "../assets/d2e/monsters/wraith-mr-act2-back.png": __glob_0_408, "../assets/d2e/monsters/wraith-mr-act2-front.png": __glob_0_409, "../assets/d2e/monsters/ynfernael-hulk-sn-act1-back.png": __glob_0_410, "../assets/d2e/monsters/ynfernael-hulk-sn-act1-front.png": __glob_0_411, "../assets/d2e/monsters/ynfernael-hulk-sn-act2-back.png": __glob_0_412, "../assets/d2e/monsters/ynfernael-hulk-sn-act2-front.png": __glob_0_413, "../assets/d2e/monsters/zombie-bg-act1-back.png": __glob_0_414, "../assets/d2e/monsters/zombie-bg-act1-front.png": __glob_0_415, "../assets/d2e/monsters/zombie-bg-act2-back.png": __glob_0_416, "../assets/d2e/monsters/zombie-bg-act2-front.png": __glob_0_417, "../assets/d2e/relics/heroes/aurium-mail-lw.png": __glob_0_418, "../assets/d2e/relics/heroes/boneborn-bow-cr.png": __glob_0_419, "../assets/d2e/relics/heroes/book-of-stars-mr.png": __glob_0_420, "../assets/d2e/relics/heroes/dawnblade-bg.png": __glob_0_421, "../assets/d2e/relics/heroes/fear-eater-mb.png": __glob_0_422, "../assets/d2e/relics/heroes/forewarned-ring-cr.png": __glob_0_423, "../assets/d2e/relics/heroes/fortunas-dice-bg.png": __glob_0_424, "../assets/d2e/relics/heroes/gauntlets-of-power-lr.png": __glob_0_425, "../assets/d2e/relics/heroes/immunity-elixir-tf.png": __glob_0_426, "../assets/d2e/relics/heroes/living-heart-lr.png": __glob_0_427, "../assets/d2e/relics/heroes/mending-talisman-tf.png": __glob_0_428, "../assets/d2e/relics/heroes/robes-of-the-last-cr.png": __glob_0_429, "../assets/d2e/relics/heroes/shadow-plotter-sn.png": __glob_0_430, "../assets/d2e/relics/heroes/shards-of-ithyndrus-mr.png": __glob_0_431, "../assets/d2e/relics/heroes/shield-of-the-dark-god-bg.png": __glob_0_432, "../assets/d2e/relics/heroes/spirited-scythe-sn.png": __glob_0_433, "../assets/d2e/relics/heroes/staff-of-light-bg.png": __glob_0_434, "../assets/d2e/relics/heroes/sun-stone-lr.png": __glob_0_435, "../assets/d2e/relics/heroes/the-manors-heart-mr.png": __glob_0_436, "../assets/d2e/relics/heroes/the-shadow-rune-bg.png": __glob_0_437, "../assets/d2e/relics/heroes/the-white-crown-mb.png": __glob_0_438, "../assets/d2e/relics/heroes/trueshot-bg.png": __glob_0_439, "../assets/d2e/relics/heroes/undertakers-coat-mb.png": __glob_0_440, "../assets/d2e/relics/heroes/valyndras-bane-lw.png": __glob_0_441, "../assets/d2e/relics/heroes/wanderers-stone-mr.png": __glob_0_442, "../assets/d2e/relics/heroes/workmans-ring-tf.png": __glob_0_443, "../assets/d2e/relics/heroes/ynfernal-rune-sn.png": __glob_0_444, "../assets/d2e/relics/lieutenants/azatheas-triumph-cr.png": __glob_0_445, "../assets/d2e/relics/lieutenants/band-of-foresight-cr.png": __glob_0_446, "../assets/d2e/relics/lieutenants/blade-of-brivala-mb.png": __glob_0_447, "../assets/d2e/relics/lieutenants/bones-of-woe-bg.png": __glob_0_448, "../assets/d2e/relics/lieutenants/curative-vial-tf.png": __glob_0_449, "../assets/d2e/relics/lieutenants/duskblade-bg.png": __glob_0_450, "../assets/d2e/relics/lieutenants/fallen-heart-lr.png": __glob_0_451, "../assets/d2e/relics/lieutenants/gauntlets-of-spite-lr.png": __glob_0_452, "../assets/d2e/relics/lieutenants/her-majestys-malice-lw.png": __glob_0_453, "../assets/d2e/relics/lieutenants/omen-of-blight-tf.png": __glob_0_454, "../assets/d2e/relics/lieutenants/robes-of-the-last-cr.png": __glob_0_455, "../assets/d2e/relics/lieutenants/scorpions-kiss-bg.png": __glob_0_456, "../assets/d2e/relics/lieutenants/shadow-plotter-sn.png": __glob_0_457, "../assets/d2e/relics/lieutenants/shards-of-ithyndrus-mr.png": __glob_0_458, "../assets/d2e/relics/lieutenants/shield-of-zoreks-favor-bg.png": __glob_0_459, "../assets/d2e/relics/lieutenants/soulless-scythe-sn.png": __glob_0_460, "../assets/d2e/relics/lieutenants/staff-of-shadows-bg.png": __glob_0_461, "../assets/d2e/relics/lieutenants/stone-of-wayward-means-mr.png": __glob_0_462, "../assets/d2e/relics/lieutenants/suns-fury-lr.png": __glob_0_463, "../assets/d2e/relics/lieutenants/taskmasters-ring-tf.png": __glob_0_464, "../assets/d2e/relics/lieutenants/the-manors-heart-mr.png": __glob_0_465, "../assets/d2e/relics/lieutenants/the-shadow-rune-bg.png": __glob_0_466, "../assets/d2e/relics/lieutenants/tome-of-the-five-lies-mr.png": __glob_0_467, "../assets/d2e/relics/lieutenants/undertakers-coat-mb.png": __glob_0_468, "../assets/d2e/relics/lieutenants/valyndras-gift-lw.png": __glob_0_469, "../assets/d2e/relics/lieutenants/waiqars-favor-mb.png": __glob_0_470, "../assets/d2e/relics/lieutenants/ynfernal-rune-sn.png": __glob_0_471, "../assets/d2e/shop-items/act1/archaic-scroll-sn.png": __glob_0_472, "../assets/d2e/shop-items/act1/bag-of-tricks-sotp.png": __glob_0_473, "../assets/d2e/shop-items/act1/barons-cloak-sn.png": __glob_0_474, "../assets/d2e/shop-items/act1/battle-tome-mb.png": __glob_0_475, "../assets/d2e/shop-items/act1/bearded-axe-lr.png": __glob_0_476, "../assets/d2e/shop-items/act1/belt-of-alchemy-tf.png": __glob_0_477, "../assets/d2e/shop-items/act1/belt-of-waterwalking-tf.png": __glob_0_478, "../assets/d2e/shop-items/act1/blessed-shield-mr.png": __glob_0_479, "../assets/d2e/shop-items/act1/bloodscript-ring-mb.png": __glob_0_480, "../assets/d2e/shop-items/act1/bloody-dagger-sn.png": __glob_0_481, "../assets/d2e/shop-items/act1/bone-blade-sn.png": __glob_0_482, "../assets/d2e/shop-items/act1/boots-of-iron-sn.png": __glob_0_483, "../assets/d2e/shop-items/act1/bow-of-bone-lr.png": __glob_0_484, "../assets/d2e/shop-items/act1/chainmail-bg.png": __glob_0_485, "../assets/d2e/shop-items/act1/city-guards-bow-sn.png": __glob_0_486, "../assets/d2e/shop-items/act1/cloak-of-mists-sn.png": __glob_0_487, "../assets/d2e/shop-items/act1/corpsebug-brooch-mb.png": __glob_0_488, "../assets/d2e/shop-items/act1/crossbow-bg.png": __glob_0_489, "../assets/d2e/shop-items/act1/crystal-of-mirages-sotp.png": __glob_0_490, "../assets/d2e/shop-items/act1/deflecting-shield-tf.png": __glob_0_491, "../assets/d2e/shop-items/act1/dire-flail-tf.png": __glob_0_492, "../assets/d2e/shop-items/act1/elm-greatbow-bg.png": __glob_0_493, "../assets/d2e/shop-items/act1/elven-boots-lr.png": __glob_0_494, "../assets/d2e/shop-items/act1/flash-powder-lw.png": __glob_0_495, "../assets/d2e/shop-items/act1/golden-orb-mace-sotp.png": __glob_0_496, "../assets/d2e/shop-items/act1/guardian-axe-tf.png": __glob_0_497, "../assets/d2e/shop-items/act1/halberd-lw.png": __glob_0_498, "../assets/d2e/shop-items/act1/handbow-lw.png": __glob_0_499, "../assets/d2e/shop-items/act1/heavy-cloak-bg.png": __glob_0_500, "../assets/d2e/shop-items/act1/immolation-bg.png": __glob_0_501, "../assets/d2e/shop-items/act1/incendiary-arrows-sn.png": __glob_0_502, "../assets/d2e/shop-items/act1/iron-battleaxe-bg.png": __glob_0_503, "../assets/d2e/shop-items/act1/iron-shield-bg.png": __glob_0_504, "../assets/d2e/shop-items/act1/iron-spear-bg.png": __glob_0_505, "../assets/d2e/shop-items/act1/ironbound-rune-sn.png": __glob_0_506, "../assets/d2e/shop-items/act1/jeweled-mace-sn.png": __glob_0_507, "../assets/d2e/shop-items/act1/jinns-lamp-lr.png": __glob_0_508, "../assets/d2e/shop-items/act1/leather-armor-bg.png": __glob_0_509, "../assets/d2e/shop-items/act1/lifedrain-scepter-tf.png": __glob_0_510, "../assets/d2e/shop-items/act1/light-hammer-bg.png": __glob_0_511, "../assets/d2e/shop-items/act1/lucky-charm-bg.png": __glob_0_512, "../assets/d2e/shop-items/act1/mace-of-aver-lr.png": __glob_0_513, "../assets/d2e/shop-items/act1/magic-staff-bg.png": __glob_0_514, "../assets/d2e/shop-items/act1/magma-blast-lw.png": __glob_0_515, "../assets/d2e/shop-items/act1/mana-weave-bg.png": __glob_0_516, "../assets/d2e/shop-items/act1/mapstone-tf.png": __glob_0_517, "../assets/d2e/shop-items/act1/marsh-cloak-mb.png": __glob_0_518, "../assets/d2e/shop-items/act1/mistbane-mb.png": __glob_0_519, "../assets/d2e/shop-items/act1/phoenix-pendant-sn.png": __glob_0_520, "../assets/d2e/shop-items/act1/piercing-arrows-sotp.png": __glob_0_521, "../assets/d2e/shop-items/act1/poisoned-blowgun-lr.png": __glob_0_522, "../assets/d2e/shop-items/act1/ring-of-power-bg.png": __glob_0_523, "../assets/d2e/shop-items/act1/rune-plate-lr.png": __glob_0_524, "../assets/d2e/shop-items/act1/scar-pit-greaves-sotp.png": __glob_0_525, "../assets/d2e/shop-items/act1/scorpion-helm-bg.png": __glob_0_526, "../assets/d2e/shop-items/act1/serpent-dagger-lr.png": __glob_0_527, "../assets/d2e/shop-items/act1/shadow-bracers-mr.png": __glob_0_528, "../assets/d2e/shop-items/act1/shield-of-light-lr.png": __glob_0_529, "../assets/d2e/shop-items/act1/shop-items-act1-back.png": __glob_0_530, "../assets/d2e/shop-items/act1/sling-bg.png": __glob_0_531, "../assets/d2e/shop-items/act1/soulbound-sword-mb.png": __glob_0_532, "../assets/d2e/shop-items/act1/soulstone-mb.png": __glob_0_533, "../assets/d2e/shop-items/act1/staff-of-greyhaven-mr.png": __glob_0_534, "../assets/d2e/shop-items/act1/steel-broadsword-bg.png": __glob_0_535, "../assets/d2e/shop-items/act1/sun-blessed-rune-sotp.png": __glob_0_536, "../assets/d2e/shop-items/act1/sunburst-bg.png": __glob_0_537, "../assets/d2e/shop-items/act1/sunspear-sotp.png": __glob_0_538, "../assets/d2e/shop-items/act1/teleportation-rune-lr.png": __glob_0_539, "../assets/d2e/shop-items/act1/thiefs-vest-lr.png": __glob_0_540, "../assets/d2e/shop-items/act1/trident-tf.png": __glob_0_541, "../assets/d2e/shop-items/act1/undying-skull-mr.png": __glob_0_542, "../assets/d2e/shop-items/act1/viziers-garment-sotp.png": __glob_0_543, "../assets/d2e/shop-items/act1/white-wolf-cloak-mr.png": __glob_0_544, "../assets/d2e/shop-items/act1/witch-hazel-bow-mb.png": __glob_0_545, "../assets/d2e/shop-items/act2/belt-of-strength-tf.png": __glob_0_546, "../assets/d2e/shop-items/act2/black-iron-helm-lr.png": __glob_0_547, "../assets/d2e/shop-items/act2/blasting-rune-tf.png": __glob_0_548, "../assets/d2e/shop-items/act2/blessed-armor-cr.png": __glob_0_549, "../assets/d2e/shop-items/act2/bloodthirsty-bracers-cr.png": __glob_0_550, "../assets/d2e/shop-items/act2/bone-wand-cr.png": __glob_0_551, "../assets/d2e/shop-items/act2/boomerang-tf.png": __glob_0_552, "../assets/d2e/shop-items/act2/bow-of-the-eclipse-lr.png": __glob_0_553, "../assets/d2e/shop-items/act2/bow-of-the-sky-lw.png": __glob_0_554, "../assets/d2e/shop-items/act2/chain-sickle-sotp.png": __glob_0_555, "../assets/d2e/shop-items/act2/cloak-of-deception-lr.png": __glob_0_556, "../assets/d2e/shop-items/act2/demonhide-leather-bg.png": __glob_0_557, "../assets/d2e/shop-items/act2/dragontooth-hammer-bg.png": __glob_0_558, "../assets/d2e/shop-items/act2/dwarven-firebomb-bg.png": __glob_0_559, "../assets/d2e/shop-items/act2/elven-cloak-bg.png": __glob_0_560, "../assets/d2e/shop-items/act2/eye-of-the-night-sotp.png": __glob_0_561, "../assets/d2e/shop-items/act2/fists-of-iron-cr.png": __glob_0_562, "../assets/d2e/shop-items/act2/glaive-tf.png": __glob_0_563, "../assets/d2e/shop-items/act2/golden-mask-sn.png": __glob_0_564, "../assets/d2e/shop-items/act2/grinding-axe-bg.png": __glob_0_565, "../assets/d2e/shop-items/act2/hammer-of-doom-mr.png": __glob_0_566, "../assets/d2e/shop-items/act2/heart-seeker-mr.png": __glob_0_567, "../assets/d2e/shop-items/act2/heavy-steel-shield-bg.png": __glob_0_568, "../assets/d2e/shop-items/act2/horned-shield-cr.png": __glob_0_569, "../assets/d2e/shop-items/act2/ibis-bow-sotp.png": __glob_0_570, "../assets/d2e/shop-items/act2/ice-storm-bg.png": __glob_0_571, "../assets/d2e/shop-items/act2/inscribed-robes-lw.png": __glob_0_572, "../assets/d2e/shop-items/act2/iron-bound-ring-bg.png": __glob_0_573, "../assets/d2e/shop-items/act2/iron-claws-lr.png": __glob_0_574, "../assets/d2e/shop-items/act2/ironbound-glaive-sn.png": __glob_0_575, "../assets/d2e/shop-items/act2/ironbound-shield-sn.png": __glob_0_576, "../assets/d2e/shop-items/act2/latari-longbow-bg.png": __glob_0_577, "../assets/d2e/shop-items/act2/lightning-javelin-cr.png": __glob_0_578, "../assets/d2e/shop-items/act2/lightning-strike-bg.png": __glob_0_579, "../assets/d2e/shop-items/act2/lost-caliphs-crook-sotp.png": __glob_0_580, "../assets/d2e/shop-items/act2/mace-of-kellos-bg.png": __glob_0_581, "../assets/d2e/shop-items/act2/mask-of-horrors-cr.png": __glob_0_582, "../assets/d2e/shop-items/act2/merciful-boots-lw.png": __glob_0_583, "../assets/d2e/shop-items/act2/nerekhall-plate-sn.png": __glob_0_584, "../assets/d2e/shop-items/act2/obsidian-greataxe-lr.png": __glob_0_585, "../assets/d2e/shop-items/act2/obsidian-scalemail-lr.png": __glob_0_586, "../assets/d2e/shop-items/act2/platemail-bg.png": __glob_0_587, "../assets/d2e/shop-items/act2/rage-blade-lr.png": __glob_0_588, "../assets/d2e/shop-items/act2/rat-tooth-dagger-sn.png": __glob_0_589, "../assets/d2e/shop-items/act2/repeating-crossbow-sn.png": __glob_0_590, "../assets/d2e/shop-items/act2/rune-of-blades-sn.png": __glob_0_591, "../assets/d2e/shop-items/act2/rune-of-fate-mr.png": __glob_0_592, "../assets/d2e/shop-items/act2/rune-of-misery-lr.png": __glob_0_593, "../assets/d2e/shop-items/act2/rune-touched-leather-cr.png": __glob_0_594, "../assets/d2e/shop-items/act2/sash-of-the-slayer-cr.png": __glob_0_595, "../assets/d2e/shop-items/act2/scalemail-lw.png": __glob_0_596, "../assets/d2e/shop-items/act2/scarab-amulet-sotp.png": __glob_0_597, "../assets/d2e/shop-items/act2/shadow-tome-sn.png": __glob_0_598, "../assets/d2e/shop-items/act2/shimmering-shield-sotp.png": __glob_0_599, "../assets/d2e/shop-items/act2/shop-items-act2-back.png": __glob_0_600, "../assets/d2e/shop-items/act2/shroud-of-dusk-lr.png": __glob_0_601, "../assets/d2e/shop-items/act2/staff-of-kellos-lw.png": __glob_0_602, "../assets/d2e/shop-items/act2/staff-of-the-wild-lr.png": __glob_0_603, "../assets/d2e/shop-items/act2/star-of-atar-sotp.png": __glob_0_604, "../assets/d2e/shop-items/act2/star-of-kellos-sn.png": __glob_0_605, "../assets/d2e/shop-items/act2/starmetal-khopesh-sotp.png": __glob_0_606, "../assets/d2e/shop-items/act2/steel-greatsword-bg.png": __glob_0_607, "../assets/d2e/shop-items/act2/stone-armor-tf.png": __glob_0_608, "../assets/d2e/shop-items/act2/sunlight-ward-sotp.png": __glob_0_609, "../assets/d2e/shop-items/act2/tival-crystal-bg.png": __glob_0_610, "../assets/d2e/shop-items/act2/vestments-of-kellos-sn.png": __glob_0_611, "../assets/d2e/shop-items/act2/winged-blade-mr.png": __glob_0_612 };
 function assetUrl(path) {
   const key = Object.keys(assets).find((fullPath) => fullPath.endsWith(`/assets/${path}`));
   if (key === void 0) {
@@ -9967,7 +10020,7 @@ const _hoisted_2$5 = { class: "list-inline" };
 const _hoisted_3$5 = ["src", "onClick", "alt"];
 const _hoisted_4$5 = { class: "container" };
 const _hoisted_5$5 = { class: "list-inline" };
-const _hoisted_6$4 = ["src", "onClick", "alt"];
+const _hoisted_6$5 = ["src", "onClick", "alt"];
 const _hoisted_7$4 = { class: "list-inline-item" };
 const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   setup(__props) {
@@ -10008,7 +10061,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
                       class: "dice",
                       onClick: ($event) => unref(fight).removeDie(die),
                       alt: die.color
-                    }, null, 8, _hoisted_6$4)
+                    }, null, 8, _hoisted_6$5)
                   ]);
                 }), 128))
               ], 64);
@@ -15141,6 +15194,11 @@ function enumFromStringValue(enm, value) {
   }
   throw new Error(`Invalid enum value: ${value}`);
 }
+var Attack = /* @__PURE__ */ ((Attack2) => {
+  Attack2["Melee"] = "Melee";
+  Attack2["Range"] = "Range";
+  return Attack2;
+})(Attack || {});
 var Category = /* @__PURE__ */ ((Category2) => {
   Category2["ActI"] = "I";
   Category2["ActII"] = "II";
@@ -15168,11 +15226,6 @@ var WeaponTrait = /* @__PURE__ */ ((WeaponTrait2) => {
   WeaponTrait2["Wand"] = "Wand";
   return WeaponTrait2;
 })(WeaponTrait || {});
-var Attack = /* @__PURE__ */ ((Attack2) => {
-  Attack2["Melee"] = "Melee";
-  Attack2["Range"] = "Range";
-  return Attack2;
-})(Attack || {});
 function parseDice(colors, diceByColor) {
   function parseDie(color) {
     color = color.toLowerCase();
@@ -18966,6 +19019,7 @@ function v4(options, buf, offset2) {
 function removeWhitespace(value) {
   return value.replace(/\s+/g, "");
 }
+var FilterButtonGroup_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _hoisted_1$4 = {
   class: "btn-group",
   role: "group"
@@ -18974,10 +19028,12 @@ const _hoisted_2$4 = ["for"];
 const _hoisted_3$4 = ["disabled", "checked", "id"];
 const _hoisted_4$4 = ["value", "id"];
 const _hoisted_5$4 = ["for"];
+const _hoisted_6$4 = ["src"];
 const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   props: {
     modelOptions: null,
-    modelValue: null
+    modelValue: null,
+    iconFunction: null
   },
   emits: ["update:modelValue"],
   setup(__props, { emit }) {
@@ -19020,13 +19076,22 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
             createBaseVNode("label", {
               class: "btn btn-outline-primary btn-sm",
               for: `${unref(id)}-${unref(removeWhitespace)(value)}`
-            }, toDisplayString(value), 9, _hoisted_5$4)
+            }, [
+              __props.iconFunction ? (openBlock(), createElementBlock("img", {
+                key: 0,
+                class: "icon",
+                src: __props.iconFunction(value),
+                alt: ""
+              }, null, 8, _hoisted_6$4)) : createCommentVNode("", true),
+              createTextVNode(" " + toDisplayString(value), 1)
+            ], 8, _hoisted_5$4)
           ], 64);
         }), 128))
       ]);
     };
   }
 });
+var FilterButtonGroup = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-fbf427f6"]]);
 function makeListFilter(selectionRef, match) {
   return (thing) => {
     if (selectionRef.value.length == 0) {
@@ -19039,6 +19104,9 @@ function makeListFilter(selectionRef, match) {
     }
     return false;
   };
+}
+function unique(value, index, self2) {
+  return self2.indexOf(value) === index;
 }
 var WeaponSelector_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _hoisted_1$3 = { class: "card mb-3" };
@@ -19076,10 +19144,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     const availableAttacks = Object.values(Attack);
     const selectedAttacks = ref([]);
     const matchAttacks = makeListFilter(selectedAttacks, (thing, selected) => thing.attack === selected);
-    function onlyUnique(value, index, self2) {
-      return self2.indexOf(value) === index;
-    }
-    const availableExpansions = weapons.map((weapon) => weapon.expansion).filter(onlyUnique).sort();
+    const availableExpansions = weapons.map((weapon) => weapon.expansion).filter(unique).sort();
     const selectedExpansions = ref([]);
     const matchExpansions = makeListFilter(selectedExpansions, (thing, selected) => thing.expansion === selected);
     const items = computed(() => weapons.filter(matchName).filter(matchCategory).filter(matchAttacks).filter(matchTraits).filter(matchEquips).filter(matchExpansions));
@@ -19090,35 +19155,35 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
             createBaseVNode("form", null, [
               createBaseVNode("div", _hoisted_3$3, [
                 createBaseVNode("div", _hoisted_4$3, [
-                  createVNode(_sfc_main$4, {
+                  createVNode(FilterButtonGroup, {
                     "model-options": unref(availableCategories),
                     modelValue: selectedCategories.value,
                     "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => selectedCategories.value = $event)
                   }, null, 8, ["model-options", "modelValue"])
                 ]),
                 createBaseVNode("div", _hoisted_5$3, [
-                  createVNode(_sfc_main$4, {
+                  createVNode(FilterButtonGroup, {
                     "model-options": unref(availableAttacks),
                     modelValue: selectedAttacks.value,
                     "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => selectedAttacks.value = $event)
                   }, null, 8, ["model-options", "modelValue"])
                 ]),
                 createBaseVNode("div", _hoisted_6$3, [
-                  createVNode(_sfc_main$4, {
+                  createVNode(FilterButtonGroup, {
                     "model-options": unref(availableEquips),
                     modelValue: selectedEquips.value,
                     "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selectedEquips.value = $event)
                   }, null, 8, ["model-options", "modelValue"])
                 ]),
                 createBaseVNode("div", _hoisted_7$3, [
-                  createVNode(_sfc_main$4, {
+                  createVNode(FilterButtonGroup, {
                     "model-options": unref(availableTraits),
                     modelValue: selectedTraits.value,
                     "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => selectedTraits.value = $event)
                   }, null, 8, ["model-options", "modelValue"])
                 ]),
                 createBaseVNode("div", _hoisted_8$2, [
-                  createVNode(_sfc_main$4, {
+                  createVNode(FilterButtonGroup, {
                     "model-options": unref(availableExpansions),
                     modelValue: selectedExpansions.value,
                     "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => selectedExpansions.value = $event)
@@ -19159,7 +19224,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var WeaponSelector = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-27d9188c"]]);
+var WeaponSelector = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-7d550c73"]]);
 const _hoisted_1$2 = { class: "modal-dialog modal-dialog-centered" };
 const _hoisted_2$2 = { class: "modal-content" };
 const _hoisted_3$2 = { class: "modal-header" };
@@ -19242,6 +19307,9 @@ var Trait = /* @__PURE__ */ ((Trait2) => {
   Trait2["Wilderness"] = "Wilderness";
   return Trait2;
 })(Trait || {});
+function traitIcon(trait) {
+  return assetUrl(`monster-traits/${trait}.webp`);
+}
 class Monster {
   constructor(jsonFront, jsonBack) {
     __publicField(this, "name");
@@ -24901,7 +24969,7 @@ function pairwise(arr) {
     }
   };
 }
-const monsters = Array.from(pairwise(jsonMonsters)).map(([jsonFront, jsonBack]) => new Monster(jsonFront, jsonBack));
+const monsters = Array.from(pairwise(jsonMonsters)).map(([jsonFront, jsonBack]) => new Monster(jsonFront, jsonBack)).filter((monster) => monster.expansion !== "Conversion Kit");
 var MonsterSelector_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _hoisted_1$1 = { class: "card mb-3" };
 const _hoisted_2$1 = { class: "card-body" };
@@ -24928,7 +24996,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       }
       return monster.name.toLowerCase().includes(needle.value.toLowerCase());
     }
-    const availableActs = [Act.I, Act.II];
+    const availableActs = Object.values(Act);
     const selectedActs = ref([]);
     const matchActs = makeListFilter(selectedActs, (thing, selected) => thing.act === selected);
     const availableTraits = Object.values(Trait);
@@ -24937,10 +25005,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     const availableAttacks = Object.values(Attack);
     const selectedAttacks = ref([]);
     const matchAttacks = makeListFilter(selectedAttacks, (thing, selected) => thing.attack === selected);
-    function onlyUnique(value, index, self2) {
-      return self2.indexOf(value) === index;
-    }
-    const availableExpansions = monsters.map((monster) => monster.expansion).filter(onlyUnique).sort();
+    const availableExpansions = monsters.map((monster) => monster.expansion).filter(unique).sort();
     const selectedExpansions = ref([]);
     const matchExpansions = makeListFilter(selectedExpansions, (thing, selected) => thing.expansion === selected);
     const items = computed(() => monsters.filter(matchName).filter(matchActs).filter(matchTraits).filter(matchAttacks).filter(matchExpansions));
@@ -24952,28 +25017,29 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
             createBaseVNode("form", null, [
               createBaseVNode("div", _hoisted_3$1, [
                 createBaseVNode("div", _hoisted_4$1, [
-                  createVNode(_sfc_main$4, {
-                    "model-options": availableActs,
+                  createVNode(FilterButtonGroup, {
+                    "model-options": unref(availableActs),
                     modelValue: selectedActs.value,
                     "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => selectedActs.value = $event)
-                  }, null, 8, ["modelValue"])
+                  }, null, 8, ["model-options", "modelValue"])
                 ]),
                 createBaseVNode("div", _hoisted_5$1, [
-                  createVNode(_sfc_main$4, {
-                    "model-options": unref(availableTraits),
-                    modelValue: selectedTraits.value,
-                    "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => selectedTraits.value = $event)
+                  createVNode(FilterButtonGroup, {
+                    "model-options": unref(availableAttacks),
+                    modelValue: selectedAttacks.value,
+                    "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => selectedAttacks.value = $event)
                   }, null, 8, ["model-options", "modelValue"])
                 ]),
                 createBaseVNode("div", _hoisted_6$1, [
-                  createVNode(_sfc_main$4, {
-                    "model-options": unref(availableAttacks),
-                    modelValue: selectedAttacks.value,
-                    "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selectedAttacks.value = $event)
-                  }, null, 8, ["model-options", "modelValue"])
+                  createVNode(FilterButtonGroup, {
+                    "model-options": unref(availableTraits),
+                    modelValue: selectedTraits.value,
+                    "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selectedTraits.value = $event),
+                    "icon-function": unref(traitIcon)
+                  }, null, 8, ["model-options", "modelValue", "icon-function"])
                 ]),
                 createBaseVNode("div", _hoisted_7$1, [
-                  createVNode(_sfc_main$4, {
+                  createVNode(FilterButtonGroup, {
                     "model-options": unref(availableExpansions),
                     modelValue: selectedExpansions.value,
                     "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => selectedExpansions.value = $event)
@@ -25027,7 +25093,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var MonsterSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-0ab99304"]]);
+var MonsterSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-763bb4bf"]]);
 const _hoisted_1 = { class: "modal-dialog modal-dialog-centered modal-lg" };
 const _hoisted_2 = { class: "modal-content" };
 const _hoisted_3 = { class: "modal-header" };
@@ -25101,7 +25167,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 const router = createRouter({
-  history: createWebHistory("/drachenschnitzel/"),
+  history: createWebHistory("/"),
   routes: [
     {
       path: "/",
