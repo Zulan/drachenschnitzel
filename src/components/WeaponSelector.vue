@@ -4,7 +4,7 @@ import { weapons } from "@/data/items";
 import type { Weapon } from "@/models/items";
 import { Category, Equip, WeaponTrait } from "@/models/items";
 import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
-import { makeListFilter } from "@/utils/filter";
+import { makeListFilter, unique } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
 import { Attack } from "@/models/common";
 
@@ -48,13 +48,9 @@ const matchAttacks = makeListFilter(
   (thing: Weapon, selected: string) => thing.attack === selected
 );
 
-function onlyUnique<T>(value: T, index: number, self: T[]): boolean {
-  return self.indexOf(value) === index;
-}
-
 const availableExpansions = weapons
   .map((weapon) => weapon.expansion)
-  .filter(onlyUnique)
+  .filter(unique)
   .sort();
 const selectedExpansions = ref([]);
 const matchExpansions = makeListFilter(

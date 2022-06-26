@@ -4,7 +4,7 @@ import { monsters } from "@/data/monsters";
 import type { Monster } from "@/models/monster";
 import { Act, Trait, traitIcon } from "@/models/monster";
 import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
-import { makeListFilter } from "@/utils/filter";
+import { makeListFilter, unique } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
 import { Attack } from "@/models/common";
 
@@ -41,13 +41,9 @@ const matchAttacks = makeListFilter(
   (thing: Monster, selected: string) => thing.attack === selected
 );
 
-function onlyUnique<T>(value: T, index: number, self: T[]): boolean {
-  return self.indexOf(value) === index;
-}
-
 const availableExpansions = monsters
   .map((monster) => monster.expansion)
-  .filter(onlyUnique)
+  .filter(unique)
   .sort();
 const selectedExpansions = ref([]);
 const matchExpansions = makeListFilter(

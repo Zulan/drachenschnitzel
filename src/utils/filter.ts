@@ -16,3 +16,7 @@ export function makeListFilter<T>(
     return false;
   };
 }
+
+export function unique<T>(value: T, index: number, self: T[]): boolean {
+  return self.indexOf(value) === index;
+}
