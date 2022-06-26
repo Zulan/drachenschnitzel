@@ -19,7 +19,7 @@ function matchName(monster: Monster): boolean {
   return monster.name.toLowerCase().includes(needle.value.toLowerCase());
 }
 
-const availableActs = [Act.I, Act.II];
+const availableActs = Object.values(Act);
 const selectedActs = ref([]);
 const matchActs = makeListFilter(
   selectedActs,
