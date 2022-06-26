@@ -6,6 +6,7 @@ import { removeWhitespace } from "@/utils/string";
 const props = defineProps<{
   modelOptions: string[];
   modelValue: string[];
+  iconFunction?: (value: string) => string;
 }>();
 const emit = defineEmits<{
   (e: "update:modelValue", value: string[]): void;
@@ -50,10 +51,20 @@ const id = uuidv4();
       <label
         class="btn btn-outline-primary btn-sm"
         :for="`${id}-${removeWhitespace(value)}`"
-        >{{ value }}</label
+        ><img
+          class="icon"
+          v-if="iconFunction"
+          :src="iconFunction(value)"
+          alt=""
+        />
+        {{ value }}</label
       >
     </template>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.icon {
+  height: 3em;
+}
+</style>

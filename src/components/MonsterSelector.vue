@@ -2,7 +2,7 @@
 import { computed, ref } from "vue";
 import { monsters } from "@/data/monsters";
 import type { Monster } from "@/models/monster";
-import { Act, Trait } from "@/models/monster";
+import { Act, Trait, traitIcon } from "@/models/monster";
 import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
 import { makeListFilter } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
@@ -78,16 +78,18 @@ const items = computed(() =>
           </div>
           <div class="filter">
             <FilterButtonGroup
-              :model-options="availableTraits"
-              v-model="selectedTraits"
-            />
-          </div>
-          <div class="filter">
-            <FilterButtonGroup
               :model-options="availableAttacks"
               v-model="selectedAttacks"
             />
           </div>
+          <div class="filter">
+            <FilterButtonGroup
+              :model-options="availableTraits"
+              v-model="selectedTraits"
+              :icon-function="traitIcon"
+            />
+          </div>
+
           <div class="filter">
             <FilterButtonGroup
               :model-options="availableExpansions"

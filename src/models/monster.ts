@@ -21,6 +21,10 @@ export enum Trait {
   Wilderness = "Wilderness",
 }
 
+export function traitIcon(trait: Trait) {
+  return assetUrl(`monster-traits/${trait}.webp`);
+}
+
 export enum Rank {
   Minion = "Minion",
   Master = "Master",
