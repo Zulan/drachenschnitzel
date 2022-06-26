@@ -6,6 +6,7 @@ import { Category, Equip } from "@/models/items";
 import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
 import { makeListFilter, sample, unique } from "@/utils/filter";
 import ControlCard from "@/components/ControlCard.vue";
+import Pluralizer from "@/components/Pluralizer.vue";
 
 defineEmits<{ (e: "select", item: Item): void }>();
 
@@ -93,7 +94,11 @@ const selectedItems = computed(() =>
         </div>
       </div>
     </div>
-    <div class="found">{{ selectedItems.length }} items found</div>
+
+    <div class="found">
+      <Pluralizer :count="selectedItems.length">item</Pluralizer>
+      found
+    </div>
   </ControlCard>
   <div class="image-grid">
     <div v-for="item in selectedItems" :key="item.name">

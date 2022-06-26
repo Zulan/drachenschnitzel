@@ -8,6 +8,7 @@ import { makeListFilter, unique } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
 import { Attack } from "@/models/common";
 import ControlCard from "@/components/ControlCard.vue";
+import Pluralizer from "@/components/Pluralizer.vue";
 
 defineEmits<{ (e: "select", weapon: Weapon): void }>();
 
@@ -93,7 +94,10 @@ const items = computed(() =>
       v-model="selectedExpansions"
     />
     <input v-model="needle" placeholder="filter by name" />
-    <div class="found">{{ items.length }} weapons found</div>
+    <div class="found">
+      <Pluralizer :count="items.length">weapon</Pluralizer>
+      found
+    </div>
   </ControlCard>
   <div class="image-grid">
     <div v-for="item in items" :key="item.name">
