@@ -9552,29 +9552,29 @@ a:hover img[data-v-75cb42f0] {
   width: 4em;
 }
 
-a img[data-v-10e0d7f0] {
+a img[data-v-046948c1] {
   z-index: 0;
   transition: transform 0.2s;
 }
-a:hover img[data-v-10e0d7f0] {
+a:hover img[data-v-046948c1] {
   z-index: 1;
   transform: scale(1.2);
 }
-.found[data-v-10e0d7f0] {
+.found[data-v-046948c1] {
   margin-left: auto;
   align-self: center;
 }
-.image-grid[data-v-10e0d7f0] {
+.image-grid[data-v-046948c1] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, auto));
   grid-gap: 1rem;
 }
-.form-control[data-v-10e0d7f0] {
+.form-control[data-v-046948c1] {
   display: inline-block;
 }
-#filter-name[data-v-10e0d7f0] {
+#filter-name[data-v-046948c1] {
   width: 14em;
 }
-#random-count[data-v-10e0d7f0] {
+#random-count[data-v-046948c1] {
   width: 4em;
 }

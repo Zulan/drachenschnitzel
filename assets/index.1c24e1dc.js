@@ -34688,7 +34688,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   }
 });
 var ItemSelector_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _withScopeId = (n) => (pushScopeId("data-v-10e0d7f0"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-046948c1"), n = n(), popScopeId(), n);
 const _hoisted_1$1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("label", {
   for: "random-count",
   class: "me-2"
@@ -34801,9 +34801,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         }),
         createBaseVNode("div", _hoisted_8, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(selectedItems), (item) => {
-            return openBlock(), createElementBlock("div", {
-              key: item.name
-            }, [
+            return openBlock(), createElementBlock("div", { key: item }, [
               createBaseVNode("a", {
                 href: "",
                 onClick: withModifiers(($event) => _ctx.$emit("select", item), ["prevent"])
@@ -34821,7 +34819,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-var ItemSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-10e0d7f0"]]);
+var ItemSelector = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-046948c1"]]);
 const _hoisted_1 = { class: "modal-dialog modal-dialog-centered" };
 const _hoisted_2 = { class: "modal-content" };
 const _hoisted_3 = { class: "modal-header" };
