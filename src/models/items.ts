@@ -80,7 +80,7 @@ export function parseDice<D extends Die>(
   return colors.split(" ").map(parseDie);
 }
 
-function parseShopItem(json: JsonShopItem): Item {
+export function parseShopItem(json: JsonShopItem): Item {
   return {
     name: json.name,
     category: enumFromStringValue(Category, json.act),

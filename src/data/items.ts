@@ -1,5 +1,10 @@
-import { isWeapon, parseShopWeapon, Category } from "@/models/items";
-import type { JsonShopItem, JsonItem } from "@/models/items";
+import {
+  isWeapon,
+  parseShopWeapon,
+  Category,
+  parseShopItem,
+} from "@/models/items";
+import type { JsonShopItem, JsonItem, Item } from "@/models/items";
 import type { Weapon } from "@/models/items";
 
 import jsonShopItems from "@/data/d2e/shop-items.json";
@@ -34,3 +39,20 @@ export const weapons: Weapon[] = [
   ...relicWeapons,
   ...classWeapons,
 ];
+
+export const shopItems: Item[] = jsonShopItems.map(parseShopItem);
+export const relicItems: Item[] = jsonRelics
+  .filter((relic) => relic.equip !== "-")
+  .map((relic) =>
+    parseShopItem({ act: Category.Relic, ...relic } as JsonShopItem)
+  );
+export const classItems: Item[] = jsonClassItems
+  .filter((classItem) => classItem.equip !== undefined)
+  .map((classItem) =>
+    parseShopItem({
+      act: Category.Class,
+      ...classItem,
+    } as unknown as JsonShopItem)
+  );
+
+export const items: Item[] = [...shopItems, ...relicItems, ...classItems];
