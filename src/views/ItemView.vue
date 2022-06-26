@@ -3,6 +3,8 @@ import { nextTick, ref } from "vue";
 import { Modal } from "bootstrap";
 
 import ItemSelector from "@/components/ItemSelector.vue";
+import ShowDetails from "@/components/ShowDetails.vue";
+
 import type { Item } from "@/models/items";
 import { items } from "@/data/items";
 
@@ -42,6 +44,7 @@ async function selectItem(item: Item) {
               :alt="selectedItem.name"
               class="w-100 rounded-3"
             />
+            <ShowDetails :object="selectedItem" />
           </div>
         </div>
       </div>

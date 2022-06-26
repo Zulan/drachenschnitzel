@@ -3,6 +3,8 @@ import { nextTick, ref } from "vue";
 import { Modal } from "bootstrap";
 
 import MonsterSelector from "@/components/MonsterSelector.vue";
+import ShowDetails from "@/components/ShowDetails.vue";
+
 import type { Monster } from "@/models/monster";
 import { monsters } from "@/data/monsters";
 
@@ -58,6 +60,7 @@ async function selectMonster(monster: Monster) {
                   class="w-100 rounded-3"
                 />
               </div>
+              <ShowDetails :object="selectedMonster" />
             </div>
           </div>
         </div>

@@ -3,6 +3,8 @@ import { nextTick, ref } from "vue";
 import { Modal } from "bootstrap";
 
 import WeaponSelector from "@/components/WeaponSelector.vue";
+import ShowDetails from "@/components/ShowDetails.vue";
+
 import type { Weapon } from "@/models/items";
 import { weapons } from "@/data/items";
 
@@ -47,6 +49,7 @@ async function selectWeapon(weapon: Weapon) {
               :alt="selectedWeapon.name"
               class="w-100 rounded-3"
             />
+            <ShowDetails :object="selectedWeapon" />
           </div>
         </div>
       </div>
