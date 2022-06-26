@@ -7,6 +7,7 @@ import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
 import { makeListFilter, unique } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
 import { Attack } from "@/models/common";
+import ControlCard from "@/components/ControlCard.vue";
 
 defineEmits<{ (e: "select", weapon: Weapon): void }>();
 
@@ -70,50 +71,30 @@ const items = computed(() =>
 </script>
 
 <template>
-  <div class="card mb-3">
-    <div class="card-body">
-      <form>
-        <div class="filter-grid">
-          <div class="filter">
-            <FilterButtonGroup
-              :model-options="availableCategories"
-              v-model="selectedCategories"
-            />
-          </div>
-          <div class="filter">
-            <FilterButtonGroup
-              :model-options="availableAttacks"
-              v-model="selectedAttacks"
-            />
-          </div>
-          <div class="filter">
-            <FilterButtonGroup
-              :model-options="availableEquips"
-              v-model="selectedEquips"
-            />
-          </div>
-          <div class="filter">
-            <FilterButtonGroup
-              :model-options="availableTraits"
-              v-model="selectedTraits"
-            />
-          </div>
-          <div class="filter">
-            <FilterButtonGroup
-              :model-options="availableExpansions"
-              v-model="selectedExpansions"
-            />
-          </div>
-          <div class="filter">
-            <input v-model="needle" placeholder="filter by name" />
-          </div>
-          <div class="filter filter-found">
-            {{ items.length }} weapons found
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
+  <ControlCard>
+    <FilterButtonGroup
+      :model-options="availableCategories"
+      v-model="selectedCategories"
+    />
+    <FilterButtonGroup
+      :model-options="availableAttacks"
+      v-model="selectedAttacks"
+    />
+    <FilterButtonGroup
+      :model-options="availableEquips"
+      v-model="selectedEquips"
+    />
+    <FilterButtonGroup
+      :model-options="availableTraits"
+      v-model="selectedTraits"
+    />
+    <FilterButtonGroup
+      :model-options="availableExpansions"
+      v-model="selectedExpansions"
+    />
+    <input v-model="needle" placeholder="filter by name" />
+    <div class="found">{{ items.length }} weapons found</div>
+  </ControlCard>
   <div class="image-grid">
     <div v-for="item in items" :key="item.name">
       <a href="" @click.prevent="$emit('select', item)">
@@ -133,19 +114,7 @@ a:hover img {
   transform: scale(1.2);
 }
 
-.filter-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.filter {
-  width: fit-content;
-  display: inline-block;
-  overflow: auto;
-}
-
-.filter-found {
+.found {
   margin-left: auto;
   align-self: center;
 }

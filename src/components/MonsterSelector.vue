@@ -7,6 +7,7 @@ import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
 import { makeListFilter, unique } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
 import { Attack } from "@/models/common";
+import ControlCard from "@/components/ControlCard.vue";
 
 defineEmits<{ (e: "select", monster: Monster): void }>();
 
@@ -62,46 +63,25 @@ const items = computed(() =>
 </script>
 
 <template>
-  <div class="card mb-3">
-    <div class="card-body">
-      <form>
-        <div class="filter-grid">
-          <div class="filter">
-            <FilterButtonGroup
-              :model-options="availableActs"
-              v-model="selectedActs"
-            />
-          </div>
-          <div class="filter">
-            <FilterButtonGroup
-              :model-options="availableAttacks"
-              v-model="selectedAttacks"
-            />
-          </div>
-          <div class="filter">
-            <FilterButtonGroup
-              :model-options="availableTraits"
-              v-model="selectedTraits"
-              :icon-function="traitIcon"
-            />
-          </div>
+  <ControlCard>
+    <FilterButtonGroup :model-options="availableActs" v-model="selectedActs" />
+    <FilterButtonGroup
+      :model-options="availableAttacks"
+      v-model="selectedAttacks"
+    />
+    <FilterButtonGroup
+      :model-options="availableTraits"
+      v-model="selectedTraits"
+      :icon-function="traitIcon"
+    />
+    <FilterButtonGroup
+      :model-options="availableExpansions"
+      v-model="selectedExpansions"
+    />
+    <input v-model="needle" placeholder="filter by name" />
+    <div class="found">{{ items.length }} monsters found</div>
+  </ControlCard>
 
-          <div class="filter">
-            <FilterButtonGroup
-              :model-options="availableExpansions"
-              v-model="selectedExpansions"
-            />
-          </div>
-          <div class="filter">
-            <input v-model="needle" placeholder="filter by name" />
-          </div>
-          <div class="filter filter-found">
-            {{ items.length }} monsters found
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
   <div class="image-grid">
     <div v-for="item in items" :key="item.nameAct">
       <div class="monster-card" @click="$emit('select', item)">
@@ -194,19 +174,7 @@ const items = computed(() =>
   transform: rotateY(180deg) scale(1.2);
 }
 
-.filter-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.filter {
-  width: fit-content;
-  display: inline-block;
-  overflow: auto;
-}
-
-.filter-found {
+.found {
   margin-left: auto;
   align-self: center;
 }
