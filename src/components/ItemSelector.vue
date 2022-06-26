@@ -76,11 +76,22 @@ const selectedItems = computed(() =>
       :model-options="availableExpansions"
       v-model="selectedExpansions"
     />
-    <input v-model="needle" placeholder="filter by name" />
+    <input
+      v-model="needle"
+      placeholder="filter by name"
+      id="filter-name"
+      class="form-control"
+    />
     <div>
       <label for="random-count" class="me-2">Select</label>
-      <input id="random-count" class="me-2" v-model="randomCount" />
-      <div style="display: inline-block">
+      <input
+        type="number"
+        min="1"
+        id="random-count"
+        class="me-2 form-control"
+        v-model="randomCount"
+      />
+      <div class="d-inline-block">
         <div class="form-check">
           <input
             class="form-check-input"
@@ -89,7 +100,7 @@ const selectedItems = computed(() =>
             v-model="randomCheck"
           />
           <label class="form-check-label" for="random-check"
-            >random items</label
+            >random {{ randomCount === 1 ? "item" : "items" }}</label
           >
         </div>
       </div>
@@ -129,7 +140,14 @@ a:hover img {
   grid-template-columns: repeat(auto-fill, minmax(180px, auto));
   grid-gap: 1rem;
 }
+
+.form-control {
+  display: inline-block;
+}
+#filter-name {
+  width: 14em;
+}
 #random-count {
-  width: 2em;
+  width: 4em;
 }
 </style>

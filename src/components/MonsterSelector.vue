@@ -113,7 +113,7 @@ const selectedMonsters = computed(() =>
             v-model="randomCheck"
           />
           <label class="form-check-label" for="random-check"
-            >random monsters</label
+            >random {{ randomCount === 1 ? "monster" : "monsters" }}</label
           >
         </div>
       </div>
