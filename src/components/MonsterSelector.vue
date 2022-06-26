@@ -4,7 +4,7 @@ import { monsters } from "@/data/monsters";
 import type { Monster } from "@/models/monster";
 import { Act, Trait, traitIcon } from "@/models/monster";
 import FilterButtonGroup from "@/components/FilterButtonGroup.vue";
-import { makeListFilter, unique } from "@/utils/filter";
+import { makeListFilter, sample, unique } from "@/utils/filter";
 import { enumFromStringValue } from "@/utils/enum";
 import { Attack } from "@/models/common";
 import ControlCard from "@/components/ControlCard.vue";
@@ -12,6 +12,8 @@ import ControlCard from "@/components/ControlCard.vue";
 defineEmits<{ (e: "select", monster: Monster): void }>();
 
 const needle = ref("");
+const randomCount = ref(1);
+const randomCheck = ref(false);
 
 function matchName(monster: Monster): boolean {
   if (needle.value === "") {
@@ -52,13 +54,21 @@ const matchExpansions = makeListFilter(
   (thing: Monster, selected: string) => thing.expansion === selected
 );
 
-const items = computed(() =>
+function sampleMonster() {
+  if (randomCheck.value) {
+    return sample(randomCount.value);
+  }
+  return () => true;
+}
+
+const selectedMonsters = computed(() =>
   monsters
     .filter(matchName)
     .filter(matchActs)
     .filter(matchTraits)
     .filter(matchAttacks)
     .filter(matchExpansions)
+    .filter(sampleMonster())
 );
 </script>
 
@@ -79,11 +89,28 @@ const items = computed(() =>
       v-model="selectedExpansions"
     />
     <input v-model="needle" placeholder="filter by name" />
-    <div class="found">{{ items.length }} monsters found</div>
+    <div>
+      <label for="random-count" class="me-2">Select</label>
+      <input id="random-count" class="me-2" v-model="randomCount" />
+      <div style="display: inline-block">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="random-check"
+            v-model="randomCheck"
+          />
+          <label class="form-check-label" for="random-check"
+            >random monsters</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="found">{{ selectedMonsters.length }} monsters found</div>
   </ControlCard>
 
   <div class="image-grid">
-    <div v-for="item in items" :key="item.nameAct">
+    <div v-for="item in selectedMonsters" :key="item.nameAct">
       <div class="monster-card" @click="$emit('select', item)">
         <div class="flip-icon">
           <font-awesome-icon icon="rotate-left" size="5x" />
@@ -183,5 +210,8 @@ const items = computed(() =>
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, auto));
   grid-gap: 1rem;
+}
+#random-count {
+  width: 2em;
 }
 </style>
