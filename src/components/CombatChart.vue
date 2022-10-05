@@ -4,6 +4,7 @@ import { computed } from "vue";
 import { useFightStore } from "@/stores/fight";
 import { effectiveDamage, roll } from "@/models/roll";
 import { GChart } from "vue-google-charts";
+import { processChartData } from "@/utils/chart";
 
 // const props = defineProps({
 //   dice: { type: Object as PropType<DiceSet>, required: true },
@@ -21,8 +22,8 @@ const chartOptions = computed(() => ({
   },
 }));
 const chartData = computed(() => [
-  ["Damage", "hitme"],
-  ...damageHistogram.value.entries(),
+  ["Damage", "Chance"],
+  ...processChartData(damageHistogram.value),
 ]);
 </script>
 
