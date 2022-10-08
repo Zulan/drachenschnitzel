@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 
-import { roll, DieResult, effectiveDamage } from "../roll";
+import { roll, DieResult, effectiveDamage, surgeDamage } from "../roll";
 import {
   CombatDie,
   CombatDieResult,
@@ -190,5 +190,87 @@ describe("effectiveDamage", () => {
       [1, 3],
       [0, 12],
     ]);
+  });
+  it("simple surge damage is added properly", () => {
+    const damage = effectiveDamage(
+      new ObjectCounter<DieResult>([
+        [new DieResult(new CombatDieResult(1, 0, 0)), 4],
+        [new DieResult(new CombatDieResult(1, 0, 1)), 2],
+      ]),
+      [[1, 1]]
+    );
+    expect([...damage.entries()]).toEqual([
+      [1, 4],
+      [2, 2],
+    ]);
+  });
+});
+
+describe("surgeDamage", () => {
+  it("no bonus, no damage", () => {
+    const damage = surgeDamage(1, []);
+    expect(damage).toEqual(0);
+  });
+  it("no surges, no damage", () => {
+    const damage = surgeDamage(0, [[1, 2]]);
+    expect(damage).toEqual(0);
+  });
+  it("very simple surge", () => {
+    const damage = surgeDamage(1, [[1, 2]]);
+    expect(damage).toEqual(2);
+  });
+  it("use only first of multiple surges", () => {
+    const damage = surgeDamage(1, [
+      [1, 2],
+      [1, 1],
+    ]);
+    expect(damage).toEqual(2);
+  });
+  it("use one bonus only once", () => {
+    const damage = surgeDamage(2, [[1, 2]]);
+    expect(damage).toBe(2);
+  });
+  it("use multiple surges", () => {
+    const damage = surgeDamage(2, [
+      [1, 2],
+      [1, 1],
+    ]);
+    expect(damage).toBe(3);
+  });
+  it("multiple surges for one bonus", () => {
+    const damage = surgeDamage(2, [
+      [2, 2],
+      [1, 1],
+    ]);
+    expect(damage).toBe(2);
+  });
+  it("use cheaper surges if first are too costly", () => {
+    const damage = surgeDamage(2, [
+      [3, 5],
+      [2, 2],
+    ]);
+    expect(damage).toEqual(2);
+  });
+  it("another complex example", () => {
+    const damage = surgeDamage(3, [
+      [2, 3],
+      [2, 2],
+      [1, 1],
+    ]);
+    expect(damage).toEqual(4);
+  });
+  it("just give bonus damage for free", () => {
+    const damage = surgeDamage(0, [
+      [0, 1],
+      [1, 3],
+    ]);
+    expect(damage).toEqual(1);
+  });
+  it("just give bonus damage for free on top of surges", () => {
+    const damage = surgeDamage(1, [
+      [0, 1],
+      [1, 3],
+    ]);
+    expect(damage).toEqual(4);
   });
 });

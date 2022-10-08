@@ -59,8 +59,24 @@ export function roll(dice: Die[]) {
   return previousMap;
 }
 
+export function surgeDamage(
+  surges: number,
+  surgeBonus: [number, number][]
+): number {
+  let totalDamage = 0;
+  let remainingSurges = surges;
+  for (const [surgesCost, damage] of surgeBonus) {
+    if (remainingSurges >= surgesCost) {
+      remainingSurges -= surgesCost;
+      totalDamage += damage;
+    }
+  }
+  return totalDamage;
+}
+
 export function effectiveDamage(
-  raw: ObjectCounter<DieResult>
+  raw: ObjectCounter<DieResult>,
+  surgeBonus: [number, number][] = []
 ): ObjectCounter<number> {
   const map = new ObjectCounter<number>();
   raw.forEach((number, result) => {
@@ -72,6 +88,7 @@ export function effectiveDamage(
       return;
     }
     let damage = result.combat.damage;
+    damage += surgeDamage(result.combat.surge, surgeBonus);
     if (result.defense) {
       damage -= result.defense.shields;
       damage = Math.max(damage, 0);
