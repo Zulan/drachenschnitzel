@@ -25,6 +25,16 @@ const chartData = computed(() => [
   ["Damage", "Chance"],
   ...processChartData(damageHistogram.value),
 ]);
+const meanDamage = computed(() => {
+  const [sum, count] = [...damageHistogram.value.entries()].reduce(
+    ([partialSum, partialCount], [damage, count]) => [
+      partialSum + damage * count,
+      partialCount + count,
+    ],
+    [0, 0]
+  );
+  return sum / count;
+});
 </script>
 
 <template>
@@ -34,6 +44,7 @@ const chartData = computed(() => [
         Damage: {{ damage }}: {{ count }}
       </li>
     </ul>
+    <h1>Mean damage: {{ meanDamage }}</h1>
     <GChart type="ColumnChart" :data="chartData" :options="chartOptions" />
   </div>
 </template>
