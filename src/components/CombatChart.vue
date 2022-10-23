@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref } from "vue";
 
 import { useFightStore } from "@/stores/fight";
 import { effectiveDamage, roll } from "@/models/roll";
@@ -11,9 +11,13 @@ import { processChartData } from "@/utils/chart";
 // });
 const fight = useFightStore();
 
+const surgeBonusText = ref("[]");
+const surgeBonus = computed(() => JSON.parse(surgeBonusText.value));
+
 const damageHistogram = computed(() =>
   effectiveDamage(
-    roll([...fight.combatDiceSet.linear(), ...fight.defenseDiceSet.linear()])
+    roll([...fight.combatDiceSet.linear(), ...fight.defenseDiceSet.linear()]),
+    surgeBonus.value
   )
 );
 const chartOptions = computed(() => ({
@@ -22,7 +26,7 @@ const chartOptions = computed(() => ({
   },
 }));
 const chartData = computed(() => [
-  ["Damage", "Chance"],
+  ["Damage", "Chance", "Cumulative Chance"],
   ...processChartData(damageHistogram.value),
 ]);
 const meanDamage = computed(() => {
@@ -45,6 +49,7 @@ const meanDamage = computed(() => {
       </li>
     </ul>
     <h1>Mean damage: {{ meanDamage }}</h1>
+    <input v-model="surgeBonusText" class="form-control" />
     <GChart type="ColumnChart" :data="chartData" :options="chartOptions" />
   </div>
 </template>
